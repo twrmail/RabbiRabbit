@@ -22,11 +22,8 @@ const BOOK_MAP = {
 }
 
 const SECONDARY = {
-  passage: 'JFB',
-  book: 'JFB',
-  word: 'Clarke',
-  character: 'Barnes',
-  topical: null
+  passage: 'JFB', book: 'JFB',
+  word: 'Clarke', character: 'Barnes', topical: null
 }
 
 function fetchUrl(url) {
@@ -34,10 +31,7 @@ function fetchUrl(url) {
     const req = https.get(url, { timeout: 5000 }, (res) => {
       let data = ''
       res.on('data', chunk => data += chunk)
-      res.on('end', () => {
-        try { resolve(JSON.parse(data)) }
-        catch { resolve(null) }
-      })
+      res.on('end', () => { try { resolve(JSON.parse(data)) } catch { resolve(null) } })
     })
     req.on('error', () => resolve(null))
     req.on('timeout', () => { req.destroy(); resolve(null) })
@@ -106,72 +100,20 @@ ${additionalVerses ? `SUPPORTING VERSES: ${additionalVerses}` : ''}
 ${sectionList ? `SECTIONS: ${sectionList}` : ''}
 ${notes ? `AUTHOR NOTES: ${notes}` : ''}
 
-FORMAT RULES:
-- # Study title
-- ## Major section headings
-- ### Sub-section labels (uppercase)
-- **bold** key terms and verse references
-- *italic* original language terms
-- Bullet points for lists
-- Write in flowing prose, not just bullets
+FORMAT: # title, ## sections, ### sub-labels (uppercase), **bold** key terms and verse refs, *italic* original language terms, bullet lists where natural, flowing prose throughout.
 
-REQUIRED â€” include all three exactly as shown:
-## ðŸ‡ Rabbit Trail
-Follow a genuine cross-reference connection to an unexpected but illuminating passage. The detour must earn its place â€” go somewhere real.
+REQUIRED â€” include all three:
+## ðŸ‡ Rabbit Trail â€” follow a genuine cross-reference to an unexpected illuminating passage. Earn the detour.
+## ðŸ• Rabbi Road â€” bring the reader back showing what the trail revealed that a straight reading missed.
+## ðŸ‡ What's Over the Hill â€” one short paragraph gesturing to where this study leads next.
 
-## ðŸ• Rabbi Road  
-Bring the reader back to the original text. Show what the trail revealed that a straight reading would have missed. The return must justify the detour.
-
-## ðŸ‡ What's Over the Hill
-One short paragraph gesturing naturally to where this study leads next â€” a passage, theme, or book that continues the thread organically.
-
-Write a complete, focused study. Start directly with the # title, no preamble.`
+Start directly with the # title.`
 
   if (commentary) {
-    prompt += `
-
-SCHOLARLY BACKBONE â€” Public domain commentaries (blend their insights, modernize the language, do not name them in output):
-${commentary}`
+    prompt += `\n\nSCHOLARLY BACKBONE (blend, modernize, do not name in output):\n${commentary}`
   }
 
   return prompt
-}
-
-function callAnthropicAPI(apiKey, prompt) {
-  return new Promise((resolve, reject) => {
-    const payload = JSON.stringify({
-      model: 'claude-haiku-4-5',
-      max_tokens: 1800,
-      messages: [{ role: 'user', content: prompt }]
-    })
-    const options = {
-      hostname: 'api.anthropic.com',
-      path: '/v1/messages',
-      method: 'POST',
-      timeout: 22000,
-      headers: {
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(payload),
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01'
-      }
-    }
-    const req = https.request(options, (res) => {
-      let data = ''
-      res.on('data', chunk => data += chunk)
-      res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data)
-          if (parsed.content?.[0]?.text) resolve(parsed.content[0].text)
-          else reject(new Error(parsed.error?.message || `API error ${res.statusCode}`))
-        } catch (e) { reject(new Error('Parse error')) }
-      })
-    })
-    req.on('error', reject)
-    req.on('timeout', () => { req.destroy(); reject(new Error('Timed out')) })
-    req.write(payload)
-    req.end()
-  })
 }
 
 exports.handler = async function (event) {
@@ -191,43 +133,129 @@ exports.handler = async function (event) {
     return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) }
   }
 
-  const headers = { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' }
-
   try {
     const apiKey = process.env.ANTHROPIC_API_KEY
     if (!apiKey) {
-      return { statusCode: 500, headers, body: JSON.stringify({ error: 'API key not configured' }) }
+      return {
+        statusCode: 500,
+        headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ error: 'API key not configured' })
+      }
     }
 
     const body = JSON.parse(event.body || '{}')
     const { studyType, primaryInput } = body
 
-    // Fetch commentary for passage-based studies
+    // Fetch commentary backbone in parallel
     let commentary = ''
     const parsed = parsePassage(primaryInput)
-
     if (parsed) {
       const { bookId, chapter } = parsed
       const secondaryId = SECONDARY[studyType] || null
-
       const [mhc, secondary] = await Promise.all([
         fetchCommentary('MHC', bookId, chapter),
         secondaryId ? fetchCommentary(secondaryId, bookId, chapter) : Promise.resolve(null)
       ])
-
-      if (mhc) commentary += `Matthew Henry (1706):\n${mhc}\n\n`
-      if (secondary) commentary += `${secondaryId} Commentary:\n${secondary}`
+      if (mhc) commentary += `Matthew Henry:\n${mhc}\n\n`
+      if (secondary) commentary += `${secondaryId}:\n${secondary}`
     }
 
     const prompt = buildPrompt(body, commentary || null)
-    const content = await callAnthropicAPI(apiKey, prompt)
-    return { statusCode: 200, headers, body: JSON.stringify({ content }) }
+
+    // Stream from Anthropic
+    const payload = JSON.stringify({
+      model: 'claude-haiku-4-5',
+      max_tokens: 2000,
+      stream: true,
+      messages: [{ role: 'user', content: prompt }]
+    })
+
+    // Return a streaming response
+    return new Promise((resolve, reject) => {
+      const options = {
+        hostname: 'api.anthropic.com',
+        path: '/v1/messages',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(payload),
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01'
+        }
+      }
+
+      const chunks = []
+      const req = https.request(options, (res) => {
+        let buffer = ''
+
+        res.on('data', (chunk) => {
+          buffer += chunk.toString()
+          const lines = buffer.split('\n')
+          buffer = lines.pop()
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const data = line.slice(6).trim()
+              if (data === '[DONE]') continue
+              try {
+                const parsed = JSON.parse(data)
+                if (parsed.type === 'content_block_delta' &&
+                    parsed.delta?.type === 'text_delta') {
+                  chunks.push(parsed.delta.text)
+                }
+              } catch (e) { /* skip malformed */ }
+            }
+          }
+        })
+
+        res.on('end', () => {
+          const content = chunks.join('')
+          if (!content) {
+            resolve({
+              statusCode: 500,
+              headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+              body: JSON.stringify({ error: 'No content generated' })
+            })
+            return
+          }
+          resolve({
+            statusCode: 200,
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+              'Content-Type': 'text/plain; charset=utf-8',
+              'X-Content-Type-Options': 'nosniff',
+              'Transfer-Encoding': 'chunked'
+            },
+            body: content
+          })
+        })
+
+        res.on('error', (err) => {
+          resolve({
+            statusCode: 500,
+            headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+            body: JSON.stringify({ error: err.message })
+          })
+        })
+      })
+
+      req.on('error', (err) => {
+        resolve({
+          statusCode: 500,
+          headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+          body: JSON.stringify({ error: err.message })
+        })
+      })
+
+      req.write(payload)
+      req.end()
+    })
 
   } catch (err) {
     console.error('Error:', err.message)
     return {
       statusCode: 500,
-      headers,
+      headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
       body: JSON.stringify({ error: err.message || 'Internal error' })
     }
   }
