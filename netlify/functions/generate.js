@@ -1,10 +1,8 @@
 exports.handler = async function (event) {
-  // Only allow POST
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) }
   }
 
-  // CORS headers
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -22,6 +20,7 @@ exports.handler = async function (event) {
       return { statusCode: 500, headers, body: JSON.stringify({ error: 'API key not configured' }) }
     }
 
+    // Use a concise but complete prompt to stay within timeout
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -30,11 +29,42 @@ exports.handler = async function (event) {
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
+        model: 'claude-haiku-4-5',
         max_tokens: 2048,
         messages: [{ role: 'user', content: prompt }],
       }),
     })
+
+    if (!response.ok) {
+      const errText = await response.text()
+      console.error('Anthropic API error:', response.status, errText)
+      return {
+        statusCode: response.status,
+        headers,
+        body: JSON.stringify({ error: `API error: ${response.status} — ${errText}` }),
+      }
+    }
+
+    const data = await response.json()
+    const content = data.content
+      ?.filter(b => b.type === 'text')
+      ?.map(b => b.text)
+      ?.join('') || ''
+
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({ content }),
+    }
+  } catch (err) {
+    console.error('Function error:', err)
+    return {
+      statusCode: 500,
+      headers,
+      body: JSON.stringify({ error: 'Internal error — please try again' }),
+    }
+  }
+}    })
 
     if (!response.ok) {
       const errText = await response.text()
