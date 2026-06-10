@@ -1,5 +1,5 @@
 export async function generateStudy(params, onChunk) {
-  const response = await fetch('/.netlify/functions/generate', {
+  const response = await fetch('https://silent-heart-df83.twrmail.workers.dev', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(params),
