@@ -31,7 +31,7 @@ exports.handler = async function (event) {
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
-        max_tokens: 4000,
+        max_tokens: 2048,
         messages: [{ role: 'user', content: prompt }],
       }),
     })
@@ -42,7 +42,7 @@ exports.handler = async function (event) {
       return {
         statusCode: response.status,
         headers,
-        body: JSON.stringify({ error: `API error: ${response.status}` }),
+        body: JSON.stringify({ error: `API error: ${response.status} â€” ${errText}` }),
       }
     }
 
@@ -62,7 +62,7 @@ exports.handler = async function (event) {
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ error: 'Internal error — please try again' }),
+      body: JSON.stringify({ error: 'Internal error â€” please try again' }),
     }
   }
 }
