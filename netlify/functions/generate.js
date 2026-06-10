@@ -80,14 +80,14 @@ async function fetchCommentary(commentaryId, bookId, chapter) {
       if (v?.text) text += v.text + '\n\n'
     }
   }
-  return text ? text.slice(0, 2500).trim() : null
+  return text ? text.slice(0, 800).trim() : null
 }
 
 function callAnthropicAPI(apiKey, prompt) {
   return new Promise((resolve, reject) => {
     const payload = JSON.stringify({
       model: 'claude-haiku-4-5',
-      max_tokens: 2500,
+      max_tokens: 1800,
       messages: [{ role: 'user', content: prompt }]
     })
     const options = {
