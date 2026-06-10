@@ -42,7 +42,7 @@ exports.handler = async function (event) {
         hostname: 'api.anthropic.com',
         path: '/v1/messages',
         method: 'POST',
-        timeout: 8000,
+        timeout: 22000,
         headers: {
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(payload),
@@ -66,7 +66,7 @@ exports.handler = async function (event) {
       })
 
       req.on('error', reject)
-      req.on('timeout', () => { req.destroy(); reject(new Error('Timed out after 8s')) })
+      req.on('timeout', () => { req.destroy(); reject(new Error('Timed out after 22s')) })
       req.write(payload)
       req.end()
     })
