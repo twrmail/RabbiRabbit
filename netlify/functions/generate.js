@@ -1,98 +1,129 @@
+const https = require('https')
+
 exports.handler = async function (event) {
-  if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) }
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      },
+      body: '',
+    }
   }
 
-  const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Content-Type': 'application/json',
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) }
   }
 
   try {
     const { prompt } = JSON.parse(event.body || '{}')
     if (!prompt) {
-      return { statusCode: 400, headers, body: JSON.stringify({ error: 'Missing prompt' }) }
+      return {
+        statusCode: 400,
+        headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ error: 'Missing prompt' }),
+      }
     }
 
     const apiKey = process.env.ANTHROPIC_API_KEY
     if (!apiKey) {
-      return { statusCode: 500, headers, body: JSON.stringify({ error: 'API key not configured' }) }
+      return {
+        statusCode: 500,
+        headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ error: 'API key not configured' }),
+      }
     }
 
-    // Use a concise but complete prompt to stay within timeout
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    // Collect full streaming response within Netlify's 26s window
+    // We use a background approach: collect all SSE chunks then return
+    const result = await callAnthropicStreaming(apiKey, prompt)
+
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ content: result }),
+    }
+  } catch (err) {
+    console.error('Function error:', err)
+    return {
+      statusCode: 500,
+      headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ error: err.message || 'Internal error' }),
+    }
+  }
+}
+
+function callAnthropicStreaming(apiKey, prompt) {
+  return new Promise((resolve, reject) => {
+    const payload = JSON.stringify({
+      model: 'claude-haiku-4-5',
+      max_tokens: 3000,
+      stream: true,
+      messages: [{ role: 'user', content: prompt }],
+    })
+
+    const options = {
+      hostname: 'api.anthropic.com',
+      path: '/v1/messages',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(payload),
         'x-api-key': apiKey,
         'anthropic-version': '2023-06-01',
       },
-      body: JSON.stringify({
-        model: 'claude-haiku-4-5',
-        max_tokens: 2048,
-        messages: [{ role: 'user', content: prompt }],
-      }),
+    }
+
+    let fullText = ''
+    const req = https.request(options, (res) => {
+      let buffer = ''
+
+      res.on('data', (chunk) => {
+        buffer += chunk.toString()
+        const lines = buffer.split('\n')
+        buffer = lines.pop() // keep incomplete line
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            const data = line.slice(6).trim()
+            if (data === '[DONE]') continue
+            try {
+              const parsed = JSON.parse(data)
+              if (parsed.type === 'content_block_delta' &&
+                  parsed.delta?.type === 'text_delta') {
+                fullText += parsed.delta.text
+              }
+            } catch (e) {
+              // skip malformed chunks
+            }
+          }
+        }
+      })
+
+      res.on('end', () => {
+        if (res.statusCode !== 200) {
+          reject(new Error(`API error ${res.statusCode}`))
+        } else {
+          resolve(fullText)
+        }
+      })
+
+      res.on('error', reject)
     })
 
-    if (!response.ok) {
-      const errText = await response.text()
-      console.error('Anthropic API error:', response.status, errText)
-      return {
-        statusCode: response.status,
-        headers,
-        body: JSON.stringify({ error: `API error: ${response.status} — ${errText}` }),
-      }
-    }
+    req.on('error', reject)
+    req.setTimeout(25000, () => {
+      req.destroy()
+      // Return whatever we have so far rather than failing completely
+      resolve(fullText + '\n\n*[Study truncated â€” please try again for the complete version]*')
+    })
 
-    const data = await response.json()
-    const content = data.content
-      ?.filter(b => b.type === 'text')
-      ?.map(b => b.text)
-      ?.join('') || ''
-
-    return {
-      statusCode: 200,
-      headers,
-      body: JSON.stringify({ content }),
-    }
-  } catch (err) {
-    console.error('Function error:', err)
-    return {
-      statusCode: 500,
-      headers,
-      body: JSON.stringify({ error: 'Internal error — please try again' }),
-    }
-  }
-}    })
-
-    if (!response.ok) {
-      const errText = await response.text()
-      console.error('Anthropic API error:', response.status, errText)
-      return {
-        statusCode: response.status,
-        headers,
-        body: JSON.stringify({ error: `API error: ${response.status} â€” ${errText}` }),
-      }
-    }
-
-    const data = await response.json()
-    const content = data.content
-      ?.filter(b => b.type === 'text')
-      ?.map(b => b.text)
-      ?.join('') || ''
-
-    return {
-      statusCode: 200,
-      headers,
-      body: JSON.stringify({ content }),
-    }
-  } catch (err) {
-    console.error('Function error:', err)
-    return {
-      statusCode: 500,
-      headers,
-      body: JSON.stringify({ error: 'Internal error â€” please try again' }),
-    }
-  }
+    req.write(payload)
+    req.end()
+  })
 }
