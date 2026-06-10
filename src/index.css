@@ -1,1 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap');
 
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #1C2340;
+  --navy-light: #2A3560;
+  --gold: #C4962A;
+  --gold-light: #E8B84B;
+  --gold-pale: #FEF9EE;
+  --sage: #6B8C6E;
+  --parch: #F7F2E8;
+  --parch-dark: #EDE6D6;
+  --ink: #2E2E2E;
+  --ink-light: #6B6B6B;
+  --border: #D4C9A8;
+  --white: #FFFFFF;
+  --error: #B04A2F;
+  --error-bg: #FDF0EC;
+}
+
+html { font-size: 16px; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--parch);
+  color: var(--ink);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100vh; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--parch); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
