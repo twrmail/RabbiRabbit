@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 import { downloadPDF, downloadText } from '../lib/downloadStudy'
+import FontSizeToggle from './FontSizeToggle'
 
 function formatStudy(text) {
   return text
@@ -31,14 +32,11 @@ function btnStyle(variant) {
   return { ...base, background: 'transparent', color: 'var(--ink-light)', border: 'none' }
 }
 
-// Font size steps: base, larger, largest
-const FONT_SCALES = [1, 1.15, 1.3]
-
-export default function StudyOutput({ content, streaming, onReset }) {
+export default function StudyOutput({ content, streaming, onReset, enlarged, onToggleEnlarge }) {
   const ref = useRef()
   const [pdfLoading, setPdfLoading] = useState(false)
-  const [fontStep, setFontStep] = useState(0)
   const title = extractTitle(content)
+  const fontScale = enlarged ? 1.15 : 1
 
   // Auto-scroll to bottom while streaming
   useEffect(() => {
@@ -57,13 +55,6 @@ export default function StudyOutput({ content, streaming, onReset }) {
     catch (e) { console.error('PDF error:', e) }
     finally { setPdfLoading(false) }
   }
-
-  const cycleFontSize = () => {
-    setFontStep(prev => (prev + 1) % FONT_SCALES.length)
-  }
-
-  const fontScale = FONT_SCALES[fontStep]
-  const fontLabel = fontStep === 0 ? 'Text +' : fontStep === 1 ? 'Text ++' : 'Text ⟲'
 
   return (
     <div>
@@ -87,19 +78,7 @@ export default function StudyOutput({ content, streaming, onReset }) {
           )}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <button
-            onClick={cycleFontSize}
-            title="Adjust text size"
-            style={{
-              ...btnStyle('outline'),
-              fontFamily: "'Cormorant Garamond', serif",
-              fontWeight: 700,
-              minWidth: 64,
-              textAlign: 'center',
-            }}
-          >
-            {fontLabel}
-          </button>
+          <FontSizeToggle enlarged={enlarged} onToggle={onToggleEnlarge} />
           {!streaming && <button onClick={onReset} style={btnStyle('ghost')}>← New Study</button>}
         </div>
       </div>
