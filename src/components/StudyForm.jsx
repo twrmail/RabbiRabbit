@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { generateStudy } from '../lib/generateStudy'
+import FontSizeToggle from './FontSizeToggle'
 
 const STUDY_TYPES = [
   { value: 'passage', label: 'Passage Study', desc: 'Verse-by-verse through a text' },
@@ -126,7 +127,7 @@ const LOADING_MESSAGES = [
   'Finding the way back…',
 ]
 
-export default function StudyForm({ onStudy, onStream, onDone, error, setError }) {
+export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
   const [studyType, setStudyType] = useState('passage')
   const [primaryInput, setPrimaryInput] = useState('')
   const [additionalVerses, setAdditionalVerses] = useState('')
@@ -180,8 +181,14 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError }
     }
   }
 
+  const fontScale = enlarged ? 1.15 : 1
+
   return (
-    <div>
+    <div style={{ zoom: fontScale }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
+        <FontSizeToggle enlarged={enlarged} onToggle={onToggleEnlarge} />
+      </div>
+
       <div style={{ marginBottom: 24 }}>
         <Label required>Study Type</Label>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: 10 }}>
