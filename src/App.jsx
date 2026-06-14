@@ -8,6 +8,7 @@ export default function App() {
   const [study, setStudy] = useState(null)
   const [streaming, setStreaming] = useState(false)
   const [error, setError] = useState(null)
+  const [enlarged, setEnlarged] = useState(false)
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -25,6 +26,8 @@ export default function App() {
               onDone={() => setStreaming(false)}
               error={error}
               setError={setError}
+              enlarged={enlarged}
+              onToggleEnlarge={() => setEnlarged(e => !e)}
             />
           </>
         ) : (
@@ -32,6 +35,8 @@ export default function App() {
             content={study || ''}
             streaming={streaming}
             onReset={() => { setStudy(null); setStreaming(false); setError(null) }}
+            enlarged={enlarged}
+            onToggleEnlarge={() => setEnlarged(e => !e)}
           />
         )}
       </main>
