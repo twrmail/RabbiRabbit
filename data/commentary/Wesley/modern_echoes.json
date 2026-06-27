@@ -1,0 +1,571 @@
+{
+  "name": "HymnTrails Modern Echo Database",
+  "description": "Verified data for the contemporary (and occasionally older) songs used as 'Modern Echo' pairings throughout hymns.json. Exists to replace unverified AI recall with stored, checkable excerpts and connection notes at generation time, the same evidentiary standard applied to the rest of HymnTrails' data.",
+  "lyric_policy": "Identical to hymns.json: full text only for confirmed public domain (pre-1929) entries; short excerpt (<15 words) plus lyrics_link otherwise.",
+  "note_on_connections": "The `connection_note` field here is a general description of why a song functions as an echo. The specific, hymn-by-hymn pairing rationale remains in each hymn's own `modern_echo.connection` field in hymns.json — this file supplies verified lyric data to support those pairings, not replace them.",
+  "count": 57,
+  "echoes": [
+    {
+      "id": "echo-001",
+      "title": "Christ the Lord Is Risen Today",
+      "artist": "Charles Wesley",
+      "year": 1739,
+      "public_domain": true,
+      "full_text": "Christ the Lord is risen today, Alleluia! Sons of men and angels say, Alleluia!",
+      "connection_note": "Wesley's Easter processional hymn; see hymn-026 for full historical notes."
+    },
+    {
+      "id": "echo-002",
+      "title": "My Hope Is Built (The Solid Rock)",
+      "artist": "Edward Mote",
+      "year": 1834,
+      "public_domain": true,
+      "full_text": "My hope is built on nothing less than Jesus' blood and righteousness; I dare not trust the sweetest frame, but wholly lean on Jesus' name.",
+      "connection_note": "Mote reportedly wrote the chorus while walking to work, finishing the rest of the hymn after visiting a dying parishioner the same evening. Hillsong's 'Cornerstone' (2012) is a direct, acknowledged update of this hymn."
+    },
+    {
+      "id": "echo-003",
+      "title": "Crown Him with Many Crowns",
+      "artist": "Matthew Bridges & Godfrey Thring",
+      "year": 1851,
+      "public_domain": true,
+      "full_text": "Crown him with many crowns, the Lamb upon his throne; hark how the heavenly anthem drowns all music but its own.",
+      "connection_note": "Combines two separately written hymn texts (Bridges, then expanded by Thring) into a single coronation hymn for Christ, drawing on Revelation's throne-room imagery."
+    },
+    {
+      "id": "echo-004",
+      "title": "The Church's One Foundation",
+      "artist": "Samuel John Stone",
+      "year": 1866,
+      "public_domain": true,
+      "full_text": "The Church's one foundation is Jesus Christ her Lord; she is His new creation by water and the Word.",
+      "connection_note": "Written amid controversy over biblical authority in the Church of England; see hymn-030 for full historical notes."
+    },
+    {
+      "id": "echo-005",
+      "title": "It Is Well with My Soul",
+      "artist": "Horatio Spafford",
+      "year": 1873,
+      "public_domain": true,
+      "full_text": "When peace like a river attendeth my way, when sorrows like sea billows roll; whatever my lot, thou hast taught me to say, it is well, it is well with my soul.",
+      "connection_note": "Written after the loss of Spafford's four daughters at sea; see hymn-012 for full historical notes."
+    },
+    {
+      "id": "echo-006",
+      "title": "Wade in the Water",
+      "artist": "Traditional African American Spiritual",
+      "year": 1901,
+      "public_domain": true,
+      "full_text": "Wade in the water, wade in the water, children, wade in the water, God's gonna trouble the water.",
+      "connection_note": "Carries layered meaning of Red Sea deliverance and coded Underground Railroad instruction; see hymn-015 for full historical notes."
+    },
+    {
+      "id": "echo-007",
+      "title": "Be Thou My Vision",
+      "artist": "Ancient Irish, trans. Eleanor Hull",
+      "year": 1905,
+      "public_domain": true,
+      "full_text": "Be thou my vision, O Lord of my heart; naught be all else to me, save that thou art.",
+      "connection_note": "Translated from an Old Irish poem possibly dating to the early medieval period; see hymn-014 for full historical notes."
+    },
+    {
+      "id": "echo-008",
+      "title": "Great Is Thy Faithfulness",
+      "artist": "Thomas Chisholm",
+      "year": 1923,
+      "public_domain": true,
+      "full_text": "Great is thy faithfulness, O God my Father, there is no shadow of turning with thee.",
+      "connection_note": "A direct paraphrase of Lamentations 3:22-23; see hymn-013 for full historical notes."
+    },
+    {
+      "id": "echo-009",
+      "title": "Shine",
+      "artist": "Newsboys",
+      "year": 1994,
+      "public_domain": false,
+      "excerpt": "We are the light of the world, let your light so shine",
+      "lyrics_link": "https://www.google.com/search?q=Shine+Newsboys+lyrics",
+      "connection_note": "A direct restatement of Matthew 5:14-16's command not to hide one's light."
+    },
+    {
+      "id": "echo-010",
+      "title": "I Can Only Imagine",
+      "artist": "MercyMe",
+      "year": 1999,
+      "public_domain": false,
+      "excerpt": "Surrounded by your glory, what will my heart feel",
+      "lyrics_link": "https://www.google.com/search?q=I+Can+Only+Imagine+MercyMe+lyrics",
+      "connection_note": "Written by Bart Millard after his father's death, imagining unmediated encounter with Christ in glory."
+    },
+    {
+      "id": "echo-011",
+      "title": "The Heart of Worship",
+      "artist": "Matt Redman",
+      "year": 1999,
+      "public_domain": false,
+      "excerpt": "I'm coming back to the heart of worship",
+      "lyrics_link": "https://www.google.com/search?q=The+Heart+of+Worship+Matt+Redman+lyrics",
+      "connection_note": "Written after a season Redman's church deliberately paused sung worship to rediscover its substance apart from performance."
+    },
+    {
+      "id": "echo-012",
+      "title": "In Christ Alone",
+      "artist": "Keith Getty & Stuart Townend",
+      "year": 2001,
+      "public_domain": false,
+      "excerpt": "In Christ alone my hope is found",
+      "lyrics_link": "https://www.google.com/search?q=In+Christ+Alone+Getty+Townend+lyrics",
+      "connection_note": "See hymn-019 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-013",
+      "title": "Blessed Be Your Name",
+      "artist": "Matt Redman",
+      "year": 2002,
+      "public_domain": false,
+      "excerpt": "Blessed be your name when I'm found in the desert place",
+      "lyrics_link": "https://www.google.com/search?q=Blessed+Be+Your+Name+Matt+Redman+lyrics",
+      "connection_note": "Draws on Job's worship in the midst of loss, insisting praise is not contingent on circumstance."
+    },
+    {
+      "id": "echo-014",
+      "title": "How Great Is Our God",
+      "artist": "Chris Tomlin",
+      "year": 2004,
+      "public_domain": false,
+      "excerpt": "The splendor of a King clothed in majesty, let all the earth rejoice",
+      "lyrics_link": "https://www.google.com/search?q=How+Great+Is+Our+God+Chris+Tomlin+lyrics",
+      "connection_note": "A contemporary companion to 'How Great Thou Art,' moving from creation's vastness to the Creator's greatness."
+    },
+    {
+      "id": "echo-015",
+      "title": "Labor Room",
+      "artist": "Andrew Peterson",
+      "year": 2004,
+      "public_domain": false,
+      "excerpt": "Labor of pushing, labor of birth, labor of a Father",
+      "lyrics_link": "https://www.google.com/search?q=Labor+Room+Andrew+Peterson+lyrics",
+      "connection_note": "Insists on the Incarnation's physical, costly reality rather than abstracting Christmas into pure sentiment."
+    },
+    {
+      "id": "echo-016",
+      "title": "Praise You in This Storm",
+      "artist": "Casting Crowns",
+      "year": 2005,
+      "public_domain": false,
+      "excerpt": "I was sure by now, God, that you would have reached down",
+      "lyrics_link": "https://www.google.com/search?q=Praise+You+in+This+Storm+Casting+Crowns+lyrics",
+      "connection_note": "Names disappointment with God's apparent inaction honestly before choosing praise in spite of it."
+    },
+    {
+      "id": "echo-017",
+      "title": "Same Power",
+      "artist": "Jeremy Camp",
+      "year": 2011,
+      "public_domain": false,
+      "excerpt": "The same power that conquered the grave lives in me",
+      "lyrics_link": "https://www.google.com/search?q=Same+Power+Jeremy+Camp+lyrics",
+      "connection_note": "Applies resurrection power directly to present struggle, not only future hope."
+    },
+    {
+      "id": "echo-018",
+      "title": "10,000 Reasons (Bless the Lord)",
+      "artist": "Matt Redman",
+      "year": 2011,
+      "public_domain": false,
+      "excerpt": "Bless the Lord, O my soul, O my soul, worship his holy name",
+      "lyrics_link": "https://www.google.com/search?q=10000+Reasons+Bless+the+Lord+Matt+Redman+lyrics",
+      "connection_note": "See hymn-059 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-019",
+      "title": "Holy Spirit",
+      "artist": "Francesca Battistelli",
+      "year": 2011,
+      "public_domain": false,
+      "excerpt": "Let us become more aware of your presence",
+      "lyrics_link": "https://www.google.com/search?q=Holy+Spirit+Francesca+Battistelli+lyrics",
+      "connection_note": "A prayer for the Spirit's felt presence to occupy the inner life, not remain at a distance."
+    },
+    {
+      "id": "echo-020",
+      "title": "Cornerstone",
+      "artist": "Hillsong Worship",
+      "year": 2012,
+      "public_domain": false,
+      "excerpt": "Christ alone, cornerstone, weak made strong in the Savior's love",
+      "lyrics_link": "https://www.google.com/search?q=Cornerstone+Hillsong+Worship+lyrics",
+      "connection_note": "See hymn-060 — this song is itself a full hymn entry in the main database, built directly on Edward Mote's 1834 hymn."
+    },
+    {
+      "id": "echo-021",
+      "title": "Man of Sorrows",
+      "artist": "Hillsong Worship",
+      "year": 2013,
+      "public_domain": false,
+      "excerpt": "The sin of man and wrath of God has been on Jesus laid",
+      "lyrics_link": "https://www.google.com/search?q=Man+of+Sorrows+Hillsong+Worship+lyrics",
+      "connection_note": "Refuses to look away from the brutality of the cross before arriving at its meaning, drawing its title from Isaiah 53."
+    },
+    {
+      "id": "echo-022",
+      "title": "Good to Me",
+      "artist": "Audrey Assad",
+      "year": 2013,
+      "public_domain": false,
+      "excerpt": "You're my rock, my strength in every season",
+      "lyrics_link": "https://www.google.com/search?q=Good+to+Me+Audrey+Assad+lyrics",
+      "connection_note": "Echoes Psalm 23's shepherd imagery through personal weakness and need."
+    },
+    {
+      "id": "echo-023",
+      "title": "Faithful",
+      "artist": "Brandon Heath",
+      "year": 2013,
+      "public_domain": false,
+      "excerpt": "He has always been faithful to me",
+      "lyrics_link": "https://www.google.com/search?q=Faithful+Brandon+Heath+lyrics",
+      "connection_note": "Anchors present trust in God's unbroken track record rather than present circumstance."
+    },
+    {
+      "id": "echo-024",
+      "title": "Jesus Paid It All",
+      "artist": "Kristian Stanfill (Passion)",
+      "year": 2013,
+      "public_domain": false,
+      "excerpt": "Sin had left a crimson stain, he washed it white as snow",
+      "lyrics_link": "https://www.google.com/search?q=Jesus+Paid+It+All+Kristian+Stanfill+Passion+lyrics",
+      "connection_note": "A contemporary re-recording centered entirely on substitutionary atonement."
+    },
+    {
+      "id": "echo-025",
+      "title": "Good Good Father",
+      "artist": "Chris Tomlin & Pat Barrett",
+      "year": 2014,
+      "public_domain": false,
+      "excerpt": "You're a good good Father, it's who you are",
+      "lyrics_link": "https://www.google.com/search?q=Good+Good+Father+Chris+Tomlin+Pat+Barrett+lyrics",
+      "connection_note": "Frames ordinary daily life as an opportunity to encounter God's character freshly."
+    },
+    {
+      "id": "echo-026",
+      "title": "Send Me",
+      "artist": "Aaron Niequist & Corey Voss",
+      "year": 2014,
+      "public_domain": false,
+      "excerpt": "Here I am, send me, here I am, send me",
+      "lyrics_link": "https://www.google.com/search?q=Send+Me+Aaron+Niequist+Corey+Voss+lyrics",
+      "connection_note": "Picks up Isaiah 6:8's call narrative directly, framing willingness to be sent as the response to encountering God's holiness."
+    },
+    {
+      "id": "echo-027",
+      "title": "Forever (We Sing Hallelujah)",
+      "artist": "Kari Jobe",
+      "year": 2014,
+      "public_domain": false,
+      "excerpt": "Forever, he is risen, he is risen, and he reigns",
+      "lyrics_link": "https://www.google.com/search?q=Forever+We+Sing+Hallelujah+Kari+Jobe+lyrics",
+      "connection_note": "Reaches for sustained, repeated praise language to describe a victory too large for ordinary description."
+    },
+    {
+      "id": "echo-028",
+      "title": "No Longer Slaves",
+      "artist": "Bethel Music",
+      "year": 2014,
+      "public_domain": false,
+      "excerpt": "I'm no longer a slave to fear, I am a child of God",
+      "lyrics_link": "https://www.google.com/search?q=No+Longer+Slaves+Bethel+Music+lyrics",
+      "connection_note": "Declares fearlessness grounded in adopted identity rather than absence of real threat."
+    },
+    {
+      "id": "echo-029",
+      "title": "Come As You Are",
+      "artist": "Crowder",
+      "year": 2014,
+      "public_domain": false,
+      "excerpt": "Come out of sadness from wherever you've been",
+      "lyrics_link": "https://www.google.com/search?q=Come+As+You+Are+Crowder+lyrics",
+      "connection_note": "Removes preconditions for approaching God, extending invitation to the spiritually wandering or weary."
+    },
+    {
+      "id": "echo-030",
+      "title": "Peace Be Still",
+      "artist": "Lauren Daigle",
+      "year": 2015,
+      "public_domain": false,
+      "excerpt": "From the eye of the storm, you are sovereign over it all",
+      "lyrics_link": "https://www.google.com/search?q=Peace+Be+Still+Lauren+Daigle+lyrics",
+      "connection_note": "Speaks peace directly into named storms rather than around them, drawing on Jesus calming the sea."
+    },
+    {
+      "id": "echo-031",
+      "title": "Fix My Eyes",
+      "artist": "For King & Country",
+      "year": 2015,
+      "public_domain": false,
+      "excerpt": "I'm gonna fix my eyes on you, on you",
+      "lyrics_link": "https://www.google.com/search?q=Fix+My+Eyes+For+King+and+Country+lyrics",
+      "connection_note": "Shares both title and central image with 'Turn Your Eyes upon Jesus,' making redirected attention the whole engine of spiritual change."
+    },
+    {
+      "id": "echo-032",
+      "title": "Spirit Lead Me",
+      "artist": "Michael Ketterer / Influence Music",
+      "year": 2015,
+      "public_domain": false,
+      "excerpt": "Spirit lead me where my trust is without borders",
+      "lyrics_link": "https://www.google.com/search?q=Spirit+Lead+Me+Michael+Ketterer+Influence+Music+lyrics",
+      "connection_note": "Frames the Spirit's work as something actively yielded to, echoing 'melt me, mold me' language from older Spirit hymns."
+    },
+    {
+      "id": "echo-033",
+      "title": "The Lion and the Lamb",
+      "artist": "Leeland / Bethel Music",
+      "year": 2015,
+      "public_domain": false,
+      "excerpt": "Our God is the Lion, the Lion of Judah",
+      "lyrics_link": "https://www.google.com/search?q=The+Lion+and+the+Lamb+Leeland+Bethel+Music+lyrics",
+      "connection_note": "Grounds courage in God's character, holding strength and gentleness together from Revelation 5's throne-room vision."
+    },
+    {
+      "id": "echo-034",
+      "title": "O Praise the Name (Anástasis)",
+      "artist": "Hillsong Worship",
+      "year": 2015,
+      "public_domain": false,
+      "excerpt": "I was once a slave to sin, but now I have been set free",
+      "lyrics_link": "https://www.google.com/search?q=O+Praise+the+Name+Anastasis+Hillsong+Worship+lyrics",
+      "connection_note": "Moves through crucifixion, burial, and resurrection in sequence, landing on worship rather than grief."
+    },
+    {
+      "id": "echo-035",
+      "title": "What A Beautiful Name",
+      "artist": "Hillsong Worship",
+      "year": 2016,
+      "public_domain": false,
+      "excerpt": "What a beautiful name it is, the name of Jesus Christ my King",
+      "lyrics_link": "https://www.google.com/search?q=What+a+Beautiful+Name+Hillsong+Worship+lyrics",
+      "connection_note": "See hymn-061 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-036",
+      "title": "I Surrender",
+      "artist": "Hillsong Worship / Jenn Johnson",
+      "year": 2016,
+      "public_domain": false,
+      "excerpt": "I surrender, I surrender, every part of me surrenders",
+      "lyrics_link": "https://www.google.com/search?q=I+Surrender+Hillsong+Worship+Jenn+Johnson+lyrics",
+      "connection_note": "Moves through surrender as a deliberate, itemized act rather than a vague feeling."
+    },
+    {
+      "id": "echo-037",
+      "title": "Way Maker",
+      "artist": "Sinach",
+      "year": 2016,
+      "public_domain": false,
+      "excerpt": "You are here, moving in our midst, way maker, miracle worker",
+      "lyrics_link": "https://www.google.com/search?q=Way+Maker+Sinach+lyrics",
+      "connection_note": "See hymn-063 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-038",
+      "title": "Glorious Day",
+      "artist": "Passion / Kristian Stanfill",
+      "year": 2017,
+      "public_domain": false,
+      "excerpt": "I needed you, I needed someone to wash away my sin",
+      "lyrics_link": "https://www.google.com/search?q=Glorious+Day+Passion+Kristian+Stanfill+lyrics",
+      "connection_note": "Treats Christ's victory as too large for ordinary sentence structure, reaching for sustained praise."
+    },
+    {
+      "id": "echo-039",
+      "title": "Even If",
+      "artist": "MercyMe",
+      "year": 2017,
+      "public_domain": false,
+      "excerpt": "Even if the healing doesn't come, I will still say you are good",
+      "lyrics_link": "https://www.google.com/search?q=Even+If+MercyMe+lyrics",
+      "connection_note": "Holds friendship with Christ and unresolved hardship together honestly, without forcing premature resolution."
+    },
+    {
+      "id": "echo-040",
+      "title": "Reckless Love",
+      "artist": "Cory Asbury",
+      "year": 2017,
+      "public_domain": false,
+      "excerpt": "He chases me down, fights till I'm found, leaves the ninety-nine",
+      "lyrics_link": "https://www.google.com/search?q=Reckless+Love+Cory+Asbury+lyrics",
+      "connection_note": "Describes grace as disproportionate to merit, drawing on the parable of the lost sheep."
+    },
+    {
+      "id": "echo-041",
+      "title": "Build My Life",
+      "artist": "Pat Barrett / Housefires",
+      "year": 2017,
+      "public_domain": false,
+      "excerpt": "Worthy of every breath we could ever breathe",
+      "lyrics_link": "https://www.google.com/search?q=Build+My+Life+Pat+Barrett+Housefires+lyrics",
+      "connection_note": "See hymn-064 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-042",
+      "title": "One Love",
+      "artist": "TobyMac",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "We've got one love, that's all we need",
+      "lyrics_link": "https://www.google.com/search?q=One+Love+TobyMac+lyrics",
+      "connection_note": "Makes love the central, visible evidence of authentic Christian community."
+    },
+    {
+      "id": "echo-043",
+      "title": "You Say",
+      "artist": "Lauren Daigle",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "You say I am loved when I can't feel a thing",
+      "lyrics_link": "https://www.google.com/search?q=You+Say+Lauren+Daigle+lyrics",
+      "connection_note": "Counters discouragement with declared identity and worth rather than circumstance-based comfort."
+    },
+    {
+      "id": "echo-044",
+      "title": "Living Hope",
+      "artist": "Phil Wickham",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "Death has lost its grip on me, you have broken every chain",
+      "lyrics_link": "https://www.google.com/search?q=Living+Hope+Phil+Wickham+lyrics",
+      "connection_note": "See hymn-065 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-045",
+      "title": "Yet Not I But Through Christ in Me",
+      "artist": "CityAlight",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "What gift of grace is Jesus my redeemer",
+      "lyrics_link": "https://www.google.com/search?q=Yet+Not+I+But+Through+Christ+in+Me+CityAlight+lyrics",
+      "connection_note": "See hymn-066 — this song is itself a full hymn entry in the main database, a sustained meditation on Galatians 2:20."
+    },
+    {
+      "id": "echo-046",
+      "title": "Goodness of God",
+      "artist": "Bethel Music",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "I love you Lord, oh your mercy never fails me",
+      "lyrics_link": "https://www.google.com/search?q=Goodness+of+God+Bethel+Music+lyrics",
+      "connection_note": "See hymn-062 — this song is itself a full hymn entry in the main database."
+    },
+    {
+      "id": "echo-047",
+      "title": "Yes I Will",
+      "artist": "Vertical Worship",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "I count it all as joy, I count it all as joy",
+      "lyrics_link": "https://www.google.com/search?q=Yes+I+Will+Vertical+Worship+lyrics",
+      "connection_note": "Sustains confident, repeated declaration in the face of ongoing waiting."
+    },
+    {
+      "id": "echo-048",
+      "title": "Heal Our Land",
+      "artist": "Travis Greene",
+      "year": 2018,
+      "public_domain": false,
+      "excerpt": "If my people will humble themselves and pray",
+      "lyrics_link": "https://www.google.com/search?q=Heal+Our+Land+Travis+Greene+lyrics",
+      "connection_note": "Applies 2 Chronicles 7:14's healing promise directly to present communal brokenness."
+    },
+    {
+      "id": "echo-049",
+      "title": "Raise a Hallelujah",
+      "artist": "Bethel Music",
+      "year": 2019,
+      "public_domain": false,
+      "excerpt": "I raise a hallelujah in the presence of my enemies",
+      "lyrics_link": "https://www.google.com/search?q=Raise+a+Hallelujah+Bethel+Music+lyrics",
+      "connection_note": "Uses repeated imperative praise as the entire structural engine of the song."
+    },
+    {
+      "id": "echo-050",
+      "title": "New Every Morning",
+      "artist": "Vertical Worship",
+      "year": 2019,
+      "public_domain": false,
+      "excerpt": "Your mercy is new every morning",
+      "lyrics_link": "https://www.google.com/search?q=New+Every+Morning+Vertical+Worship+lyrics",
+      "connection_note": "Draws on Lamentations 3's principle that mercy is renewed daily, not granted once for all of life in advance."
+    },
+    {
+      "id": "echo-051",
+      "title": "King of Kings",
+      "artist": "Hillsong Worship",
+      "year": 2019,
+      "public_domain": false,
+      "excerpt": "Praise the Father, praise the Son, praise the Spirit, three in one",
+      "lyrics_link": "https://www.google.com/search?q=King+of+Kings+Hillsong+Worship+lyrics",
+      "connection_note": "Traces a king's reign extending to the whole world, filling in the New Testament fulfillment of Old Testament royal Psalms."
+    },
+    {
+      "id": "echo-052",
+      "title": "Search My Heart",
+      "artist": "Bethel Music",
+      "year": 2020,
+      "public_domain": false,
+      "excerpt": "Search my heart, try my mind, see if there's an offense in me",
+      "lyrics_link": "https://www.google.com/search?q=Search+My+Heart+Bethel+Music+lyrics",
+      "connection_note": "Asks God to do the deep internal work the believer cannot do alone, echoing Psalm 139's closing prayer."
+    },
+    {
+      "id": "echo-053",
+      "title": "At the Table",
+      "artist": "Josh Baldwin / Bethel Music",
+      "year": 2020,
+      "public_domain": false,
+      "excerpt": "There's a place for you at the table",
+      "lyrics_link": "https://www.google.com/search?q=At+the+Table+Josh+Baldwin+Bethel+Music+lyrics",
+      "connection_note": "Centers communion as an act of humble gathering before God and one another."
+    },
+    {
+      "id": "echo-054",
+      "title": "Breathe",
+      "artist": "Maverick City Music",
+      "year": 2021,
+      "public_domain": false,
+      "excerpt": "Breathe on me, breath of God",
+      "lyrics_link": "https://www.google.com/search?q=Breathe+Maverick+City+Music+lyrics",
+      "connection_note": "Nearly identical request to Edwin Hatch's 1878 hymn 'Breathe on Me, Breath of God,' separated by over a century but asking the same thing."
+    },
+    {
+      "id": "echo-055",
+      "title": "The War Inside",
+      "artist": "Ruth (Ruth Padilla)",
+      "year": 2021,
+      "public_domain": false,
+      "excerpt": "In the quiet, you meet me there",
+      "lyrics_link": "https://www.google.com/search?q=The+War+Inside+Ruth+Padilla+lyrics",
+      "connection_note": "Frames turning to God as the necessary escape from internal noise rather than an occasional religious obligation."
+    },
+    {
+      "id": "echo-056",
+      "title": "Holy Forever",
+      "artist": "CeCe Winans / Brandon Lake",
+      "year": 2021,
+      "public_domain": false,
+      "excerpt": "The same God that's never failed, won't start failing now",
+      "lyrics_link": "https://www.google.com/search?q=Holy+Forever+CeCe+Winans+Brandon+Lake+lyrics",
+      "connection_note": "Draws directly from Revelation 4's throne-room vision, structuring the song around unceasing 'holy' worship."
+    },
+    {
+      "id": "echo-057",
+      "title": "Same God",
+      "artist": "Elevation Worship",
+      "year": 2021,
+      "public_domain": false,
+      "excerpt": "The same God that's never failed me yet",
+      "lyrics_link": "https://www.google.com/search?q=Same+God+Elevation+Worship+lyrics",
+      "connection_note": "Insists God's power demonstrated to others in Scripture is equally available now."
+    }
+  ]
+}
