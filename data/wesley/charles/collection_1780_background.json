@@ -1,0 +1,137 @@
+{
+  "id": "collection_1780_background",
+  "title": "A Brief Background to the 1876 Hymn-Book",
+  "subtitle": "The story of the 1780 Collection of Hymns for the Use of the People Called Methodists",
+  "author": "Rev. Wilfred Little",
+  "source": "CCEL — https://www.ccel.org/w/wesley/hymn/jwg3000.html",
+  "license": "Public domain",
+  "tags": ["hymnal history", "1780 collection", "Methodist hymnody", "Charles Wesley", "John Wesley", "practical divinity"],
+  "worker_summary": "The 1780 Collection is 525 hymns arranged not by occasion but by the stages of Christian experience — from unconverted sinner through repentance, justification, sanctification, to glory. Wesley called it 'a little body of experimental and practical divinity.' The arrangement itself is Wesley's soteriology made singable. The vast majority of hymns were written by Charles Wesley.",
+  "key_facts": {
+    "published": 1780,
+    "total_hymns": 525,
+    "wesleys_description": "a little body of experimental and practical divinity declaring the heights and depths of religion",
+    "arrangement_principle": "arranged by the experience of the Christian life, not by occasion or alphabetical order",
+    "charles_wesley_hymns": "the great majority — all but about 40 of the 525",
+    "john_wesley_originals": "approximately 16, attributed by Henry Bett working from literary criteria",
+    "other_contributors": "Isaac Watts (7), Henry More (2), George Herbert (1), Samuel Wesley Sr (1), Samuel Wesley Jr (1)",
+    "translations_by_john": "19 from German, 1 from Spanish, 1 from French",
+    "editions_supervised_by_wesley": [1781, 1782, 1784, 1788, 1791]
+  },
+  "publication_history": [
+    {
+      "year": 1737,
+      "title": "A Collection of Psalms and Hymns",
+      "note": "Printed in Charles-Town, Georgia — Wesley's first hymn collection, for his Georgia congregations"
+    },
+    {
+      "year": 1738,
+      "title": "A Collection of Psalms and Hymns (second)",
+      "note": "Invoiced on May 24, 1738 — the very day of John's Aldersgate experience"
+    },
+    {
+      "year": 1739,
+      "title": "Hymns and Sacred Poems",
+      "note": "Published jointly by John and Charles — the source material for many later collections"
+    },
+    {
+      "year": 1741,
+      "title": "Psalms and Hymns",
+      "note": "Passed through many editions; enlarged by Dr. Coke, officially commended by Conference 1816 for morning worship"
+    },
+    {
+      "year": 1753,
+      "title": "Hymns and Spiritual Songs Intended for the Use of Real Christians of all Denominations",
+      "note": "Drawn entirely from the 1739-1742 joint publications. Over thirty editions."
+    },
+    {
+      "year": 1761,
+      "title": "Select Hymns with Tunes Annext",
+      "note": "Enlarged 1765. Contained 'some of the best hymns we have printed.' First to provide tunes — Sacred Melody."
+    },
+    {
+      "year": 1780,
+      "title": "A Collection of Hymns for the Use of the People Called Methodists",
+      "note": "The definitive collection. 525 hymns. Called by Wesley 'a little body of experimental and practical divinity.' Arranged by the stages of Christian experience.",
+      "definitive": true
+    },
+    {
+      "year": 1785,
+      "title": "A Pocket Hymn Book for the Use of Christians of all Denominations",
+      "note": "220 hymns with tunes. Adhered to the subject arrangement of 1780."
+    },
+    {
+      "year": 1787,
+      "title": "A Pocket Hymn Book (enlarged)",
+      "note": "250 hymns. Last collection supervised by Wesley before his death in 1791."
+    },
+    {
+      "year": 1876,
+      "title": "The 1876 Hymnal (with New Supplement)",
+      "note": "Conference appointed committee 1874. Retained the 1780 Standard Hymn Book virtually intact, added New Supplement of 487 hymns drawing on the great hymns of the centuries."
+    }
+  ],
+  "structure_of_1780": {
+    "note": "The arrangement is Wesley's soteriology organized as a hymnal — a complete account of salvation from first awakening to final glory, with a section for the Methodist society meeting at the end.",
+    "parts": [
+      {
+        "part": "Part I",
+        "title": "Introductory Hymns",
+        "sections": [
+          "Exhorting Sinners to return to God (1-11)",
+          "Describing: The Pleasantness of Religion (12-21)",
+          "Describing: The Goodness of God (22-40)",
+          "Describing: Death (41-53)",
+          "Describing: Judgment (54-66)",
+          "Describing: Heaven (67-80)",
+          "Hell (80)",
+          "Praying for a Blessing (81-90)"
+        ]
+      },
+      {
+        "part": "Part II",
+        "title": "Convincing",
+        "sections": [
+          "Describing Formal Religion (91-94)",
+          "Inward Religion (95-98)"
+        ]
+      },
+      {
+        "part": "Part III",
+        "title": "Praying and Mourning",
+        "sections": [
+          "Praying for Repentance (99-107)",
+          "For Mourners convinced of Sin (108-167)",
+          "For Persons convinced of Backsliding (168-181)",
+          "For Backsliders recovered (182-188)"
+        ]
+      },
+      {
+        "part": "Part IV",
+        "title": "For Believers",
+        "sections": [
+          "Rejoicing (189-264)",
+          "Fighting (265-290)",
+          "Praying (291-304)",
+          "Watching (305-320)",
+          "Working (321-328)",
+          "Suffering (329-339)",
+          "Seeking for full redemption (340-417)",
+          "Saved (418-440)",
+          "Interceding for the World (441-477)"
+        ]
+      },
+      {
+        "part": "Part V",
+        "title": "For the Society",
+        "sections": [
+          "Meeting (478-487)",
+          "Giving Thanks (488-500)",
+          "Praying (501-532)",
+          "Parting (533-539)"
+        ]
+      }
+    ]
+  },
+  "full_text": "For an understanding of the contribution of Methodism to Christian hymnody an acquaintance with the book published by John Wesley, 1780, entitled A Collection of Hymns for the Use of the People called Methodists is essential.\n\nPreviously he had published A Collection of Psalms and Hymns, 1737, printed in Charles-Town, for use by the congregations in his charge in Georgia; a second with that title on return to England, invoiced on that important day 24th May, 1738 and yet another Psalms and Hymns, 1741, which passed through many editions and, enlarged by Dr. Coke, was officially commended by the conference of 1816 to be used at morning worship. In 1753 he published Hymns and Spiritual Songs Intended for the Use of Real Christians of all Denominations, drawn entirely from Hymns and Sacred Poems, published jointly by him and his brother Charles, 1739, 1740 and 1742. This book achieved over thirty editions. His Select Hymns with Tunes Annext, 1761, enlarged in 1765, contained, as he wrote, 'some of the best hymns we have printed' and provided a music section, entitled Sacred Melody, which provided a tune for each hymn, indicating John Wesley's care for standards in worship.\n\nBut the 1780 Collection is described by Wesley in the Preface as a 'little body of experimental and practical divinity' declaring 'the heights and depths of religion'.\n\nOf this selection of 525 hymns, seven had been written by Isaac Watts, two by Henry More and one each by George Herbert, his father, Samuel Wesley, Rector of Epworth and the Rev. Samuel Wesley, his elder brother, schoolmaster. Nineteen were his own translations from the German hymns, one from Spanish and one, certainly, at least, edited by him, from the French. The number of original hymns contributed by John is still under debate. Dr. Henry Bett, The Hymns of Methodism, 1945, working from literary criteria, attributed sixteen to him. The rest were undoubtedly by Charles Wesley.\n\nHe later published two smaller selections, 1785 (220 hymns) and 1787 (250) under the title A Pocket Hymn Book for the Use of Christians of all Denominations; both had tunes assigned and both adhered to the subject arrangement and aims of the 1780 book.\n\nEditions supervised by Wesley and all, to some extent, revised, appear in 1781, 1782, 1784, 1788 and 1791, although the last may not have come into circulation until after his death on 2nd March. In one instance only did he make a substitution. At No.411 in the 2nd edition, 1781, he replaced the cento beginning 'Terrible God and true' with the hymn, 'Sinners, the call obey'. The 5th edition, 1786, assigned a tune for each hymn, all except three being taken from his Sacred Harmony, 1780/1, thus indicating that he intended it to be the companion tune book.\n\nFollowing Wesley's death changes were made by the Bookroom. In the edition of 1796 there were nine substitutions, two additions by duplication of numbers, including the hymn by Addison, 'When all thy mercies O my God', and twelve others in a section headed Additional Hymns. Seven of these were taken from the Wesley Tract, Hymns on the Lord's Supper. The changes of 1797 were increased to twenty eight substitutions, twelve additions by duplication of numbers, with twenty five under Additional Hymns. Authors included Addison, Hart, Bakewell and William Cowper. The Conference of 1799 intervened, appointing a committee, Drs. Thomas Coke and Adam Clarke, editor George Storey and Henry Moore, to 'reduce the book to its primitive simplicity as in the 2nd edition' but granting 'discretionary powers' respecting additional hymns. The work was completed in 1803 when all but four of the original hymns were restored and the number of hymns increased to 551.\n\nA revision of 1808 discontinued, except in one instance, the device of duplication of numbers, divided six long hymns into parts, treating each as a separate hymn, providing 561 hymns. Except for the return at No.126 to the original hymn of that number, 'Too strong I was to conquer sin' as in M/1780, this selection remained unchanged for 67 years.\n\nMany Methodist churches used Psalms and Hymns, as enlarged by Dr. Coke for morning worship and there was a desire for a single book. More hymns were required for Occasions and for celebration of the Festivals of the Christian Year. A further requirement was a new copyright on account of piratical editions and these considerations led Conference to appoint Revs. Thomas Jackson and Richard Watson, (later joined by Dr. Jabez Bunting) to submit a fuller selection. The result was a Supplement of two hundred and nine hymns, while leaving the parent book virtually untouched. Published and unpublished poems of Charles Wesley and Isaac Watts were freely drawn upon; fresh contributors included Ken, Merrick, Dryden, Doddridge, Anne Steele, Toplady, Rhodes and Olivers.\n\nA large committee was appointed in 1874 to prepare the revision and enlargement issued in 1876. The Standard Hymn Book was retained in the form Wesley gave it but each hymn was critically compared with its original and forty nine were either omitted or changed in some particulars. The New Supplement of 487 hymns drew upon the great hymns of the centuries, provided one hundred and two metrical versions or paraphrases of the Psalms and a judicious selection from the contemporary hymnody. One hundred and twenty authors or translators contributed. A tune book was issued in which text and music were printed together."
+}
