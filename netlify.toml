@@ -3,6 +3,26 @@
   publish = "dist"
   functions = "netlify/functions"
 
+# PWA files — must come before the catch-all redirect
+[[redirects]]
+  from = "/manifest.json"
+  to = "/manifest.json"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sw.js"
+  to = "/sw.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/icons/*"
+  to = "/icons/:splat"
+  status = 200
+  force = true
+
+# Catch-all for React Router — must be last
 [[redirects]]
   from = "/*"
   to = "/index.html"
