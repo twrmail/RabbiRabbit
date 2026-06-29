@@ -3,12 +3,12 @@ import { generateStudy } from '../lib/generateStudy'
 import FontSizeToggle from './FontSizeToggle'
 
 const STUDY_TYPES = [
+  { value: 'devotional', label: 'Morning Trail', desc: 'A five-minute devotional for the day' },
   { value: 'passage', label: 'Passage Study', desc: 'Verse-by-verse through a text' },
   { value: 'character', label: 'Character Study', desc: 'Deep dive into a biblical figure' },
   { value: 'word', label: 'Word Study', desc: 'Trace a key term through Scripture' },
   { value: 'topical', label: 'Topical Study', desc: 'Explore a theme across the canon' },
   { value: 'book', label: 'Book Overview', desc: 'Survey an entire biblical book' },
-  { value: 'devotional', label: 'Morning Trail', desc: 'A five-minute devotional for the day' },
 ]
 
 const AUDIENCE = [
