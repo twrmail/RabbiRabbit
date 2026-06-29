@@ -3,19 +3,7 @@
   publish = "dist"
   functions = "netlify/functions"
 
-# PWA files — must come before the catch-all redirect
-[[redirects]]
-  from = "/manifest.json"
-  to = "/manifest.json"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/sw.js"
-  to = "/sw.js"
-  status = 200
-  force = true
-
+# Icons folder — serve directly before catch-all
 [[redirects]]
   from = "/icons/*"
   to = "/icons/:splat"
