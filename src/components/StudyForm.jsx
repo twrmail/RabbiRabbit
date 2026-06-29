@@ -8,6 +8,7 @@ const STUDY_TYPES = [
   { value: 'word', label: 'Word Study', desc: 'Trace a key term through Scripture' },
   { value: 'topical', label: 'Topical Study', desc: 'Explore a theme across the canon' },
   { value: 'book', label: 'Book Overview', desc: 'Survey an entire biblical book' },
+  { value: 'devotional', label: 'Morning Trail', desc: 'A five-minute devotional for the day' },
 ]
 
 const AUDIENCE = [
@@ -39,6 +40,7 @@ const PLACEHOLDERS = {
   word: 'e.g. Shalom, Agape, Covenant, Righteousness',
   topical: 'e.g. Forgiveness, Hope, Suffering, Grace',
   book: 'e.g. Jonah, Philippians, Ruth',
+  devotional: 'e.g. Psalm 23, John 1:1-5, Isaiah 40:28-31',
 }
 
 const PRIMARY_LABELS = {
@@ -47,6 +49,7 @@ const PRIMARY_LABELS = {
   word: 'Key Word or Term',
   topical: 'Topic or Theme',
   book: 'Biblical Book',
+  devotional: 'Scripture Passage',
 }
 
 function Label({ children, required }) {
