@@ -40,7 +40,7 @@ const PLACEHOLDERS = {
   word: 'e.g. Shalom, Agape, Covenant, Righteousness',
   topical: 'e.g. Forgiveness, Hope, Suffering, Grace',
   book: 'e.g. Jonah, Philippians, Ruth',
-  devotional: 'e.g. Psalm 23, John 1:1-5, Isaiah 40:28-31',
+  devotional: 'e.g. Psalm 23, Mary Magdalene, Grace, Suffering, John 3:16',
 }
 
 const PRIMARY_LABELS = {
@@ -49,7 +49,7 @@ const PRIMARY_LABELS = {
   word: 'Key Word or Term',
   topical: 'Topic or Theme',
   book: 'Biblical Book',
-  devotional: 'Scripture Passage',
+  devotional: 'Passage, Person, or Theme',
 }
 
 function Label({ children, required }) {
