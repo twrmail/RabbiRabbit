@@ -131,7 +131,7 @@ const LOADING_MESSAGES = [
 ]
 
 export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
-  const [studyType, setStudyType] = useState('passage')
+  const [studyType, setStudyType] = useState('devotional')
   const [primaryInput, setPrimaryInput] = useState('')
   const [additionalVerses, setAdditionalVerses] = useState('')
   const [character, setCharacter] = useState('')
