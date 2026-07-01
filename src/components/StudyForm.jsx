@@ -168,7 +168,7 @@ function CommentariesPanel() {
             fontFamily: 'Inter, sans-serif', fontSize: 11,
             background: 'var(--gold)', color: 'var(--white)',
             borderRadius: 20, padding: '2px 8px', fontWeight: 600,
-          }}>10 sources</span>
+          }}>11 sources</span>
           <span style={{
             color: 'var(--ink-light)', fontSize: 18,
             transform: open ? 'rotate(180deg)' : 'none',
@@ -183,13 +183,13 @@ function CommentariesPanel() {
           <SectionLabel>Protestant commentaries — public domain</SectionLabel>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
             {[
-              ['Matthew Henry',        'Concise Commentary, 1706'],
-              ['Jamieson-Fausset-Brown','JFB Commentary, 1871'],
-              ['Adam Clarke',          'Commentary on the Bible, 1826'],
-              ["Barnes' Notes",        'Notes on the Bible, 1834'],
-              ['John Wesley',          'Explanatory Notes, 1754'],
-              ['Scofield Notes',       'Reference Notes, 1917'],
-              ['Spurgeon',             'Treasury of David, 1885'],
+              ['Matthew Henry',         'Concise Commentary, 1706'],
+              ['Jamieson-Fausset-Brown', 'JFB Commentary, 1871'],
+              ['Adam Clarke',           'Commentary on the Bible, 1826'],
+              ["Barnes' Notes",         'Notes on the Bible, 1834'],
+              ['John Wesley',           'Explanatory Notes, 1754'],
+              ['Scofield Notes',        'Reference Notes, 1917'],
+              ['Spurgeon',              'Treasury of David, 1885'],
             ].map(([name, date]) => (
               <div key={name} style={{
                 background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)',
@@ -199,6 +199,21 @@ function CommentariesPanel() {
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
               </div>
             ))}
+            <div style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px', opacity: 0.55 }}>
+              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>
+                {"Calvin's Commentaries"}
+                <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, color: 'var(--gold)', marginLeft: 6, fontWeight: 400 }}>coming</span>
+              </div>
+              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>1844–1856 translation</div>
+            </div>
+          </div>
+
+          <SectionLabel>Topical reference — public domain</SectionLabel>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
+            <div style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
+              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{"Nave's Topical Bible"}</div>
+              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>5,319 topics · 1896</div>
+            </div>
           </div>
 
           <SectionLabel>Church fathers — 4th–13th century</SectionLabel>
