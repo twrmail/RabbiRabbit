@@ -134,7 +134,7 @@ function Divider({ label }) {
 // ── Commentaries dropdown ────────────────────────────────────────
 
 function CommentariesPanel() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   return (
     <div style={{
       border: '1.5px solid var(--border)', borderRadius: 10,
@@ -359,7 +359,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
 // ── Study Builder (collapsible) ──────────────────────────────────
 
 function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   const [studyType, setStudyType]           = useState('passage')
   const [primaryInput, setPrimaryInput]     = useState('')
   const [additionalVerses, setAdditionalVerses] = useState('')
@@ -435,6 +435,8 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
       {open && (
         <div style={{ borderTop: '1px solid var(--border)', padding: '20px 16px' }}>
+
+          <CommentariesPanel />
 
           <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
             <FontSizeToggle enlarged={enlarged} onToggle={onToggleEnlarge} />
@@ -559,8 +561,6 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
       />
 
       <Divider label="Or build a deeper study" />
-
-      <CommentariesPanel />
 
       <StudyBuilder
         onStudy={onStudy}
