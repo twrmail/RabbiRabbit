@@ -292,6 +292,8 @@ const JESUS_SEEDS = [
   'Jesus and the rich young ruler',
   'Jesus in the synagogue at Nazareth',
   'The birth of Jesus',
+  'Jesus as a boy in the temple',
+  'Jesus and taxes',
   'Jesus and the thief on the cross',
   'Jesus appearing after the resurrection',
   'Jesus and Thomas',
@@ -299,6 +301,14 @@ const JESUS_SEEDS = [
   'Jesus and the sermon on the mount',
   'Jesus and the good Samaritan',
   'Jesus and the lost sheep',
+  'Jesus and the widow of Nain',
+  'Jesus and the ten lepers',
+  'Jesus and the paralyzed man',
+  'Jesus and Legion',
+  'Jesus and the fig tree',
+  'Jesus and Jairus daughter',
+  'Jesus and the vine',
+  'Jesus the good shepherd',
 ]
 
 let seedIndex = Math.floor(Math.random() * JESUS_SEEDS.length)
@@ -392,7 +402,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
             cursor: loading ? 'not-allowed' : 'pointer', whiteSpace: 'nowrap',
           }}
         >
-          {loading ? LOADING_MESSAGES[loadingMsg] : 'Morning Trail'}
+          {loading ? LOADING_MESSAGES[loadingMsg] : 'Go →'}
         </button>
       </div>
     </div>
@@ -576,7 +586,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
               🛡 The Berean's examined guide
             </div>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.6, margin: 0 }}>
-              Every study draws from public domain scholarship: Wesley, Matthew Henry, Clarke, Barnes, JFB, Scofield, Spurgeon, and the Church Fathers. Cross-references from OpenBible.info. Original language notes from Strong's Hebrew and Greek lexicons. RabbiRabbit synthesizes; the commentaries are authoritative. Always verify with your own Bible.
+              Every study draws from public domain scholarship: Wesley, Matthew Henry, Clarke, Barnes, JFB, Scofield, Spurgeon, and the Church Fathers. Topical studies draw from Nave's Topical Bible (1896) — 5,319 topics and verse index. Cross-references from OpenBible.info. Original language notes from Strong's Hebrew and Greek lexicons. RabbiRabbit synthesizes; the commentaries are authoritative. Always verify with your own Bible.
             </p>
           </div>
 
