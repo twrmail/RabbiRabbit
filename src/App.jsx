@@ -2,7 +2,6 @@ import { useState } from 'react'
 import StudyForm from './components/StudyForm'
 import StudyOutput from './components/StudyOutput'
 import Header from './components/Header'
-import Disclaimer from './components/Disclaimer'
 
 export default function App() {
   const [study, setStudy] = useState(null)
@@ -16,7 +15,6 @@ export default function App() {
       <main style={{ flex: 1, maxWidth: 780, margin: '0 auto', width: '100%', padding: '32px 20px 60px' }}>
         {!study && !streaming ? (
           <>
-            <Disclaimer />
             <StudyForm
               onStudy={setStudy}
               onStream={(text) => {
