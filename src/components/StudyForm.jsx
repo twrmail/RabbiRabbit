@@ -268,13 +268,56 @@ function SectionLabel({ children }) {
 
 // ── Morning Trail section ────────────────────────────────────────
 
+const JESUS_SEEDS = [
+  'Jesus',
+  'The Baptism of Jesus',
+  'Jesus in Gethsemane',
+  'The Transfiguration of Jesus',
+  'Jesus and the children',
+  'The Resurrection of Jesus',
+  'Jesus and Nicodemus',
+  'The Triumphal Entry',
+  'Jesus at the Last Supper',
+  'Jesus and Mary Magdalene',
+  'The Temptation of Jesus',
+  'Jesus healing the blind',
+  'Jesus and the woman at the well',
+  'The Crucifixion of Jesus',
+  'Jesus calming the storm',
+  'Jesus feeding the five thousand',
+  'Jesus and Zacchaeus',
+  'Jesus raising Lazarus',
+  'Jesus and the prodigal son',
+  'Jesus washing the disciples feet',
+  'Jesus and the rich young ruler',
+  'Jesus in the synagogue at Nazareth',
+  'The birth of Jesus',
+  'Jesus and the thief on the cross',
+  'Jesus appearing after the resurrection',
+  'Jesus and Thomas',
+  'Jesus and Peter by the sea',
+  'Jesus and the sermon on the mount',
+  'Jesus and the good Samaritan',
+  'Jesus and the lost sheep',
+]
+
+let seedIndex = Math.floor(Math.random() * JESUS_SEEDS.length)
+
+function getNextSeed() {
+  const seed = JESUS_SEEDS[seedIndex]
+  seedIndex = (seedIndex + 1) % JESUS_SEEDS.length
+  return seed
+}
+
 function MorningTrail({ onStream, onStudy, onDone, setError }) {
   const [input, setInput] = useState('')
+  const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
   const [loadingMsg, setLoadingMsg] = useState(0)
 
   const handleMorning = async () => {
-    const subject = input.trim() || 'Jesus'
+    const subject = input.trim() || currentSeed
+    setCurrentSeed(getNextSeed())
     setError(null)
     setLoading(true)
     let msgIndex = 0
@@ -323,14 +366,14 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
         fontFamily: 'Inter, sans-serif', fontSize: 13,
         color: 'rgba(247,242,232,0.65)', marginBottom: 14, lineHeight: 1.6,
       }}>
-        Type anything — a verse, a name, a word. Or leave it as "Jesus" and begin.
+        Type anything — a verse, a name, a word. Or tap Go → for today's seed.
       </div>
       <div style={{ display: 'flex', gap: 8 }}>
         <input
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => { if (e.key === 'Enter') handleMorning() }}
-          placeholder="Jesus"
+          placeholder={currentSeed}
           style={{
             flex: 1, height: 40, padding: '0 12px',
             fontFamily: 'Inter, sans-serif', fontSize: 14,
@@ -435,8 +478,6 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
       {open && (
         <div style={{ borderTop: '1px solid var(--border)', padding: '20px 16px' }}>
-
-          <CommentariesPanel />
 
           <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
             <FontSizeToggle enlarged={enlarged} onToggle={onToggleEnlarge} />
