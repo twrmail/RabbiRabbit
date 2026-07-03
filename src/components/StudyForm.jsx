@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { generateStudy } from '../lib/generateStudy'
 import FontSizeToggle from './FontSizeToggle'
 
@@ -135,7 +135,7 @@ function Divider({ label }) {
 // ── Commentaries dropdown ────────────────────────────────────────
 
 function CommentariesPanel() {
-  const [open, setOpen] = useState(!!(prefilledInput))
+  const [open, setOpen] = useState(false)
   return (
     <div style={{
       border: '1.5px solid var(--border)', borderRadius: 10,
@@ -180,7 +180,6 @@ function CommentariesPanel() {
 
       {open && (
         <div style={{ borderTop: '1px solid var(--border)', padding: '14px 16px' }}>
-
           <SectionLabel>Protestant commentaries — public domain</SectionLabel>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
             {[
@@ -192,10 +191,7 @@ function CommentariesPanel() {
               ['Scofield Notes',        'Reference Notes, 1917'],
               ['Spurgeon',              'Treasury of David, 1885'],
             ].map(([name, date]) => (
-              <div key={name} style={{
-                background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)',
-                borderRadius: 6, padding: '7px 10px',
-              }}>
+              <div key={name} style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{name}</div>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
               </div>
@@ -224,10 +220,7 @@ function CommentariesPanel() {
               ['Chrysostom',     '347–407 AD'],
               ['Thomas Aquinas', '1225–1274 AD'],
             ].map(([name, date]) => (
-              <div key={name} style={{
-                background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)',
-                borderRadius: 6, padding: '7px 10px',
-              }}>
+              <div key={name} style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{name}</div>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
               </div>
@@ -236,7 +229,7 @@ function CommentariesPanel() {
 
           <SectionLabel>Translations</SectionLabel>
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
-            {['World English Bible (WEB)', 'King James Version (KJV)', 'American Standard Version (ASV)'].map(t => (
+            {['World English Bible (WEB)', 'Berean Study Bible (BSB)', 'King James Version (KJV)', 'American Standard Version (ASV)'].map(t => (
               <span key={t} style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 20, padding: '4px 10px', color: 'var(--ink-light)' }}>{t}</span>
             ))}
           </div>
@@ -270,45 +263,25 @@ function SectionLabel({ children }) {
 // ── Morning Trail section ────────────────────────────────────────
 
 const JESUS_SEEDS = [
-  'Jesus',
-  'The Baptism of Jesus',
-  'Jesus in Gethsemane',
-  'The Transfiguration of Jesus',
-  'Jesus and the children',
-  'The Resurrection of Jesus',
-  'Jesus and Nicodemus',
-  'The Triumphal Entry',
-  'Jesus at the Last Supper',
-  'Jesus and Mary Magdalene',
-  'The Temptation of Jesus',
-  'Jesus healing the blind',
-  'Jesus and the woman at the well',
-  'The Crucifixion of Jesus',
-  'Jesus calming the storm',
-  'Jesus feeding the five thousand',
-  'Jesus and Zacchaeus',
-  'Jesus raising Lazarus',
-  'Jesus and the prodigal son',
-  'Jesus washing the disciples feet',
-  'Jesus and the rich young ruler',
-  'Jesus in the synagogue at Nazareth',
-  'The birth of Jesus',
-  'Jesus as a boy in the temple',
-  'Jesus and taxes',
-  'Jesus and the thief on the cross',
-  'Jesus appearing after the resurrection',
-  'Jesus and Thomas',
-  'Jesus and Peter by the sea',
-  'Jesus and the sermon on the mount',
-  'Jesus and the good Samaritan',
-  'Jesus and the lost sheep',
-  'Jesus and the widow of Nain',
-  'Jesus and the ten lepers',
-  'Jesus and the paralyzed man',
-  'Jesus and Legion',
-  'Jesus and the fig tree',
-  'Jesus and Jairus daughter',
-  'Jesus and the vine',
+  'Jesus', 'The Baptism of Jesus', 'Jesus in Gethsemane',
+  'The Transfiguration of Jesus', 'Jesus and the children',
+  'The Resurrection of Jesus', 'Jesus and Nicodemus',
+  'The Triumphal Entry', 'Jesus at the Last Supper',
+  'Jesus and Mary Magdalene', 'The Temptation of Jesus',
+  'Jesus healing the blind', 'Jesus and the woman at the well',
+  'The Crucifixion of Jesus', 'Jesus calming the storm',
+  'Jesus feeding the five thousand', 'Jesus and Zacchaeus',
+  'Jesus raising Lazarus', 'Jesus and the prodigal son',
+  'Jesus washing the disciples feet', 'Jesus and the rich young ruler',
+  'Jesus in the synagogue at Nazareth', 'The birth of Jesus',
+  'Jesus as a boy in the temple', 'Jesus and taxes',
+  'Jesus and the thief on the cross', 'Jesus appearing after the resurrection',
+  'Jesus and Thomas', 'Jesus and Peter by the sea',
+  'Jesus and the sermon on the mount', 'Jesus and the good Samaritan',
+  'Jesus and the lost sheep', 'Jesus and the widow of Nain',
+  'Jesus and the ten lepers', 'Jesus and the paralyzed man',
+  'Jesus and Legion', 'Jesus and the fig tree',
+  'Jesus and Jairus daughter', 'Jesus and the vine',
   'Jesus the good shepherd',
 ]
 
@@ -320,9 +293,9 @@ function getNextSeed() {
   return seed
 }
 
-function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefilledInput }) {
-  const [input, setInput] = useState(prefilledInput || '')
-  const [currentSeed, setCurrentSeed] = useState(() => prefilledInput || JESUS_SEEDS[seedIndex])
+function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
+  const [input, setInput] = useState('')
+  const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
   const [loadingMsg, setLoadingMsg] = useState(0)
 
@@ -361,23 +334,10 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefi
   }
 
   return (
-    <div style={{
-      background: 'var(--navy)', borderRadius: 10,
-      padding: '20px 20px 18px', marginBottom: 10,
-    }}>
-      <div style={{
-        fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600,
-        letterSpacing: '0.14em', textTransform: 'uppercase',
-        color: 'var(--gold)', marginBottom: 6,
-      }}>Morning Trail</div>
-      <div style={{
-        fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 700,
-        color: 'var(--white)', marginBottom: 4, lineHeight: 1.2,
-      }}>Today's five-minute devotional</div>
-      <div style={{
-        fontFamily: 'Inter, sans-serif', fontSize: 13,
-        color: 'rgba(247,242,232,0.65)', marginBottom: 14, lineHeight: 1.6,
-      }}>
+    <div style={{ background: 'var(--navy)', borderRadius: 10, padding: '20px 20px 18px', marginBottom: 10 }}>
+      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 6 }}>Morning Trail</div>
+      <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 700, color: 'var(--white)', marginBottom: 4, lineHeight: 1.2 }}>Today's five-minute devotional</div>
+      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: 'rgba(247,242,232,0.65)', marginBottom: 14, lineHeight: 1.6 }}>
         Type anything — a verse, a name, a word. Or tap Go → for today's seed.
       </div>
       <div style={{ display: 'flex', gap: 8 }}>
@@ -386,25 +346,14 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefi
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => { if (e.key === 'Enter') handleMorning() }}
           placeholder={currentSeed}
-          style={{
-            flex: 1, height: 40, padding: '0 12px',
-            fontFamily: 'Inter, sans-serif', fontSize: 14,
-            color: 'var(--ink)', background: 'var(--white)',
-            border: '1.5px solid var(--border)', borderRadius: 6, outline: 'none',
-          }}
+          style={{ flex: 1, height: 40, padding: '0 12px', fontFamily: 'Inter, sans-serif', fontSize: 14, color: 'var(--ink)', background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 6, outline: 'none' }}
         />
         <button
           onClick={handleMorning}
           disabled={loading}
-          style={{
-            height: 40, padding: '0 18px',
-            background: loading ? 'rgba(196,150,42,0.6)' : 'var(--gold)',
-            color: 'var(--white)', border: 'none', borderRadius: 6,
-            fontFamily: 'Inter, sans-serif', fontSize: 14, fontWeight: 600,
-            cursor: loading ? 'not-allowed' : 'pointer', whiteSpace: 'nowrap',
-          }}
+          style={{ height: 40, padding: '0 18px', background: loading ? 'rgba(196,150,42,0.6)' : 'var(--gold)', color: 'var(--white)', border: 'none', borderRadius: 6, fontFamily: 'Inter, sans-serif', fontSize: 14, fontWeight: 600, cursor: loading ? 'not-allowed' : 'pointer', whiteSpace: 'nowrap' }}
         >
-          {loading ? LOADING_MESSAGES[loadingMsg] : 'Morning Trail'}
+          {loading ? LOADING_MESSAGES[loadingMsg] : 'Go →'}
         </button>
       </div>
     </div>
@@ -413,19 +362,27 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefi
 
 // ── Study Builder (collapsible) ──────────────────────────────────
 
-function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, prefilledInput }) {
-  const [open, setOpen] = useState(!!(prefilledInput))
-  const [studyType, setStudyType]           = useState('passage')
-  const [primaryInput, setPrimaryInput]     = useState(prefilledInput || '')
+function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, trailDestination }) {
+  const [open, setOpen] = useState(false)
+  const [studyType, setStudyType]               = useState('passage')
+  const [primaryInput, setPrimaryInput]         = useState('')
   const [additionalVerses, setAdditionalVerses] = useState('')
-  const [character, setCharacter]           = useState('')
-  const [theme, setTheme]                   = useState('')
-  const [audience, setAudience]             = useState('general')
-  const [translation, setTranslation]       = useState('web')
-  const [sections, setSections]             = useState(['context', 'application', 'discussion'])
-  const [notes, setNotes]                   = useState('')
-  const [loading, setLoading]               = useState(false)
-  const [loadingMsg, setLoadingMsg]         = useState(0)
+  const [character, setCharacter]               = useState('')
+  const [theme, setTheme]                       = useState('')
+  const [audience, setAudience]                 = useState('general')
+  const [translation, setTranslation]           = useState('web')
+  const [sections, setSections]                 = useState(['context', 'application', 'discussion'])
+  const [notes, setNotes]                       = useState('')
+  const [loading, setLoading]                   = useState(false)
+  const [loadingMsg, setLoadingMsg]             = useState(0)
+
+  // All useState above — useEffect after
+  useEffect(() => {
+    if (trailDestination) {
+      setPrimaryInput(trailDestination)
+      setOpen(true)
+    }
+  }, [trailDestination])
 
   const toggleSection = val =>
     setSections(prev => prev.includes(val) ? prev.filter(s => s !== val) : [...prev, val])
@@ -458,39 +415,22 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
   return (
     <div style={{ border: '1.5px solid var(--border)', borderRadius: 10, background: 'var(--white)', overflow: 'hidden' }}>
-
       <button
         onClick={() => setOpen(o => !o)}
-        style={{
-          width: '100%', display: 'flex', justifyContent: 'space-between',
-          alignItems: 'center', padding: '13px 16px',
-          background: 'none', border: 'none', cursor: 'pointer',
-        }}
+        style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '13px 16px', background: 'none', border: 'none', cursor: 'pointer' }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{
-            width: 32, height: 32, borderRadius: 6, background: 'var(--gold-pale)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16,
-          }}>📖</div>
+          <div style={{ width: 32, height: 32, borderRadius: 6, background: 'var(--gold-pale)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>📖</div>
           <div style={{ textAlign: 'left' }}>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 14, fontWeight: 600, color: 'var(--ink)' }}>
-              Study Builder
-            </div>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>
-              Passage · Word · Character · Topical · Book Overview
-            </div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 14, fontWeight: 600, color: 'var(--ink)' }}>Study Builder</div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>Passage · Word · Character · Topical · Book Overview</div>
           </div>
         </div>
-        <span style={{
-          color: 'var(--ink-light)', fontSize: 18,
-          transform: open ? 'rotate(180deg)' : 'none',
-          transition: 'transform 0.2s', display: 'inline-block',
-        }}>⌄</span>
+        <span style={{ color: 'var(--ink-light)', fontSize: 18, transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', display: 'inline-block' }}>⌄</span>
       </button>
 
       {open && (
         <div style={{ borderTop: '1px solid var(--border)', padding: '20px 16px' }}>
-
           <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
             <FontSizeToggle enlarged={enlarged} onToggle={onToggleEnlarge} />
           </div>
@@ -567,23 +507,12 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
           <button
             onClick={handleGenerate}
             disabled={loading}
-            style={{
-              width: '100%', padding: '15px',
-              background: loading ? 'var(--navy-light)' : 'var(--navy)',
-              color: 'var(--white)', border: 'none', borderRadius: 6,
-              fontFamily: 'Inter, sans-serif', fontSize: 15, fontWeight: 600,
-              cursor: loading ? 'not-allowed' : 'pointer', letterSpacing: '0.03em',
-              transition: 'background 0.15s',
-            }}
+            style={{ width: '100%', padding: '15px', background: loading ? 'var(--navy-light)' : 'var(--navy)', color: 'var(--white)', border: 'none', borderRadius: 6, fontFamily: 'Inter, sans-serif', fontSize: 15, fontWeight: 600, cursor: loading ? 'not-allowed' : 'pointer', letterSpacing: '0.03em', transition: 'background 0.15s' }}
           >
             {loading ? LOADING_MESSAGES[loadingMsg] : 'Generate Bible Study →'}
           </button>
 
-          <div style={{
-            marginTop: 18, border: '1.5px solid var(--gold)',
-            borderRadius: 8, padding: '13px 15px',
-            background: 'rgba(196,150,42,0.06)',
-          }}>
+          <div style={{ marginTop: 18, border: '1.5px solid var(--gold)', borderRadius: 8, padding: '13px 15px', background: 'rgba(196,150,42,0.06)' }}>
             <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--gold)', marginBottom: 5 }}>
               🛡 The Berean's examined guide
             </div>
@@ -605,50 +534,39 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
 export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, trailDestination, trailMode, onClearTrail }) {
 
-  // When trail is active and mode is 'conclude', auto-fire a devotional
-  // When mode is 'full', auto-populate StudyBuilder with destination
-  const isTrailActive = !!(trailContext && trailDestination)
   const isConcluding = trailMode === 'conclude'
 
   return (
     <div>
-      {isTrailActive && (
-        <div style={{
-          background: 'var(--gold-pale)', border: '1.5px solid var(--gold)',
-          borderRadius: 10, padding: '16px 20px', marginBottom: 20,
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 4 }}>
-                {isConcluding ? 'Closing the Trail' : 'Trail in Progress'}
-              </div>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontWeight: 700, color: 'var(--navy)', marginBottom: 4 }}>
-                {trailDestination}
-              </div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
-                {isConcluding
-                  ? 'A Morning Trail devotional will close out this study — a final word before the day.'
-                  : 'Your next study opens by picking up the thread. The destination is pre-loaded below.'}
-              </div>
+      {trailContext && trailDestination && (
+        <div style={{ background: 'var(--gold-pale)', border: '1.5px solid var(--gold)', borderRadius: 10, padding: '14px 18px', marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 }}>
+          <div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 3 }}>
+              {isConcluding ? 'Closing the Trail' : 'Trail in Progress'}
             </div>
-            <button onClick={onClearTrail} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0, marginLeft: 12 }}>
-              Leave Trail ✕
-            </button>
+            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 19, fontWeight: 700, color: 'var(--navy)', marginBottom: 3 }}>
+              {trailDestination}
+            </div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
+              {isConcluding
+                ? 'Tap Go → for a five-minute closing devotional on this passage.'
+                : 'Study Builder is pre-loaded below. Generate to continue the trail.'}
+            </div>
           </div>
+          <button onClick={onClearTrail} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0, paddingTop: 2 }}>
+            Leave Trail ✕
+          </button>
         </div>
       )}
 
-      {/* Morning Trail — always shown, but if concluding show it prominently as the action */}
       <MorningTrail
         onStudy={onStudy}
         onStream={onStream}
         onDone={onDone}
         setError={setError}
         trailContext={isConcluding ? trailContext : null}
-        prefilledInput={isConcluding ? trailDestination : null}
       />
 
-      {/* Only show Study Builder if not in conclusion mode */}
       {!isConcluding && (
         <>
           <Divider label="Or build a deeper study" />
@@ -661,7 +579,7 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
             enlarged={enlarged}
             onToggleEnlarge={onToggleEnlarge}
             trailContext={trailContext}
-            prefilledInput={isTrailActive && !isConcluding ? trailDestination : null}
+            trailDestination={trailDestination}
           />
         </>
       )}
