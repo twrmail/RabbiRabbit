@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { generateStudy } from '../lib/generateStudy'
 import FontSizeToggle from './FontSizeToggle'
 
@@ -135,7 +135,12 @@ function Divider({ label }) {
 // ── Commentaries dropdown ────────────────────────────────────────
 
 function CommentariesPanel() {
-  const [open, setOpen] = useState(!!(prefilledInput))
+  const [open, setOpen] = useState(false)
+
+  // Open automatically when trail destination is pre-filled
+  useEffect(() => {
+    if (prefilledInput) setOpen(true)
+  }, [prefilledInput])
   return (
     <div style={{
       border: '1.5px solid var(--border)', borderRadius: 10,
@@ -321,10 +326,18 @@ function getNextSeed() {
 }
 
 function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefilledInput }) {
-  const [input, setInput] = useState(prefilledInput || '')
-  const [currentSeed, setCurrentSeed] = useState(() => prefilledInput || JESUS_SEEDS[seedIndex])
+  const [input, setInput] = useState('')
+  const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
   const [loadingMsg, setLoadingMsg] = useState(0)
+
+  // Sync prefilledInput when trail continues
+  useEffect(() => {
+    if (prefilledInput) {
+      setInput(prefilledInput)
+      setCurrentSeed(prefilledInput)
+    }
+  }, [prefilledInput])
 
   const handleMorning = async () => {
     const subject = input.trim() || currentSeed
@@ -414,9 +427,19 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefi
 // ── Study Builder (collapsible) ──────────────────────────────────
 
 function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, prefilledInput }) {
-  const [open, setOpen] = useState(!!(prefilledInput))
+  const [open, setOpen] = useState(false)
+
+  // Open automatically when trail destination is pre-filled
+  useEffect(() => {
+    if (prefilledInput) setOpen(true)
+  }, [prefilledInput])
   const [studyType, setStudyType]           = useState('passage')
-  const [primaryInput, setPrimaryInput]     = useState(prefilledInput || '')
+  const [primaryInput, setPrimaryInput]     = useState('')
+
+  // Sync prefilledInput when trail destination arrives
+  useEffect(() => {
+    if (prefilledInput) setPrimaryInput(prefilledInput)
+  }, [prefilledInput])
   const [additionalVerses, setAdditionalVerses] = useState('')
   const [character, setCharacter]           = useState('')
   const [theme, setTheme]                   = useState('')
