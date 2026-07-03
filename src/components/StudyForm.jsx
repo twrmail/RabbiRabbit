@@ -320,7 +320,7 @@ function getNextSeed() {
   return seed
 }
 
-function MorningTrail({ onStream, onStudy, onDone, setError }) {
+function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
   const [input, setInput] = useState('')
   const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
@@ -343,6 +343,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
         additionalVerses: '', character: '', theme: '',
         audience: 'general', translation: 'web',
         sections: [], notes: '',
+        trailContext: trailContext || '',
       }
       let started = false
       await generateStudy(params, (text) => {
@@ -412,7 +413,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
 
 // ── Study Builder (collapsible) ──────────────────────────────────
 
-function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
+function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext }) {
   const [open, setOpen] = useState(false)
   const [studyType, setStudyType]           = useState('passage')
   const [primaryInput, setPrimaryInput]     = useState('')
@@ -439,7 +440,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
       setLoadingMsg(msgIndex)
     }, 2500)
     try {
-      const params = { studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes }
+      const params = { studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes, trailContext: trailContext || '' }
       let started = false
       await generateStudy(params, (text) => {
         if (!started) { started = true; onStream(text) }
@@ -602,14 +603,35 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
 // ── Main export ──────────────────────────────────────────────────
 
-export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
+export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, onClearTrail }) {
   return (
     <div>
+      {trailContext && (
+        <div style={{
+          background: 'var(--gold-pale)', border: '1.5px solid var(--gold)',
+          borderRadius: 8, padding: '12px 16px', marginBottom: 16,
+          display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12
+        }}>
+          <div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 4 }}>
+              Trail in Progress
+            </div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
+              Your next study will open by picking up where the last one left off.
+            </div>
+          </div>
+          <button onClick={onClearTrail} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
+            Clear ✕
+          </button>
+        </div>
+      )}
+
       <MorningTrail
         onStudy={onStudy}
         onStream={onStream}
         onDone={onDone}
         setError={setError}
+        trailContext={trailContext}
       />
 
       <Divider label="Or build a deeper study" />
@@ -622,6 +644,7 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
         setError={setError}
         enlarged={enlarged}
         onToggleEnlarge={onToggleEnlarge}
+        trailContext={trailContext}
       />
     </div>
   )
