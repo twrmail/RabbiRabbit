@@ -22,6 +22,7 @@ const AUDIENCE = [
 
 const TRANSLATIONS = [
   { value: 'web', label: 'WEB', full: 'World English Bible (default)' },
+  { value: 'bsb', label: 'BSB', full: 'Berean Study Bible (2023) — public domain' },
   { value: 'kjv', label: 'KJV', full: 'King James Version' },
   { value: 'asv', label: 'ASV', full: 'American Standard Version' },
 ]
@@ -134,7 +135,7 @@ function Divider({ label }) {
 // ── Commentaries dropdown ────────────────────────────────────────
 
 function CommentariesPanel() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <div style={{
       border: '1.5px solid var(--border)', borderRadius: 10,
@@ -319,7 +320,7 @@ function getNextSeed() {
   return seed
 }
 
-function MorningTrail({ onStream, onStudy, onDone, setError }) {
+function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
   const [input, setInput] = useState('')
   const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
@@ -342,6 +343,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
         additionalVerses: '', character: '', theme: '',
         audience: 'general', translation: 'web',
         sections: [], notes: '',
+        trailContext: trailContext || '',
       }
       let started = false
       await generateStudy(params, (text) => {
@@ -402,7 +404,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
             cursor: loading ? 'not-allowed' : 'pointer', whiteSpace: 'nowrap',
           }}
         >
-          {loading ? LOADING_MESSAGES[loadingMsg] : 'Go →'}
+          {loading ? LOADING_MESSAGES[loadingMsg] : 'Morning Trail'}
         </button>
       </div>
     </div>
@@ -411,8 +413,8 @@ function MorningTrail({ onStream, onStudy, onDone, setError }) {
 
 // ── Study Builder (collapsible) ──────────────────────────────────
 
-function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
-  const [open, setOpen] = useState(true)
+function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext }) {
+  const [open, setOpen] = useState(false)
   const [studyType, setStudyType]           = useState('passage')
   const [primaryInput, setPrimaryInput]     = useState('')
   const [additionalVerses, setAdditionalVerses] = useState('')
@@ -438,7 +440,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
       setLoadingMsg(msgIndex)
     }, 2500)
     try {
-      const params = { studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes }
+      const params = { studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes, trailContext: trailContext || '' }
       let started = false
       await generateStudy(params, (text) => {
         if (!started) { started = true; onStream(text) }
@@ -586,7 +588,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
               🛡 The Berean's examined guide
             </div>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.6, margin: 0 }}>
-              Every study draws from public domain scholarship: Wesley, Matthew Henry, Clarke, Barnes, JFB, Scofield, Spurgeon, and the Church Fathers. Topical studies draw from Nave's Topical Bible (1896) — 5,319 topics and verse index. Cross-references from OpenBible.info. Original language notes from Strong's Hebrew and Greek lexicons. RabbiRabbit synthesizes; the commentaries are authoritative. Always verify with your own Bible.
+              Every study draws from public domain scholarship: Wesley, Matthew Henry, Clarke, Barnes, JFB, Scofield, Spurgeon, and the Church Fathers. Topical studies draw from Nave's Topical Bible (1896) — 5,319 topics and verse index. Cross-references from OpenBible.info. Original language notes from Strong's Hebrew and Greek lexicons. Translations available: World English Bible (WEB), Berean Study Bible (BSB, public domain 2023), King James Version (KJV), American Standard Version (ASV). RabbiRabbit synthesizes; the commentaries are authoritative. Always verify with your own Bible.
             </p>
           </div>
 
@@ -601,14 +603,35 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
 // ── Main export ──────────────────────────────────────────────────
 
-export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge }) {
+export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, onClearTrail }) {
   return (
     <div>
+      {trailContext && (
+        <div style={{
+          background: 'var(--gold-pale)', border: '1.5px solid var(--gold)',
+          borderRadius: 8, padding: '12px 16px', marginBottom: 16,
+          display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12
+        }}>
+          <div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 4 }}>
+              Trail in Progress
+            </div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
+              Your next study will open by picking up where the last one left off.
+            </div>
+          </div>
+          <button onClick={onClearTrail} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
+            Clear ✕
+          </button>
+        </div>
+      )}
+
       <MorningTrail
         onStudy={onStudy}
         onStream={onStream}
         onDone={onDone}
         setError={setError}
+        trailContext={trailContext}
       />
 
       <Divider label="Or build a deeper study" />
@@ -621,6 +644,7 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
         setError={setError}
         enlarged={enlarged}
         onToggleEnlarge={onToggleEnlarge}
+        trailContext={trailContext}
       />
     </div>
   )
