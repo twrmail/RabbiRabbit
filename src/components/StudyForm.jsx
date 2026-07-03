@@ -428,18 +428,8 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefi
 
 function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, prefilledInput }) {
   const [open, setOpen] = useState(false)
-
-  // Open automatically when trail destination is pre-filled
-  useEffect(() => {
-    if (prefilledInput) setOpen(true)
-  }, [prefilledInput])
   const [studyType, setStudyType]           = useState('passage')
   const [primaryInput, setPrimaryInput]     = useState('')
-
-  // Sync prefilledInput when trail destination arrives
-  useEffect(() => {
-    if (prefilledInput) setPrimaryInput(prefilledInput)
-  }, [prefilledInput])
   const [additionalVerses, setAdditionalVerses] = useState('')
   const [character, setCharacter]           = useState('')
   const [theme, setTheme]                   = useState('')
@@ -449,6 +439,14 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
   const [notes, setNotes]                   = useState('')
   const [loading, setLoading]               = useState(false)
   const [loadingMsg, setLoadingMsg]         = useState(0)
+
+  // Sync prefilledInput and open when trail continues — after all useState
+  useEffect(() => {
+    if (prefilledInput) {
+      setPrimaryInput(prefilledInput)
+      setOpen(true)
+    }
+  }, [prefilledInput])
 
   const toggleSection = val =>
     setSections(prev => prev.includes(val) ? prev.filter(s => s !== val) : [...prev, val])
