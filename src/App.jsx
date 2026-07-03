@@ -25,7 +25,14 @@ export default function App() {
     setStudy(null)
     setStreaming(false)
     setError(null)
-    // Preserve trail context so user can still continue
+    // If the trail was concluded with a devotional, the journey is complete —
+    // clear trail state so the form returns to its normal fresh start.
+    // If mid-trail (mode 'full'), preserve context so user can still continue.
+    if (trailMode === 'conclude') {
+      setTrailContext(null)
+      setTrailDestination(null)
+      setTrailMode(null)
+    }
   }
 
   const handleClearTrail = () => {
