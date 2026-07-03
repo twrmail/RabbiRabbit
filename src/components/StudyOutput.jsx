@@ -9,6 +9,8 @@ function formatStudy(text) {
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
+    .replace(/(<blockquote>[\s\S]*?<\/blockquote>\n?)+/g, m => `<div class="commentary-block">${m}</div>`)
     .replace(/^[-•]\s+(.+)$/gm, '<li>$1</li>')
     .replace(/(<li>[\s\S]*?<\/li>\n?)+/g, m => `<ul>${m}</ul>`)
     .replace(/^(?!<[hul])(.+)$/gm, m => m.trim() ? `<p>${m}</p>` : '')
@@ -24,15 +26,27 @@ function extractTitle(text) {
   return match ? match[1] : 'Bible Study'
 }
 
+// Extract the "What's Over the Hill" section text for trail continuity
+function extractOverTheHill(text) {
+  const match = text.match(/##\s*🐇\s*What[^#\n]*\n([\s\S]*?)(?=\n##|\n---|\n\*RabbiRabbit|$)/)
+  if (!match) return null
+  return match[1].trim().slice(0, 600) // cap at 600 chars for context
+}
+
 function btnStyle(variant) {
-  const base = { fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 500, cursor: 'pointer', borderRadius: 6, padding: '7px 14px', transition: 'opacity 0.15s', whiteSpace: 'nowrap' }
+  const base = {
+    fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 500,
+    cursor: 'pointer', borderRadius: 6, padding: '7px 14px',
+    transition: 'opacity 0.15s', whiteSpace: 'nowrap'
+  }
   if (variant === 'primary') return { ...base, background: 'var(--navy)', color: 'var(--white)', border: 'none', fontSize: 14, fontWeight: 600, padding: '12px 32px' }
   if (variant === 'gold') return { ...base, background: 'var(--gold)', color: 'var(--white)', border: 'none', fontWeight: 600 }
+  if (variant === 'trail') return { ...base, background: 'var(--navy)', color: 'var(--white)', border: 'none', fontWeight: 600, fontSize: 14, padding: '12px 28px' }
   if (variant === 'outline') return { ...base, background: 'transparent', color: 'var(--navy)', border: '1.5px solid var(--navy)' }
   return { ...base, background: 'transparent', color: 'var(--ink-light)', border: 'none' }
 }
 
-export default function StudyOutput({ content, streaming, onReset, enlarged, onToggleEnlarge }) {
+export default function StudyOutput({ content, streaming, onReset, onContinueTrail, enlarged, onToggleEnlarge }) {
   const ref = useRef()
   const [pdfLoading, setPdfLoading] = useState(false)
   const title = extractTitle(content)
@@ -56,12 +70,23 @@ export default function StudyOutput({ content, streaming, onReset, enlarged, onT
     finally { setPdfLoading(false) }
   }
 
+  const handleContinueTrail = () => {
+    const hillText = extractOverTheHill(content)
+    if (onContinueTrail) onContinueTrail(hillText)
+  }
+
   return (
     <div>
       {/* Top bar */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20, flexWrap: 'wrap', gap: 10 }}>
+      <div style={{
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        marginBottom: 20, flexWrap: 'wrap', gap: 10
+      }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 24, color: 'var(--navy)', fontWeight: 600, margin: 0 }}>
+          <h2 style={{
+            fontFamily: "'Cormorant Garamond', serif", fontSize: 24,
+            color: 'var(--navy)', fontWeight: 600, margin: 0
+          }}>
             Your Bible Study
           </h2>
           {streaming && (
@@ -71,7 +96,10 @@ export default function StudyOutput({ content, streaming, onReset, enlarged, onT
                 background: 'var(--gold)',
                 animation: 'pulse 1s ease-in-out infinite',
               }} />
-              <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--gold)', fontWeight: 600, letterSpacing: '0.08em' }}>
+              <span style={{
+                fontFamily: 'Inter, sans-serif', fontSize: 11,
+                color: 'var(--gold)', fontWeight: 600, letterSpacing: '0.08em'
+              }}>
                 WRITING
               </span>
             </div>
@@ -91,16 +119,21 @@ export default function StudyOutput({ content, streaming, onReset, enlarged, onT
         dangerouslySetInnerHTML={{ __html: formatStudy(content) }}
       />
 
-      {/* Download bar — only when done streaming */}
+      {/* Action bar — only when done streaming */}
       {!streaming && content && (
         <>
+          {/* Save options */}
           <div style={{
             marginTop: 24, padding: '18px 20px',
             background: 'var(--parch-dark)', border: '1px solid var(--border)',
             borderRadius: 8, display: 'flex', alignItems: 'center',
             flexWrap: 'wrap', gap: 12,
           }}>
-            <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-light)', marginRight: 4, flexShrink: 0 }}>
+            <span style={{
+              fontFamily: 'Inter, sans-serif', fontSize: 11, fontWeight: 600,
+              letterSpacing: '0.1em', textTransform: 'uppercase',
+              color: 'var(--ink-light)', marginRight: 4, flexShrink: 0
+            }}>
               Save Study
             </span>
             <button onClick={handlePDF} disabled={pdfLoading} style={btnStyle('gold')}>
@@ -109,6 +142,33 @@ export default function StudyOutput({ content, streaming, onReset, enlarged, onT
             <button onClick={() => downloadText(content, title)} style={btnStyle('outline')}>↓ Download Text</button>
             <button onClick={copy} style={btnStyle('outline')}>Copy</button>
             <button onClick={() => window.print()} style={btnStyle('outline')}>Print</button>
+          </div>
+
+          {/* Trail navigation */}
+          <div style={{
+            marginTop: 16, padding: '16px 20px',
+            background: 'var(--gold-pale)', border: '1.5px solid var(--gold)',
+            borderRadius: 8, display: 'flex', alignItems: 'center',
+            justifyContent: 'space-between', flexWrap: 'wrap', gap: 12,
+          }}>
+            <div>
+              <div style={{
+                fontFamily: 'Inter, sans-serif', fontSize: 11, fontWeight: 600,
+                letterSpacing: '0.1em', textTransform: 'uppercase',
+                color: 'var(--gold)', marginBottom: 3
+              }}>
+                The Trail Continues
+              </div>
+              <div style={{
+                fontFamily: 'Inter, sans-serif', fontSize: 12,
+                color: 'var(--ink-light)', lineHeight: 1.5
+              }}>
+                Follow What's Over the Hill into the next study — the thread carries forward.
+              </div>
+            </div>
+            <button onClick={handleContinueTrail} style={btnStyle('trail')}>
+              Continue the Trail →
+            </button>
           </div>
 
           <div style={{ marginTop: 24, textAlign: 'center' }}>
@@ -145,6 +205,8 @@ export default function StudyOutput({ content, streaming, onReset, enlarged, onT
         .study-output li::before { content: '–'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
         .trail-head { margin: 24px 0 10px; padding: 10px 16px; border-left: 4px solid var(--gold); background: var(--gold-pale); font-family: 'Inter', sans-serif; font-size: 0.87em; font-weight: 600; color: var(--gold); border-radius: 0 6px 6px 0; }
         .trail-head.rabbi, .trail-head.hill { border-left-color: var(--sage); background: rgba(107,140,110,0.08); color: var(--sage); }
+        .commentary-block { margin: 12px 0 16px; }
+        .commentary-block blockquote { border-left: 3px solid var(--border); margin: 0 0 4px 0; padding: 6px 0 6px 14px; font-style: italic; color: var(--ink-light); font-size: 0.95em; line-height: 1.65; }
         @media (max-width: 600px) { .study-output { padding: 24px 20px; } }
         @media print { header, footer, .study-output ~ div { display: none; } .study-output { border: none; box-shadow: none; padding: 0; font-size: 15px !important; } }
       `}</style>
