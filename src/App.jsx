@@ -9,11 +9,13 @@ export default function App() {
   const [error, setError] = useState(null)
   const [enlarged, setEnlarged] = useState(false)
   const [trailContext, setTrailContext] = useState(null)
+  const [trailDestination, setTrailDestination] = useState(null)
+  const [trailMode, setTrailMode] = useState(null) // 'full' or 'conclude'
 
-  const handleContinueTrail = (hillText) => {
-    // Store the Over the Hill text as trail context
-    // then reset to the form so user can generate the next study
+  const handleContinueTrail = (hillText, destination, mode) => {
     setTrailContext(hillText)
+    setTrailDestination(destination)
+    setTrailMode(mode)
     setStudy(null)
     setStreaming(false)
     setError(null)
@@ -23,15 +25,13 @@ export default function App() {
     setStudy(null)
     setStreaming(false)
     setError(null)
-    // Keep trailContext if set — user may want to continue the trail
-    // Clear it only when they explicitly start a new unrelated study
+    // Preserve trail context so user can still continue
   }
 
-  const handleNewStudy = () => {
-    setStudy(null)
-    setStreaming(false)
-    setError(null)
+  const handleClearTrail = () => {
     setTrailContext(null)
+    setTrailDestination(null)
+    setTrailMode(null)
   }
 
   return (
@@ -51,7 +51,9 @@ export default function App() {
             enlarged={enlarged}
             onToggleEnlarge={() => setEnlarged(e => !e)}
             trailContext={trailContext}
-            onClearTrail={() => setTrailContext(null)}
+            trailDestination={trailDestination}
+            trailMode={trailMode}
+            onClearTrail={handleClearTrail}
           />
         ) : (
           <StudyOutput

@@ -135,7 +135,7 @@ function Divider({ label }) {
 // ── Commentaries dropdown ────────────────────────────────────────
 
 function CommentariesPanel() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(!!(prefilledInput))
   return (
     <div style={{
       border: '1.5px solid var(--border)', borderRadius: 10,
@@ -320,9 +320,9 @@ function getNextSeed() {
   return seed
 }
 
-function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
-  const [input, setInput] = useState('')
-  const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
+function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, prefilledInput }) {
+  const [input, setInput] = useState(prefilledInput || '')
+  const [currentSeed, setCurrentSeed] = useState(() => prefilledInput || JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
   const [loadingMsg, setLoadingMsg] = useState(0)
 
@@ -413,10 +413,10 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
 
 // ── Study Builder (collapsible) ──────────────────────────────────
 
-function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext }) {
-  const [open, setOpen] = useState(false)
+function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, prefilledInput }) {
+  const [open, setOpen] = useState(!!(prefilledInput))
   const [studyType, setStudyType]           = useState('passage')
-  const [primaryInput, setPrimaryInput]     = useState('')
+  const [primaryInput, setPrimaryInput]     = useState(prefilledInput || '')
   const [additionalVerses, setAdditionalVerses] = useState('')
   const [character, setCharacter]           = useState('')
   const [theme, setTheme]                   = useState('')
@@ -603,49 +603,68 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
 // ── Main export ──────────────────────────────────────────────────
 
-export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, onClearTrail }) {
+export default function StudyForm({ onStudy, onStream, onDone, error, setError, enlarged, onToggleEnlarge, trailContext, trailDestination, trailMode, onClearTrail }) {
+
+  // When trail is active and mode is 'conclude', auto-fire a devotional
+  // When mode is 'full', auto-populate StudyBuilder with destination
+  const isTrailActive = !!(trailContext && trailDestination)
+  const isConcluding = trailMode === 'conclude'
+
   return (
     <div>
-      {trailContext && (
+      {isTrailActive && (
         <div style={{
           background: 'var(--gold-pale)', border: '1.5px solid var(--gold)',
-          borderRadius: 8, padding: '12px 16px', marginBottom: 16,
-          display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12
+          borderRadius: 10, padding: '16px 20px', marginBottom: 20,
         }}>
-          <div>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 4 }}>
-              Trail in Progress
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+            <div>
+              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 4 }}>
+                {isConcluding ? 'Closing the Trail' : 'Trail in Progress'}
+              </div>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontWeight: 700, color: 'var(--navy)', marginBottom: 4 }}>
+                {trailDestination}
+              </div>
+              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
+                {isConcluding
+                  ? 'A Morning Trail devotional will close out this study — a final word before the day.'
+                  : 'Your next study opens by picking up the thread. The destination is pre-loaded below.'}
+              </div>
             </div>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
-              Your next study will open by picking up where the last one left off.
-            </div>
+            <button onClick={onClearTrail} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0, marginLeft: 12 }}>
+              Leave Trail ✕
+            </button>
           </div>
-          <button onClick={onClearTrail} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
-            Clear ✕
-          </button>
         </div>
       )}
 
+      {/* Morning Trail — always shown, but if concluding show it prominently as the action */}
       <MorningTrail
         onStudy={onStudy}
         onStream={onStream}
         onDone={onDone}
         setError={setError}
-        trailContext={trailContext}
+        trailContext={isConcluding ? trailContext : null}
+        prefilledInput={isConcluding ? trailDestination : null}
       />
 
-      <Divider label="Or build a deeper study" />
-
-      <StudyBuilder
-        onStudy={onStudy}
-        onStream={onStream}
-        onDone={onDone}
-        error={error}
-        setError={setError}
-        enlarged={enlarged}
-        onToggleEnlarge={onToggleEnlarge}
-        trailContext={trailContext}
-      />
+      {/* Only show Study Builder if not in conclusion mode */}
+      {!isConcluding && (
+        <>
+          <Divider label="Or build a deeper study" />
+          <StudyBuilder
+            onStudy={onStudy}
+            onStream={onStream}
+            onDone={onDone}
+            error={error}
+            setError={setError}
+            enlarged={enlarged}
+            onToggleEnlarge={onToggleEnlarge}
+            trailContext={trailContext}
+            prefilledInput={isTrailActive && !isConcluding ? trailDestination : null}
+          />
+        </>
+      )}
     </div>
   )
 }
