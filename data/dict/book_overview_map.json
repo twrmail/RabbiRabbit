@@ -1,0 +1,408 @@
+{
+  "_notes": "Key hinge chapters per book for Book Overview studies. 'scope' marks whether the book's total chapter count allows a genuinely complete overview (small/medium) or requires an honest flyover (large). Chapters chosen are structural turning points, not arbitrary samples.",
+
+  "GEN": { "totalChapters": 50, "scope": "large", "structure": "two-part: primeval history (1-11) then patriarchal narrative (12-50)",
+    "keyChapters": [
+      {"ch": 1, "label": "Creation — the given world"},
+      {"ch": 3, "label": "The Fall — the wound"},
+      {"ch": 11, "label": "Babel — corruption fully spread"},
+      {"ch": 12, "label": "The pivot — Abraham called"},
+      {"ch": 22, "label": "The promise tested"},
+      {"ch": 32, "label": "Jacob becomes Israel"},
+      {"ch": 50, "label": "Joseph's theology — the book's thesis"}
+    ]},
+  "EXO": { "totalChapters": 40, "scope": "large", "structure": "deliverance (1-18) then covenant law (19-40)",
+    "keyChapters": [
+      {"ch": 3, "label": "The burning bush — God's name revealed"},
+      {"ch": 12, "label": "Passover — the deliverance"},
+      {"ch": 14, "label": "The sea crossing"},
+      {"ch": 20, "label": "The Ten Commandments"},
+      {"ch": 32, "label": "The golden calf — covenant broken"},
+      {"ch": 40, "label": "The tabernacle completed — God dwells with them"}
+    ]},
+  "LEV": { "totalChapters": 27, "scope": "medium", "structure": "sacrifice and holiness law",
+    "keyChapters": [
+      {"ch": 1, "label": "The burnt offering"},
+      {"ch": 16, "label": "The Day of Atonement"},
+      {"ch": 19, "label": "Be holy — practical holiness"},
+      {"ch": 26, "label": "Blessings and curses of the covenant"}
+    ]},
+  "NUM": { "totalChapters": 36, "scope": "large", "structure": "two generations: the rebellious and the new",
+    "keyChapters": [
+      {"ch": 13, "label": "The spies and unbelief"},
+      {"ch": 14, "label": "Judgment — forty years wandering"},
+      {"ch": 20, "label": "Moses' failure at the rock"},
+      {"ch": 27, "label": "Joshua appointed"}
+    ]},
+  "DEUT": { "totalChapters": 34, "scope": "large", "structure": "Moses' final speeches before the new generation enters the land",
+    "keyChapters": [
+      {"ch": 6, "label": "The Shema — love God fully"},
+      {"ch": 28, "label": "Blessings and curses restated"},
+      {"ch": 30, "label": "Choose life"},
+      {"ch": 34, "label": "Moses' death, Joshua's succession"}
+    ]},
+  "JOSH": { "totalChapters": 24, "scope": "medium", "structure": "conquest then division of the land",
+    "keyChapters": [
+      {"ch": 1, "label": "Be strong and courageous"},
+      {"ch": 6, "label": "Jericho falls"},
+      {"ch": 24, "label": "Choose this day whom you will serve"}
+    ]},
+  "JUDG": { "totalChapters": 21, "scope": "medium", "structure": "cycle of sin, oppression, deliverance, repeated with judges",
+    "keyChapters": [
+      {"ch": 2, "label": "The cycle established"},
+      {"ch": 7, "label": "Gideon's 300"},
+      {"ch": 16, "label": "Samson's fall"},
+      {"ch": 21, "label": "Everyone did what was right in his own eyes"}
+    ]},
+  "RUTH": { "totalChapters": 4, "scope": "small", "structure": "loss, loyalty, redemption",
+    "keyChapters": [
+      {"ch": 1, "label": "Loss and loyalty — Ruth's vow"},
+      {"ch": 2, "label": "Provision in the field"},
+      {"ch": 4, "label": "Redemption — the kinsman-redeemer"}
+    ]},
+  "1SAM": { "totalChapters": 31, "scope": "large", "structure": "Samuel, then Saul's rise and fall, then David's rise",
+    "keyChapters": [
+      {"ch": 3, "label": "Samuel called"},
+      {"ch": 8, "label": "Israel demands a king"},
+      {"ch": 17, "label": "David and Goliath"},
+      {"ch": 31, "label": "Saul's death"}
+    ]},
+  "2SAM": { "totalChapters": 24, "scope": "medium", "structure": "David's rise, reign, and moral collapse",
+    "keyChapters": [
+      {"ch": 7, "label": "The Davidic covenant"},
+      {"ch": 11, "label": "David and Bathsheba"},
+      {"ch": 12, "label": "Nathan's confrontation, David's repentance"}
+    ]},
+  "1KGS": { "totalChapters": 22, "scope": "medium", "structure": "Solomon's reign then the kingdom divides",
+    "keyChapters": [
+      {"ch": 3, "label": "Solomon's wisdom"},
+      {"ch": 11, "label": "Solomon's fall into idolatry"},
+      {"ch": 12, "label": "The kingdom splits"},
+      {"ch": 19, "label": "Elijah at Horeb"}
+    ]},
+  "2KGS": { "totalChapters": 25, "scope": "large", "structure": "the decline and fall of both kingdoms",
+    "keyChapters": [
+      {"ch": 2, "label": "Elijah taken up, Elisha's mantle"},
+      {"ch": 17, "label": "Israel falls to Assyria"},
+      {"ch": 25, "label": "Judah falls to Babylon"}
+    ]},
+  "1CHR": { "totalChapters": 29, "scope": "large", "structure": "genealogy then David's reign, priestly focus",
+    "keyChapters": [
+      {"ch": 17, "label": "The Davidic covenant restated"},
+      {"ch": 29, "label": "David's final prayer and Solomon's succession"}
+    ]},
+  "2CHR": { "totalChapters": 36, "scope": "large", "structure": "Solomon and the kings of Judah, temple-centered",
+    "keyChapters": [
+      {"ch": 7, "label": "Temple dedicated, if my people..."},
+      {"ch": 36, "label": "Exile and the decree to return"}
+    ]},
+  "EZRA": { "totalChapters": 10, "scope": "medium", "structure": "return from exile and temple rebuilt",
+    "keyChapters": [
+      {"ch": 1, "label": "Cyrus' decree, the return begins"},
+      {"ch": 3, "label": "The temple foundation laid"},
+      {"ch": 9, "label": "Ezra's grief over intermarriage"}
+    ]},
+  "NEH": { "totalChapters": 13, "scope": "medium", "structure": "the wall rebuilt, the people renewed",
+    "keyChapters": [
+      {"ch": 2, "label": "Nehemiah's request and journey"},
+      {"ch": 6, "label": "The wall completed despite opposition"},
+      {"ch": 8, "label": "The law read and the people weep"}
+    ]},
+  "ESTH": { "totalChapters": 10, "scope": "small", "structure": "hidden providence saves a scattered people",
+    "keyChapters": [
+      {"ch": 2, "label": "Esther becomes queen"},
+      {"ch": 4, "label": "For such a time as this"},
+      {"ch": 9, "label": "Deliverance and Purim established"}
+    ]},
+  "JOB": { "totalChapters": 42, "scope": "large", "structure": "suffering, debate, then divine encounter",
+    "keyChapters": [
+      {"ch": 1, "label": "Job's trial begins"},
+      {"ch": 3, "label": "Job's lament"},
+      {"ch": 38, "label": "God answers from the whirlwind"},
+      {"ch": 42, "label": "Job's repentance and restoration"}
+    ]},
+  "PS": { "totalChapters": 150, "scope": "large", "structure": "five books of prayer, praise, and lament across all human experience",
+    "keyChapters": [
+      {"ch": 1, "label": "The two ways — righteous and wicked"},
+      {"ch": 23, "label": "The Shepherd Psalm"},
+      {"ch": 51, "label": "David's repentance"},
+      {"ch": 150, "label": "Let everything praise the Lord"}
+    ]},
+  "PROV": { "totalChapters": 31, "scope": "large", "structure": "wisdom for practical living",
+    "keyChapters": [
+      {"ch": 1, "label": "The fear of the Lord is the beginning of wisdom"},
+      {"ch": 8, "label": "Wisdom personified"},
+      {"ch": 31, "label": "The excellent wife"}
+    ]},
+  "ECC": { "totalChapters": 12, "scope": "medium", "structure": "the search for meaning under the sun",
+    "keyChapters": [
+      {"ch": 1, "label": "Vanity of vanities"},
+      {"ch": 3, "label": "A time for everything"},
+      {"ch": 12, "label": "Remember your Creator — the conclusion"}
+    ]},
+  "SNG": { "totalChapters": 8, "scope": "small", "structure": "love between bridegroom and bride",
+    "keyChapters": [
+      {"ch": 1, "label": "Love's longing"},
+      {"ch": 4, "label": "Love's praise"},
+      {"ch": 8, "label": "Love as strong as death"}
+    ]},
+  "ISA": { "totalChapters": 66, "scope": "large", "structure": "judgment (1-39) then comfort and restoration (40-66)",
+    "keyChapters": [
+      {"ch": 6, "label": "Isaiah's call — Holy, holy, holy"},
+      {"ch": 40, "label": "Comfort my people"},
+      {"ch": 53, "label": "The Suffering Servant"},
+      {"ch": 66, "label": "New heavens and new earth"}
+    ]},
+  "JER": { "totalChapters": 52, "scope": "large", "structure": "warnings of judgment, then the fall and beyond",
+    "keyChapters": [
+      {"ch": 1, "label": "Jeremiah's call"},
+      {"ch": 29, "label": "Seek the welfare of the city — hope in exile"},
+      {"ch": 31, "label": "The new covenant promised"},
+      {"ch": 52, "label": "Jerusalem falls"}
+    ]},
+  "LAM": { "totalChapters": 5, "scope": "small", "structure": "grief over Jerusalem's fall",
+    "keyChapters": [
+      {"ch": 1, "label": "The city's grief"},
+      {"ch": 3, "label": "His mercies are new every morning"},
+      {"ch": 5, "label": "A prayer for restoration"}
+    ]},
+  "EZK": { "totalChapters": 48, "scope": "large", "structure": "judgment, then restoration and the new temple vision",
+    "keyChapters": [
+      {"ch": 1, "label": "Ezekiel's vision of God's glory"},
+      {"ch": 18, "label": "Individual responsibility"},
+      {"ch": 37, "label": "The valley of dry bones"},
+      {"ch": 47, "label": "The river from the temple"}
+    ]},
+  "DAN": { "totalChapters": 12, "scope": "medium", "structure": "faithfulness in exile, then apocalyptic vision",
+    "keyChapters": [
+      {"ch": 3, "label": "The fiery furnace"},
+      {"ch": 6, "label": "The lions' den"},
+      {"ch": 7, "label": "Vision of the son of man"},
+      {"ch": 12, "label": "The end and the resurrection"}
+    ]},
+  "HOS": { "totalChapters": 14, "scope": "medium", "structure": "Hosea's marriage as a picture of God's covenant love",
+    "keyChapters": [
+      {"ch": 1, "label": "Hosea marries Gomer"},
+      {"ch": 3, "label": "Love her again — restoration pictured"},
+      {"ch": 11, "label": "God's fatherly love for Israel"}
+    ]},
+  "JOEL": { "totalChapters": 3, "scope": "small", "structure": "locust judgment then the promised Spirit",
+    "keyChapters": [
+      {"ch": 1, "label": "The locust plague"},
+      {"ch": 2, "label": "Return to me, then the Spirit poured out"},
+      {"ch": 3, "label": "The day of the Lord"}
+    ]},
+  "AMOS": { "totalChapters": 9, "scope": "small", "structure": "judgment on the nations and Israel, then restoration",
+    "keyChapters": [
+      {"ch": 1, "label": "Judgment on the nations"},
+      {"ch": 5, "label": "Let justice roll down"},
+      {"ch": 9, "label": "Restoration promised"}
+    ]},
+  "OBAD": { "totalChapters": 1, "scope": "small", "structure": "judgment on Edom for pride",
+    "keyChapters": [
+      {"ch": 1, "label": "The entire book — Edom's pride and fall"}
+    ]},
+  "JONAH": { "totalChapters": 4, "scope": "small", "structure": "running, repenting, resenting mercy",
+    "keyChapters": [
+      {"ch": 1, "label": "Jonah runs"},
+      {"ch": 3, "label": "Nineveh repents"},
+      {"ch": 4, "label": "Jonah resents God's mercy"}
+    ]},
+  "MIC": { "totalChapters": 7, "scope": "small", "structure": "judgment and the promise of a ruler from Bethlehem",
+    "keyChapters": [
+      {"ch": 5, "label": "A ruler from Bethlehem"},
+      {"ch": 6, "label": "What does the Lord require of you"},
+      {"ch": 7, "label": "God's steadfast mercy"}
+    ]},
+  "NAH": { "totalChapters": 3, "scope": "small", "structure": "judgment on Nineveh",
+    "keyChapters": [
+      {"ch": 1, "label": "The Lord's vengeance and goodness"},
+      {"ch": 3, "label": "Nineveh's fall pronounced"}
+    ]},
+  "HAB": { "totalChapters": 3, "scope": "small", "structure": "questioning God's justice, then trust",
+    "keyChapters": [
+      {"ch": 1, "label": "Habakkuk's complaint"},
+      {"ch": 2, "label": "The righteous shall live by faith"},
+      {"ch": 3, "label": "Yet I will rejoice in the Lord"}
+    ]},
+  "ZEP": { "totalChapters": 3, "scope": "small", "structure": "the day of the Lord, judgment and restoration",
+    "keyChapters": [
+      {"ch": 1, "label": "The great day of the Lord"},
+      {"ch": 3, "label": "The Lord rejoices over you with singing"}
+    ]},
+  "HAG": { "totalChapters": 2, "scope": "small", "structure": "rebuild the temple",
+    "keyChapters": [
+      {"ch": 1, "label": "Consider your ways — rebuild"},
+      {"ch": 2, "label": "The latter glory greater than the former"}
+    ]},
+  "ZEC": { "totalChapters": 14, "scope": "medium", "structure": "visions of restoration, then the coming king",
+    "keyChapters": [
+      {"ch": 3, "label": "Joshua the high priest cleansed"},
+      {"ch": 9, "label": "Your king comes, humble, riding on a donkey"},
+      {"ch": 14, "label": "The Lord will be king over all the earth"}
+    ]},
+  "MAL": { "totalChapters": 4, "scope": "small", "structure": "Israel's spiritual apathy confronted, the coming messenger",
+    "keyChapters": [
+      {"ch": 1, "label": "I have loved you, says the Lord"},
+      {"ch": 3, "label": "The messenger of the covenant"},
+      {"ch": 4, "label": "The sun of righteousness will rise"}
+    ]},
+  "MAT": { "totalChapters": 28, "scope": "large", "structure": "Jesus as the promised king, teacher, and risen Lord",
+    "keyChapters": [
+      {"ch": 5, "label": "The Sermon on the Mount"},
+      {"ch": 16, "label": "Peter's confession, the church promised"},
+      {"ch": 27, "label": "The crucifixion"},
+      {"ch": 28, "label": "The resurrection and great commission"}
+    ]},
+  "MRK": { "totalChapters": 16, "scope": "medium", "structure": "Jesus the suffering servant, action-driven narrative",
+    "keyChapters": [
+      {"ch": 1, "label": "Jesus begins his ministry"},
+      {"ch": 8, "label": "Peter's confession, the way of the cross"},
+      {"ch": 15, "label": "The crucifixion"},
+      {"ch": 16, "label": "The resurrection"}
+    ]},
+  "LUK": { "totalChapters": 24, "scope": "large", "structure": "Jesus as savior of all people, especially the marginalized",
+    "keyChapters": [
+      {"ch": 2, "label": "The birth of Jesus"},
+      {"ch": 15, "label": "The lost sheep, coin, and son"},
+      {"ch": 23, "label": "The crucifixion"},
+      {"ch": 24, "label": "The resurrection and ascension"}
+    ]},
+  "JHN": { "totalChapters": 21, "scope": "large", "structure": "signs revealing Jesus as the Son of God, that you may believe",
+    "keyChapters": [
+      {"ch": 1, "label": "The Word became flesh"},
+      {"ch": 3, "label": "You must be born again"},
+      {"ch": 11, "label": "Lazarus raised"},
+      {"ch": 20, "label": "The resurrection, doubting Thomas"}
+    ]},
+  "ACT": { "totalChapters": 28, "scope": "large", "structure": "the gospel spreads from Jerusalem to Rome",
+    "keyChapters": [
+      {"ch": 2, "label": "Pentecost — the Spirit poured out"},
+      {"ch": 9, "label": "Saul's conversion"},
+      {"ch": 15, "label": "The Jerusalem Council — gentiles included"},
+      {"ch": 28, "label": "Paul in Rome, the gospel unhindered"}
+    ]},
+  "ROM": { "totalChapters": 16, "scope": "medium", "structure": "the gospel explained systematically — sin, justification, sanctification, Israel, life",
+    "keyChapters": [
+      {"ch": 1, "label": "The gospel and universal sin"},
+      {"ch": 3, "label": "Justified by faith apart from works"},
+      {"ch": 8, "label": "No condemnation, life in the Spirit"},
+      {"ch": 12, "label": "Living sacrifice — the practical outworking"}
+    ]},
+  "1COR": { "totalChapters": 16, "scope": "medium", "structure": "correcting a divided, immature church",
+    "keyChapters": [
+      {"ch": 1, "label": "Divisions in the church"},
+      {"ch": 13, "label": "Love — the more excellent way"},
+      {"ch": 15, "label": "The resurrection defended"}
+    ]},
+  "2COR": { "totalChapters": 13, "scope": "medium", "structure": "Paul's defense of his ministry through suffering",
+    "keyChapters": [
+      {"ch": 4, "label": "Treasure in jars of clay"},
+      {"ch": 5, "label": "The ministry of reconciliation"},
+      {"ch": 12, "label": "Paul's thorn, God's power in weakness"}
+    ]},
+  "GAL": { "totalChapters": 6, "scope": "small", "structure": "freedom in Christ against a return to law",
+    "keyChapters": [
+      {"ch": 2, "label": "Justified by faith, not works of law"},
+      {"ch": 5, "label": "Called to freedom, walk by the Spirit"},
+      {"ch": 6, "label": "A new creation"}
+    ]},
+  "EPH": { "totalChapters": 6, "scope": "small", "structure": "the church's identity in Christ, then its practice",
+    "keyChapters": [
+      {"ch": 2, "label": "Saved by grace, one new humanity"},
+      {"ch": 4, "label": "Unity and maturity in the body"},
+      {"ch": 6, "label": "The armor of God"}
+    ]},
+  "PHIL": { "totalChapters": 4, "scope": "small", "structure": "joy in suffering, Christ's example, contentment",
+    "keyChapters": [
+      {"ch": 1, "label": "Joy in imprisonment"},
+      {"ch": 2, "label": "Christ's humility — the kenosis hymn"},
+      {"ch": 4, "label": "Contentment and peace"}
+    ]},
+  "COL": { "totalChapters": 4, "scope": "small", "structure": "the supremacy and sufficiency of Christ",
+    "keyChapters": [
+      {"ch": 1, "label": "Christ is supreme over all creation"},
+      {"ch": 3, "label": "Set your minds on things above"}
+    ]},
+  "1THESS": { "totalChapters": 5, "scope": "small", "structure": "encouragement and the hope of Christ's return",
+    "keyChapters": [
+      {"ch": 4, "label": "The Lord's return, comfort each other"},
+      {"ch": 5, "label": "Live as children of the day"}
+    ]},
+  "2THESS": { "totalChapters": 3, "scope": "small", "structure": "correcting confusion about the day of the Lord",
+    "keyChapters": [
+      {"ch": 2, "label": "The day of the Lord clarified"},
+      {"ch": 3, "label": "A call to steady work and faith"}
+    ]},
+  "1TIM": { "totalChapters": 6, "scope": "small", "structure": "instructions for church leadership and order",
+    "keyChapters": [
+      {"ch": 3, "label": "Qualifications for elders and deacons"},
+      {"ch": 4, "label": "Guarding sound doctrine"},
+      {"ch": 6, "label": "The love of money, fight the good fight"}
+    ]},
+  "2TIM": { "totalChapters": 4, "scope": "small", "structure": "Paul's final charge to Timothy",
+    "keyChapters": [
+      {"ch": 2, "label": "Endure as a good soldier of Christ"},
+      {"ch": 3, "label": "All Scripture is God-breathed"},
+      {"ch": 4, "label": "I have fought the good fight"}
+    ]},
+  "TIT": { "totalChapters": 3, "scope": "small", "structure": "sound doctrine producing godly living",
+    "keyChapters": [
+      {"ch": 1, "label": "Qualifications for elders"},
+      {"ch": 2, "label": "Sound doctrine for all ages"},
+      {"ch": 3, "label": "Saved to do good works"}
+    ]},
+  "PHLM": { "totalChapters": 1, "scope": "small", "structure": "Paul appeals for a runaway slave, now a brother",
+    "keyChapters": [
+      {"ch": 1, "label": "The entire letter — forgiveness and reconciliation"}
+    ]},
+  "HEB": { "totalChapters": 13, "scope": "medium", "structure": "Christ is superior to all that came before — angels, Moses, the priesthood",
+    "keyChapters": [
+      {"ch": 1, "label": "Christ superior to angels"},
+      {"ch": 4, "label": "A great high priest, approach with confidence"},
+      {"ch": 11, "label": "The hall of faith"},
+      {"ch": 12, "label": "Run the race, fix your eyes on Jesus"}
+    ]},
+  "JAS": { "totalChapters": 5, "scope": "small", "structure": "practical wisdom — faith that works",
+    "keyChapters": [
+      {"ch": 1, "label": "Trials, wisdom, and doing the word"},
+      {"ch": 2, "label": "Faith without works is dead"},
+      {"ch": 5, "label": "Patience and the prayer of faith"}
+    ]},
+  "1PET": { "totalChapters": 5, "scope": "small", "structure": "hope and holiness in suffering",
+    "keyChapters": [
+      {"ch": 1, "label": "A living hope through the resurrection"},
+      {"ch": 2, "label": "A chosen people, follow Christ's example"},
+      {"ch": 5, "label": "Humility and standing firm"}
+    ]},
+  "2PET": { "totalChapters": 3, "scope": "small", "structure": "warning against false teachers, the promise of Christ's return",
+    "keyChapters": [
+      {"ch": 1, "label": "Growing in faith and virtue"},
+      {"ch": 3, "label": "The day of the Lord will come"}
+    ]},
+  "1JHN": { "totalChapters": 5, "scope": "small", "structure": "assurance through love, truth, and obedience",
+    "keyChapters": [
+      {"ch": 1, "label": "Walking in the light"},
+      {"ch": 4, "label": "God is love"},
+      {"ch": 5, "label": "Assurance of eternal life"}
+    ]},
+  "2JHN": { "totalChapters": 1, "scope": "small", "structure": "walk in truth and love, beware false teachers",
+    "keyChapters": [
+      {"ch": 1, "label": "The entire letter — truth and love"}
+    ]},
+  "3JHN": { "totalChapters": 1, "scope": "small", "structure": "commendation of hospitality, warning against pride",
+    "keyChapters": [
+      {"ch": 1, "label": "The entire letter — Gaius commended, Diotrephes warned"}
+    ]},
+  "JUD": { "totalChapters": 1, "scope": "small", "structure": "contend for the faith against false teachers",
+    "keyChapters": [
+      {"ch": 1, "label": "The entire letter — contend for the faith"}
+    ]},
+  "REV": { "totalChapters": 22, "scope": "large", "structure": "letters to the churches, then the unveiling of final judgment and restoration",
+    "keyChapters": [
+      {"ch": 1, "label": "The vision of the risen Christ"},
+      {"ch": 5, "label": "The Lamb who was slain, worthy to open the scroll"},
+      {"ch": 12, "label": "The woman, the dragon, cosmic conflict"},
+      {"ch": 21, "label": "A new heaven and new earth"}
+    ]}
+}
