@@ -52,9 +52,8 @@ const PRIMARY_LABELS = {
   book:      'Biblical Book',
 }
 
-// ⚠️ SET THIS to match the Worker URL used in lib/generateStudy.js before deploying.
-// (Not guessing at it here — need the actual value from that file.)
-const WORKER_BASE_URL = 'REPLACE_WITH_YOUR_WORKER_URL'
+// Same Worker origin used by lib/generateStudy.js
+const WORKER_BASE_URL = 'https://silent-heart-df83.twrmail.workers.dev'
 
 const LOADING_MESSAGES = [
   'Opening the scroll…',
