@@ -52,6 +52,10 @@ const PRIMARY_LABELS = {
   book:      'Biblical Book',
 }
 
+// ⚠️ SET THIS to match the Worker URL used in lib/generateStudy.js before deploying.
+// (Not guessing at it here — need the actual value from that file.)
+const WORKER_BASE_URL = 'REPLACE_WITH_YOUR_WORKER_URL'
+
 const LOADING_MESSAGES = [
   'Opening the scroll…',
   'Following the trail…',
@@ -128,6 +132,123 @@ function Divider({ label }) {
       <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
       {label && <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--ink-light)', whiteSpace: 'nowrap' }}>{label}</span>}
       <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
+    </div>
+  )
+}
+
+// ── Word Study: English -> Hebrew/Greek pick-list ────────────────
+
+function WordCandidateCard({ candidate, selected, onClick }) {
+  return (
+    <button onClick={onClick} style={{
+      width: '100%', textAlign: 'left', padding: '12px 14px', borderRadius: 8,
+      border: `2px solid ${selected ? 'var(--gold)' : 'var(--border)'}`,
+      background: selected ? 'var(--gold-pale)' : 'var(--white)',
+      cursor: 'pointer', transition: 'all 0.15s', marginBottom: 8,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 3 }}>
+        <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: candidate.testament === 'Hebrew' ? 'var(--sage)' : 'var(--navy)', background: candidate.testament === 'Hebrew' ? 'rgba(107,140,110,0.12)' : 'rgba(28,35,64,0.08)', padding: '2px 7px', borderRadius: 4 }}>
+          {candidate.testament}
+        </span>
+        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 17, fontWeight: 700, color: 'var(--ink)' }}>
+          {candidate.transliteration || candidate.strongsNum}
+        </span>
+        {candidate.pronunciation && (
+          <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', fontStyle: 'italic' }}>
+            [{candidate.pronunciation}]
+          </span>
+        )}
+      </div>
+      {candidate.briefDef && (
+        <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12.5, color: 'var(--ink-light)', lineHeight: 1.5 }}>
+          {candidate.briefDef}
+        </div>
+      )}
+      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10.5, color: 'var(--ink-light)', marginTop: 3, opacity: 0.7 }}>
+        Strong's {candidate.strongsNum}
+      </div>
+    </button>
+  )
+}
+
+function WordLookup({ value, onChange, onWordChosen }) {
+  const [candidates, setCandidates] = useState([])
+  const [selectedIdx, setSelectedIdx] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [searched, setSearched] = useState(false)
+  const [lookupError, setLookupError] = useState(null)
+
+  const handleLookup = async () => {
+    if (!value.trim()) return
+    setLoading(true)
+    setSearched(false)
+    setLookupError(null)
+    setSelectedIdx(null)
+    try {
+      const res = await fetch(`${WORKER_BASE_URL}/word-lookup`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ term: value.trim() })
+      })
+      if (!res.ok) throw new Error('Lookup failed')
+      const data = await res.json()
+      setCandidates(data.candidates || [])
+      setSearched(true)
+    } catch (e) {
+      setLookupError('Could not look up that word. You can still generate the study directly.')
+      setCandidates([])
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const handleSelect = (idx) => {
+    setSelectedIdx(idx)
+    const c = candidates[idx]
+    onWordChosen(c)
+  }
+
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
+        <Input value={value} onChange={onChange} placeholder={PLACEHOLDERS.word} />
+        <button
+          onClick={handleLookup}
+          disabled={loading || !value.trim()}
+          style={{
+            flexShrink: 0, padding: '10px 18px', borderRadius: 6,
+            background: loading ? 'var(--navy-light)' : 'var(--gold)',
+            color: 'var(--white)', border: 'none', fontFamily: 'Inter, sans-serif',
+            fontSize: 13, fontWeight: 600, cursor: loading ? 'not-allowed' : 'pointer',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {loading ? 'Searching…' : 'Find the Word →'}
+        </button>
+      </div>
+
+      {lookupError && (
+        <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--error, #b0563c)', marginBottom: 10 }}>
+          {lookupError}
+        </div>
+      )}
+
+      {searched && candidates.length > 0 && (
+        <div style={{ marginBottom: 14 }}>
+          <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-light)', marginBottom: 8 }}>
+            "{value}" appears as — choose one
+          </div>
+          {candidates.map((c, i) => (
+            <WordCandidateCard key={c.strongsNum} candidate={c} selected={selectedIdx === i} onClick={() => handleSelect(i)} />
+          ))}
+        </div>
+      )}
+
+      {searched && candidates.length === 0 && !lookupError && (
+        <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', marginBottom: 10, fontStyle: 'italic' }}>
+          No direct match found — you can still generate the study using "{value}" as written.
+        </div>
+      )}
     </div>
   )
 }
@@ -366,6 +487,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
   const [open, setOpen] = useState(false)
   const [studyType, setStudyType]               = useState('passage')
   const [primaryInput, setPrimaryInput]         = useState('')
+  const [chosenWord, setChosenWord]             = useState(null)
   const [additionalVerses, setAdditionalVerses] = useState('')
   const [character, setCharacter]               = useState('')
   const [theme, setTheme]                       = useState('')
@@ -397,7 +519,16 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
       setLoadingMsg(msgIndex)
     }, 2500)
     try {
-      const params = { studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes, trailContext: trailContext || '' }
+      const params = {
+        studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes,
+        trailContext: trailContext || '',
+        ...(chosenWord ? {
+          chosenStrongsNum: chosenWord.strongsNum,
+          chosenTestament: chosenWord.testament,
+          chosenTransliteration: chosenWord.transliteration,
+          chosenPronunciation: chosenWord.pronunciation,
+        } : {})
+      }
       let started = false
       await generateStudy(params, (text) => {
         if (!started) { started = true; onStream(text) }
@@ -446,7 +577,15 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
 
           <div style={{ marginBottom: 18 }}>
             <Label required>{PRIMARY_LABELS[studyType]}</Label>
-            <Input value={primaryInput} onChange={e => setPrimaryInput(e.target.value)} placeholder={PLACEHOLDERS[studyType]} />
+            {studyType === 'word' ? (
+              <WordLookup
+                value={primaryInput}
+                onChange={e => { setPrimaryInput(e.target.value); setChosenWord(null) }}
+                onWordChosen={setChosenWord}
+              />
+            ) : (
+              <Input value={primaryInput} onChange={e => setPrimaryInput(e.target.value)} placeholder={PLACEHOLDERS[studyType]} />
+            )}
           </div>
 
           <Divider label="Additional inputs" />
