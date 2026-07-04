@@ -9,6 +9,15 @@ When something breaks: find the most recent STABLE entry below, click
 its commit link, restore from there.
 
 ---
+## Repo Cleanup — July 5, 2026
+Removed data/wesley (WesleyWalk project material — 155 files:
+John's sermons, Charles's hymns, historical context) that had
+been accidentally stored inside RabbiRabbit's repo. WesleyWalk
+material now lives in desktop folders until that project resumes.
+RabbiRabbit repo now contains only RabbiRabbit data.
+Commit: a1a427b
+
+---
 
 ## v13 — July 5, 2026 — STABLE
 **Worker + StudyForm.jsx**
