@@ -1,0 +1,58 @@
+{
+  "id": "curator-class-meeting-social",
+  "title": "The Class Meeting — How Revival Became Transformation",
+  "for_curator_use": "Surface when conversations touch on community, discipleship, social holiness, why Methodism lasted, or what made the Methodist movement different from other revivals.",
+  "license": "Public domain / educational synthesis",
+
+  "the_whitefield_comparison": {
+    "whitefield_acknowledged": "George Whitefield, the greatest preacher of the 18th century revival, preached to crowds larger than Wesley's and produced more visible conversions. But Whitefield himself acknowledged the difference in what they built. He told a friend: 'My Brother Wesley acted wisely. The souls that were awakened under his ministry he joined in class, and thus preserved the fruits of his labour. This I neglected, and my people are a rope of sand.'",
+    "the_difference": "Whitefield produced events. Wesley produced institutions. The class meeting is why Methodism became a global denomination while Whitefield's revivals faded.",
+    "halevys_argument": "Historian Elie Halévy argued in his History of the English People that Methodism may have prevented a revolution in England comparable to the French Revolution — not by suppressing discontent but by channeling working-class energy into mutual aid, moral formation, and self-improvement. The class meeting gave ordinary people an institution of dignity in a society that otherwise offered them none."
+  },
+
+  "how_it_worked": {
+    "origin_story": "The class meeting began in Bristol in 1742, almost accidentally. Captain Foy suggested dividing the Methodist society into groups of twelve to collect a penny per week toward debt on the New Room. When the collectors began reporting on the spiritual state of their members, Wesley recognized what he had stumbled into.",
+    "size_and_structure": "Each class had approximately twelve members led by a class leader — usually a layperson, often working class. The class met weekly, typically in a member's home. The leader reported on each member quarterly to the circuit preacher.",
+    "the_meeting": "Meetings began with a hymn — Charles's hymns were written for these gatherings. Then each member reported on their spiritual state: how they were doing in their souls, what temptations they faced, what progress they had made. The class leader responded with Scripture, counsel, and prayer. Another hymn closed the meeting.",
+    "the_ticket": "Every quarter, members received a small paper ticket signed by Wesley or his preachers confirming their continued membership. The ticket was required for admission to the Love Feast and the quarterly covenant service. A person who stopped attending class, or who visibly violated the General Rules, lost their ticket — and with it their standing in the community."
+  },
+
+  "social_significance": {
+    "who_attended": "The class meeting was predominantly working class — miners, weavers, domestic servants, small tradespeople. These were people whose social institutions were the alehouse and the parish church, both of which largely excluded them from dignity and meaningful participation.",
+    "what_it_gave_them": "The class meeting gave working people: a weekly gathering where their spiritual experience mattered; a community that knew their name; mutual financial aid in illness; literacy (members were expected to read their Bible); leadership responsibility (any member could become a class leader); and accountability that functioned as moral formation.",
+    "women_in_leadership": "Women served as class leaders from the movement's early years — a significant departure from both church and social norms. Wesley defended women's preaching and leadership on the grounds of spiritual gifting and necessity. The class meeting was an early arena for women's public institutional voice."
+  },
+
+  "charles_hymns_and_class_meeting": {
+    "written_for_this_context": "Several of Charles's hymns were written specifically for the class meeting — communal songs for small groups rather than large congregations. They assume mutual knowledge, shared experience, and ongoing relationship.",
+    "key_hymns": [
+      {
+        "id": "CW025",
+        "title": "Jesus, United by Thy Grace",
+        "year": 1742,
+        "note": "The class meeting in verse — Christian fellowship as participation in the unity of the Trinity. Written the year the class meeting system was organized."
+      },
+      {
+        "id": "CW060",
+        "title": "All Praise to Our Redeeming Lord",
+        "year": 1745,
+        "note": "The society meeting as the body of Christ in microcosm."
+      },
+      {
+        "id": "CW043",
+        "title": "Come on, My Partners in Distress",
+        "year": 1749,
+        "note": "Fellow travelers on the narrow way — pressing on together. The class meeting's shared journey."
+      }
+    ],
+    "social_holiness": "Charles's 1739 Preface to Hymns and Sacred Poems contained the phrase: 'The gospel of Christ knows of no religion but social; no holiness but social holiness.' This was not primarily about politics — it was about the impossibility of Christian formation in isolation. The class meeting was the institutional embodiment of the claim."
+  },
+
+  "the_general_rules_connection": {
+    "do_no_harm": "The first rule — do no harm — was enforced through class accountability. Class leaders reported members who were drinking, quarreling, or dealing dishonestly. The class meeting was the institution that made the General Rules operative rather than aspirational.",
+    "do_good": "The second rule — do good — was organized through the class. Members who fell sick were visited by classmates. Members in financial difficulty received aid. The class was the primary unit of Methodist mutual aid.",
+    "attend_ordinances": "The third rule — attend the ordinances of God — was monitored through the ticket system. Failing to attend class meant losing the ticket, which meant losing access to the Love Feast and the covenant service."
+  },
+
+  "curator_voice_notes": "When a user asks about community, accountability, or why Methodism produced lasting change: 'George Whitefield preached to larger crowds than Wesley and saw more visible conversions in the moment. But Whitefield put it plainly: Wesley's people were organized into classes, and that is why they lasted. Whitefield's people were a rope of sand.' When social holiness comes up: 'The class meeting gave working people in 18th century England something the established church and the alehouse could not: an institution where they mattered, where someone knew their name, where their spiritual life was taken seriously. Charles wrote them hymns for it.'"
+}

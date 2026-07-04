@@ -1,0 +1,48 @@
+{
+  "id": "curator-whitefield-split",
+  "title": "The Whitefield Split — When Friends Choose Different Doctrines",
+  "for_curator_use": "Surface when free grace, predestination, universal atonement, or the theological character of Methodism comes up. Also useful when discussing Charles's Come Sinners to the Gospel Feast or John's Free Grace sermon.",
+  "license": "Public domain / educational synthesis",
+
+  "george_whitefield": {
+    "who_he_was": "George Whitefield (1714-1770) was the last member to join Wesley's Holy Club at Oxford in 1734. He became the most dynamic preacher of the 18th century evangelical revival — arguably the greatest field preacher in English history. Benjamin Franklin famously calculated that Whitefield's voice could be heard by 30,000 people in the open air.",
+    "the_friendship": "Whitefield preceded Wesley in open-air preaching, introducing him to Bristol and Kingswood in 1739. They were genuine friends and co-laborers. Whitefield wrote warmly of Wesley and Wesley of him. The split was painful because the friendship was real.",
+    "calvinist_conviction": "Whitefield was a committed Calvinist — he believed in double predestination: God had determined from eternity whom he would save (the elect) and whom he would damn (the reprobate). The atonement, for Whitefield, was particular — Christ died for the elect, not for all."
+  },
+
+  "the_theological_issue": {
+    "the_question": "Does God love everyone? Did Christ die for everyone? Or did God choose from eternity a fixed number to be saved and pass over the rest?",
+    "wesleys_answer": "Both brothers were Arminian — they held that God's love was universal, the atonement was universal, and grace could be genuinely offered to all because it was genuinely available to all. This was not a soft position — it had real theological content and real pastoral stakes.",
+    "why_it_mattered": "If Calvinism was right, the gospel invitation was not genuine — you could not truly offer salvation to all people because it had not been purchased for all people. Wesley argued this made evangelism incoherent and pastoral care dishonest. If you did not know whether the person before you was elect, how could you tell them with confidence that Christ died for them?",
+    "whitefields_charge": "Whitefield and his Calvinist allies charged that Wesley's Arminianism led to works-righteousness — if human choice participated in salvation, salvation was earned not given. Wesley's response was careful: prevenient grace precedes all human choice, so the initiative is always God's; but God's grace can be resisted."
+  },
+
+  "the_breaking_point": {
+    "free_grace_sermon": "In April 1739 Wesley preached and published his sermon 'Free Grace' (Sermon 128) — a direct attack on Calvinist predestination. He argued that predestination made God the author of sin, rendered Christian ethics meaningless, and destroyed the foundations of evangelism. The publication was aggressive. Whitefield begged him not to publish it. Wesley published it anyway.",
+    "the_lot": "Before publishing, Wesley cast lots to determine whether to preach the sermon — a Moravian practice he used in difficult decisions. The lot said preach. He did.",
+    "whitefields_response": "Whitefield wrote a reply defending predestination. The public exchange was painful for both. Their friendship survived in personal terms — they preached at each other's funerals — but they led separate movements from this point.",
+    "two_streams": "The break permanently defined two streams of English-speaking evangelical Protestantism: Wesleyan-Arminian (free grace, universal atonement, genuine human response) and Calvinist-Reformed (particular election, definite atonement, irresistible grace). Both streams continue to the present."
+  },
+
+  "charles_response_in_verse": {
+    "come_sinners_to_the_gospel_feast": {
+      "id": "CW015",
+      "year": 1747,
+      "significance": "Charles's hymn is the doctrine in singable form — the universal invitation that Whitefield's predestination made impossible. 'Come, all the world; come, sinner, thou!' is not a poetic flourish. It is a precise theological claim: the invitation is genuine because the atonement is universal.",
+      "key_stanza": "Sent by my Lord, on you I call, / The invitation is to ALL: / Come, all the world; come, sinner, thou! / All things in Christ are ready now.",
+      "theological_edge": "Every time a Methodist congregation sang this hymn, they were singing Arminian theology against Calvinist predestination. The hymn is simultaneously devotion and argument — Charles doing theology in verse, as he always did."
+    },
+    "love_divine": {
+      "id": "CW004",
+      "note": "The final stanza of Love Divine — 'Lost in wonder, love, and praise' — is also implicitly Arminian. The wonder is genuine because the love is universal. You cannot wonder at love directed only at the predetermined elect."
+    }
+  },
+
+  "the_personal_aftermath": {
+    "continuing_friendship": "Despite the theological rupture, Whitefield and Wesley maintained personal warmth. When Whitefield died in 1770, Wesley preached his memorial sermon — one of the finest things Wesley ever wrote. He spoke of Whitefield's gifts without resolving their disagreement.",
+    "wesleys_eulogy_line": "Wesley's memorial sermon on Whitefield: 'Have we read or heard of any person since the apostles, who testified the gospel of the grace of God through so widely extended a space, through so large a part of the habitable world?' Theological disagreement did not blind either man to what God had done through the other.",
+    "charles_and_whitefield": "Charles's relationship with Whitefield was warmer in some ways than John's. Charles was more sympathetic to high-church sacramentalism, which put him in an odd position — closer to Whitefield on church order but opposite him on grace."
+  },
+
+  "curator_voice_notes": "When the Whitefield split comes up, the Curator might say: 'The question was simple: is the gospel invitation genuine? Can you look any person in the face and tell them Christ died for them? Whitefield said only the elect. Wesley said everyone. The answer determined how you preached, how you prayed for the unconverted, and what Charles put in his hymns.' Or, more briefly: 'Friends can hold different doctrines and remain friends. Wesley and Whitefield proved it. They also proved the differences were real.'"
+}
