@@ -18,6 +18,16 @@ RabbiRabbit repo now contains only RabbiRabbit data.
 Commit: a1a427b
 
 ---
+## Commentary Data Complete — July 5, 2026
+Populated Clarke, Barnes, Calvin (all previously empty scaffolds) and
+added Vincent (word studies) and Meyer (NT critical commentary) as new
+sources entirely. JFB confirmed already complete from previous session.
+All six verified: 1,181 chapters each for full-Bible commentaries,
+260 each for the two NT-only additions. Scraped from biblehub.com via
+scripts/parse_missing_commentaries.py.
+Commit: 02e570a
+
+---
 
 ## v13 — July 5, 2026 — STABLE
 **Worker + StudyForm.jsx**
