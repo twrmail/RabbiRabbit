@@ -244,8 +244,24 @@ function WordLookup({ value, onChange, onWordChosen }) {
       )}
 
       {searched && candidates.length === 0 && !lookupError && (
-        <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', marginBottom: 10, fontStyle: 'italic' }}>
-          No direct match found — you can still generate the study using "{value}" as written.
+        <div style={{
+          display: 'flex', gap: 10, alignItems: 'flex-start',
+          padding: '12px 14px', marginBottom: 10,
+          background: 'rgba(176,86,60,0.06)', border: '1.5px solid rgba(176,86,60,0.25)',
+          borderRadius: 8,
+        }}>
+          <span style={{ fontSize: 16, lineHeight: 1, flexShrink: 0, marginTop: 1 }}>⚠️</span>
+          <div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12.5, fontWeight: 600, color: 'var(--error, #b0563c)', marginBottom: 3 }}>
+              No Hebrew or Greek word found for "{value}"
+            </div>
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.5 }}>
+              You can still generate a study, but without a real original-language
+              match, it will be written from general knowledge rather than grounded
+              in Strong's data — treat any specific claims with extra care. Try a
+              related or simpler word for a grounded study instead.
+            </div>
+          </div>
         </div>
       )}
     </div>
@@ -508,8 +524,24 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
   const toggleSection = val =>
     setSections(prev => prev.includes(val) ? prev.filter(s => s !== val) : [...prev, val])
 
+  const [pendingUngroundedWord, setPendingUngroundedWord] = useState(false)
+
   const handleGenerate = async () => {
     if (!primaryInput.trim()) { setError('Please enter a primary subject for the study.'); return }
+
+    // Word Study specifically: if no candidate has been chosen via the
+    // pick-list, this study would generate ungrounded (no real Strong's
+    // data behind it). Require one explicit confirmation click rather
+    // than silently proceeding -- this is the fix for "not found but
+    // proceeds anyway" (Tier 1c). The user can still choose to continue;
+    // this just makes that choice conscious instead of accidental.
+    if (studyType === 'word' && !chosenWord && !pendingUngroundedWord) {
+      setPendingUngroundedWord(true)
+      setError('No Hebrew/Greek word confirmed yet. Click "Generate" again to proceed anyway, or use "Find the Word →" above first for a grounded study.')
+      return
+    }
+    setPendingUngroundedWord(false)
+
     setError(null)
     setLoading(true)
     let msgIndex = 0
@@ -580,7 +612,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
               <WordLookup
                 value={primaryInput}
                 onChange={e => { setPrimaryInput(e.target.value); setChosenWord(null) }}
-                onWordChosen={setChosenWord}
+                onWordChosen={(w) => { setChosenWord(w); setPendingUngroundedWord(false) }}
               />
             ) : (
               <Input value={primaryInput} onChange={e => setPrimaryInput(e.target.value)} placeholder={PLACEHOLDERS[studyType]} />
