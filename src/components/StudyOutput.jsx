@@ -2,7 +2,50 @@ import { useRef, useState, useEffect } from 'react'
 import { downloadPDF, downloadText } from '../lib/downloadStudy'
 import FontSizeToggle from './FontSizeToggle'
 
+function processInline(text) {
+  // Bold and italic, applied to already-extracted block content
+  return text
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+}
+
+function extractStrictBlocks(text) {
+  // Pull out >>SCRIPTURE ... >>END and >>COMMENTARY ... >>END blocks,
+  // render each with its own distinct visual treatment, and leave
+  // everything else (synthesis) untouched for normal processing below.
+  //
+  // ROBUSTNESS NOTE: the original version of this function required an
+  // exact-case, exact-spacing match (">>SCRIPTURE" uppercase, single
+  // newline before ">>END"). Real-world testing found this was too
+  // fragile -- confirmed failures included case variation
+  // (">>Scripture"), the model wrapping tags in markdown bold
+  // ("**>>SCRIPTURE**"), a stray space between ">>" and the word, and
+  // a trailing colon. Any of these caused the tags to fall through
+  // unstripped and print as literal, unstyled text on the page (a real
+  // regression a user reported). This version tolerates all of those
+  // variations while still requiring the core ">>WORD...>>END" shape,
+  // so it won't false-positive on ordinary prose that happens to
+  // mention "scripture" or "commentary" as regular words (tested).
+  function extractBlockType(text, tagName, cssClass) {
+    const pattern = new RegExp(
+      `\\*{0,2}>>\\s*${tagName}\\s*:?\\*{0,2}\\s*\\r?\\n([\\s\\S]*?)\\r?\\n\\s*\\*{0,2}>>\\s*END\\s*:?\\*{0,2}`,
+      'gi'
+    )
+    return text.replace(pattern, (match, inner) => {
+      const processed = processInline(inner.trim())
+      return `\n\n<div class="${cssClass}">${processed}</div>\n\n`
+    })
+  }
+
+  text = extractBlockType(text, 'SCRIPTURE', 'scripture-block')
+  text = extractBlockType(text, 'COMMENTARY', 'commentary-quote-block')
+
+  return text
+}
+
 function formatStudy(text) {
+  text = extractStrictBlocks(text)
+
   return text
     .replace(/^# (.+)$/gm, '<h1>$1</h1>')
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')
@@ -13,7 +56,7 @@ function formatStudy(text) {
     .replace(/(<blockquote>[\s\S]*?<\/blockquote>\n?)+/g, m => `<div class="commentary-block">${m}</div>`)
     .replace(/^[-•]\s+(.+)$/gm, '<li>$1</li>')
     .replace(/(<li>[\s\S]*?<\/li>\n?)+/g, m => `<ul>${m}</ul>`)
-    .replace(/^(?!<[hul])(.+)$/gm, m => m.trim() ? `<p>${m}</p>` : '')
+    .replace(/^(?!<[huld])(.+)$/gm, m => m.trim() ? `<p>${m}</p>` : '')
     .replace(/<p><\/p>/g, '')
     .replace(/<h2>(🐇 What[^<]*)<\/h2>/g, '<div class="trail-head hill">$1</div>')
     .replace(/<h2>(🐇[^<]*)<\/h2>/g, '<div class="trail-head rabbit">$1</div>')
@@ -241,8 +284,27 @@ export default function StudyOutput({ content, streaming, onReset, onContinueTra
         .study-output li::before { content: '–'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
         .trail-head { margin: 24px 0 10px; padding: 10px 16px; border-left: 4px solid var(--gold); background: var(--gold-pale); font-family: 'Inter', sans-serif; font-size: 0.87em; font-weight: 600; color: var(--gold); border-radius: 0 6px 6px 0; }
         .trail-head.rabbi, .trail-head.hill { border-left-color: var(--sage); background: rgba(107,140,110,0.08); color: var(--sage); }
-        .commentary-block { margin: 12px 0 16px; }
-        .commentary-block blockquote { border-left: 3px solid var(--gold); margin: 0 0 4px 0; padding: 6px 0 6px 14px; font-style: italic; color: var(--ink-light); font-size: 0.95em; line-height: 1.65; }
+
+        /* LEVEL 1 — Scripture: highest authority. Gold border, italic,
+           generous breathing room. Unmistakably set apart. */
+        .scripture-block { margin: 20px 0; padding: 14px 20px; border-left: 4px solid var(--gold); background: var(--gold-pale); border-radius: 0 8px 8px 0; }
+        .scripture-block em { font-style: italic; color: var(--navy); font-size: 1.05em; line-height: 1.7; display: block; margin-bottom: 6px; }
+        .scripture-block strong { font-weight: 700; color: var(--gold); font-size: 0.85em; letter-spacing: 0.03em; }
+
+        /* LEVEL 2 — Commentary quote: secondary authority, real source
+           material. Distinct sage/blue border (not gold, so it's never
+           confused with Scripture at a glance), non-italic, scholar
+           name labeled above the quote. */
+        .commentary-quote-block { margin: 16px 0; padding: 12px 18px; border-left: 3px solid var(--sage); background: rgba(107,140,110,0.06); border-radius: 0 6px 6px 0; }
+        .commentary-quote-block strong { display: block; font-weight: 700; color: var(--sage); font-size: 0.82em; letter-spacing: 0.02em; margin-bottom: 4px; }
+        .commentary-quote-block em { font-style: normal; color: var(--ink); font-size: 0.97em; line-height: 1.6; }
+
+        /* LEVEL 3 — Synthesis: everything else. No border, no marker —
+           just a barely-there background tint so a careful reader can
+           still sense "this is connective prose" without it drawing
+           any attention to itself the way the two blocks above do. */
+        .study-output > p { background: rgba(0,0,0,0.008); }
+
         @media (max-width: 600px) { .study-output { padding: 24px 20px; } }
         @media print { header, footer, .study-output ~ div { display: none; } .study-output { border: none; box-shadow: none; padding: 0; font-size: 15px !important; } }
       `}</style>
