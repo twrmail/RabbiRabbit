@@ -26,19 +26,19 @@ function extractStrictBlocks(text) {
   // variations while still requiring the core ">>WORD...>>END" shape,
   // so it won't false-positive on ordinary prose that happens to
   // mention "scripture" or "commentary" as regular words (tested).
-  function extractBlockType(text, tagName, cssClass) {
+  function extractBlockType(text, tagName, cssClass, labelClass, labelText) {
     const pattern = new RegExp(
       `\\*{0,2}>>\\s*${tagName}\\s*:?\\*{0,2}\\s*\\r?\\n([\\s\\S]*?)\\r?\\n\\s*\\*{0,2}>>\\s*END\\s*:?\\*{0,2}`,
       'gi'
     )
     return text.replace(pattern, (match, inner) => {
       const processed = processInline(inner.trim())
-      return `\n\n<div class="${cssClass}">${processed}</div>\n\n`
+      return `\n\n<div class="${cssClass}"><div class="block-label ${labelClass}">${labelText}</div>${processed}</div>\n\n`
     })
   }
 
-  text = extractBlockType(text, 'SCRIPTURE', 'scripture-block')
-  text = extractBlockType(text, 'COMMENTARY', 'commentary-quote-block')
+  text = extractBlockType(text, 'SCRIPTURE', 'scripture-block', 'scripture-label', 'Scripture')
+  text = extractBlockType(text, 'COMMENTARY', 'commentary-quote-block', 'commentary-label', 'Commentary')
 
   return text
 }
@@ -289,15 +289,29 @@ export default function StudyOutput({ content, streaming, onReset, onContinueTra
            generous breathing room. Unmistakably set apart. */
         .scripture-block { margin: 20px 0; padding: 14px 20px; border-left: 4px solid var(--gold); background: var(--gold-pale); border-radius: 0 8px 8px 0; }
         .scripture-block em { font-style: italic; color: var(--navy); font-size: 1.05em; line-height: 1.7; display: block; margin-bottom: 6px; }
-        .scripture-block strong { font-weight: 700; color: var(--gold); font-size: 0.85em; letter-spacing: 0.03em; }
+        .scripture-block strong { font-weight: 700; color: color-mix(in srgb, var(--gold) 70%, black); font-size: 0.85em; letter-spacing: 0.03em; }
 
         /* LEVEL 2 — Commentary quote: secondary authority, real source
            material. Distinct sage/blue border (not gold, so it's never
            confused with Scripture at a glance), non-italic, scholar
            name labeled above the quote. */
         .commentary-quote-block { margin: 16px 0; padding: 12px 18px; border-left: 3px solid var(--sage); background: rgba(107,140,110,0.06); border-radius: 0 6px 6px 0; }
-        .commentary-quote-block strong { display: block; font-weight: 700; color: var(--sage); font-size: 0.82em; letter-spacing: 0.02em; margin-bottom: 4px; }
+        .commentary-quote-block strong { display: block; font-weight: 700; color: color-mix(in srgb, var(--sage) 70%, black); font-size: 0.82em; letter-spacing: 0.02em; margin-bottom: 4px; }
         .commentary-quote-block em { font-style: normal; color: var(--ink); font-size: 0.97em; line-height: 1.6; }
+
+        /* Kicker labels ("Scripture" / "Commentary") above each block.
+           Uses color-mix() to darken the raw --gold/--sage brand colors
+           specifically for text -- the raw values work fine as a border
+           accent (bright, meant to catch the eye at a glance) but are
+           too light to rely on as small body-size text against a near-
+           white tint. Darkening only the text keeps the border vivid
+           while keeping the label readable. Also gives Scripture the
+           same explicit category word Commentary already had implicitly
+           via the scholar name -- previously only Commentary announced
+           what kind of block it was; Scripture relied on italics alone. */
+        .block-label { font-family: 'Inter', sans-serif; font-size: 0.72em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+        .scripture-label { color: color-mix(in srgb, var(--gold) 70%, black); }
+        .commentary-label { color: color-mix(in srgb, var(--sage) 70%, black); }
 
         /* LEVEL 3 — Synthesis: everything else. No border, no marker —
            just a barely-there background tint so a careful reader can
