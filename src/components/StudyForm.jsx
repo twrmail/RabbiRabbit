@@ -27,14 +27,13 @@ const TRANSLATIONS = [
   { value: 'asv', label: 'ASV', full: 'American Standard Version' },
 ]
 
-const SECTIONS = [
-  { value: 'context',           label: 'Historical Context' },
-  { value: 'original_language', label: 'Original Language' },
-  { value: 'cross_references',  label: 'Cross-References' },
-  { value: 'application',       label: 'Life Application' },
-  { value: 'discussion',        label: 'Discussion Questions' },
-  { value: 'prayer',            label: 'Prayer Points' },
-]
+// REMOVED tonight: additionalVerses/character-focus/theme fields and
+// the pre-generation SECTIONS chip picker. Real decision this session:
+// Context/Original Language/Cross-References become automatic (Stage 1,
+// free, always gathered) rather than user-requested; Application/
+// Discussion/Prayer move to a POST-generation step, deliberately
+// deferred to its own design pass (audience-tailored options, not
+// simple checkboxes) rather than rebuilt hastily here. See the guide.
 
 const PLACEHOLDERS = {
   passage:   'e.g. Romans 8:1-17, John 3:1-21, Psalm 23',
@@ -136,6 +135,8 @@ function Divider({ label }) {
 }
 
 // ── Word Study: English -> Hebrew/Greek pick-list ────────────────
+// UNCHANGED from the real file -- already correct, already the shape
+// tonight's backend concordance fix was built to work with.
 
 function WordCandidateCard({ candidate, selected, onClick }) {
   return (
@@ -176,7 +177,6 @@ function WordLookup({ value, onChange, onWordChosen }) {
   const [loading, setLoading] = useState(false)
   const [searched, setSearched] = useState(false)
   const [lookupError, setLookupError] = useState(null)
-
   const handleLookup = async () => {
     if (!value.trim()) return
     setLoading(true)
@@ -268,135 +268,120 @@ function WordLookup({ value, onChange, onWordChosen }) {
   )
 }
 
-// ── Commentaries dropdown ────────────────────────────────────────
+// ── NEW: Free preview step (Stage 1) ─────────────────────────────
+// Built from study-preview-test-harness-v2.html, tested live tonight
+// against the real deployed Worker. Sits between choosing what to
+// study and the real paid Generate step below. Zero AI cost.
 
-function CommentariesPanel() {
-  const [open, setOpen] = useState(false)
+function PreviewCard({ kind, label, children }) {
+  const kindStyles = {
+    scripture: { background: 'var(--gold-pale)', borderLeft: '3px solid var(--gold)' },
+    xref:      { background: 'rgba(107,140,110,0.08)', borderLeft: '3px solid var(--sage)' },
+    context:   { background: 'var(--white)', border: '1px solid var(--border)' },
+    word:      { background: 'var(--gold-pale)', borderLeft: '3px solid var(--gold)' },
+  }
   return (
-    <div style={{
-      border: '1.5px solid var(--border)', borderRadius: 10,
-      marginBottom: 24, overflow: 'hidden', background: 'var(--white)',
-    }}>
-      <button
-        onClick={() => setOpen(o => !o)}
-        style={{
-          width: '100%', display: 'flex', justifyContent: 'space-between',
-          alignItems: 'center', padding: '13px 16px',
-          background: 'none', border: 'none', cursor: 'pointer',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{
-            width: 32, height: 32, borderRadius: 6,
-            background: 'var(--gold-pale)', display: 'flex',
-            alignItems: 'center', justifyContent: 'center', fontSize: 16,
-          }}>📚</div>
-          <div style={{ textAlign: 'left' }}>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 14, fontWeight: 600, color: 'var(--ink)' }}>
-              Commentaries and translations
+    <div style={{ borderRadius: 8, padding: '12px 14px', marginBottom: 8, fontSize: 14, fontFamily: 'Inter, sans-serif', color: 'var(--ink)', ...kindStyles[kind] }}>
+      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, textTransform: 'uppercase', color: 'var(--ink-light)', marginBottom: 4, letterSpacing: '0.06em' }}>{label}</div>
+      <div>{children}</div>
+    </div>
+  )
+}
+
+function PreviewSectionLabel({ children }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 8, margin: '16px 0 6px' }}>
+      <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--ink-light)', whiteSpace: 'nowrap' }}>{children}</span>
+      <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
+    </div>
+  )
+}
+
+function FreePreview({ studyType, primaryInput, chosenWord, preview, loading, status, onFetch, onRedo }) {
+  return (
+    <div style={{ marginBottom: 22 }}>
+      {!preview ? (
+        <button
+          onClick={onFetch}
+          disabled={loading || !primaryInput.trim() || (studyType === 'word' && !chosenWord)}
+          style={{
+            width: '100%', padding: '12px', borderRadius: 6,
+            background: loading ? 'var(--navy-light)' : 'var(--sage, #6b8c6e)',
+            color: 'var(--white)', border: 'none', fontFamily: 'Inter, sans-serif',
+            fontSize: 13.5, fontWeight: 600,
+            cursor: (loading || !primaryInput.trim()) ? 'not-allowed' : 'pointer',
+          }}
+        >
+          {loading ? 'Fetching…' : 'Fetch free preview — Scripture, cross-refs, context'}
+        </button>
+      ) : (
+        <div style={{ border: '1.5px solid var(--border)', borderRadius: 10, padding: '16px 18px', background: 'var(--parchment, #faf8f2)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 4 }}>
+            <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>
+              Zero AI cost · real data only
+            </span>
+            <button onClick={onRedo} style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', background: 'none', border: 'none', textDecoration: 'underline', cursor: 'pointer' }}>
+              redo / edit input
+            </button>
+          </div>
+
+          {!preview.resolved ? (
+            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: 'var(--error, #b0563c)', padding: '8px 0' }}>
+              {preview.message}
             </div>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>
-              The sources behind every study
-            </div>
-          </div>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span style={{
-            fontFamily: 'Inter, sans-serif', fontSize: 11,
-            background: 'var(--gold)', color: 'var(--white)',
-            borderRadius: 20, padding: '2px 8px', fontWeight: 600,
-          }}>11 sources</span>
-          <span style={{
-            color: 'var(--ink-light)', fontSize: 18,
-            transform: open ? 'rotate(180deg)' : 'none',
-            transition: 'transform 0.2s', display: 'inline-block',
-          }}>⌄</span>
-        </div>
-      </button>
+          ) : (
+            <>
+              <PreviewSectionLabel>Anchor</PreviewSectionLabel>
+              <PreviewCard kind="context" label="Resolved to">
+                {preview.anchor.bookId} {preview.anchor.chapter}
+                {preview.anchor.verse ? `:${preview.anchor.verse}` : ''}
+                {preview.anchor.verseEnd ? `-${preview.anchor.verseEnd}` : ''}
+              </PreviewCard>
 
-      {open && (
-        <div style={{ borderTop: '1px solid var(--border)', padding: '14px 16px' }}>
-          <SectionLabel>Protestant commentaries — public domain</SectionLabel>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
-            {[
-              ['Matthew Henry',         'Concise Commentary, 1706'],
-              ['Jamieson-Fausset-Brown', 'JFB Commentary, 1871'],
-              ['Adam Clarke',           'Commentary on the Bible, 1826'],
-              ["Barnes' Notes",         'Notes on the Bible, 1834'],
-              ['John Wesley',           'Explanatory Notes, 1754'],
-              ['Scofield Notes',        'Reference Notes, 1917'],
-              ['Spurgeon',              'Treasury of David, 1885'],
-            ].map(([name, date]) => (
-              <div key={name} style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{name}</div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
-              </div>
-            ))}
-            <div style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px', opacity: 0.55 }}>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>
-                {"Calvin's Commentaries"}
-                <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, color: 'var(--gold)', marginLeft: 6, fontWeight: 400 }}>coming</span>
-              </div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>1844–1856 translation</div>
-            </div>
-          </div>
+              {chosenWord && (
+                <>
+                  <PreviewSectionLabel>Original Language</PreviewSectionLabel>
+                  <PreviewCard kind="word" label={`${chosenWord.strongsNum} — ${chosenWord.transliteration || '?'}`}>
+                    [{chosenWord.pronunciation || '?'}] — {chosenWord.briefDef || ''}
+                  </PreviewCard>
+                </>
+              )}
 
-          <SectionLabel>Topical reference — public domain</SectionLabel>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
-            <div style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{"Nave's Topical Bible"}</div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>5,319 topics · 1896</div>
-            </div>
-          </div>
+              <PreviewSectionLabel>Scripture</PreviewSectionLabel>
+              {preview.scripture
+                ? <PreviewCard kind="scripture" label="BSB">{preview.scripture}</PreviewCard>
+                : <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)' }}>No scripture text for this anchor.</div>}
 
-          <SectionLabel>Church fathers — 4th–13th century</SectionLabel>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
-            {[
-              ['Augustine',      '354–430 AD'],
-              ['Chrysostom',     '347–407 AD'],
-              ['Thomas Aquinas', '1225–1274 AD'],
-            ].map(([name, date]) => (
-              <div key={name} style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{name}</div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
-              </div>
-            ))}
-          </div>
+              <PreviewSectionLabel>Cross References</PreviewSectionLabel>
+              {preview.crossReferences?.length
+                ? preview.crossReferences.map((r, i) => <PreviewCard key={i} kind="xref" label="OpenBible.info">{r}</PreviewCard>)
+                : <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)' }}>No cross-references found.</div>}
 
-          <SectionLabel>Translations</SectionLabel>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
-            {['World English Bible (WEB)', 'Berean Study Bible (BSB)', 'King James Version (KJV)', 'American Standard Version (ASV)'].map(t => (
-              <span key={t} style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 20, padding: '4px 10px', color: 'var(--ink-light)' }}>{t}</span>
-            ))}
-          </div>
+              <PreviewSectionLabel>Historical Context</PreviewSectionLabel>
+              {preview.historicalContext?.length
+                ? preview.historicalContext.map((h, i) => (
+                    <PreviewCard key={i} kind="context" label={h.label}>
+                      {h.text.slice(0, 400)}{h.text.length > 400 ? '…' : ''}
+                    </PreviewCard>
+                  ))
+                : <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)' }}>No book-introduction material found.</div>}
+            </>
+          )}
 
-          <SectionLabel>Cross-references and language tools</SectionLabel>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
-            {['OpenBible.info cross-references', "Strong's Hebrew Lexicon", "Strong's Greek Lexicon"].map(t => (
-              <span key={t} style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 20, padding: '4px 10px', color: 'var(--ink-light)' }}>{t}</span>
-            ))}
+          <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>
+            <button onClick={() => window.print()} style={{ flex: 1, padding: '10px', borderRadius: 6, border: '1.5px solid var(--sage, #6b8c6e)', background: 'var(--white)', color: 'var(--sage, #6b8c6e)', fontFamily: 'Inter, sans-serif', fontSize: 12.5, fontWeight: 600, cursor: 'pointer' }}>
+              Save / Print this preview
+            </button>
           </div>
-
-          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', fontStyle: 'italic', marginTop: 10, lineHeight: 1.6 }}>
-            All commentaries are public domain. RabbiRabbit synthesizes these sources — always verify with your own Bible and study materials.
-          </p>
+          {status && <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', marginTop: 8 }}>{status}</div>}
         </div>
       )}
     </div>
   )
 }
 
-function SectionLabel({ children }) {
-  return (
-    <div style={{
-      fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600,
-      letterSpacing: '0.10em', textTransform: 'uppercase',
-      color: 'var(--ink-light)', marginBottom: 6, marginTop: 4,
-    }}>{children}</div>
-  )
-}
-
 // ── Morning Trail section ────────────────────────────────────────
+// UNCHANGED -- separate system, not part of tonight's redesign.
 
 const JESUS_SEEDS = [
   'Jesus', 'The Baptism of Jesus', 'Jesus in Gethsemane',
@@ -449,9 +434,8 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
       const params = {
         studyType: 'devotional',
         primaryInput: subject,
-        additionalVerses: '', character: '', theme: '',
         audience: 'general', translation: 'web',
-        sections: [], notes: '',
+        notes: '',
         trailContext: trailContext || '',
       }
       let started = false
@@ -503,38 +487,55 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
   const [studyType, setStudyType]               = useState('passage')
   const [primaryInput, setPrimaryInput]         = useState('')
   const [chosenWord, setChosenWord]             = useState(null)
-  const [additionalVerses, setAdditionalVerses] = useState('')
-  const [character, setCharacter]               = useState('')
-  const [theme, setTheme]                       = useState('')
   const [audience, setAudience]                 = useState('general')
   const [translation, setTranslation]           = useState('web')
-  const [sections, setSections]                 = useState(['context', 'application', 'discussion'])
   const [notes, setNotes]                       = useState('')
   const [loading, setLoading]                   = useState(false)
   const [loadingMsg, setLoadingMsg]             = useState(0)
+  const [pendingUngroundedWord, setPendingUngroundedWord] = useState(false)
 
-  // All useState above — useEffect after
+  // NEW: free-preview state (Stage 1)
+  const [preview, setPreview] = useState(null)
+  const [previewLoading, setPreviewLoading] = useState(false)
+  const [previewStatus, setPreviewStatus] = useState('')
+
   useEffect(() => {
     if (trailDestination) {
       setPrimaryInput(trailDestination)
       setOpen(true)
+      setPreview(null)
     }
   }, [trailDestination])
 
-  const toggleSection = val =>
-    setSections(prev => prev.includes(val) ? prev.filter(s => s !== val) : [...prev, val])
-
-  const [pendingUngroundedWord, setPendingUngroundedWord] = useState(false)
+  const handleFetchPreview = async () => {
+    setPreviewLoading(true)
+    setPreviewStatus('')
+    try {
+      const res = await fetch(`${WORKER_BASE_URL}/study-preview`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          input: primaryInput,
+          studyType,
+          chosenStrongsNum: chosenWord?.strongsNum,
+          chosenTestament: chosenWord?.testament,
+        }),
+      })
+      const data = await res.json()
+      setPreview(data)
+      if (data.resolvedVia === 'concordance') {
+        setPreviewStatus("Anchored via real concordance — this word's own occurrence.")
+      }
+    } catch (e) {
+      setPreviewStatus('Preview fetch failed — you can still generate the full study below.')
+    } finally {
+      setPreviewLoading(false)
+    }
+  }
 
   const handleGenerate = async () => {
     if (!primaryInput.trim()) { setError('Please enter a primary subject for the study.'); return }
 
-    // Word Study specifically: if no candidate has been chosen via the
-    // pick-list, this study would generate ungrounded (no real Strong's
-    // data behind it). Require one explicit confirmation click rather
-    // than silently proceeding -- this is the fix for "not found but
-    // proceeds anyway" (Tier 1c). The user can still choose to continue;
-    // this just makes that choice conscious instead of accidental.
     if (studyType === 'word' && !chosenWord && !pendingUngroundedWord) {
       setPendingUngroundedWord(true)
       setError('No Hebrew/Greek word confirmed yet. Click "Generate" again to proceed anyway, or use "Find the Word →" above first for a grounded study.')
@@ -551,7 +552,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
     }, 2500)
     try {
       const params = {
-        studyType, primaryInput, additionalVerses, character, theme, audience, translation, sections, notes,
+        studyType, primaryInput, audience, translation, notes,
         trailContext: trailContext || '',
         ...(chosenWord ? {
           chosenStrongsNum: chosenWord.strongsNum,
@@ -601,7 +602,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
             <Label required>Study type</Label>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: 10 }}>
               {STUDY_TYPES.map(t => (
-                <TypeCard key={t.value} type={t} selected={studyType === t.value} onClick={() => setStudyType(t.value)} />
+                <TypeCard key={t.value} type={t} selected={studyType === t.value} onClick={() => { setStudyType(t.value); setPreview(null) }} />
               ))}
             </div>
           </div>
@@ -611,33 +612,27 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
             {studyType === 'word' ? (
               <WordLookup
                 value={primaryInput}
-                onChange={e => { setPrimaryInput(e.target.value); setChosenWord(null) }}
-                onWordChosen={(w) => { setChosenWord(w); setPendingUngroundedWord(false) }}
+                onChange={e => { setPrimaryInput(e.target.value); setChosenWord(null); setPreview(null) }}
+                onWordChosen={(w) => { setChosenWord(w); setPendingUngroundedWord(false); setPreview(null) }}
               />
             ) : (
-              <Input value={primaryInput} onChange={e => setPrimaryInput(e.target.value)} placeholder={PLACEHOLDERS[studyType]} />
+              <Input value={primaryInput} onChange={e => { setPrimaryInput(e.target.value); setPreview(null) }} placeholder={PLACEHOLDERS[studyType]} />
             )}
           </div>
 
-          <Divider label="Additional inputs" />
+          {/* NEW: free preview step, before committing to the paid generate step */}
+          <FreePreview
+            studyType={studyType}
+            primaryInput={primaryInput}
+            chosenWord={chosenWord}
+            preview={preview}
+            loading={previewLoading}
+            status={previewStatus}
+            onFetch={handleFetchPreview}
+            onRedo={() => setPreview(null)}
+          />
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
-            <div>
-              <Label>Supporting verses</Label>
-              <Input value={additionalVerses} onChange={e => setAdditionalVerses(e.target.value)} placeholder="e.g. Isaiah 53:5, Hebrews 4:15" multiline rows={2} />
-            </div>
-            <div>
-              <Label>Character focus</Label>
-              <Input value={character} onChange={e => setCharacter(e.target.value)} placeholder="e.g. Paul, Miriam, Peter" />
-            </div>
-          </div>
-
-          <div style={{ marginBottom: 18 }}>
-            <Label>Thematic emphasis</Label>
-            <Input value={theme} onChange={e => setTheme(e.target.value)} placeholder="e.g. redemption, courage in suffering, the kingdom of God" />
-          </div>
-
-          <Divider label="Audience, translation & sections" />
+          <Divider label="Audience & translation" />
 
           <div style={{ marginBottom: 18 }}>
             <Label>Audience</Label>
@@ -653,13 +648,7 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
             </div>
             <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', marginTop: 6 }}>
               {TRANSLATIONS.find(t => t.value === translation)?.full}
-            </div>
-          </div>
-
-          <div style={{ marginBottom: 22 }}>
-            <Label>Include sections</Label>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {SECTIONS.map(s => <Chip key={s.value} label={s.label} selected={sections.includes(s.value)} onClick={() => toggleSection(s.value)} />)}
+              {preview && ' · Note: the free preview above always shows BSB text regardless of this choice — translation applies to the full generated study only.'}
             </div>
           </div>
 
@@ -686,8 +675,33 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
             <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--gold)', marginBottom: 5 }}>
               🛡 The Berean's examined guide
             </div>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.6, margin: 0 }}>
-              Every study draws from public domain scholarship: Wesley, Matthew Henry, Clarke, Barnes, JFB, Scofield, Spurgeon, and the Church Fathers. Topical studies draw from Nave's Topical Bible (1896) — 5,319 topics and verse index. Cross-references from OpenBible.info. Original language notes from Strong's Hebrew and Greek lexicons. Translations available: World English Bible (WEB), Berean Study Bible (BSB, public domain 2023), King James Version (KJV), American Standard Version (ASV). RabbiRabbit synthesizes; the commentaries are authoritative. Always verify with your own Bible.
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.6, margin: '0 0 8px' }}>
+              Every study draws from public domain scholarship, never invented sources.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Commentaries:</strong> Matthew Henry (all 66 books), Jamieson-Fausset-Brown,
+              Adam Clarke, Barnes' Notes, John Wesley's Explanatory Notes, Scofield Reference Notes,
+              Spurgeon's Treasury of David, and Calvin's Commentaries.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Church Fathers (4th–13th century):</strong> Augustine of Hippo, John Chrysostom,
+              Thomas Aquinas, Jerome, Cyril of Alexandria, Bonaventure, Tertullian, Ephrem the Syrian.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Topical and reference:</strong> Nave's Topical Bible (1896) and OpenBible.info
+              Topic Scores (6,711 topics, crowd-ranked relevance) — used together so common and
+              minor figures alike are covered. Cross-references from OpenBible.info's ranked dataset.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Original language:</strong> Strong's Hebrew and Greek lexicons for definitions,
+              plus a full Strong's Concordance so Word Study anchors to a chosen word's own real
+              occurrence rather than a general search match.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: 0 }}>
+              <strong>Translations:</strong> World English Bible (WEB), Berean Study Bible (BSB,
+              public domain 2023), King James Version (KJV), American Standard Version (ASV).
+              RabbiRabbit synthesizes these sources; the commentaries themselves are the authority —
+              always verify with your own Bible.
             </p>
           </div>
 
