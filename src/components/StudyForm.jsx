@@ -380,134 +380,6 @@ function FreePreview({ studyType, primaryInput, chosenWord, preview, loading, st
   )
 }
 
-// ── Commentaries dropdown ────────────────────────────────────────
-// UNCHANGED -- real, valuable, already built. Updated the source
-// counts/list tonight to reflect what actually shipped this session.
-
-function CommentariesPanel() {
-  const [open, setOpen] = useState(false)
-  return (
-    <div style={{
-      border: '1.5px solid var(--border)', borderRadius: 10,
-      marginBottom: 24, overflow: 'hidden', background: 'var(--white)',
-    }}>
-      <button
-        onClick={() => setOpen(o => !o)}
-        style={{
-          width: '100%', display: 'flex', justifyContent: 'space-between',
-          alignItems: 'center', padding: '13px 16px',
-          background: 'none', border: 'none', cursor: 'pointer',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{
-            width: 32, height: 32, borderRadius: 6,
-            background: 'var(--gold-pale)', display: 'flex',
-            alignItems: 'center', justifyContent: 'center', fontSize: 16,
-          }}>📚</div>
-          <div style={{ textAlign: 'left' }}>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 14, fontWeight: 600, color: 'var(--ink)' }}>
-              Commentaries and translations
-            </div>
-            <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>
-              The sources behind every study
-            </div>
-          </div>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span style={{
-            fontFamily: 'Inter, sans-serif', fontSize: 11,
-            background: 'var(--gold)', color: 'var(--white)',
-            borderRadius: 20, padding: '2px 8px', fontWeight: 600,
-          }}>12 sources</span>
-          <span style={{
-            color: 'var(--ink-light)', fontSize: 18,
-            transform: open ? 'rotate(180deg)' : 'none',
-            transition: 'transform 0.2s', display: 'inline-block',
-          }}>⌄</span>
-        </div>
-      </button>
-
-      {open && (
-        <div style={{ borderTop: '1px solid var(--border)', padding: '14px 16px' }}>
-          <SectionLabel>Protestant commentaries — public domain</SectionLabel>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
-            {[
-              ['Matthew Henry',         'Concise Commentary, 1706 · all 66 books'],
-              ['Jamieson-Fausset-Brown', 'JFB Commentary, 1871'],
-              ['Adam Clarke',           'Commentary on the Bible, 1826'],
-              ["Barnes' Notes",         'Notes on the Bible, 1834'],
-              ['John Wesley',           'Explanatory Notes, 1754'],
-              ['Scofield Notes',        'Reference Notes, 1917'],
-              ['Spurgeon',              'Treasury of David, 1885'],
-              ["Calvin's Commentaries", '1844–1856 translation'],
-            ].map(([name, date]) => (
-              <div key={name} style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{name}</div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
-              </div>
-            ))}
-          </div>
-
-          <SectionLabel>Topical reference — public domain</SectionLabel>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
-            <div style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{"Nave's Topical Bible"}</div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>5,319 topics · 1896</div>
-            </div>
-            <div style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>OpenBible.info Topic Scores</div>
-              <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>6,711 topics · crowd-ranked</div>
-            </div>
-          </div>
-
-          <SectionLabel>Church fathers — 4th–13th century</SectionLabel>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 6, marginBottom: 14 }}>
-            {[
-              ['Augustine',      '354–430 AD'],
-              ['Chrysostom',     '347–407 AD'],
-              ['Thomas Aquinas', '1225–1274 AD'],
-            ].map(([name, date]) => (
-              <div key={name} style={{ background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 6, padding: '7px 10px' }}>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{name}</div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)' }}>{date}</div>
-              </div>
-            ))}
-          </div>
-
-          <SectionLabel>Translations</SectionLabel>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
-            {['World English Bible (WEB)', 'Berean Study Bible (BSB)', 'King James Version (KJV)', 'American Standard Version (ASV)'].map(t => (
-              <span key={t} style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 20, padding: '4px 10px', color: 'var(--ink-light)' }}>{t}</span>
-            ))}
-          </div>
-
-          <SectionLabel>Cross-references and language tools</SectionLabel>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
-            {['OpenBible.info cross-references', "Strong's Hebrew Lexicon", "Strong's Greek Lexicon", "Strong's Concordance"].map(t => (
-              <span key={t} style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, background: 'var(--parchment, #faf8f2)', border: '1px solid var(--border)', borderRadius: 20, padding: '4px 10px', color: 'var(--ink-light)' }}>{t}</span>
-            ))}
-          </div>
-
-          <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: 'var(--ink-light)', fontStyle: 'italic', marginTop: 10, lineHeight: 1.6 }}>
-            All commentaries are public domain. RabbiRabbit synthesizes these sources — always verify with your own Bible and study materials.
-          </p>
-        </div>
-      )}
-    </div>
-  )
-}
-
-function SectionLabel({ children }) {
-  return (
-    <div style={{
-      fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600,
-      letterSpacing: '0.10em', textTransform: 'uppercase',
-      color: 'var(--ink-light)', marginBottom: 6, marginTop: 4,
-    }}>{children}</div>
-  )
-}
-
 // ── Morning Trail section ────────────────────────────────────────
 // UNCHANGED -- separate system, not part of tonight's redesign.
 
@@ -803,8 +675,33 @@ function StudyBuilder({ onStudy, onStream, onDone, error, setError, enlarged, on
             <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 600, color: 'var(--gold)', marginBottom: 5 }}>
               🛡 The Berean's examined guide
             </div>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.6, margin: 0 }}>
-              Every study draws from public domain scholarship: Wesley, Matthew Henry, Clarke, Barnes, JFB, Scofield, Spurgeon, Calvin, and the Church Fathers. Topical studies draw from Nave's Topical Bible (1896) and OpenBible.info Topic Scores. Cross-references from OpenBible.info. Original language notes from Strong's Hebrew and Greek lexicons and concordance. Translations available: World English Bible (WEB), Berean Study Bible (BSB, public domain 2023), King James Version (KJV), American Standard Version (ASV). RabbiRabbit synthesizes; the commentaries are authoritative. Always verify with your own Bible.
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 12, color: 'var(--ink-light)', lineHeight: 1.6, margin: '0 0 8px' }}>
+              Every study draws from public domain scholarship, never invented sources.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Commentaries:</strong> Matthew Henry (all 66 books), Jamieson-Fausset-Brown,
+              Adam Clarke, Barnes' Notes, John Wesley's Explanatory Notes, Scofield Reference Notes,
+              Spurgeon's Treasury of David, and Calvin's Commentaries.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Church Fathers (4th–13th century):</strong> Augustine of Hippo, John Chrysostom,
+              Thomas Aquinas, Jerome, Cyril of Alexandria, Bonaventure, Tertullian, Ephrem the Syrian.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Topical and reference:</strong> Nave's Topical Bible (1896) and OpenBible.info
+              Topic Scores (6,711 topics, crowd-ranked relevance) — used together so common and
+              minor figures alike are covered. Cross-references from OpenBible.info's ranked dataset.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: '0 0 8px' }}>
+              <strong>Original language:</strong> Strong's Hebrew and Greek lexicons for definitions,
+              plus a full Strong's Concordance so Word Study anchors to a chosen word's own real
+              occurrence rather than a general search match.
+            </p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 11.5, color: 'var(--ink-light)', lineHeight: 1.65, margin: 0 }}>
+              <strong>Translations:</strong> World English Bible (WEB), Berean Study Bible (BSB,
+              public domain 2023), King James Version (KJV), American Standard Version (ASV).
+              RabbiRabbit synthesizes these sources; the commentaries themselves are the authority —
+              always verify with your own Bible.
             </p>
           </div>
 
@@ -857,7 +754,6 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
       {!isConcluding && (
         <>
           <Divider label="Or build a deeper study" />
-          <CommentariesPanel />
           <StudyBuilder
             onStudy={onStudy}
             onStream={onStream}
