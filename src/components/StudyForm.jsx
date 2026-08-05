@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { generateStudy } from '../lib/generateStudy'
 import FontSizeToggle from './FontSizeToggle'
+import MorningTrailSeed from './MorningTrailSeed'
 
 // ── Data ────────────────────────────────────────────────────────
 
@@ -414,15 +415,18 @@ function getNextSeed() {
   return seed
 }
 
-function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
+function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, showSeed }) {
   const [input, setInput] = useState('')
   const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
   const [loadingMsg, setLoadingMsg] = useState(0)
 
-  const handleMorning = async () => {
-    const subject = input.trim() || currentSeed
-    setCurrentSeed(getNextSeed())
+  // Single devotional generation path, shared by the date-seeded daily
+  // card (MorningTrailSeed) and the type-your-own input below it.
+  // Callers pass only what differs; trailContext is always threaded
+  // through so a closing devotional still knows its trail.
+  const runDevotional = async ({ primaryInput, audience = 'general', translation = 'web', notes = '' }) => {
+    if (loading) return
     setError(null)
     setLoading(true)
     let msgIndex = 0
@@ -433,9 +437,8 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
     try {
       const params = {
         studyType: 'devotional',
-        primaryInput: subject,
-        audience: 'general', translation: 'web',
-        notes: '',
+        primaryInput,
+        audience, translation, notes,
         trailContext: trailContext || '',
       }
       let started = false
@@ -453,12 +456,29 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
     }
   }
 
+  // Rotate the placeholder seed only after capturing the subject, so the
+  // verse the user saw is the verse they get.
+  const handleMorning = () => {
+    const subject = input.trim() || currentSeed
+    setCurrentSeed(getNextSeed())
+    runDevotional({ primaryInput: subject })
+  }
+
   return (
+    <>
+      {showSeed && <MorningTrailSeed onBegin={runDevotional} busy={loading} />}
+
     <div style={{ background: 'var(--navy)', borderRadius: 10, padding: '20px 20px 18px', marginBottom: 10 }}>
-      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 6 }}>Morning Trail</div>
-      <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 700, color: 'var(--white)', marginBottom: 4, lineHeight: 1.2 }}>Today's five-minute devotional</div>
+      <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 6 }}>
+        {showSeed ? 'Your own way in' : 'Morning Trail'}
+      </div>
+      <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 700, color: 'var(--white)', marginBottom: 4, lineHeight: 1.2 }}>
+        {showSeed ? 'Start somewhere else' : "Today's five-minute devotional"}
+      </div>
       <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 13, color: 'rgba(247,242,232,0.65)', marginBottom: 14, lineHeight: 1.6 }}>
-        Type anything — a verse, a name, a word. Or tap Go → for today's seed.
+        {showSeed
+          ? 'Prefer your own starting point? Type a verse, a name, or a word.'
+          : "Type anything — a verse, a name, a word. Or tap Go → for today's seed."}
       </div>
       <div style={{ display: 'flex', gap: 8 }}>
         <input
@@ -477,6 +497,7 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext }) {
         </button>
       </div>
     </div>
+    </>
   )
 }
 
@@ -749,6 +770,7 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
         onDone={onDone}
         setError={setError}
         trailContext={isConcluding ? trailContext : null}
+        showSeed={!isConcluding}
       />
 
       {!isConcluding && (

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 
-const WORKER_URL = import.meta.env.VITE_WORKER_URL || 'https://your-worker.workers.dev'
+// Same Worker origin used by lib/generateStudy.js and StudyForm.jsx.
+// The env override stays available for pointing at a staging Worker.
+const WORKER_URL = import.meta.env.VITE_WORKER_URL || 'https://silent-heart-df83.twrmail.workers.dev'
 
 // Format today's date as a readable label
 function formatDate(dateStr) {
@@ -11,7 +13,7 @@ function formatDate(dateStr) {
   })
 }
 
-export default function MorningTrailSeed({ onBegin, audience = 'general', translation = 'bsb' }) {
+export default function MorningTrailSeed({ onBegin, audience = 'general', translation = 'bsb', busy = false }) {
   const [seed, setSeed] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -43,7 +45,7 @@ export default function MorningTrailSeed({ onBegin, audience = 'general', transl
   }, [])
 
   const handleBegin = () => {
-    if (!seed || !onBegin) return
+    if (!seed || !onBegin || busy) return
     // Hand the resolved seed directly to the study generation flow.
     // studyInput is a clean "Book Chapter:Verse" string the Worker
     // already knows how to parse. studyType is always devotional here.
@@ -107,8 +109,12 @@ export default function MorningTrailSeed({ onBegin, audience = 'general', transl
       </div>
 
       {/* Begin button */}
-      <button onClick={handleBegin} style={styles.beginBtn}>
-        Begin Today's Trail →
+      <button
+        onClick={handleBegin}
+        disabled={busy}
+        style={{ ...styles.beginBtn, ...(busy ? styles.beginBtnBusy : null) }}
+      >
+        {busy ? 'Opening the scroll…' : "Begin Today's Trail →"}
       </button>
 
       {/* Quiet note about sharing */}
@@ -190,6 +196,10 @@ const styles = {
     display: 'block',
     width: '100%',
     marginBottom: 14,
+  },
+  beginBtnBusy: {
+    background: 'var(--navy-light)',
+    cursor: 'not-allowed',
   },
   shareNote: {
     fontFamily: 'Inter, sans-serif',
