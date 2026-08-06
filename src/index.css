@@ -30,6 +30,16 @@ body {
 
 #root { min-height: 100vh; }
 
+/* Morning Trail seed loading dot */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.35; transform: scale(0.75); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: none; } }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--parch); }
