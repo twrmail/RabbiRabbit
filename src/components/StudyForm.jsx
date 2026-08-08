@@ -415,11 +415,23 @@ function getNextSeed() {
   return seed
 }
 
-function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, showSeed }) {
+function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, trailDestination, showSeed }) {
   const [input, setInput] = useState('')
   const [currentSeed, setCurrentSeed] = useState(() => JESUS_SEEDS[seedIndex])
   const [loading, setLoading] = useState(false)
   const [loadingMsg, setLoadingMsg] = useState(0)
+
+  // FIX: when closing a trail with a devotional, the input must be
+  // pre-filled with the Over the Hill destination -- otherwise clicking
+  // "Go →" silently falls back to a random JESUS_SEEDS placeholder
+  // instead of the passage the user actually just studied, defeating
+  // the whole point of "closing the trail." Mirrors StudyBuilder's
+  // existing trailDestination effect, which already does this correctly
+  // for the "Continue Full Study" path -- MorningTrail was missing the
+  // equivalent for the "Close with a Devotional" path.
+  useEffect(() => {
+    if (trailDestination) setInput(trailDestination)
+  }, [trailDestination])
 
   // Single devotional generation path, shared by the date-seeded daily
   // card (MorningTrailSeed) and the type-your-own input below it.
@@ -778,6 +790,7 @@ export default function StudyForm({ onStudy, onStream, onDone, error, setError, 
         onDone={onDone}
         setError={setError}
         trailContext={isConcluding ? trailContext : null}
+        trailDestination={isConcluding ? trailDestination : null}
         showSeed={!isConcluding}
       />
 
