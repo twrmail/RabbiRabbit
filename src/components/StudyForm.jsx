@@ -425,7 +425,14 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, showS
   // card (MorningTrailSeed) and the type-your-own input below it.
   // Callers pass only what differs; trailContext is always threaded
   // through so a closing devotional still knows its trail.
-  const runDevotional = async ({ primaryInput, audience = 'general', translation = 'web', notes = '' }) => {
+  //
+  // FIX: scripture/topic are their own clean fields now, not stuffed
+  // into `notes` -- see MorningTrailSeed.jsx's handleBegin() for why.
+  // Both are optional: the seeded click path (MorningTrailSeed) always
+  // provides scripture (already fetched by /daily-seed); the type-your-
+  // own path below does not, and the Worker falls back to fetching it
+  // live in that case -- an honest fallback, not a hard requirement.
+  const runDevotional = async ({ primaryInput, audience = 'general', translation = 'web', scripture = null, topic = null }) => {
     if (loading) return
     setError(null)
     setLoading(true)
@@ -438,7 +445,8 @@ function MorningTrail({ onStream, onStudy, onDone, setError, trailContext, showS
       const params = {
         studyType: 'devotional',
         primaryInput,
-        audience, translation, notes,
+        audience, translation,
+        scripture, topic,
         trailContext: trailContext || '',
       }
       let started = false

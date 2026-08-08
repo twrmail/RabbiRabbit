@@ -49,13 +49,24 @@ export default function MorningTrailSeed({ onBegin, audience = 'general', transl
     // Hand the resolved seed directly to the study generation flow.
     // studyInput is a clean "Book Chapter:Verse" string the Worker
     // already knows how to parse. studyType is always devotional here.
+    //
+    // FIX: pass scripture and topic as their own clean fields, not
+    // stuffed into `notes` (which the Worker prompt treats as "LEADER
+    // NOTES" -- a small-group-leader concept that never fit a daily
+    // devotional's "today's theme" framing). scripture is passed
+    // directly because /daily-seed already fetched it -- letting the
+    // Worker re-fetch the same verse a second time would be a pure
+    // duplicate request for no benefit. topic may be null (some seed
+    // picks come from the cross-reference significance pool, which
+    // has no natural topic label) -- the Worker and this component
+    // both already handle that gracefully.
     onBegin({
       studyType: 'devotional',
       primaryInput: seed.studyInput,
       audience,
       translation,
-      // Pass topic as a note so the devotional prompt has thematic context
-      notes: `Today's theme: ${seed.topic}`,
+      scripture: seed.scripture,
+      topic: seed.topic || null,
     })
   }
 
@@ -93,10 +104,12 @@ export default function MorningTrailSeed({ onBegin, audience = 'general', transl
         <div style={styles.dateLabel}>{formatDate(seed.date)}</div>
       </div>
 
-      {/* Topic */}
-      <div style={styles.topicLabel}>
-        Today's theme: <strong>{seed.topic}</strong>
-      </div>
+      {/* Topic — may be absent (xref-pool picks have no natural topic label) */}
+      {seed.topic && (
+        <div style={styles.topicLabel}>
+          Today's theme: <strong>{seed.topic}</strong>
+        </div>
+      )}
 
       {/* Verse */}
       <div style={styles.verseBlock}>
