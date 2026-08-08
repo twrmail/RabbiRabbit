@@ -2,6 +2,10 @@ import { useState } from 'react'
 import StudyForm from './components/StudyForm'
 import StudyOutput from './components/StudyOutput'
 import Header from './components/Header'
+import { generateStudy } from './lib/generateStudy'
+
+// Same Worker origin used throughout (StudyForm.jsx, MorningTrailSeed.jsx).
+const WORKER_BASE_URL = 'https://silent-heart-df83.twrmail.workers.dev'
 
 export default function App() {
   const [study, setStudy] = useState(null)
@@ -41,6 +45,46 @@ export default function App() {
     setTrailMode(null)
   }
 
+  // Devotional continuation ("Have a Few More Minutes?" / "Continue the
+  // Thread →" in StudyOutput). Distinct from the full-study trail above —
+  // doesn't touch trailContext/trailDestination/trailMode at all, stays
+  // entirely within study/streaming state, since it never routes back
+  // through StudyForm the way the trail does.
+  //
+  // Looks up a real next verse via /study-preview's cross-reference data
+  // (free, no AI cost, same ranked data Rabbi Road already trusts) rather
+  // than letting the model guess at what's related — grounds "continue
+  // the thread" in an actual scholarly connection. Falls back to
+  // re-anchoring on the same reference if no cross-reference is found,
+  // rather than failing the click outright.
+  const handleContinueDevotional = async (reference) => {
+    setError(null)
+    setStudy('')
+    setStreaming(true)
+    try {
+      const previewRes = await fetch(`${WORKER_BASE_URL}/study-preview`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ input: reference, studyType: 'devotional' }),
+      })
+      const preview = await previewRes.json()
+      const topRef = preview?.crossReferences?.[0]
+      const nextInput = topRef
+        ? topRef.replace(/\s*\(\d+\s*votes?\)\s*$/i, '').trim()
+        : reference
+
+      await generateStudy(
+        { studyType: 'devotional', primaryInput: nextInput, audience: 'general', translation: 'web', trailContext: '' },
+        (text) => setStudy(text)
+      )
+    } catch (e) {
+      setError(e.message || 'Something went wrong. Please try again.')
+      setStudy(null)
+    } finally {
+      setStreaming(false)
+    }
+  }
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
@@ -68,6 +112,7 @@ export default function App() {
             streaming={streaming}
             onReset={handleReset}
             onContinueTrail={handleContinueTrail}
+            onContinueDevotional={handleContinueDevotional}
             enlarged={enlarged}
             onToggleEnlarge={() => setEnlarged(e => !e)}
           />

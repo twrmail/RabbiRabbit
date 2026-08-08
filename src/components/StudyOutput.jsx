@@ -89,6 +89,30 @@ function extractDestination(hillText) {
   return null
 }
 
+// ── Devotional continuation ──────────────────────────────────────
+// Devotionals never generate an Over the Hill section (by design --
+// the dedicated devotional prompt has no concept of it at all), so
+// there's no natural "next verse" for the existing trail UI to grab
+// onto. This gives someone who liked today's devotional and has a
+// couple more minutes a way to get another one on a related passage,
+// without escalating into a full study.
+//
+// Detection: a devotional is the only output that ends with the fixed
+// closing line the dedicated prompt requires -- reliable, already-
+// unique marker, no new prop needed to know "this is a devotional."
+function isDevotionalOutput(text) {
+  return /Sit with that for a moment before the day begins\./i.test(text)
+}
+
+// Pulls the key verse's reference straight out of the devotional's own
+// >>SCRIPTURE block (the **Reference** bold line), same self-contained
+// regex-on-raw-content approach as extractOverTheHill/extractDestination
+// above -- no new data dependency, just reading what's already there.
+function extractDevotionalReference(text) {
+  const match = text.match(/>>\s*SCRIPTURE\s*\r?\n[\s\S]*?\*\*([^*\n]+)\*\*\s*\r?\n\s*>>\s*END/i)
+  return match ? match[1].trim() : null
+}
+
 function btnStyle(variant) {
   const base = {
     fontFamily: 'Inter, sans-serif', fontSize: 12, fontWeight: 500,
@@ -103,7 +127,7 @@ function btnStyle(variant) {
   return { ...base, background: 'transparent', color: 'var(--ink-light)', border: 'none' }
 }
 
-export default function StudyOutput({ content, streaming, onReset, onContinueTrail, enlarged, onToggleEnlarge }) {
+export default function StudyOutput({ content, streaming, onReset, onContinueTrail, onContinueDevotional, enlarged, onToggleEnlarge }) {
   const ref = useRef()
   const [pdfLoading, setPdfLoading] = useState(false)
   const title = extractTitle(content)
@@ -111,6 +135,9 @@ export default function StudyOutput({ content, streaming, onReset, onContinueTra
 
   const hillText = !streaming && content ? extractOverTheHill(content) : null
   const destination = extractDestination(hillText)
+
+  const isDevotional = !streaming && content ? isDevotionalOutput(content) : false
+  const devotionalReference = isDevotional ? extractDevotionalReference(content) : null
 
   useEffect(() => {
     if (streaming && ref.current) {
@@ -176,6 +203,37 @@ export default function StudyOutput({ content, streaming, onReset, onContinueTra
       {/* Action bar — only when done streaming */}
       {!streaming && content && (
         <>
+          {/* Devotional continuation — shown only for a completed devotional
+              (never alongside the Over the Hill banner above; a devotional
+              never produces one, so these two are always mutually exclusive) */}
+          {isDevotional && devotionalReference && (
+            <div style={{
+              marginTop: 24, padding: '20px 24px',
+              background: 'var(--gold-pale)', border: '1.5px solid var(--gold)',
+              borderRadius: 10,
+            }}>
+              <div style={{
+                fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 600,
+                letterSpacing: '0.14em', textTransform: 'uppercase',
+                color: 'var(--gold)', marginBottom: 6
+              }}>
+                Have a Few More Minutes?
+              </div>
+              <div style={{
+                fontFamily: 'Inter, sans-serif', fontSize: 13,
+                color: 'var(--ink-light)', lineHeight: 1.6, marginBottom: 16
+              }}>
+                Another short reflection, connected to {devotionalReference}.
+              </div>
+              <button
+                onClick={() => onContinueDevotional && onContinueDevotional(devotionalReference)}
+                style={btnStyle('trail-full')}
+              >
+                Continue the Thread →
+              </button>
+            </div>
+          )}
+
           {/* Trail continuation — shown when Over the Hill exists */}
           {hillText && (
             <div style={{
