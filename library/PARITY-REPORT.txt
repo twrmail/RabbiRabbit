@@ -1,0 +1,156 @@
+RabbiRabbit library build -- WRITE -- 2026-10-26T09:29:44.254Z
+Errors: 0
+
+== mhc: data/commentary/MHC -> library/commentary/MHC
+   filesIn: 66
+   filesOut: 66
+   contentHashIn: 3307dfadac5be9f4
+   contentHashOut: 3307dfadac5be9f4
+   books: 66
+   content parity: IDENTICAL
+== jfb: data/commentary/JFB -> library/commentary/JFB
+   filesIn: 68
+   filesOut: 66
+   skipped (2): JFB_commentary.json: not a single-book file (not copied; stays in data/); JFB_commentary_backup.json: not a single-book file (not copied; stays in data/)
+   contentHashIn: c62eac026f652829
+   contentHashOut: c62eac026f652829
+   books: 66
+   content parity: IDENTICAL
+== calvin: data/commentary/Calvin -> library/commentary/Calvin
+   filesIn: 48
+   filesOut: 48
+   renamed (1): NAM.json -> NAH.json
+   contentHashIn: f6d03527f692589a
+   contentHashOut: f6d03527f692589a
+   books: 48
+   booksMissing (18): JDG; RUT; 1SA; 2SA; 1KI; 2KI; 1CH; 2CH; EZR; NEH; EST; JOB ...
+   content parity: IDENTICAL
+== scofield: data/commentary/Scofield -> library/commentary/Scofield
+   filesIn: 66
+   filesOut: 65
+   skipped (1): 3JN.json: empty placeholder (no chapters), not copied
+   contentHashIn: 13a910be52ee1627
+   contentHashOut: 13a910be52ee1627
+   books: 65
+   booksMissing (1): 3JN
+   content parity: IDENTICAL
+== wesley: data/commentary/Wesley -> library/commentary/Wesley
+   filesIn: 66
+   filesOut: 66
+   contentHashIn: 87ab8d237a918690
+   contentHashOut: 87ab8d237a918690
+   books: 66
+   content parity: IDENTICAL
+== spurgeon: data/commentary/TDavid -> library/commentary/Spurgeon
+   filesIn: 66
+   filesOut: 1
+   skipped (65): GEN.json: empty placeholder (no chapters), not copied; EXO.json: empty placeholder (no chapters), not copied; LEV.json: empty placeholder (no chapters), not copied; NUM.json: empty placeholder (no chapters), not copied; DEU.json: empty placeholder (no chapters), not copied; JOS.json: empty placeholder (no chapters), not copied; JDG.json: empty placeholder (no chapters), not copied; RUT.json: empty placeholder (no chapters), not copied; 1SA.json: empty placeholder (no chapters), not copied; 2SA.json: empty placeholder (no chapters), not copied; 1KI.json: empty placeholder (no chapters), not copied; 2KI.json: empty placeholder (no chapters), not copied ...
+   contentHashIn: 5de163d4af7b9497
+   contentHashOut: 5de163d4af7b9497
+   books: 1
+   booksMissing (65): GEN; EXO; LEV; NUM; DEU; JOS; JDG; RUT; 1SA; 2SA; 1KI; 2KI ...
+   content parity: IDENTICAL
+== barnes-nt: data/commentary/Barnes_NT -> library/commentary/Barnes-NT
+   filesIn: 27
+   filesOut: 27
+   contentHashIn: 834743f9e7bb7d45
+   contentHashOut: 834743f9e7bb7d45
+   books: 27
+   booksMissing (39): GEN; EXO; LEV; NUM; DEU; JOS; JDG; RUT; 1SA; 2SA; 1KI; 2KI ...
+   content parity: IDENTICAL
+== tyndale: data/commentary/Tyndale -> library/commentary/Tyndale
+   filesIn: 66
+   filesOut: 66
+   bookFieldChanges (1): NAH.json: book "NAM" -> "NAH"
+   contentHashIn: 094c439b666353cb
+   contentHashOut: 094c439b666353cb
+   books: 66
+   content parity: IDENTICAL
+== xref: data/xref -> library/xref
+   filesIn: 66
+   filesOut: 66
+   contentHashIn: f957327a88c66d0a
+   contentHashOut: f957327a88c66d0a
+   books: 66
+   content parity: IDENTICAL
+== barnes-legacy: data/commentary/Barnes/Barnes_commentary.json -> library/_retired/Barnes
+   recordsIn: 66
+   filesOut: 65
+   chaptersIn: 1181
+   chaptersOut: 1181
+   codeChanges (1): DEUT -> DEU
+   skipped (1): SNG: no chapters in the original
+== clarke: data/commentary/Clarke/Clarke_commentary.json -> library/_retired/Clarke
+   recordsIn: 66
+   filesOut: 65
+   chaptersIn: 1181
+   chaptersOut: 1181
+   codeChanges (1): DEUT -> DEU
+   skipped (1): SNG: no chapters in the original
+== vincent: data/commentary/Vincent/Vincent_commentary.json -> library/_retired/Vincent
+   recordsIn: 27
+   filesOut: 27
+   chaptersIn: 260
+   chaptersOut: 260
+== meyer: data/commentary/Meyer/Meyer_commentary.json -> library/_retired/Meyer
+   recordsIn: 27
+   filesOut: 27
+   chaptersIn: 260
+   chaptersOut: 260
+== bsb: data/bsb/bsb.json -> library/bible/BSB
+   versesIn: 31086
+   versesOut: 31086
+   books: 66
+== web: data/web.json -> library/bible/WEB
+   versesIn: 31102
+   versesOut: 31102
+   books: 66
+   emptyVerses (7): LUK 17:36; ACT 8:37; ACT 15:34; ACT 24:7; ROM 16:25; ROM 16:26; ROM 16:27
+== kjv: data/kjv.json -> library/bible/KJV
+   versesIn: 31102
+   versesOut: 31102
+   books: 66
+== asv: data/asv.json -> library/bible/ASV
+   versesIn: 31103
+   versesOut: 31103
+   books: 66
+   placeholderVerses (1): 3JN 1:15 "[]"
+== strongs-hebrew: data/dict/strongs_hebrew.json -> library/lexicon/strongs_hebrew.json
+   bytes: 1249529
+   sha: 593bd8e7027574db
+   check: byte-for-byte copy
+== strongs-greek: data/dict/strongs_greek.json -> library/lexicon/strongs_greek.json
+   bytes: 901977
+   sha: dc11d57373975dbb
+   check: byte-for-byte copy
+== concordance: data/dict/strongs_concordance.json -> library/lexicon/strongs_concordance.json
+   bytes: 14280287
+   sha: 356d59493a902f50
+   check: byte-for-byte copy
+== naves: data/dict/naves/naves_topics.json -> library/topics/naves.json
+   bytes: 1692754
+   sha: 8bbfa43e4fca40c3
+   check: byte-for-byte copy
+== topic-scores: data/dict/openbible_topic_scores.json -> library/topics/openbible_topic_scores.json
+   bytes: 8930947
+   sha: 25d658a6ff923ce3
+   check: byte-for-byte copy
+== characters: data/dict/characters.json -> library/people/characters.json
+   bytes: 520680
+   sha: 9076660e163b152b
+   check: byte-for-byte copy
+== xref-seed: data/dict/xref_seed_pool.json -> library/seed/xref_seed_pool.json
+   bytes: 211127
+   sha: 11703343bc8463e2
+   check: byte-for-byte copy
+== overview-map: data/dict/book_overview_map.json -> library/maps/book_overview_map.json
+   keyChanges (31): DEUT -> DEU; JOSH -> JOS; JUDG -> JDG; RUTH -> RUT; 1SAM -> 1SA; 2SAM -> 2SA; 1KGS -> 1KI; 2KGS -> 2KI; 1CHR -> 1CH; 2CHR -> 2CH; EZRA -> EZR; ESTH -> EST ...
+   books: 66
+
+== Files left in data/ and not copied (compared, for the record):
+   data/commentary/JFB/JFB_commentary.json: not copied. Books identical to the per-book files: 66, different: 0, no per-book file: 0; chapters exactly 2,000 chars: 0
+   data/commentary/JFB/JFB_commentary_backup.json: not copied. Books identical to the per-book files: 0, different: 66, no per-book file: 0; chapters exactly 2,000 chars: 1070
+   data/Tyndale: not copied (duplicate). Identical to data/commentary/Tyndale: 66; different or unmatched: none
+   data/cross-refs.json: not copied. 255675 refs vs 255675 in data/xref/; IDENTICAL content
+
+Files written: 928, 181.2 MB
