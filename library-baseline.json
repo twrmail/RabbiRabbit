@@ -1,0 +1,230 @@
+{
+ "recordedFrom": "885bb01f336336b7",
+ "gates": {
+  "mhc": {
+   "1": "PASS",
+   "2": "FAIL",
+   "3": "FAIL",
+   "4": "PASS",
+   "5": "FAIL",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "jfb": {
+   "1": "PASS",
+   "2": "FAIL",
+   "3": "FAIL",
+   "4": "PASS",
+   "5": "FAIL",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "calvin": {
+   "1": "UNKNOWN",
+   "2": "FAIL",
+   "3": "FAIL",
+   "4": "PASS",
+   "5": "FAIL",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "scofield": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "PASS",
+   "5": "FAIL",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "wesley": {
+   "1": "FAIL",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "PASS",
+   "5": "FAIL",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "spurgeon": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "PASS",
+   "5": "UNKNOWN",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "barnes-nt": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "PASS",
+   "5": "UNKNOWN",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "tyndale": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "PASS",
+   "5": "UNKNOWN",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "xref": {
+   "1": "PASS",
+   "2": "UNKNOWN",
+   "3": "N/A",
+   "4": "PASS",
+   "5": "PASS",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "barnes-legacy": {
+   "1": "FAIL",
+   "2": "UNKNOWN",
+   "3": "FAIL",
+   "4": "N/A",
+   "5": "N/A",
+   "6": "N/A",
+   "7": "N/A"
+  },
+  "clarke": {
+   "1": "FAIL",
+   "2": "UNKNOWN",
+   "3": "FAIL",
+   "4": "N/A",
+   "5": "N/A",
+   "6": "N/A",
+   "7": "N/A"
+  },
+  "vincent": {
+   "1": "FAIL",
+   "2": "UNKNOWN",
+   "3": "FAIL",
+   "4": "N/A",
+   "5": "N/A",
+   "6": "N/A",
+   "7": "N/A"
+  },
+  "meyer": {
+   "1": "FAIL",
+   "2": "UNKNOWN",
+   "3": "FAIL",
+   "4": "N/A",
+   "5": "N/A",
+   "6": "N/A",
+   "7": "N/A"
+  },
+  "bsb": {
+   "1": "PASS",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "UNKNOWN",
+   "5": "PASS",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "web": {
+   "1": "PASS",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "UNKNOWN",
+   "5": "PASS",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "kjv": {
+   "1": "PASS",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "UNKNOWN",
+   "5": "PASS",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "asv": {
+   "1": "PASS",
+   "2": "UNKNOWN",
+   "3": "PASS",
+   "4": "UNKNOWN",
+   "5": "PASS",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "strongs-hebrew": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "strongs-greek": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "concordance": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "naves": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "topic-scores": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "characters": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "xref-seed": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  },
+  "overview-map": {
+   "1": "UNKNOWN",
+   "2": "UNKNOWN",
+   "3": "UNKNOWN",
+   "4": "PASS",
+   "5": "N/A",
+   "6": "UNKNOWN",
+   "7": "UNKNOWN"
+  }
+ }
+}
