@@ -1,0 +1,28 @@
+# Checks the library on every change: recorded fixes are applied, and no scorecard gate is worse than the baseline.
+# Read-only: it cannot edit, commit or open anything.
+name: Library check
+on:
+  push:
+    paths: ['library/**', 'data/**', 'tools/**', 'library-baseline.json', '.github/workflows/library-check.yml']
+  pull_request:
+    paths: ['library/**', 'data/**', 'tools/**', 'library-baseline.json', '.github/workflows/library-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Recorded text fixes are all applied
+        run: node tools/apply-library-fixes.mjs . --check
+      - name: Source scorecard
+        run: node tools/source-scorecard.mjs library --out scorecard
+      - name: No gate worse than the baseline
+        run: node tools/check-scorecard-baseline.mjs scorecard.json library-baseline.json
+      - name: Keep the full scorecard with the run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: scorecard, path: 'scorecard.md' }
