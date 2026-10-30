@@ -1,25 +1,85 @@
 {
-  "schemaVersion": 1,
-  "note": "library = data + these rules. data/ is never edited. Each rule is mechanical, exact and counted: apply-library-fixes.mjs refuses to write unless the number of changes equals expectedCount, and source-scorecard.mjs re-applies the same rules to the originals in data/ (with separate code) and requires the result to equal library/. A change that is not listed here cannot pass gate 4.",
-  "rules": [
-    {
-      "id": "web-psalm-poetry-marker",
-      "source": "web", "folder": "library/bible/WEB", "files": ["PSA"], "target": "verses", "op": "strip-leading",
-      "find": "&gt;",
-      "expectedCount": 117,
-      "reason": "The WEB conversion left a literal '&gt; ' (an escaped markdown quote marker for the first line of a poem) at the start of 117 Psalm verses. It is formatting, not scripture. The Worker was supplying it to the model inside quoted scripture."
-    },
-    {
-      "id": "spurgeon-html-entities",
-      "source": "spurgeon", "folder": "library/commentary/Spurgeon", "files": ["PSA"], "target": "chapters", "op": "replace-all",
-      "pairs": [["&mdash;", "—"], ["&amp;", "&"]],
-      "expectedCount": { "&mdash;": 4036, "&amp;": 23 },
-      "reason": "Literal HTML entities left in the text by the markdown conversion (141 Psalm chapters). The same file already uses the real em dash 796 times, so this makes it consistent. Meaning unchanged."
-    }
-  ],
-  "openIssues": [
-    { "id": "jfb-mic5-replacement-char", "source": "jfb", "location": "MIC 5", "description": "One U+FFFD replacement character inside a word ('appearance o� Messiah').", "notFixedBecause": "The original character cannot be known from this copy. Needs a second independent copy of JFB." },
-    { "id": "calvin-gen46-greek-entities", "source": "calvin", "location": "GEN 46 and 6 other chapters (EZK 14, HEB 13, JHN 12, ...)", "description": "17 literal '&amp;' sequences, mostly inside garbled Greek transliteration (e.g. 'de&amp;lt; pro&amp;lt;v tu&amp;gt;rannon'), double-encoded from an older Greek encoding.", "notFixedBecause": "Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution." },
-    { "id": "mhc-1co16-angle-brackets", "source": "mhc", "location": "1CO 16", "description": "The subscription note is wrapped in '&lt;&lt; ... &gt;&gt;'.", "notFixedBecause": "Decoding gives '>>' in the middle of a line, which collides with the Worker's own >>SCRIPTURE / >>COMMENTARY block markers in the prompt. Decide the replacement characters first." }
-  ]
+ "schemaVersion": 1,
+ "note": "library = data + these rules. data/ is never edited. Each rule is mechanical, exact and counted: apply-library-fixes.mjs refuses to write unless the number of changes equals expectedCount, and source-scorecard.mjs re-applies the same rules to the originals in data/ (with separate code) and requires the result to equal library/. A change that is not listed here cannot pass gate 4.",
+ "rules": [
+  {
+   "id": "web-psalm-poetry-marker",
+   "source": "web",
+   "folder": "library/bible/WEB",
+   "files": [
+    "PSA"
+   ],
+   "target": "verses",
+   "op": "strip-leading",
+   "find": "&gt;",
+   "expectedCount": 117,
+   "reason": "The WEB conversion left a literal '&gt; ' (an escaped markdown quote marker for the first line of a poem) at the start of 117 Psalm verses. It is formatting, not scripture. The Worker was supplying it to the model inside quoted scripture."
+  },
+  {
+   "id": "spurgeon-html-entities",
+   "source": "spurgeon",
+   "folder": "library/commentary/Spurgeon",
+   "files": [
+    "PSA"
+   ],
+   "target": "chapters",
+   "op": "replace-all",
+   "pairs": [
+    [
+     "&mdash;",
+     "—"
+    ],
+    [
+     "&amp;",
+     "&"
+    ]
+   ],
+   "expectedCount": {
+    "&mdash;": 4036,
+    "&amp;": 23
+   },
+   "reason": "Literal HTML entities left in the text by the markdown conversion (141 Psalm chapters). The same file already uses the real em dash 796 times, so this makes it consistent. Meaning unchanged."
+  },
+  {
+   "id": "mhc-1co16-subscription-brackets",
+   "source": "mhc",
+   "folder": "library/commentary/MHC",
+   "files": [
+    "1CO"
+   ],
+   "target": "chapters",
+   "op": "replace-all",
+   "pairs": [
+    [
+     "&lt;&lt;",
+     "«"
+    ],
+    [
+     "&gt;&gt;",
+     "»"
+    ]
+   ],
+   "expectedCount": {
+    "&lt;&lt;": 1,
+    "&gt;&gt;": 1
+   },
+   "reason": "The postscript printed after 1 Corinthians 16:24 (\"written from Philippi by Stephanas...\") is wrapped in the HTML entities for << and >>. They become the guillemets « and »: decoding to << and >> would collide with the Worker's own >>SCRIPTURE and >>COMMENTARY block markers. Wording unchanged."
+  }
+ ],
+ "openIssues": [
+  {
+   "id": "jfb-mic5-replacement-char",
+   "source": "jfb",
+   "location": "MIC 5",
+   "description": "One U+FFFD replacement character inside a word ('appearance o� Messiah').",
+   "notFixedBecause": "The original character cannot be known from this copy. Needs a second independent copy of JFB."
+  },
+  {
+   "id": "calvin-gen46-greek-entities",
+   "source": "calvin",
+   "location": "GEN 46 and 6 other chapters (EZK 14, HEB 13, JHN 12, ...)",
+   "description": "17 literal '&amp;' sequences, mostly inside garbled Greek transliteration (e.g. 'de&amp;lt; pro&amp;lt;v tu&amp;gt;rannon'), double-encoded from an older Greek encoding.",
+   "notFixedBecause": "Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution."
+  }
+ ]
 }

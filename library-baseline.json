@@ -4,7 +4,7 @@
   "mhc": {
    "1": "PASS",
    "2": "FAIL",
-   "3": "FAIL",
+   "3": "PASS",
    "4": "PASS",
    "5": "FAIL",
    "6": "UNKNOWN",
