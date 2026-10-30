@@ -36,6 +36,15 @@ function applyRecordedFixes(srcId, code, obj) {
       const esc = r.find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
       const s = JSON.stringify(o.chapters).replace(new RegExp('("\\d+":")\\s*' + esc + '\\s*', 'g'), '$1')
       o = { ...o, chapters: JSON.parse(s) }
+    } else if (r.op === 'rename-key') {
+      // written separately from apply-library-fixes.mjs: rebuild the object from its entries
+      const ent = Object.entries(o[r.target] || {})
+      if (ent.some(([k]) => k === r.from) && !ent.some(([k]) => k === r.to)) o = { ...o, [r.target]: Object.fromEntries(ent.map(([k, v]) => [k === r.from ? r.to : k, v])) }
+    } else if (r.op === 'split-intro') {
+      const text = o[r.field], at = typeof text === 'string' ? text.indexOf(r.anchor) : -1
+      if (at >= 0 && text.indexOf(r.anchor, at + 1) < 0 && !(r.chapter in (o[r.target] || {}))) {
+        o = { ...o, [r.field]: text.slice(0, at).trimEnd(), [r.target]: { ...o[r.target], [r.chapter]: text.slice(at) } }
+      }
     }
   }
   return { obj: o, used }
