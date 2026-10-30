@@ -23,6 +23,24 @@ for (const rule of fixes.rules) {
       nd = { ...d, chapters: d.chapters.map(ch => ({ ...ch, [rule.target]: Object.fromEntries(Object.entries(ch[rule.target]).map(([k, t]) => { if (re.test(t)) { bump(rule.find); return [k, t.replace(re, '')] } return [k, t] })) })) }
     } else if (rule.op === 'replace-all') {
       nd = { ...d, [rule.target]: walk(d[rule.target], s => { let o = s; for (const [a, b] of rule.pairs) { const n = o.split(a).length - 1; if (n) { for (let i = 0; i < n; i++) bump(a); o = o.split(a).join(b) } } return o }) }
+    } else if (rule.op === 'rename-key') {
+      // chapters stored under the wrong number: move text from key `from` to key `to` (only if `to` is free)
+      const t = d[rule.target]
+      if (Object.prototype.hasOwnProperty.call(t, rule.from) && !Object.prototype.hasOwnProperty.call(t, rule.to)) {
+        bump(rule.from)
+        const nt = {}; for (const [k, v] of Object.entries(t)) nt[k === rule.from ? rule.to : k] = v
+        nd = { ...d, [rule.target]: nt }
+      }
+    } else if (rule.op === 'split-intro') {
+      // a chapter's notes were stored inside the book introduction: cut at an exact anchor string (must occur once)
+      const intro = d[rule.field], t = d[rule.target]
+      if (typeof intro === 'string' && !Object.prototype.hasOwnProperty.call(t, rule.chapter)) {
+        const parts = intro.split(rule.anchor)
+        if (parts.length === 2) {
+          bump(rule.anchor)
+          nd = { ...d, [rule.field]: parts[0].replace(/\s+$/, ''), [rule.target]: { ...t, [rule.chapter]: rule.anchor + parts[1] } }
+        }
+      }
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) })
   }
