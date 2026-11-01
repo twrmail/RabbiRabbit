@@ -1,147 +1,149 @@
 {
- "schemaVersion": 1,
- "note": "library = data + these rules. data/ is never edited. Each rule is mechanical, exact and counted: apply-library-fixes.mjs refuses to write unless the number of changes equals expectedCount, and source-scorecard.mjs re-applies the same rules to the originals in data/ (with separate code) and requires the result to equal library/. A change that is not listed here cannot pass gate 4.",
- "rules": [
-  {
-   "id": "web-psalm-poetry-marker",
-   "source": "web",
-   "folder": "library/bible/WEB",
-   "files": [
-    "PSA"
-   ],
-   "target": "verses",
-   "op": "strip-leading",
-   "find": "&gt;",
-   "expectedCount": 117,
-   "reason": "The WEB conversion left a literal '&gt; ' (an escaped markdown quote marker for the first line of a poem) at the start of 117 Psalm verses. It is formatting, not scripture. The Worker was supplying it to the model inside quoted scripture."
-  },
-  {
-   "id": "spurgeon-html-entities",
-   "source": "spurgeon",
-   "folder": "library/commentary/Spurgeon",
-   "files": [
-    "PSA"
-   ],
-   "target": "chapters",
-   "op": "replace-all",
-   "pairs": [
-    [
-     "&mdash;",
-     "—"
-    ],
-    [
-     "&amp;",
-     "&"
-    ]
-   ],
-   "expectedCount": {
-    "&mdash;": 4036,
-    "&amp;": 23
-   },
-   "reason": "Literal HTML entities left in the text by the markdown conversion (141 Psalm chapters). The same file already uses the real em dash 796 times, so this makes it consistent. Meaning unchanged."
-  },
-  {
-   "id": "mhc-1co16-subscription-brackets",
-   "source": "mhc",
-   "folder": "library/commentary/MHC",
-   "files": [
-    "1CO"
-   ],
-   "target": "chapters",
-   "op": "replace-all",
-   "pairs": [
-    [
-     "&lt;&lt;",
-     "«"
-    ],
-    [
-     "&gt;&gt;",
-     "»"
-    ]
-   ],
-   "expectedCount": {
-    "&lt;&lt;": 1,
-    "&gt;&gt;": 1
-   },
-   "reason": "The postscript printed after 1 Corinthians 16:24 (\"written from Philippi by Stephanas...\") is wrapped in the HTML entities for << and >>. They become the guillemets « and »: decoding to << and >> would collide with the Worker's own >>SCRIPTURE and >>COMMENTARY block markers. Wording unchanged."
-  },
-  {
-   "id": "wesley-2jn-chapter-number",
-   "source": "wesley",
-   "folder": "library/commentary/Wesley",
-   "files": [
-    "2JN"
-   ],
-   "target": "chapters",
-   "op": "rename-key",
-   "from": "5",
-   "to": "1",
-   "expectedCount": {
-    "5": 1
-   },
-   "reason": "2 John has one chapter. The notes are stored under the key \"5\". Their paragraphs are numbered 1 to 13 and 2 John has 13 verses, so the key becomes \"1\". Text unchanged."
-  },
-  {
-   "id": "wesley-lev1-from-introduction",
-   "source": "wesley",
-   "folder": "library/commentary/Wesley",
-   "files": [
-    "LEV"
-   ],
-   "field": "intro",
-   "target": "chapters",
-   "op": "split-intro",
-   "anchor": "Directions concerning burnt-offerings",
-   "chapter": "1",
-   "expectedCount": {
-    "Directions concerning burnt-offerings": 1
-   },
-   "reason": "Wesley's notes on Leviticus 1 sit at the end of the book introduction (no chapter 1 entry). CCEL's copy has the same text in the same order inside its \"Introduction to Leviticus and Chapter I\" section. The text from the chapter's own summary line (\"Directions concerning burnt-offerings...\") to the end becomes chapter \"1\"; the introduction keeps everything before it. No words changed."
-  },
-  {
-   "id": "wesley-psa-100-150-from-ccel",
-   "source": "wesley",
-   "folder": "library/commentary/Wesley",
-   "files": [
-    "PSA"
-   ],
-   "target": "chapters",
-   "op": "add-chapters",
-   "patchFile": "library/patches/wesley-ccel-psa-100-150.json",
-   "expectedCount": {
-    "chapters added": 51
-   },
-   "reason": "Notes on Psalms 100-150 (51 chapters) are absent from our copy, which stops at Psalm 99. Added from CCEL's copy of the same work (public domain per CCEL; source file sha256 c4534a89...). Each chapter's text and sha256 are in the patch file, which the tool re-checks before writing. Spelling in these chapters is modernised (CCEL's), unlike Psalms 1-99. Our existing chapters are never overwritten."
-  }
- ],
- "openIssues": [
-  {
-   "id": "jfb-mic5-replacement-char",
-   "source": "jfb",
-   "location": "MIC 5",
-   "description": "One U+FFFD replacement character inside a word ('appearance o� Messiah').",
-   "notFixedBecause": "The original character cannot be known from this copy. Needs a second independent copy of JFB."
-  },
-  {
-   "id": "calvin-gen46-greek-entities",
-   "source": "calvin",
-   "location": "GEN 46 and 6 other chapters (EZK 14, HEB 13, JHN 12, ...)",
-   "description": "17 literal '&amp;' sequences, mostly inside garbled Greek transliteration (e.g. 'de&amp;lt; pro&amp;lt;v tu&amp;gt;rannon'), double-encoded from an older Greek encoding.",
-   "notFixedBecause": "Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution."
-  },
-  {
-   "id": "wesley-2sa24-missing",
-   "source": "wesley",
-   "location": "2SA 24",
-   "description": "No notes for 2 Samuel 24, although Wesley's own introduction mentions it.",
-   "notFixedBecause": "Absent from both our copy and CCEL's copy. Needs a third source."
-  },
-  {
-   "id": "wesley-missing-dashes",
-   "source": "wesley",
-   "location": "all books (about 521 places)",
-   "description": "The dash after a headword is missing in places (\"Multiplied Which forced...\" for \"Multiplied - Which forced...\").",
-   "notFixedBecause": "CCEL's copy has them. Planned as its own recorded change with a listed patch."
-  }
- ]
+  "schemaVersion": 1,
+  "note": "library = data + these rules. data/ is never edited. Each rule is mechanical, exact and counted: apply-library-fixes.mjs refuses to write unless the number of changes equals expectedCount, and source-scorecard.mjs re-applies the same rules to the originals in data/ (with separate code) and requires the result to equal library/. A change that is not listed here cannot pass gate 4.",
+  "rules": [
+    {
+      "id": "web-psalm-poetry-marker",
+      "source": "web",
+      "folder": "library/bible/WEB",
+      "files": [
+        "PSA"
+      ],
+      "target": "verses",
+      "op": "strip-leading",
+      "find": "&gt;",
+      "expectedCount": 117,
+      "reason": "The WEB conversion left a literal '&gt; ' (an escaped markdown quote marker for the first line of a poem) at the start of 117 Psalm verses. It is formatting, not scripture. The Worker was supplying it to the model inside quoted scripture."
+    },
+    {
+      "id": "spurgeon-html-entities",
+      "source": "spurgeon",
+      "folder": "library/commentary/Spurgeon",
+      "files": [
+        "PSA"
+      ],
+      "target": "chapters",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "&mdash;",
+          "—"
+        ],
+        [
+          "&amp;",
+          "&"
+        ]
+      ],
+      "expectedCount": {
+        "&mdash;": 4036,
+        "&amp;": 23
+      },
+      "reason": "Literal HTML entities left in the text by the markdown conversion (141 Psalm chapters). The same file already uses the real em dash 796 times, so this makes it consistent. Meaning unchanged."
+    },
+    {
+      "id": "mhc-1co16-subscription-brackets",
+      "source": "mhc",
+      "folder": "library/commentary/MHC",
+      "files": [
+        "1CO"
+      ],
+      "target": "chapters",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "&lt;&lt;",
+          "«"
+        ],
+        [
+          "&gt;&gt;",
+          "»"
+        ]
+      ],
+      "expectedCount": {
+        "&lt;&lt;": 1,
+        "&gt;&gt;": 1
+      },
+      "reason": "The postscript printed after 1 Corinthians 16:24 (\"written from Philippi by Stephanas...\") is wrapped in the HTML entities for << and >>. They become the guillemets « and »: decoding to << and >> would collide with the Worker's own >>SCRIPTURE and >>COMMENTARY block markers. Wording unchanged."
+    },
+    {
+      "id": "wesley-2jn-chapter-number",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "2JN"
+      ],
+      "target": "chapters",
+      "op": "rename-key",
+      "from": "5",
+      "to": "1",
+      "expectedCount": {
+        "5": 1
+      },
+      "reason": "2 John has one chapter. The notes are stored under the key \"5\". Their paragraphs are numbered 1 to 13 and 2 John has 13 verses, so the key becomes \"1\". Text unchanged."
+    },
+    {
+      "id": "wesley-lev1-from-introduction",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "LEV"
+      ],
+      "field": "intro",
+      "target": "chapters",
+      "op": "split-intro",
+      "anchor": "Directions concerning burnt-offerings",
+      "chapter": "1",
+      "expectedCount": {
+        "Directions concerning burnt-offerings": 1
+      },
+      "reason": "Wesley's notes on Leviticus 1 sit at the end of the book introduction (no chapter 1 entry). CCEL's copy has the same text in the same order inside its \"Introduction to Leviticus and Chapter I\" section. The text from the chapter's own summary line (\"Directions concerning burnt-offerings...\") to the end becomes chapter \"1\"; the introduction keeps everything before it. No words changed."
+    },
+    {
+      "id": "wesley-chapter-structure",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "PSA",
+        "MAL",
+        "REV"
+      ],
+      "op": "restructure-chapters",
+      "patchFile": "library/patches/wesley-structure.json",
+      "expectedCount": {
+        "chapters split out": 51,
+        "tails cut": 2
+      },
+      "reason": "Three chapters held text that belongs elsewhere. (1) Psalms: the notes on Psalms 100-150 sit on the end of chapter 99 (61,862 characters). They are split into chapters 99-150 at each psalm's own first line, using our own text (same spelling and line breaks as the rest of Wesley here); this replaces the 51 CCEL-sourced chapters that an earlier change (merged Oct 31, rule wesley-psa-100-150-from-ccel) added on the mistaken belief that Psalms 100-150 were missing; that rule and its patch file are retired, and each replaced chapter must match its recorded hash. (2) Malachi 4: the book's scripture index (23,722 characters) was appended after the last note; cut. (3) Revelation 22: Wesley's Old Testament preface (17,417 characters) was appended after the last note; cut. The cut text stays in data/. Cut points and hashes are in the patch file."
+    }
+  ],
+  "openIssues": [
+    {
+      "id": "jfb-mic5-replacement-char",
+      "source": "jfb",
+      "location": "MIC 5",
+      "description": "One U+FFFD replacement character inside a word ('appearance o� Messiah').",
+      "notFixedBecause": "The original character cannot be known from this copy. Needs a second independent copy of JFB."
+    },
+    {
+      "id": "calvin-gen46-greek-entities",
+      "source": "calvin",
+      "location": "GEN 46 and 6 other chapters (EZK 14, HEB 13, JHN 12, ...)",
+      "description": "17 literal '&amp;' sequences, mostly inside garbled Greek transliteration (e.g. 'de&amp;lt; pro&amp;lt;v tu&amp;gt;rannon'), double-encoded from an older Greek encoding.",
+      "notFixedBecause": "Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution."
+    },
+    {
+      "id": "wesley-2sa24-missing",
+      "source": "wesley",
+      "location": "2SA 24",
+      "description": "No notes for 2 Samuel 24, although Wesley's own introduction mentions it.",
+      "notFixedBecause": "Absent from both our copy and CCEL's copy. Needs a third source."
+    },
+    {
+      "id": "wesley-missing-dashes",
+      "source": "wesley",
+      "location": "all books (about 521 places)",
+      "description": "The dash after a headword is missing in places (\"Multiplied Which forced...\" for \"Multiplied - Which forced...\").",
+      "notFixedBecause": "CCEL's copy has them. Planned as its own recorded change with a listed patch."
+    }
+  ]
 }
