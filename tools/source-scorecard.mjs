@@ -53,6 +53,21 @@ function applyRecordedFixes(srcId, code, obj) {
         }
         if (ok) o = { ...o, [r.target]: { ...have, ...extra } }
       }
+    } else if (r.op === 'restructure-chapters') {
+      // written separately: slices from the patch offsets and accepts a piece only if its sha256 matches the patch
+      const pf = path.resolve(libDir, '..', r.patchFile)
+      if (exists(pf)) {
+        const patch = readJSON(pf), sha = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+        const chs = { ...(o.chapters || {}) }
+        for (const ent of patch.entries.filter(e => e.book === code)) {
+          const src = chs[ent.chapter]
+          if (typeof src !== 'string' || sha(src) !== ent.beforeSha256) continue
+          const out = ent.pieces.map(pc => src.slice(pc.start, pc.end))
+          if (!out.every((t, i) => sha(t) === ent.pieces[i].sha256)) continue
+          ent.pieces.forEach((pc, i) => { chs[pc.chapter] = out[i] })
+        }
+        o = { ...o, chapters: Object.fromEntries(Object.entries(chs).sort((a, b) => +a[0] - +b[0])) }
+      }
     } else if (r.op === 'split-intro') {
       const text = o[r.field], at = typeof text === 'string' ? text.indexOf(r.anchor) : -1
       if (at >= 0 && text.indexOf(r.anchor, at + 1) < 0 && !(r.chapter in (o[r.target] || {}))) {

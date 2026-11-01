@@ -53,6 +53,32 @@ for (const rule of fixes.rules) {
         add[k] = v.text; bump('chapters added')
       }
       if (Object.keys(add).length) nd = { ...d, [rule.target]: { ...t, ...add } }
+    } else if (rule.op === 'restructure-chapters') {
+      // chapter boundaries repaired from a patch of exact offsets. For each entry the patch records the sha256 of the source chapter and,
+      // for every piece to keep, its start/end and sha256. The source chapter is changed only if it matches "beforeSha256"; every piece
+      // must hash to its recorded value; an existing chapter is replaced only if it matches that piece's recorded replacesSha256.
+      // Anything else stops the tool with nothing written. An entry already applied (source chapter equals its first piece) is left alone.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const chs = { ...d.chapters }
+      for (const ent of patch.entries.filter(x => x.book === code)) {
+        const src = d.chapters[ent.chapter]
+        if (typeof src !== 'string') throw new Error(`${code} ${ent.chapter}: no such chapter`)
+        const texts = ent.pieces.map(pc => src.slice(pc.start, pc.end))
+        const h = H(src)
+        if (h === ent.pieces[0].sha256) {
+          for (const pc of ent.pieces.slice(1)) if (!(pc.chapter in chs) || H(chs[pc.chapter]) !== pc.sha256) throw new Error(`${code} ${pc.chapter}: first piece is in place but this chapter does not match its recorded hash; nothing written`)
+          continue
+        }
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ent.chapter}: text matches neither the recorded before hash nor the repaired text; nothing written`)
+        ent.pieces.forEach((pc, i) => {
+          if (H(texts[i]) !== pc.sha256) throw new Error(`${code} ${pc.chapter}: piece does not match its recorded sha256; nothing written`)
+          if (i > 0 && pc.chapter in chs && H(chs[pc.chapter]) !== pc.replacesSha256) throw new Error(`${code} ${pc.chapter}: chapter exists and is not the text this fix expects to replace; nothing written`)
+        })
+        ent.pieces.forEach((pc, i) => { chs[pc.chapter] = texts[i]; if (i > 0) bump('chapters split out') })
+        if (ent.removed) bump('tails cut')
+      }
+      nd = { ...d, chapters: Object.fromEntries(Object.entries(chs).sort((a, b) => +a[0] - +b[0])) }
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) })
   }
