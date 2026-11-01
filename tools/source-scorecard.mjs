@@ -40,6 +40,19 @@ function applyRecordedFixes(srcId, code, obj) {
       // written separately from apply-library-fixes.mjs: rebuild the object from its entries
       const ent = Object.entries(o[r.target] || {})
       if (ent.some(([k]) => k === r.from) && !ent.some(([k]) => k === r.to)) o = { ...o, [r.target]: Object.fromEntries(ent.map(([k, v]) => [k === r.from ? r.to : k, v])) }
+    } else if (r.op === 'add-chapters') {
+      // written separately: reads the patch file itself and hashes with its own call; on any mismatch it adds nothing,
+      // so the comparison with the original then fails visibly
+      const pf = path.resolve(libDir, '..', r.patchFile)
+      if (exists(pf)) {
+        const patch = readJSON(pf), have = o[r.target] || {}, extra = {}
+        let ok = true
+        for (const [k, v] of Object.entries(patch.chapters)) {
+          if (crypto.createHash('sha256').update(v.text, 'utf8').digest('hex') !== v.sha256) { ok = false; break }
+          if (!(k in have)) extra[k] = v.text
+        }
+        if (ok) o = { ...o, [r.target]: { ...have, ...extra } }
+      }
     } else if (r.op === 'split-intro') {
       const text = o[r.field], at = typeof text === 'string' ? text.indexOf(r.anchor) : -1
       if (at >= 0 && text.indexOf(r.anchor, at + 1) < 0 && !(r.chapter in (o[r.target] || {}))) {

@@ -97,6 +97,21 @@
     "Directions concerning burnt-offerings": 1
    },
    "reason": "Wesley's notes on Leviticus 1 sit at the end of the book introduction (no chapter 1 entry). CCEL's copy has the same text in the same order inside its \"Introduction to Leviticus and Chapter I\" section. The text from the chapter's own summary line (\"Directions concerning burnt-offerings...\") to the end becomes chapter \"1\"; the introduction keeps everything before it. No words changed."
+  },
+  {
+   "id": "wesley-psa-100-150-from-ccel",
+   "source": "wesley",
+   "folder": "library/commentary/Wesley",
+   "files": [
+    "PSA"
+   ],
+   "target": "chapters",
+   "op": "add-chapters",
+   "patchFile": "library/patches/wesley-ccel-psa-100-150.json",
+   "expectedCount": {
+    "chapters added": 51
+   },
+   "reason": "Notes on Psalms 100-150 (51 chapters) are absent from our copy, which stops at Psalm 99. Added from CCEL's copy of the same work (public domain per CCEL; source file sha256 c4534a89...). Each chapter's text and sha256 are in the patch file, which the tool re-checks before writing. Spelling in these chapters is modernised (CCEL's), unlike Psalms 1-99. Our existing chapters are never overwritten."
   }
  ],
  "openIssues": [
@@ -113,13 +128,6 @@
    "location": "GEN 46 and 6 other chapters (EZK 14, HEB 13, JHN 12, ...)",
    "description": "17 literal '&amp;' sequences, mostly inside garbled Greek transliteration (e.g. 'de&amp;lt; pro&amp;lt;v tu&amp;gt;rannon'), double-encoded from an older Greek encoding.",
    "notFixedBecause": "Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution."
-  },
-  {
-   "id": "wesley-psa100-150-missing",
-   "source": "wesley",
-   "location": "PSA 100-150",
-   "description": "Notes on Psalms 100-150 are absent (our copy stops at Psalm 99).",
-   "notFixedBecause": "Present in CCEL's copy (sha256 c4534a89...). Planned as its own recorded change, marked as from CCEL (its spelling is modernized)."
   },
   {
    "id": "wesley-2sa24-missing",

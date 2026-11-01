@@ -4,6 +4,7 @@
 // Never touches data/. Idempotent: a rule that is already applied reports 0 changes and is not an error.
 import fs from 'node:fs'
 import path from 'node:path'
+import crypto from 'node:crypto'
 const [, , root = '.', flag] = process.argv
 const write = flag === '--write'
 const check = flag === '--check'   // CI mode: exit 1 unless every rule is already applied
@@ -41,6 +42,17 @@ for (const rule of fixes.rules) {
           nd = { ...d, [rule.field]: parts[0].replace(/\s+$/, ''), [rule.target]: { ...t, [rule.chapter]: rule.anchor + parts[1] } }
         }
       }
+    } else if (rule.op === 'add-chapters') {
+      // chapters missing from our copy, taken from a patch file that carries the text and a sha256 per chapter.
+      // Refuses to overwrite a chapter we already have, and refuses a chapter whose text does not match its recorded hash.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const t = d[rule.target], add = {}
+      for (const [k, v] of Object.entries(patch.chapters)) {
+        if (crypto.createHash('sha256').update(v.text).digest('hex') !== v.sha256) throw new Error(`patch chapter ${k}: text does not match its recorded sha256`)
+        if (Object.prototype.hasOwnProperty.call(t, k)) { if (t[k] !== v.text) throw new Error(`chapter ${k} already exists and differs from the patch; not overwriting`); continue }
+        add[k] = v.text; bump('chapters added')
+      }
+      if (Object.keys(add).length) nd = { ...d, [rule.target]: { ...t, ...add } }
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) })
   }
