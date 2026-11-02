@@ -53,6 +53,24 @@ function applyRecordedFixes(srcId, code, obj) {
         }
         if (ok) o = { ...o, [r.target]: { ...have, ...extra } }
       }
+    } else if (r.op === 'insert-text') {
+      // written separately: builds the new text from pieces and accepts it only if its sha256 equals the recorded "after" hash
+      const pf = path.resolve(libDir, '..', r.patchFile)
+      if (exists(pf)) {
+        const patch = readJSON(pf), sha = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+        const chs = { ...(o.chapters || {}) }; let intro = o.intro
+        for (const ent of patch.chapters.filter(e => e.book === code)) {
+          const text = ent.chapter === 'intro' ? intro : chs[ent.chapter]
+          if (typeof text !== 'string' || sha(text) !== ent.beforeSha256) continue
+          const parts = []; let last = 0
+          for (const x of [...ent.inserts].sort((a, b) => a.offset - b.offset)) { parts.push(text.slice(last, x.offset), patch.insert); last = x.offset }
+          parts.push(text.slice(last))
+          const res = parts.join('')
+          if (sha(res) !== ent.afterSha256) continue
+          if (ent.chapter === 'intro') intro = res; else chs[ent.chapter] = res
+        }
+        o = { ...o, chapters: chs, ...(intro !== undefined ? { intro } : {}) }
+      }
     } else if (r.op === 'restructure-chapters') {
       // written separately: slices from the patch offsets and accepts a piece only if its sha256 matches the patch
       const pf = path.resolve(libDir, '..', r.patchFile)
