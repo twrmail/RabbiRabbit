@@ -103,6 +103,23 @@ for (const rule of fixes.rules) {
         if (ent.chapter === 'intro') nd2.intro = out; else nd2.chapters[ent.chapter] = out
       }
       nd = nd2
+    } else if (rule.op === 'replace-chapters') {
+      // whole chapters replaced from a patch file that carries the new text. For each chapter the patch records the sha256 of our text
+      // before and of the new text after. A chapter is replaced only if it matches "before"; one already matching "after" is left alone;
+      // anything else stops the tool with nothing written. Works on the {chapter, commentary} list used by the Calvin files.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) return ch
+        if (H(ent.text) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: patch text does not match its own recorded sha256`)
+        const h = H(ch.commentary)
+        if (h === ent.afterSha256) return ch
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        bump('chapters replaced')
+        return { ...ch, commentary: ent.text }
+      }) }
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) })
   }
