@@ -66,8 +66,10 @@ for (const rule of fixes.rules) {
         if (typeof src !== 'string') throw new Error(`${code} ${ent.chapter}: no such chapter`)
         const texts = ent.pieces.map(pc => src.slice(pc.start, pc.end))
         const h = H(src)
-        if (h === ent.pieces[0].sha256) {
-          for (const pc of ent.pieces.slice(1)) if (!(pc.chapter in chs) || H(chs[pc.chapter]) !== pc.sha256) throw new Error(`${code} ${pc.chapter}: first piece is in place but this chapter does not match its recorded hash; nothing written`)
+        if (h !== ent.beforeSha256 && src.length < ent.length) {
+          // already applied (the source chapter is shorter than before); a later fix, such as restored dashes, may since have changed these texts,
+          // so only their presence is checked here. The scorecard's Preserved gate re-checks the whole result against data/.
+          for (const pc of ent.pieces.slice(1)) if (!(pc.chapter in chs)) throw new Error(`${code} ${pc.chapter}: first piece is in place but this chapter is missing; nothing written`)
           continue
         }
         if (h !== ent.beforeSha256) throw new Error(`${code} ${ent.chapter}: text matches neither the recorded before hash nor the repaired text; nothing written`)
@@ -79,6 +81,28 @@ for (const rule of fixes.rules) {
         if (ent.removed) bump('tails cut')
       }
       nd = { ...d, chapters: Object.fromEntries(Object.entries(chs).sort((a, b) => +a[0] - +b[0])) }
+    } else if (rule.op === 'insert-text') {
+      // a listed patch of exact insertions, chapter by chapter. For each chapter the patch records the sha256 of the text
+      // before and after. The chapter is changed only if it matches "before", every insertion point is checked against the text
+      // around it, and the result must match "after" or the tool stops. A chapter already matching "after" is left alone.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      let nd2 = { ...d, chapters: { ...d.chapters } }
+      for (const ent of patch.chapters.filter(x => x.book === code)) {
+        const text = ent.chapter === 'intro' ? d.intro : d.chapters[ent.chapter]
+        if (typeof text !== 'string') throw new Error(`${code} ${ent.chapter}: no such text`)
+        const h = H(text)
+        if (h === ent.afterSha256) continue
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ent.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        let out = text
+        for (const x of [...ent.inserts].sort((a, b) => b.offset - a.offset)) {
+          if (text.slice(Math.max(0, x.offset - x.before.length), x.offset) !== x.before || text.slice(x.offset, x.offset + x.after.length) !== x.after) throw new Error(`${code} ${ent.chapter} @${x.offset}: surrounding text does not match; nothing written`)
+          out = out.slice(0, x.offset) + patch.insert + out.slice(x.offset); bump('dashes inserted')
+        }
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ent.chapter}: result does not match the recorded after hash; nothing written`)
+        if (ent.chapter === 'intro') nd2.intro = out; else nd2.chapters[ent.chapter] = out
+      }
+      nd = nd2
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) })
   }
