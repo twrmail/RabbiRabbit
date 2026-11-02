@@ -191,6 +191,24 @@
         "dashes inserted": 544
       },
       "reason": "In 544 places our Wesley text has lost the dash that follows his headword (\"Multiplied Which forced...\" for \"Multiplied - Which forced...\"). Each place is listed in the patch file where CCEL's copy of the same work has a lone dash between two words that are identical in ours and nothing else differs at that spot. The patch records each chapter's sha256 before and after; the tool and, separately, the scorecard re-check them."
+    },
+    {
+      "id": "calvin-restore-truncated-chapters",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "ZEC",
+        "MAL",
+        "1TI",
+        "2TI",
+        "TIT"
+      ],
+      "op": "replace-chapters",
+      "patchFile": "library/patches/calvin-from-ccel.json",
+      "expectedCount": {
+        "chapters replaced": 31
+      },
+      "reason": "In Zechariah (14 chapters), Malachi (4), 1 Timothy (6), 2 Timothy (4) and Titus (3) our copy holds only 6-10% of each chapter (for example Zechariah 71,392 characters against 878,861 in CCEL's copy of the same translation). Every 6-word run of our text is found in the CCEL chapter (at least 97% in every chapter replaced; the patch records the figure), so ours is a shortened copy, not different wording. The 31 chapters are replaced with CCEL's full chapter text (tags and footnotes removed, as in our copy). Each entry carries the sha256 of our text before and of the new text after, and the tool refuses any chapter that matches neither. Source: CCEL calcom30.xml and calcom43.xml (hashes recorded in the patch folder note)."
     }
   ],
   "openIssues": [
