@@ -209,6 +209,47 @@
         "chapters replaced": 31
       },
       "reason": "In Zechariah (14 chapters), Malachi (4), 1 Timothy (6), 2 Timothy (4) and Titus (3) our copy holds only 6-10% of each chapter (for example Zechariah 71,392 characters against 878,861 in CCEL's copy of the same translation). Every 6-word run of our text is found in the CCEL chapter (at least 97% in every chapter replaced; the patch records the figure), so ours is a shortened copy, not different wording. The 31 chapters are replaced with CCEL's full chapter text (tags and footnotes removed, as in our copy). Each entry carries the sha256 of our text before and of the new text after, and the tool refuses any chapter that matches neither. Source: CCEL calcom30.xml and calcom43.xml (hashes recorded in the patch folder note)."
+    },
+    {
+      "id": "calvin-chapter-boundaries-from-ccel",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "1CO",
+        "1JN",
+        "1PE",
+        "1TH",
+        "2CO",
+        "2PE",
+        "2TH",
+        "AMO",
+        "COL",
+        "DAN",
+        "EPH",
+        "EZK",
+        "GAL",
+        "GEN",
+        "HAB",
+        "HAG",
+        "HEB",
+        "HOS",
+        "JAS",
+        "JER",
+        "JHN",
+        "JOL",
+        "JOS",
+        "LAM",
+        "PHM",
+        "PHP",
+        "ROM",
+        "ZEP"
+      ],
+      "op": "replace-chapters",
+      "patchFile": "library/patches/calvin-boundaries-from-ccel.json",
+      "expectedCount": {
+        "chapters replaced": 286
+      },
+      "reason": "In our Calvin copy a chapter commonly ends with the opening verse block of the next chapter (for example 1 Corinthians 3 ends with 'CHAPTER 4 1 Corinthians 4:1-5 ...') and lacks its own; the first chapter of a book lacks its opening block altogether; and Philemon carries 3,000 characters of another book's scripture translation after its last paragraph. CCEL's copy of the same translation has every chapter whole. A chapter is replaced with CCEL's only if at least 97% of our chapter's 6-word runs are found in CCEL's chapter or the next (nothing of ours is lost) and at least 97% of CCEL's chapter is found in ours or its neighbours (nothing is invented). The patch records both figures for every chapter, the sha256 of our text before and of the new text after. 136 chapters failed the test and are left alone (Isaiah 1-66 and Acts 1-28 among them: Isaiah volumes 13-16 lack chapter headings in CCEL, and our Acts text carries material CCEL does not); they are listed for later review."
     }
   ],
   "openIssues": [
@@ -222,8 +263,8 @@
     {
       "id": "calvin-gen46-greek-entities",
       "source": "calvin",
-      "location": "GEN 46 and 6 other chapters (EZK 14, HEB 13, JHN 12, ...)",
-      "description": "17 literal '&amp;' sequences, mostly inside garbled Greek transliteration (e.g. 'de&amp;lt; pro&amp;lt;v tu&amp;gt;rannon'), double-encoded from an older Greek encoding.",
+      "location": "GEN 47 and 2 other chapters (HEB 13, PSA 6)",
+      "description": "15 literal HTML entity sequences ('&lt;' x3, '&gt;' x6 and '&amp;' x4 as counted by the scorecard in these chapters), mostly inside garbled Greek transliteration (e.g. 'de&lt; pro&lt;v'), double-encoded from an older Greek encoding. CCEL's copy has the same garbling in Genesis 47; the chapters it replaced (GEN 46, EZK 14, JHN 12 and others) no longer show it.",
       "notFixedBecause": "Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution."
     },
     {
