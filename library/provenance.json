@@ -133,7 +133,8 @@
       "openQuestions": [
         "Is our copy from the same translation and edition?",
         "Baker 1996 is a modern printing; does that add any rights claim to its typesetting?",
-        "Isaiah 1-16, Acts, Exodus-Deuteronomy, Matthew-Luke, Psalms not yet compared."
+        "Acts and Isaiah 1-16 compared with CCEL (no commentary missing). Exodus-Deuteronomy, Matthew-Luke, Psalms, Jonah, Micah, Nahum, Obadiah, Jude, Malachi and Philemon still need their own CCEL readers.",
+        "Chapter-opening translations (Calvin's translation of the chapter, English with Latin) exist in CCEL and not in our copy; see open issue calvin-chapter-opening-translations in library/fixes.json. They are not in data/ or library/, so if imported they are newly sourced CCEL material needing their own provenance and rights review. The Calvin repairs so far drew moved text from our own copy; the two Acts arguments are the only CCEL-sourced text added."
       ],
       "note": "Moved blocks (library/patches/calvin-moves.json) take text from our own old copy, with CCEL as witness only."
     },

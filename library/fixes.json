@@ -413,6 +413,13 @@
   ],
   "openIssues": [
     {
+      "id": "calvin-chapter-opening-translations",
+      "source": "calvin",
+      "location": "ISA 1-16 measured (16 chapters, about 14,800 words); about 240 chapters in 26 books estimated, provisional",
+      "description": "Chapter-opening translations: CCEL contains Calvin's translation of the biblical chapter, generally with Latin alongside English. These blocks are absent from the repository copy. Comparison of Isaiah 1-16 found no missing commentary; the large word-count difference is explained by these translations and by translator footnotes retained in the repository copy. Do not treat the translations as missing commentary or merge them into commentary text. Revisit as a separate content type when designing the comparison-site schema. Estimated occurrence across Calvin's corpus (about 159,000 words) comes from an earlier comparison that pre-dates some repairs and remains provisional pending complete volume coverage. If imported later, they are newly sourced CCEL translation material and need their own provenance and rights review: they are in neither data/ nor library/.",
+      "notFixedBecause": "the translations are a different content type from commentary; adding them to the chapter text would distort verse-level comparison, and no field for them exists yet."
+    },
+    {
       "id": "calvin-gen46-greek-entities",
       "source": "calvin",
       "location": "GEN 47 and 2 other chapters (HEB 13, PSA 6)",
