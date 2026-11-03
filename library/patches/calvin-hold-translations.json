@@ -1,0 +1,232 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-hold-translations",
+ "source": "calvin",
+ "purpose": "Cut volume back matter from the end of twelve chapters and hold it in library/held/calvin-held.json.",
+ "chapters": [
+  {
+   "book": "EPH",
+   "chapter": 6,
+   "beforeSha256": "c95a1e6999ded5f8c713e9a11333fb4b66bc06f494937d05a59b9fbecadd2e29",
+   "afterSha256": "cb972e6181f0d8f474b3dcb8ff9bb2f674a2bd81dbaa6d5b13b5ffcde6e4ad19",
+   "cut": {
+    "offset": 40901,
+    "length": 26426,
+    "sha256": "9662c8b1abc05920309fd79d44acf680cd05c0796d446ce7facafd83efe2cf20"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-001",
+    "calvin-held-002"
+   ],
+   "keptEndsWith": "incerity is as necessary as ever. END OF THE COMMENTARIES ON THE EPISTLE TO THE EPHESIANS.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF THE EPISTLE OF PAUL TO THE GALATIANS. CHAPTER 1 1 Pau"
+  },
+  {
+   "book": "HAG",
+   "chapter": 2,
+   "beforeSha256": "fd3423cf488d3198a939da28ebdf78274a567f22495780537628d83b70fcff77",
+   "afterSha256": "acfe8cb2909a9ce68131d944122be8a6af5d31b4895f13f53b8bf1e2a8872aef",
+   "cut": {
+    "offset": 84581,
+    "length": 23378,
+    "sha256": "fd58c40291313a2475636538028543dbe3fd4189cf62499ce9acd61d5c9be8c8"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-003",
+    "calvin-held-004",
+    "calvin-held-005",
+    "calvin-held-006"
+   ],
+   "keptEndsWith": "thou hast promised to us, and procured for us by the blood of thy only begotten Son. Amen.",
+   "tailStartsWith": "A TRANSLATION of CALVIN’S VERSION of THE BOOK OF HABAKKUK. chapter 1 1 the burden which Ha"
+  },
+  {
+   "book": "HOS",
+   "chapter": 14,
+   "beforeSha256": "f32ec67bc49bba7bee7d6b5c4f64804794effa3601c1e4dcfe98b1142111edb4",
+   "afterSha256": "9a0bffab7853a36553c5268383a502fbd095c407047e093fe0ea82e2c7b7a080",
+   "cut": {
+    "offset": 51762,
+    "length": 25261,
+    "sha256": "f2ac007c7a2f6955d01b48ea65ee5275ff1a380f6e6d0576e9b9c25edabf5368"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-007",
+    "calvin-held-008"
+   ],
+   "keptEndsWith": "at his ways are right. This is the meaning of the sentence. End of the Prophecies of Hosea",
+   "tailStartsWith": "The addenda to Hosea are located here. A TRANSLATION OF CALVIN’S VERSION OF THE PROPHECIES"
+  },
+  {
+   "book": "JER",
+   "chapter": 9,
+   "beforeSha256": "e3e677ce3e9ea050d89fd046e63bd5963661c989561eaa16d646f551585667ff",
+   "afterSha256": "35f33032272b76705310e07bfab0acaa4cfcd13e95af71afa3dd50ba6194cc3f",
+   "cut": {
+    "offset": 104390,
+    "length": 29552,
+    "sha256": "0b80fe108de5f602cc3a5f62e3c84b003e050be8af79d602b2019d35fdbc90ab"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-009"
+   ],
+   "keptEndsWith": "hat ruiness of glory, which has been prepared for us in heaven by Christ our Lord. — Amen.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF JEREMIAH CHAPTERS 1—9 CHAPTER 1 1 The words of Jeremi"
+  },
+  {
+   "book": "JER",
+   "chapter": 19,
+   "beforeSha256": "07d9fea852c895c979575afec708d52ca383df09cfcd52fd7bde00e31558aab0",
+   "afterSha256": "d58a39ce63ba53e68ff0566bbc1608f7b2b2d490af4cd475aaaed5c97e9fdecb",
+   "cut": {
+    "offset": 51134,
+    "length": 24705,
+    "sha256": "e4ab2413745f163fb65f70f4ba84888840b3617f09a8c349bcc6bdf8e68d6fd1"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-010"
+   ],
+   "keptEndsWith": "d into that celestial kingdom, which thy Son has procured for us by his own blood. — Amen.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF JEREMIAH CHAPTERS 10—19 CHAPTER 10 1 Hear ye the word"
+  },
+  {
+   "book": "JER",
+   "chapter": 29,
+   "beforeSha256": "79ef3c068e7b6a9ddc8f99331f74043215bff557bc1721647219505b123b85c6",
+   "afterSha256": "c4c846e5657fbce17fa6cab5dcb5e3520de3b9514ab2af6251dc55598cf91239",
+   "cut": {
+    "offset": 101353,
+    "length": 15009,
+    "sha256": "2f4324c411bc368202acb680904deec2a67498d85bcf7f214c91e4ae0fadf2fa"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-011"
+   ],
+   "keptEndsWith": "lead them to repentance, however late it may have been. This is the import of the passage.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF JEREMIAH CHAPTERS 20—29 CHAPTER 20 1 And Pashur the s"
+  },
+  {
+   "book": "JER",
+   "chapter": 47,
+   "beforeSha256": "f16e73e449bb770fcda346f2566138a0576f81a00537cc2dddab84e78b5187f5",
+   "afterSha256": "1f0484d84c3bd9b588dd0f03fbee5ef81bc9a5194160dd27ce906d18ee2a1930",
+   "cut": {
+    "offset": 18974,
+    "length": 8585,
+    "sha256": "e4afe6e11957cb643688a2bb77a3bf2ee55074ea5a98e7f8f84fb176d007ea6f"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-012"
+   ],
+   "keptEndsWith": "r of thine only-begotten Son, until he shall gather us into his celestial kingdom. — Amen.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF JEREMIAH CHAPTERS 30—47 CHAPTER 30 1 The word which c"
+  },
+  {
+   "book": "JOS",
+   "chapter": 24,
+   "beforeSha256": "9826c3cdb2cd793ea71515e462fed24d9fa16ca6ad77c775014ac5b06eebebec",
+   "afterSha256": "361f882174a5c8ccf0adfa72c9e3f98c0620c9ca118b82d86dc18185b7fe6577",
+   "cut": {
+    "offset": 30147,
+    "length": 24838,
+    "sha256": "1612e8f42265aeab78bdbeb408ca4cd7d736335fa0f12375383eaf10c31a7915"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-013"
+   ],
+   "keptEndsWith": "ts being a symbol of the future Resurrection. END OF THE COMMENTARY ON THE BOOK OF JOSHUA.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF THE BOOK OF JOSHUA CHAPTER 1 1 And it came to pass af"
+  },
+  {
+   "book": "JUD",
+   "chapter": 1,
+   "beforeSha256": "2733f3267af687ac7c724309bb5398b8b7809ceb1c03e7dea041b62665d53ac6",
+   "afterSha256": "a7b24f0c91d429171ad184df5a415870f731b61bf4fa6ad0a926170d3ea1e500",
+   "cut": {
+    "offset": 45355,
+    "length": 9676,
+    "sha256": "e56010fe7584f8e470c118cc71c0c1df6b90b451bc69409aaacc7d4f6ba1c164"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-014"
+   ],
+   "keptEndsWith": " allusion is to a remoter clause, when he said, Keep yourselves END OF THE EPISTLE OF JUDE",
+   "tailStartsWith": "A TRANSLATION OF CALVIN'S VERSION OF THE FIRST EPISTLE OF PETER CHAPTER 1 1 Peter, an apos"
+  },
+  {
+   "book": "NAH",
+   "chapter": 3,
+   "beforeSha256": "3c997e6f8be1cc806e87e065528a38d7a6a1c51cd63f75c9473637369c4afe96",
+   "afterSha256": "600411497fec079bd9246e1a3bbacf3c9f44693e26b6de3a8df3e9548f03641b",
+   "cut": {
+    "offset": 58450,
+    "length": 28183,
+    "sha256": "2f528f40f1130ce563b4861d7d5ea5a78cb58f4e874330ea55bdb3122cfea7c3"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-015",
+    "calvin-held-016",
+    "calvin-held-017"
+   ],
+   "keptEndsWith": "repared for us in heaven by Christ Jesus our Lord. Amen. End of the Commentaries on Nahum.",
+   "tailStartsWith": "A Translation of Calvin’s Version of The Book of Jonah. Chapter 1 1 And the word of Jehova"
+  },
+  {
+   "book": "OBA",
+   "chapter": 1,
+   "beforeSha256": "fd6d046ad03743cb7cb0abbc23c309224c01c8aa394cadc0e769e4f371a17112",
+   "afterSha256": "35c112f7903fbf61ca49b81c8a2f3af283067f13a53996cc99edd04dbdd3508b",
+   "cut": {
+    "offset": 77880,
+    "length": 20230,
+    "sha256": "19d6837b3d9a9611d53d3d406f94228dedc5f17708604bf92816fbaa030e2743"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-018",
+    "calvin-held-019"
+   ],
+   "keptEndsWith": "for us by the blood of Christ thy Son, one Lord. Amen. End of the Commentaries on Obadiah.",
+   "tailStartsWith": "A Translation of Calvin’s Version of The Prophecies of Joel. Chapter 1 1 The word of Jehov"
+  },
+  {
+   "book": "ROM",
+   "chapter": 16,
+   "beforeSha256": "d88956c0ccb98c4cf1a2d0f0c917e41c010d5526feadbd5a06f2b140ad8f8a6f",
+   "afterSha256": "5463999535cba7977bbde0f94f68a3ec7cd1a7d90f764b8fe9952c081f64b1bf",
+   "cut": {
+    "offset": 26770,
+    "length": 8611,
+    "sha256": "75df52409ef61439a18ef17269ae6d068d8f4537ba5b786edc6780ff1c8836cb"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "heldIds": [
+    "calvin-held-020"
+   ],
+   "keptEndsWith": "may lead all nations to the obedience of faith PRAISE FOR EVER TO THE ONLY WISE GOD: AMEN.",
+   "tailStartsWith": "A TRANSLATION OF CALVIN’S VERSION OF THE EPISTLE TO THE ROMANS. CHAPTER 1 1 Paul, a servan"
+  }
+ ]
+}

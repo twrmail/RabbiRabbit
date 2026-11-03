@@ -1,0 +1,83 @@
+RabbiRabbit library validation (read-only). Parity definitions:
+  commentary/xref "content identical" = the chapters (or refs) array and every other original field are deep-equal to the
+    original file; the only allowed differences are listed metadata: book (standard code), sourceId, originalBook, source (added if missing).
+  bible "verse identical" = for every (book, chapter, verse) the text string is exactly equal; keys only on one side are listed.
+  retired = same chapter arrays as the original whole-Bible record; never servable.
+
+== 1. Manifest vs files on disk
+   mhc              66 files  status=active scope=full servable=true
+   jfb              66 files  status=active scope=full servable=true
+   calvin           48 files  status=active scope=partial-by-design servable=true
+   scofield         65 files  status=incomplete scope=partial-by-design servable=true
+   wesley           66 files  status=incomplete scope=incomplete servable=true
+   spurgeon          1 files  status=active scope=partial-by-design servable=true
+   barnes-nt        27 files  status=active scope=partial-by-design servable=true
+   tyndale          66 files  status=active scope=partial-by-design servable=true
+   xref             66 files  status=active scope=full servable=true
+   barnes-legacy    65 files  status=retired scope=retired servable=false  reason: truncated: almost every chapter is exactly 2,000 characters
+   clarke           65 files  status=retired scope=retired servable=false  reason: truncated: almost every chapter is exactly 2,000 characters
+   vincent          27 files  status=retired scope=retired servable=false  reason: truncated: every chapter is exactly 2,000 characters
+   meyer            27 files  status=retired scope=retired servable=false  reason: truncated to 2,000 characters per chapter; Greek text garbled
+   bsb              66 files  status=active scope=- servable=true
+   web              66 files  status=active scope=- servable=true
+   kjv              66 files  status=active scope=- servable=true
+   asv              66 files  status=active scope=- servable=true
+   strongs-hebrew    1 file   status=active servable=true
+   strongs-greek     1 file   status=active servable=true
+   concordance       1 file   status=active servable=true
+   naves             1 file   status=active servable=true
+   topic-scores      1 file   status=active servable=true
+   characters        1 file   status=active servable=true
+   xref-seed         1 file   status=active servable=true
+   overview-map      1 file   status=active servable=true
+   every file in library/ is described by the manifest
+
+== 2. Commentaries and cross-references (per file, content)
+   mhc          66 files content identical. Metadata-only changes: 66x book field added, source added
+      coverage: 66 of 66 books
+   jfb          66 files content identical. Metadata-only changes: 66x book field added, source added
+      coverage: 66 of 66 books
+   calvin       48 files content identical. Metadata-only changes: 47x book field added, source added; 1x book field added, file renamed source added
+      named changes: NAH: book (none) -> NAH, file NAM.json -> NAH.json, source added
+      coverage: 48 of 66 books (partial-by-design: 47-48 books (Calvin did not comment on every book))
+   scofield     65 files content identical. Metadata-only changes: none
+      coverage: 65 of 66 books (partial-by-design: selective notes)
+   wesley       66 files content identical. Metadata-only changes: none
+      coverage: 66 of 66 books (incomplete: all 66 books) -- Psalms 100-150 missing; 2 John stored under chapter 5 (copied as-is, fix later as a separate, reviewed change)
+   spurgeon     1 files content identical. Metadata-only changes: none
+      coverage: 1 of 66 books (partial-by-design: Psalms only)
+   barnes-nt    27 files content identical. Metadata-only changes: none
+      coverage: 27 of 66 books (partial-by-design: 27 New Testament books only; never present as whole-Bible Barnes)
+   tyndale      66 files content identical. Metadata-only changes: 1x book field changed
+      named changes: NAH: book NAM -> NAH
+      coverage: 66 of 66 books (partial-by-design: selective notes)
+   xref         66 files content identical. Metadata-only changes: none
+      coverage: 66 of 66 books
+
+== 3. Retired sources
+   barnes-legacy  65 books identical; servable=false; 1178 of 1181 chapters are exactly 2,000 chars (truncated); no chapters in original: SNG
+   clarke         65 books identical; servable=false; 1180 of 1181 chapters are exactly 2,000 chars (truncated); no chapters in original: SNG
+   vincent        27 books identical; servable=false; 260 of 260 chapters are exactly 2,000 chars (truncated)
+   meyer          27 books identical; servable=false; 260 of 260 chapters are exactly 2,000 chars (truncated)
+
+== 4. Bibles, verse by verse
+   BSB  31086 source verses, 31086 library verses, identical texts: 31086; blank-or-placeholder verses: none
+   WEB  31102 source verses, 31102 library verses, identical texts: 31102; blank-or-placeholder verses: ACT 8:37 (""); ACT 15:34 (""); ACT 24:7 (""); LUK 17:36 (""); ROM 16:25 (""); ROM 16:26 (""); ROM 16:27 ("")
+   KJV  31102 source verses, 31102 library verses, identical texts: 31102; blank-or-placeholder verses: none
+   ASV  31103 source verses, 31103 library verses, identical texts: 31103; blank-or-placeholder verses: 3JN 1:15 ("[]")
+   Verse numbering compared with KJV (31,102):
+     BSB: extra none | missing 16: ACT 8:37, ACT 15:34, ACT 24:7, ACT 28:29, JHN 5:4, LUK 17:36, LUK 23:17, MAT 17:21, MAT 18:11, MAT 23:14, MRK 7:16, MRK 9:44, MRK 9:46, MRK 11:26, MRK 15:28, ROM 16:24
+     WEB: extra none | missing none
+     ASV: extra 3JN 1:15 | missing none
+
+== 5. Reference files
+   strongs-hebrew  byte-for-byte identical
+   strongs-greek   byte-for-byte identical
+   concordance     byte-for-byte identical
+   naves           byte-for-byte identical
+   topic-scores    byte-for-byte identical
+   characters      byte-for-byte identical
+   xref-seed       byte-for-byte identical
+   overview-map    67 entries identical under standard book codes
+
+RESULT: PASS (0 failures)
