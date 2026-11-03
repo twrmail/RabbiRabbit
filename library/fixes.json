@@ -328,16 +328,76 @@
         "chapters opened with moved text": 42
       },
       "reason": "In the first Calvin repairs, text that our copy had at the end of the wrong chapter was dropped when chapters were replaced from CCEL, and some of it was Calvin's own: his Preface to Lamentations, Zephaniah and Haggai, and 29 chapter-opening Scripture tables (English and his Latin). The same kind of text still sits at the end of the previous book in ten places (Calvin's Prefaces to Obadiah, Micah and Nahum, and the Arguments for James, 2 Peter, 1 John, Jude, Ephesians, Colossians and 2 Thessalonians). 42 blocks are moved to the start of the chapter they belong to (13 prefaces and arguments to chapter 1 of their book, 29 tables to their own chapter), and the ten tails are cut from where they were. The text is from our own copy; nothing is retyped. CCEL is the witness: at least 95% of each block is found in CCEL's files (recorded per block in the patch). Each chapter's text before and after is recorded by sha256, and each cut records the offset, length and sha256 of the text removed. Left out on purpose: the 43-word editor's note and the translation of Jeremiah 52 (no commentary), and the translator's prefaces, dedications and other front matter that CCEL has and our copy never had (a separate decision)."
-    }
-  ],
-  "openIssues": [
+    },
     {
       "id": "jfb-mic5-replacement-char",
       "source": "jfb",
-      "location": "MIC 5",
-      "description": "One U+FFFD replacement character inside a word ('appearance o� Messiah').",
-      "notFixedBecause": "The original character cannot be known from this copy. Needs a second independent copy of JFB."
+      "folder": "library/commentary/JFB",
+      "files": [
+        "MIC"
+      ],
+      "target": "chapters",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "appearance o� Messiah",
+          "appearance of the Messiah"
+        ]
+      ],
+      "expectedCount": {
+        "appearance o� Messiah": 1
+      },
+      "reason": "Micah 5 had one U+FFFD replacement character where letters were lost ('the appearance o� Messiah'). CCEL's copy of Jamieson, Fausset & Brown reads 'the appearance of the Messiah'; the sentence in ours is otherwise identical. This was the open issue jfb-mic5-replacement-char."
     },
+    {
+      "id": "jfb-frac12-entity",
+      "source": "jfb",
+      "folder": "library/commentary/JFB",
+      "files": [
+        "NUM",
+        "1CH"
+      ],
+      "target": "chapters",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "&frac12;",
+          "½"
+        ]
+      ],
+      "expectedCount": {
+        "&frac12;": 4
+      },
+      "reason": "Four literal HTML entities left in the text by the conversion: '&frac12;' in the sums of money in Numbers 7 (three) and 1 Chronicles 29 (one). CCEL's copy has the character ½ in the same places."
+    },
+    {
+      "id": "jfb-ocr-typos",
+      "source": "jfb",
+      "folder": "library/commentary/JFB",
+      "files": [
+        "LEV",
+        "1SA"
+      ],
+      "target": "chapters",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "as an stoning sacrifice",
+          "as an atoning sacrifice"
+        ],
+        [
+          "The Sin of ELl'S Sons",
+          "The Sin of ELI'S Sons"
+        ]
+      ],
+      "expectedCount": {
+        "as an stoning sacrifice": 1,
+        "The Sin of ELl'S Sons": 1
+      },
+      "reason": "Two plain scanning errors found by comparing with CCEL's copy: Leviticus 3 'as an stoning sacrifice' (CCEL: 'atoning'; 'an stoning' is not English) and the heading in 1 Samuel 2 'ELl'S Sons' (a capital I read as a small l; CCEL: 'Eli's'). The other word differences between the two copies are not changed here; see the JFB comparison report."
+    }
+  ],
+  "openIssues": [
     {
       "id": "calvin-gen46-greek-entities",
       "source": "calvin",
