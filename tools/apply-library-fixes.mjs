@@ -12,6 +12,13 @@ const fixes = JSON.parse(fs.readFileSync(path.join(root, 'library', 'fixes.json'
 const walk = (o, fn) => Array.isArray(o) ? o.map(v => walk(v, fn)) : (o && typeof o === 'object') ? Object.fromEntries(Object.entries(o).map(([k, v]) => [k, walk(v, fn)])) : (typeof o === 'string' ? fn(o) : o)
 const results = []
 let abort = false
+// A chapter that a LATER rule has changed no longer matches this rule's "after" hash. It still counts as done for this rule if it is in the
+// recorded final state of a later rule that works on the same chapter (so each rule can be re-run on the finished library).
+const patchCache = {}
+const laterPatch = r => (patchCache[r.patchFile] ||= JSON.parse(fs.readFileSync(path.join(root, r.patchFile), 'utf8')))
+const laterRuleOwns = (rule, code, chapter, h) => fixes.rules.slice(fixes.rules.indexOf(rule) + 1).some(r2 =>
+  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks'].includes(r2.op) &&
+  laterPatch(r2).chapters.some(e => e.book === code && e.chapter === chapter && e.afterSha256 === h))
 for (const rule of fixes.rules) {
   const counts = {}, pending = []
   for (const code of rule.files) {
@@ -115,7 +122,7 @@ for (const rule of fixes.rules) {
         if (!ent) return ch
         if (H(ent.text) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: patch text does not match its own recorded sha256`)
         const h = H(ch.commentary)
-        if (h === ent.afterSha256) return ch
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
         if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
         bump('chapters replaced')
         return { ...ch, commentary: ent.text }
@@ -132,13 +139,38 @@ for (const rule of fixes.rules) {
         const ent = ents.find(x => x.chapter === ch.chapter)
         if (!ent) return ch
         const h = H(ch.commentary)
-        if (h === ent.afterSha256) return ch
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
         if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
         let out = ch.commentary
         for (const x of [...ent.inserts].sort((a, b) => b.offset - a.offset)) {
           if (ch.commentary.slice(Math.max(0, x.offset - x.before.length), x.offset) !== x.before || ch.commentary.slice(x.offset, x.offset + x.after.length) !== x.after) throw new Error(`${code} ${ch.chapter} @${x.offset}: surrounding text does not match; nothing written`)
           out = out.slice(0, x.offset) + '\n\n' + x.text + out.slice(x.offset); bump('quotation blocks inserted')
         }
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        return { ...ch, commentary: out }
+      }) }
+    } else if (rule.op === 'move-blocks') {
+      // text that sits at the end of the wrong chapter goes to the start of the chapter it belongs to. For each chapter the patch records the
+      // sha256 before and after; an optional "cut" removes the tail of the chapter (offset, length and sha256 of the removed text are checked
+      // first), and an optional "prepend" text is put at the start with a blank line after it. A chapter already matching "after" is left alone;
+      // one matching neither "before" nor "after" stops the tool with nothing written.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) return ch
+        if (ent.prepend !== null && H(ent.prepend) !== ent.prependSha256) throw new Error(`${code} ${ch.chapter}: patch text does not match its own recorded sha256`)
+        const h = H(ch.commentary)
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        let out = ch.commentary
+        if (ent.cut) {
+          const tail = out.slice(ent.cut.offset)
+          if (tail.length !== ent.cut.length || H(tail) !== ent.cut.sha256) throw new Error(`${code} ${ch.chapter}: the tail to cut does not match the recorded length and sha256; nothing written`)
+          out = out.slice(0, ent.cut.offset).replace(/\s+$/, ''); bump('misplaced tails cut')
+        }
+        if (ent.prepend !== null) { out = ent.prepend + '\n\n' + out; bump('chapters opened with moved text') }
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }
