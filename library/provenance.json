@@ -1,0 +1,759 @@
+{
+  "schemaVersion": 1,
+  "allowedValues": {
+    "originStatus": [
+      "not-recorded",
+      "recorded-in-repo",
+      "established"
+    ],
+    "repositoryCopyCoverage": [
+      "not-established",
+      "partial",
+      "established"
+    ]
+  },
+  "note": "Evidence register for gates 2 (Provenance) and 6 (Licence). Descriptive only: nothing here changes a gate result. A rights statement about a witness is not a rights finding about our copy.",
+  "dateCompiled": "2026-11-03",
+  "evidenceLevels": {
+    "established": "origin and edition of our copy known (Gate 2 PASS)",
+    "witnessed": "an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)",
+    "work-identified": "work recognised; edition or source copy not established (Gate 2 UNKNOWN)",
+    "unidentified": "neither work nor edition adequately established (Gate 2 UNKNOWN)"
+  },
+  "sources": [
+    {
+      "sourceId": "mhc",
+      "work": {
+        "title": "Commentary on the Whole Bible",
+        "author": "Matthew Henry"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [
+        {
+          "name": "CCEL mhc1.xml",
+          "url": "https://ccel.org/ccel/henry/mhcc",
+          "editionClaim": "Originally published 1706-1721; 'This version may be from the Revell edition'",
+          "status": "measured",
+          "agreement": "all 1,189 chapters compared after repairs; 6 differences of 4+ words remain, all Bible-reference lists",
+          "source": "Logos, Inc.",
+          "ccelDate": "2000-07-09",
+          "comment": "Unabridged and carefully proofed",
+          "basis": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)"
+        }
+      ],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)",
+        "scope": "CCEL transcription",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "Public domain. May be copied and distributed freely.",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "witnessed",
+      "obligations": [],
+      "openQuestions": [
+        "Where did the original repository copy come from?",
+        "Is the Revell edition claim correct?",
+        "75 restored quotation blocks have a CCEL witness (library/patches/henry-blocks.json); the rest of the text does not."
+      ]
+    },
+    {
+      "sourceId": "jfb",
+      "work": {
+        "title": "Commentary Critical and Explanatory on the Whole Bible",
+        "authors": "Jamieson, Fausset, Brown"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [
+        {
+          "name": "CCEL jfb.xml",
+          "url": "https://ccel.org/ccel/jamieson/jfb",
+          "editionClaim": "print source 1871",
+          "status": "measured",
+          "agreement": "1,186 chapters compared; share of CCEL text found in ours at least 0.986 in every chapter; 163 differences recorded in claude/jfb-ccel-word-differences.tsv, made up of 66 title-line differences and 97 word differences",
+          "ccelDate": "2002-11-29",
+          "basis": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)"
+        }
+      ],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)",
+        "scope": "CCEL transcription",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "Public Domain",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "witnessed",
+      "obligations": [],
+      "openQuestions": [
+        "Where did our original text originate?",
+        "97 word-level differences (of the 163 recorded; the other 66 are title lines) await adjudication. Only objective errors in ours were fixed."
+      ]
+    },
+    {
+      "sourceId": "calvin",
+      "work": {
+        "title": "Calvin's Commentaries (Calvin Translation Society)",
+        "author": "John Calvin",
+        "translators": "Anderson, Beveridge, Bingham, King, Meyers, Owen, Pringle (John and William)"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [
+        {
+          "name": "CCEL calcom01-45 (45 volumes)",
+          "url": "https://ccel.org/ccel/calvin/calcom",
+          "editionClaim": "Calvin Translation Society translations; print source 'Baker, 1996' on two volumes, blank on 43",
+          "status": "measured",
+          "agreement": "285 of 286 chapter boundaries have an explicit CCEL chapter heading; 42 blocks moved with witness coverage at least 0.95",
+          "basis": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)"
+        }
+      ],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)",
+        "scope": "CCEL transcriptions, all 45 volumes",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "Public Domain",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "witnessed",
+      "obligations": [],
+      "openQuestions": [
+        "Is our copy from the same translation and edition?",
+        "Baker 1996 is a modern printing; does that add any rights claim to its typesetting?",
+        "Isaiah 1-16, Acts, Exodus-Deuteronomy, Matthew-Luke, Psalms not yet compared."
+      ],
+      "note": "Moved blocks (library/patches/calvin-moves.json) take text from our own old copy, with CCEL as witness only."
+    },
+    {
+      "sourceId": "wesley",
+      "work": {
+        "title": "Explanatory Notes upon the Old and New Testaments",
+        "author": "John Wesley"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [
+        {
+          "name": "CCEL ccelw/notes.xml",
+          "url": "https://ccel.org/ccel/wesley/notes",
+          "editionClaim": "none recorded",
+          "status": "measured",
+          "agreement": "125 word disagreements to adjudicate",
+          "comment": "first version of Wesley's Notes on the Bible in ThML",
+          "basis": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)"
+        }
+      ],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)",
+        "scope": "CCEL transcription",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "Public Domain",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "witnessed",
+      "obligations": [],
+      "openQuestions": [
+        "Can the original copy's source be recovered?",
+        "2 Samuel 24: probably no notes; unconfirmed."
+      ]
+    },
+    {
+      "sourceId": "scofield",
+      "work": {
+        "title": "Scofield Reference Notes",
+        "author": "C. I. Scofield"
+      },
+      "repositoryCopy": {
+        "edition": "1917 (claimed in repo)",
+        "origin": "repo records '1917, Public Domain'",
+        "originStatus": "recorded-in-repo"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "repo manifest",
+        "scope": "our copy",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "Verify the actual text is the 1917 edition and not the copyrighted 1967 New Scofield.",
+        "No witness compared."
+      ]
+    },
+    {
+      "sourceId": "spurgeon",
+      "work": {
+        "title": "The Treasury of David",
+        "author": "C. H. Spurgeon"
+      },
+      "repositoryCopy": {
+        "edition": "1885 text (claimed in repo)",
+        "origin": "rebuilt from lyteword/chspurgeon-tod (CC0 1.0), per repo",
+        "originStatus": "recorded-in-repo"
+      },
+      "witnesses": [
+        {
+          "name": "lyteword/chspurgeon-tod",
+          "url": "https://github.com/lyteword/chspurgeon-tod",
+          "editionClaim": "conversion lineage as recorded in repo",
+          "status": "recorded-only"
+        }
+      ],
+      "rights": {
+        "claim": "text public domain; conversion CC0",
+        "claimSource": "repo manifest and file header",
+        "scope": "conversion and text",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "Confirm our actual text matches the identified source; licence of that repository not read this session."
+      ]
+    },
+    {
+      "sourceId": "barnes-nt",
+      "work": {
+        "title": "Notes on the New Testament",
+        "author": "Albert Barnes"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "repo manifest",
+        "scope": "our copy",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or edition recorded; no witness compared."
+      ]
+    },
+    {
+      "sourceId": "tyndale",
+      "work": {
+        "title": "Tyndale Open Study Notes",
+        "publisher": "Tyndale House Publishers",
+        "year": 2022
+      },
+      "repositoryCopy": {
+        "edition": "2022",
+        "origin": "repo records the notice",
+        "originStatus": "recorded-in-repo"
+      },
+      "witnesses": [
+        {
+          "name": "freely-given.org",
+          "url": "https://www.freely-given.org",
+          "editionClaim": "Tyndale Open Study Notes (2022)",
+          "status": "page-read",
+          "dateChecked": "2026-11-03"
+        }
+      ],
+      "rights": {
+        "claim": "CC BY-SA 4.0",
+        "claimSource": "page read: freely-given.org says 'Creative Commons Attribution-ShareAlike 4.0 International License'; our files carry the same notice",
+        "scope": "the notes",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "(c) 2022 by Tyndale House Publishers -- CC BY-SA 4.0",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [
+        "Attribute to Tyndale House Publishers (2022), CC BY-SA 4.0, with a licence link, and indicate that changes were made.",
+        "Our files are reshaped copies of the notes. If they count as adaptations, they must be distributed under CC BY-SA 4.0 (or a compatible licence). Whether they are adaptations, and what licence the repo applies to them, has not been reviewed."
+      ],
+      "openQuestions": [
+        "Check whether the Worker shows the attribution.",
+        "Exodus 36 gap (repo roadmap)."
+      ]
+    },
+    {
+      "sourceId": "xref",
+      "work": {
+        "title": "OpenBible.info cross references"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "CC BY (OpenBible.info)",
+        "claimSource": "repo manifest",
+        "scope": "our copy",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [
+        "CC BY credit to OpenBible.info (to confirm)."
+      ],
+      "openQuestions": [
+        "Authoritative licence page could not be read on 2026-11-03 (redirect loop)."
+      ]
+    },
+    {
+      "sourceId": "barnes-legacy",
+      "work": {
+        "title": "Barnes (legacy)"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "Retired; never served. Licence to settle when a replacement source is chosen."
+      ]
+    },
+    {
+      "sourceId": "clarke",
+      "work": {
+        "title": "Clarke"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "Retired; never served. Licence to settle when a replacement source is chosen."
+      ]
+    },
+    {
+      "sourceId": "vincent",
+      "work": {
+        "title": "Vincent"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "Retired; never served. Licence to settle when a replacement source is chosen."
+      ]
+    },
+    {
+      "sourceId": "meyer",
+      "work": {
+        "title": "Meyer"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "Retired; never served. Licence to settle when a replacement source is chosen."
+      ]
+    },
+    {
+      "sourceId": "bsb",
+      "work": {
+        "title": "Berean Bible (labelled 'Berean Study Bible' in our file)"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "bereanbibles.com via seven1m/open-bibles, per repo",
+        "originStatus": "recorded-in-repo"
+      },
+      "witnesses": [
+        {
+          "name": "berean.bible terms",
+          "url": "https://berean.bible/terms.htm",
+          "editionClaim": "texts dedicated to the public domain as of April 30, 2023",
+          "status": "page-read",
+          "dateChecked": "2026-11-03"
+        }
+      ],
+      "rights": {
+        "claim": "public domain from April 30, 2023",
+        "claimSource": "page read: berean.bible/terms.htm",
+        "scope": "Berean Bible texts as the page names them",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "officially dedicated to the public domain as of April 30, 2023",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [
+        "Credit to Bible Hub, Discovery Bible, OpenBible.com and the Berean Bible Translation Committee is appreciated, not required.",
+        "Do not call modified text 'Berean'."
+      ],
+      "openQuestions": [
+        "Does the dedication cover the exact text in our file, which is labelled 'Berean Study Bible'?",
+        "Is our text the 2023 Berean Standard Bible text?"
+      ]
+    },
+    {
+      "sourceId": "web",
+      "work": {
+        "title": "World English Bible"
+      },
+      "repositoryCopy": {
+        "edition": "2020 (per repo)",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "repo manifest",
+        "scope": "our copy",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "Dedication page not read this session.",
+        "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition."
+      ]
+    },
+    {
+      "sourceId": "kjv",
+      "work": {
+        "title": "King James Version"
+      },
+      "repositoryCopy": {
+        "edition": "1769 (per repo)",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "repo manifest",
+        "scope": "our copy",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "Not verified this session."
+      ]
+    },
+    {
+      "sourceId": "asv",
+      "work": {
+        "title": "American Standard Version"
+      },
+      "repositoryCopy": {
+        "edition": "1901 (per repo)",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "repo manifest",
+        "scope": "our copy",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "Not verified this session."
+      ]
+    },
+    {
+      "sourceId": "strongs-hebrew",
+      "work": {
+        "title": "Strong's Hebrew"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "strongs-greek",
+      "work": {
+        "title": "Strong's Greek"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "concordance",
+      "work": {
+        "title": "Concordance"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "naves",
+      "work": {
+        "title": "Nave's Topical Bible"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "topic-scores",
+      "work": {
+        "title": "Topic scores"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "xref-seed",
+      "work": {
+        "title": "Cross-reference seed"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "overview-map",
+      "work": {
+        "title": "Book overview map"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [],
+      "rights": {
+        "claim": "none recorded",
+        "claimSource": "repo manifest",
+        "scope": "none",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "unidentified",
+      "obligations": [],
+      "openQuestions": [
+        "No source or licence recorded."
+      ]
+    },
+    {
+      "sourceId": "characters",
+      "work": {
+        "title": "Theographic Bible Metadata (characters)"
+      },
+      "repositoryCopy": {
+        "edition": "unknown",
+        "origin": "unknown",
+        "originStatus": "not-recorded"
+      },
+      "witnesses": [
+        {
+          "name": "Theographic wiki",
+          "url": "https://github.com/robertrouse/theographic-bible-metadata",
+          "editionClaim": "CC BY-SA 4.0; credit original sources",
+          "status": "page-read",
+          "dateChecked": "2026-11-03"
+        }
+      ],
+      "rights": {
+        "claim": "CC BY-SA 4.0 for the project; underlying sources carry their own licences",
+        "claimSource": "page read: Theographic repository README and wiki",
+        "scope": "the Theographic compilation only; see rightsComponents",
+        "repositoryCopyCoverage": "not-established",
+        "statementText": "free to use and copy under a Creative Commons Attribution-ShareAlike 4.0 International License. Please also credit the original sources, several of which have their own licenses.",
+        "dateChecked": "2026-11-03"
+      },
+      "evidenceLevel": "work-identified",
+      "obligations": [
+        "CC BY-SA 4.0 attribution and share-alike.",
+        "Credit King James Version 1769, Easton's Bible Dictionary, Floyd Nolen Jones's The Chronology of the Old Testament, Linked Places format."
+      ],
+      "openQuestions": [
+        "Read 2026-11-03 at github.com/robertrouse/theographic-bible-metadata: README states CC BY-SA 4.0, a LICENSE file exists, and the README says to credit the original sources, 'several of which have their own licenses'. The earlier theographic-web link is the website, not the data.",
+        "The repository's docs/data-source-bibliography.md lists 26 sources; it states a licence for only one: STEPBible TIPNR, 'CC BY 4.0'. The other 25 carry no licence statement, including Jones (Chronology of the Old Testament), Atwood, Torrey, Ussher, Easton's, OpenBible geocoding, Pleiades, GeoNames, Wikidata, Hurlbut and Brisco atlases. Their rights are unresolved, not cleared.",
+        "The bibliography asks anyone publishing work built on Theographic to credit those sources and respect their licences. We must decide which characters fields derive from which source.",
+        "Conflict to resolve: the same owner's STEPBible-Data fork is described as CC BY-NC 4.0, while the bibliography says STEPBible TIPNR is CC BY 4.0. Check the STEPBible page for the TIPNR licence."
+      ],
+      "rightsComponents": [
+        {
+          "component": "Theographic compilation",
+          "claim": "CC BY-SA 4.0",
+          "status": "read",
+          "source": "README and LICENSE file in theographic-bible-metadata, 2026-11-03"
+        },
+        {
+          "component": "STEPBible TIPNR (underlying source)",
+          "claim": "CC BY 4.0",
+          "status": "read",
+          "source": "docs/data-source-bibliography.md, 2026-11-03; conflicts with the CC BY-NC 4.0 description on the owner's STEPBible-Data fork"
+        },
+        {
+          "component": "25 other underlying sources (Jones, Atwood, Torrey, Ussher, Easton's, OpenBible geocoding, Pleiades, GeoNames, Wikidata, atlases and others)",
+          "claim": "none stated",
+          "status": "unresolved",
+          "source": "docs/data-source-bibliography.md, 2026-11-03"
+        }
+      ]
+    }
+  ]
+}
