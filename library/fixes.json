@@ -250,6 +250,40 @@
         "chapters replaced": 286
       },
       "reason": "In our Calvin copy a chapter commonly ends with the opening verse block of the next chapter (for example 1 Corinthians 3 ends with 'CHAPTER 4 1 Corinthians 4:1-5 ...') and lacks its own; the first chapter of a book lacks its opening block altogether; and Philemon carries 3,000 characters of another book's scripture translation after its last paragraph. CCEL's copy of the same translation has every chapter whole. A chapter is replaced with CCEL's only if at least 97% of our chapter's 6-word runs are found in CCEL's chapter or the next (nothing of ours is lost) and at least 97% of CCEL's chapter is found in ours or its neighbours (nothing is invented). The patch records both figures for every chapter, the sha256 of our text before and of the new text after. 136 chapters failed the test and are left alone (Isaiah 1-66 and Acts 1-28 among them: Isaiah volumes 13-16 lack chapter headings in CCEL, and our Acts text carries material CCEL does not); they are listed for later review."
+    },
+    {
+      "id": "henry-restore-quotation-blocks",
+      "source": "mhc",
+      "folder": "library/commentary/MHC",
+      "files": [
+        "1CO",
+        "2KI",
+        "ACT",
+        "DAN",
+        "ECC",
+        "EZK",
+        "GEN",
+        "HAB",
+        "ISA",
+        "JER",
+        "JHN",
+        "JOB",
+        "JON",
+        "LAM",
+        "LUK",
+        "MAT",
+        "MRK",
+        "PRO",
+        "PSA",
+        "ROM",
+        "SNG"
+      ],
+      "op": "insert-blocks",
+      "patchFile": "library/patches/henry-blocks.json",
+      "expectedCount": {
+        "quotation blocks inserted": 75
+      },
+      "reason": "Our copy of Matthew Henry drops every poetry and Latin quotation that sits on its own lines in the printed text, with its attribution (for example the Blackmore verses after Job 1:4 and the Latin of Horace and Virgil in Acts, Isaiah and Romans), and one list: the subject index at the end of Proverbs 31. CCEL's copy has them (they are <verse> and <ol> elements). 75 blocks in 60 chapters are inserted as their own paragraphs after the paragraph that precedes them in CCEL. Each chapter's text before and after is recorded by sha256 in the patch, and each insertion place is checked against the text around it. Nothing in our text is changed or removed."
     }
   ],
   "openIssues": [
