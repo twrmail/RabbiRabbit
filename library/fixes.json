@@ -284,6 +284,50 @@
         "quotation blocks inserted": 75
       },
       "reason": "Our copy of Matthew Henry drops every poetry and Latin quotation that sits on its own lines in the printed text, with its attribution (for example the Blackmore verses after Job 1:4 and the Latin of Horace and Virgil in Acts, Isaiah and Romans), and one list: the subject index at the end of Proverbs 31. CCEL's copy has them (they are <verse> and <ol> elements). 75 blocks in 60 chapters are inserted as their own paragraphs after the paragraph that precedes them in CCEL. Each chapter's text before and after is recorded by sha256 in the patch, and each insertion place is checked against the text around it. Nothing in our text is changed or removed."
+    },
+    {
+      "id": "calvin-move-front-matter-and-chapter-openings",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "1CO",
+        "1JN",
+        "1PE",
+        "1TH",
+        "2CO",
+        "2PE",
+        "2TH",
+        "AMO",
+        "COL",
+        "DAN",
+        "EPH",
+        "EZK",
+        "GAL",
+        "GEN",
+        "HAG",
+        "HEB",
+        "HOS",
+        "JAS",
+        "JER",
+        "JHN",
+        "JON",
+        "JOS",
+        "JUD",
+        "LAM",
+        "MIC",
+        "NAH",
+        "OBA",
+        "PHP",
+        "ROM",
+        "ZEP"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-moves.json",
+      "expectedCount": {
+        "misplaced tails cut": 10,
+        "chapters opened with moved text": 42
+      },
+      "reason": "In the first Calvin repairs, text that our copy had at the end of the wrong chapter was dropped when chapters were replaced from CCEL, and some of it was Calvin's own: his Preface to Lamentations, Zephaniah and Haggai, and 29 chapter-opening Scripture tables (English and his Latin). The same kind of text still sits at the end of the previous book in ten places (Calvin's Prefaces to Obadiah, Micah and Nahum, and the Arguments for James, 2 Peter, 1 John, Jude, Ephesians, Colossians and 2 Thessalonians). 42 blocks are moved to the start of the chapter they belong to (13 prefaces and arguments to chapter 1 of their book, 29 tables to their own chapter), and the ten tails are cut from where they were. The text is from our own copy; nothing is retyped. CCEL is the witness: at least 95% of each block is found in CCEL's files (recorded per block in the patch). Each chapter's text before and after is recorded by sha256, and each cut records the offset, length and sha256 of the text removed. Left out on purpose: the 43-word editor's note and the translation of Jeremiah 52 (no commentary), and the translator's prefaces, dedications and other front matter that CCEL has and our copy never had (a separate decision)."
     }
   ],
   "openIssues": [
