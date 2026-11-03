@@ -17,7 +17,7 @@ let abort = false
 const patchCache = {}
 const laterPatch = r => (patchCache[r.patchFile] ||= JSON.parse(fs.readFileSync(path.join(root, r.patchFile), 'utf8')))
 const laterRuleOwns = (rule, code, chapter, h) => fixes.rules.slice(fixes.rules.indexOf(rule) + 1).some(r2 =>
-  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks'].includes(r2.op) &&
+  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks'].includes(r2.op) &&
   laterPatch(r2).chapters.some(e => e.book === code && e.chapter === chapter && e.afterSha256 === h))
 for (const rule of fixes.rules) {
   const counts = {}, pending = []
@@ -171,6 +171,24 @@ for (const rule of fixes.rules) {
           out = out.slice(0, ent.cut.offset).replace(/\s+$/, ''); bump('misplaced tails cut')
         }
         if (ent.prepend !== null) { out = ent.prepend + '\n\n' + out; bump('chapters opened with moved text') }
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        return { ...ch, commentary: out }
+      }) }
+    } else if (rule.op === 'add-blocks') {
+      // text that our copy never had (no other copy in data/ or library/ holds it) goes at the start of its chapter, followed by a blank line.
+      // The patch records each chapter's sha256 before and after and the sha256 of the added text. A chapter already matching "after" is left
+      // alone; one matching neither "before" nor "after" stops the tool with nothing written.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) return ch
+        if (H(ent.prepend) !== ent.prependSha256) throw new Error(`${code} ${ch.chapter}: patch text does not match its own recorded sha256`)
+        const h = H(ch.commentary)
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        const out = ent.prepend + '\n\n' + ch.commentary; bump('chapter arguments added')
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }
