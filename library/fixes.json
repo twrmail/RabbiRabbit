@@ -344,6 +344,24 @@
       "reason": "Calvin opens Acts 4 (339 words) and Acts 8 (135 words) with a short argument before the first Scripture passage. Our copy never had them: neither data/ nor library/ holds the text (the footnote [201] that belongs to the Acts 4 argument was there, so the argument was dropped, not absent from the book). CCEL has them. Each is added at the start of its chapter, taken from CCEL's own paragraph, with the footnote marker [201] our copy uses. The other 26 chapters of Acts open with their Scripture passage and need nothing. The roughly 3-5% by which our Acts is longer than CCEL's is the translator's footnotes (Latin phrases with English glosses), which our copy keeps inside the chapter text and CCEL keeps as separate notes: genuine content, nothing to remove."
     },
     {
+      "id": "calvin-duplicate-chapter-tails",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "2TH",
+        "AMO",
+        "EPH",
+        "GEN",
+        "JOS"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-duplicate-tails.json",
+      "expectedCount": {
+        "misplaced tails cut": 7
+      },
+      "reason": "Found by scanning every chapter pair for text repeated at the end of one chapter and the start of the next. Seven chapters of Calvin end with text that the next chapter already holds: the opening Scripture table of the next chapter in Genesis 1, Genesis 24, Joshua 1, 2 Thessalonians 1 and Ephesians 1 (96 to 1,303 words) and, in Amos, the end of chapter 2 (86 words, chapter 3's table) and all of chapter 2 at the end of chapter 1 (10,809 words, 98.5% found in chapter 2). The cause was an earlier restore from CCEL, whose Amos 'Chapter 1' division also holds chapter 2 (there is no chapter 2 heading), and which left the original tail in place beside the restored opening. Each tail is cut from the chapter it does not belong to; the same text stays in the next chapter, so nothing is lost. Every cut is checked by offset, length and sha256, and the builder refuses a case unless at least 98% of the cut text is found in the next chapter. The only text that exists nowhere else is the 162-word English and Latin translation of Amos 2:1-3 inside the Amos 1 tail, which belongs with the translations noted in the open issue calvin-chapter-opening-translations. Not touched: Exodus 11 (a 44-word run that is a quotation shared with chapter 12) and Ezekiel 12 (a tail of back matter, handled separately)."
+    },
+    {
       "id": "jfb-mic5-replacement-char",
       "source": "jfb",
       "folder": "library/commentary/JFB",
