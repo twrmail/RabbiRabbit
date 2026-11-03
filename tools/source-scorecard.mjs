@@ -173,7 +173,7 @@ function readBooks(src) {
   return out
 }
 
-const TAGS = { m: '[measured]', r: '[recorded]', e: '[earlier]' }
+const TAGS = { m: '[measured]', r: '[recorded]', e: '[earlier]', p: '[provenance register]' }
 const E = (t, s) => `${TAGS[t]} ${s}`
 const card = []
 
@@ -323,7 +323,41 @@ function scoreText(src) {
     ? ['N/A', ['Retired and never served.']]
     : cmp && cmp.total ? [cmp.diff.length === 0 && cmp.noOrig.length === 0 ? 'PASS' : 'FAIL', [E('m', `${cmp.same} of ${cmp.total} library files have content (everything except listed metadata fields) deep-equal to the original in ${src.originalLocation}; different: ${cmp.diff.length} ${cmp.diff.slice(0, 5).join(', ')}; no original found: ${cmp.noOrig.length} ${cmp.noOrig.slice(0, 5).join(', ')}; metadata-only differences: ${JSON.stringify(cmp.metaOnly)}${Object.keys(cmp.fixUsed).length ? '; recorded fixes re-applied to the originals before comparing: ' + Object.keys(cmp.fixUsed).join(', ') : ''}`), 'This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).', src.id === 'jfb' ? E('e', 'JFB notes pilot: rejoin byte-exact on 1,189/1,189 chapters, validator PASS in Tom\'s Codespace (Oct 26); output not in the repo') : '']]
     : ['UNKNOWN', ['data/ originals not found next to library/, so not compared here.']]
-  if (src.kind === 'bible') g.gates[4] = ['UNKNOWN', [E('e', 'library/ vs data/ compared verse by verse (validate-library.mjs, Oct 24). Not rechecked here.')]]
+  if (src.kind === 'bible') {
+    // Bibles: the original is ONE file in data/ (web/kjv/asv: books[{code, chapters[{chapter, verses[{verse, text}]}]}]; bsb: books{CODE:{chapter:{verse:text}}}).
+    // Each book is rebuilt into the library shape, the recorded fixes are re-applied, and every verse is compared. Missing verses, extra verses,
+    // emptied verses and changed text are counted separately, so an empty or missing verse is never "normalised" into agreement.
+    const origFile = src.originalLocation ? path.join(repoRoot, src.originalLocation) : null
+    if (origFile && exists(origFile) && fs.statSync(origFile).isFile()) {
+      const o0 = readJSON(origFile), byCode = {}
+      if (Array.isArray(o0.books)) for (const bk of o0.books) byCode[bk.code] = bk.chapters.map(c => ({ chapter: c.chapter, verses: Object.fromEntries(c.verses.map(v => [String(v.verse), v.text])) }))
+      else for (const [code, chs] of Object.entries(o0.books || {})) byCode[code] = Object.entries(chs).sort((a, b) => a[0] - b[0]).map(([n, vs]) => ({ chapter: Number(n), verses: vs }))
+      const st = { books: 0, same: 0, noOrig: [], missingVerse: 0, extraVerse: 0, emptied: 0, changed: 0, chapterMismatch: 0, origEmpty: 0 }, where = []; const fixUsed = {}
+      for (const b of present) {
+        st.books++
+        const lib = readJSON(path.join(libDir, '..', src.folder, b + '.json'))
+        if (!byCode[b]) { st.noOrig.push(b); continue }
+        const fx = applyRecordedFixes(src.id, b, { chapters: byCode[b] }); fx.used.forEach(id => { fixUsed[id] = (fixUsed[id] || 0) + 1 })
+        const oc = fx.obj.chapters, lc = lib.chapters; let bad = false
+        const nums = new Set([...oc.map(c => c.chapter), ...lc.map(c => c.chapter)])
+        for (const n of nums) {
+          const a = oc.find(c => c.chapter === n), l = lc.find(c => c.chapter === n)
+          if (!a || !l) { st.chapterMismatch++; bad = true; where.push(`${b} ${n} chapter ${a ? 'missing from library' : 'not in original'}`); continue }
+          for (const vk of new Set([...Object.keys(a.verses), ...Object.keys(l.verses)])) {
+            const x = a.verses[vk], y = l.verses[vk]
+            if (x === undefined) { st.extraVerse++; bad = true; where.push(`${b} ${n}:${vk} extra`) }
+            else if (y === undefined) { st.missingVerse++; bad = true; where.push(`${b} ${n}:${vk} missing`) }
+            else if (x === y) { if (x === '') st.origEmpty++ }
+            else if (y === '' ) { st.emptied++; bad = true; where.push(`${b} ${n}:${vk} emptied`) }
+            else { st.changed++; bad = true; where.push(`${b} ${n}:${vk} changed`) }
+          }
+        }
+        if (!bad) st.same++
+      }
+      const ok = st.same === st.books && !st.noOrig.length
+      g.gates[4] = [ok ? 'PASS' : 'FAIL', [E('m', `${st.same} of ${st.books} books equal the original verse by verse after re-applying the recorded fixes (${Object.keys(fixUsed).join(', ') || 'none'}); missing verses ${st.missingVerse}, extra verses ${st.extraVerse}, emptied verses ${st.emptied}, changed text ${st.changed}, chapter mismatches ${st.chapterMismatch}, no original found ${st.noOrig.length}${st.origEmpty ? `; ${st.origEmpty} verses are empty in the original and in the library` : ''}${where.length ? '; first: ' + where.slice(0, 5).join(', ') : ''}`), 'This proves library = the copy we hold in data/. It does not prove data/ matches the published edition (gate 2).']]
+    } else g.gates[4] = ['UNKNOWN', [E('e', 'library/ vs data/ compared verse by verse (validate-library.mjs, Oct 24). Not rechecked here: the original file was not found next to library/.')]]
+  }
 
   // ---- Gate 5 verse coverage ----
   if (src.scope === 'retired') g.gates[5] = ['N/A', ['Retired.']]
@@ -351,7 +385,7 @@ function scoreText(src) {
   if (needsAttr) {
     const m = src.id === 'tyndale' ? 'Tyndale' : src.id === 'xref' ? 'OpenBible' : null
     const found = m ? wk(m) : null
-    lic = [found === true ? 'UNKNOWN' : found === false ? 'FAIL' : 'UNKNOWN', [E('r', `licence: ${license || srcStr.slice(0, 120)}`), found === null ? 'Worker file not given, so the attribution could not be checked.' : E('m', `Worker file ${found ? 'names' : 'does NOT name'} "${m}"`), src.id === 'tyndale' ? 'Share-alike: our converted files are adaptations; the repo\'s own licence for them must be compatible. Not yet reviewed.' : '']]
+    lic = [found === true ? 'UNKNOWN' : found === false ? 'FAIL' : 'UNKNOWN', [E('r', `licence: ${license || srcStr.slice(0, 120)}`), found === null ? 'Worker file not given, so the attribution could not be checked.' : E('m', `Worker file ${found ? 'names' : 'does NOT name'} "${m}"`), src.id === 'tyndale' ? 'Share-alike: our converted files are reshaped copies; if they count as adaptations they must be offered under CC BY-SA 4.0 or a compatible licence, with changes indicated. Not yet reviewed.' : '']]
   } else if (/public domain|CC0/i.test(license + srcStr) && !notRecorded) lic = ['UNKNOWN', [E('r', `licence recorded: ${license || srcStr.slice(0, 100)}`), 'Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.']]
   else lic = ['UNKNOWN', [E('r', license ? `licence recorded: ${license}` : 'no licence recorded in the manifest'), notRecorded ? 'Public-domain status depends on the edition, and the edition is not recorded.' : '']]
   if (src.scope === 'retired') lic = ['N/A', ['Retired and never served; settle licence when choosing replacements.']]
@@ -405,6 +439,47 @@ function scoreRef(src) {
 
 for (const s of manifest.sources) card.push(['commentary', 'xref', 'bible'].includes(s.kind) ? scoreText(s) : scoreRef(s))
 
+// ---- provenance register (library/provenance.json): evidence lines only, never a status change ----
+// Stage B: the register is shown next to gates 2 and 6. A recorded witness or licence statement does not turn UNKNOWN/FAIL into PASS here;
+// that needs a separately reviewed rule. The register itself is checked strictly: wrong ids, a missing source or an unknown level stop the run.
+const provPath = path.join(libDir, 'provenance.json')
+let provLevels = null
+if (exists(provPath)) {
+  const prov = readJSON(provPath)
+  const mIds = manifest.sources.map(x => x.id), pIds = prov.sources.map(x => x.sourceId)
+  const problems = []
+  for (const id of mIds) if (!pIds.includes(id)) problems.push(`no provenance entry for manifest source "${id}"`)
+  for (const id of pIds) if (!mIds.includes(id)) problems.push(`provenance entry "${id}" is not in the manifest`)
+  for (const id of pIds) if (pIds.indexOf(id) !== pIds.lastIndexOf(id)) problems.push(`duplicate provenance entry "${id}"`)
+  for (const e of prov.sources) {
+    if (!(e.evidenceLevel in prov.evidenceLevels)) problems.push(`${e.sourceId}: unknown evidenceLevel "${e.evidenceLevel}"`)
+    if (e.evidenceLevel === 'witnessed' && !(e.witnesses || []).length) problems.push(`${e.sourceId}: level "witnessed" but no witness recorded`)
+    if (!e.rights || !e.rights.claim || !e.rights.scope) problems.push(`${e.sourceId}: rights needs a claim and a scope`)
+    const os = e.repositoryCopy && e.repositoryCopy.originStatus, cov = e.rights && e.rights.repositoryCopyCoverage
+    const okOs = prov.allowedValues.originStatus, okCov = prov.allowedValues.repositoryCopyCoverage
+    if (!okOs.includes(os)) problems.push(`${e.sourceId}: originStatus "${os}" is not one of ${okOs.join('/')}`)
+    if (!okCov.includes(cov)) problems.push(`${e.sourceId}: repositoryCopyCoverage "${cov}" is not one of ${okCov.join('/')}`)
+    if ((e.evidenceLevel === 'established') !== (os === 'established')) problems.push(`${e.sourceId}: evidenceLevel "${e.evidenceLevel}" is inconsistent with originStatus "${os}" (both must say established, or neither)`)
+    if (os === 'recorded-in-repo' && e.evidenceLevel === 'unidentified') problems.push(`${e.sourceId}: origin recorded in the repo but level is "unidentified"`)
+    if (cov === 'established' && !(e.rights.statementText && e.rights.dateChecked)) problems.push(`${e.sourceId}: repositoryCopyCoverage "established" needs the exact statementText and a dateChecked`)
+    if (cov === 'established' && e.evidenceLevel !== 'established') problems.push(`${e.sourceId}: rights coverage of our copy cannot be established while its origin is not (level "${e.evidenceLevel}")`)
+    for (const c of e.rightsComponents || []) if (!c.component || !c.claim || !c.status) problems.push(`${e.sourceId}: each rightsComponent needs component, claim and status`)
+    for (const w of e.witnesses || []) if (!['measured', 'page-read', 'recorded-only'].includes(w.status)) problems.push(`${e.sourceId}: witness "${w.name}" has status "${w.status}"`)
+  }
+  if (problems.length) { console.error('provenance.json problems:\n- ' + problems.join('\n- ')); process.exit(1) }
+  provLevels = {}
+  for (const e of prov.sources) {
+    const g = card.find(x => x.id === e.sourceId)
+    provLevels[e.evidenceLevel] = (provLevels[e.evidenceLevel] || 0) + 1
+    const w = (e.witnesses || []).map(x => `${x.name} (${x.status}${x.agreement ? '; ' + x.agreement : ''})`).join('; ') || 'none recorded'
+    g.gates[2][1].push(E('p', `evidence level "${e.evidenceLevel}" (${prov.evidenceLevels[e.evidenceLevel]}); witnesses: ${w}`))
+    if (e.openQuestions && e.openQuestions.length) g.gates[2][1].push(E('p', `${e.openQuestions.length} open question(s): ${e.openQuestions.join(' | ')}`))
+    g.gates[6][1].push(E('p', `rights claim "${e.rights.claim}" from ${e.rights.claimSource}, scope: ${e.rights.scope}; applies to our copy: ${e.rights.repositoryCopyCoverage}; checked ${e.rights.dateChecked || 'unknown date'}`))
+    for (const c of e.rightsComponents || []) g.gates[6][1].push(E('p', `rights component: ${c.component}: ${c.claim} (${c.status}; ${c.source || 'no source'})`))
+    if (e.obligations && e.obligations.length) g.gates[6][1].push(E('p', `obligations: ${e.obligations.join(' | ')}`))
+  }
+}
+
 // ---- next actions (the single most important one per source) ----
 const NEXT = {
   mhc: 'Identify the edition (Concise vs Complete), then convert to the notes shape as the reference implementation; install the report-only workflow.',
@@ -430,7 +505,7 @@ const names = { 1: 'Complete', 2: 'Provenance', 3: 'Clean', 4: 'Preserved', 5: '
 let md = `# RabbiRabbit source scorecard\n\nGenerated by source-scorecard.mjs from \`${libDir}\` (manifest snapshot \`${manifest.sourceSnapshot}\`, ${manifest.sources.length} sources)${worker ? ` and Worker file \`${path.basename(workerFile)}\`` : ' (no Worker file given: attribution checks are UNKNOWN)'}. Read-only.\n\nEvidence tags: **[measured]** computed from the files now; **[recorded]** written in the manifest/data file, not independently confirmed; **[earlier]** an earlier result, not rechecked. A PASS needs evidence that meets the criterion; no evidence is UNKNOWN.\n\n## Summary\n\n| Source | ${Object.values(names).join(' | ')} |\n|---|${Object.values(names).map(() => '---').join('|')}|\n`
 for (const g of card) md += `| ${g.name} (${g.id}) | ${[1, 2, 3, 4, 5, 6, 7].map(i => sym[g.gates[i][0]]).join(' | ')} |\n`
 const tally = {}; for (const g of card) for (let i = 1; i <= 7; i++) tally[g.gates[i][0]] = (tally[g.gates[i][0]] || 0) + 1
-md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**\n\n## Detail and next action per source\n`
+md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
 for (const g of card) {
   md += `\n### ${g.name} (${g.id}) - ${g.scope}, ${g.status}\n**Next action:** ${g.next[0]}\n\n`
   for (let i = 1; i <= 7; i++) { const [st, ev] = g.gates[i]; md += `- **${i}. ${names[i]}: ${st}**${ev.filter(Boolean).length ? '\n' + ev.filter(Boolean).map(e => `  - ${e}`).join('\n') : ''}\n` }
