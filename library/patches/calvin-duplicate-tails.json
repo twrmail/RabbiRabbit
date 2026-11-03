@@ -1,0 +1,162 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-duplicate-tails",
+ "source": "calvin",
+ "purpose": "Cut text that sits at the end of a chapter and is repeated in the next chapter. Same format as calvin-moves.json with no text added (prepend null).",
+ "chapters": [
+  {
+   "book": "GEN",
+   "chapter": 1,
+   "beforeSha256": "47c412372d8fbe7dd50b7bb52b0cb895dd1b36b2bd50600fd36a4c237ad3cd24",
+   "afterSha256": "698f79d1ad4a339e9d80137eccc343398d67e4ebbbe187b4fa83a28e67508fc9",
+   "cut": {
+    "offset": 50081,
+    "length": 5978,
+    "sha256": "6ba9989c81a540b85ac373db867adb21441d888a7d9c34af203e169c7528391b"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "GEN",
+    "chapter": 2,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 1066
+   },
+   "tailStartsWith": "CHAPTER 2. Genesis 2:1-25 1. Thus the heavens and the earth were finished, and all the hos",
+   "tailEndsWith": "e, and were not ashamed. 25. Erant autem ambo nudi, Adam et uxor ejus: et non pudebat eos.",
+   "keptEndsWith": "e is in the symmetry of God’s works the highest perfection, to which nothing can be added."
+  },
+  {
+   "book": "GEN",
+   "chapter": 24,
+   "beforeSha256": "6244500dbf4a884004b2b098c0a78e4f03375708762debdb0cb60fbb9c3b6a2d",
+   "afterSha256": "0915b15530997cb314fd8cea47f3d236de762c6f92df16c8b0c15cee472bd998",
+   "cut": {
+    "offset": 40294,
+    "length": 7504,
+    "sha256": "7c1a01d5a7da21da0839650a7786ebe31855b18f2c42fc5121cf50da35fbd928"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "GEN",
+    "chapter": 25,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 1270
+   },
+   "tailStartsWith": "CHAPTER 25. Genesis 25:1-34 1. Then again Abraham took a wife, and her name was Keturah. 1",
+   "tailEndsWith": "ularum, et comedit, atque bibit: et surrexit, et abiit, contempsitque Esau primogenituram.",
+   "keptEndsWith": " among the benefits conferred by God, that he applies a remedy of any kind to his servant."
+  },
+  {
+   "book": "JOS",
+   "chapter": 1,
+   "beforeSha256": "abba7be50ca061be3865ad0c960ca188fb8ea3f233761048d5e90d34a6f35978",
+   "afterSha256": "a78e86745ee704acb781ab630c694c2395ce9ca4d2c4f13882da2caabdc60d1e",
+   "cut": {
+    "offset": 26134,
+    "length": 7538,
+    "sha256": "b46244da1edbf29fac69c7f99277bd0d940b28df7aed5e619fd89be57da0c664"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "JOS",
+    "chapter": 2,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 1303
+   },
+   "tailStartsWith": "CHAPTER 2 Joshua 2:1-24 1. And Joshua the son of Nun sent out of Shittim two men to spy se",
+   "tailEndsWith": "n manus nostras totam terram. Dissoluti enim sunt omnes habitatores terrae a facie nostra.",
+   "keptEndsWith": "ted onwards, that his own alacrity might be more effectual in arousing that of the people."
+  },
+  {
+   "book": "2TH",
+   "chapter": 1,
+   "beforeSha256": "0c871f7086af42bfd87b44d5bd950a41d57e535b9a2e9c086d2cc4a263cca4cb",
+   "afterSha256": "67995d1464c6e9eb7ab963dc39ec976c95e296d4d98ecab1e0e5ae0ca5aba746",
+   "cut": {
+    "offset": 26500,
+    "length": 572,
+    "sha256": "c272b408d5929084625ac9945ca46cebd661efb90fcd9d22ca90e060c4537cac"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "2TH",
+    "chapter": 2,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 96
+   },
+   "tailStartsWith": "CHAPTER 2 2 Thessalonians 2:1-2 1. Now we beseech you, brethren, by the coming of our Lord",
+   "tailEndsWith": " vel per sermonem, vel per epistolam, tanquam a nobis scriptam, quasi instet dies Christi.",
+   "keptEndsWith": "ts the glory as belonging to God and Christ in common, as I have explained this elsewhere."
+  },
+  {
+   "book": "EPH",
+   "chapter": 1,
+   "beforeSha256": "2118b8dffc9f19adbef092cdce924f4d83810a0f55973ddd9de37f6081fba0c5",
+   "afterSha256": "da0ff49fa98795260753a09a59988ef560ca218d6fcf0b5ed723a6763bfcc953",
+   "cut": {
+    "offset": 56359,
+    "length": 881,
+    "sha256": "1b47f03d2bd468f85c86e247fbc75882914d8095b679b919c10df5f1bb81eab9"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "EPH",
+    "chapter": 2,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 140
+   },
+   "tailStartsWith": "CHAPTER 2 Ephesians 2:1-3 1. And you hath he quickened, who were dead in trespasses and si",
+   "tailEndsWith": "e, facientes quae carni libebant, et menti; et eramus natura filii irae, sicut et caeteri.",
+   "keptEndsWith": "ent of the world; but to limit it to the case in hand is the more probable interpretation."
+  },
+  {
+   "book": "AMO",
+   "chapter": 1,
+   "beforeSha256": "75679fa26675582b0419c532aab47d81061282d3d0299b90dcdfe4c1230225be",
+   "afterSha256": "81b02f7bcc92ba4ba243a0121d1141541b31e0dd17700db10691ca62dfecfc68",
+   "cut": {
+    "offset": 50838,
+    "length": 61003,
+    "sha256": "c2abc500538e81093fa476b47a710daf23a1c362a4c9e118469372c184b2a450"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "AMO",
+    "chapter": 2,
+    "shareOfTailFoundThere": 0.9851,
+    "tailWords": 10809
+   },
+   "tailStartsWith": "Lecture Fifty-first Amos 2:1-3 1. Thus saith the LORD; For three transgressions of Moab, a",
+   "tailEndsWith": "e them, as God treats men according to their disposition. I come now to the third chapter.",
+   "keptEndsWith": "we may gather courage through grace, which is offered to us through Christ our Lord. Amen."
+  },
+  {
+   "book": "AMO",
+   "chapter": 2,
+   "beforeSha256": "05d1fbcc14c4b82f7319a6ca6a8e8140788e245a16a4d0d8ec40349a8d520ab0",
+   "afterSha256": "71e35be9d1342900f7c836bd104550095408bcfbc8d843c568cdf6af135f387b",
+   "cut": {
+    "offset": 60022,
+    "length": 542,
+    "sha256": "c3ad69120c1fa3e90bf63886de21a26b260f03398117e22ed940728eae206943"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "AMO",
+    "chapter": 3,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 86
+   },
+   "tailStartsWith": "Chapter 3. Amos 3:1-2 1. Hear this word that the Lord hath spoken against you, O children ",
+   "tailEndsWith": "ognovi ex omnibus familiis terrae: propterea visitabo super vos omnes iniquitates vestras.",
+   "keptEndsWith": "e them, as God treats men according to their disposition. I come now to the third chapter."
+  }
+ ]
+}
