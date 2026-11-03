@@ -100,6 +100,18 @@ function applyRecordedFixes(srcId, code, obj) {
           return sha(t) === e.afterSha256 ? { ...ch, commentary: t } : ch
         }) }
       }
+    } else if (r.op === 'add-blocks') {
+      // written separately: puts the recorded text at the start of the chapter and accepts the result only if its sha256 equals the recorded "after" hash
+      const pf = path.resolve(libDir, '..', r.patchFile)
+      if (exists(pf) && Array.isArray(o.chapters)) {
+        const patch = readJSON(pf), sha = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+        o = { ...o, chapters: o.chapters.map(ch => {
+          const e = patch.chapters.find(x => x.book === code && x.chapter === ch.chapter)
+          if (!e || sha(ch.commentary) !== e.beforeSha256 || sha(e.prepend) !== e.prependSha256) return ch
+          const t = e.prepend + '\n\n' + ch.commentary
+          return sha(t) === e.afterSha256 ? { ...ch, commentary: t } : ch
+        }) }
+      }
     } else if (r.op === 'replace-chapters') {
       // written separately: swaps in the patch text for a chapter only if our text hashes to the recorded "before" and the new text to "after"
       const pf = path.resolve(libDir, '..', r.patchFile)

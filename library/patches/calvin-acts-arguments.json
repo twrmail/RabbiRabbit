@@ -1,0 +1,36 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-acts-arguments",
+ "source": "calvin",
+ "purpose": "Add the two chapter arguments of Calvin on Acts (4 and 8) that our copy never had. Each goes at the start of its chapter, followed by a blank line.",
+ "chapters": [
+  {
+   "book": "ACT",
+   "chapter": 4,
+   "beforeSha256": "6197f58dc802f99b36a20eb00d1a533132be598f84a8c697b51c1400f1534e3b",
+   "afterSha256": "97b3ed93e839da4ff5156c7b20c3bae51f140b158dc2e6e472f8c51d4a88cb93",
+   "prepend": "In this narration we must consider three things chiefly. That so soon as the truth of the gospel doth once appear, Satan setteth himself against the same on the other side, so much as he is able, and attempteth all things that he may smolder the same in the very first beginnings. Secondly, That God doth furnish his children with invincible force and strength, [201] that they may stand steadfast and unmovable against all assaults of Satan, and not yield unto the violence of the wicked. And, last of all, we must note the event and end, that howsoever the adversaries seem to bear the chiefest swing, and they themselves do omit nothing which may serve to blot out the name of Christ; and, on the other side, howsoever the ministers of sound doctrine be as sheep in the mouths of wolves, yet doth God spread abroad the kingdom of his Son; he fostereth the light of the gospel which is lighted; and he is the protector of his children. Therefore, so often as the doctrine of the gospel ariseth, and divers motions do rise on the other side, and the course thereof is letted divers ways, there is no cause why godly minds should faint or quail, as at some unwonted thing; but they ought rather to remember, that these are ordinary endeavors of Satan, so that we must think upon this well before it come to pass, that it cannot otherwise be but that Satan will spew out all his might and main, so often as Christ doth come abroad with his doctrine. And therewithal let us consider that the constancy of the apostles is set forth unto us for an example, lest, being overcome either with any perils, or threatenings, or terrors, we leap back from that profession of faith which the Lord requireth at our hands. And, moreover, let us comfort ourselves with this, that we need not to doubt but that the Lord will give prosperous success when we have done our duty faithfully.",
+   "prependSha256": "391f5b8d94d2bcdf59bb25b5f231b575e167f92c0d408cd7f58e8114958f875f",
+   "words": 339,
+   "witness": {
+    "file": "calcom36.xml",
+    "element": "xi-p2",
+    "note": "CCEL is the only copy of this text; nothing in data/ or library/ contains it"
+   }
+  },
+  {
+   "book": "ACT",
+   "chapter": 8,
+   "beforeSha256": "5716be796e7463c091db7f153ccbab1100aec472639628802c9d20dc3232a803",
+   "afterSha256": "fc1ae41562d26c2070eee95c5554a446a7dde3d5cb0c25b23c65c5d66ea8dc7b",
+   "prepend": "In this history we may first see the state of the godly in this world, to wit, that they are like sheep appointed to be slain, as it is in the Psalm, (Psalm 44:22;) and especially when the Lord letteth loose the bridle to his enemies, that they may put that cruelty in execution which they have in mind conceived. Secondly, here is set down the end of persecutions, to wit, that they are so far from breaking off the course of the gospel, that they are rather made helps to further the same through the wonderful counsel of God. Like as it was a manifest miracle, that the scattering abroad, mentioned by Luke, gathered many unto the unity of faith who were estranged from God before. Now, let us consider every thing in order.",
+   "prependSha256": "05aed2e21ae4dabbb91d5b8f0d91d91c485c640a8a43a2dd55a9f712835551f1",
+   "words": 135,
+   "witness": {
+    "file": "calcom36.xml",
+    "element": "xv-p2",
+    "note": "CCEL is the only copy of this text; nothing in data/ or library/ contains it"
+   }
+  }
+ ]
+}

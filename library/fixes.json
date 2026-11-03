@@ -330,6 +330,20 @@
       "reason": "In the first Calvin repairs, text that our copy had at the end of the wrong chapter was dropped when chapters were replaced from CCEL, and some of it was Calvin's own: his Preface to Lamentations, Zephaniah and Haggai, and 29 chapter-opening Scripture tables (English and his Latin). The same kind of text still sits at the end of the previous book in ten places (Calvin's Prefaces to Obadiah, Micah and Nahum, and the Arguments for James, 2 Peter, 1 John, Jude, Ephesians, Colossians and 2 Thessalonians). 42 blocks are moved to the start of the chapter they belong to (13 prefaces and arguments to chapter 1 of their book, 29 tables to their own chapter), and the ten tails are cut from where they were. The text is from our own copy; nothing is retyped. CCEL is the witness: at least 95% of each block is found in CCEL's files (recorded per block in the patch). Each chapter's text before and after is recorded by sha256, and each cut records the offset, length and sha256 of the text removed. Left out on purpose: the 43-word editor's note and the translation of Jeremiah 52 (no commentary), and the translator's prefaces, dedications and other front matter that CCEL has and our copy never had (a separate decision)."
     },
     {
+      "id": "calvin-acts-chapter-arguments",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "ACT"
+      ],
+      "op": "add-blocks",
+      "patchFile": "library/patches/calvin-acts-arguments.json",
+      "expectedCount": {
+        "chapter arguments added": 2
+      },
+      "reason": "Calvin opens Acts 4 (339 words) and Acts 8 (135 words) with a short argument before the first Scripture passage. Our copy never had them: neither data/ nor library/ holds the text (the footnote [201] that belongs to the Acts 4 argument was there, so the argument was dropped, not absent from the book). CCEL has them. Each is added at the start of its chapter, taken from CCEL's own paragraph, with the footnote marker [201] our copy uses. The other 26 chapters of Acts open with their Scripture passage and need nothing. The roughly 3-5% by which our Acts is longer than CCEL's is the translator's footnotes (Latin phrases with English glosses), which our copy keeps inside the chapter text and CCEL keeps as separate notes: genuine content, nothing to remove."
+    },
+    {
       "id": "jfb-mic5-replacement-char",
       "source": "jfb",
       "folder": "library/commentary/JFB",
