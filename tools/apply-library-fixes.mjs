@@ -120,6 +120,28 @@ for (const rule of fixes.rules) {
         bump('chapters replaced')
         return { ...ch, commentary: ent.text }
       }) }
+    } else if (rule.op === 'insert-blocks') {
+      // whole paragraphs inserted into a chapter, from a patch that carries each block's text and exact place. For each chapter the patch
+      // records the sha256 before and after. The chapter is changed only if it matches "before"; each place is checked against the 40
+      // characters on either side; the result must match "after" or the tool stops. A chapter already matching "after" is left alone.
+      // Works on the {chapter, commentary} list used by the Henry and Calvin files. Each block goes in as: blank line, then the text.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) return ch
+        const h = H(ch.commentary)
+        if (h === ent.afterSha256) return ch
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        let out = ch.commentary
+        for (const x of [...ent.inserts].sort((a, b) => b.offset - a.offset)) {
+          if (ch.commentary.slice(Math.max(0, x.offset - x.before.length), x.offset) !== x.before || ch.commentary.slice(x.offset, x.offset + x.after.length) !== x.after) throw new Error(`${code} ${ch.chapter} @${x.offset}: surrounding text does not match; nothing written`)
+          out = out.slice(0, x.offset) + '\n\n' + x.text + out.slice(x.offset); bump('quotation blocks inserted')
+        }
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        return { ...ch, commentary: out }
+      }) }
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) })
   }
