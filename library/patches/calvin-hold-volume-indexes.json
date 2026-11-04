@@ -1,0 +1,288 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-hold-volume-indexes",
+ "source": "calvin",
+ "purpose": "Cut volume back-matter indexes from 13 chapters (11 at the end, 2 in the middle) and hold them.",
+ "chapters": [
+  {
+   "book": "2CO",
+   "chapter": 13,
+   "beforeSha256": "ce97fa7b8f84ae357c37fd2595072133dc5f1a496f81fa661ac04b50b092882c",
+   "afterSha256": "955b373d75c2320118b3c72664b1f5e13b82c4336baa0973f0f12b22791a0dcf",
+   "cut": {
+    "offset": 27570,
+    "length": 7448,
+    "sha256": "91bd83299980764efe6aa094a976ef00cd352a077991323684ae9377f2bb3922"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-023",
+    "calvin-held-024"
+   ],
+   "keptEndsWith": "the members of the Church, by mutually participating, one with another, may cherish unity.",
+   "regionStartsWith": "Genesis 1:20 1:24 2:7 2:7 2:19 3:17 9:24 11:9 11:15 14:13 16:8 17:7 18:14 25:8 35:29 35:29",
+   "resumesWith": null
+  },
+  {
+   "book": "2TH",
+   "chapter": 3,
+   "beforeSha256": "0b777c4655d4d92ffc38b59f59be5f841e4aa98d4a16012abb76acfbeb36e4a0",
+   "afterSha256": "38b44c93e850e38068ab25600ac161107b198829509e8ff6610f9119c8e297ac",
+   "cut": {
+    "offset": 31383,
+    "length": 1490,
+    "sha256": "94418d7d7425c6f994b6fc7d9ca8c9dc43b2224235f13696de03a20096e73352"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-025"
+   ],
+   "keptEndsWith": "explains in what manner God aids his believing people — by the presence of Christ’s grace.",
+   "regionStartsWith": "Genesis 1 1:26 3:22 9:6 9:6 9:6 14:13 Exodus 7:11 14:13 14:31 32:32 Leviticus 19:14 Deuter",
+   "resumesWith": null
+  },
+  {
+   "book": "DEU",
+   "chapter": 34,
+   "beforeSha256": "74c4c5783b1ea0d60dcf26e463326df1fae332ed23d2546c0053682725a05439",
+   "afterSha256": "6e7b2328bed02d959833bf2f22ea874c1b87ef24a1cbec0a2520686fa3410810",
+   "cut": {
+    "offset": 9853,
+    "length": 2865,
+    "sha256": "cce0cf026a4d281de88b81523adb8fa963230cbafd0099e333cd0bc219ad37b7"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-026"
+   ],
+   "keptEndsWith": "erformance. END OF COMMENTARIES ON THE FOUR LAST BOOKS OF MOSES, IN THE FORM OF A HARMONY.",
+   "regionStartsWith": "Genesis 2:12 4:7 4:10 10:16 12:7 15:21 18:5 18:20 18:21 20:7 22:16 22:17 27:36 27:39 27:39",
+   "resumesWith": null
+  },
+  {
+   "book": "EZK",
+   "chapter": 12,
+   "beforeSha256": "3209f012365fad9021332cf2d0737075ecaf3e78f7ccc7454c840438ff4c394f",
+   "afterSha256": "59b2318a12d065b07061c757c65e84f4bc656d2b7992ad4eb6f3bb1019e965bf",
+   "cut": {
+    "offset": 58653,
+    "length": 5739,
+    "sha256": "43bbe3c349218c3ab8f8d58f3ef763b0eb198557a2813438c50cf621ffc4f248"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-027",
+    "calvin-held-028",
+    "calvin-held-029",
+    "calvin-held-030",
+    "calvin-held-031"
+   ],
+   "keptEndsWith": "in of thy Spirit, we may henceforth glorify thy name through Christ Jesus our Lord. — Amen",
+   "regionStartsWith": "The translation of Ezekiel 1-12 is located here. Genesis 1:6 1:7 1:8 4:9 9:13 13:15 17:8 1",
+   "resumesWith": null
+  },
+  {
+   "book": "GEN",
+   "chapter": 23,
+   "beforeSha256": "bdce93ef8e4a0178029900c6c39b31d50f7a03c91fcb8afc46b8acda1bd24bdb",
+   "afterSha256": "b45a865c59440b9a99908f70dbace00c4674059d8ae844262a99cfb9908b4106",
+   "cut": {
+    "offset": 24298,
+    "length": 309,
+    "sha256": "0f95482d13baf6ea41a06a86ce99f9c50850ca209c9792d7f7880f4f8c011ba3"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-032"
+   ],
+   "keptEndsWith": "n sold it, yet the people were present, and ratified the contract between the two parties.",
+   "regionStartsWith": "Genesis 1:1-6 1:1-31 1:2 1:28 1:29 1:30 2:1 2:1-25 2:15 2:19 3:1 3:1-24 3:7 3:16 4:1 4:1-2",
+   "resumesWith": null
+  },
+  {
+   "book": "GEN",
+   "chapter": 50,
+   "beforeSha256": "5c820aedd73022a2093d60ba75411f5c0ec5ffdcd70d2ddc61c97089a02274c8",
+   "afterSha256": "3f12dd5912cae3eb12429759eaa465558456f07429c2c8e3f259c276c3674436",
+   "cut": {
+    "offset": 43940,
+    "length": 1500,
+    "sha256": "8adbe7527e706d88c548650ff8f9db25f886ee50fc7e050b561259d7f4320634"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-033"
+   ],
+   "keptEndsWith": "ting their deliverance. End of the Commentaries on the first book of Moses called Genesis.",
+   "regionStartsWith": "Genesis 9:21 11:1 11:1 11:31 15:13 15:13 16:1 17:1 17:1-22 21 21:5 21:22 22:18 23:9 24:1-6",
+   "resumesWith": null
+  },
+  {
+   "book": "JHN",
+   "chapter": 11,
+   "beforeSha256": "f74d59ef94276cfdeb456432905cd5ccb5b44390dc84879eaeaacf0ce7ae7110",
+   "afterSha256": "ea3bca3e97af521707f572d868b340fed4a70c36e8692e5b3bb8234d2f7bdd62",
+   "cut": {
+    "offset": 71250,
+    "length": 3592,
+    "sha256": "122e22ea83b05867dfd28f6e73ecefb2d60b2801a4312099b9c6a5a42b011d7b"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-034"
+   ],
+   "keptEndsWith": "y discover that it is the tyranny of the priests which prevents him from appearing openly.",
+   "regionStartsWith": "Genesis 1:1 2:2 15:2 17:5 17:7 22:2 27:38 28:12 32:30 34:25 48:22 Exodus 2:12 3:12 3:14 16",
+   "resumesWith": null
+  },
+  {
+   "book": "JHN",
+   "chapter": 21,
+   "beforeSha256": "f06d11afcab91e13762cb32c776eeafc1995f80700980060591862d69bf6f34b",
+   "afterSha256": "adc5faedd765e63b9ff71bb179aabb6823eb4bdb5ca5c9897f7bf4e8eefe8771",
+   "cut": {
+    "offset": 36825,
+    "length": 4848,
+    "sha256": "0249260e475c4df022eb3aadb95692c43902e2553ebcf881080a2be0d7f5086c"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-035",
+    "calvin-held-036",
+    "calvin-held-037"
+   ],
+   "keptEndsWith": "lone is wise, and the only fountain of wisdom; to whom be praise and glory for ever. Amen.",
+   "regionStartsWith": "Exodus 12:46 20:12 Leviticus 6:30 16:27 Numbers 9:12 23:7 23:8 Deuteronomy 4:7 21:23 27:26",
+   "resumesWith": null
+  },
+  {
+   "book": "LEV",
+   "chapter": 12,
+   "beforeSha256": "38f9b0a9d614bd6a7a9fb95130160bec16c6a5f8a870e17907390352c4f8cc77",
+   "afterSha256": "1a0a45e401061501054aa56a5ddd25eae96f4acc5b17af1b1245ed43a0b1f15c",
+   "cut": {
+    "offset": 7171,
+    "length": 2211,
+    "sha256": "4c64ddd955937f3e709a5c2f138b68449871660601027c07347775a4c8014b73"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-038"
+   ],
+   "keptEndsWith": "asure of their poverty, is no less grateful to Him than the more valuable one of the rich.",
+   "regionStartsWith": "Genesis 1:20 8 12:2 15:5 15:13 15:14 15:17 15:18 19:26 19:26 22:1 22:17 22:17 28:17 42:23 ",
+   "resumesWith": null
+  },
+  {
+   "book": "LUK",
+   "chapter": 19,
+   "beforeSha256": "339df1c4b05969bd0078a90484ee4f9f47c7b6d9c6920e8fcaee61be4f52815a",
+   "afterSha256": "925c725e14d453789505c9c1a865690fff45665b2feaeff3d0bad8983a82442f",
+   "cut": {
+    "offset": 29938,
+    "length": 622,
+    "sha256": "22a4588b6fe9103ea038fe9aadc6cc528c4851772d4688726df79887c58a9928"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": "\n\n",
+   "heldIds": [
+    "calvin-held-039"
+   ],
+   "keptEndsWith": "n, but may be careful to receive the grace of God, and may even run with rigor to meet it.",
+   "regionStartsWith": "Exodus 18:22 20:12 23:15 23:16 24:1 29:33 30:13 34:28 Leviticus 11:25 11:28 11:32 14:2 18:",
+   "resumesWith": "Luke 19:47. And he taught daily in the temple. Mark and Luke point out, first, what was th"
+  },
+  {
+   "book": "MAT",
+   "chapter": 10,
+   "beforeSha256": "64bf939a235a350a2cf13faa8b0e5aa6a27b19bee19718ee2d8cfbcdc3b8efa2",
+   "afterSha256": "2722349bef06a2eb33ab3e9f0b1ebf5e8ac426e5f82baae5cee140a5b1c8f21a",
+   "cut": {
+    "offset": 70764,
+    "length": 873,
+    "sha256": "876da962b306b17d0424fc896c60324fd8c4b115ceaa2701a77eb7ae3a179535"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-040"
+   ],
+   "keptEndsWith": " in the Church, but to all his disciples, whom the pride of the world tramples under foot.",
+   "regionStartsWith": "Genesis 1:1 1:16 2:7 2:23 8:21 11:9 12:3 13:15 13:16 15:5 15:13 17:7 17:7 17:10 17:17 17:1",
+   "resumesWith": null
+  },
+  {
+   "book": "MRK",
+   "chapter": 16,
+   "beforeSha256": "3f66ab80f5faac7941a36fa4b02d5f898feb9a03916f400dc57a675d3bc0e7b9",
+   "afterSha256": "1ee4d5b8f40fb3a31c6062b2ca4594e5e13042e94070eb7eaae336b3a03ab0fc",
+   "cut": {
+    "offset": 17735,
+    "length": 1042,
+    "sha256": "b7d89b89870cdb7e53849439b7b23ca6c1133918c408fa74a127009a342dc97b"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-041"
+   ],
+   "keptEndsWith": "d if they are employed to adorn wicked doctrines, or to disguise corrupt modes of worship.",
+   "regionStartsWith": "Genesis 4:8 6:6 6:6 14:19 17:7 18:1 19:26 24:31 49:10 Exodus 3:6 12:11 12:18 25:40 26:33 2",
+   "resumesWith": null
+  },
+  {
+   "book": "NUM",
+   "chapter": 10,
+   "beforeSha256": "74978999576a6362b3a3d812ecabccf3a65a4c9fbd2be9cf0f29cf9b4ea0c29f",
+   "afterSha256": "50bbb1b4c5cf292705e1c06c64b453b20b4b1c5f8cd2a2de99f3f21530fdbe2d",
+   "cut": {
+    "offset": 10789,
+    "length": 2703,
+    "sha256": "d29fe94f277db60a8c771c45477e8203fa1c1b338b7db98cc7f54f38171295cd"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": "\n\n",
+   "heldIds": [
+    "calvin-held-042"
+   ],
+   "keptEndsWith": "avel, and that their camp was always so arranged that no contention arose to disturb them.",
+   "regionStartsWith": "Genesis 1:29 6:6 9:4 9:4-6 9:6 9:22 14:18-20 14:24 15:1 22:12 32:30 32:30 34:7 34:7 38:14 ",
+   "resumesWith": "29. And Moses said unto Hobab the son of Raguel. Very grossly are those mistaken who have "
+  }
+ ]
+}

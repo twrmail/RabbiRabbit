@@ -108,11 +108,12 @@ function applyRecordedFixes(srcId, code, obj) {
         o = { ...o, chapters: o.chapters.map(ch => {
           const e = patch.chapters.find(x => x.book === code && x.chapter === ch.chapter)
           if (!e || sha(ch.commentary) !== e.beforeSha256) return ch
-          const tail = ch.commentary.slice(e.cut.offset)
+          const tail = ch.commentary.slice(e.cut.offset, e.cut.offset + e.cut.length)
           if (tail.length !== e.cut.length || sha(tail) !== e.cut.sha256) return ch
           const its = e.heldIds.map(id => held.find(i => i.id === id))
           if (its.some(i => !i || sha(i.text) !== i.sha256) || its.map(i => i.text).join('') !== tail) return ch
-          const t = ch.commentary.slice(0, e.cut.offset).trimEnd()
+          const before = ch.commentary.slice(0, e.cut.offset).trimEnd(), after = ch.commentary.slice(e.cut.offset + e.cut.length).trimStart()
+          const t = after ? before + '\n\n' + after : before
           return sha(t) === e.afterSha256 ? { ...ch, commentary: t } : ch
         }) }
       }
@@ -524,7 +525,7 @@ if (exists(heldDir)) {
       if (seen.has(it.id)) problems.push(`${hf}: duplicate held id ${it.id}`); seen.add(it.id)
       if (shaH(it.text) !== it.sha256) problems.push(`${hf}: ${it.id} does not match its own sha256`)
       if (it.words !== it.text.split(/\s+/).filter(Boolean).length) problems.push(`${hf}: ${it.id} word count is wrong`)
-      if (!['translation', 'index', 'placeholder', 'dedication', 'table', 'back-matter', 'unresolved'].includes(it.classification)) problems.push(`${hf}: ${it.id} has unknown classification "${it.classification}"`)
+      if (!['translation', 'index', 'placeholder', 'dedication', 'table', 'title-page', 'back-matter', 'unresolved'].includes(it.classification)) problems.push(`${hf}: ${it.id} has unknown classification "${it.classification}"`)
       if (it.status !== 'held') problems.push(`${hf}: ${it.id} has status "${it.status}" (expected held)`)
       const rule = fixesDoc.rules.find(r => r.id === it.removedByRule)
       if (!rule) problems.push(`${hf}: ${it.id} names rule "${it.removedByRule}" which is not in fixes.json`)
@@ -536,14 +537,44 @@ if (exists(heldDir)) {
       }
     }
   }
-  for (const r of fixesDoc.rules.filter(x => x.op === 'hold-blocks')) {
-    const patch = readJSON(path.join(libDir, '..', r.patchFile)), ids = new Set(readJSON(path.join(libDir, '..', r.heldFile)).items.map(i => i.id))
-    for (const e of patch.chapters) for (const id of e.heldIds) if (!ids.has(id)) problems.push(`rule ${r.id}: ${e.book} ${e.chapter} names held item ${id} which is not in ${r.heldFile}`)
+  // Reversibility: for every hold-blocks cut that has been applied, the original chapter is rebuilt from the library chapter and the held items
+  // (head + the whitespace the cut removed + the held items in order + the removed whitespace + the rest) and must hash to the recorded "before"
+  // sha256. Rules are walked last to first so that a chapter cut by several rules is unwound one rule at a time. Each item's recorded offset
+  // must equal where it sat in the chapter, and each item must name a proposed destination.
+  const holdRules = fixesDoc.rules.filter(x => x.op === 'hold-blocks'), cur = {}, rebuilt = {}, notRebuilt = []
+  const libCh = (book, n, src) => { const f = path.join(libDir, 'commentary', 'Calvin', book + '.json'); return exists(f) ? ((readJSON(f).chapters || []).find(c => c.chapter === n) || {}).commentary : undefined }
+  for (const r of [...holdRules].reverse()) {
+    const patch = readJSON(path.join(libDir, '..', r.patchFile)), hdoc = readJSON(path.join(libDir, '..', r.heldFile)), hid = new Map(hdoc.items.map(i => [i.id, i]))
+    for (const e of patch.chapters) {
+      for (const id of e.heldIds) if (!hid.has(id)) problems.push(`rule ${r.id}: ${e.book} ${e.chapter} names held item ${id} which is not in ${r.heldFile}`)
+      if (e.heldIds.some(id => !hid.has(id))) continue
+      const key = e.book + ' ' + e.chapter, items = e.heldIds.map(id => hid.get(id)), region = items.map(i => i.text).join('')
+      let at = e.cut.offset
+      for (const it of items) { if (it.foundIn.offsetInChapterBeforeCut !== at) problems.push(`rule ${r.id}: ${key} item ${it.id} records offset ${it.foundIn.offsetInChapterBeforeCut} but sat at ${at}`); at += it.text.length }
+      for (const it of items) if (!it.proposedDestination) problems.push(`${it.id}: no proposed destination recorded`)
+      if (!(key in cur)) cur[key] = libCh(e.book, e.chapter)
+      const text = cur[key]
+      if (typeof text !== 'string') { notRebuilt.push(`${key} (library file not present)`); continue }
+      if (shaH(text) === e.beforeSha256) continue            // this cut has not been applied here; nothing to rebuild
+      if (shaH(text) !== e.afterSha256) { notRebuilt.push(`${key} (chapter text is neither the recorded before nor after state of ${r.id})`); continue }
+      if (typeof e.gapBefore !== 'string' || (e.gapAfter !== null && typeof e.gapAfter !== 'string')) { problems.push(`rule ${r.id}: ${key} does not record the whitespace the cut removed (gapBefore/gapAfter)`); continue }
+      const hl = e.cut.offset - e.gapBefore.length
+      const orig = e.gapAfter === null ? text.slice(0, hl) + e.gapBefore + region : text.slice(0, hl) + e.gapBefore + region + e.gapAfter + text.slice(hl + 2)
+      if (e.gapAfter !== null && text.slice(hl, hl + 2) !== '\n\n') problems.push(`rule ${r.id}: ${key} the join in the library text is not the expected blank line`)
+      if (e.gapAfter === null && text.length !== hl) problems.push(`rule ${r.id}: ${key} the library text is longer than the part before the cut`)
+      if (shaH(orig) !== e.beforeSha256) problems.push(`rule ${r.id}: ${key} CANNOT be rebuilt: the library chapter plus the held text does not give the recorded original`)
+      else { cur[key] = orig; rebuilt[r.id] = (rebuilt[r.id] || 0) + 1 }
+    }
   }
   if (problems.length) { console.error('library/held problems:\n- ' + problems.join('\n- ')); process.exit(1) }
+  heldSummary.rebuilt = Object.values(rebuilt).reduce((a, b) => a + b, 0); heldSummary.notRebuilt = notRebuilt
   const by = {}
   for (const hf of fs.readdirSync(heldDir).filter(f => f.endsWith('.json'))) for (const it of readJSON(path.join(heldDir, hf)).items) { by[it.source] ||= { n: 0, w: 0, c: {} }; by[it.source].n++; by[it.source].w += it.words; by[it.source].c[it.classification] = (by[it.source].c[it.classification] || 0) + 1 }
-  for (const [id, v] of Object.entries(by)) card.find(x => x.id === id).gates[3][1].push(E('m', `${v.n} held item(s), ${v.w.toLocaleString()} words, kept in library/held (${Object.entries(v.c).map(([k, n]) => n + ' ' + k).join(', ')}); each cut is recorded in a rule and can be undone from the held text`))
+  for (const [id, v] of Object.entries(by)) {
+    const g = card.find(x => x.id === id)
+    g.facts.held = { items: v.n, words: v.w, byClass: v.c, cutsRebuiltExactly: heldSummary.rebuilt, cutsNotChecked: notRebuilt.length }
+    g.gates[3][1].push(E('m', `HELD, NOT MISSING: ${v.n} classified item(s), ${v.w.toLocaleString()} words, cut from the commentary and kept word for word in library/held (${Object.entries(v.c).map(([k, n]) => n + ' ' + k).join(', ')}). Not counted as missing commentary and not served as commentary. ${heldSummary.rebuilt} cut(s) were rebuilt from the library chapter plus the held text and match the recorded original exactly${notRebuilt.length ? '; not checked: ' + notRebuilt.join('; ') : ''}`))
+  }
 }
 
 // ---- next actions (the single most important one per source) ----
@@ -571,7 +602,7 @@ const names = { 1: 'Complete', 2: 'Provenance', 3: 'Clean', 4: 'Preserved', 5: '
 let md = `# RabbiRabbit source scorecard\n\nGenerated by source-scorecard.mjs from \`${libDir}\` (manifest snapshot \`${manifest.sourceSnapshot}\`, ${manifest.sources.length} sources)${worker ? ` and Worker file \`${path.basename(workerFile)}\`` : ' (no Worker file given: attribution checks are UNKNOWN)'}. Read-only.\n\nEvidence tags: **[measured]** computed from the files now; **[recorded]** written in the manifest/data file, not independently confirmed; **[earlier]** an earlier result, not rechecked. A PASS needs evidence that meets the criterion; no evidence is UNKNOWN.\n\n## Summary\n\n| Source | ${Object.values(names).join(' | ')} |\n|---|${Object.values(names).map(() => '---').join('|')}|\n`
 for (const g of card) md += `| ${g.name} (${g.id}) | ${[1, 2, 3, 4, 5, 6, 7].map(i => sym[g.gates[i][0]]).join(' | ')} |\n`
 const tally = {}; for (const g of card) for (let i = 1; i <= 7; i++) tally[g.gates[i][0]] = (tally[g.gates[i][0]] || 0) + 1
-md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut).` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
+md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
 for (const g of card) {
   md += `\n### ${g.name} (${g.id}) - ${g.scope}, ${g.status}\n**Next action:** ${g.next[0]}\n\n`
   for (let i = 1; i <= 7; i++) { const [st, ev] = g.gates[i]; md += `- **${i}. ${names[i]}: ${st}**${ev.filter(Boolean).length ? '\n' + ev.filter(Boolean).map(e => `  - ${e}`).join('\n') : ''}\n` }
