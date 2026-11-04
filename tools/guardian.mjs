@@ -96,7 +96,7 @@ let scan = null
     const status = open.length || stale.length ? 'FAIL' : done.length ? 'WARN' : 'PASS'
     add({ id: 'scans', title: 'Boundary and back-matter scans', status,
       summary: `Scanned ${scan.scanned.length} commentary sources (end of each chapter against the start of the next; CCEL volume furniture; index runs). ${open.length} unexplained finding(s), ${done.length} accepted with a recorded reason (each checked against the untouched original), ${stale.length} stale exception(s).`,
-      detail: [...open.map(f => `UNEXPLAINED ${f.source} ${f.book} ${f.chapter}: ${f.check}: ${f.detail}`), ...stale.map(e => `STALE EXCEPTION ${e.source} ${e.book} ${e.chapter}`)], ms: r.ms })
+      detail: [...open.map(f => `UNEXPLAINED ${f.source} ${f.book} ${f.chapter}: ${f.check}: ${f.detail}`), ...stale.map(e => `STALE EXCEPTION ${e.source} ${e.book} ${e.chapter}`), ...done.map(f => `accepted: ${f.source} ${f.book} ${f.chapter} (${f.check}): ${String(f.explained).slice(0, 140)}`)], ms: r.ms })
   }
 }
 
@@ -179,7 +179,8 @@ md += `| Are the repository's checks passing? | **${repoVerdict}**. ${repoChecks
 md += `| Do the checkers catch damage? | **${dmgVerdict}**. ${dmg.summary.split(' This ')[0]} |\n`
 md += `| Are the sources verified? | **${fullyVerified} of ${sources.length} sources are fully verified.** ${failSources} have at least one failing gate, ${unkSources} have at least one gate with no evidence yet. These are existing conditions, not new problems, and none is counted as PASS. |\n`
 md += `| What changed since the baseline? | ${changes.length ? `${changes.filter(c => c.status === 'WORSE').length} worse, ${changes.filter(c => /better/.test(c.status)).length} better, ${changes.filter(c => !/better|WORSE/.test(c.status)).length} other (see below).` : 'No gate differs from the baseline.'} |\n`
-md += `| What needs a person? | ${human.length} item(s) (see below). |\n\n`
+md += `| What needs a person? | ${human.length} item(s) (see below). |\n`
+md += `| Does a green result mean the library is ready to serve? | **No.** Green checks mean the machinery works and nothing got worse. A source is ready to serve only when every one of its gates passes and its origin, licence and completeness are settled: ${fullyVerified} of ${sources.length} are there today. A healthy audit with unverified content is the expected state, not a contradiction. |\n\n`
 md += `Three different things are reported separately on purpose: *the checks passing* means the repository's machinery works and nothing got worse; *the damage tests* show the checkers notice corruption; *source verification* is whether each source has been shown complete, clean, preserved, sourced and licensed. A pass on the first two is not a pass on the third.\n\n`
 md += `## What failed\n\n${worst.length ? worst.map(c => `- **${c.title}**: ${c.summary}\n${c.detail.map(d => `  - ${d}`).join('\n')}`).join('\n') : 'No repository check failed.'}\n\n`
 md += `## What did not run\n\n${unrun.length ? unrun.map(c => `- **${c.title}**: ${c.summary}`).join('\n') : 'Every check ran.'}\n\n`
