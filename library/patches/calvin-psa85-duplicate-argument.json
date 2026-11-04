@@ -1,0 +1,30 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-psa85-duplicate-argument",
+ "source": "calvin",
+ "purpose": "Cut the paragraph at the end of Psalm 85 that repeats the opening paragraph of Psalm 86 (CCEL's own file has it in both places).",
+ "chapters": [
+  {
+   "book": "PSA",
+   "chapter": 85,
+   "beforeSha256": "7be534dd4cb0b2255a1723a4c19fe821e488afa70309a9d7ce8ad458b682657f",
+   "afterSha256": "51294d5794a3f2ea75b6dc9e84fe42e13f0fe865a0488dac6c34eb0c916c4913",
+   "cut": {
+    "offset": 24839,
+    "length": 521,
+    "sha256": "90c826f03952f897f33e4ef57858e99339f2494e167e4d2ff1fadf9f2d1ee34e"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "PSA",
+    "chapter": 86,
+    "shareOfTailFoundThere": 0.9024,
+    "tailWords": 87
+   },
+   "tailStartsWith": "In this psalm prayers and holy meditations, engaged in with the view of nourishing and con",
+   "tailEndsWith": "t he also prays that the fear of God may be implanted and firmly established in his heart.",
+   "keptEndsWith": "h afar off: for truth is fallen in the street, and equity cannot enter,” ( Isaiah 59:14 .)"
+  }
+ ]
+}

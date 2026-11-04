@@ -570,6 +570,34 @@
         "The Sin of ELl'S Sons": 1
       },
       "reason": "Two plain scanning errors found by comparing with CCEL's copy: Leviticus 3 'as an stoning sacrifice' (CCEL: 'atoning'; 'an stoning' is not English) and the heading in 1 Samuel 2 'ELl'S Sons' (a capital I read as a small l; CCEL: 'Eli's'). The other word differences between the two copies are not changed here; see the JFB comparison report."
+    },
+    {
+      "id": "calvin-psalms-from-ccel",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "PSA"
+      ],
+      "op": "replace-chapters",
+      "patchFile": "library/patches/calvin-psalms-from-ccel.json",
+      "expectedCount": {
+        "chapters replaced": 148
+      },
+      "reason": "Our Calvin Psalms are a shortened copy: every Psalm stops after roughly the first 1,000-2,500 words (about 126,000 words for all 150, against about 804,000 in CCEL's copy of the same translation, volumes 8-12). Every 6-word run of our text is found in CCEL's Psalm (at least 97% in every Psalm replaced; the patch records the figure for each), so ours is a shortened copy, not different wording. 148 Psalms are replaced with CCEL's full text (tags and footnotes removed, as in our copy); Psalms 70 and 108 were already complete. Psalm 119 also carried the title page and translator's preface of volume five in the middle of its text (about 1,150 words); they are CCEL front matter, not commentary, so the replacement does not include them. The patch records their sha256 and word count, and the original file in data/ keeps them. Each entry carries the sha256 of our text before and of the new text after, and the tool refuses any chapter that matches neither. Source: CCEL calcom08.xml to calcom12.xml (file hashes recorded in the patch)."
+    },
+    {
+      "id": "calvin-psa85-duplicate-argument",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "PSA"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-psa85-duplicate-argument.json",
+      "expectedCount": {
+        "misplaced tails cut": 1
+      },
+      "reason": "CCEL's own file ends Psalm 85 with the opening paragraph of Psalm 86 ('In this psalm prayers and holy meditations ...'), which Psalm 86 also holds. The restored Psalm 85 therefore carried it twice over the two chapters. The tail (87 words; about 90% of its 6-word runs are found at the start of Psalm 86, the two copies differing only in one spelling, judgment/judgement, and the word 'his') is cut from Psalm 85; Psalm 86 keeps its own copy of the paragraph, so nothing is lost. The cut is checked by offset, length and sha256."
     }
   ],
   "openIssues": [
