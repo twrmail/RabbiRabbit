@@ -441,6 +441,70 @@
       "reason": "Thirteen chapters of Calvin carry the back-matter indexes of a CCEL volume that our original scrape put inside them: the index of scripture references in all thirteen, the index of Greek words (2 Corinthians 13, Ezekiel 12, John 21), Hebrew words (Ezekiel 12, and a heading in John 21) and Latin and French words (Ezekiel 12), and a CCEL placeholder sentence in Ezekiel 12. Eleven sit at the end of the chapter; two (Luke 19 and Numbers 10) sit in the middle, with Calvin's commentary carrying on after them, so the text before and after is rejoined with a blank line. 6,401 words in all (all classes: index, placeholder, title page), none of it commentary. Each section is cut and kept word for word in library/held/calvin-held-volume-matter.json with where it was found, why it was cut, a classification and a hash. The tool refuses to cut unless the held items add up to exactly the text being cut."
     },
     {
+      "id": "calvin-col4-duplicate-thessalonians-table",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "COL"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-col4-duplicate-table.json",
+      "expectedCount": {
+        "misplaced tails cut": 1
+      },
+      "reason": "The end of Colossians 4 repeated the opening Scripture table of 1 Thessalonians 1 ('Commentary on the First Epistle of Paul to the Thessalonians. Chapter 1 ... 1 Thessalonians 1:1', English and Latin, 76 words), which 1 Thessalonians 1 already holds. The tail is cut; the same text stays in 1 Thessalonians 1, so nothing is lost. The cut is checked by offset, length and sha256, and the builder refuses it unless at least 98% of the cut text is found in 1 Thessalonians 1."
+    },
+    {
+      "id": "calvin-move-1th-argument",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "COL",
+        "1TH"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-1th-argument.json",
+      "expectedCount": {
+        "misplaced tails cut": 1,
+        "chapters opened with moved text": 1
+      },
+      "reason": "'Argument on the First Epistle to the Thessalonians' (Calvin's summary of the epistle) sat at the end of Colossians 4 because our original scrape ran the end of the Colossians volume section into the next book. It belongs to 1 Thessalonians and is moved to the start of 1 Thessalonians 1, as the Arguments of other books were placed at the start of their first chapter by calvin-move-front-matter-and-chapter-openings. The builder refuses the move if this text is already anywhere in 1 Thessalonians; the cut and the added text have the same sha256."
+    },
+    {
+      "id": "calvin-move-thessalonian-dedications",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "COL",
+        "1TH",
+        "2TH"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-thessalonian-dedications.json",
+      "expectedCount": {
+        "misplaced tails cut": 2,
+        "chapters opened with moved text": 2
+      },
+      "reason": "Calvin's two dedicatory epistles sat at the ends of the chapters before the commentaries they open: the dedication to Matthurinus Corderius (Geneva, 17 February 1550) at the end of Colossians 4, and the dedication to Benedict Textor (Geneva, 1 July 1550) at the end of 1 Thessalonians 5. In the CCEL volume each is the 'front' division 'Calvin's Dedication' of 'Commentary on First Thessalonians' and 'Commentary on Second Thessalonians'. They are moved to the start of 1 Thessalonians 1 and 2 Thessalonians 1, in the same way other front matter was moved. The 'End of the Commentary on ...' lines stay where they are. The cut and the added text have the same sha256."
+    },
+    {
+      "id": "calvin-move-minor-prophet-chapter-tables",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "JON",
+        "MIC",
+        "NAH"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-minor-prophet-tables.json",
+      "expectedCount": {
+        "misplaced tails cut": 11,
+        "chapters opened with moved text": 11
+      },
+      "reason": "In Jonah, Micah and Nahum the English and Latin Scripture table that opens a chapter (143 to 886 characters, e.g. 'Chapter 2. Jonah 2:1-2 ...') sat at the end of the chapter before it, as an earlier restore from CCEL had left it. Eleven tables (Jonah 2-4, Micah 2-7, Nahum 2-3) are moved to the start of their own chapters, which is where the other chapters of Calvin have them. The builder refuses a move if the table is already at the start of the next chapter; each cut and its added text have the same sha256."
+    },
+    {
       "id": "jfb-mic5-replacement-char",
       "source": "jfb",
       "folder": "library/commentary/JFB",

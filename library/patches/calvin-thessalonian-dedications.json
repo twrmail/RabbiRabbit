@@ -1,0 +1,80 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-thessalonian-dedications",
+ "source": "calvin",
+ "purpose": "Move Calvin's two dedications to the front of the commentaries they open (1 and 2 Thessalonians). Same format as calvin-moves.json; each cut entry names where its text goes (movedTo) and each prepend entry where it came from (movedFrom).",
+ "chapters": [
+  {
+   "book": "COL",
+   "chapter": 4,
+   "beforeSha256": "13c741a24892ae77f51cecbcc36bdc2a2244e1f3bf04cdfc7f5ee090e90043db",
+   "afterSha256": "5df48e0538562629bc6e70d40b1845ccf7ccdf7ab9362e542e7a93dc794937bf",
+   "cut": {
+    "offset": 20797,
+    "length": 1850,
+    "sha256": "ecf4b1d1f795a92bd06f9f58848f46c3c7cdb89ead52cd02ff7bbeb67199cb19"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "1TH",
+    "chapter": 1
+   },
+   "contentClass": "dedication",
+   "tailStartsWith": "THE AUTHOR’S DEDICATORY EPISTLE. TO MATURINUS CORDERIUS, A MAN OF EMINENT PIETY AND LEARNI",
+   "tailEndsWith": "hey shall know that it has in some degree originated with you. Geneva, 17th February 1550.",
+   "keptEndsWith": "ary to provide against imposition. END OF THE COMMENTARY ON THE EPISTLE TO THE COLOSSIANS."
+  },
+  {
+   "book": "1TH",
+   "chapter": 1,
+   "beforeSha256": "69187d42c1e890f2acf8ce701915146271c5e858226ff0b21fed13be2801db8f",
+   "afterSha256": "63987262f516ad4211f0c2e9263e2dc508f9036b29ebf7e89a4335e293731de5",
+   "cut": null,
+   "prepend": "THE AUTHOR’S DEDICATORY EPISTLE. TO MATURINUS CORDERIUS, A MAN OF EMINENT PIETY AND LEARNING, PRINCIPAL OF THE COLLEGE OF LAUSANNE. It is befitting that you should come in for a share in my labors, inasmuch as, under your auspices, having entered on a course of study, I made proficiency at least so far as to be prepared to profit in some degree the Church of God. When my father sent me, while yet a boy, to Paris, after I had simply tasted the first elements of the Latin tongue; Providence so ordered it that I had, for a short time, the privilege of having you as my instructor, that I might be taught by you the true method of learning, in such a way that I might be prepared afterwards to make somewhat better proficiency. For, after presiding over the first class with the highest renown, on observing that pupils who had been ambitiously trained up by the other masters, produced nothing but mere show, nothing of solidity, so that they required to be formed by you anew, tired of this annoyance, you that year descended to the fourth class. This, indeed, was what you had in view, but to me it was a singular kindness on the part of God that I happened to have an auspicious commencement of such a course of training. And although I was permitted to have the use of it only for a short time, from the circumstance that we were soon afterwards advanced higher by an injudicious man, who regulated our studies according to his own pleasure, or rather his caprice, yet I derived so much assistance afterwards from your training, that it is with good reason that I acknowledge myself indebted to you for such progress as has since been made. And this I was desirous to testify to posterity, that, if any advantage shall accrue to them from my writings, they shall know that it has in some degree originated with you. Geneva, 17th February 1550.",
+   "prependSha256": "ecf4b1d1f795a92bd06f9f58848f46c3c7cdb89ead52cd02ff7bbeb67199cb19",
+   "movedFrom": {
+    "book": "COL",
+    "chapter": 4
+   },
+   "contentClass": "dedication"
+  },
+  {
+   "book": "1TH",
+   "chapter": 5,
+   "beforeSha256": "0f3599a9571c1917d0ca847903ea6da69d0da626282eb4db270ef6485efc7c5f",
+   "afterSha256": "081141081715d0a497e192114c34d0290733bc57c461a2bfa3040f27f7cfa3e2",
+   "cut": {
+    "offset": 45840,
+    "length": 1723,
+    "sha256": "821a45b397e9adac971bac64b1364711f5d37159e832c093cb8d7f3469e1ce1d"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "2TH",
+    "chapter": 1
+   },
+   "contentClass": "dedication",
+   "tailStartsWith": "THE AUTHOR’S DEDICATORY EPISTLE. TO THAT DISTINGUISHED MAN BENEDICT TEXTOR, PHYSICIAN. Whi",
+   "tailEndsWith": "at there may be some token of my good wishes towards you in return. Geneva, 1st July 1550.",
+   "keptEndsWith": " so strict an adjuration. END OF THE COMMENTARY ON THE FIRST EPISTLE TO THE THESSALONIANS."
+  },
+  {
+   "book": "2TH",
+   "chapter": 1,
+   "beforeSha256": "67995d1464c6e9eb7ab963dc39ec976c95e296d4d98ecab1e0e5ae0ca5aba746",
+   "afterSha256": "5515eac6830df653464798120bd199f8f59b295fbfe19dbb42b4f98ea61e8a93",
+   "cut": null,
+   "prepend": "THE AUTHOR’S DEDICATORY EPISTLE. TO THAT DISTINGUISHED MAN BENEDICT TEXTOR, PHYSICIAN. While you are reckoned to excel in the knowledge of your profession by those who are competent judges in that matter, I, for my part, have always regarded as a very high excellence that strict fidelity and diligence which you are accustomed to exercise, both in attending upon the sick, and in giving advice. But more especially in either restoring or establishing my own health, I have observed you to be so carefully intent, that it was easy to perceive that you were influenced not so much by regard to a particular individual, as by anxiety and concern for the common welfare of the Church. Another, perhaps, might think, that the kindness was smaller from its not having been shewn simply to himself as an individual; but as for me, I think myself on the contrary to be under a double obligation to you, on the ground, that while you omitted nothing whatever in discharging the office of a friend, you were at the same time equally concerned as to my ministry, too, which ought to be dearer to me than my life. The remembrance, besides, of my departed wife reminds me daily how much I owe you, not only because she was frequently through your assistance raised up, and was in one instance restored from a serious and dangerous distemper, but that even in that last disease, which took her away from us, you left nothing undone in the way of industry, labor, and effort, with a view to her assistance. Farther, as you do not allow me to give you any other remuneration, I have thought of inscribing your name upon this Commentary, in order that there may be some token of my good wishes towards you in return. Geneva, 1st July 1550.",
+   "prependSha256": "821a45b397e9adac971bac64b1364711f5d37159e832c093cb8d7f3469e1ce1d",
+   "movedFrom": {
+    "book": "1TH",
+    "chapter": 5
+   },
+   "contentClass": "dedication"
+  }
+ ]
+}

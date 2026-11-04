@@ -543,7 +543,28 @@ if (exists(heldDir)) {
   // must equal where it sat in the chapter, and each item must name a proposed destination.
   const holdRules = fixesDoc.rules.filter(x => x.op === 'hold-blocks'), cur = {}, rebuilt = {}, notRebuilt = []
   const libCh = (book, n, src) => { const f = path.join(libDir, 'commentary', 'Calvin', book + '.json'); return exists(f) ? ((readJSON(f).chapters || []).find(c => c.chapter === n) || {}).commentary : undefined }
-  for (const r of [...holdRules].reverse()) {
+  const heldKeys = new Set(holdRules.flatMap(r => readJSON(path.join(libDir, '..', r.patchFile)).chapters.map(e => e.book + ' ' + e.chapter)))
+  for (const r of [...fixesDoc.rules].reverse().filter(x => x.op === 'hold-blocks' || x.op === 'move-blocks')) {
+    if (r.op === 'move-blocks') {   // a move after a hold on the same chapter (e.g. a table added at the start) is unwound first, so the hold can then be checked
+      const mp = readJSON(path.join(libDir, '..', r.patchFile))
+      for (const e of mp.chapters) {
+        const key = e.book + ' ' + e.chapter; if (!heldKeys.has(key)) continue
+        if (!holdRules.some(h => fixesDoc.rules.indexOf(h) < fixesDoc.rules.indexOf(r) && readJSON(path.join(libDir, '..', h.patchFile)).chapters.some(x => x.book === e.book && x.chapter === e.chapter))) continue   // only a move that comes AFTER a hold on this chapter has to be unwound
+        if (!(key in cur)) cur[key] = libCh(e.book, e.chapter)
+        const text = cur[key]
+        if (typeof text !== 'string' || shaH(text) !== e.afterSha256 || shaH(text) === e.beforeSha256) continue
+        let back = text
+        if (e.prepend !== null && e.prepend !== undefined) { if (!back.startsWith(e.prepend + '\n\n')) { problems.push(`rule ${r.id}: ${key} does not start with the text this rule added`); continue } back = back.slice(e.prepend.length + 2) }
+        if (e.cut) {
+          const dest = e.movedTo && mp.chapters.find(x => x.book === e.movedTo.book && x.chapter === e.movedTo.chapter)
+          if (!dest || typeof dest.prepend !== 'string' || typeof e.gapBefore !== 'string') { notRebuilt.push(`${key} (a cut by ${r.id} cannot be rebuilt from the patch)`); continue }
+          back = back + e.gapBefore + dest.prepend
+        }
+        if (shaH(back) !== e.beforeSha256) problems.push(`rule ${r.id}: ${key} cannot be unwound to its recorded before state`)
+        else cur[key] = back
+      }
+      continue
+    }
     const patch = readJSON(path.join(libDir, '..', r.patchFile)), hdoc = readJSON(path.join(libDir, '..', r.heldFile)), hid = new Map(hdoc.items.map(i => [i.id, i]))
     for (const e of patch.chapters) {
       for (const id of e.heldIds) if (!hid.has(id)) problems.push(`rule ${r.id}: ${e.book} ${e.chapter} names held item ${id} which is not in ${r.heldFile}`)
@@ -577,6 +598,41 @@ if (exists(heldDir)) {
   }
 }
 
+// ---- moved text: a move-blocks patch that names where text goes (movedTo / movedFrom) must add to the destination exactly what it cut from the source ----
+// Checked strictly (a problem stops the run): the cut's sha256 and length must equal those of the text added at the destination, both ends must name
+// each other, and once the rule has been applied the library chapter at the destination must contain the moved text. It adds an evidence line under
+// gate 3; it never changes a gate result.
+let movedSummary = null
+{
+  const problems = [], fx = readJSON(path.join(libDir, 'fixes.json')), shaM = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex'); let checked = 0, notYet = 0, blocks = 0
+  const bySource = {}
+  for (const r of fx.rules.filter(x => x.op === 'move-blocks')) {
+    const pf = path.join(libDir, '..', r.patchFile); if (!exists(pf)) continue
+    const patch = readJSON(pf)
+    for (const e of patch.chapters) {
+      if (!e.movedTo && !e.movedFrom) continue
+      if (e.movedFrom && !patch.chapters.some(x => x.book === e.movedFrom.book && x.chapter === e.movedFrom.chapter && x.movedTo && x.movedTo.book === e.book && x.movedTo.chapter === e.chapter)) problems.push(`rule ${r.id}: ${e.book} ${e.chapter} says its text came from ${e.movedFrom.book} ${e.movedFrom.chapter}, which does not say it sent it`)
+      if (!e.movedTo) continue
+      blocks++
+      const d = patch.chapters.find(x => x.book === e.movedTo.book && x.chapter === e.movedTo.chapter)
+      if (!d || typeof d.prepend !== 'string') { problems.push(`rule ${r.id}: ${e.book} ${e.chapter} sends text to ${e.movedTo.book} ${e.movedTo.chapter}, which adds nothing`); continue }
+      if (shaM(d.prepend) !== e.cut.sha256 || d.prepend.length !== e.cut.length) { problems.push(`rule ${r.id}: the text cut from ${e.book} ${e.chapter} is not the text added to ${d.book} ${d.chapter}`); continue }
+      if (!d.movedFrom || d.movedFrom.book !== e.book || d.movedFrom.chapter !== e.chapter) problems.push(`rule ${r.id}: ${d.book} ${d.chapter} does not say it received the text from ${e.book} ${e.chapter}`)
+      const dest = (() => { const f = path.join(libDir, 'commentary', 'Calvin', d.book + '.json'); return exists(f) ? ((readJSON(f).chapters || []).find(c => c.chapter === d.chapter) || {}).commentary : undefined })()
+      const src = (() => { const f = path.join(libDir, 'commentary', 'Calvin', e.book + '.json'); return exists(f) ? ((readJSON(f).chapters || []).find(c => c.chapter === e.chapter) || {}).commentary : undefined })()
+      if (typeof dest === 'string' && dest.includes(d.prepend)) checked++
+      else if (typeof src === 'string' && shaM(src) === e.beforeSha256) notYet++
+      else if (typeof dest === 'string') problems.push(`rule ${r.id}: the text moved from ${e.book} ${e.chapter} is not at the start of ${d.book} ${d.chapter} in the library`)
+      bySource[patch.source] = (bySource[patch.source] || 0) + 1
+    }
+  }
+  if (problems.length) { console.error('moved text problems:\n- ' + problems.join('\n- ')); process.exit(1) }
+  if (blocks) {
+    movedSummary = { blocks, checked, notYet }
+    for (const [id, n] of Object.entries(bySource)) { const g = card.find(x => x.id === id); if (g) { g.facts.movedText = { blocks: n, verifiedAtDestination: checked, notYetApplied: notYet }; g.gates[3][1].push(E('m', `MOVED, NOT LOST: ${n} block(s) of front matter, arguments, dedications and chapter-opening tables were cut from the wrong chapter and added to the right one; for each, the cut and the added text have the same length and sha256 and the text is found at the destination in the library`)) } }
+  }
+}
+
 // ---- next actions (the single most important one per source) ----
 const NEXT = {
   mhc: 'Identify the edition (Concise vs Complete), then convert to the notes shape as the reference implementation; install the report-only workflow.',
@@ -602,7 +658,7 @@ const names = { 1: 'Complete', 2: 'Provenance', 3: 'Clean', 4: 'Preserved', 5: '
 let md = `# RabbiRabbit source scorecard\n\nGenerated by source-scorecard.mjs from \`${libDir}\` (manifest snapshot \`${manifest.sourceSnapshot}\`, ${manifest.sources.length} sources)${worker ? ` and Worker file \`${path.basename(workerFile)}\`` : ' (no Worker file given: attribution checks are UNKNOWN)'}. Read-only.\n\nEvidence tags: **[measured]** computed from the files now; **[recorded]** written in the manifest/data file, not independently confirmed; **[earlier]** an earlier result, not rechecked. A PASS needs evidence that meets the criterion; no evidence is UNKNOWN.\n\n## Summary\n\n| Source | ${Object.values(names).join(' | ')} |\n|---|${Object.values(names).map(() => '---').join('|')}|\n`
 for (const g of card) md += `| ${g.name} (${g.id}) | ${[1, 2, 3, 4, 5, 6, 7].map(i => sym[g.gates[i][0]]).join(' | ')} |\n`
 const tally = {}; for (const g of card) for (let i = 1; i <= 7; i++) tally[g.gates[i][0]] = (tally[g.gates[i][0]] || 0) + 1
-md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
+md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${movedSummary ? `\n\nMoved text: ${movedSummary.checked} of ${movedSummary.blocks} moved block(s) found at their destination chapter${movedSummary.notYet ? ', ' + movedSummary.notYet + ' not yet applied' : ''}; for each, the text cut equals the text added (same length and sha256).` : ''}${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
 for (const g of card) {
   md += `\n### ${g.name} (${g.id}) - ${g.scope}, ${g.status}\n**Next action:** ${g.next[0]}\n\n`
   for (let i = 1; i <= 7; i++) { const [st, ev] = g.gates[i]; md += `- **${i}. ${names[i]}: ${st}**${ev.filter(Boolean).length ? '\n' + ev.filter(Boolean).map(e => `  - ${e}`).join('\n') : ''}\n` }
