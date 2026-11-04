@@ -1,0 +1,57 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "barnes-nt",
+ "displayName": "Barnes' Notes (New Testament only)",
+ "folder": "library/commentary/Barnes-NT",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 27,
+  "treeSha256": "ef3273bc68b0787d506d0cec917b9c3f03dfc0013c3ec53dec8718fef7c7a6c7",
+  "files": [
+   "library/commentary/Barnes-NT/1CO.json 5666fe310f04266922a0a8da1b00b5d89fe0f60422cf29b0e3f730a3cea9ed2f 1348752",
+   "library/commentary/Barnes-NT/1JN.json 1d44b28249627fa2436f02b2b8cdd667c62fbfd15cb29ef031746b6acf974483 334986",
+   "library/commentary/Barnes-NT/1PE.json 9ae76ae8ea92cb96993a39944770e7418b614b55752fc5eac078aa4bc0623c41 440252",
+   "library/commentary/Barnes-NT/1TH.json f47e3c58bcfd9c9c36a8d411d721ee225bf8b54430391055f036e8bd09a2bb49 239969",
+   "library/commentary/Barnes-NT/1TI.json 3a76f1719ade1602993412b3261370700bc626472decacf5564da2e08622f803 380680",
+   "library/commentary/Barnes-NT/2CO.json b8a1d62883c13f642854824fdca29662cd5874c098989e71ce980091a25984de 1054480",
+   "library/commentary/Barnes-NT/2JN.json fabb0e1d96812f1148dd72f3d0b4b6cfa213d296c086fde09b5301727769d083 47813",
+   "library/commentary/Barnes-NT/2PE.json f56222c264d44e68e4ad8b0e61230970d8788a4ab0dfc3ca4390412b569c50f3 238070",
+   "library/commentary/Barnes-NT/2TH.json b73c6a07ba296144739f74ef49b3820dd7437831a1992c15e89c7a43fc60ea8c 135157",
+   "library/commentary/Barnes-NT/2TI.json fcdd51c64d3e88cca9b16ea557285ed79e09a5e15789ffde33179438e6869d4e 179211",
+   "library/commentary/Barnes-NT/3JN.json b8c039c704120be10511df9fede4f7494e0ba31cfd71613c53dfd2decd6d6bb0 45119",
+   "library/commentary/Barnes-NT/ACT.json 565cefc217e585877a64fb6b43adaa628c8899ce8b7ae302f64816ee1c9d8da0 1536173",
+   "library/commentary/Barnes-NT/COL.json 236ffc6e2e72b693dd0de2ff9a5637e86d1b00f5219055becfb1a24d6e066ba3 221816",
+   "library/commentary/Barnes-NT/EPH.json e72953591b3202ee1dbbb1c059ededf403e8410320818a5b86146e814c6fc4ac 488261",
+   "library/commentary/Barnes-NT/GAL.json 6f8fdc3fea1daf3e56680f09b343f1c7ed983693d2a86c1e6a85b2eaabbe03d1 460302",
+   "library/commentary/Barnes-NT/HEB.json 0b66b1356ab7c4394e6766622ff6052d4e8db2560db4e8a2b57ce72e600649a3 1131273",
+   "library/commentary/Barnes-NT/JAS.json 7b4b1ed4efbf5f70e9150fb579e14feb85f421f766f85941a2ff13e5f58f1880 345992",
+   "library/commentary/Barnes-NT/JHN.json 08a357e44b592ac3c5ea3dd7010fbc68bc7ffe0ad7f635f7cf0a27044fe1c8cc 831338",
+   "library/commentary/Barnes-NT/JUD.json 63d6a670cc22781f755bd9dbbf5f4ebf309faeab9285e67d348606ab7ef0384e 94810",
+   "library/commentary/Barnes-NT/LUK.json 25610cc587bf22f29b411bcd9f8db6c021ec04ef4f61ef9633e5223f039d7783 774112",
+   "library/commentary/Barnes-NT/MAT.json 88d779a96c442d9a9a5f0eea845225a04af067e03c4be4ea98abf62897982b55 1439835",
+   "library/commentary/Barnes-NT/MRK.json 998e4735523a6019523b5f55d3ddb8f42d1d1fb08ebf6940790dec6047be32c1 186174",
+   "library/commentary/Barnes-NT/PHM.json 6c46abdaabf262fd494f271d841bfc053d18ae7712f0e7f596a78bac9a1957d5 88616",
+   "library/commentary/Barnes-NT/PHP.json 620e1f9018c3d284448c2b498f91093aed9fbfba7a07673be8cef8b98365b3bf 352253",
+   "library/commentary/Barnes-NT/REV.json 256b214f7f93913551ab89fc9d3a32c011194c79e6ffcb532080afed21c7f450 1783249",
+   "library/commentary/Barnes-NT/ROM.json 8c68c45b8c23fb0aac21cf9187da872fd9291c1b3491a93d96598c49e7b21602 1182647",
+   "library/commentary/Barnes-NT/TIT.json 8f6d234251d61486f30e080edd1fc6d35d643b67a38e1560dacf68f534d8ed3f 117070"
+  ]
+ },
+ "structure": {
+  "files": 27,
+  "jsonFiles": 27,
+  "chapters": 260,
+  "strings": 7350,
+  "chars": 15307712
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "spurgeon",
+ "displayName": "Spurgeon, Treasury of David",
+ "folder": "library/commentary/Spurgeon",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "9a88896a37e934cf3f3d111b4d4fffe37b7f7a1df66c5832fcfd17216796658a",
+  "files": [
+   "library/commentary/Spurgeon/PSA.json cb66458c1b50d8efaf79cffed3e379e5e9c911da5c2a914897d094c3c63634d0 5083333"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 150,
+  "strings": 2589,
+  "chars": 5022367
+ },
+ "recordedFixes": [
+  {
+   "id": "spurgeon-html-entities",
+   "op": "replace-all",
+   "patchFile": null,
+   "patchSha256": null
+  }
+ ],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: recorded-in-repo)",
+  "licence (see library/provenance.json)"
+ ]
+}

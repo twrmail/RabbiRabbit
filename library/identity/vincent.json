@@ -1,0 +1,57 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "vincent",
+ "displayName": "Vincent's Word Studies (old file)",
+ "folder": "library/_retired/Vincent",
+ "basis": {
+  "state": "provisional",
+  "preservedGate": "N/A",
+  "meaning": "The library was NOT shown equal to the original plus the recorded fixes (Preserved gate was not PASS, or no scorecard was supplied): the card records what the files are today, which is not an approval."
+ },
+ "fileSet": {
+  "count": 27,
+  "treeSha256": "453d90c168dc06daf73b4c79046030c704825fa7e7aeab1ad641d880502d0494",
+  "files": [
+   "library/_retired/Vincent/1CO.json 227493b082c30be20422141e4cb75a4a3bbd954163fbb10349663b6ab1ee88f3 34230",
+   "library/_retired/Vincent/1JN.json 6e424e09dce7ad10f7316dc5580c78428d9e7fc0f6a88315f8aa134fdda10165 10839",
+   "library/_retired/Vincent/1PE.json 0af1d7c71d53f265c79afad35bfbaa86afacb12f7ec87dba5d87f692917c3f3e 11030",
+   "library/_retired/Vincent/1TH.json 031c8ebf1e768adff5f2a91c4363944deda6ee8de78222b39010f40c95c493a5 11115",
+   "library/_retired/Vincent/1TI.json 3224ec1a454a35ee4134dd67f64dbd6d3d5f4bfd23de951f3d7e54b06f0592a8 13375",
+   "library/_retired/Vincent/2CO.json e900b91f34d225f99dfdc4b3cb10a51df26669b48c920afa55e17cf895b12962 28161",
+   "library/_retired/Vincent/2JN.json 1123f70ddb4442fed4450506fbe2b93bfa2e5cfdcc53c7efad5f2b6cba596b84 2307",
+   "library/_retired/Vincent/2PE.json f644292f00d87c90cb75e8109ee657bb9e1b8e512188a69b253b215f3d87961a 6586",
+   "library/_retired/Vincent/2TH.json 42c11b06e34c1d851cf222f8a0c8885b4ff5870803035ebab76c0705e58d04af 6873",
+   "library/_retired/Vincent/2TI.json 6bccdb6d0cf6f8aba0af202a4177de9c391465e442613c487954cd9cb443d303 9280",
+   "library/_retired/Vincent/3JN.json 958380092d48f256d406048e78587ced590f427e35d0414e5ce574737aa50c94 2301",
+   "library/_retired/Vincent/ACT.json 2ddc0e1a4bd11139d4e449dbb88b01f41e17c5c7935f20c9d46097363c926da0 60310",
+   "library/_retired/Vincent/COL.json 60af098e50421fef1cc1db9595c5fa8a8c80a4dcfebbb6f75a4d3be54cbf4c1e 8752",
+   "library/_retired/Vincent/EPH.json 3484b27c24e1e67ceb10056a975e1622a10914267aeb8914a77b9c926a393182 13129",
+   "library/_retired/Vincent/GAL.json ff74fb13b9b09015fff378463f146a4e49396b8ebb082db34f997acce4003516 13277",
+   "library/_retired/Vincent/HEB.json 899090b0d291a48defeac9fb53ec22b8ffb56050daee0401cab70362c368495f 28787",
+   "library/_retired/Vincent/JAS.json 1d7c3f699ab77995ce339990dd6058224577907c0b070d50ecc0204d0df62dba 11090",
+   "library/_retired/Vincent/JHN.json 8295153a4a527e97bb31b9c983d122c11569b60e64c2173e1f1ae61b27abd6a4 45246",
+   "library/_retired/Vincent/JUD.json deb8473e1be0cfe3cdc700b077f5c1bfc7fc4c2c297b78e48ac3ea07655ed848 2267",
+   "library/_retired/Vincent/LUK.json 9b416375feed33e97715cb628c00ed175b6028e65170eb349e6914397b920579 52436",
+   "library/_retired/Vincent/MAT.json 534b5b0d8b329a397b80fbde537b38b9f30bccb8f7605951b2b6f8d52112bea6 59915",
+   "library/_retired/Vincent/MRK.json 3fc6e65719111e1835d6de4e7a2fbe2d63da25bdc0c4d9ff8db6886073d39538 34999",
+   "library/_retired/Vincent/PHM.json b2acbea7eb90fc9e632759577c14c37e6eaf95b0f5b2fe675a599f2d4cf2af24 2251",
+   "library/_retired/Vincent/PHP.json 2320f478818f671634ac553c297356c3aa7a63c4766ab4e523625507877e30e7 8558",
+   "library/_retired/Vincent/REV.json a55ea19cc54bcfb37fb2a604712a97a3824a4f164da559252dca58c604d2ea28 47374",
+   "library/_retired/Vincent/ROM.json 611ca25460b524f1ed187482aadcbf40ffcda6b4235925a6beefb4cb25824026 34281",
+   "library/_retired/Vincent/TIT.json 092dd7e6f6e182c83a61ad977064e08781871985705020697f1b88592cd6f436 7032"
+  ]
+ },
+ "structure": {
+  "files": 27,
+  "jsonFiles": 27,
+  "chapters": 260,
+  "strings": 395,
+  "chars": 522052
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

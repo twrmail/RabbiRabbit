@@ -1,0 +1,121 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "wesley",
+ "displayName": "Wesley's Explanatory Notes",
+ "folder": "library/commentary/Wesley",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 66,
+  "treeSha256": "2fe8d98b2b2d6fc279ed5784d08ba3677fed99c8310cf405dc03c98bc074951a",
+  "files": [
+   "library/commentary/Wesley/1CH.json 38da5ef7d69ff1b8d784ab04c98999c45f130ae939d5a51694aae9e7a86d57da 80352",
+   "library/commentary/Wesley/1CO.json 3714e65ac68812dc47dec339304885711002f61b027c3983df72ed939f8f3779 107683",
+   "library/commentary/Wesley/1JN.json 9a3b04b28eb1f44a929c9147ed00becf58c107002a7ec5ba6456a2ba97126eb4 37956",
+   "library/commentary/Wesley/1KI.json e5aeac2dfbd4264c5768819541f46c7734caa435f1cef1dc7d974b53c52ad967 179510",
+   "library/commentary/Wesley/1PE.json b4e681853bbc6c300a2738fc59596b7296d94d32350f111502defd9baed9643b 32777",
+   "library/commentary/Wesley/1SA.json dce4d3083b7108f1f70a711386622e3c4280ba2250bc383090c7f2e54fe6f1e3 161879",
+   "library/commentary/Wesley/1TH.json 3fce0c9f632af9b4208568ea09fa92024e6af9cb84f18e0c75ec1f8fbf1e6ee9 17272",
+   "library/commentary/Wesley/1TI.json 097fba2ee1d2035ba2491eb3a3dd66b6524bf1de61ed2a2043ece20def18980c 31667",
+   "library/commentary/Wesley/2CH.json 44ec44c945aaa2e6155fcb39cfd7d769a7c8b1891cd67c67a9edcc5bcd795704 78877",
+   "library/commentary/Wesley/2CO.json b1cea52d54c649a6ae7de9da4dab840e075578c81f7c36e0935298af34f08015 57814",
+   "library/commentary/Wesley/2JN.json d83d06b3bf26dbeb1a1b1ddb900f818b792f18ed439dad28f722922d4208ba64 3233",
+   "library/commentary/Wesley/2KI.json b1733066b8ec952b9687e0375d328a9c633fc734e4d2fc43daed3ba629e11233 113309",
+   "library/commentary/Wesley/2PE.json 69c6e1c4387c66f44044f0e2933e3e456bbe4f19d829b19aa0ebfa15b6bcdff2 25373",
+   "library/commentary/Wesley/2SA.json 46a9798963ecff3e25d55a4d4913a8ae604ac217d46eb2f13bdf04d90d831880 113840",
+   "library/commentary/Wesley/2TH.json 512d0479b35a28d039f4d4c74b9158a396121296aa6df75c2cfbdadaaf8741ad 8210",
+   "library/commentary/Wesley/2TI.json d45086d9d16c4bc1b460de0134c6e47a2564ecdf7a6c69e7ba60e83c7d1177da 15082",
+   "library/commentary/Wesley/3JN.json 3b25865344254110806c25c420fef62f657a6efde6f6f444924c21f16447dbee 2428",
+   "library/commentary/Wesley/ACT.json 003e4520e4590d8c8a0273a56573a8686895f8daa68d66aa34f654997170af9b 185357",
+   "library/commentary/Wesley/AMO.json e1503fdeda000a23bda810d7a8d710ad8c17c962ea754c164d779be86461202f 28332",
+   "library/commentary/Wesley/COL.json ff79055bb412a19fc1a598eef92f9a6b6db5591e32eb219a86582b5ed7b76da8 20818",
+   "library/commentary/Wesley/DAN.json 80c5e89cc7bc619ba1638aeb55b94336e1c28bc8cb65d3cad04c137b7a5ea9e4 45347",
+   "library/commentary/Wesley/DEU.json 7c67b39cdfda88c2144004b3e5d71223c5f27381f491c621b262f66807da5dd4 181340",
+   "library/commentary/Wesley/ECC.json 5cbe50efbf94847caff49b4c4fd7764b90a23f9a4392716f041092a713c6dcab 65330",
+   "library/commentary/Wesley/EPH.json 88ffe93280f95e0eae2877291ee73ba15cdb38ca3987509ee762ad16765af87c 46189",
+   "library/commentary/Wesley/EST.json 2d2849bb57d1f43450ec46fa27b4838e750bcb9d5b05b80e4b0370cd92ccd870 25302",
+   "library/commentary/Wesley/EXO.json 6f4698a7951ec22ac13803a1c580a1ef0c5838420336354ddb14234556bd551a 260680",
+   "library/commentary/Wesley/EZK.json 821ccdfe42a53a88f6fe90834f64edbb12f6009d14fe4b72608fedb013b83ce2 174091",
+   "library/commentary/Wesley/EZR.json a868de256fe295c0b2b10d4646ae87d4148b190114cbf98506b1f4c74e405d1b 28396",
+   "library/commentary/Wesley/GAL.json ae69bcfbc68612a5f5ef59a5e5cf00f6497e6db462fc29b83e9ab2e2643b3eae 45043",
+   "library/commentary/Wesley/GEN.json 06f961c23991920475151e7890a0bb3f338195354b480c3686748fb3fa60ea14 396162",
+   "library/commentary/Wesley/HAB.json 9d4bac5112a6c708f7773aae1f76cd9ec35e4b978893c34fd242376d7e6d8008 9925",
+   "library/commentary/Wesley/HAG.json 453362e0465ae73da59a8890e93feb398610aae92b6deb05a20fd47cfb7124ee 7198",
+   "library/commentary/Wesley/HEB.json e34c3f6f1cf8586710748bb477a6d2039f06eb8d7911475adcc10bae10a62c91 88478",
+   "library/commentary/Wesley/HOS.json 0efb9e10afb5984c3e63315016dcdd906db26a234d4f2e1796cde24d8ca9684a 48792",
+   "library/commentary/Wesley/ISA.json 2f6284c650fe69003104f2d7929490707cbdb7bddcba94b181dc6a22414a99ed 295474",
+   "library/commentary/Wesley/JAS.json f0ef250195364a87e96e330b6654b188e8bde1432c5f8208ef4d934b4eba1fda 28646",
+   "library/commentary/Wesley/JDG.json f365e48815eb7e5844a7ee215e8fa865ba9e38164224d3c939772a6be84b371d 148622",
+   "library/commentary/Wesley/JER.json 2c312f5011942fdef089121574376ac687562029ed0fd09222717ed83c40a266 143696",
+   "library/commentary/Wesley/JHN.json ed73fa6914f509f2e4ab3e79585c82c8a0b1df0cc2c7f8012ce2461fcfb36d55 135391",
+   "library/commentary/Wesley/JOB.json a6665a03f6bdc11d9e7c9e2216594cc5491fbb8da73aa22e621b7b734212968b 215619",
+   "library/commentary/Wesley/JOL.json e6e7b3cffc8a3c4a8fdee3849c35fab2a5101d4ba13e906d41565c176458defe 16458",
+   "library/commentary/Wesley/JON.json 387523b9e9b0acbc46987e1e3b99a5fb05b3c7bb33ae71b481bdd1f025b63a40 8073",
+   "library/commentary/Wesley/JOS.json dcec33ccb593acb649c694a3c6e06d0bd6ea86334ab870cf32ed2e56dbbe99b1 166492",
+   "library/commentary/Wesley/JUD.json 56c214bcfa42b065a79d3c46feec7bb00b51624a510fdd22e1ab4c6c516376e1 11040",
+   "library/commentary/Wesley/LAM.json 46bced956f084f52521f705aa800832041753e1b18664c3d1feb57c5c75590dc 14288",
+   "library/commentary/Wesley/LEV.json 47c9e9e549346beed8d9f45fe6b1cb4ba49f54e9800a7ab2a02ec6b64b5e5f66 172185",
+   "library/commentary/Wesley/LUK.json 5b2fec0f2b2a10fe440caa03a52ca237611d419136b2f759e3383bc369fb2801 123950",
+   "library/commentary/Wesley/MAL.json c7a7e8d4deebaa794b8d0a0b536e8c659b2a8a2a5ed229b683bc8f6c49ea5009 15386",
+   "library/commentary/Wesley/MAT.json 3a9d53e60e54b4a62a34b45e8fcef915ad34bbd4877a06571cf929f89fe706c2 210526",
+   "library/commentary/Wesley/MIC.json 9a9546beadf6af355ce0f140a0dded00edd022c8cfdfa1e2a6233e8e8455eaa8 26483",
+   "library/commentary/Wesley/MRK.json cca9f41c0f31af3ec20dc24d889b7555b4be2d7a6ed69cb169ade7ffe2a6c2b2 59343",
+   "library/commentary/Wesley/NAH.json 8cd268ac2284bf2d1ff4d1b4c1fd7f9325022b21898fe5a069bfc1209cd2315d 9530",
+   "library/commentary/Wesley/NEH.json 9087c4fc1c110e001b56ad8dd6293bc961b5985eb1b0745f1b092aa5e56613b8 43373",
+   "library/commentary/Wesley/NUM.json f46ffedb57c45246951540e0ef136a240d93e41f2489d43bfb610f85d99c5b41 190530",
+   "library/commentary/Wesley/OBA.json 7c7519adc83e991c93685bc7d34023e37f28dd4ad09d2308d41f3fbe12bb44e1 5267",
+   "library/commentary/Wesley/PHM.json 528f2cb91932e2cd1d1b70403cea8ca608400329275efd4962f66f7dabc81666 3465",
+   "library/commentary/Wesley/PHP.json 1bfe7caf55e3890d8d1c97ad9ddcf6505dc46a27a48d11aea72a4a6a4a056ae6 26930",
+   "library/commentary/Wesley/PRO.json 7ac6a6779444947b3f7ae5b90385423465d298bcc8ba8627fbb72c5591286462 76754",
+   "library/commentary/Wesley/PSA.json c09518bcc8c991f1ad1b44a84f859b5761bde0f56f7da79e48a6b0847dc57ce8 278322",
+   "library/commentary/Wesley/REV.json 45df393af34955b8113ad8fa4f94b8eadd817223db19b371d6824f9282ad447d 286481",
+   "library/commentary/Wesley/ROM.json 8469abee362cc3b6bc771a2b267991b84ba71f38ba997784cb6e3b69ecdee1b9 144048",
+   "library/commentary/Wesley/RUT.json ff9681cc03a5cccdcfd2f441558d269ca6b8c83b40285463dc47af9a692e7631 14015",
+   "library/commentary/Wesley/SNG.json a0a16e437e7d7ea931092dc98b6d836e2c3c653c26db09a06d2fb8f9feb59524 49852",
+   "library/commentary/Wesley/TIT.json 1304eb0d8925f30aa9d53a23c86ee6ac4fa766d12f52803eb9072cf510f44807 12478",
+   "library/commentary/Wesley/ZEC.json 8e62156cf89d6035e63b7e927d0cf9dd69a7dc642469e3fb09b317ccdaaaee30 46046",
+   "library/commentary/Wesley/ZEP.json 4c47b5c0b83325ab6d8e8b04c10bfced32e413ed9a02c733eabab2f8f801c164 9012"
+  ]
+ },
+ "structure": {
+  "files": 66,
+  "jsonFiles": 66,
+  "chapters": 1188,
+  "strings": 1584,
+  "chars": 5620588
+ },
+ "recordedFixes": [
+  {
+   "id": "wesley-2jn-chapter-number",
+   "op": "rename-key",
+   "patchFile": null,
+   "patchSha256": null
+  },
+  {
+   "id": "wesley-lev1-from-introduction",
+   "op": "split-intro",
+   "patchFile": null,
+   "patchSha256": null
+  },
+  {
+   "id": "wesley-chapter-structure",
+   "op": "restructure-chapters",
+   "patchFile": "library/patches/wesley-structure.json",
+   "patchSha256": "de78dab70d1f9b51f68e947ca9700988e1dded828ab4303488ec939af5211c77"
+  },
+  {
+   "id": "wesley-restore-headword-dashes",
+   "op": "insert-text",
+   "patchFile": "library/patches/wesley-dashes.json",
+   "patchSha256": "3cb7bd103ec7e6b9d97b41b2f42b0a4d16282ebe6aa862608dde4864cc6f2580"
+  }
+ ],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "topic-scores",
+ "displayName": "topic-scores",
+ "folder": "library/topics/openbible_topic_scores.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "b25aeb72e0ead038d2097554aea1409291f85b6ab09c6c78654fc323f00de972",
+  "files": [
+   "library/topics/openbible_topic_scores.json 25d658a6ff923ce324273d2e05e6b0da208d89743d3d8a8735a0e3f112ba2e53 8930947"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 71195,
+  "chars": 213585
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

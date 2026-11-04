@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "overview-map",
+ "displayName": "overview-map",
+ "folder": "library/maps/book_overview_map.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "b140a5f9af95fc0226c75448fa9b67dc1f9de8a8c6d221eeb607baa9e00e7054",
+  "files": [
+   "library/maps/book_overview_map.json 58e582c53fae3984ae5ec370b0c3ddf78bd2400fca3ed6eb606220070d4092c1 17975"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 339,
+  "chars": 9176
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

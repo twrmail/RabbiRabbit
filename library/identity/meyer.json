@@ -1,0 +1,57 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "meyer",
+ "displayName": "Meyer's NT Commentary (old file)",
+ "folder": "library/_retired/Meyer",
+ "basis": {
+  "state": "provisional",
+  "preservedGate": "N/A",
+  "meaning": "The library was NOT shown equal to the original plus the recorded fixes (Preserved gate was not PASS, or no scorecard was supplied): the card records what the files are today, which is not an approval."
+ },
+ "fileSet": {
+  "count": 27,
+  "treeSha256": "d420df87b44dfff6f06abeabe0044e3ad797020bc1c30e32db6ae51762d456dc",
+  "files": [
+   "library/_retired/Meyer/1CO.json 1c5d2b700ce649bdabd64ad42f91458f0b7fb59a9ae810fc912cf2dd7dc1ab4f 37962",
+   "library/_retired/Meyer/1JN.json 2a096346972c9909eb6706ab06ca82d7d4557b19a1afefb4246386f9b9681ec7 12301",
+   "library/_retired/Meyer/1PE.json 89f76e1f8757e73b4e9b8d385325bc0e90ccc3dc60e5efbd5b71316f06a60842 12302",
+   "library/_retired/Meyer/1TH.json 97f3ea7423fdc60193e7e379f767f579ef1b351029c887a8e5445a7bb060e995 12788",
+   "library/_retired/Meyer/1TI.json f6ac554e74b5481b9cdc060631433d31fd044653ba8e94bfd1b373d5d76a1726 15035",
+   "library/_retired/Meyer/2CO.json 95257ecaed8f48ee2fb0beb1b0a59f6aa9d8dd5fda8f7994f9bfd2f19f893492 32091",
+   "library/_retired/Meyer/2JN.json e45748557f5f39f5d99f5a3f5331f9ec3b206ffda342291b575235848cc7abb5 2869",
+   "library/_retired/Meyer/2PE.json 3080ab84398f34ecd24b3cdc37f332bd0cd26f078ec30d1e52f5e51359348cf0 7622",
+   "library/_retired/Meyer/2TH.json 9b7fa4f5041f4ac92423616b836761525a82b9de95ea78b757093cbfb6f6580c 7546",
+   "library/_retired/Meyer/2TI.json 11f55f29456f39ed3ae8eee41b507dfc8f9b53fa8703a2b94d533bf9268d41e2 10079",
+   "library/_retired/Meyer/3JN.json 7d33af598c9b12503ec89b67abab84bf4e6986b7d353473714906ac6207200b7 2862",
+   "library/_retired/Meyer/ACT.json 82c5c20e2dcad2b589908aacc8a053a24ebd7cd7b31f5e311a549a69c248c953 69280",
+   "library/_retired/Meyer/COL.json 611debb57dd1bf2bd8f83301a3ea9d030456ce61a7818e5676373f3cf57655ae 9776",
+   "library/_retired/Meyer/EPH.json 0eab4f294a8cf9912d8c377414657c5aae3be3bd8ee2533a0caf65edaff0db05 14786",
+   "library/_retired/Meyer/GAL.json bcac225cdd7d16f6ba41f28e1595083925a53104123d22cd523d54323432b31c 14770",
+   "library/_retired/Meyer/HEB.json 85c32f16641cd5e97a2b708a99ce43f0cd01c4aeeee76aa30090a086f72700c5 31308",
+   "library/_retired/Meyer/JAS.json 4b5da8b8190cdd279aa2b0ac2ceb70305f798e73581d0f948878df12e38694fe 12427",
+   "library/_retired/Meyer/JHN.json 695ee39737a5f48c34de63e5d7124da4937f98b7a94fd654e060aaafc08b2679 50956",
+   "library/_retired/Meyer/JUD.json 0200b2ee914babb005cfa52fe2e539b7867f11a4ba602482cfbed76e58d15e38 2645",
+   "library/_retired/Meyer/LUK.json 30ddfd935c295eeaec6eef8550545c33d1081ef825030ad302e151ceb4d64190 58659",
+   "library/_retired/Meyer/MAT.json 808dea58a3a51ae16e2ce601f6dce8f1410a7cc3e7f8939349ac0ae588db626b 67159",
+   "library/_retired/Meyer/MRK.json 72013b3f95bc35c34171282ada3f34cb4f4ed868a76c595d63486c7c2e61c0f4 39766",
+   "library/_retired/Meyer/PHM.json 651d6ef9b3e07e05ac762c5f0832b64606f387214bd42afe521319207d3632d8 2521",
+   "library/_retired/Meyer/PHP.json e714d08d3ffd30718e4a2aa065e233e7cdbf26dc4201ce1bf6eb9548e5e4bf65 9931",
+   "library/_retired/Meyer/REV.json 451a1b32504528d9f8981fa3df9a23988571d412b6cf52695d9453f4f3bd9d34 54624",
+   "library/_retired/Meyer/ROM.json 5d94c7f146e2aae40d0e2f85d9193c8cc08d6aaffd87f779e1da78b73af59326 37982",
+   "library/_retired/Meyer/TIT.json 4a3b0501d258428c657fdb93106578833ad00bc4335ccf194db743e90d817e36 7513"
+  ]
+ },
+ "structure": {
+  "files": 27,
+  "jsonFiles": 27,
+  "chapters": 260,
+  "strings": 395,
+  "chars": 522187
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

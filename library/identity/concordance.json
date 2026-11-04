@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "concordance",
+ "displayName": "concordance",
+ "folder": "library/lexicon/strongs_concordance.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "9925a8f3f107b977070c8578485bec7b1b8207aa4bfa63d0e33626ccd705001e",
+  "files": [
+   "library/lexicon/strongs_concordance.json 356d59493a902f50237a3cc4b1dfd1114b5f929151cb5f4917d1b76a6fbf6785 14280287"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 318995,
+  "chars": 956985
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

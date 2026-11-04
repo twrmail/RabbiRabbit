@@ -100,6 +100,20 @@ let scan = null
   }
 }
 
+// ---- 4b. identity cards: are the files the ones that were approved? ----
+let identity = null
+{
+  const r = await node('tools/identity-cards.mjs', ['--json'])
+  try { identity = JSON.parse(r.out).results } catch { /* handled below */ }
+  if (!identity) add({ id: 'identity', title: 'Source identity cards', status: 'NOT RUN', summary: 'The identity check did not finish.', detail: lastLines(r.err || r.out), ms: r.ms })
+  else {
+    const drift = identity.filter(x => x.status === 'FAIL'), nocard = identity.filter(x => x.status === 'UNKNOWN'), prov = identity.filter(x => x.status === 'PASS' && x.basis !== 'verified')
+    add({ id: 'identity', title: 'Source identity cards', status: drift.length ? 'FAIL' : nocard.length || prov.length ? 'WARN' : 'PASS',
+      summary: `${identity.filter(x => x.status === 'PASS').length} of ${identity.length} sources match their identity card (every file present, none added, none changed). ${drift.length} drifted, ${nocard.length} have no card yet, ${prov.length} match a provisional card (recorded as-is, not shown equal to verified originals). A card is a fixed reference for "is this the source we approved?"; it says nothing about whether the published work is complete.`,
+      detail: [...(drift.length ? ['If a change is deliberate, regenerate the cards in the same pull request: node tools/identity-cards.mjs --write --scorecard scorecard.json (the pull request then shows exactly what changed).'] : []), ...drift.map(x => `DRIFT ${x.id}: ${x.problems.slice(0, 4).join('; ')}`), ...nocard.map(x => `no card: ${x.id}`), ...prov.map(x => `provisional card: ${x.id}`)], ms: r.ms })
+  }
+}
+
 // ---- 5. damage tests: do the checkers catch deliberate damage? (kept apart from repository health) ----
 let damage = null
 if (QUICK) add({ id: 'damage', title: 'Damage tests (do the checkers catch deliberate damage?)', status: 'NOT RUN', summary: 'Skipped because --quick was used. Run without --quick for the full audit.', detail: [], ms: 0 })
@@ -140,6 +154,9 @@ if (card) for (const s of card.sources) {
   const accepted = s.facts && s.facts.scans ? s.facts.scans.explained : 0
   const notes = []
   if (dims.integrity === 'PASS' && accepted) { dims.integrity = 'WARN'; notes.push(`${accepted} accepted scan exception(s) under integrity`) }
+  const idr = identity && identity.find(x => x.id === s.id)
+  dims.identity = !idr ? 'NOT RUN' : idr.status === 'PASS' ? (idr.basis === 'verified' ? 'PASS' : 'WARN') : idr.status
+  if (idr && idr.status === 'PASS' && idr.basis !== 'verified') notes.push('identity card is provisional')
   dims.publicationCompleteness = evBySource[s.id] ? 'WARN' : 'UNKNOWN'
   if (evBySource[s.id]) notes.push(`outside comparison on record (${evBySource[s.id].map(e => e.date || 'undated').join(', ')}): a witness, not a certificate`)
   const applicable = [1, 2, 3, 4, 5, 6, 7].map(g).filter(x => x !== 'N/A')
@@ -159,7 +176,7 @@ const tally = {}; for (const s of sources) for (const [, st] of Object.entries(s
 const git = async a => { const r = await run('git', a); return r.code === 0 ? r.out.trim() : null }
 const commit = await git(['rev-parse', 'HEAD']), dirty = (await git(['status', '--porcelain', '--untracked-files=no'])) !== '' && (await git(['status', '--porcelain', '--untracked-files=no'])) !== null
 const recent = (await git(['log', '-5', '--format=%h %s'])) || ''
-const toolFiles = ['tools/guardian.mjs', 'tools/guardian-scans.mjs', 'tools/source-scorecard.mjs', 'tools/apply-library-fixes.mjs', 'tools/check-scorecard-baseline.mjs', 'tools/tests/damage-suite.mjs', 'library/fixes.json', 'library/manifest.json', 'library/provenance.json', 'library/scan-exceptions.json', 'library/evidence/external-coverage.json', 'library-baseline.json']
+const toolFiles = ['tools/guardian.mjs', 'tools/guardian-scans.mjs', 'tools/source-scorecard.mjs', 'tools/apply-library-fixes.mjs', 'tools/check-scorecard-baseline.mjs', 'tools/tests/damage-suite.mjs', 'tools/identity-cards.mjs', 'library/fixes.json', 'library/manifest.json', 'library/provenance.json', 'library/scan-exceptions.json', 'library/evidence/external-coverage.json', 'library-baseline.json']
 const tools = {}; for (const f of toolFiles) if (fs.existsSync(rel(f))) tools[f] = sha(rel(f)).slice(0, 16)
 const generatedAt = new Date().toISOString()
 
@@ -187,9 +204,9 @@ md += `## What did not run\n\n${unrun.length ? unrun.map(c => `- **${c.title}**:
 md += `## What changed since the baseline\n\n${changes.length ? '| source | gate | baseline | now | status |\n|---|---|---|---|---|\n' + changes.map(c => `| ${c.source} | ${c.gate} | ${c.from} | ${c.to} | ${c.status} |`).join('\n') + '\n\n(Gate numbers: 1 Complete, 2 Provenance, 3 Clean, 4 Preserved, 5 Verse coverage, 6 Licence, 7 Regression.)' : 'Nothing: every gate is where the baseline recorded it.'}\n\n`
 md += `## The checks in detail\n\n` + checks.map(c => `### ${c.status}: ${c.title}\n${c.summary}\n${c.detail.length ? '\n' + c.detail.map(d => `- ${d}`).join('\n') + '\n' : ''}`).join('\n') + '\n'
 md += `## Needs human judgment\n\n${human.length ? human.map(h => `- **${h.kind}** (${h.source || h.id}${h.source ? ': ' + h.id : ''}): ${h.note}`).join('\n') : 'Nothing is waiting for a decision.'}\n\n`
-md += `## Sources\n\nColumns: structure (gate 1), integrity (gate 3), preservation (gate 4), verse coverage (gate 5), provenance (gate 2), licence (gate 6), regression (gate 7), and publication completeness (is the whole published work present? UNKNOWN unless outside evidence is on record, and then WARN, never PASS, because an outside copy is a witness and not a master).\n\n`
-md += `| Source | Structure | Integrity | Preservation | Verse coverage | Provenance | Licence | Regression | Publication completeness |\n|---|---|---|---|---|---|---|---|---|\n`
-for (const s of sources) { const d = s.dimensions; md += `| ${s.name} (${s.id}) | ${d.structure} | ${d.integrity} | ${d.preservation} | ${d.verseCoverage} | ${d.provenance} | ${d.licence} | ${d.regression} | ${d.publicationCompleteness} |\n` }
+md += `## Sources\n\nColumns: structure (gate 1), integrity (gate 3), preservation (gate 4), verse coverage (gate 5), provenance (gate 2), licence (gate 6), regression (gate 7), identity card (do the files match the approved card? WARN means the card is provisional), and publication completeness (is the whole published work present? UNKNOWN unless outside evidence is on record, and then WARN, never PASS, because an outside copy is a witness and not a master).\n\n`
+md += `| Source | Structure | Integrity | Preservation | Verse coverage | Provenance | Licence | Regression | Identity card | Publication completeness |\n|---|---|---|---|---|---|---|---|---|---|\n`
+for (const s of sources) { const d = s.dimensions; md += `| ${s.name} (${s.id}) | ${d.structure} | ${d.integrity} | ${d.preservation} | ${d.verseCoverage} | ${d.provenance} | ${d.licence} | ${d.regression} | ${d.identity} | ${d.publicationCompleteness} |\n` }
 md += `\nTotals over all sources and dimensions: ${Object.entries(tally).sort().map(([k, v]) => `${v} ${k}`).join(', ')}.\n\n`
 md += `## Outside comparisons on record\n\n${evidence.length ? evidence.map(e => `- **${e.source}, ${e.date || 'date not recorded here'}** (${e.witness}): ${e.result} Method: ${e.method} Scope: ${e.scope} Limits: ${e.limitations} Report: \`${e.report}\`.`).join('\n') : 'None recorded.'}\n\n`
 md += `## How to reproduce this audit\n\nCommit \`${commit || 'unknown'}\`${dirty ? ' (uncommitted changes present)' : ''}; Node ${process.version}; schema rabbirabbit-audit/1; command \`node tools/guardian.mjs${QUICK ? ' --quick' : ''}\`.\n\nTool and record fingerprints (first 16 characters of sha256):\n\n${Object.entries(tools).map(([f, h]) => `- \`${f}\` ${h}`).join('\n')}\n\nRecent commits:\n\n${recent ? recent.split('\n').map(l => `- ${l}`).join('\n') : '- (not available)'}\n`

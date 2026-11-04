@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "naves",
+ "displayName": "naves",
+ "folder": "library/topics/naves.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "126a6d7d7e8b772de171266f565bebd7461c3a403f2d7319749ef70bda8a38d0",
+  "files": [
+   "library/topics/naves.json 8bbfa43e4fca40c34d526e78f8ed6a7811a74de18a5e307f6b119557f7def847 1692754"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 39645,
+  "chars": 1321667
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

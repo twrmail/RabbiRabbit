@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "characters",
+ "displayName": "characters",
+ "folder": "library/people/characters.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "5c2b95d4784d70a18fbb4be05fb5eccd5249c3da0ae129c9f3046cbafad5bbf2",
+  "files": [
+   "library/people/characters.json 9076660e163b152b7cde3b3b52b703fd5ae641d39292341c3d1ec7111e909b68 520680"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 5227,
+  "chars": 390750
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

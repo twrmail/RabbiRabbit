@@ -22,6 +22,8 @@ jobs:
         run: node tools/source-scorecard.mjs library --out scorecard
       - name: No gate worse than the baseline
         run: node tools/check-scorecard-baseline.mjs scorecard.json library-baseline.json
+      - name: Source identity cards match
+        run: node tools/identity-cards.mjs
       - name: Damage tests (the checkers must catch deliberate damage)
         run: node tools/tests/damage-suite.mjs
       - name: Repository Guardian audit (summary on the run page)

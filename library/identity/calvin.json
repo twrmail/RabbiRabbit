@@ -1,0 +1,169 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "calvin",
+ "displayName": "Calvin's Commentaries",
+ "folder": "library/commentary/Calvin",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 48,
+  "treeSha256": "d6c7d169e05bc8cfff64ba4e74d00aea26dee97045179ebd1c42823e7cd21554",
+  "files": [
+   "library/commentary/Calvin/1CO.json cfcf1948e924c3097c6df6ac6ee1c7c791edc560625da278407d2d7069006137 986251",
+   "library/commentary/Calvin/1JN.json 6c4be2f88efd0c85a277f3e39e2c14a5d3f23c60ceb61c2067a8e9dc8dd72457 254121",
+   "library/commentary/Calvin/1PE.json a2bee7dd0a5728289d3473daac74fc243a4bbef65321b677c2ca1fcd16c96312 279134",
+   "library/commentary/Calvin/1TH.json 45a6d1f9f5b9a0a4e11289d27d43a751e194159cf3df0aa3e9638eb1fb75e942 151765",
+   "library/commentary/Calvin/1TI.json 3a8e809b3d6aa0daecdaf8c5d48b85352719183dfd3f5582bbe6a6adf2375138 310971",
+   "library/commentary/Calvin/2CO.json d4ace73312ec4ef4a0e7beacb633338dc9886f8ae047fa6c6162513f03d764aa 539796",
+   "library/commentary/Calvin/2PE.json 4d9e6f5bdc21c211951aa6df243ca0d9d3cacd7bca4baa1d8e3994a95505190d 127165",
+   "library/commentary/Calvin/2TH.json 01d0c903503003acdd2258f0af1644d30ceeebf0f1563c27a8f794586dd85217 111289",
+   "library/commentary/Calvin/2TI.json ddbc17ca625a0b402f5bc7928b1caec6a92e0d3e9bafd8f02c3995370bd2b4c9 179976",
+   "library/commentary/Calvin/ACT.json 6a4a2906b93f659ce4345806302e587dd193990ac7117abf22efae80b43294b6 1993191",
+   "library/commentary/Calvin/AMO.json c25900f9fbcb7f9aa68c180423a8af185ef75ad6d241ea337e2d34ef6b2a4646 575563",
+   "library/commentary/Calvin/COL.json c94b389e3d2cecb48790e52d571ec6c82717c412df116ecb512d9d39098e75f3 204620",
+   "library/commentary/Calvin/DAN.json 65f40779e9b2dde00c996278237202fb217e549369e7a0aded4a37d45fb6fcdc 1622224",
+   "library/commentary/Calvin/DEU.json cb8464a6ea697ac50ce3ee2ca07df2d94916f8764b898d74abfcc850279fe456 1129391",
+   "library/commentary/Calvin/EPH.json 13edb0b3794e969be643a326bfc15525b5803eefdd81488d1500a9c03006c3db 331361",
+   "library/commentary/Calvin/EXO.json 1ac8f73e2cafdf74bef41705208e9b90ffcc90b7e41821f554d9ad2ae9d3943f 1433759",
+   "library/commentary/Calvin/EZK.json c6c2634db2af4bdc1c0120ef11cc83882914fff785e6afc6b7e23667c3227f7b 1579662",
+   "library/commentary/Calvin/GAL.json 300cb711ed996c95dca2a688d76c1143f063d05679580341280ac31ea50a280c 355949",
+   "library/commentary/Calvin/GEN.json b1edd4c2c598c75240950f345ec05157236c29c96a0c2cb13f164d33ebfaa6c0 2203622",
+   "library/commentary/Calvin/HAB.json c4c6c648a597eead6b6f628b32b278ea93ef5d8d31b7ba1926c154c673d7b81a 317616",
+   "library/commentary/Calvin/HAG.json fc5ba41cd8252fdc9619e75f84893a128080595aca40ccb86adf0e995916629b 147235",
+   "library/commentary/Calvin/HEB.json cbb9e62af6e1b251e490f59fa1422fab1fca4a57a2a2df263d8734fe8d9cf734 683784",
+   "library/commentary/Calvin/HOS.json 5a152dd08b2f727d6b4e128d9ef1468b3730e62a6a0cba3683028fa7317fc261 1040669",
+   "library/commentary/Calvin/ISA.json 36481d90d4519a802acb528fe6fc89fb252aac2a259026a8865894cb20e588c3 3773179",
+   "library/commentary/Calvin/JAS.json 10b40c3b8211fbfc9f2cc29627534baadc95f5e1b2630c79bd32064cfdab9d08 174761",
+   "library/commentary/Calvin/JER.json 27435c78ed29d5f240607bb9adc0bb79b2eef648b0de9754da97442c7056973e 4709872",
+   "library/commentary/Calvin/JHN.json 64577680e554971123b4498ee8c1ea661ae725f1bc7d1daceb9f005f972cba07 1553220",
+   "library/commentary/Calvin/JOL.json 8c4571633c1d81484a870aab9a2a725093359c591bec20a2722b1ab505ce6a88 281023",
+   "library/commentary/Calvin/JON.json 94b27a4d146ec6c72d58c2a0154bdc13d03a5768e30ea4951237ea81e134e99c 255940",
+   "library/commentary/Calvin/JOS.json 30d56b105679995512f39b289e6d9412cf3204d44e27df3768010b633572ad8f 559233",
+   "library/commentary/Calvin/JUD.json cbdcb877fa1438cf9f4babc267744d40ecf212f225bbc4a11f6d0bb39de7dc6e 45769",
+   "library/commentary/Calvin/LAM.json 345ce27bf240d61d8f362d7efe8cd335648297b3be6f55018d15b316f3c918f8 446291",
+   "library/commentary/Calvin/LEV.json 4f48e9b8351f191253fea2499bb57a32401291c2da6151be5a1a3a23af5f6638 609809",
+   "library/commentary/Calvin/LUK.json 6d7c2eb81f4e061355b2a93ddb3cdb95f4f2e6b8dd4d2a1c1bfb22295b36b3cf 781547",
+   "library/commentary/Calvin/MAL.json ee5489d6d6d894d318b8e4c4d60da7c3ae9bc5a99f355287336bdb12f3974608 346156",
+   "library/commentary/Calvin/MAT.json 0bcb2d056ef559c7963038262c40b50612fcb8ff4c576345ce363472d2319f59 1810086",
+   "library/commentary/Calvin/MIC.json 63106dcde13e522e00a2d2118324aae0fa2d5348f25c8ecd1239aa4e4376e4ab 512872",
+   "library/commentary/Calvin/MRK.json d1eae34447a129b79d1eaad2d460cd1b00863901130edde034767e1d99e52bf6 155243",
+   "library/commentary/Calvin/NAH.json 5b11a33fba2f61331954d1dd6a940542ad51e33174943c09e03b2c19498e2e17 186300",
+   "library/commentary/Calvin/NUM.json ce6f5b666a395dffd1319a337fa2fc045ee6955528ed1b22da376965276d20e6 919077",
+   "library/commentary/Calvin/OBA.json a88dadebeffffea456552e882731cd6a80da92410e024e7a91446e381d9973d8 78543",
+   "library/commentary/Calvin/PHM.json 05341c872db8cb8ac2bb247bbcfe3470417246bb3cc8f3241bac7a3a60cdc459 30324",
+   "library/commentary/Calvin/PHP.json 268d3b82aa009a77519e0069cd61e99a562df99a6bc028055942c237b255d127 219009",
+   "library/commentary/Calvin/PSA.json 9e038ecf3130e71ad0910c52806b574c22b1b4c3d5d515a4d6f3d0b9cbc0c481 4539083",
+   "library/commentary/Calvin/ROM.json 122e156992395e8bae3d77c75b8dda3ff017df05adfb7b763e5998dad0827f80 921043",
+   "library/commentary/Calvin/TIT.json 5101334d41664e94b6a2f108b74d498f4d298607609b9043b94e982c74b99013 122088",
+   "library/commentary/Calvin/ZEC.json 847eea4f3c09fb1dbc79c1322bf30bfe0d94e02a544a5f528568923514bc4501 881649",
+   "library/commentary/Calvin/ZEP.json 6e71db3dd01693deb3a55bd79feb6ea98ffb16df221257e0458c7f342986feb7 252272"
+  ]
+ },
+ "structure": {
+  "files": 48,
+  "jsonFiles": 48,
+  "chapters": 819,
+  "strings": 963,
+  "chars": 40513067
+ },
+ "recordedFixes": [
+  {
+   "id": "calvin-restore-truncated-chapters",
+   "op": "replace-chapters",
+   "patchFile": "library/patches/calvin-from-ccel.json",
+   "patchSha256": "03755060dfa04e64910bc92f7524480aa203cb760c22bffe152874c74ed16084"
+  },
+  {
+   "id": "calvin-chapter-boundaries-from-ccel",
+   "op": "replace-chapters",
+   "patchFile": "library/patches/calvin-boundaries-from-ccel.json",
+   "patchSha256": "af3945662b8d01130f669e16e196868827a5d4caa01fe477cf009fb92ed4d767"
+  },
+  {
+   "id": "calvin-move-front-matter-and-chapter-openings",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-moves.json",
+   "patchSha256": "162e4b77d91a19444fc787794e4c1bb951af09feb3dce2013f71a77658ee4c45"
+  },
+  {
+   "id": "calvin-acts-chapter-arguments",
+   "op": "add-blocks",
+   "patchFile": "library/patches/calvin-acts-arguments.json",
+   "patchSha256": "16d7a006e14339ca665bc79cd7c652304f8455a00d78b6781f3ee9ab9881541a"
+  },
+  {
+   "id": "calvin-duplicate-chapter-tails",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-duplicate-tails.json",
+   "patchSha256": "5177d948a84c9e8040474206487499316a9d960ac220f0836e56917b94f9c830"
+  },
+  {
+   "id": "calvin-hold-volume-back-matter-translations",
+   "op": "hold-blocks",
+   "patchFile": "library/patches/calvin-hold-translations.json",
+   "patchSha256": "916e4f964f93eee806169bf7ccaa79fbf1830544b42cf822440024862b98c2f7"
+  },
+  {
+   "id": "calvin-ezk12-duplicate-chapter-13-table",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-ezk12-duplicate-table.json",
+   "patchSha256": "4533d14016280ed701e8d16c5861c93c5339359053cd97e36054d688e96998cd"
+  },
+  {
+   "id": "calvin-hold-volume-title-page",
+   "op": "hold-blocks",
+   "patchFile": "library/patches/calvin-hold-volume-title-page.json",
+   "patchSha256": "628459b3daf76bd48b9ba9aa3227261f4c090658d0943fd73778ab4ddb7464a7"
+  },
+  {
+   "id": "calvin-hold-volume-indexes",
+   "op": "hold-blocks",
+   "patchFile": "library/patches/calvin-hold-volume-indexes.json",
+   "patchSha256": "0fed38f2db660009bdf8362c3a8132e1b8b31cc12c3f3bf2a59e86b6f81f7cc2"
+  },
+  {
+   "id": "calvin-col4-duplicate-thessalonians-table",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-col4-duplicate-table.json",
+   "patchSha256": "566c2b0750b65b2380b563539e23b72f059821d3411155855adf09cbee6e4437"
+  },
+  {
+   "id": "calvin-move-1th-argument",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-1th-argument.json",
+   "patchSha256": "e4eb97d33b14d3d4842f53ae78deae865bb0a75d9d60993e66b22cef4117f6e0"
+  },
+  {
+   "id": "calvin-move-thessalonian-dedications",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-thessalonian-dedications.json",
+   "patchSha256": "5dbae1ef313e1a0acc84af1738aeb1f0a98b4e5b6f223dc586a4d2af0975b289"
+  },
+  {
+   "id": "calvin-move-minor-prophet-chapter-tables",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-minor-prophet-tables.json",
+   "patchSha256": "0b388d361dae66b764bea138836ff0941ab2c735e9d875d184f8c9e7c7511af8"
+  },
+  {
+   "id": "calvin-psalms-from-ccel",
+   "op": "replace-chapters",
+   "patchFile": "library/patches/calvin-psalms-from-ccel.json",
+   "patchSha256": "eb85be4cda57a2dd083091b8b46b59f21f2583de607f40cb9c91dd3aa2f36f30"
+  },
+  {
+   "id": "calvin-psa85-duplicate-argument",
+   "op": "move-blocks",
+   "patchFile": "library/patches/calvin-psa85-duplicate-argument.json",
+   "patchSha256": "9ff46f9d66c21d09ffde8aad2803fd3e4b77615395557e39ed99939505f446ab"
+  }
+ ],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

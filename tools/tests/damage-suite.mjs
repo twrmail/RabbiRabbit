@@ -38,6 +38,7 @@ const editor = root => ({
   text(rel, fn) { const p = path.join(root, rel), t = fs.readFileSync(p, 'utf8'); fs.rmSync(p); const n = fn(t); if (n === t) throw new Error('damage changed nothing in ' + rel); fs.writeFileSync(p, n) },
   json(rel, fn) { const p = path.join(root, rel), d = JSON.parse(fs.readFileSync(p, 'utf8')); fs.rmSync(p); fn(d); fs.writeFileSync(p, JSON.stringify(d, null, 1)) },
   remove(rel) { fs.rmSync(path.join(root, rel)) },
+  add(rel, content) { fs.writeFileSync(path.join(root, rel), content) },
   chapter(rel, n, fn) { this.json(rel, d => { const c = d.chapters.find(x => x.chapter === n); if (!c) throw new Error('no chapter ' + n); fn(c) }) },
   copyOf(rel) { return fs.readFileSync(path.join(REPO, rel), 'utf8') }
 })
@@ -55,6 +56,7 @@ const RUNNERS = {
     try { for (const s of JSON.parse(fs.readFileSync(path.join(root, 'sc.json'), 'utf8')).sources) { gates[s.id] = [1, 2, 3, 4, 5, 6, 7].map(i => s.gates[i][0]); ev[s.id] = [1, 2, 3, 4, 5, 6, 7].map(i => s.gates[i][1].filter(Boolean).map(e => typeof e === 'string' ? e : (e.t || e.text || JSON.stringify(e))).join(' | ')) } } catch {}
     return { ...r, gates, ev }
   },
+  async identity(root) { return run('identity-cards.mjs', ['--root', root, '--json'], root) },
   async apply(root) { return run('apply-library-fixes.mjs', [root, '--check'], root) },
   async scans(root) { return run('guardian-scans.mjs', [path.join(root, 'library'), '--json'], root).then(r => { let f = []; try { f = JSON.parse(r.out).findings } catch {} return { ...r, findings: f } }) }
 }
@@ -103,6 +105,13 @@ const CASES = [
   { name: 'a provenance entry is removed', run: 'scorecard', damage: e => e.json('library/provenance.json', d => { d.sources = d.sources.filter(s => s.sourceId !== 'calvin') }), want: /^exit|calvin gate 2/ },
   { name: 'a provenance entry uses a value that is not allowed', run: 'scorecard', damage: e => e.json('library/provenance.json', d => { d.sources[0].repositoryCopy.originStatus = 'definitely-fine' }), want: /^exit|gate 2/ },
   { name: 'a source identifier is changed in the manifest', run: 'scorecard', damage: e => e.json('library/manifest.json', d => { d.sources.find(s => s.id === 'calvin').id = 'calvinx' }), want: /missing|^exit/ },
+  // identity cards (skipped automatically if the repository has no cards yet)
+  { name: 'a Bible word is changed (identity card)', run: 'identity', needsCards: true, damage: e => e.json('library/bible/KJV/JHN.json', d => { d.chapters[2].verses['16'] = d.chapters[2].verses['16'].replace('loved', 'hated') }), want: /^exit/ },
+  { name: 'a Bible verse is deleted (identity card)', run: 'identity', needsCards: true, damage: e => e.json('library/bible/KJV/JHN.json', d => { delete d.chapters[0].verses['5'] }), want: /^exit/ },
+  { name: 'an unexpected file appears in a source (identity card)', run: 'identity', needsCards: true, damage: e => e.add('library/bible/KJV/ZZZ.json', '{}'), want: /^exit/ },
+  { name: 'a source file is removed (identity card)', run: 'identity', needsCards: true, damage: e => e.remove('library/commentary/Tyndale/GEN.json'), want: /^exit/ },
+  { name: 'an identity card is edited by hand', run: 'identity', needsCards: true, damage: e => e.json('library/identity/kjv.json', d => { d.fileSet.files[0] = d.fileSet.files[0].replace(/ [0-9a-f]{64} /, ' ' + '0'.repeat(64) + ' ') }), want: /^exit/ },
+  { name: 'a recorded fix is changed without updating the card', run: 'identity', needsCards: true, damage: e => e.json('library/fixes.json', d => { d.rules.find(r => r.id === 'jfb-ocr-typos').op = 'replace-all-changed' }), want: /^exit/ },
   // scans
   { name: 'a chapter ending is duplicated at the start of the next chapter', run: 'scans', damage: e => { let tail; e.chapter(sk + 'MHC/GEN.json', 1, c => { tail = c.commentary.split(/\s+/).slice(-120).join(' ') }); e.chapter(sk + 'MHC/GEN.json', 2, c => { c.commentary = tail + ' ' + c.commentary }) }, want: /new finding mhc GEN 1 tail-head/ },
   { name: 'an index run is left in a chapter', run: 'scans', damage: e => e.chapter(sk + 'MHC/EXO.json', 1, c => { c.commentary += ' ' + Array.from({ length: 15 }, (_, i) => `${i + 1}:${i + 2}`).join(' ') }), want: /new finding mhc EXO 1 back-matter/ },
@@ -113,7 +122,8 @@ const CASES = [
 
 // ---- run ----
 async function pool(items, n, fn) { const out = new Array(items.length); let i = 0; await Promise.all(Array.from({ length: n }, async () => { while (i < items.length) { const k = i++; out[k] = await fn(items[k], k) } })); return out }
-const cases = CASES.filter(c => !ONLY || ONLY.includes(c.name))
+const haveCards = fs.existsSync(path.join(REPO, 'library/identity'))
+const cases = CASES.filter(c => (!ONLY || ONLY.includes(c.name)) && (haveCards || !c.needsCards))
 const kinds = [...new Set(cases.map(c => c.run))]
 const base = {}
 try {

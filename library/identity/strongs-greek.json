@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "strongs-greek",
+ "displayName": "strongs-greek",
+ "folder": "library/lexicon/strongs_greek.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "2361037739ef2c467e484ee28052d37024b878bd23d0beb2dba80f122b1b411e",
+  "files": [
+   "library/lexicon/strongs_greek.json dc11d57373975dbb211824029d2f7a9422907706309a769638dc52b42e63b4f2 901977"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 5625,
+  "chars": 788742
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "xref-seed",
+ "displayName": "xref-seed",
+ "folder": "library/seed/xref_seed_pool.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "6061224393cc316a9f788d336788d33363616f4d41241f820b3b5af9ef618458",
+  "files": [
+   "library/seed/xref_seed_pool.json 11703343bc8463e22e63568e2741ce20a6b321ab0da0670c0fe9c49af3eb6ec4 211127"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 2315,
+  "chars": 6945
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}

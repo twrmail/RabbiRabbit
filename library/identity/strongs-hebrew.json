@@ -1,0 +1,31 @@
+{
+ "schema": "rabbirabbit-identity/1",
+ "sourceId": "strongs-hebrew",
+ "displayName": "strongs-hebrew",
+ "folder": "library/lexicon/strongs_hebrew.json",
+ "basis": {
+  "state": "verified",
+  "preservedGate": "PASS",
+  "meaning": "Established when the scorecard showed the library equal to the original plus the recorded fixes (Preserved gate PASS) and every recorded fix applied."
+ },
+ "fileSet": {
+  "count": 1,
+  "treeSha256": "0c769842cc39bfa2f916c8db0a9689970f6f970d57e8d521f78f6146fc25bf31",
+  "files": [
+   "library/lexicon/strongs_hebrew.json 593bd8e7027574db06e4cdbd94ed2808138da3f9acb2da285ce1ed0a8e92f4b5 1249529"
+  ]
+ },
+ "structure": {
+  "files": 1,
+  "jsonFiles": 1,
+  "chapters": 0,
+  "strings": 8675,
+  "chars": 1101349
+ },
+ "recordedFixes": [],
+ "notEstablished": [
+  "whether the published work is complete (see library/evidence/external-coverage.json for outside comparisons)",
+  "where the original copy came from (provenance origin status: not-recorded)",
+  "licence (see library/provenance.json)"
+ ]
+}
