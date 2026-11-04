@@ -139,5 +139,8 @@ try {
   // a baseline run that already fails would make every "exit" signal meaningless
   const baseBad = kinds.filter(k => k === 'apply' && base[k].code !== 0)
   if (baseBad.length) { console.log(`The undamaged repository itself fails: ${baseBad.join(', ')}`); bad++ }
+  if (args.includes('--json-out')) fs.writeFileSync(args[args.indexOf('--json-out') + 1], JSON.stringify({
+    total: results.length - gaps, caught: results.filter(r => r.caught).length, notCaught: results.filter(r => !r.ok).map(r => r.c.name),
+    gaps: results.filter(r => r.c.gap).map(r => ({ name: r.c.name, gap: r.c.gap, closed: !!r.caught })), referenceFailed: baseBad.map(k => 'the ' + k + ' check') }, null, 1))
   process.exitCode = bad ? 1 : 0
 } finally { if (!KEEP) fs.rmSync(TMP, { recursive: true, force: true }) }
