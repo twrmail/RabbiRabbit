@@ -1,0 +1,30 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-ezk12-duplicate-table",
+ "source": "calvin",
+ "purpose": "Cut the end of Ezekiel 12 that repeats the opening table of Ezekiel 13 (same format as calvin-duplicate-tails.json).",
+ "chapters": [
+  {
+   "book": "EZK",
+   "chapter": 12,
+   "beforeSha256": "85d9260afce43e870b607c23b54d33359626e40db72ea259fa37e15f56aa3eba",
+   "afterSha256": "ac0dc130971c1c237c0d55da3c2adbaee7f67bcb5396315df93874f48140c92d",
+   "cut": {
+    "offset": 64714,
+    "length": 653,
+    "sha256": "ba0cb37040b09ed122b643f9e888f97f9cb57bd7d5d5286f144d71e9be0d07fc"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "duplicateOf": {
+    "book": "EZK",
+    "chapter": 13,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 103
+   },
+   "tailStartsWith": "CHAPTER 13 Lecture Thirty-Fourth. Ezekiel 13:1-3 1. And the word of the LORD came unto me,",
+   "tailEndsWith": "tor Iehovah, Vae super prophetas stultos qui ambulant post spiritum suum: et non viderunt.",
+   "keptEndsWith": "IRE VOLUME SECOND CHRISTIAN CLASSICS ETHEREAL LIBRARY GRAND RAPIDS, MI http://www.ccel.org"
+  }
+ ]
+}

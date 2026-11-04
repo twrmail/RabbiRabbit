@@ -385,6 +385,62 @@
       "reason": "Twelve chapters of Calvin ended with the back matter of a CCEL volume that our original scrape appended to the last chapter of the last book in that volume: Calvin's own translation of the book(s) in the volume (Galatians and Ephesians; Habakkuk, Zephaniah and Haggai; Hosea; Jeremiah 1-47 in four parts; Joshua; 1 Peter; Jonah, Micah and Nahum; Joel and Amos; Romans), a CCEL placeholder sentence in Hosea 14, and the first lines of the volume's index of scripture references in Haggai 2 (47,113 words in all). None of it is commentary on the chapter it was found in. It is cut from the commentary and kept, word for word, in library/held/calvin-held.json with where it was found, why it was cut, a classification and a hash. The tool refuses to cut a tail unless the held items add up to exactly the text being cut, so nothing can be removed without being kept. The translations are a separate content type (see the open issue calvin-chapter-opening-translations); where they finally belong is not decided."
     },
     {
+      "id": "calvin-ezk12-duplicate-chapter-13-table",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "EZK"
+      ],
+      "op": "move-blocks",
+      "patchFile": "library/patches/calvin-ezk12-duplicate-table.json",
+      "expectedCount": {
+        "misplaced tails cut": 1
+      },
+      "reason": "Ezekiel 12 ended with the opening Scripture table of Ezekiel 13 (Lecture Thirty-Fourth, Ezekiel 13:1-3, English and Latin), which Ezekiel 13 already holds. The tail is cut; the same text stays in Ezekiel 13, so nothing is lost. The cut is checked by offset, length and sha256, and the builder refuses it unless at least 98% of the cut text is found in Ezekiel 13."
+    },
+    {
+      "id": "calvin-hold-volume-title-page",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "EZK"
+      ],
+      "op": "hold-blocks",
+      "patchFile": "library/patches/calvin-hold-volume-title-page.json",
+      "heldFile": "library/held/calvin-held-volume-matter.json",
+      "countLabel": "volume title pages held and cut",
+      "expectedCount": {
+        "volume title pages held and cut": 1
+      },
+      "reason": "The end of Ezekiel 12 carried the title page of the next CCEL volume ('Commentaries on the First Twenty Chapters of the Book of the Prophet Ezekiel ... Volume Second ... Christian Classics Ethereal Library ... www.ccel.org'), 47 words. It is front matter, not commentary. It is cut and kept word for word in library/held/calvin-held-volume-matter.json."
+    },
+    {
+      "id": "calvin-hold-volume-indexes",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "2CO",
+        "2TH",
+        "DEU",
+        "EZK",
+        "GEN",
+        "JHN",
+        "LEV",
+        "LUK",
+        "MAT",
+        "MRK",
+        "NUM"
+      ],
+      "op": "hold-blocks",
+      "patchFile": "library/patches/calvin-hold-volume-indexes.json",
+      "heldFile": "library/held/calvin-held-volume-matter.json",
+      "countLabel": "index sections held and cut",
+      "expectedCount": {
+        "index sections held and cut": 13
+      },
+      "reason": "Thirteen chapters of Calvin carry the back-matter indexes of a CCEL volume that our original scrape put inside them: the index of scripture references in all thirteen, the index of Greek words (2 Corinthians 13, Ezekiel 12, John 21), Hebrew words (Ezekiel 12, and a heading in John 21) and Latin and French words (Ezekiel 12), and a CCEL placeholder sentence in Ezekiel 12. Eleven sit at the end of the chapter; two (Luke 19 and Numbers 10) sit in the middle, with Calvin's commentary carrying on after them, so the text before and after is rejoined with a blank line. 6,401 words in all (all classes: index, placeholder, title page), none of it commentary. Each section is cut and kept word for word in library/held/calvin-held-volume-matter.json with where it was found, why it was cut, a classification and a hash. The tool refuses to cut unless the held items add up to exactly the text being cut."
+    },
+    {
       "id": "jfb-mic5-replacement-char",
       "source": "jfb",
       "folder": "library/commentary/JFB",

@@ -54,7 +54,8 @@ for b, n in CHAPTERS:
                           words=len(text.split()), sha256=H(text), text=text, status='held'))
     assert ''.join(i['text'] for i in items if i['id'] in ids) == tail
     after = t[:start].rstrip()
-    entries.append(dict(book=b, chapter=n, beforeSha256=H(t), afterSha256=H(after), cut=dict(offset=start, length=len(tail), sha256=H(tail)), prepend=None, prependSha256=None, heldIds=ids,
+    entries.append(dict(book=b, chapter=n, beforeSha256=H(t), afterSha256=H(after), cut=dict(offset=start, length=len(tail), sha256=H(tail)), prepend=None, prependSha256=None,
+                        gapBefore=t[len(after):start], gapAfter=None, heldIds=ids,
                         keptEndsWith=after[-90:], tailStartsWith=tail[:90]))
     print(b, n, 'cut', len(tail.split()), 'words into', len(ids), 'held item(s):', [(c[1], c[2][:40]) for c in cuts])
 # One more held item: the English and Latin translation of Amos 2:1-3, which existed only inside the 61,003-character tail of Amos 1 that rule
@@ -70,8 +71,12 @@ items.append(dict(id=f'calvin-held-{len(items) + 1:03d}', source='calvin', class
                   removedByRule='calvin-duplicate-chapter-tails', reason='Inside the tail of Amos 1 that repeated chapter 2; that tail was cut because the next chapter holds it, but this table exists nowhere else, so it is kept here.',
                   proposedDestination='a separate translation field for Amos (schema not yet designed)', words=len(atext.split()), sha256=H(atext), text=atext, status='held'))
 print('Amos item words', items[-1]['words'])
-json.dump(dict(schemaVersion=1, id='calvin-hold-translations', source='calvin', purpose='Cut volume back matter from the end of twelve chapters and hold it in library/held/calvin-held.json.', chapters=entries),
-          open(f'{out}/library/patches/calvin-hold-translations.json', 'w'), indent=1, ensure_ascii=False)
-json.dump(dict(schemaVersion=1, note='Held material: text cut from the commentary because it is not commentary on the chapter it was found in. It is kept exactly, with where it was found, why it was cut and a hash, so that nothing is lost and every cut can be undone. This is not a served source and not an authoritative copy; its proper home is undecided.',
-               items=items), open(f'{out}/library/held/calvin-held.json', 'w'), indent=1, ensure_ascii=False)
+OUTS = []
+def write(path, obj): OUTS.append((path, json.dumps(obj, indent=1, ensure_ascii=False)))
+os.makedirs(f'{out}/library/patches', exist_ok=True); os.makedirs(f'{out}/library/held', exist_ok=True)
+write(f'{out}/library/patches/calvin-hold-translations.json', dict(schemaVersion=1, id='calvin-hold-translations', source='calvin', purpose='Cut volume back matter from the end of twelve chapters and hold it in library/held/calvin-held.json.', chapters=entries))
+write(f'{out}/library/held/calvin-held.json', dict(schemaVersion=1, note='Held material: text cut from the commentary because it is not commentary on the chapter it was found in. It is kept exactly, with where it was found, why it was cut and a hash, so that nothing is lost and every cut can be undone. This is not a served source and not an authoritative copy; its proper home is undecided.', items=items))
+for path, new in OUTS:   # nothing is written unless every target is either missing or already identical
+    if os.path.exists(path) and open(path, encoding='utf-8').read() != new: sys.exit(f'STOP: {path} already exists and is different. This builder never overwrites an existing patch or held file. Nothing was written.')
+for path, new in OUTS: open(path, 'w', encoding='utf-8').write(new)
 print(len(items), 'held items,', sum(i['words'] for i in items), 'words')

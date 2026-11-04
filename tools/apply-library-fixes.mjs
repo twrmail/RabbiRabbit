@@ -11,6 +11,7 @@ const check = flag === '--check'   // CI mode: exit 1 unless every rule is alrea
 const fixes = JSON.parse(fs.readFileSync(path.join(root, 'library', 'fixes.json'), 'utf8'))
 const walk = (o, fn) => Array.isArray(o) ? o.map(v => walk(v, fn)) : (o && typeof o === 'object') ? Object.fromEntries(Object.entries(o).map(([k, v]) => [k, walk(v, fn)])) : (typeof o === 'string' ? fn(o) : o)
 const results = []
+const overlay = {}   // file -> text after the rules already worked out in this run (nothing is written until every rule has passed)
 let abort = false
 // A chapter that a LATER rule has changed no longer matches this rule's "after" hash. It still counts as done for this rule if it is in the
 // recorded final state of a later rule that works on the same chapter (so each rule can be re-run on the finished library).
@@ -23,7 +24,7 @@ for (const rule of fixes.rules) {
   const counts = {}, pending = []
   for (const code of rule.files) {
     const file = path.join(root, rule.folder, code + '.json')
-    const raw = fs.readFileSync(file, 'utf8'), d = JSON.parse(raw)
+    const raw = overlay[file] ?? fs.readFileSync(file, 'utf8'), d = JSON.parse(raw)   // a later rule on the same file starts from what the earlier rules in this run produced
     const bump = k => { counts[k] = (counts[k] || 0) + 1 }
     let nd = d
     if (rule.op === 'strip-leading') {
@@ -207,18 +208,20 @@ for (const rule of fixes.rules) {
         const h = H(ch.commentary)
         if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
         if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
-        const tail = ch.commentary.slice(ent.cut.offset)
-        if (tail.length !== ent.cut.length || H(tail) !== ent.cut.sha256) throw new Error(`${code} ${ch.chapter}: the tail to cut does not match the recorded length and sha256; nothing written`)
+        const tail = ch.commentary.slice(ent.cut.offset, ent.cut.offset + ent.cut.length)
+        if (tail.length !== ent.cut.length || H(tail) !== ent.cut.sha256) throw new Error(`${code} ${ch.chapter}: the text to cut does not match the recorded length and sha256; nothing written`)
         const items = ent.heldIds.map(id => held.find(i => i.id === id))
         if (items.some(i => !i)) throw new Error(`${code} ${ch.chapter}: a held item named in the patch is missing from the held file; nothing written`)
         if (items.some(i => H(i.text) !== i.sha256)) throw new Error(`${code} ${ch.chapter}: a held item does not match its own sha256; nothing written`)
         if (items.map(i => i.text).join('') !== tail) throw new Error(`${code} ${ch.chapter}: the held items do not add up to the text being cut; nothing written`)
-        const out = ch.commentary.slice(0, ent.cut.offset).replace(/\s+$/, ''); bump('back-matter tails held and cut')
+        // the cut may be a tail or a block in the middle of the chapter; in the middle, the text before and the text after are joined with a blank line
+        const head = ch.commentary.slice(0, ent.cut.offset).replace(/\s+$/, ''), rest = ch.commentary.slice(ent.cut.offset + ent.cut.length).replace(/^\s+/, '')
+        const out = rest ? head + '\n\n' + rest : head; bump(rule.countLabel || 'back-matter tails held and cut')
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }
     } else throw new Error('unknown op ' + rule.op)
-    pending.push({ file, out: JSON.stringify(nd) })
+    pending.push({ file, out: JSON.stringify(nd) }); overlay[file] = JSON.stringify(nd)
   }
   const exp = typeof rule.expectedCount === 'number' ? { [rule.find]: rule.expectedCount } : rule.expectedCount
   const total = Object.values(counts).reduce((a, b) => a + b, 0)

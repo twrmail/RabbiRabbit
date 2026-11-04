@@ -1,0 +1,28 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-hold-volume-title-page",
+ "source": "calvin",
+ "purpose": "Cut the volume title page from the end of Ezekiel 12 and hold it.",
+ "chapters": [
+  {
+   "book": "EZK",
+   "chapter": 12,
+   "beforeSha256": "ac0dc130971c1c237c0d55da3c2adbaee7f67bcb5396315df93874f48140c92d",
+   "afterSha256": "3209f012365fad9021332cf2d0737075ecaf3e78f7ccc7454c840438ff4c394f",
+   "cut": {
+    "offset": 64393,
+    "length": 320,
+    "sha256": "dfef840dd916f68bd0356799eb020fbdd9eaa180f6e1c582af712e8bab12ba52"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "gapAfter": null,
+   "heldIds": [
+    "calvin-held-022"
+   ],
+   "keptEndsWith": "un chacun aux quatre mats maximes selon que l’esprit estoit pour cheminer, ils cheminoyent",
+   "tailStartsWith": "COMMENTARIES ON THE FIRST TWENTY CHAPTERS OF THE BOOK OF THE PROPHET EZEKIEL BY JOHN CALVI"
+  }
+ ]
+}
