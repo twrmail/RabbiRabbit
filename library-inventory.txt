@@ -1,0 +1,625 @@
+files: 623   undeclared: 0   known sources missing on disk: 0
+
+     46566  data/Tyndale/1CH.json  [tyndale-misplaced] verse-keyed
+     77689  data/Tyndale/1CO.json  [tyndale-misplaced] verse-keyed
+     21667  data/Tyndale/1JN.json  [tyndale-misplaced] verse-keyed
+    112195  data/Tyndale/1KI.json  [tyndale-misplaced] verse-keyed
+     24166  data/Tyndale/1PE.json  [tyndale-misplaced] verse-keyed
+     98721  data/Tyndale/1SA.json  [tyndale-misplaced] verse-keyed
+     21259  data/Tyndale/1TH.json  [tyndale-misplaced] verse-keyed
+     29576  data/Tyndale/1TI.json  [tyndale-misplaced] verse-keyed
+     77809  data/Tyndale/2CH.json  [tyndale-misplaced] verse-keyed
+     45610  data/Tyndale/2CO.json  [tyndale-misplaced] verse-keyed
+      4307  data/Tyndale/2JN.json  [tyndale-misplaced] verse-keyed
+    102683  data/Tyndale/2KI.json  [tyndale-misplaced] verse-keyed
+     13792  data/Tyndale/2PE.json  [tyndale-misplaced] verse-keyed
+     96196  data/Tyndale/2SA.json  [tyndale-misplaced] verse-keyed
+     12931  data/Tyndale/2TH.json  [tyndale-misplaced] verse-keyed
+     20715  data/Tyndale/2TI.json  [tyndale-misplaced] verse-keyed
+      5191  data/Tyndale/3JN.json  [tyndale-misplaced] verse-keyed
+    123173  data/Tyndale/ACT.json  [tyndale-misplaced] verse-keyed
+     40269  data/Tyndale/AMO.json  [tyndale-misplaced] verse-keyed
+     21243  data/Tyndale/COL.json  [tyndale-misplaced] verse-keyed
+     75767  data/Tyndale/DAN.json  [tyndale-misplaced] verse-keyed
+    126553  data/Tyndale/DEU.json  [tyndale-misplaced] verse-keyed
+     25757  data/Tyndale/ECC.json  [tyndale-misplaced] verse-keyed
+     37608  data/Tyndale/EPH.json  [tyndale-misplaced] verse-keyed
+     26012  data/Tyndale/EST.json  [tyndale-misplaced] verse-keyed
+    145465  data/Tyndale/EXO.json  [tyndale-misplaced] verse-keyed
+    174160  data/Tyndale/EZK.json  [tyndale-misplaced] verse-keyed
+     35921  data/Tyndale/EZR.json  [tyndale-misplaced] verse-keyed
+     61408  data/Tyndale/GAL.json  [tyndale-misplaced] verse-keyed
+    233752  data/Tyndale/GEN.json  [tyndale-misplaced] verse-keyed
+     11866  data/Tyndale/HAB.json  [tyndale-misplaced] verse-keyed
+     13771  data/Tyndale/HAG.json  [tyndale-misplaced] verse-keyed
+     93241  data/Tyndale/HEB.json  [tyndale-misplaced] verse-keyed
+     39837  data/Tyndale/HOS.json  [tyndale-misplaced] verse-keyed
+    228904  data/Tyndale/ISA.json  [tyndale-misplaced] verse-keyed
+     24277  data/Tyndale/JAS.json  [tyndale-misplaced] verse-keyed
+     80294  data/Tyndale/JDG.json  [tyndale-misplaced] verse-keyed
+    200864  data/Tyndale/JER.json  [tyndale-misplaced] verse-keyed
+    136005  data/Tyndale/JHN.json  [tyndale-misplaced] verse-keyed
+     87102  data/Tyndale/JOB.json  [tyndale-misplaced] verse-keyed
+     16030  data/Tyndale/JOL.json  [tyndale-misplaced] verse-keyed
+     12655  data/Tyndale/JON.json  [tyndale-misplaced] verse-keyed
+     87045  data/Tyndale/JOS.json  [tyndale-misplaced] verse-keyed
+      7556  data/Tyndale/JUD.json  [tyndale-misplaced] verse-keyed
+     12502  data/Tyndale/LAM.json  [tyndale-misplaced] verse-keyed
+    124742  data/Tyndale/LEV.json  [tyndale-misplaced] verse-keyed
+    174398  data/Tyndale/LUK.json  [tyndale-misplaced] verse-keyed
+     17554  data/Tyndale/MAL.json  [tyndale-misplaced] verse-keyed
+    179352  data/Tyndale/MAT.json  [tyndale-misplaced] verse-keyed
+     29955  data/Tyndale/MIC.json  [tyndale-misplaced] verse-keyed
+    169622  data/Tyndale/MRK.json  [tyndale-misplaced] verse-keyed
+     13284  data/Tyndale/NAM.json  [tyndale-misplaced] verse-keyed  ISSUES: file name NAM is not the canonical code NAH
+     39502  data/Tyndale/NEH.json  [tyndale-misplaced] verse-keyed
+    127792  data/Tyndale/NUM.json  [tyndale-misplaced] verse-keyed
+      7355  data/Tyndale/OBA.json  [tyndale-misplaced] verse-keyed
+      5790  data/Tyndale/PHM.json  [tyndale-misplaced] verse-keyed
+     22002  data/Tyndale/PHP.json  [tyndale-misplaced] verse-keyed
+     71452  data/Tyndale/PRO.json  [tyndale-misplaced] verse-keyed
+    263260  data/Tyndale/PSA.json  [tyndale-misplaced] verse-keyed
+    117750  data/Tyndale/REV.json  [tyndale-misplaced] verse-keyed
+     99946  data/Tyndale/ROM.json  [tyndale-misplaced] verse-keyed
+     14222  data/Tyndale/RUT.json  [tyndale-misplaced] verse-keyed
+     33112  data/Tyndale/SNG.json  [tyndale-misplaced] verse-keyed
+     14100  data/Tyndale/TIT.json  [tyndale-misplaced] verse-keyed
+     58215  data/Tyndale/ZEC.json  [tyndale-misplaced] verse-keyed
+     11777  data/Tyndale/ZEP.json  [tyndale-misplaced] verse-keyed
+   4865857  data/asv.json  [asv] whole-Bible object
+   4107432  data/bsb/bsb.json  [bsb] whole-Bible object
+   2417837  data/commentary/Barnes/Barnes_commentary.json  [barnes-legacy] whole-Bible array
+   1348729  data/commentary/Barnes_NT/1CO.json  [barnes-nt] verse-keyed
+    334963  data/commentary/Barnes_NT/1JN.json  [barnes-nt] verse-keyed
+    440229  data/commentary/Barnes_NT/1PE.json  [barnes-nt] verse-keyed
+    239946  data/commentary/Barnes_NT/1TH.json  [barnes-nt] verse-keyed
+    380657  data/commentary/Barnes_NT/1TI.json  [barnes-nt] verse-keyed
+   1054457  data/commentary/Barnes_NT/2CO.json  [barnes-nt] verse-keyed
+     47790  data/commentary/Barnes_NT/2JN.json  [barnes-nt] verse-keyed
+    238047  data/commentary/Barnes_NT/2PE.json  [barnes-nt] verse-keyed
+    135134  data/commentary/Barnes_NT/2TH.json  [barnes-nt] verse-keyed
+    179188  data/commentary/Barnes_NT/2TI.json  [barnes-nt] verse-keyed
+     45096  data/commentary/Barnes_NT/3JN.json  [barnes-nt] verse-keyed
+   1536150  data/commentary/Barnes_NT/ACT.json  [barnes-nt] verse-keyed
+    221793  data/commentary/Barnes_NT/COL.json  [barnes-nt] verse-keyed
+    488238  data/commentary/Barnes_NT/EPH.json  [barnes-nt] verse-keyed
+    460279  data/commentary/Barnes_NT/GAL.json  [barnes-nt] verse-keyed
+   1131250  data/commentary/Barnes_NT/HEB.json  [barnes-nt] verse-keyed
+    345969  data/commentary/Barnes_NT/JAS.json  [barnes-nt] verse-keyed
+    831315  data/commentary/Barnes_NT/JHN.json  [barnes-nt] verse-keyed
+     94787  data/commentary/Barnes_NT/JUD.json  [barnes-nt] verse-keyed
+    774089  data/commentary/Barnes_NT/LUK.json  [barnes-nt] verse-keyed
+   1439812  data/commentary/Barnes_NT/MAT.json  [barnes-nt] verse-keyed
+    186151  data/commentary/Barnes_NT/MRK.json  [barnes-nt] verse-keyed
+     88593  data/commentary/Barnes_NT/PHM.json  [barnes-nt] verse-keyed
+    352230  data/commentary/Barnes_NT/PHP.json  [barnes-nt] verse-keyed
+   1783226  data/commentary/Barnes_NT/REV.json  [barnes-nt] verse-keyed
+   1182624  data/commentary/Barnes_NT/ROM.json  [barnes-nt] verse-keyed
+    117047  data/commentary/Barnes_NT/TIT.json  [barnes-nt] verse-keyed
+    983399  data/commentary/Calvin/1CO.json  [calvin] chapter text  ISSUES: no book field
+    256154  data/commentary/Calvin/1JN.json  [calvin] chapter text  ISSUES: no book field
+    279919  data/commentary/Calvin/1PE.json  [calvin] chapter text  ISSUES: no book field
+    152330  data/commentary/Calvin/1TH.json  [calvin] chapter text  ISSUES: no book field
+     30039  data/commentary/Calvin/1TI.json  [calvin] chapter text  ISSUES: no book field
+    547921  data/commentary/Calvin/2CO.json  [calvin] chapter text  ISSUES: no book field
+    122747  data/commentary/Calvin/2PE.json  [calvin] chapter text  ISSUES: no book field
+    107822  data/commentary/Calvin/2TH.json  [calvin] chapter text  ISSUES: no book field
+     11982  data/commentary/Calvin/2TI.json  [calvin] chapter text  ISSUES: no book field
+   1991196  data/commentary/Calvin/ACT.json  [calvin] chapter text  ISSUES: no book field
+    579968  data/commentary/Calvin/AMO.json  [calvin] chapter text  ISSUES: no book field
+    199731  data/commentary/Calvin/COL.json  [calvin] chapter text  ISSUES: no book field
+   1621009  data/commentary/Calvin/DAN.json  [calvin] chapter text  ISSUES: no book field
+   1133024  data/commentary/Calvin/DEU.json  [calvin] chapter text  ISSUES: no book field
+    350873  data/commentary/Calvin/EPH.json  [calvin] chapter text  ISSUES: no book field
+   1434682  data/commentary/Calvin/EXO.json  [calvin] chapter text  ISSUES: no book field
+   1583953  data/commentary/Calvin/EZK.json  [calvin] chapter text  ISSUES: no book field
+    361539  data/commentary/Calvin/GAL.json  [calvin] chapter text  ISSUES: no book field
+   2207480  data/commentary/Calvin/GEN.json  [calvin] chapter text  ISSUES: no book field
+    319383  data/commentary/Calvin/HAB.json  [calvin] chapter text  ISSUES: no book field
+    167878  data/commentary/Calvin/HAG.json  [calvin] chapter text  ISSUES: no book field
+    683688  data/commentary/Calvin/HEB.json  [calvin] chapter text  ISSUES: no book field
+   1065332  data/commentary/Calvin/HOS.json  [calvin] chapter text  ISSUES: no book field
+   3774778  data/commentary/Calvin/ISA.json  [calvin] chapter text  ISSUES: no book field
+    177030  data/commentary/Calvin/JAS.json  [calvin] chapter text  ISSUES: no book field
+   4799680  data/commentary/Calvin/JER.json  [calvin] chapter text  ISSUES: no book field
+   1560338  data/commentary/Calvin/JHN.json  [calvin] chapter text  ISSUES: no book field
+    281211  data/commentary/Calvin/JOL.json  [calvin] chapter text  ISSUES: no book field
+    257283  data/commentary/Calvin/JON.json  [calvin] chapter text  ISSUES: no book field
+    584800  data/commentary/Calvin/JOS.json  [calvin] chapter text  ISSUES: no book field
+     53674  data/commentary/Calvin/JUD.json  [calvin] chapter text  ISSUES: no book field
+    440886  data/commentary/Calvin/LAM.json  [calvin] chapter text  ISSUES: no book field
+    612606  data/commentary/Calvin/LEV.json  [calvin] chapter text  ISSUES: no book field
+    782677  data/commentary/Calvin/LUK.json  [calvin] chapter text  ISSUES: no book field
+     21370  data/commentary/Calvin/MAL.json  [calvin] chapter text  ISSUES: no book field
+   1811571  data/commentary/Calvin/MAT.json  [calvin] chapter text  ISSUES: no book field
+    517062  data/commentary/Calvin/MIC.json  [calvin] chapter text  ISSUES: no book field
+    156585  data/commentary/Calvin/MRK.json  [calvin] chapter text  ISSUES: no book field
+    209129  data/commentary/Calvin/NAM.json  [calvin] chapter text  ISSUES: file name NAM is not the canonical code NAH; no book field
+    922600  data/commentary/Calvin/NUM.json  [calvin] chapter text  ISSUES: no book field
+     94962  data/commentary/Calvin/OBA.json  [calvin] chapter text  ISSUES: no book field
+     33390  data/commentary/Calvin/PHM.json  [calvin] chapter text  ISSUES: no book field
+    225913  data/commentary/Calvin/PHP.json  [calvin] chapter text  ISSUES: no book field
+    723034  data/commentary/Calvin/PSA.json  [calvin] chapter text  ISSUES: no book field
+    928782  data/commentary/Calvin/ROM.json  [calvin] chapter text  ISSUES: no book field
+     13422  data/commentary/Calvin/TIT.json  [calvin] chapter text  ISSUES: no book field
+     72461  data/commentary/Calvin/ZEC.json  [calvin] chapter text  ISSUES: no book field
+    253107  data/commentary/Calvin/ZEP.json  [calvin] chapter text  ISSUES: no book field
+   2417729  data/commentary/Clarke/Clarke_commentary.json  [clarke] whole-Bible array
+    136344  data/commentary/JFB/1CH.json  [jfb] chapter text  ISSUES: no book field
+    323231  data/commentary/JFB/1CO.json  [jfb] chapter text  ISSUES: no book field
+    128681  data/commentary/JFB/1JN.json  [jfb] chapter text  ISSUES: no book field
+    156584  data/commentary/JFB/1KI.json  [jfb] chapter text  ISSUES: no book field
+    173993  data/commentary/JFB/1PE.json  [jfb] chapter text  ISSUES: no book field
+    165158  data/commentary/JFB/1SA.json  [jfb] chapter text  ISSUES: no book field
+     83863  data/commentary/JFB/1TH.json  [jfb] chapter text  ISSUES: no book field
+    165307  data/commentary/JFB/1TI.json  [jfb] chapter text  ISSUES: no book field
+    184630  data/commentary/JFB/2CH.json  [jfb] chapter text  ISSUES: no book field
+    200097  data/commentary/JFB/2CO.json  [jfb] chapter text  ISSUES: no book field
+     15624  data/commentary/JFB/2JN.json  [jfb] chapter text  ISSUES: no book field
+    160650  data/commentary/JFB/2KI.json  [jfb] chapter text  ISSUES: no book field
+     75684  data/commentary/JFB/2PE.json  [jfb] chapter text  ISSUES: no book field
+    133331  data/commentary/JFB/2SA.json  [jfb] chapter text  ISSUES: no book field
+     62232  data/commentary/JFB/2TH.json  [jfb] chapter text  ISSUES: no book field
+     87863  data/commentary/JFB/2TI.json  [jfb] chapter text  ISSUES: no book field
+      7101  data/commentary/JFB/3JN.json  [jfb] chapter text  ISSUES: no book field
+    414343  data/commentary/JFB/ACT.json  [jfb] chapter text  ISSUES: no book field
+     94993  data/commentary/JFB/AMO.json  [jfb] chapter text  ISSUES: no book field
+    116005  data/commentary/JFB/COL.json  [jfb] chapter text  ISSUES: no book field
+    259994  data/commentary/JFB/DAN.json  [jfb] chapter text  ISSUES: no book field
+    186527  data/commentary/JFB/DEU.json  [jfb] chapter text  ISSUES: no book field
+     96422  data/commentary/JFB/ECC.json  [jfb] chapter text  ISSUES: no book field
+    161797  data/commentary/JFB/EPH.json  [jfb] chapter text  ISSUES: no book field
+     43969  data/commentary/JFB/EST.json  [jfb] chapter text  ISSUES: no book field
+    218772  data/commentary/JFB/EXO.json  [jfb] chapter text  ISSUES: no book field
+    458474  data/commentary/JFB/EZK.json  [jfb] chapter text  ISSUES: no book field
+     52202  data/commentary/JFB/EZR.json  [jfb] chapter text  ISSUES: no book field
+    156298  data/commentary/JFB/GAL.json  [jfb] chapter text  ISSUES: no book field
+    258406  data/commentary/JFB/GEN.json  [jfb] chapter text  ISSUES: no book field
+     46794  data/commentary/JFB/HAB.json  [jfb] chapter text  ISSUES: no book field
+     36312  data/commentary/JFB/HAG.json  [jfb] chapter text  ISSUES: no book field
+    388656  data/commentary/JFB/HEB.json  [jfb] chapter text  ISSUES: no book field
+    121259  data/commentary/JFB/HOS.json  [jfb] chapter text  ISSUES: no book field
+    672443  data/commentary/JFB/ISA.json  [jfb] chapter text  ISSUES: no book field
+    107620  data/commentary/JFB/JAS.json  [jfb] chapter text  ISSUES: no book field
+    126763  data/commentary/JFB/JDG.json  [jfb] chapter text  ISSUES: no book field
+    481118  data/commentary/JFB/JER.json  [jfb] chapter text  ISSUES: no book field
+  11328208  data/commentary/JFB/JFB_commentary.json  [jfb] whole-Bible array
+   2365776  data/commentary/JFB/JFB_commentary_backup.json  [jfb] whole-Bible array
+    395312  data/commentary/JFB/JHN.json  [jfb] chapter text  ISSUES: no book field
+    319598  data/commentary/JFB/JOB.json  [jfb] chapter text  ISSUES: no book field
+     44289  data/commentary/JFB/JOL.json  [jfb] chapter text  ISSUES: no book field
+     44471  data/commentary/JFB/JON.json  [jfb] chapter text  ISSUES: no book field
+    127919  data/commentary/JFB/JOS.json  [jfb] chapter text  ISSUES: no book field
+     44270  data/commentary/JFB/JUD.json  [jfb] chapter text  ISSUES: no book field
+     44118  data/commentary/JFB/LAM.json  [jfb] chapter text  ISSUES: no book field
+    171654  data/commentary/JFB/LEV.json  [jfb] chapter text  ISSUES: no book field
+    266681  data/commentary/JFB/LUK.json  [jfb] chapter text  ISSUES: no book field
+     55519  data/commentary/JFB/MAL.json  [jfb] chapter text  ISSUES: no book field
+    522283  data/commentary/JFB/MAT.json  [jfb] chapter text  ISSUES: no book field
+     72034  data/commentary/JFB/MIC.json  [jfb] chapter text  ISSUES: no book field
+    258818  data/commentary/JFB/MRK.json  [jfb] chapter text  ISSUES: no book field
+     39328  data/commentary/JFB/NAH.json  [jfb] chapter text  ISSUES: no book field
+     68472  data/commentary/JFB/NEH.json  [jfb] chapter text  ISSUES: no book field
+    223221  data/commentary/JFB/NUM.json  [jfb] chapter text  ISSUES: no book field
+     18453  data/commentary/JFB/OBA.json  [jfb] chapter text  ISSUES: no book field
+     15104  data/commentary/JFB/PHM.json  [jfb] chapter text  ISSUES: no book field
+     94863  data/commentary/JFB/PHP.json  [jfb] chapter text  ISSUES: no book field
+    117580  data/commentary/JFB/PRO.json  [jfb] chapter text  ISSUES: no book field
+    376473  data/commentary/JFB/PSA.json  [jfb] chapter text  ISSUES: no book field
+    514406  data/commentary/JFB/REV.json  [jfb] chapter text  ISSUES: no book field
+    343542  data/commentary/JFB/ROM.json  [jfb] chapter text  ISSUES: no book field
+     16242  data/commentary/JFB/RUT.json  [jfb] chapter text  ISSUES: no book field
+    113152  data/commentary/JFB/SNG.json  [jfb] chapter text  ISSUES: no book field
+     46787  data/commentary/JFB/TIT.json  [jfb] chapter text  ISSUES: no book field
+    175239  data/commentary/JFB/ZEC.json  [jfb] chapter text  ISSUES: no book field
+     37914  data/commentary/JFB/ZEP.json  [jfb] chapter text  ISSUES: no book field
+    400573  data/commentary/MHC/1CH.json  [mhc] chapter text  ISSUES: no book field
+    559897  data/commentary/MHC/1CO.json  [mhc] chapter text  ISSUES: no book field
+    218516  data/commentary/MHC/1JN.json  [mhc] chapter text  ISSUES: no book field
+    700929  data/commentary/MHC/1KI.json  [mhc] chapter text  ISSUES: no book field
+    193939  data/commentary/MHC/1PE.json  [mhc] chapter text  ISSUES: no book field
+    932523  data/commentary/MHC/1SA.json  [mhc] chapter text  ISSUES: no book field
+    119674  data/commentary/MHC/1TH.json  [mhc] chapter text  ISSUES: no book field
+    144940  data/commentary/MHC/1TI.json  [mhc] chapter text  ISSUES: no book field
+    598102  data/commentary/MHC/2CH.json  [mhc] chapter text  ISSUES: no book field
+    224933  data/commentary/MHC/2CO.json  [mhc] chapter text  ISSUES: no book field
+     22347  data/commentary/MHC/2JN.json  [mhc] chapter text  ISSUES: no book field
+    698650  data/commentary/MHC/2KI.json  [mhc] chapter text  ISSUES: no book field
+    127358  data/commentary/MHC/2PE.json  [mhc] chapter text  ISSUES: no book field
+    702399  data/commentary/MHC/2SA.json  [mhc] chapter text  ISSUES: no book field
+     72774  data/commentary/MHC/2TH.json  [mhc] chapter text  ISSUES: no book field
+    112005  data/commentary/MHC/2TI.json  [mhc] chapter text  ISSUES: no book field
+     17826  data/commentary/MHC/3JN.json  [mhc] chapter text  ISSUES: no book field
+   2034464  data/commentary/MHC/ACT.json  [mhc] chapter text  ISSUES: no book field
+    254844  data/commentary/MHC/AMO.json  [mhc] chapter text  ISSUES: no book field
+    122527  data/commentary/MHC/COL.json  [mhc] chapter text  ISSUES: no book field
+    558757  data/commentary/MHC/DAN.json  [mhc] chapter text  ISSUES: no book field
+    882939  data/commentary/MHC/DEU.json  [mhc] chapter text  ISSUES: no book field
+    419317  data/commentary/MHC/ECC.json  [mhc] chapter text  ISSUES: no book field
+    211116  data/commentary/MHC/EPH.json  [mhc] chapter text  ISSUES: no book field
+    174309  data/commentary/MHC/EST.json  [mhc] chapter text  ISSUES: no book field
+    965616  data/commentary/MHC/EXO.json  [mhc] chapter text  ISSUES: no book field
+   1494214  data/commentary/MHC/EZK.json  [mhc] chapter text  ISSUES: no book field
+    206602  data/commentary/MHC/EZR.json  [mhc] chapter text  ISSUES: no book field
+    213080  data/commentary/MHC/GAL.json  [mhc] chapter text  ISSUES: no book field
+   1471508  data/commentary/MHC/GEN.json  [mhc] chapter text  ISSUES: no book field
+    107426  data/commentary/MHC/HAB.json  [mhc] chapter text  ISSUES: no book field
+     63241  data/commentary/MHC/HAG.json  [mhc] chapter text  ISSUES: no book field
+    437326  data/commentary/MHC/HEB.json  [mhc] chapter text  ISSUES: no book field
+    480842  data/commentary/MHC/HOS.json  [mhc] chapter text  ISSUES: no book field
+   2212375  data/commentary/MHC/ISA.json  [mhc] chapter text  ISSUES: no book field
+    196811  data/commentary/MHC/JAS.json  [mhc] chapter text  ISSUES: no book field
+    718328  data/commentary/MHC/JDG.json  [mhc] chapter text  ISSUES: no book field
+   1728724  data/commentary/MHC/JER.json  [mhc] chapter text  ISSUES: no book field
+   2214677  data/commentary/MHC/JHN.json  [mhc] chapter text  ISSUES: no book field
+   1336975  data/commentary/MHC/JOB.json  [mhc] chapter text  ISSUES: no book field
+    119644  data/commentary/MHC/JOL.json  [mhc] chapter text  ISSUES: no book field
+    136461  data/commentary/MHC/JON.json  [mhc] chapter text  ISSUES: no book field
+    640551  data/commentary/MHC/JOS.json  [mhc] chapter text  ISSUES: no book field
+     60746  data/commentary/MHC/JUD.json  [mhc] chapter text  ISSUES: no book field
+    190079  data/commentary/MHC/LAM.json  [mhc] chapter text  ISSUES: no book field
+    621411  data/commentary/MHC/LEV.json  [mhc] chapter text  ISSUES: no book field
+   1540586  data/commentary/MHC/LUK.json  [mhc] chapter text  ISSUES: no book field
+    174169  data/commentary/MHC/MAL.json  [mhc] chapter text  ISSUES: no book field
+   2522524  data/commentary/MHC/MAT.json  [mhc] chapter text  ISSUES: no book field
+    204000  data/commentary/MHC/MIC.json  [mhc] chapter text  ISSUES: no book field
+    687366  data/commentary/MHC/MRK.json  [mhc] chapter text  ISSUES: no book field
+     67362  data/commentary/MHC/NAH.json  [mhc] chapter text  ISSUES: no book field
+    285471  data/commentary/MHC/NEH.json  [mhc] chapter text  ISSUES: no book field
+    875868  data/commentary/MHC/NUM.json  [mhc] chapter text  ISSUES: no book field
+     42434  data/commentary/MHC/OBA.json  [mhc] chapter text  ISSUES: no book field
+     50715  data/commentary/MHC/PHM.json  [mhc] chapter text  ISSUES: no book field
+    140087  data/commentary/MHC/PHP.json  [mhc] chapter text  ISSUES: no book field
+   1048870  data/commentary/MHC/PRO.json  [mhc] chapter text  ISSUES: no book field
+   3210491  data/commentary/MHC/PSA.json  [mhc] chapter text  ISSUES: no book field
+    383966  data/commentary/MHC/REV.json  [mhc] chapter text  ISSUES: no book field
+    794736  data/commentary/MHC/ROM.json  [mhc] chapter text  ISSUES: no book field
+    126429  data/commentary/MHC/RUT.json  [mhc] chapter text  ISSUES: no book field
+    275776  data/commentary/MHC/SNG.json  [mhc] chapter text  ISSUES: no book field
+    140176  data/commentary/MHC/TIT.json  [mhc] chapter text  ISSUES: no book field
+    423099  data/commentary/MHC/ZEC.json  [mhc] chapter text  ISSUES: no book field
+     93298  data/commentary/MHC/ZEP.json  [mhc] chapter text  ISSUES: no book field
+    635117  data/commentary/Meyer/Meyer_commentary.json  [meyer] whole-Bible array
+      4590  data/commentary/Scofield/1CH.json  [scofield] chapter text
+     16435  data/commentary/Scofield/1CO.json  [scofield] chapter text
+      4740  data/commentary/Scofield/1JN.json  [scofield] chapter text
+      6808  data/commentary/Scofield/1KI.json  [scofield] chapter text
+      5085  data/commentary/Scofield/1PE.json  [scofield] chapter text
+      4291  data/commentary/Scofield/1SA.json  [scofield] chapter text
+      4180  data/commentary/Scofield/1TH.json  [scofield] chapter text
+      3763  data/commentary/Scofield/1TI.json  [scofield] chapter text
+      5284  data/commentary/Scofield/2CH.json  [scofield] chapter text
+      7724  data/commentary/Scofield/2CO.json  [scofield] chapter text
+      1597  data/commentary/Scofield/2JN.json  [scofield] chapter text
+      3709  data/commentary/Scofield/2KI.json  [scofield] chapter text
+      3949  data/commentary/Scofield/2PE.json  [scofield] chapter text
+      6441  data/commentary/Scofield/2SA.json  [scofield] chapter text
+      2924  data/commentary/Scofield/2TH.json  [scofield] chapter text
+      3260  data/commentary/Scofield/2TI.json  [scofield] chapter text
+       102  data/commentary/Scofield/3JN.json  [scofield] chapter text
+     22815  data/commentary/Scofield/ACT.json  [scofield] chapter text
+      3187  data/commentary/Scofield/AMO.json  [scofield] chapter text
+      4556  data/commentary/Scofield/COL.json  [scofield] chapter text
+     20680  data/commentary/Scofield/DAN.json  [scofield] chapter text
+      5956  data/commentary/Scofield/DEU.json  [scofield] chapter text
+      1792  data/commentary/Scofield/ECC.json  [scofield] chapter text
+      6793  data/commentary/Scofield/EPH.json  [scofield] chapter text
+      1539  data/commentary/Scofield/EST.json  [scofield] chapter text
+     29613  data/commentary/Scofield/EXO.json  [scofield] chapter text
+     12879  data/commentary/Scofield/EZK.json  [scofield] chapter text
+      3076  data/commentary/Scofield/EZR.json  [scofield] chapter text
+      6639  data/commentary/Scofield/GAL.json  [scofield] chapter text
+     46515  data/commentary/Scofield/GEN.json  [scofield] chapter text
+      4798  data/commentary/Scofield/HAB.json  [scofield] chapter text
+      2464  data/commentary/Scofield/HAG.json  [scofield] chapter text
+     13309  data/commentary/Scofield/HEB.json  [scofield] chapter text
+      2962  data/commentary/Scofield/HOS.json  [scofield] chapter text
+     29288  data/commentary/Scofield/ISA.json  [scofield] chapter text
+      3645  data/commentary/Scofield/JAS.json  [scofield] chapter text
+      5394  data/commentary/Scofield/JDG.json  [scofield] chapter text
+     14680  data/commentary/Scofield/JER.json  [scofield] chapter text
+     21074  data/commentary/Scofield/JHN.json  [scofield] chapter text
+      8116  data/commentary/Scofield/JOB.json  [scofield] chapter text
+      3337  data/commentary/Scofield/JOL.json  [scofield] chapter text
+      3406  data/commentary/Scofield/JON.json  [scofield] chapter text
+      4504  data/commentary/Scofield/JOS.json  [scofield] chapter text
+      2077  data/commentary/Scofield/JUD.json  [scofield] chapter text
+       755  data/commentary/Scofield/LAM.json  [scofield] chapter text
+     19090  data/commentary/Scofield/LEV.json  [scofield] chapter text
+     20576  data/commentary/Scofield/LUK.json  [scofield] chapter text
+      7506  data/commentary/Scofield/MAL.json  [scofield] chapter text
+     45736  data/commentary/Scofield/MAT.json  [scofield] chapter text
+      4069  data/commentary/Scofield/MIC.json  [scofield] chapter text
+     12425  data/commentary/Scofield/MRK.json  [scofield] chapter text
+      2121  data/commentary/Scofield/NAH.json  [scofield] chapter text
+      4422  data/commentary/Scofield/NEH.json  [scofield] chapter text
+     15917  data/commentary/Scofield/NUM.json  [scofield] chapter text
+       915  data/commentary/Scofield/OBA.json  [scofield] chapter text
+      1217  data/commentary/Scofield/PHM.json  [scofield] chapter text
+      2935  data/commentary/Scofield/PHP.json  [scofield] chapter text
+      4000  data/commentary/Scofield/PRO.json  [scofield] chapter text
+     31750  data/commentary/Scofield/PSA.json  [scofield] chapter text
+     23243  data/commentary/Scofield/REV.json  [scofield] chapter text
+     17592  data/commentary/Scofield/ROM.json  [scofield] chapter text
+       974  data/commentary/Scofield/RUT.json  [scofield] chapter text
+      3930  data/commentary/Scofield/SNG.json  [scofield] chapter text
+      2584  data/commentary/Scofield/TIT.json  [scofield] chapter text
+     19222  data/commentary/Scofield/ZEC.json  [scofield] chapter text
+      2543  data/commentary/Scofield/ZEP.json  [scofield] chapter text
+       112  data/commentary/TDavid/1CH.json  [spurgeon] chapter text
+       113  data/commentary/TDavid/1CO.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/1JN.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/1KI.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/1PE.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/1SA.json  [spurgeon] chapter text
+       115  data/commentary/TDavid/1TH.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/1TI.json  [spurgeon] chapter text
+       112  data/commentary/TDavid/2CH.json  [spurgeon] chapter text
+       113  data/commentary/TDavid/2CO.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/2JN.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/2KI.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/2PE.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/2SA.json  [spurgeon] chapter text
+       115  data/commentary/TDavid/2TH.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/2TI.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/3JN.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/ACT.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/AMO.json  [spurgeon] chapter text
+       110  data/commentary/TDavid/COL.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/DAN.json  [spurgeon] chapter text
+       111  data/commentary/TDavid/DEU.json  [spurgeon] chapter text
+       112  data/commentary/TDavid/ECC.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/EPH.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/EST.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/EXO.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/EZK.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/EZR.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/GAL.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/GEN.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/HAB.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/HAG.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/HEB.json  [spurgeon] chapter text
+       105  data/commentary/TDavid/HOS.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/ISA.json  [spurgeon] chapter text
+       105  data/commentary/TDavid/JAS.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/JDG.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/JER.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/JHN.json  [spurgeon] chapter text
+       103  data/commentary/TDavid/JOB.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/JOL.json  [spurgeon] chapter text
+       105  data/commentary/TDavid/JON.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/JOS.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/JUD.json  [spurgeon] chapter text
+       112  data/commentary/TDavid/LAM.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/LEV.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/LUK.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/MAL.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/MAT.json  [spurgeon] chapter text
+       105  data/commentary/TDavid/MIC.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/MRK.json  [spurgeon] chapter text
+       105  data/commentary/TDavid/NAH.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/NEH.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/NUM.json  [spurgeon] chapter text
+       107  data/commentary/TDavid/OBA.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/PHM.json  [spurgeon] chapter text
+       111  data/commentary/TDavid/PHP.json  [spurgeon] chapter text
+       108  data/commentary/TDavid/PRO.json  [spurgeon] chapter text
+   5130067  data/commentary/TDavid/PSA.json  [spurgeon] verse-keyed
+       110  data/commentary/TDavid/REV.json  [spurgeon] chapter text
+       106  data/commentary/TDavid/ROM.json  [spurgeon] chapter text
+       104  data/commentary/TDavid/RUT.json  [spurgeon] chapter text
+       115  data/commentary/TDavid/SNG.json  [spurgeon] chapter text
+       105  data/commentary/TDavid/TIT.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/ZEC.json  [spurgeon] chapter text
+       109  data/commentary/TDavid/ZEP.json  [spurgeon] chapter text
+     46566  data/commentary/Tyndale/1CH.json  [tyndale] verse-keyed
+     77689  data/commentary/Tyndale/1CO.json  [tyndale] verse-keyed
+     21667  data/commentary/Tyndale/1JN.json  [tyndale] verse-keyed
+    112195  data/commentary/Tyndale/1KI.json  [tyndale] verse-keyed
+     24166  data/commentary/Tyndale/1PE.json  [tyndale] verse-keyed
+     98721  data/commentary/Tyndale/1SA.json  [tyndale] verse-keyed
+     21259  data/commentary/Tyndale/1TH.json  [tyndale] verse-keyed
+     29576  data/commentary/Tyndale/1TI.json  [tyndale] verse-keyed
+     77809  data/commentary/Tyndale/2CH.json  [tyndale] verse-keyed
+     45610  data/commentary/Tyndale/2CO.json  [tyndale] verse-keyed
+      4307  data/commentary/Tyndale/2JN.json  [tyndale] verse-keyed
+    102683  data/commentary/Tyndale/2KI.json  [tyndale] verse-keyed
+     13792  data/commentary/Tyndale/2PE.json  [tyndale] verse-keyed
+     96196  data/commentary/Tyndale/2SA.json  [tyndale] verse-keyed
+     12931  data/commentary/Tyndale/2TH.json  [tyndale] verse-keyed
+     20715  data/commentary/Tyndale/2TI.json  [tyndale] verse-keyed
+      5191  data/commentary/Tyndale/3JN.json  [tyndale] verse-keyed
+    123173  data/commentary/Tyndale/ACT.json  [tyndale] verse-keyed
+     40269  data/commentary/Tyndale/AMO.json  [tyndale] verse-keyed
+     21243  data/commentary/Tyndale/COL.json  [tyndale] verse-keyed
+     75767  data/commentary/Tyndale/DAN.json  [tyndale] verse-keyed
+    126553  data/commentary/Tyndale/DEU.json  [tyndale] verse-keyed
+     25757  data/commentary/Tyndale/ECC.json  [tyndale] verse-keyed
+     37608  data/commentary/Tyndale/EPH.json  [tyndale] verse-keyed
+     26012  data/commentary/Tyndale/EST.json  [tyndale] verse-keyed
+    145465  data/commentary/Tyndale/EXO.json  [tyndale] verse-keyed
+    174160  data/commentary/Tyndale/EZK.json  [tyndale] verse-keyed
+     35921  data/commentary/Tyndale/EZR.json  [tyndale] verse-keyed
+     61408  data/commentary/Tyndale/GAL.json  [tyndale] verse-keyed
+    233752  data/commentary/Tyndale/GEN.json  [tyndale] verse-keyed
+     11866  data/commentary/Tyndale/HAB.json  [tyndale] verse-keyed
+     13771  data/commentary/Tyndale/HAG.json  [tyndale] verse-keyed
+     93241  data/commentary/Tyndale/HEB.json  [tyndale] verse-keyed
+     39837  data/commentary/Tyndale/HOS.json  [tyndale] verse-keyed
+    228904  data/commentary/Tyndale/ISA.json  [tyndale] verse-keyed
+     24277  data/commentary/Tyndale/JAS.json  [tyndale] verse-keyed
+     80294  data/commentary/Tyndale/JDG.json  [tyndale] verse-keyed
+    200864  data/commentary/Tyndale/JER.json  [tyndale] verse-keyed
+    136005  data/commentary/Tyndale/JHN.json  [tyndale] verse-keyed
+     87102  data/commentary/Tyndale/JOB.json  [tyndale] verse-keyed
+     16030  data/commentary/Tyndale/JOL.json  [tyndale] verse-keyed
+     12655  data/commentary/Tyndale/JON.json  [tyndale] verse-keyed
+     87045  data/commentary/Tyndale/JOS.json  [tyndale] verse-keyed
+      7556  data/commentary/Tyndale/JUD.json  [tyndale] verse-keyed
+     12502  data/commentary/Tyndale/LAM.json  [tyndale] verse-keyed
+    124742  data/commentary/Tyndale/LEV.json  [tyndale] verse-keyed
+    174398  data/commentary/Tyndale/LUK.json  [tyndale] verse-keyed
+     17554  data/commentary/Tyndale/MAL.json  [tyndale] verse-keyed
+    179352  data/commentary/Tyndale/MAT.json  [tyndale] verse-keyed
+     29955  data/commentary/Tyndale/MIC.json  [tyndale] verse-keyed
+    169622  data/commentary/Tyndale/MRK.json  [tyndale] verse-keyed
+     13284  data/commentary/Tyndale/NAH.json  [tyndale] verse-keyed  ISSUES: book field NAM differs from file name
+     39502  data/commentary/Tyndale/NEH.json  [tyndale] verse-keyed
+    127792  data/commentary/Tyndale/NUM.json  [tyndale] verse-keyed
+      7355  data/commentary/Tyndale/OBA.json  [tyndale] verse-keyed
+      5790  data/commentary/Tyndale/PHM.json  [tyndale] verse-keyed
+     22002  data/commentary/Tyndale/PHP.json  [tyndale] verse-keyed
+     71452  data/commentary/Tyndale/PRO.json  [tyndale] verse-keyed
+    263260  data/commentary/Tyndale/PSA.json  [tyndale] verse-keyed
+    117750  data/commentary/Tyndale/REV.json  [tyndale] verse-keyed
+     99946  data/commentary/Tyndale/ROM.json  [tyndale] verse-keyed
+     14222  data/commentary/Tyndale/RUT.json  [tyndale] verse-keyed
+     33112  data/commentary/Tyndale/SNG.json  [tyndale] verse-keyed
+     14100  data/commentary/Tyndale/TIT.json  [tyndale] verse-keyed
+     58215  data/commentary/Tyndale/ZEC.json  [tyndale] verse-keyed
+     11777  data/commentary/Tyndale/ZEP.json  [tyndale] verse-keyed
+    563547  data/commentary/Vincent/Vincent_commentary.json  [vincent] whole-Bible array
+     80534  data/commentary/Wesley/1CH.json  [wesley] object of chapter strings
+    107765  data/commentary/Wesley/1CO.json  [wesley] object of chapter strings
+     37988  data/commentary/Wesley/1JN.json  [wesley] object of chapter strings
+    179634  data/commentary/Wesley/1KI.json  [wesley] object of chapter strings
+     32809  data/commentary/Wesley/1PE.json  [wesley] object of chapter strings
+    162063  data/commentary/Wesley/1SA.json  [wesley] object of chapter strings
+     17310  data/commentary/Wesley/1TH.json  [wesley] object of chapter strings
+     31701  data/commentary/Wesley/1TI.json  [wesley] object of chapter strings
+     79101  data/commentary/Wesley/2CH.json  [wesley] object of chapter strings
+     57886  data/commentary/Wesley/2CO.json  [wesley] object of chapter strings
+      3247  data/commentary/Wesley/2JN.json  [wesley] object of chapter strings
+    113465  data/commentary/Wesley/2KI.json  [wesley] object of chapter strings
+     25391  data/commentary/Wesley/2PE.json  [wesley] object of chapter strings
+    113982  data/commentary/Wesley/2SA.json  [wesley] object of chapter strings
+      8236  data/commentary/Wesley/2TH.json  [wesley] object of chapter strings
+     15116  data/commentary/Wesley/2TI.json  [wesley] object of chapter strings
+      2444  data/commentary/Wesley/3JN.json  [wesley] object of chapter strings
+    185501  data/commentary/Wesley/ACT.json  [wesley] object of chapter strings
+     28386  data/commentary/Wesley/AMO.json  [wesley] object of chapter strings
+     20848  data/commentary/Wesley/COL.json  [wesley] object of chapter strings
+     45421  data/commentary/Wesley/DAN.json  [wesley] object of chapter strings
+    181536  data/commentary/Wesley/DEU.json  [wesley] object of chapter strings
+     65400  data/commentary/Wesley/ECC.json  [wesley] object of chapter strings
+     46219  data/commentary/Wesley/EPH.json  [wesley] object of chapter strings
+     25370  data/commentary/Wesley/EST.json  [wesley] object of chapter strings
+    260914  data/commentary/Wesley/EXO.json  [wesley] object of chapter strings
+    174323  data/commentary/Wesley/EZK.json  [wesley] object of chapter strings
+     28466  data/commentary/Wesley/EZR.json  [wesley] object of chapter strings
+     45067  data/commentary/Wesley/GAL.json  [wesley] object of chapter strings
+    396446  data/commentary/Wesley/GEN.json  [wesley] object of chapter strings
+      9945  data/commentary/Wesley/HAB.json  [wesley] object of chapter strings
+      7220  data/commentary/Wesley/HAG.json  [wesley] object of chapter strings
+     88546  data/commentary/Wesley/HEB.json  [wesley] object of chapter strings
+     48868  data/commentary/Wesley/HOS.json  [wesley] object of chapter strings
+    295810  data/commentary/Wesley/ISA.json  [wesley] object of chapter strings
+     28686  data/commentary/Wesley/JAS.json  [wesley] object of chapter strings
+    148726  data/commentary/Wesley/JDG.json  [wesley] object of chapter strings
+    143984  data/commentary/Wesley/JER.json  [wesley] object of chapter strings
+    135489  data/commentary/Wesley/JHN.json  [wesley] object of chapter strings
+    215841  data/commentary/Wesley/JOB.json  [wesley] object of chapter strings
+     16480  data/commentary/Wesley/JOL.json  [wesley] object of chapter strings
+      8109  data/commentary/Wesley/JON.json  [wesley] object of chapter strings
+    166628  data/commentary/Wesley/JOS.json  [wesley] object of chapter strings
+     11056  data/commentary/Wesley/JUD.json  [wesley] object of chapter strings
+     14330  data/commentary/Wesley/LAM.json  [wesley] object of chapter strings
+    172336  data/commentary/Wesley/LEV.json  [wesley] object of chapter strings
+    124098  data/commentary/Wesley/LUK.json  [wesley] object of chapter strings
+     39701  data/commentary/Wesley/MAL.json  [wesley] object of chapter strings
+    210672  data/commentary/Wesley/MAT.json  [wesley] object of chapter strings
+     26521  data/commentary/Wesley/MIC.json  [wesley] object of chapter strings
+     59445  data/commentary/Wesley/MRK.json  [wesley] object of chapter strings
+      9558  data/commentary/Wesley/NAH.json  [wesley] object of chapter strings
+     43459  data/commentary/Wesley/NEH.json  [wesley] object of chapter strings
+    190732  data/commentary/Wesley/NUM.json  [wesley] object of chapter strings
+      5283  data/commentary/Wesley/OBA.json  [wesley] object of chapter strings
+      3479  data/commentary/Wesley/PHM.json  [wesley] object of chapter strings
+     26956  data/commentary/Wesley/PHP.json  [wesley] object of chapter strings
+     76924  data/commentary/Wesley/PRO.json  [wesley] object of chapter strings
+    278661  data/commentary/Wesley/PSA.json  [wesley] object of chapter strings
+    304212  data/commentary/Wesley/REV.json  [wesley] object of chapter strings
+    144130  data/commentary/Wesley/ROM.json  [wesley] object of chapter strings
+     14049  data/commentary/Wesley/RUT.json  [wesley] object of chapter strings
+     49900  data/commentary/Wesley/SNG.json  [wesley] object of chapter strings
+     12506  data/commentary/Wesley/TIT.json  [wesley] object of chapter strings
+     46132  data/commentary/Wesley/ZEC.json  [wesley] object of chapter strings
+      9036  data/commentary/Wesley/ZEP.json  [wesley] object of chapter strings
+  25697603  data/cross-refs.json  [cross-refs-whole] xref
+     21462  data/dict/book_overview_map.json  [overview-map] other
+    520680  data/dict/characters.json  [characters] other
+   1692754  data/dict/naves/naves_topics.json  [naves] other
+   8930947  data/dict/openbible_topic_scores.json  [topic-scores] other
+  14280287  data/dict/strongs_concordance.json  [concordance] other
+    901977  data/dict/strongs_greek.json  [strongs-g] other
+   1249529  data/dict/strongs_hebrew.json  [strongs-h] other
+    211127  data/dict/xref_seed_pool.json  [xref-seed] other
+   4849203  data/kjv.json  [kjv] whole-Bible object
+   4737678  data/web.json  [web] whole-Bible object
+    191926  data/xref/1CH.json  [xref] xref
+    209274  data/xref/1CO.json  [xref] xref
+     75666  data/xref/1JN.json  [xref] xref
+    259486  data/xref/1KI.json  [xref] xref
+     96763  data/xref/1PE.json  [xref] xref
+    234313  data/xref/1SA.json  [xref] xref
+     71437  data/xref/1TH.json  [xref] xref
+     91318  data/xref/1TI.json  [xref] xref
+    258278  data/xref/2CH.json  [xref] xref
+    153818  data/xref/2CO.json  [xref] xref
+      5505  data/xref/2JN.json  [xref] xref
+    237602  data/xref/2KI.json  [xref] xref
+     45413  data/xref/2PE.json  [xref] xref
+    200643  data/xref/2SA.json  [xref] xref
+     36431  data/xref/2TH.json  [xref] xref
+     67535  data/xref/2TI.json  [xref] xref
+      5286  data/xref/3JN.json  [xref] xref
+    492229  data/xref/ACT.json  [xref] xref
+     73441  data/xref/AMO.json  [xref] xref
+     79428  data/xref/COL.json  [xref] xref
+    169117  data/xref/DAN.json  [xref] xref
+    335392  data/xref/DEU.json  [xref] xref
+     94803  data/xref/ECC.json  [xref] xref
+    129745  data/xref/EPH.json  [xref] xref
+     44446  data/xref/EST.json  [xref] xref
+    392678  data/xref/EXO.json  [xref] xref
+    500614  data/xref/EZK.json  [xref] xref
+     71576  data/xref/EZR.json  [xref] xref
+     88635  data/xref/GAL.json  [xref] xref
+    527116  data/xref/GEN.json  [xref] xref
+     27278  data/xref/HAB.json  [xref] xref
+     16964  data/xref/HAG.json  [xref] xref
+    210678  data/xref/HEB.json  [xref] xref
+    124059  data/xref/HOS.json  [xref] xref
+    715197  data/xref/ISA.json  [xref] xref
+     77052  data/xref/JAS.json  [xref] xref
+    158092  data/xref/JDG.json  [xref] xref
+    665265  data/xref/JER.json  [xref] xref
+    431928  data/xref/JHN.json  [xref] xref
+    368150  data/xref/JOB.json  [xref] xref
+     38016  data/xref/JOL.json  [xref] xref
+     18754  data/xref/JON.json  [xref] xref
+    175234  data/xref/JOS.json  [xref] xref
+     18233  data/xref/JUD.json  [xref] xref
+     73190  data/xref/LAM.json  [xref] xref
+    260829  data/xref/LEV.json  [xref] xref
+    417868  data/xref/LUK.json  [xref] xref
+     40083  data/xref/MAL.json  [xref] xref
+    470259  data/xref/MAT.json  [xref] xref
+     65173  data/xref/MIC.json  [xref] xref
+    220119  data/xref/MRK.json  [xref] xref
+     21582  data/xref/NAH.json  [xref] xref
+    111723  data/xref/NEH.json  [xref] xref
+    289774  data/xref/NUM.json  [xref] xref
+     10165  data/xref/OBA.json  [xref] xref
+      8974  data/xref/PHM.json  [xref] xref
+     79219  data/xref/PHP.json  [xref] xref
+    349144  data/xref/PRO.json  [xref] xref
+   1156195  data/xref/PSA.json  [xref] xref
+    250401  data/xref/REV.json  [xref] xref
+    280297  data/xref/ROM.json  [xref] xref
+     22278  data/xref/RUT.json  [xref] xref
+     59849  data/xref/SNG.json  [xref] xref
+     36390  data/xref/TIT.json  [xref] xref
+    120199  data/xref/ZEC.json  [xref] xref
+     34072  data/xref/ZEP.json  [xref] xref
+         1  data/xref/placeholder.txt  [xref] not json

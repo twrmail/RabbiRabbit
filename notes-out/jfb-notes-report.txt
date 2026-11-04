@@ -1,0 +1,140 @@
+JFB -> notes pilot. 2026-10-26T15:32:19.922Z  (read-only on inputs; schema v1)
+Books 66, chapters 1189, notes 23084
+Note kinds: chapter-header 1030, grouped 2763, intro 246, section 1985, section-text 357, verse 16703
+
+== GATE 1: text preservation (rejoin all notes of a chapter == original chapter text, byte for byte)
+   chapters that fail: 0
+   empty notes: 0
+
+== GATE 2a: automatic invariants (flags for review, not proof of error)
+   coverage outside the KJV chapter's verses: 4
+      ACT 15 JFB-ACT-15-32 section 36-46 (KJV max verse 41)
+      ACT 16 JFB-ACT-16-3 verse 41 (KJV max verse 40)
+      JER 21 JFB-JER-21-2 section 1-44 (KJV max verse 14)
+      PSA 68 JFB-PSA-68-28 grouped 32-36 (KJV max verse 35)
+   verse notes out of order inside a chapter: 52
+      ACT 16 JFB-ACT-16-4 starts at 1 after 41
+      ACT 16 JFB-ACT-16-5 starts at 3 after 41
+      ACT 16 JFB-ACT-16-6 starts at 4 after 41
+      ACT 16 JFB-ACT-16-8 starts at 6 after 41
+      ACT 16 JFB-ACT-16-9 starts at 7 after 41
+      ACT 16 JFB-ACT-16-10 starts at 8 after 41
+      ACT 16 JFB-ACT-16-11 starts at 9 after 41
+      ACT 16 JFB-ACT-16-12 starts at 10 after 41
+      ACT 16 JFB-ACT-16-13 starts at 11 after 41
+      ACT 16 JFB-ACT-16-14 starts at 12 after 41
+      ACT 16 JFB-ACT-16-16 starts at 12 after 41
+      ACT 16 JFB-ACT-16-17 starts at 13 after 41
+      ACT 16 JFB-ACT-16-18 starts at 14 after 41
+      ACT 16 JFB-ACT-16-19 starts at 15 after 41
+      ACT 16 JFB-ACT-16-20 starts at 16 after 41
+      ACT 16 JFB-ACT-16-21 starts at 17 after 41
+      ACT 16 JFB-ACT-16-22 starts at 18 after 41
+      ACT 16 JFB-ACT-16-23 starts at 19 after 41
+      ACT 16 JFB-ACT-16-24 starts at 20 after 41
+      ACT 16 JFB-ACT-16-25 starts at 21 after 41
+      ACT 16 JFB-ACT-16-26 starts at 22 after 41
+      ACT 16 JFB-ACT-16-27 starts at 23 after 41
+      ACT 16 JFB-ACT-16-28 starts at 24 after 41
+      ACT 16 JFB-ACT-16-29 starts at 25 after 41
+      ACT 16 JFB-ACT-16-30 starts at 26 after 41
+   two single-verse notes for the same verse: 14
+      HEB 13:7 (JFB-HEB-13-4 and JFB-HEB-13-9)
+      MAT 5:3 (JFB-MAT-5-5 and JFB-MAT-5-6)
+      MAT 27:51 (JFB-MAT-27-17 and JFB-MAT-27-18)
+      MRK 14:70 (JFB-MRK-14-41 and JFB-MRK-14-42)
+      PRO 1:2 (JFB-PRO-1-3 and JFB-PRO-1-11)
+      PRO 1:3 (JFB-PRO-1-4 and JFB-PRO-1-12)
+      PRO 1:4 (JFB-PRO-1-5 and JFB-PRO-1-13)
+      PRO 1:6 (JFB-PRO-1-7 and JFB-PRO-1-15)
+      PSA 1:1 (JFB-PSA-1-2 and JFB-PSA-1-8)
+      PSA 1:2 (JFB-PSA-1-3 and JFB-PSA-1-9)
+      PSA 1:3 (JFB-PSA-1-4 and JFB-PSA-1-10)
+      PSA 1:4 (JFB-PSA-1-5 and JFB-PSA-1-11)
+      PSA 1:5 (JFB-PSA-1-6 and JFB-PSA-1-12)
+      ROM 1:18 (JFB-ROM-1-22 and JFB-ROM-1-24)
+
+== Cross-check: notes resolver vs v32 raw-text extractor, every KJV verse (31102)
+   identical text and method: 31090   different: 12   (verses in chapters JFB lacks: 0)
+   by method (notes resolver): grouped 8135, none 403, pointer 708, section 5170, verse 16686
+   by method (v32 reference):  grouped 8133, none 403, pointer 708, section 5170, verse 16688
+      HEB 13:7
+      PRO 1:1
+      PRO 1:2
+      PRO 1:3
+      PRO 1:4
+      PRO 1:5
+      PRO 1:6
+      PSA 1:1
+      PSA 1:2
+      PSA 1:3
+      PSA 1:4
+      PSA 1:5
+
+== GATE 2b: fixed cases with expected results
+   PASS  JHN 3:16  expect verse "16. For God so loved"  got verse "16. For God so loved, &c.—What proclamation of the"
+   PASS  JHN 3:15  expect grouped "[JFB comments on these verses together: "  got grouped "[JFB comments on these verses together: 14-16] | 14-"
+   PASS  ROM 8:28  expect verse "28. And"  got verse "28. And—or, "Moreover," or "Now"; noting a transit"
+   PASS  GEN 1:1  expect verse "1. In the beginning"  got verse "1. In the beginning—a period of remote and unknown"
+   PASS  GEN 1:7  expect section "[JFB comments on verses 6-8 together as "  got section "[JFB comments on verses 6-8 together as one passag"
+   PASS  GEN 1:10  expect section "[JFB comments on verses 9-13 together as"  got section "[JFB comments on verses 9-13 together as one passa"
+   PASS  MAT 22:15  expect pointer  got pointer
+   PASS  PSA 23:1  expect verse "1."  got verse "1. Christ's relation to His people is often repres"
+   PASS  PSA 1:1  expect verse "1. Blessed"  got verse "1. Blessed—literally, "oh, the happiness"—an excla"
+   PASS  PRO 1:2  expect verse "2. To know"  got verse "2. To know … instruction—literally, "for knowing,""
+   PASS  HEB 13:7  expect verse "7. Remember"  got verse "7. Remember—so as to imitate: not to invoke in pra"
+   PASS  MAT 5:3  expect verse "3. Blessed"  got verse "3. Blessed—Of the two words which our translators "
+   fixed cases failing: 0 of 12
+
+== Suspect notes (anchorStatus=suspect): 13   (rule A = intro outline duplicated after heading; rule B = breaks ascending order)
+   ACT 16 JFB-ACT-16-3 [41] B  "41. he went through Syria and Cilicia—(See on Ac 15:23). Tak"
+   HEB 13 JFB-HEB-13-4 [7] B  "7. Two manifestations of "brotherly love," hospitality and c"
+   PRO 1 JFB-PRO-1-2 [1] A  "1. The first contains nine chapters, in which are discussed "
+   PRO 1 JFB-PRO-1-3 [2] A  "2. The antithetic and synthetic parallelism to the exclusion"
+   PRO 1 JFB-PRO-1-4 [3] A  "3. Pr 22:16-24:34 present a series of admonitions as if addr"
+   PRO 1 JFB-PRO-1-5 [4] A  "4. Pr 25:1-29:27 are entitled to be regarded as a distinct p"
+   PRO 1 JFB-PRO-1-6 [5] A  "5. Pr 30:1-33 is peculiar not only for its authorship, but a"
+   PRO 1 JFB-PRO-1-7 [6] A  "6. To a few pregnant but concise admonitions, suitable for a"
+   PSA 1 JFB-PSA-1-2 [1] A  "1. Didactic. | (1) Good and bad men: Psalms 1, 5, 7, 9-12, 14,"
+   PSA 1 JFB-PSA-1-3 [2] A  "2. Praise. | (1) For God's goodness generally to Israel: Psalm"
+   PSA 1 JFB-PSA-1-4 [3] A  "3. Devotional—expressive of | (1) Penitence: Psalms 6, 25, 32,"
+   PSA 1 JFB-PSA-1-5 [4] A  "4. Historical. Psalms 78, 105, 106. | "
+   PSA 1 JFB-PSA-1-6 [5] A  "5. Prophetical. Psalms 2, 16, 22, 40, 45, 68, 69, 72, 97, 11"
+
+== Verses where the notes resolver differs from v32: 12   (full list: diff-vs-v32.tsv)
+   HEB 13:7
+      v32   verse: 7. Two manifestations of "brotherly love," hospitality and care for th
+      notes verse: 7. Remember—so as to imitate: not to invoke in prayer, as Rome teaches
+   PRO 1:1
+      v32   verse: 1. The first contains nine chapters, in which are discussed and enforc
+      notes grouped: [JFB comments on these verses together: 1-4] | 1-4. (See Introduction, P
+   PRO 1:2
+      v32   verse: 2. The antithetic and synthetic parallelism to the exclusion of the sy
+      notes verse: 2. To know … instruction—literally, "for knowing," that is, such is th
+   PRO 1:3
+      v32   verse: 3. Pr 22:16-24:34 present a series of admonitions as if addressed to a
+      notes verse: 3. To receive … of wisdom—For receiving that discipline which discreti
+   PRO 1:4
+      v32   verse: 4. Pr 25:1-29:27 are entitled to be regarded as a distinct portion, fo
+      notes verse: 4. simple—one easily led to good or evil; so the parallel. | young man—o
+   PRO 1:5
+      v32   verse: 5. Pr 30:1-33 is peculiar not only for its authorship, but as a specim
+      notes grouped: [JFB comments on these verses together: 5, 6] | 5, 6. Such writings the 
+   PRO 1:6
+      v32   verse: 6. To a few pregnant but concise admonitions, suitable for a king, is 
+      notes verse: 6. To understand—so as to … such will be the result. | interpretation—(C
+   PSA 1:1
+      v32   verse: 1. Didactic. | (1) Good and bad men: Psalms 1, 5, 7, 9-12, 14, 15, 17, 2
+      notes verse: 1. Blessed—literally, "oh, the happiness"—an exclamation of strong emo
+   PSA 1:2
+      v32   verse: 2. Praise. | (1) For God's goodness generally to Israel: Psalms 46, 48, 
+      notes verse: 2. law—all of God's word then written, especially the books of Moses (
+   PSA 1:3
+      v32   verse: 3. Devotional—expressive of | (1) Penitence: Psalms 6, 25, 32, 38, 51, 1
+      notes verse: 3. like a tree— (Jer 17:7, 8). | planted—settled, fast. | by—or, "over." | t
+   PSA 1:4
+      v32   verse: 4. Historical. Psalms 78, 105, 106.
+      notes verse: 4. not so—either as to conduct or happiness. | like the chaff—which, by 
+   PSA 1:5
+      v32   verse: 5. Prophetical. Psalms 2, 16, 22, 40, 45, 68, 69, 72, 97, 110, 118. | No
+      notes verse: 5. stand in the judgment—be acquitted. They shall be driven from among

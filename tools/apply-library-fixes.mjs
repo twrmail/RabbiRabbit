@@ -17,7 +17,7 @@ let abort = false
 const patchCache = {}
 const laterPatch = r => (patchCache[r.patchFile] ||= JSON.parse(fs.readFileSync(path.join(root, r.patchFile), 'utf8')))
 const laterRuleOwns = (rule, code, chapter, h) => fixes.rules.slice(fixes.rules.indexOf(rule) + 1).some(r2 =>
-  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks'].includes(r2.op) &&
+  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks', 'hold-blocks'].includes(r2.op) &&
   laterPatch(r2).chapters.some(e => e.book === code && e.chapter === chapter && e.afterSha256 === h))
 for (const rule of fixes.rules) {
   const counts = {}, pending = []
@@ -189,6 +189,31 @@ for (const rule of fixes.rules) {
         if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
         if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
         const out = ent.prepend + '\n\n' + ch.commentary; bump('chapter arguments added')
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        return { ...ch, commentary: out }
+      }) }
+    } else if (rule.op === 'hold-blocks') {
+      // a tail that is not commentary on its chapter is cut and kept, word for word, in the held file (rule.heldFile). The patch records each
+      // chapter's sha256 before and after, the cut (offset, length, sha256) and the ids of the held items. Before anything is cut the tool
+      // checks that every held item hashes to its own recorded sha256 and that the items, joined in order, are exactly the text being cut,
+      // so nothing can be cut without being kept. A chapter already matching "after" is left alone; one matching neither stops the tool.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const held = JSON.parse(fs.readFileSync(path.join(root, rule.heldFile), 'utf8')).items
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) return ch
+        const h = H(ch.commentary)
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        const tail = ch.commentary.slice(ent.cut.offset)
+        if (tail.length !== ent.cut.length || H(tail) !== ent.cut.sha256) throw new Error(`${code} ${ch.chapter}: the tail to cut does not match the recorded length and sha256; nothing written`)
+        const items = ent.heldIds.map(id => held.find(i => i.id === id))
+        if (items.some(i => !i)) throw new Error(`${code} ${ch.chapter}: a held item named in the patch is missing from the held file; nothing written`)
+        if (items.some(i => H(i.text) !== i.sha256)) throw new Error(`${code} ${ch.chapter}: a held item does not match its own sha256; nothing written`)
+        if (items.map(i => i.text).join('') !== tail) throw new Error(`${code} ${ch.chapter}: the held items do not add up to the text being cut; nothing written`)
+        const out = ch.commentary.slice(0, ent.cut.offset).replace(/\s+$/, ''); bump('back-matter tails held and cut')
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }

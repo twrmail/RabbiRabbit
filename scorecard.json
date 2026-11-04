@@ -1,0 +1,2154 @@
+{
+ "generatedFrom": "library",
+ "sourceSnapshot": "885bb01f336336b7",
+ "sources": [
+  {
+   "id": "mhc",
+   "name": "Matthew Henry",
+   "kind": "commentary",
+   "scope": "full",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 books, 1189 chapters vs KJV structure 1189; missing books 0, missing chapters 0, extra/unknown chapters 0 , empty chapters 0 , duplicates 0",
+      "[measured] structure only: this cannot detect a chapter that is present but incomplete (see gate 3)"
+     ]
+    ],
+    "2": [
+     "FAIL",
+     [
+      "[recorded] file says: \"Matthew Henry's Commentary (public domain; origin and edition not recorded in the original files)\"",
+      "[measured] recorded: year NO, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "The data file itself says the origin/edition was never recorded: a known defect.",
+      "[provenance register] evidence level \"witnessed\" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL mhc1.xml (measured; all 1,189 chapters compared after repairs; 6 differences of 4+ words remain, all Bible-reference lists)",
+      "[provenance register] 3 open question(s): Where did the original repository copy come from? | Is the Revell edition claim correct? | 75 restored quotation blocks have a CCEL witness (library/patches/henry-blocks.json); the rest of the text does not."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary.",
+      "[recorded] fix recorded in library/fixes.json: mhc-1co16-subscription-brackets ({\"&lt;&lt;\":1,\"&gt;&gt;\":1} changes)",
+      "[recorded] fix recorded in library/fixes.json: henry-restore-quotation-blocks ({\"quotation blocks inserted\":75} changes)",
+      "[earlier] Henry audit baseline (repo-kit, Oct 19 copy): 4 HTML fragments in 1 Cor, 6 verse overlaps, 7 stray words, 242 unusual chapter endings"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/MHC; different: 0 ; no original found: 0 ; metadata-only differences: {\"book\":66,\"sourceId\":66,\"source\":66}; recorded fixes re-applied to the originals before comparing: mhc-1co16-subscription-brackets, henry-restore-quotation-blocks",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "FAIL",
+     [
+      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
+      ""
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain",
+      "Public-domain status depends on the edition, and the edition is not recorded.",
+      "[provenance register] rights claim \"public domain\" from CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2), scope: CCEL transcription; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1189,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 12087,
+     "n": 2
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Matthew Henry's Commentary (public domain; origin and edition not recorded in the original files)",
+     "edition": false,
+     "year": false,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Identify the edition (Concise vs Complete), then convert to the notes shape as the reference implementation; install the report-only workflow."
+   ]
+  },
+  {
+   "id": "jfb",
+   "name": "Jamieson, Fausset & Brown",
+   "kind": "commentary",
+   "scope": "full",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 books, 1189 chapters vs KJV structure 1189; missing books 0, missing chapters 0, extra/unknown chapters 0 , empty chapters 0 , duplicates 0",
+      "[measured] structure only: this cannot detect a chapter that is present but incomplete (see gate 3)"
+     ]
+    ],
+    "2": [
+     "FAIL",
+     [
+      "[recorded] file says: \"Jamieson, Fausset & Brown Commentary (public domain; origin not recorded in the original files)\"",
+      "[measured] recorded: year NO, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "The data file itself says the origin/edition was never recorded: a known defect.",
+      "[provenance register] evidence level \"witnessed\" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL jfb.xml (measured; 1,186 chapters compared; share of CCEL text found in ours at least 0.986 in every chapter; 163 differences recorded in claude/jfb-ccel-word-differences.tsv, made up of 66 title-line differences and 97 word differences)",
+      "[provenance register] 2 open question(s): Where did our original text originate? | 97 word-level differences (of the 163 recorded; the other 66 are title lines) await adjudication. Only objective errors in ours were fixed."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary.",
+      "[recorded] fix recorded in library/fixes.json: jfb-mic5-replacement-char ({\"appearance o� Messiah\":1} changes)",
+      "[recorded] fix recorded in library/fixes.json: jfb-frac12-entity ({\"&frac12;\":4} changes)",
+      "[recorded] fix recorded in library/fixes.json: jfb-ocr-typos ({\"as an stoning sacrifice\":1,\"The Sin of ELl'S Sons\":1} changes)"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/JFB; different: 0 ; no original found: 0 ; metadata-only differences: {\"book\":66,\"sourceId\":66,\"source\":66}; recorded fixes re-applied to the originals before comparing: jfb-frac12-entity, jfb-ocr-typos, jfb-mic5-replacement-char",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      "[earlier] JFB notes pilot: rejoin byte-exact on 1,189/1,189 chapters, validator PASS in Tom's Codespace (Oct 26); output not in the repo"
+     ]
+    ],
+    "5": [
+     "FAIL",
+     [
+      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
+      "[earlier] JFB notes shape with explicit coverage built and validated (pilot, Oct 26); it also found 12 verses the old reader served wrongly"
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain",
+      "Public-domain status depends on the edition, and the edition is not recorded.",
+      "[provenance register] rights claim \"public domain\" from CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2), scope: CCEL transcription; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1189,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 4861,
+     "n": 3
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Jamieson, Fausset & Brown Commentary (public domain; origin not recorded in the original files)",
+     "edition": false,
+     "year": false,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Add the validated notes records to the repo; serve whole notes instead of cutting at 2,000 characters; record edition/origin."
+   ]
+  },
+  {
+   "id": "calvin",
+   "name": "Calvin's Commentaries",
+   "kind": "commentary",
+   "scope": "partial-by-design",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 48/66 books present; 28 chapters missing inside present books (EZK 22, EZK 23, EZK 24, EZK 25, EZK 26, EZK 27, EZK 28, EZK 29, EZK 30, EZK 31, EZK 32, EZK 33, EZK 34, EZK 35, EZK 36, EZK 37, EZK 38, EZK 39, EZK 40, EZK 41, EZK 42, EZK 43, EZK 44, EZK 45, EZK 46, EZK 47, EZK 48, JER 52); extra/unknown chapters 0; empty chapters 0",
+      "[recorded] declared scope: 47-48 books (Calvin did not comment on every book)",
+      "Scope is partial by design: whether every book/chapter the author wrote is present needs the original work's table of contents, which is not in the repo."
+     ]
+    ],
+    "2": [
+     "FAIL",
+     [
+      "[recorded] file says: \"Calvin's Commentaries (public domain; origin not recorded in the original files)\"",
+      "[measured] recorded: year NO, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "The data file itself says the origin/edition was never recorded: a known defect.",
+      "[provenance register] evidence level \"witnessed\" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL calcom01-45 (45 volumes) (measured; 285 of 286 chapter boundaries have an explicit CCEL chapter heading; 42 blocks moved with witness coverage at least 0.95)",
+      "[provenance register] 4 open question(s): Is our copy from the same translation and edition? | Baker 1996 is a modern printing; does that add any rights claim to its typesetting? | Acts and Isaiah 1-16 compared with CCEL (no commentary missing). Exodus-Deuteronomy, Matthew-Luke, Psalms, Jonah, Micah, Nahum, Obadiah, Jude, Malachi and Philemon still need their own CCEL readers. | Chapter-opening translations (Calvin's translation of the chapter, English with Latin) exist in CCEL and not in our copy; see open issue calvin-chapter-opening-translations in library/fixes.json. They are not in data/ or library/, so if imported they are newly sourced CCEL material needing their own provenance and rights review. The Calvin repairs so far drew moved text from our own copy; the two Acts arguments are the only CCEL-sourced text added."
+     ]
+    ],
+    "3": [
+     "FAIL",
+     [
+      "[measured] 3 chapters with literal HTML entities: &gt; x6, &amp; x4, &lt; x3 (e.g. GEN 47, HEB 13, PSA 6)",
+      "[recorded] open issue calvin-chapter-opening-translations (ISA 1-16 measured (16 chapters, about 14,800 words); about 240 chapters in 26 books estimated, provisional): Chapter-opening translations: CCEL contains Calvin's translation of the biblical chapter, generally with Latin alongside English. These blocks are absent from the repository copy. Comparison of Isaiah 1-16 found no missing commentary; the large word-count difference is explained by these translations and by translator footnotes retained in the repository copy. Do not treat the translations as missing commentary or merge them into commentary text. Revisit as a separate content type when designing the comparison-site schema. Estimated occurrence across Calvin's corpus (about 159,000 words) comes from an earlier comparison that pre-dates some repairs and remains provisional pending complete volume coverage. If imported later, they are newly sourced CCEL translation material and need their own provenance and rights review: they are in neither data/ nor library/. Not auto-fixed: the translations are a different content type from commentary; adding them to the chapter text would distort verse-level comparison, and no field for them exists yet.",
+      "[recorded] open issue calvin-gen46-greek-entities (GEN 47 and 2 other chapters (HEB 13, PSA 6)): 15 literal HTML entity sequences ('&lt;' x3, '&gt;' x6 and '&amp;' x4 as counted by the scorecard in these chapters), mostly inside garbled Greek transliteration (e.g. 'de&lt; pro&lt;v'), double-encoded from an older Greek encoding. CCEL's copy has the same garbling in Genesis 47; the chapters it replaced (GEN 46, EZK 14, JHN 12 and others) no longer show it. Not auto-fixed: Decoding the entities would not recover the Greek; the passage needs a clean copy of the Greek, not a text substitution.",
+      "[recorded] fix recorded in library/fixes.json: calvin-restore-truncated-chapters ({\"chapters replaced\":31} changes)",
+      "[recorded] fix recorded in library/fixes.json: calvin-chapter-boundaries-from-ccel ({\"chapters replaced\":286} changes)",
+      "[recorded] fix recorded in library/fixes.json: calvin-move-front-matter-and-chapter-openings ({\"misplaced tails cut\":10,\"chapters opened with moved text\":42} changes)",
+      "[recorded] fix recorded in library/fixes.json: calvin-acts-chapter-arguments ({\"chapter arguments added\":2} changes)",
+      "[recorded] fix recorded in library/fixes.json: calvin-duplicate-chapter-tails ({\"misplaced tails cut\":7} changes)"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 48 of 48 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Calvin; different: 0 ; no original found: 0 ; metadata-only differences: {\"book\":48,\"sourceId\":48,\"source\":48}; recorded fixes re-applied to the originals before comparing: calvin-chapter-boundaries-from-ccel, calvin-move-front-matter-and-chapter-openings, calvin-restore-truncated-chapters, calvin-duplicate-chapter-tails, calvin-acts-chapter-arguments",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "FAIL",
+     [
+      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
+      ""
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain",
+      "Public-domain status depends on the edition, and the edition is not recorded.",
+      "[provenance register] rights claim \"public domain\" from CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2), scope: CCEL transcriptions, all 45 volumes; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 48,
+    "parseErrors": [],
+    "chapters": 819,
+    "missingBooks": 18,
+    "missingChaptersInPresentBooks": 28,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 3721,
+     "n": 2
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 3,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Calvin's Commentaries (public domain; origin not recorded in the original files)",
+     "edition": false,
+     "year": false,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Audit chapter coverage per book (and Genesis 1:1); record origin and edition."
+   ]
+  },
+  {
+   "id": "scofield",
+   "name": "Scofield Reference Notes (1917)",
+   "kind": "commentary",
+   "scope": "partial-by-design",
+   "status": "incomplete",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 65/66 books present; 246 chapters missing inside present books (1CH 4, 1CH 8, 1CH 10, 1CH 14, 1CH 15, 1CH 17, 1CH 19, 1CH 22, 1CH 24, 1CH 25, 1CH 26, 1KI 5, 1KI 9, 1KI 10, 1KI 14, 1KI 21, 1SA 4, 1SA 5, 1SA 8, 1SA 9, 1SA 10, 1SA 11, 1SA 14, 1SA 18, 1SA 19, 1SA 20, 1SA 22, 1SA 24, 1SA 25, 1SA 26, 1SA 27, 1SA 30, 2CH 8, 2CH 12, 2CH 18, 2CH 23, 2CH 26, 2CH 27, 2CH 28, 2CH 33, 2CO 10, 2KI 2, 2KI 3, 2KI 6, 2KI 7, 2KI 9, 2KI 11, 2KI 12, 2KI 13, 2KI 16, 2SA 5, 2SA 8, 2SA 10, 2SA 11, 2SA 16, 2SA 17, 2SA 20, 2TH 3, AMO 8, DEU 11, ...); extra/unknown chapters 0; empty chapters 0",
+      "[recorded] declared scope: selective notes",
+      "Scope is partial by design: whether every book/chapter the author wrote is present needs the original work's table of contents, which is not in the repo."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Scofield Reference Notes (1917), Public Domain\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 2 open question(s): Verify the actual text is the 1917 edition and not the copyrighted 1967 New Scofield. | No witness compared."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (942 chapters)",
+      "[measured] 98 very short chapters (under 40 characters): expected for selective notes, not counted as a defect",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 65 of 65 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Scofield; different: 0 ; no original found: 0 ; metadata-only differences: {\"sourceId\":65}",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "FAIL",
+     [
+      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
+      "Scofield notes are anchored to words, not verses: verse coverage may never apply; label it as word-anchored."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 65,
+    "parseErrors": [],
+    "chapters": 942,
+    "missingBooks": 1,
+    "missingChaptersInPresentBooks": 246,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 35,
+     "n": 23
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 98,
+    "provenanceRecorded": {
+     "text": "Scofield Reference Notes (1917), Public Domain",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Label as word-anchored; add 3 John only if the original has notes there; no verse coverage claims."
+   ]
+  },
+  {
+   "id": "wesley",
+   "name": "Wesley's Explanatory Notes",
+   "kind": "commentary",
+   "scope": "incomplete",
+   "status": "incomplete",
+   "gates": {
+    "1": [
+     "FAIL",
+     [
+      "[measured] 66/66 books, 1188 chapters; missing chapters in present books: 1 (2SA 24); chapters outside KJV structure: none; empty: 0",
+      "[recorded] manifest status: incomplete"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Wesley's Explanatory Notes on the Bible (1765)\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"witnessed\" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL ccelw/notes.xml (measured; 125 word disagreements to adjudicate)",
+      "[provenance register] 2 open question(s): Can the original copy's source be recovered? | 2 Samuel 24: probably no notes; unconfirmed."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1188 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary.",
+      "[recorded] open issue wesley-2sa24-missing (2SA 24): No notes for 2 Samuel 24, although Wesley's own introduction mentions it. Not auto-fixed: Absent from both our copy and CCEL's copy. Needs a third source.",
+      "[recorded] fix recorded in library/fixes.json: wesley-2jn-chapter-number ({\"5\":1} changes)",
+      "[recorded] fix recorded in library/fixes.json: wesley-lev1-from-introduction ({\"Directions concerning burnt-offerings\":1} changes)",
+      "[recorded] fix recorded in library/fixes.json: wesley-chapter-structure ({\"chapters split out\":51,\"tails cut\":2} changes)",
+      "[recorded] fix recorded in library/fixes.json: wesley-restore-headword-dashes ({\"dashes inserted\":544} changes)"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Wesley; different: 0 ; no original found: 0 ; metadata-only differences: {\"sourceId\":66}; recorded fixes re-applied to the originals before comparing: wesley-restore-headword-dashes, wesley-2jn-chapter-number, wesley-lev1-from-introduction, wesley-chapter-structure",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "FAIL",
+     [
+      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
+      "Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain\" from CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2), scope: CCEL transcription; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1188,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 1,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 79,
+     "n": 2
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Wesley's Explanatory Notes on the Bible (1765)",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Recover the missing Psalms 100-150 and move 2 John to chapter 1 from a verified copy, recording what changed; then notes shape."
+   ]
+  },
+  {
+   "id": "spurgeon",
+   "name": "Spurgeon, Treasury of David",
+   "kind": "commentary",
+   "scope": "partial-by-design",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 1/66 books present; 0 chapters missing inside present books (); extra/unknown chapters 0; empty chapters 0",
+      "[recorded] declared scope: Psalms only",
+      "Scope is partial by design: whether every book/chapter the author wrote is present needs the original work's table of contents, which is not in the repo."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Spurgeon's Treasury of David (1885), Public Domain -- rebuilt from lyteword/chspurgeon-tod (CC0 1.0), real per-verse Exposition content, verified agai\"",
+      "[measured] recorded: year yes, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: lyteword/chspurgeon-tod (recorded-only)",
+      "[provenance register] 1 open question(s): Confirm our actual text matches the identified source; licence of that repository not read this session."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (150 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary.",
+      "[recorded] fix recorded in library/fixes.json: spurgeon-html-entities ({\"&mdash;\":4036,\"&amp;\":23} changes)"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 1 of 1 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/TDavid; different: 0 ; no original found: 0 ; metadata-only differences: {\"sourceId\":1}; recorded fixes re-applied to the originals before comparing: spurgeon-html-entities",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "UNKNOWN",
+     [
+      "[measured] verse-keyed; 2435 of 2461 verses (in books present) have an entry; keys outside the chapter's real range: 0 ; non-numeric keys 0",
+      "[measured] allowed variants: 0 keys numbered 0 (psalm superscriptions: ); 0 keys one past the KJV verse count (a different versification: none)",
+      "Keys are valid; whether the text under key N is about verse N is not independently validated."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain (conversion CC0)",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"text public domain; conversion CC0\" from repo manifest and file header, scope: conversion and text; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 1,
+    "parseErrors": [],
+    "chapters": 150,
+    "missingBooks": 65,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 4088,
+     "n": 1
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Spurgeon's Treasury of David (1885), Public Domain -- rebuilt from lyteword/chspurgeon-tod (CC0 1.0), real per-verse Exposition content, verified against source",
+     "edition": true,
+     "year": true,
+     "origin": true,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Check that text under each verse key matches that verse (sampled review); record upstream hash."
+   ]
+  },
+  {
+   "id": "barnes-nt",
+   "name": "Barnes' Notes (New Testament only)",
+   "kind": "commentary",
+   "scope": "partial-by-design",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 27/66 books present; 0 chapters missing inside present books (); extra/unknown chapters 0; empty chapters 0",
+      "[recorded] declared scope: 27 New Testament books only; never present as whole-Bible Barnes",
+      "Scope is partial by design: whether every book/chapter the author wrote is present needs the original work's table of contents, which is not in the repo."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)\"",
+      "[measured] recorded: year NO, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or edition recorded; no witness compared."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (260 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 27 of 27 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Barnes_NT; different: 0 ; no original found: 0 ; metadata-only differences: {\"sourceId\":27}",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "UNKNOWN",
+     [
+      "[measured] verse-keyed; 7102 of 7957 verses (in books present) have an entry; keys outside the chapter's real range: 0 ; non-numeric keys 0",
+      "[measured] allowed variants: 0 keys numbered 0 (psalm superscriptions: ); 0 keys one past the KJV verse count (a different versification: none)",
+      "Keys are valid; whether the text under key N is about verse N is not independently validated."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: public domain",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 27,
+    "parseErrors": [],
+    "chapters": 260,
+    "missingBooks": 39,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 22768,
+     "n": 2
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "edition": false,
+     "year": false,
+     "origin": true,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Confirm which edition CCEL supplied; sampled anchoring review; consider it a candidate to replace the retired whole-Bible Barnes for the NT."
+   ]
+  },
+  {
+   "id": "tyndale",
+   "name": "Tyndale Open Study Notes",
+   "kind": "commentary",
+   "scope": "partial-by-design",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 66/66 books present; 1 chapters missing inside present books (EXO 36); extra/unknown chapters 0; empty chapters 0",
+      "[recorded] declared scope: selective notes",
+      "Scope is partial by design: whether every book/chapter the author wrote is present needs the original work's table of contents, which is not in the repo."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Tyndale Open Study Notes, © 2022 by Tyndale House Publishers -- CC BY-SA 4.0, see http://creativecommons.org/licenses/by-sa/4.0 and http://www.tyndale\"",
+      "[measured] recorded: year yes, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: freely-given.org (page-read)",
+      "[provenance register] 2 open question(s): Check whether the Worker shows the attribution. | Exodus 36 gap (repo roadmap)."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1188 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Tyndale; different: 0 ; no original found: 0 ; metadata-only differences: {\"sourceId\":66,\"book\":1,\"originalBook\":1}",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "UNKNOWN",
+     [
+      "[measured] verse-keyed; 15173 of 31064 verses (in books present) have an entry; keys outside the chapter's real range: 0 ; non-numeric keys 0",
+      "[measured] allowed variants: 7 keys numbered 0 (psalm superscriptions: PSA 7:0, PSA 9:0, PSA 30:0, PSA 51:0, ...); 2 keys one past the KJV verse count (a different versification: 3JN 1:15, REV 12:18)",
+      "Keys are valid; whether the text under key N is about verse N is not independently validated."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence: CC BY-SA 4.0, (c) 2022 Tyndale House Publishers; attribution and share-alike required",
+      "Worker file not given, so the attribution could not be checked.",
+      "Share-alike: our converted files are reshaped copies; if they count as adaptations they must be offered under CC BY-SA 4.0 or a compatible licence, with changes indicated. Not yet reviewed.",
+      "[provenance register] rights claim \"CC BY-SA 4.0\" from page read: freely-given.org says 'Creative Commons Attribution-ShareAlike 4.0 International License'; our files carry the same notice, scope: the notes; applies to our copy: not-established; checked 2026-11-03",
+      "[provenance register] obligations: Attribute to Tyndale House Publishers (2022), CC BY-SA 4.0, with a licence link, and indicate that changes were made. | Our files are reshaped copies of the notes. If they count as adaptations, they must be distributed under CC BY-SA 4.0 (or a compatible licence). Whether they are adaptations, and what licence the repo applies to them, has not been reviewed."
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1188,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 1,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 821,
+     "n": 3
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Tyndale Open Study Notes, © 2022 by Tyndale House Publishers -- CC BY-SA 4.0, see http://creativecommons.org/licenses/by-sa/4.0 and http://www.tyndaleopenresour",
+     "edition": true,
+     "year": true,
+     "origin": true,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Settle share-alike for the adapted files and attribution wording with the licence text; sampled anchoring review."
+   ]
+  },
+  {
+   "id": "xref",
+   "name": "OpenBible cross-references",
+   "kind": "xref",
+   "scope": "full",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 files, refs per file read"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"OpenBible.info CC-BY\"",
+      "[measured] recorded: year NO, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Authoritative licence page could not be read on 2026-11-03 (redirect loop)."
+     ]
+    ],
+    "3": [
+     "N/A",
+     [
+      "Cross-reference table: no prose to damage; row validity is gate 5."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/xref; different: 0 ; no original found: 0 ; metadata-only differences: {\"sourceId\":66}",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
+      ""
+     ]
+    ],
+    "5": [
+     "PASS",
+     [
+      "[measured] 255675 cross-reference rows; 0 with a verse or chapter that does not exist even allowing a different versification; 1 rows point one verse past the KJV count (3JN 1:15 -> JHN 10:3): different versification, listed not hidden"
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence: CC BY (OpenBible.info)",
+      "Worker file not given, so the attribution could not be checked.",
+      "",
+      "[provenance register] rights claim \"CC BY (OpenBible.info)\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03",
+      "[provenance register] obligations: CC BY credit to OpenBible.info (to confirm)."
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 66,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 1123,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 0,
+     "n": 0
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "OpenBible.info CC-BY",
+     "edition": false,
+     "year": false,
+     "origin": true,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Record dataset version and date; attribution already checked in the Worker."
+   ]
+  },
+  {
+   "id": "barnes-legacy",
+   "name": "Barnes' Notes (old whole-Bible file)",
+   "kind": "commentary",
+   "scope": "retired",
+   "status": "retired",
+   "gates": {
+    "1": [
+     "FAIL",
+     [
+      "[recorded] truncated: almost every chapter is exactly 2,000 characters",
+      "[measured] 65 files, 1181 chapters; 80% of chapters have the identical length 2000"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Barnes' Notes on the Bible (1834), Public Domain\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Retired; never served. Licence to settle when a replacement source is chosen."
+     ]
+    ],
+    "3": [
+     "FAIL",
+     [
+      "[measured] truncation signature: 942 of 1181 chapters (80%) have the identical length 2000"
+     ]
+    ],
+    "4": [
+     "N/A",
+     [
+      "Retired and never served."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ],
+    "6": [
+     "N/A",
+     [
+      "Retired and never served; settle licence when choosing replacements.",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 65,
+    "parseErrors": [],
+    "chapters": 1181,
+    "missingBooks": 1,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2000,
+     "n": 942
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Barnes' Notes on the Bible (1834), Public Domain",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Replace with a complete edition (see candidates list); do not repair."
+   ]
+  },
+  {
+   "id": "clarke",
+   "name": "Adam Clarke (old file)",
+   "kind": "commentary",
+   "scope": "retired",
+   "status": "retired",
+   "gates": {
+    "1": [
+     "FAIL",
+     [
+      "[recorded] truncated: almost every chapter is exactly 2,000 characters",
+      "[measured] 65 files, 1181 chapters; 81% of chapters have the identical length 2000"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Adam Clarke's Commentary (1826), Public Domain\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Retired; never served. Licence to settle when a replacement source is chosen."
+     ]
+    ],
+    "3": [
+     "FAIL",
+     [
+      "[measured] truncation signature: 957 of 1181 chapters (81%) have the identical length 2000"
+     ]
+    ],
+    "4": [
+     "N/A",
+     [
+      "Retired and never served."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ],
+    "6": [
+     "N/A",
+     [
+      "Retired and never served; settle licence when choosing replacements.",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 65,
+    "parseErrors": [],
+    "chapters": 1181,
+    "missingBooks": 1,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2000,
+     "n": 957
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Adam Clarke's Commentary (1826), Public Domain",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Replace with a complete edition; do not repair."
+   ]
+  },
+  {
+   "id": "vincent",
+   "name": "Vincent's Word Studies (old file)",
+   "kind": "commentary",
+   "scope": "retired",
+   "status": "retired",
+   "gates": {
+    "1": [
+     "FAIL",
+     [
+      "[recorded] truncated: every chapter is exactly 2,000 characters",
+      "[measured] 27 files, 260 chapters; 85% of chapters have the identical length 2000"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Vincent\"",
+      "[measured] recorded: year NO, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Retired; never served. Licence to settle when a replacement source is chosen."
+     ]
+    ],
+    "3": [
+     "FAIL",
+     [
+      "[measured] truncation signature: 222 of 260 chapters (85%) have the identical length 2000"
+     ]
+    ],
+    "4": [
+     "N/A",
+     [
+      "Retired and never served."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ],
+    "6": [
+     "N/A",
+     [
+      "Retired and never served; settle licence when choosing replacements.",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 27,
+    "parseErrors": [],
+    "chapters": 260,
+    "missingBooks": 39,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2000,
+     "n": 222
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Vincent",
+     "edition": false,
+     "year": false,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Replace with a complete edition; do not repair."
+   ]
+  },
+  {
+   "id": "meyer",
+   "name": "Meyer's NT Commentary (old file)",
+   "kind": "commentary",
+   "scope": "retired",
+   "status": "retired",
+   "gates": {
+    "1": [
+     "FAIL",
+     [
+      "[recorded] truncated to 2,000 characters per chapter; Greek text garbled",
+      "[measured] 27 files, 260 chapters; 83% of chapters have the identical length 2000"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"Meyer\"",
+      "[measured] recorded: year NO, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Retired; never served. Licence to settle when a replacement source is chosen."
+     ]
+    ],
+    "3": [
+     "FAIL",
+     [
+      "[measured] truncation signature: 215 of 260 chapters (83%) have the identical length 2000; 65 chapters with mojibake patterns (e.g. 1CO 1, 1CO 2, 1CO 3, 1CO 4)"
+     ]
+    ],
+    "4": [
+     "N/A",
+     [
+      "Retired and never served."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ],
+    "6": [
+     "N/A",
+     [
+      "Retired and never served; settle licence when choosing replacements.",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "N/A",
+     [
+      "Retired."
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 27,
+    "parseErrors": [],
+    "chapters": 260,
+    "missingBooks": 39,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2000,
+     "n": 215
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 65,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "provenanceRecorded": {
+     "text": "Meyer",
+     "edition": false,
+     "year": false,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Replace with a complete edition (the Greek was garbled too)."
+   ]
+  },
+  {
+   "id": "bsb",
+   "name": "Berean Study Bible (BSB)",
+   "kind": "bible",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 books, 1189 chapters = KJV structure (1189); verse numbers absent vs KJV numbering: 16 (ACT 8:37, ACT 15:34, ACT 24:7, ACT 28:29, JHN 5:4, LUK 17:36, LUK 23:17, MAT 17:21, MAT 18:11, MAT 23:14, MRK 7:16, MRK 9:44, MRK 9:46, MRK 11:26, MRK 15:28, ROM 16:24); empty/placeholder: 0 (none)",
+      "[recorded] manifest and Worker treat empty = edition prints no text, missing = no such verse number"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"bereanbibles.com via seven1m/open-bibles\"",
+      "[measured] recorded: year NO, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: berean.bible terms (page-read)",
+      "[provenance register] 2 open question(s): Does the dedication cover the exact text in our file, which is labelled 'Berean Study Bible'? | Is our text the 2023 Berean Standard Bible text?"
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 books equal the original verse by verse after re-applying the recorded fixes (none); missing verses 0, extra verses 0, emptied verses 0, changed text 0, chapter mismatches 0, no original found 0",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published edition (gate 2)."
+     ]
+    ],
+    "5": [
+     "PASS",
+     [
+      "[measured] every verse is keyed by its number; 0 keys outside KJV chapter ranges ",
+      "A Bible edition is its own verse index."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: Public domain as of April 30, 2023.",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain from April 30, 2023\" from page read: berean.bible/terms.htm, scope: Berean Bible texts as the page names them; applies to our copy: not-established; checked 2026-11-03",
+      "[provenance register] obligations: Credit to Bible Hub, Discovery Bible, OpenBible.com and the Berean Bible Translation Committee is appreciated, not required. | Do not call modified text 'Berean'."
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1189,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2651,
+     "n": 5
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "versesAbsentVsKJVNumbering": 16,
+    "versesEmptyOrPlaceholder": 0,
+    "provenanceRecorded": {
+     "text": "bereanbibles.com via seven1m/open-bibles",
+     "edition": false,
+     "year": false,
+     "origin": true,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Confirm the edition name (Berean Standard Bible vs Study Bible) and the public-domain statement at the publisher; record the upstream hash."
+   ]
+  },
+  {
+   "id": "web",
+   "name": "World English Bible",
+   "kind": "bible",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 books, 1189 chapters = KJV structure (1189); verse numbers absent vs KJV numbering: 0 (); empty/placeholder: 7 (ACT 8:37, ACT 15:34, ACT 24:7, LUK 17:36, ROM 16:25, ROM 16:26, ROM 16:27)",
+      "[recorded] manifest and Worker treat empty = edition prints no text, missing = no such verse number"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"World English Bible 2020\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 2 open question(s): Dedication page not read this session. | 7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary.",
+      "[recorded] fix recorded in library/fixes.json: web-psalm-poetry-marker (117 changes)"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 books equal the original verse by verse after re-applying the recorded fixes (web-psalm-poetry-marker); missing verses 0, extra verses 0, emptied verses 0, changed text 0, chapter mismatches 0, no original found 0; 7 verses are empty in the original and in the library",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published edition (gate 2)."
+     ]
+    ],
+    "5": [
+     "PASS",
+     [
+      "[measured] every verse is keyed by its number; 0 keys outside KJV chapter ranges ",
+      "A Bible edition is its own verse index."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: Public Domain",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1189,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2474,
+     "n": 4
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "versesAbsentVsKJVNumbering": 0,
+    "versesEmptyOrPlaceholder": 7,
+    "provenanceRecorded": {
+     "text": "World English Bible 2020",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Record the exact WEB edition/date and upstream hash."
+   ]
+  },
+  {
+   "id": "kjv",
+   "name": "King James Version",
+   "kind": "bible",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 books, 1189 chapters = KJV structure (1189); verse numbers absent vs KJV numbering: 0 (); empty/placeholder: 0 (none)",
+      "[recorded] manifest and Worker treat empty = edition prints no text, missing = no such verse number"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"King James Version 1769\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Not verified this session."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 books equal the original verse by verse after re-applying the recorded fixes (none); missing verses 0, extra verses 0, emptied verses 0, changed text 0, chapter mismatches 0, no original found 0",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published edition (gate 2)."
+     ]
+    ],
+    "5": [
+     "PASS",
+     [
+      "[measured] every verse is keyed by its number; 0 keys outside KJV chapter ranges ",
+      "A Bible edition is its own verse index."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: Public Domain",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1189,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2386,
+     "n": 3
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "versesAbsentVsKJVNumbering": 0,
+    "versesEmptyOrPlaceholder": 0,
+    "provenanceRecorded": {
+     "text": "King James Version 1769",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Record which KJV text this is (the 1769 Oxford text is recorded) and the upstream hash."
+   ]
+  },
+  {
+   "id": "asv",
+   "name": "American Standard Version",
+   "kind": "bible",
+   "status": "active",
+   "gates": {
+    "1": [
+     "PASS",
+     [
+      "[measured] 66/66 books, 1189 chapters = KJV structure (1189); verse numbers absent vs KJV numbering: 0 (); empty/placeholder: 0 (none)",
+      "[recorded] manifest and Worker treat empty = edition prints no text, missing = no such verse number"
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] file says: \"American Standard Version 1901\"",
+      "[measured] recorded: year yes, origin NO, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
+      "Edition identity not independently established.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): Not verified this session."
+     ]
+    ],
+    "3": [
+     "PASS",
+     [
+      "[measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)",
+      "Cannot detect silent omissions or a chapter cut at a natural boundary."
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] 66 of 66 books equal the original verse by verse after re-applying the recorded fixes (none); missing verses 0, extra verses 0, emptied verses 0, changed text 0, chapter mismatches 0, no original found 0",
+      "This proves library = the copy we hold in data/. It does not prove data/ matches the published edition (gate 2)."
+     ]
+    ],
+    "5": [
+     "PASS",
+     [
+      "[measured] every verse is keyed by its number; 0 keys outside KJV chapter ranges ",
+      "A Bible edition is its own verse index."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] licence recorded: Public Domain",
+      "Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.",
+      "[provenance register] rights claim \"public domain\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "filesRead": 66,
+    "parseErrors": [],
+    "chapters": 1189,
+    "missingBooks": 0,
+    "missingChaptersInPresentBooks": 0,
+    "chaptersNotInKJVStructure": [],
+    "emptyChapters": 0,
+    "duplicateChapters": [],
+    "modalLength": {
+     "len": 2020,
+     "n": 4
+    },
+    "dirty": {
+     "html": 0,
+     "entity": 0,
+     "fffd": 0,
+     "moji": 0,
+     "ctrl": 0
+    },
+    "shortChapters": 0,
+    "versesAbsentVsKJVNumbering": 0,
+    "versesEmptyOrPlaceholder": 0,
+    "provenanceRecorded": {
+     "text": "American Standard Version 1901",
+     "edition": true,
+     "year": true,
+     "origin": false,
+     "upstreamHash": false
+    }
+   },
+   "next": [
+    "Record the upstream copy and hash."
+   ]
+  },
+  {
+   "id": "strongs-hebrew",
+   "name": "strongs-hebrew",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 3 top-level entries, 1249529 bytes; 0 entries numbered H1-H-Infinity; 0 numbers in that range without an entry",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/strongs_hebrew.json and sha256_16 593bd8e7027574db",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 593bd8e7027574db = original data/dict/strongs_hebrew.json 593bd8e7027574db; manifest says 593bd8e7027574db",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] no licence recorded in the manifest",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 1249529,
+    "entries": 3,
+    "sha256_16": "593bd8e7027574db",
+    "manifestSha": "593bd8e7027574db"
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  },
+  {
+   "id": "strongs-greek",
+   "name": "strongs-greek",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 3 top-level entries, 901977 bytes; 0 entries numbered G1-G-Infinity; 0 numbers in that range without an entry",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/strongs_greek.json and sha256_16 dc11d57373975dbb",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 dc11d57373975dbb = original data/dict/strongs_greek.json dc11d57373975dbb; manifest says dc11d57373975dbb",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] no licence recorded in the manifest",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 901977,
+    "entries": 3,
+    "sha256_16": "dc11d57373975dbb",
+    "manifestSha": "dc11d57373975dbb"
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  },
+  {
+   "id": "concordance",
+   "name": "concordance",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 14089 top-level entries, 14280287 bytes",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/strongs_concordance.json and sha256_16 356d59493a902f50",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 356d59493a902f50 = original data/dict/strongs_concordance.json 356d59493a902f50; manifest says 356d59493a902f50",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] no licence recorded in the manifest",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 14280287,
+    "entries": 14089,
+    "sha256_16": "356d59493a902f50",
+    "manifestSha": "356d59493a902f50"
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  },
+  {
+   "id": "naves",
+   "name": "naves",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 4 top-level entries, 1692754 bytes",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/naves/naves_topics.json and sha256_16 8bbfa43e4fca40c3",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 8bbfa43e4fca40c3 = original data/dict/naves/naves_topics.json 8bbfa43e4fca40c3; manifest says 8bbfa43e4fca40c3",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] no licence recorded in the manifest",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 1692754,
+    "entries": 4,
+    "sha256_16": "8bbfa43e4fca40c3",
+    "manifestSha": "8bbfa43e4fca40c3"
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  },
+  {
+   "id": "topic-scores",
+   "name": "topic-scores",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 6710 top-level entries, 8930947 bytes",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/openbible_topic_scores.json and sha256_16 25d658a6ff923ce3",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 25d658a6ff923ce3 = original data/dict/openbible_topic_scores.json 25d658a6ff923ce3; manifest says 25d658a6ff923ce3",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] no licence recorded in the manifest",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 8930947,
+    "entries": 6710,
+    "sha256_16": "25d658a6ff923ce3",
+    "manifestSha": "25d658a6ff923ce3"
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  },
+  {
+   "id": "characters",
+   "name": "characters",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 4 top-level entries, 520680 bytes",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/characters.json and sha256_16 9076660e163b152b",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: Theographic wiki (page-read)",
+      "[provenance register] 4 open question(s): Read 2026-11-03 at github.com/robertrouse/theographic-bible-metadata: README states CC BY-SA 4.0, a LICENSE file exists, and the README says to credit the original sources, 'several of which have their own licenses'. The earlier theographic-web link is the website, not the data. | The repository's docs/data-source-bibliography.md lists 26 sources; it states a licence for only one: STEPBible TIPNR, 'CC BY 4.0'. The other 25 carry no licence statement, including Jones (Chronology of the Old Testament), Atwood, Torrey, Ussher, Easton's, OpenBible geocoding, Pleiades, GeoNames, Wikidata, Hurlbut and Brisco atlases. Their rights are unresolved, not cleared. | The bibliography asks anyone publishing work built on Theographic to credit those sources and respect their licences. We must decide which characters fields derive from which source. | Conflict to resolve: the same owner's STEPBible-Data fork is described as CC BY-NC 4.0, while the bibliography says STEPBible TIPNR is CC BY 4.0. Check the STEPBible page for the TIPNR licence."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 9076660e163b152b = original data/dict/characters.json 9076660e163b152b; manifest says 9076660e163b152b",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] contains Theographic Bible Metadata (CC BY-SA 4.0): needs attribution",
+      "Contains Theographic Bible Metadata (CC BY-SA 4.0): needs attribution. ",
+      "[provenance register] rights claim \"CC BY-SA 4.0 for the project; underlying sources carry their own licences\" from page read: Theographic repository README and wiki, scope: the Theographic compilation only; see rightsComponents; applies to our copy: not-established; checked 2026-11-03",
+      "[provenance register] rights component: Theographic compilation: CC BY-SA 4.0 (read; README and LICENSE file in theographic-bible-metadata, 2026-11-03)",
+      "[provenance register] rights component: STEPBible TIPNR (underlying source): CC BY 4.0 (read; docs/data-source-bibliography.md, 2026-11-03; conflicts with the CC BY-NC 4.0 description on the owner's STEPBible-Data fork)",
+      "[provenance register] rights component: 25 other underlying sources (Jones, Atwood, Torrey, Ussher, Easton's, OpenBible geocoding, Pleiades, GeoNames, Wikidata, atlases and others): none stated (unresolved; docs/data-source-bibliography.md, 2026-11-03)",
+      "[provenance register] obligations: CC BY-SA 4.0 attribution and share-alike. | Credit King James Version 1769, Easton's Bible Dictionary, Floyd Nolen Jones's The Chronology of the Old Testament, Linked Places format."
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 520680,
+    "entries": 4,
+    "sha256_16": "9076660e163b152b",
+    "manifestSha": "9076660e163b152b"
+   },
+   "next": [
+    "Add the CC BY-SA attribution to the sources footer; record the Theographic version."
+   ]
+  },
+  {
+   "id": "xref-seed",
+   "name": "xref-seed",
+   "kind": "reference",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 2 top-level entries, 211127 bytes",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/xref_seed_pool.json and sha256_16 11703343bc8463e2",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 11703343bc8463e2 = original data/dict/xref_seed_pool.json 11703343bc8463e2; manifest says 11703343bc8463e2",
+      "Byte-identical to the copy we hold in data/; not proof that data/ matches the published work."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] no licence recorded in the manifest",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 211127,
+    "entries": 2,
+    "sha256_16": "11703343bc8463e2",
+    "manifestSha": "11703343bc8463e2"
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  },
+  {
+   "id": "overview-map",
+   "name": "overview-map",
+   "kind": "map",
+   "scope": "reference",
+   "status": "active",
+   "gates": {
+    "1": [
+     "UNKNOWN",
+     [
+      "[measured] 67 top-level entries, 17975 bytes",
+      "Whether this matches the full published work is not established."
+     ]
+    ],
+    "2": [
+     "UNKNOWN",
+     [
+      "[recorded] manifest records originalLocation data/dict/book_overview_map.json and sha256_16 (none)",
+      "No edition, year or upstream origin recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 1 open question(s): No source or licence recorded."
+     ]
+    ],
+    "3": [
+     "UNKNOWN",
+     [
+      "[measured] parses as JSON; no damage signatures run for this file type yet"
+     ]
+    ],
+    "4": [
+     "PASS",
+     [
+      "[measured] library file sha256_16 58e582c53fae3984 != original data/dict/book_overview_map.json aba739d7b49d8970",
+      "Not byte-identical: 31 keys were renamed to the standard book codes (e.g. DEUT -> DEU); every value is identical to the original. Deliberate standardisation recorded in the manifest build (Oct 24)."
+     ]
+    ],
+    "5": [
+     "N/A",
+     [
+      "Not a verse-indexed commentary."
+     ]
+    ],
+    "6": [
+     "UNKNOWN",
+     [
+      "[recorded] keys changed to the standard book codes",
+      "",
+      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+     ]
+    ],
+    "7": [
+     "UNKNOWN",
+     [
+      "[measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)"
+     ]
+    ]
+   },
+   "facts": {
+    "bytes": 17975,
+    "entries": 67,
+    "sha256_16": "58e582c53fae3984",
+    "manifestSha": null
+   },
+   "next": [
+    "Record edition, origin and licence; decide whether it needs validation checks."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+PLAN ONLY -- nothing is written.
+
+   data/commentary/MHC (66 files)
+      -> library/commentary/MHC   [copy + add book/source fields]
+   data/commentary/JFB (68 files)
+      -> library/commentary/JFB   [copy + add book/source fields]
+   data/commentary/Calvin (48 files)
+      -> library/commentary/Calvin   [copy + add book/source fields]
+   data/commentary/Scofield (66 files)
+      -> library/commentary/Scofield   [copy]
+   data/commentary/Wesley (66 files)
+      -> library/commentary/Wesley   [copy as-is (verse split decided after review)]
+   data/commentary/TDavid (66 files)
+      -> library/commentary/Spurgeon   [copy]
+   data/commentary/Barnes_NT (27 files)
+      -> library/commentary/Barnes-NT   [copy]
+   data/commentary/Tyndale (66 files)
+      -> library/commentary/Tyndale   [copy]
+   data/Tyndale (66 files)
+      -> (not copied)   [none (duplicate of data/commentary/Tyndale; retire after review)]
+   data/commentary/Barnes/Barnes_commentary.json
+      -> library/_retired/Barnes   [split per book, retired]
+   data/commentary/Clarke/Clarke_commentary.json
+      -> library/_retired/Clarke   [split per book, retired]
+   data/commentary/Vincent/Vincent_commentary.json
+      -> library/_retired/Vincent   [split per book, retired]
+   data/commentary/Meyer/Meyer_commentary.json
+      -> library/_retired/Meyer   [split per book, retired]
+   data/bsb/bsb.json
+      -> library/bible/BSB   [split per book]
+   data/web.json
+      -> library/bible/WEB   [split per book (7 verses empty in source: Luke 17:36, Acts 8:37, 15:34, 24:7, Rom 16:25-27)]
+   data/kjv.json
+      -> library/bible/KJV   [split per book]
+   data/asv.json
+      -> library/bible/ASV   [split per book (keeps ASV backtick quote marks; 3 John 1:15 is a "[]" placeholder)]
+   data/cross-refs.json
+      -> (not copied)   [none (same 255,675 refs as data/xref/ per book; confirm identical, then retire)]
+   data/xref (66 files)
+      -> library/xref   [copy]
+   data/dict/strongs_hebrew.json
+      -> library/lexicon/strongs_hebrew.json   [copy]
+   data/dict/strongs_greek.json
+      -> library/lexicon/strongs_greek.json   [copy]
+   data/dict/strongs_concordance.json
+      -> library/lexicon/strongs_concordance.json   [copy]
+   data/dict/naves/naves_topics.json
+      -> library/topics/naves.json   [copy]
+   data/dict/openbible_topic_scores.json
+      -> library/topics/openbible_topic_scores.json   [copy]
+   data/dict/characters.json
+      -> library/people/characters.json   [copy]
+   data/dict/xref_seed_pool.json
+      -> library/xref/xref_seed_pool.json   [copy]
+   data/dict/book_overview_map.json
+      -> library/maps/book_overview_map.json   [copy + canonical book keys]
