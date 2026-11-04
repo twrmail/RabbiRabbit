@@ -1,0 +1,110 @@
+{
+ "about": "Findings of tools/guardian-scans.mjs that were examined and accepted. Each needs a reason. An exception whose finding no longer appears is reported as stale. Calvin PSA 119 (a volume title page and translator's preface) is deliberately NOT listed: it is a real defect awaiting repair.",
+ "exceptions": [
+  {
+   "source": "scofield",
+   "book": "1CO",
+   "chapter": 9,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/1CO.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "DAN",
+   "chapter": 5,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/DAN.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "GEN",
+   "chapter": 33,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/GEN.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "GEN",
+   "chapter": 43,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/GEN.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "JDG",
+   "chapter": 16,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/JDG.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "JDG",
+   "chapter": 17,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/JDG.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "JHN",
+   "chapter": 7,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/JHN.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "NUM",
+   "chapter": 22,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/NUM.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "PSA",
+   "chapter": 2,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/PSA.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "scofield",
+   "book": "ROM",
+   "chapter": 4,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Scofield/ROM.json), so no repair of ours caused it. A note on a verse at the chapter boundary is printed under both chapters; accepted as the source's own layout."
+  },
+  {
+   "source": "mhc",
+   "book": "LEV",
+   "chapter": 3,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/MHC/LEV.json), so no repair of ours caused it. The same parallel Scripture passage is quoted at the end of chapter 3 and the start of chapter 4; accepted as the source's own text."
+  },
+  {
+   "source": "calvin",
+   "book": "EXO",
+   "chapter": 11,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Calvin/EXO.json), so no repair of ours caused it. A 44-word quotation appears in both chapters' commentary; accepted as the author's own repetition."
+  },
+  {
+   "source": "barnes-nt",
+   "book": "ACT",
+   "chapter": 21,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Barnes_NT/ACT.json), so no repair of ours caused it. Overlap is a note on the chapter division repeated in both chapters; accepted as the source's own text."
+  },
+  {
+   "source": "barnes-nt",
+   "book": "MRK",
+   "chapter": 14,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Barnes_NT/MRK.json), so no repair of ours caused it. Overlap is repeated 'no notes from Barnes on this verse' filler lines and a cross-reference block; accepted as the source's own text."
+  },
+  {
+   "source": "barnes-nt",
+   "book": "REV",
+   "chapter": 2,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched original (data/commentary/Barnes_NT/REV.json), so no repair of ours caused it. Overlap is a repeated note on the promise to the one who overcomes ('he that hath an ear'); accepted as the source's own text."
+  }
+ ]
+}

@@ -10,6 +10,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import { isDeepStrictEqual } from 'node:util'
+import { scanLibrary } from './guardian-scans.mjs'
 
 const args = process.argv.slice(2)
 const outIdx = args.indexOf('--out')
@@ -631,6 +632,21 @@ let movedSummary = null
     movedSummary = { blocks, checked, notYet }
     for (const [id, n] of Object.entries(bySource)) { const g = card.find(x => x.id === id); if (g) { g.facts.movedText = { blocks: n, verifiedAtDestination: checked, notYetApplied: notYet }; g.gates[3][1].push(E('m', `MOVED, NOT LOST: ${n} block(s) of front matter, arguments, dedications and chapter-opening tables were cut from the wrong chapter and added to the right one; for each, the cut and the added text have the same length and sha256 and the text is found at the destination in the library`)) } }
   }
+}
+
+// ---- boundary and back-matter scans (tools/guardian-scans.mjs) ----
+{
+  const scan = scanLibrary(libDir)
+  for (const id of scan.scanned) {
+    const g = card.find(x => x.id === id); if (!g) continue
+    const mine = scan.findings.filter(f => f.source === id), open = mine.filter(f => !f.explained), done = mine.filter(f => f.explained)
+    g.facts.scans = { unexplained: open.length, explained: done.length, staleExceptions: scan.staleExceptions.filter(e => e.source === id).length }
+    if (open.length) {
+      if (g.gates[3][0] === 'PASS') g.gates[3][0] = 'FAIL'
+      g.gates[3][1].push(E('m', `SCAN FINDINGS NOT EXPLAINED (${open.length}): ${open.map(f => `${f.book} ${f.chapter} ${f.check}${f.detail ? ' (' + f.detail.slice(0, 60) + ')' : ''}`).join('; ')}. See tools/guardian-scans.mjs; explain in library/scan-exceptions.json only after checking, or repair.`))
+    } else g.gates[3][1].push(E('m', `boundary and back-matter scans: no unexplained finding in ${id} (end of each chapter against the start of the next; CCEL title-page text; index runs)${done.length ? `; ${done.length} accepted with a recorded reason in library/scan-exceptions.json, each present in the untouched original` : ''}`))
+  }
+  if (scan.staleExceptions.length) { console.error('scan-exceptions.json has stale entries (finding no longer present):\n- ' + scan.staleExceptions.map(e => `${e.source} ${e.book} ${e.chapter} ${e.check}`).join('\n- ')); process.exit(1) }
 }
 
 // ---- next actions (the single most important one per source) ----
