@@ -24,6 +24,12 @@ jobs:
         run: node tools/check-scorecard-baseline.mjs scorecard.json library-baseline.json
       - name: Damage tests (the checkers must catch deliberate damage)
         run: node tools/tests/damage-suite.mjs
+      - name: Repository Guardian audit (summary on the run page)
+        run: node tools/guardian.mjs --quick --out audit-report
+      - name: Keep the audit report with the run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: audit-report, path: 'audit-report/audit.md' }
       - name: Keep the full scorecard with the run
         if: always()
         uses: actions/upload-artifact@v4

@@ -1,0 +1,72 @@
+{
+ "schemaVersion": 1,
+ "note": "Dated comparisons of our sources with outside witnesses. Evidence only: nothing here changes a gate result or certifies a source as complete. Read by tools/guardian.mjs. Numbers are copied from the named reports in the Project; add an entry when a new comparison is done.",
+ "evidence": [
+  {
+   "id": "calvin-ccel-nov2",
+   "source": "calvin",
+   "date": "2026-11-02",
+   "witness": "CCEL calcom01-45 (Calvin Translation Society, ThML)",
+   "method": "Share of the 6-word runs of our chapter found in CCEL's chapter; a chapter was replaced or re-bounded only if at least 97% matched (both directions for boundaries).",
+   "scope": "Chapter level: Genesis, Joshua, Jeremiah, Lamentations, Ezekiel, Daniel, the Minor Prophets, John, Romans to Jude.",
+   "result": "31 truncated chapters restored; 286 chapters re-bounded; 136 chapters left alone (Isaiah 1-66 and Acts 1-28 among them).",
+   "report": "claude/calvin-ccel-comparison.md",
+   "limitations": "A witness, not a master copy. A percentage of the witness text found in ours does not show that passages are in the right order, that extra text in ours is legitimate, or that every translation is present. Isaiah and Acts chapter divisions were not mapped."
+  },
+  {
+   "id": "calvin-law-harmony-nov4",
+   "source": "calvin",
+   "date": "2026-11-04",
+   "witness": "CCEL calcom03-06 (Harmony of the Law)",
+   "method": "Share of CCEL's commentary text (8-word runs, footnotes, fronts, back matter and indexes excluded) found in our Exodus to Deuteronomy.",
+   "scope": "Exodus, Leviticus, Numbers, Deuteronomy, whole books.",
+   "result": "Ours 718,921 words; 99.35% of CCEL's commentary text found in ours; no section below 97%.",
+   "report": "claude/calvin-coverage-nov4.md",
+   "limitations": "A witness, not a master copy. A percentage of the witness text found in ours does not show that passages are in the right order, that extra text in ours is legitimate, or that every translation is present."
+  },
+  {
+   "id": "calvin-gospel-harmony-nov4",
+   "source": "calvin",
+   "date": "2026-11-04",
+   "witness": "CCEL calcom31-33 (Harmony of the Gospels)",
+   "method": "Same as the Law harmony check.",
+   "scope": "Matthew, Mark, Luke, whole books.",
+   "result": "Ours 498,191 words; 99.16% found; no section below 97%.",
+   "report": "claude/calvin-coverage-nov4.md",
+   "limitations": "A witness, not a master copy. A percentage of the witness text found in ours does not show that passages are in the right order, that extra text in ours is legitimate, or that every translation is present."
+  },
+  {
+   "id": "calvin-psalms-nov4",
+   "source": "calvin",
+   "date": "2026-11-04",
+   "witness": "CCEL calcom08-12 (Psalms)",
+   "method": "Share of our 6-word runs found in CCEL's Psalm (97% or more required per Psalm), then the CCEL text replaced ours.",
+   "scope": "Psalms 1-150.",
+   "result": "Before: ours 126,329 words against about 804,000 in CCEL (footnotes excluded). 148 Psalms restored from CCEL; Psalms 70 and 108 were already complete; volume-five title page and preface set aside; one repeated paragraph cut from Psalm 85.",
+   "report": "claude/calvin-psalms-report.md",
+   "limitations": "A witness, not a master copy. A percentage of the witness text found in ours does not show that passages are in the right order, that extra text in ours is legitimate, or that every translation is present."
+  },
+  {
+   "id": "jfb-ccel-comparison",
+   "source": "jfb",
+   "date": null,
+   "witness": "CCEL (Jamieson-Fausset-Brown)",
+   "method": "Word-by-word comparison with CCEL's copy.",
+   "scope": "Whole source.",
+   "result": "97 word differences recorded, awaiting human adjudication.",
+   "report": "claude/jfb-ccel-comparison.md",
+   "limitations": "A witness, not a master copy. A percentage of the witness text found in ours does not show that passages are in the right order, that extra text in ours is legitimate, or that every translation is present. Date not recorded in this file; see the report."
+  },
+  {
+   "id": "wesley-ccel-comparison",
+   "source": "wesley",
+   "date": null,
+   "witness": "CCEL (Wesley's Notes)",
+   "method": "Comparison with CCEL's copy.",
+   "scope": "Whole source.",
+   "result": "125 disagreements recorded, awaiting human adjudication; 2 Samuel 24 missing from ours.",
+   "report": "claude/wesley-ccel-comparison.md",
+   "limitations": "A witness, not a master copy. A percentage of the witness text found in ours does not show that passages are in the right order, that extra text in ours is legitimate, or that every translation is present. Date not recorded in this file; see the report."
+  }
+ ]
+}
