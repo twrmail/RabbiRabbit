@@ -1,0 +1,32 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-col4-duplicate-table",
+ "source": "calvin",
+ "purpose": "Cut the end of Colossians 4 that repeats the opening table of 1 Thessalonians 1. Same format as calvin-moves.json; each cut entry names where its text goes (movedTo) and each prepend entry where it came from (movedFrom).",
+ "chapters": [
+  {
+   "book": "COL",
+   "chapter": 4,
+   "beforeSha256": "69a0877699833a3ea701e0b08af2f42e58d09463e274e0557580b7781bb85674",
+   "afterSha256": "33c569fdb11c4703547c7f6539f804906f05ba73920436c9e7be01c3e592b186",
+   "cut": {
+    "offset": 24273,
+    "length": 467,
+    "sha256": "7c989b50affa8beb78250d1cd53d4a69ce7ad80974f55e955d98bad7b591ba23"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "duplicateOf": {
+    "book": "1TH",
+    "chapter": 1,
+    "shareOfTailFoundThere": 1.0,
+    "tailWords": 76
+   },
+   "contentClass": "duplicate table",
+   "tailStartsWith": "COMMENTARY ON THE FIRST EPISTLE OF PAUL TO THE THESSALONIANS. CHAPTER 1 1 Thessalonians 1:",
+   "tailEndsWith": "e, et Domino Iesu Christo, gratia vobis et pax a Deo Patre nostro, et Domino Iesu Christo.",
+   "keptEndsWith": "ach. From this he proceeds to employ various exhortations, and then concludes the Epistle."
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-minor-prophet-tables",
+ "source": "calvin",
+ "purpose": "Move the English and Latin Scripture table that opens each chapter of Jonah, Micah and Nahum from the end of the chapter before to the start of its own chapter. Same format as calvin-moves.json; each cut entry names where its text goes (movedTo) and each prepend entry where it came from (movedFrom).",
+ "chapters": [
+  {
+   "book": "JON",
+   "chapter": 1,
+   "beforeSha256": "abd0d5acbd9a8c034a5751b988a15f32c448bc587e2b517d0ca79b921a9879bd",
+   "afterSha256": "1cffdc34709fa73fc967ede161148254eef930e8403d64f12956981195d4ecc1",
+   "cut": {
+    "offset": 110008,
+    "length": 434,
+    "sha256": "1a3ead314e4459b3832351baf34b1c721c09c2db4a4a4d5d10a2587b5590f5b9"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "JON",
+    "chapter": 2
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 2. Jonah 2:1-2 1. Then Jonah prayed unto the Lord his God out of the fish’s belly,",
+   "tailEndsWith": "xaudit me (vel, respondit mihi;) e ventre sepulchri vociferatus sum, audivisti vocem meam."
+  },
+  {
+   "book": "JON",
+   "chapter": 2,
+   "beforeSha256": "f2209d42e15baf04e999cb234d99838ce2a094e99d9e6aa802e97e541181acb1",
+   "afterSha256": "7f7a1c58ed132fcf3d12d35ba9443c85e0d9b6ed0de99d97fc10ee799e82341e",
+   "cut": {
+    "offset": 35486,
+    "length": 350,
+    "sha256": "6d9856ac2653535f5168e43f0adc23c6f13cab5e6fc2ffc778bc2f718a85c6b4"
+   },
+   "prepend": "Chapter 2. Jonah 2:1-2 1. Then Jonah prayed unto the Lord his God out of the fish’s belly, 1. Et oravit Jonas ad Jehovam Deum suum e ventre piscis; 2. And said, I cried by reason of mine affliction unto the Lord, and he heard me; out of the belly of hell cried I, and thou heardest my voice. 2. Et dixit clamavi in angustia mea ad Jehovam, et exaudit me (vel, respondit mihi;) e ventre sepulchri vociferatus sum, audivisti vocem meam.",
+   "prependSha256": "1a3ead314e4459b3832351baf34b1c721c09c2db4a4a4d5d10a2587b5590f5b9",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "JON",
+    "chapter": 3
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 3. Jonah 3:1-2 1. And the word of the LORD came unto Jonah the second time, saying",
+   "tailEndsWith": "oficiscere Nineven in urbem magnam, et praedica ad eam praedicationem quam ego mando tibi.",
+   "movedFrom": {
+    "book": "JON",
+    "chapter": 1
+   }
+  },
+  {
+   "book": "JON",
+   "chapter": 3,
+   "beforeSha256": "8f7cbc480e08011f2a3890a3608f7a7a6e909400a495fb8752af78ca59293c6e",
+   "afterSha256": "56333be6fbd215fdd850ec2b310366bdab1873777674b19f7a743e6ad57e5ece",
+   "cut": {
+    "offset": 49654,
+    "length": 143,
+    "sha256": "606a5edaade0a08a3b74594ea2e39ef6a3aac16600a704f786a48fd9d5bc1480"
+   },
+   "prepend": "Chapter 3. Jonah 3:1-2 1. And the word of the LORD came unto Jonah the second time, saying, 1. Et factum fuit verbum Jehovae ad Jonam secundo, dicendo, — 2. Arise, go unto Nineveh, that great city, and preach unto it the preaching that I bid thee. 2. Surge, proficiscere Nineven in urbem magnam, et praedica ad eam praedicationem quam ego mando tibi.",
+   "prependSha256": "6d9856ac2653535f5168e43f0adc23c6f13cab5e6fc2ffc778bc2f718a85c6b4",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "JON",
+    "chapter": 4
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 4. Jonah 4:1 1. But it displeased Jonah exceedingly, and he was very angry. 1. Et ",
+   "tailEndsWith": "dingly, and he was very angry. 1. Et displicuit Jonae dolore magno, et succensuit apud se.",
+   "movedFrom": {
+    "book": "JON",
+    "chapter": 2
+   }
+  },
+  {
+   "book": "JON",
+   "chapter": 4,
+   "beforeSha256": "ff09d2fe34bde8ae4240fb8b3f4aa868ed3d92b4f9df56c750f4ec2de1741d3f",
+   "afterSha256": "778c57af955bf7bce25066bd9dc0022bdc5417eee954e85f11d6ed125cb79a24",
+   "cut": null,
+   "prepend": "Chapter 4. Jonah 4:1 1. But it displeased Jonah exceedingly, and he was very angry. 1. Et displicuit Jonae dolore magno, et succensuit apud se.",
+   "prependSha256": "606a5edaade0a08a3b74594ea2e39ef6a3aac16600a704f786a48fd9d5bc1480",
+   "movedFrom": {
+    "book": "JON",
+    "chapter": 3
+   }
+  },
+  {
+   "book": "MIC",
+   "chapter": 1,
+   "beforeSha256": "802a2004c075915b59863dbf4338e826c25479568e06c9c42582f0669e4c9cbd",
+   "afterSha256": "4e896cd85216d4213f91283ecfe383e20bded53209487af2ed6b702267c6a595",
+   "cut": {
+    "offset": 64011,
+    "length": 328,
+    "sha256": "10e04dbbd35437659e91c4969837bc8afa8c88d12a18de43ea4a02e17c50be15"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "MIC",
+    "chapter": 2
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 2 Micah 2:1 1. Woe to them that devise iniquity, and work evil upon their beds! wh",
+   "tailEndsWith": " cubilibus suis! Quum illuxerit mane, exequentur eam, quia est ad potentiam manus ipsorum."
+  },
+  {
+   "book": "MIC",
+   "chapter": 2,
+   "beforeSha256": "d982fe26589c2ce358bc4cecbbc430bfcac56efbdf110f0bc8e89700635d1ea7",
+   "afterSha256": "83f6db5e4a5662753002a11c86623240522ca71f7826c970f0948e431deb6112",
+   "cut": {
+    "offset": 58640,
+    "length": 866,
+    "sha256": "b9940ecc8c726a777f3b729eb8188d08bf14894052d86b68caf15a951259cf05"
+   },
+   "prepend": "Chapter 2 Micah 2:1 1. Woe to them that devise iniquity, and work evil upon their beds! when the morning is light, they practice it, because it is in the power of their hand. 1. Vae cogitantibus iniquitatem et fabricantibus malitiam super cubilibus suis! Quum illuxerit mane, exequentur eam, quia est ad potentiam manus ipsorum.",
+   "prependSha256": "10e04dbbd35437659e91c4969837bc8afa8c88d12a18de43ea4a02e17c50be15",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "MIC",
+    "chapter": 3
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 3 Micah 3:1-3 1. And I said, Hear, I pray you, O heads of Jacob, and ye princes of",
+   "tailEndsWith": "uunt; sicuti ad ollam (vel, ac si destinata essent ollae,) et carnem eorum in medio aheni.",
+   "movedFrom": {
+    "book": "MIC",
+    "chapter": 1
+   }
+  },
+  {
+   "book": "MIC",
+   "chapter": 3,
+   "beforeSha256": "44581e178786916977e6dfca43dbad2889c103ed2667ff0ae19eeb06f294c48a",
+   "afterSha256": "4de02194c69490b4c40e4c866f7fd1967df89fd7de1a36ad39dbbcc4f24940ad",
+   "cut": {
+    "offset": 66622,
+    "length": 886,
+    "sha256": "cc4b77d0c34cc0209554d001392bd71d5f640f5e06f7946fcd2ceed39472b8b5"
+   },
+   "prepend": "Chapter 3 Micah 3:1-3 1. And I said, Hear, I pray you, O heads of Jacob, and ye princes of the house of Israel; Is it not for you to know judgment? 1. Et dixi, Audite quaeso principes Jacob et gubernatores domus Israel; annon vestrum est (vel, ad vos spectat) scire judicium? 2. Who hate the good, and love the evil; who pluck off their skin from off them, and their flesh from off their bones; 2. Atqui oderunt bonum et dilligunt malum, rapiunt pellem ab ipsis, et carnem ab ossibus eorum; 3. Who also eat the flesh of my people, and flay their skin from off them; and they break their bones, and chop them in pieces, as for the pot, and as flesh within the caldron. 3. Et tunc vorant carnem populi mei, et pellem ipsorum ab ipsis excoriant; et ossa eorum frangunt, et comminuunt; sicuti ad ollam (vel, ac si destinata essent ollae,) et carnem eorum in medio aheni.",
+   "prependSha256": "b9940ecc8c726a777f3b729eb8188d08bf14894052d86b68caf15a951259cf05",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "MIC",
+    "chapter": 4
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 4 Micah 4:1-2 1. But in the last days it shall come to pass, that the mountain of ",
+   "tailEndsWith": "et ambulabimus in semitis ejus; quia ex Sion prodibit lex, et verbum Jehovae ex Jerusalem.",
+   "movedFrom": {
+    "book": "MIC",
+    "chapter": 2
+   }
+  },
+  {
+   "book": "MIC",
+   "chapter": 4,
+   "beforeSha256": "f5b2ed264d1c0221a870c190401f842fb58af43cd77cc4748b4e7b696347cc3c",
+   "afterSha256": "9c1c422bfdf06b2ce7a6b5af4da81414c5f52ed84059ab8722797dae1c7c7fc0",
+   "cut": {
+    "offset": 83763,
+    "length": 800,
+    "sha256": "510ce702f4e34db689ff3e6a3fc1219650fc601afb300bb0a8771607b9f1143c"
+   },
+   "prepend": "Chapter 4 Micah 4:1-2 1. But in the last days it shall come to pass, that the mountain of the house of the LORD shall be established in the top of the mountains, and it shall be exalted above the hills; and people shall flow unto it. 1. Accidet ultimis diebus, ut sit mons domus Jehovae dispositus in capite montium, et extollentur ipse prae sublimitatibus; et venient ad eum populi: 2. And many nations shall come, and say, Come, and let us go up to the mountain of the LORD, and to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths: for the law shall go forth of Zion, and the word of the LORD from Jerusalem. 2. Et proficiscentur gentes multae et dicent, Venite, et ascendemus ad montem Jehovae, et ad domum Dei Jacob; et docebit nos de viis suis, et ambulabimus in semitis ejus; quia ex Sion prodibit lex, et verbum Jehovae ex Jerusalem.",
+   "prependSha256": "cc4b77d0c34cc0209554d001392bd71d5f640f5e06f7946fcd2ceed39472b8b5",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "MIC",
+    "chapter": 5
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 5 Micah 5:1-2 1. Now gather thyself in troops, O daughter of troops: he hath laid ",
+   "tailEndsWith": "ransfero durius, ut sit dominator) in Israel: et egressus ejus ab initio, a diebus seculi.",
+   "movedFrom": {
+    "book": "MIC",
+    "chapter": 3
+   }
+  },
+  {
+   "book": "MIC",
+   "chapter": 5,
+   "beforeSha256": "645feef2abd20926f0b1966b8b857dfe1be79abf0504074edae777adf04e27f5",
+   "afterSha256": "41ac9c5a4768bc551686658e3c28a72e73f2ed17b70357539aad568a15f738d5",
+   "cut": {
+    "offset": 69589,
+    "length": 569,
+    "sha256": "66bf49ea0318461700e9755cb0c594996d7f2abb4ef3fe65ffe4ee0512713c2c"
+   },
+   "prepend": "Chapter 5 Micah 5:1-2 1. Now gather thyself in troops, O daughter of troops: he hath laid siege against us: they shall smite the judge of Israel with a rod upon the cheek. 1. Nunc colligas te (vel, obsidione cingeris, ut alii vertunt) filia congregationis (hoc est, turmae;) obsidionem posuit contra nos; in virga percutient ad maxillam judicem Israel. 2. But thou, Bethlehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting. 2. Et tu Beth-lehem Ephrata, parva ad essendum (ut ita loquar) inter millia Jehudah; ex te mihi egredietur ad essendum dominatorem (sic transfero durius, ut sit dominator) in Israel: et egressus ejus ab initio, a diebus seculi.",
+   "prependSha256": "510ce702f4e34db689ff3e6a3fc1219650fc601afb300bb0a8771607b9f1143c",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "MIC",
+    "chapter": 6
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 6 Lecture Ninety-third Micah 6:1-2 1. Hear ye now what the Lord saith; Arise, cont",
+   "tailEndsWith": "ortia undamenta terrae: quia disceptatio Jehovae cum populo suo, et cum Israele contendet.",
+   "movedFrom": {
+    "book": "MIC",
+    "chapter": 4
+   }
+  },
+  {
+   "book": "MIC",
+   "chapter": 6,
+   "beforeSha256": "df9488cefac15b7e9e745987c12f6758a0caf97458a9352bbd546467b1710e3d",
+   "afterSha256": "def0412f8c3d50b941b2d9e182a37b66cbe44a6aae304bbfe4650f931f392725",
+   "cut": {
+    "offset": 63550,
+    "length": 848,
+    "sha256": "6ec72adee53fc1988d72c18b4ad836c1a26db57469fb24bc3969634d728f15b0"
+   },
+   "prepend": "Chapter 6 Lecture Ninety-third Micah 6:1-2 1. Hear ye now what the Lord saith; Arise, contend thou before the mountains, and let the hills hear thy voice. 1. Audite nunc (vel, quaeso) quod dicit Jehova, — Surge, litiga coram montibus, et colles audiant vocem tuam: 2. Hear ye, O mountains, the Lord’s controversy, and ye strong foundations of the earth: for the Lord hath a controversy with his people, and he will plead with Israel. 2. Audite montes disceptationem Jehovae, et fortia undamenta terrae: quia disceptatio Jehovae cum populo suo, et cum Israele contendet.",
+   "prependSha256": "66bf49ea0318461700e9755cb0c594996d7f2abb4ef3fe65ffe4ee0512713c2c",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "MIC",
+    "chapter": 7
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 7 Micah 7:1-2 1. Woe is me! for I am as when they have gathered the summer fruits,",
+   "tailEndsWith": "atrem suum venatur reti (alii, ad perniciem; et הרם, etiam Hebraeis interdum est occisio.)",
+   "movedFrom": {
+    "book": "MIC",
+    "chapter": 5
+   }
+  },
+  {
+   "book": "MIC",
+   "chapter": 7,
+   "beforeSha256": "6ff507f1a7bf2c8abe628c625e46e6dda7c882838ed8782f7278a05098132337",
+   "afterSha256": "3dd90f9be67a5762c7bfcb51e1985942e51b9306e77d480facc0392b42407188",
+   "cut": null,
+   "prepend": "Chapter 7 Micah 7:1-2 1. Woe is me! for I am as when they have gathered the summer fruits, as the grapegleanings of the vintage: there is no cluster to eat: my soul desired the firstripe fruit. 1. Vae mihi (alii deducunt a ילל, ululare meum; sed est particula dolentis apud Hebraeos; Vae mihi ergo,) quia fui sicut collectiones aestatis (sic est ad verbum,) et sicuti racemi vindemiae; nullus botrus ad comedendum; maturos fructus (vel, primitias frugum) desideravit anima mea. 2. The good man is perished out of the earth: and there is none upright among men: they all lie in wait for blood; they hunt every man his brother with a net. 2. Periit humanus (vel, mansuetus) e terra, et rectus in hominibus nemo est; et omnes sanguinibus insidiantur, quisque fratrem suum venatur reti (alii, ad perniciem; et הרם, etiam Hebraeis interdum est occisio.)",
+   "prependSha256": "6ec72adee53fc1988d72c18b4ad836c1a26db57469fb24bc3969634d728f15b0",
+   "movedFrom": {
+    "book": "MIC",
+    "chapter": 6
+   }
+  },
+  {
+   "book": "NAH",
+   "chapter": 1,
+   "beforeSha256": "d3279e4e8e8c420179b64550006997e5fc4aaec53f2967cdef600b476ec391e8",
+   "afterSha256": "8a1668355f6b41d6464279f78981670d0ce9bbfaae51c2f13ba993c38b777bde",
+   "cut": {
+    "offset": 73580,
+    "length": 669,
+    "sha256": "972207fa957d070b1fbb8651d8a418685e07f828b0ef8a3fecc8e660a9a4daf3"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "NAH",
+    "chapter": 2
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 2 Nahum 2:1-2 1. He that dasheth in pieces is come up before thy face: keep the mu",
+   "tailEndsWith": "erbiam, est idem nomen) Israel; quia evacuarunt avacuantes, et palmites eorum succiderunt."
+  },
+  {
+   "book": "NAH",
+   "chapter": 2,
+   "beforeSha256": "723d0440c09b785b9ce1fd314166f3d1dd9a1665b0d9c62d103377e2e4dadb9f",
+   "afterSha256": "800e0a17c1bef52997acc00df6649faec10ee2e246a06fb7c157ff428f9e4d0f",
+   "cut": {
+    "offset": 51905,
+    "length": 217,
+    "sha256": "1d9f9920d70bd0a4299908a6f239d49f2daf98bcfe5539a736aa60a10b4d5dba"
+   },
+   "prepend": "Chapter 2 Nahum 2:1-2 1. He that dasheth in pieces is come up before thy face: keep the munition, watch the way, make thy loins strong, fortify thy power mightily 1. Ascendit destructor coram facie tua; custodi munitionem, respice viam, robora lumbos, fortifica vires valde: 2. For the LORD hath turned away the excellency of Jacob, as the excellency of Israel: for the emptiers have emptied them out, and marred their vine branches. 2. Quia abstulit (alii vertunt, recedere fecit; alii, quiescere fecit) Jehova fortitudinem (alii, superbiam) Jacob, sicuti fortitudinem (vel, superbiam, est idem nomen) Israel; quia evacuarunt avacuantes, et palmites eorum succiderunt.",
+   "prependSha256": "972207fa957d070b1fbb8651d8a418685e07f828b0ef8a3fecc8e660a9a4daf3",
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "NAH",
+    "chapter": 3
+   },
+   "contentClass": "chapter-opening table",
+   "tailStartsWith": "Chapter 3 Nahum 3:1 1. Woe to the bloody city! it is all full of lies and robbery; the pre",
+   "tailEndsWith": "a! Tota mendacio (vertunt) rapina plena est; non recedit praeda (vel, non recedet praeda.)",
+   "movedFrom": {
+    "book": "NAH",
+    "chapter": 1
+   }
+  },
+  {
+   "book": "NAH",
+   "chapter": 3,
+   "beforeSha256": "600411497fec079bd9246e1a3bbacf3c9f44693e26b6de3a8df3e9548f03641b",
+   "afterSha256": "03003ecfdb3155704863bd4487107f6abce02accbb5fa583f854b39f82a7a2bb",
+   "cut": null,
+   "prepend": "Chapter 3 Nahum 3:1 1. Woe to the bloody city! it is all full of lies and robbery; the prey departeth not; 1. O urbs sanguinaria! Tota mendacio (vertunt) rapina plena est; non recedit praeda (vel, non recedet praeda.)",
+   "prependSha256": "1d9f9920d70bd0a4299908a6f239d49f2daf98bcfe5539a736aa60a10b4d5dba",
+   "movedFrom": {
+    "book": "NAH",
+    "chapter": 2
+   }
+  }
+ ]
+}

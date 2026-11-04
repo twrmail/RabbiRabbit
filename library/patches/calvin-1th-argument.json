@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "id": "calvin-1th-argument",
+ "source": "calvin",
+ "purpose": "Move the Argument on 1 Thessalonians from the end of Colossians 4 to the start of 1 Thessalonians 1. Same format as calvin-moves.json; each cut entry names where its text goes (movedTo) and each prepend entry where it came from (movedFrom).",
+ "chapters": [
+  {
+   "book": "COL",
+   "chapter": 4,
+   "beforeSha256": "33c569fdb11c4703547c7f6539f804906f05ba73920436c9e7be01c3e592b186",
+   "afterSha256": "13c741a24892ae77f51cecbcc36bdc2a2244e1f3bf04cdfc7f5ee090e90043db",
+   "cut": {
+    "offset": 22648,
+    "length": 1624,
+    "sha256": "8cd9771bbe38ee6c7c1153a6f4157667005676d6bff4c11c02abf780f738e0fb"
+   },
+   "prepend": null,
+   "prependSha256": null,
+   "gapBefore": " ",
+   "movedTo": {
+    "book": "1TH",
+    "chapter": 1
+   },
+   "contentClass": "argument",
+   "tailStartsWith": "ARGUMENT ON THE FIRST EPISTLE TO THE THESSALONIANS. The greater part of this Epistle consi",
+   "tailEndsWith": "ach. From this he proceeds to employ various exhortations, and then concludes the Epistle.",
+   "keptEndsWith": "hey shall know that it has in some degree originated with you. Geneva, 17th February 1550."
+  },
+  {
+   "book": "1TH",
+   "chapter": 1,
+   "beforeSha256": "c01d0105d260228dbe23f1878d47d9485e7f14a2f7605b6240dcb0150e0df5c3",
+   "afterSha256": "69187d42c1e890f2acf8ce701915146271c5e858226ff0b21fed13be2801db8f",
+   "cut": null,
+   "prepend": "ARGUMENT ON THE FIRST EPISTLE TO THE THESSALONIANS. The greater part of this Epistle consists of exhortations. Paul had instructed the Thessalonians in the right faith. On hearing, however, that persecutions were raging there, he had sent Timothy with the view of animating them for the conflict, that they might not give way through fear, as human infirmity is apt to do. Having been afterwards informed by Timothy respecting their entire condition, he employs various arguments to confirm them in steadfastness of faith, as well as in patience, should they be called to endure anything for the testimony of the gospel. These things he treats of in the first three Chapters. In the beginning of the Fourth Chapter, he exhorts them, in general terms, to holiness of life, afterwards he recommends mutual benevolence, and all offices that flow from it. Towards the end, however, he touches upon the question of the resurrection, and explains in what way we shall all be raised up from death. From this it is manifest, that there were some wicked or light-minded persons, who endeavored to unsettle their faith by unseasonably bringing forward many frivolous things. Hence with the view of cutting off all pretext for foolish and needless disputations, he instructs them in few words as to the views which they should entertain. In the Fifth Chapter he prohibits them, even more strictly, from inquiring as to times; but admonishes them to be ever on the watch, lest they should be taken unawares by Christ’s sudden and unexpected approach. From this he proceeds to employ various exhortations, and then concludes the Epistle.",
+   "prependSha256": "8cd9771bbe38ee6c7c1153a6f4157667005676d6bff4c11c02abf780f738e0fb",
+   "movedFrom": {
+    "book": "COL",
+    "chapter": 4
+   },
+   "contentClass": "argument"
+  }
+ ]
+}
