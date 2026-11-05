@@ -858,7 +858,8 @@
     {
       "sourceId": "kjv",
       "work": {
-        "title": "King James Version"
+        "title": "King James Version",
+        "author": "translators appointed by King James I (Authorized Version)"
       },
       "repositoryCopy": {
         "edition": "1769 (per repo)",
@@ -871,7 +872,8 @@
         "claimSource": "repo manifest",
         "scope": "our copy",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-03",
+        "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists it as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
       },
       "evidenceLevel": "work-identified",
       "obligations": [],
@@ -896,19 +898,26 @@
             "kind": "page-read",
             "ref": "scrollmapper README and csv/bible_version_key.csv, read 2026-11-05",
             "note": "states \"All included Bible translations are in the public domain\"; version key lists WEB, KJV, ASV as Public Domain; the repository itself carries a GPL v3 notice for its code and database tooling"
+          },
+          {
+            "kind": "measured",
+            "ref": "re-comparison 2026-11-05 against the commit named in versionMarker",
+            "note": "t_kjv.csv: 99.31% / 99.30% of 6-word runs (ours to source / source to ours), punctuation and case ignored"
           }
         ],
         "notRecovered": [
           "Exact download date and commit of the 2024 branch",
           "For KJV: a chat record of the download (match is measured only)"
         ],
-        "dateRecorded": "2026-11-05"
+        "dateRecorded": "2026-11-05",
+        "versionMarker": "scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5 (2024-11-08), csv/t_kjv.csv sha256 1af2c34012dc3c3b193bf6992ba1a692ad0c74e26cafcfabc67ac597d361e916: the version our copy was measured against, not a recovered download commit"
       }
     },
     {
       "sourceId": "asv",
       "work": {
-        "title": "American Standard Version"
+        "title": "American Standard Version",
+        "author": "American Standard Revision Committee (American Revision Committee)"
       },
       "repositoryCopy": {
         "edition": "1901 (per repo)",
@@ -921,7 +930,8 @@
         "claimSource": "repo manifest",
         "scope": "our copy",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-03",
+        "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists it as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
       },
       "evidenceLevel": "work-identified",
       "obligations": [],
@@ -946,13 +956,19 @@
             "kind": "page-read",
             "ref": "scrollmapper README and csv/bible_version_key.csv, read 2026-11-05",
             "note": "states \"All included Bible translations are in the public domain\"; version key lists WEB, KJV, ASV as Public Domain; the repository itself carries a GPL v3 notice for its code and database tooling"
+          },
+          {
+            "kind": "measured",
+            "ref": "re-comparison 2026-11-05 against the commit named in versionMarker",
+            "note": "t_asv.csv: 99.96% / 99.96% of 6-word runs (ours to source / source to ours), punctuation and case ignored"
           }
         ],
         "notRecovered": [
           "Exact download date and commit of the 2024 branch",
           "For KJV: a chat record of the download (match is measured only)"
         ],
-        "dateRecorded": "2026-11-05"
+        "dateRecorded": "2026-11-05",
+        "versionMarker": "scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5 (2024-11-08), csv/t_asv.csv sha256 4c2c7405f2edc183b21f36ad6cf81eb3df02afc6e60e137ba9e0c3d9f89a73a8: the version our copy was measured against, not a recovered download commit"
       }
     },
     {
