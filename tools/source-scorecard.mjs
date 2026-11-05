@@ -438,9 +438,22 @@ function scoreRef(src) {
   const full = exists(p) ? p : path.join(libDir, '..', src.folder)
   const g = { id: src.id, name: src.displayName || src.id, kind: src.kind, scope: 'reference', status: src.status, gates: {}, facts: {}, next: [] }
   if (!exists(full)) { g.gates[1] = ['FAIL', [E('m', `file ${src.folder} not found`)]]; for (let i = 2; i <= 7; i++) g.gates[i] = ['UNKNOWN', []]; return g }
-  const buf = fs.readFileSync(full); const sha = crypto.createHash('sha256').update(buf).digest('hex').slice(0, 16)
-  let d; try { d = JSON.parse(buf.toString('utf8')) } catch { d = null }
-  srcLines.set(src.id, d && typeof d.source === 'string' ? d.source : '')
+  // a source kept as a folder of letter files (library/dictionary/Easton): read the letter files in name order as one table of entries keyed by id; the folder's _index.json names the work
+  const isDir = fs.statSync(full).isDirectory()
+  let buf, d, dirSource = ''
+  if (isDir) {
+    const files = fs.readdirSync(full).filter(f => /^[A-Z_]\.json$/.test(f)).sort()
+    buf = Buffer.concat(files.map(f => fs.readFileSync(path.join(full, f))))
+    try {
+      d = {}; for (const f of files) for (const e of JSON.parse(fs.readFileSync(path.join(full, f), 'utf8')).entries) d[e.id] = e
+      const ix = path.join(full, '_index.json'); if (exists(ix)) dirSource = readJSON(ix).sourceLine || ''
+    } catch { d = null }
+  } else {
+    buf = fs.readFileSync(full)
+    try { d = JSON.parse(buf.toString('utf8')) } catch { d = null }
+  }
+  const sha = crypto.createHash('sha256').update(buf).digest('hex').slice(0, 16)
+  srcLines.set(src.id, isDir ? dirSource : (d && typeof d.source === 'string' ? d.source : ''))
   const count = d == null ? null : Array.isArray(d) ? d.length : Object.keys(d).length
   g.facts = { bytes: buf.length, entries: count, sha256_16: sha, manifestSha: src.sha256_16 || null }
   const keys = d && !Array.isArray(d) ? Object.keys(d) : []
