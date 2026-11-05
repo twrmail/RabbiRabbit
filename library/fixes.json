@@ -1305,6 +1305,22 @@
         "extend-in-variant-entry": 4
       },
       "reason": "Tom reviewed the 38 characters whose bio was not inside the Easton entry of the same name (2026-11-05) and decided: 11 are Easton's own entry with small damage and are replaced with the exact Easton text (a stray apostrophe or digit, missing '(See X.)' pointers, and for Belshazzar, Isaac, Nebuchadnezzar and Paul a cut at 1,200 characters); 27 are correct Easton text filed under a variant spelling and are kept; 4 of those (Hadarezer, Joram, Timotheus, Pontius Pilate) are cut at 1,200 and are completed inside the Easton entry where the text is found. Each replacement names the sha256 of the text it replaces, so the tool refuses to write if the file holds anything else."
+    },
+    {
+      "id": "characters-easton-bios-fixes-2",
+      "source": "characters",
+      "folder": "library/people",
+      "files": [
+        "characters"
+      ],
+      "target": "characters",
+      "op": "set-entry-text",
+      "patchFile": "library/patches/easton-bios-fixes-2.json",
+      "expectedCount": {
+        "replace-corrupted": 6,
+        "replace-wrong-sense": 1
+      },
+      "reason": "With the full Easton dictionary in the library (library/dictionary/Easton), the check of character bios against it found 6 bios not inside any entry, and Daniel's bio was Easton's note on his Babylonian name only. Tom decided on 2026-11-05 to correct them: Eber (a Benjamite), Ishmael (son of Hagar), Jonadab, Judah (patriarch), Pharez and Shishak are Easton's own text with small damage (a stray apostrophe, missing '(See X.)' pointers, '1 Chr.' added before a bare reference, Ishmael cut at 1,200) and become the exact Easton text; Daniel (the prophet, Ezekiel 14) takes Easton's sense (2.) of Daniel. Each replacement names the sha256 of the text it replaces, so the tool refuses to write if the file holds anything else."
     }
   ],
   "openIssues": [

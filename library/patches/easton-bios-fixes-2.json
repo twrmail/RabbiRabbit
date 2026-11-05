@@ -1,0 +1,77 @@
+{
+ "note": "More corrections to Easton bios in library/people/characters.json, decided by Tom 2026-11-05. Built by tools/build-easton-bios-fixes-2.py from library/dictionary/Easton.",
+ "source": {
+  "work": "Easton's Bible Dictionary (M. G. Easton, 1897, public domain)",
+  "file": "easton_ebd2.xml (CCEL ThML) as held in neuu-org/bible-dictionary-dataset data/00_raw/ccel/xml/",
+  "fileSha256": "10e3f432e38ee8197c30a613576dc363af3f29fa4aa90ebd0782533df906e5f1"
+ },
+ "counts": {
+  "replace-corrupted": 6,
+  "replace-wrong-sense": 1
+ },
+ "entries": {
+  "daniel": {
+   "category": "replace-wrong-sense",
+   "takenFrom": "Daniel sense (2.) [d-p34.3]",
+   "oldLength": 88,
+   "newLength": 4020,
+   "oldSha256": "4ebf9bb77933534b2f11758bede465da450bf2e01b05948d5c4a175b949c9439",
+   "bio": "One of the four great prophets, although he is not once spoken of in the Old Testament as a prophet. His life and prophecies are recorded in the Book of Daniel. He was descended from one of the noble families of Judah (Dan. 1:3), and was probably born in Jerusalem about B.C. 623, during the reign of Josiah. At the first deportation of the Jews by Nebuchadnezzar (the kingdom of Israel had come to an end nearly a century before), or immediately after his victory over the Egyptians at the second battle of Carchemish, in the fourth year of the reign of Jehoiakim (B.C. 606), Daniel and other three noble youths were carried off to Babylon, along with part of the vessels of the temple. There he was obliged to enter into the service of the king of Babylon, and in accordance with the custom of the age received the Chaldean name of Belteshazzar, i.e., “prince of Bel,” or “Bel protect the king!” His residence in Babylon was very probably in the palace of Nebuchadnezzar, now identified with a mass of shapeless mounds called the Kasr, on the right bank of the river. His training in the schools of the wise men in Babylon (Dan. 1:4) was to fit him for service to the empire. He was distinguished during this period for his piety and his stict observance of the Mosaic law (1:8-16), and gained the confidence and esteem of those who were over him. His habit of attention gained during his education in Jerusalem enabled him soon to master the wisdom and learning of the Chaldeans, and even to excel his compeers. At the close of his three years of discipline and training in the royal schools, Daniel was distinguished for his proficiency in the “wisdom” of his day, and was brought out into public life. He soon became known for his skill in the interpretation of dreams (1:17; 2:14), and rose to the rank of governor of the province of Babylon, and became “chief of the governors” (Chald. Rab-signin) over all the wise men of Babylon. He made known and also interpreted Nebuchadnezzar’s dream; and many years afterwards, when he was now an old man, amid the alarm and consternation of the terrible night of Belshazzar’s impious feast, he was called in at the instance of the queen-mother (perhaps Nitocris, the daughter of Nebuchadnezzar) to interpret the mysterious handwriting on the wall. He was rewarded with a purple robe and elevation to the rank of “third ruler.” The place of “second ruler” was held by Belshazzar as associated with his father, Nabonidus, on the throne (5:16). Daniel interpreted the handwriting, and “in that night was Belshazzar the king of the Chaldeans slain.” After the taking of Babylon, Cyrus, who was now master of all Asia from India to the Dardanelles, placed Darius (q.v.), a Median prince, on the throne, during the two years of whose reign Daniel held the office of first of the “three presidents” of the empire, and was thus practically at the head of affairs, no doubt interesting himself in the prospects of the captive Jews (Dan. 9), whom he had at last the happiness of seeing restored to their own land, although he did not return with them, but remained still in Babylon. His fidelity to God exposed him to persecution, and he was cast into a den of lions, but was miraculously delivered; after which Darius issued a decree enjoining reverence for “the God of Daniel” (6:26). He “prospered in the reign of Darius, and in the reign of Cyrus the Persian,” whom he probably greatly influenced in the matter of the decree which put an end to the Captivity (B.C. 536). He had a series of prophetic visions vouch-safed to him which opened up the prospect of a glorious future for the people of God, and must have imparted peace and gladness to his spirit in his old age as he waited on at his post till the “end of the days.” The time and circumstances of his death are not recorded. He probably died at Susa, about eighty-five years of age. Ezekiel, with whom he was contemporary, mentions him as a pattern of righteousness (14:14, 20) and wisdom (28:3). (See NEBUCHADNEZZAR.)",
+   "sha256": "3118fdeb40aa78059a93652b9bf06d2a1657c3376a172963c07d61fe994db28d"
+  },
+  "eber (a benjamite)": {
+   "category": "replace-corrupted",
+   "takenFrom": "Eber sense (3.) [e-p26.3]",
+   "oldLength": 67,
+   "newLength": 60,
+   "oldSha256": "655010d76e67a7b7b1347c0d634f286dbcfc63bda57341627accc6c7731b4f7a",
+   "bio": "The oldest of the three sons of Elpaal the Benjamite (8:12).",
+   "sha256": "3a1ba7595f08bbe5ec7b17ef7004be4655fc42c9950688847d27e13b51cb9a41"
+  },
+  "ishmael (son of hagar)": {
+   "category": "replace-corrupted",
+   "takenFrom": "Ishmael sense (1.) [i-p101.3]",
+   "oldLength": 1200,
+   "newLength": 1958,
+   "oldSha256": "4861ef02e0320613c52718469676b342538c2acef6afdd7bce6e6c52755ae122",
+   "bio": "Abraham’s eldest son, by Hagar the concubine (Gen. 16:15; 17:23). He was born at Mamre, when Abraham was eighty-six years of age, eleven years after his arrival in Canaan (16:3; 21:5). At the age of thirteen he was circumcised (17:25). He grew up a true child of the desert, wild and wayward. On the occasion of the weaning of Isaac his rude and wayward spirit broke out in expressions of insult and mockery (21:9, 10); and Sarah, discovering this, said to Abraham, “Expel this slave and her son.” Influenced by a divine admonition, Abraham dismissed Hagar and her son with no more than a skin of water and some bread. The narrative describing this act is one of the most beautiful and touching incidents of patriarchal life (Gen. 21:14-16). (See HAGAR.) Ishmael settled in the land of Paran, a region lying between Canaan and the mountains of Sinai; and “God was with him, and he became a great archer” (Gen. 21:9-21). He became a great desert chief, but of his history little is recorded. He was about ninety years of age when his father Abraham died, in connection with whose burial he once more for a moment reappears. On this occasion the two brothers met after being long separated. “Isaac with his hundreds of household slaves, Ishmael with his troops of wild retainers and half-savage allies, in all the state of a Bedouin prince, gathered before the cave of Machpelah, in the midst of the men of Heth, to pay the last duties to the ‘father of the faithful,’ would make a notable subject for an artist” (Gen. 25:9). Of the after events of his life but little is known. He died at the age of one hundred and thirty-seven years, but where and when are unknown (25:17). He had twelve sons, who became the founders of so many Arab tribes or colonies, the Ishmaelites, who spread over the wide desert spaces of Northern Arabia from the Red Sea to the Euphrates (Gen. 37:25, 27, 28; 39:1), “their hand against every man, and every man’s hand against them.”",
+   "sha256": "b25fbf7e3326d608098713aa0d07e043a41d47a515ae619e3828ee27cf92fe11"
+  },
+  "jonadab": {
+   "category": "replace-corrupted",
+   "takenFrom": "Jehonadab sense (2.) [j-p167.5]",
+   "oldLength": 303,
+   "newLength": 320,
+   "oldSha256": "913c76379fd268648992c109d50ddaf44cef247c039040d23d840ebd20f9e37d",
+   "bio": "A son of Rechab, the founder of a tribe who bound themselves by a vow to abstain from wine (Jer. 35:6-19). There were different settlements of Rechabites (Judg. 1:16; 4:11; 1 Chr. 2:55). (See RECHABITE.) His interview and alliance with Jehu are mentioned in 2 Kings 10:15-23. He went with Jehu in his chariot to Samaria.",
+   "sha256": "6fb72a832f62d6b90d164c4719d91e10207bd151693803bd8ff32d730d6ff34f"
+  },
+  "judah (patriarch)": {
+   "category": "replace-corrupted",
+   "takenFrom": "Judah [j-p491.2]",
+   "oldLength": 863,
+   "newLength": 882,
+   "oldSha256": "921e406813e274ac0736f85ebd37bcda01d9caa86e7342150d04a07d1afd0f98",
+   "bio": "Praise, the fourth son of Jacob by Leah. The name originated in Leah’s words of praise to the Lord on account of his birth: “Now will I praise [Heb. odeh] Jehovah, and she called his name Yehudah” (Gen. 29:35). It was Judah that interposed in behalf of Joseph, so that his life was spared (Gen. 37:26, 27). He took a lead in the affairs of the family, and “prevailed above his brethren” (Gen. 43:3-10; 44:14, 16-34; 46:28; 1 Chr. 5:2). Soon after the sale of Joseph to the Ishmaelites, Judah went to reside at Adullam, where he married a woman of Canaan. (See ONAN; TAMAR.) After the death of his wife Shuah, he returned to his father’s house, and there exercised much influence over the patriarch, taking a principal part in the events which led to the whole family at length going down into Egypt. We hear nothing more of him till he received his father’s blessing (Gen. 49:8-12).",
+   "sha256": "c7f32d6c1c62ad414c5e10f7bfec9247ed4d6d235bcde769e6546cc913bbed89"
+  },
+  "pharez": {
+   "category": "replace-corrupted",
+   "takenFrom": "Perez [p-p149.3]",
+   "oldLength": 320,
+   "newLength": 319,
+   "oldSha256": "af97a0b4ef0adf6199ff0655e43e7f4c38c0de639726fa1cc5e5d67de899dc6a",
+   "bio": "=Pharez, (q.v.), breach, the son of Judah (Neh. 11:4). “The chief of all the captains of the host for the first month” in the reign of David was taken from his family (1 Chr. 27:3). Four hundred and sixty-eight of his “sons” came back from captivity with Zerubbabel, who himself was one of them (1 Chr. 9:4; Neh. 11:6).",
+   "sha256": "9e3f1a3b53bf2006aa18cc28fdc5bd243ef20281ac0b7d31d5641d2088c73df5"
+  },
+  "shishak": {
+   "category": "replace-corrupted",
+   "takenFrom": "Shishak I [s-p417.3]",
+   "oldLength": 827,
+   "newLength": 842,
+   "oldSha256": "d38db3fc8e5bcb7cb6b04eb59d779c5ebb73ab9e32bd2a7e29c2332a8091cd5c",
+   "bio": "=Sheshonk I., king of Egypt. His reign was one of great national success, and a record of his wars and conquests adorns the portico of what are called the “Bubastite kings” at Karnak, the ancient Thebes. Among these conquests is a record of that of Judea. In the fifth year of Rehoboam’s reign Shishak came up against the kingdom of Judah with a powerful army. He took the fenced cities and came to Jerusalem. He pillaged the treasures of the temple and of the royal palace, and carried away the shields of gold which Solomon had made (1 Kings 11:40; 14:25; 2 Chr. 12:2). (See REHOBOAM.) This expedition of the Egyptian king was undertaken at the instigation of Jeroboam for the purpose of humbling Judah. Hostilities between the two kingdoms still continued; but during Rehoboam’s reign there was not again the intervention of a third party.",
+   "sha256": "e0cb6ff9a59b89433ab6d50b5b7aa228d1e34dda9a2803c3ab144f554e783a31"
+  }
+ }
+}
