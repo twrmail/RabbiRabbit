@@ -2,7 +2,7 @@
 
 One list of everything unfinished, so nothing is lost between chats. Update it in the same pull request as the work. A thread is done only when all three agree: the library file exists, the register records its origin and licence, and the Worker either reads it or this list says "not read yet, on purpose".
 
-Last updated: 2026-11-05 (after PR #43). Evidence for each item lives in the Project docs named in the last column (folder `claude/`).
+Last updated: 2026-11-05 (after PR #45; #46 open). Evidence for each item lives in the Project docs named in the last column (folder `claude/`).
 
 ## Worker (parked until the library is ready; Tom releases it)
 | Thread | State | Needs | Evidence |
@@ -16,9 +16,9 @@ Last updated: 2026-11-05 (after PR #43). Evidence for each item lives in the Pro
 ## Library content
 | Thread | State | Needs | Evidence |
 |---|---|---|---|
-| Easton bios, 38 characters whose bio is not inside Easton's entry of the same name | Review list built | Tom's keep / replace / add decision per row, then one PR | easton-review-list-nov5 |
+| Easton bios, 38 characters whose bio was not inside Easton's entry of the same name | Decided 2026-11-05: 11 corrected, 4 completed, 27 kept (correct Easton text under a variant spelling); in PR #46 | Merge #46 | easton-review-resolution-nov5 |
 | Easton: 171 names with no exact Easton entry | Held, unchanged | A name map (decide spelling matches), later | easton-bios-fix-nov5 |
-| WEB translator notes (355 notes on 330 verses) removed at build time | Recorded in register (PR #43); layer not built | Build as a separate notes file, never inside verse text | web-and-mhc-checks-nov5 |
+| WEB translator notes (354 notes on 329 verses) removed at build time | Layer built (PR #45) in `library/bible-notes/WEB`, apart from verse text; nothing reads it yet | Register entry and manifest line for the layer; Worker use later; read the WEB's terms on dropping notes from the text | web-and-mhc-checks-nov5 |
 | WEB `year: 2020` field in the files | Hand-typed, not a release; left in place | Tom's call on changing the field | web-and-mhc-checks-nov5 |
 | Calvin leftovers; JFB and Wesley word differences vs CCEL | Open from earlier handoffs | Per handoff-nov4 | handoff-nov4 |
 | Identity-cards installer | Not started | Tom's go | identity-cards |
@@ -40,6 +40,7 @@ Last updated: 2026-11-05 (after PR #43). Evidence for each item lives in the Pro
 | Version markers for JFB, Calvin, Wesley, Spurgeon, Tyndale, BSB and the other sources | Only KJV, ASV, WEB, MHC have one | Per source: find the commit or release | PRs #41-#43 |
 
 ## Housekeeping
+- `validate-library.mjs` (older, compares library/ with data/) reports 142 failures on main, before and after recent changes; the recorded repairs make them differ by design. Retire it or update it.
 - Delete merged branches (`gate-code-1105`, `headers-1105`, `register-versions-1105`, `register-mhc-1105`, `web-source-1105`, `open-threads-1105` and earlier ones).
 - Stray backslashes in `claude/data-origins-from-chats-nov4.md`.
 - Hugging Face Easton is CCEL-derived, not an independent copy (noted; no action).
