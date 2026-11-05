@@ -2,7 +2,7 @@
 
 One list of everything unfinished, so nothing is lost between chats. Update it in the same pull request as the work. A thread is done only when all three agree: the library file exists, the register records its origin and licence, and the Worker either reads it or this list says "not read yet, on purpose".
 
-Last updated: 2026-11-05 (after PR #45; #46 open). Evidence for each item lives in the Project docs named in the last column (folder `claude/`).
+Last updated: 2026-11-05 (after PR #47; Easton dictionary PR open). Evidence for each item lives in the Project docs named in the last column (folder `claude/`).
 
 ## Worker (parked until the library is ready; Tom releases it)
 | Thread | State | Needs | Evidence |
@@ -20,6 +20,8 @@ Last updated: 2026-11-05 (after PR #45; #46 open). Evidence for each item lives 
 | Easton: 171 names with no exact Easton entry | Held, unchanged | A name map (decide spelling matches), later | easton-bios-fix-nov5 |
 | WEB translator notes (354 notes on 329 verses) removed at build time | Layer built (PR #45) in `library/bible-notes/WEB`, apart from verse text; nothing reads it yet | Register entry and manifest line for the layer; Worker use later; read the WEB's terms on dropping notes from the text | web-and-mhc-checks-nov5 |
 | WEB `year: 2020` field in the files | Hand-typed, not a release; left in place | Tom's call on changing the field | web-and-mhc-checks-nov5 |
+| Full Easton's Bible Dictionary (3,964 entries) | Data built (this PR) in `library/dictionary/Easton`; checker passes | Register entry, manifest line and scorecard row (PR 2); name map from characters to entries; Worker use later | easton-copies-compared-nov5 |
+| 6 character bios not found inside any Easton entry (eber (a benjamite), ishmael (son of hagar), jonadab, judah (patriarch), pharez, shishak) | Listed in `library/dictionary/Easton/_index.json`; four are the same small damage as the 11 corrected in #46 | One correction PR | easton-review-resolution-nov5 |
 | Calvin leftovers; JFB and Wesley word differences vs CCEL | Open from earlier handoffs | Per handoff-nov4 | handoff-nov4 |
 | Identity-cards installer | Not started | Tom's go | identity-cards |
 
