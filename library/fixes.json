@@ -598,6 +598,110 @@
         "misplaced tails cut": 1
       },
       "reason": "CCEL's own file ends Psalm 85 with the opening paragraph of Psalm 86 ('In this psalm prayers and holy meditations ...'), which Psalm 86 also holds. The restored Psalm 85 therefore carried it twice over the two chapters. The tail (87 words; about 90% of its 6-word runs are found at the start of Psalm 86, the two copies differing only in one spelling, judgment/judgement, and the word 'his') is cut from Psalm 85; Psalm 86 keeps its own copy of the paragraph, so nothing is lost. The cut is checked by offset, length and sha256."
+    },
+    {
+      "id": "wesley-source-nt-work",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "MAT",
+        "MRK",
+        "LUK",
+        "JHN",
+        "ACT",
+        "ROM",
+        "1CO",
+        "2CO",
+        "GAL",
+        "EPH",
+        "PHP",
+        "COL",
+        "1TH",
+        "2TH",
+        "1TI",
+        "2TI",
+        "TIT",
+        "PHM",
+        "HEB",
+        "JAS",
+        "1PE",
+        "2PE",
+        "1JN",
+        "2JN",
+        "3JN",
+        "JUD",
+        "REV"
+      ],
+      "target": "source",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "Wesley's Explanatory Notes on the Bible (1765)",
+          "Wesley's Explanatory Notes upon the New Testament (1755)"
+        ]
+      ],
+      "expectedCount": {
+        "Wesley's Explanatory Notes on the Bible (1765)": 27
+      },
+      "reason": "The header said the whole Bible was one 1765 work. Wesley's notes are two works: the New Testament notes (first published 1755; the year comes from the WesleyWalk notes and is not stated in the CCEL text) and the Old Testament notes (1765). His own New Testament preface says they translate and abridge Bengel's Gnomon and draw on Heylin, Guyse and Doddridge. Only the source field changes (27 New Testament books); no commentary text is touched."
+    },
+    {
+      "id": "wesley-source-ot-work",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "1CH",
+        "1KI",
+        "1SA",
+        "2CH",
+        "2KI",
+        "2SA",
+        "AMO",
+        "DAN",
+        "DEU",
+        "ECC",
+        "EST",
+        "EXO",
+        "EZK",
+        "EZR",
+        "GEN",
+        "HAB",
+        "HAG",
+        "HOS",
+        "ISA",
+        "JDG",
+        "JER",
+        "JOB",
+        "JOL",
+        "JON",
+        "JOS",
+        "LAM",
+        "LEV",
+        "MAL",
+        "MIC",
+        "NAH",
+        "NEH",
+        "NUM",
+        "OBA",
+        "PRO",
+        "PSA",
+        "RUT",
+        "SNG",
+        "ZEC",
+        "ZEP"
+      ],
+      "target": "source",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "Wesley's Explanatory Notes on the Bible (1765)",
+          "Wesley's Explanatory Notes upon the Old Testament (1765)"
+        ]
+      ],
+      "expectedCount": {
+        "Wesley's Explanatory Notes on the Bible (1765)": 39
+      },
+      "reason": "Old Testament half of the same correction (39 books). Wesley's own preface to the Old Testament notes says they are an abridgement of Matthew Henry's commentary, made shorter and plainer, and gives his age as entering his sixty-third year (about 1765). Only the source field changes; no commentary text is touched."
     }
   ],
   "openIssues": [
