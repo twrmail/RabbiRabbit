@@ -12,8 +12,8 @@
       "established"
     ]
   },
-  "note": "Evidence register for gates 2 (Provenance) and 6 (Licence). Descriptive only: nothing here changes a gate result. A rights statement about a witness is not a rights finding about our copy.",
-  "dateCompiled": "2026-11-03",
+  "note": "Evidence register for gates 2 (Provenance) and 6 (Licence). Descriptive only: nothing here changes a gate result. A rights statement about a witness is not a rights finding about our copy. Reconciled 2026-11-04: each source may now carry three separate histories. literaryHistory (who wrote the work, which edition, whose work it derives from), acquisition (where RabbiRabbit got its files and how they were changed; recovered from past chats, git history and code comments, NOT from a source document), and rights (the licence statement, with rightsDeclarations for statements read on a page). None of the new fields changes an evidence level or a gate result.",
+  "dateCompiled": "2026-11-04",
   "evidenceLevels": {
     "established": "origin and edition of our copy known (Gate 2 PASS)",
     "witnessed": "an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)",
@@ -58,8 +58,46 @@
       "openQuestions": [
         "Where did the original repository copy come from?",
         "Is the Revell edition claim correct?",
-        "75 restored quotation blocks have a CCEL witness (library/patches/henry-blocks.json); the rest of the text does not."
-      ]
+        "75 restored quotation blocks have a CCEL witness (library/patches/henry-blocks.json); the rest of the text does not.",
+        "Settle Complete versus Concise from the original repo's own description, then decide the footer wording."
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Current copy rebuilt from a GitHub repo of per-chapter markdown files (chapter-N.md, psalm-N.md), described as CC0. Replaced an earlier 39-book copy with mislabelled chapters.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Fourth rabbit handoff",
+            "note": "rebuild reported as Aug 11 from the CC0 repo"
+          },
+          {
+            "kind": "git-history",
+            "ref": "commit 273e400",
+            "note": "git shows the last upload of MHC on 2026-07-22; this does not match the Aug 11 rebuild date and needs reconciling"
+          },
+          {
+            "kind": "chat-history",
+            "ref": "Tom, Nov 4",
+            "note": "found the repo himself on GitHub; name not recalled; unconfirmed lead: the BibleCommentaries organisation"
+          }
+        ],
+        "notRecovered": [
+          "Name of the GitHub repository",
+          "Whether the repo's own licence statement says CC0",
+          "Why git and the chat give different dates"
+        ],
+        "dateRecorded": "2026-11-04"
+      },
+      "literaryHistory": {
+        "edition": "Strongly suspected Complete Commentary (6 vols, 1706-1721); NOT established.",
+        "evidence": [
+          "CCEL witness (mhc1.xml) calls itself unabridged and agrees with our text after repairs",
+          "1,189 chapters, about 38.9M characters (about 33,000 per chapter)",
+          "Two earlier sessions concluded Complete",
+          "The live app footer says 'Concise Commentary, 1706'; the v37 draft footer says 'edition not identified'"
+        ],
+        "note": "The footer label is NOT changed by this register entry. The edition question (what the work is) is separate from the file-provenance question (which repo our files came from)."
+      }
     },
     {
       "sourceId": "jfb",
@@ -96,7 +134,22 @@
       "openQuestions": [
         "Where did our original text originate?",
         "97 word-level differences (of the 163 recorded; the other 66 are title lines) await adjudication. Only objective errors in ours were fixed."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Rebuilt from CCEL around Aug 7-8, per-book files.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Fifth rabbit handoff",
+            "note": "CCEL per-book rebuild"
+          }
+        ],
+        "notRecovered": [
+          "Which CCEL file or URL was used"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "calvin",
@@ -136,12 +189,32 @@
         "Acts and Isaiah 1-16 compared with CCEL (no commentary missing). Exodus-Deuteronomy, Matthew-Luke, Psalms, Jonah, Micah, Nahum, Obadiah, Jude, Malachi and Philemon still need their own CCEL readers.",
         "Chapter-opening translations (Calvin's translation of the chapter, English with Latin) exist in CCEL and not in our copy; see open issue calvin-chapter-opening-translations in library/fixes.json. They are not in data/ or library/, so if imported they are newly sourced CCEL material needing their own provenance and rights review. The Calvin repairs so far drew moved text from our own copy; the two Acts arguments are the only CCEL-sourced text added."
       ],
-      "note": "Moved blocks (library/patches/calvin-moves.json) take text from our own old copy, with CCEL as witness only."
+      "note": "Moved blocks (library/patches/calvin-moves.json) take text from our own old copy, with CCEL as witness only.",
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "HelloAO john-calvin dataset (a CrossWire SWORD module sourced from CCEL), rebuilt Aug 7. Later repairs from CCEL are recorded as rules in library/fixes.json.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Sixth rabbit handoff",
+            "note": "HelloAO john-calvin dataset"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-08-07",
+            "note": "matches the chat date"
+          }
+        ],
+        "notRecovered": [
+          "Module version behind the HelloAO dataset"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "wesley",
       "work": {
-        "title": "Explanatory Notes upon the Old and New Testaments",
+        "title": "Explanatory Notes upon the New Testament (1755) and upon the Old Testament (1765): two works",
         "author": "John Wesley"
       },
       "repositoryCopy": {
@@ -172,8 +245,66 @@
       "obligations": [],
       "openQuestions": [
         "Can the original copy's source be recovered?",
-        "2 Samuel 24: probably no notes; unconfirmed."
-      ]
+        "2 Samuel 24: probably no notes; unconfirmed.",
+        "NT edition year: confirm 1755 from a source other than the WesleyWalk note.",
+        "Is Poole in the OT derivation? Only the WesleyWalk note says so.",
+        "Count Wesley and Henry as one voice on OT passages in the Worker prompt?"
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Built by Claude in the WesleyWalk project from source files Tom uploaded, zipped as 66 files and added to this repo on 2026-06-27 (commit 'Add complete Wesley corpus: notes, sermons, hymns, timeline'). The text matches the CCEL 'Wesley's Notes on the Bible' (99.5% of 6-word runs).",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "WesleyWalk project notes (Tom)",
+            "note": "parsed from uploaded source files"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-06-27",
+            "note": ""
+          },
+          {
+            "kind": "page-read",
+            "ref": "CCEL PDF attached by Tom, Nov 4",
+            "note": "text comparison; see claude/wesley-two-works-evidence-nov4.md"
+          }
+        ],
+        "notRecovered": [
+          "Which site and file format the uploaded sources were",
+          "Whether the upload was the CCEL text"
+        ],
+        "dateRecorded": "2026-11-04"
+      },
+      "logicalWorks": [
+        {
+          "id": "wesley-nt",
+          "files": "the 27 New Testament files, MAT to REV",
+          "title": "Explanatory Notes upon the New Testament",
+          "yearClaimed": 1755,
+          "yearBasis": "WesleyWalk note only; the CCEL PDF preface gives no year",
+          "derivedFrom": [
+            "Bengel's Gnomon Novi Testamenti (translated and abridged; Wesley's NT preface, para. 7)",
+            "Heylin, Guyse, Doddridge (named in the preface, para. 8; no per-note attribution)"
+          ],
+          "basis": "Wesley's own NT preface (page-read, CCEL PDF p. 1-3)"
+        },
+        {
+          "id": "wesley-ot",
+          "files": "the 39 Old Testament files, GEN to MAL",
+          "title": "Explanatory Notes upon the Old Testament",
+          "yearClaimed": 1765,
+          "yearBasis": "inferred from the preface ('entering into the sixty-third year of my age'); WesleyWalk note says 1765",
+          "derivedFrom": [
+            "Matthew Henry's commentary, abridged (Wesley's OT preface, page-read, CCEL PDF p. 587)",
+            "Poole (WesleyWalk note only; not seen in the preface text read here)"
+          ],
+          "independenceNote": "On Old Testament passages Wesley is an abridgement of Henry, so he should not count as an independent voice alongside Henry."
+        }
+      ],
+      "literaryHistory": {
+        "note": "Two separate works stored in one folder; see logicalWorks. Our file headers were corrected to say so in PR #32 (the source field only)."
+      }
     },
     {
       "sourceId": "scofield",
@@ -199,7 +330,42 @@
       "openQuestions": [
         "Verify the actual text is the 1917 edition and not the copyrighted 1967 New Scofield.",
         "No witness compared."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Extracted from the CrossWire SWORD module Scofield with diatheke (chat date July 1; git first-add 2026-06-26/27).",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "diatheke extraction"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-06-26/27",
+            "note": "earlier than the chat date; a first extraction may have preceded July 1"
+          }
+        ],
+        "notRecovered": [
+          "Module version extracted",
+          "Whether the extracted copy is complete (481 chapters are under 300 characters)"
+        ],
+        "dateRecorded": "2026-11-04"
+      },
+      "rightsDeclarations": [
+        {
+          "declaredBy": "CrossWire module Scofield, as recorded in the Debian copyright file for sword-comm-scofield",
+          "url": "https://metadata.ftp-master.debian.org/changelogs/main/s/sword-comm-scofield/",
+          "statement": "Scofield Reference Notes, 1917 Edition; licence public-domain; text stems from Wikisource; copyright holder named as Cyrus Ingerson Scofield",
+          "scope": "the CrossWire module as packaged; not established for our extracted copy",
+          "status": "page-read",
+          "dateChecked": "2026-11-04"
+        }
+      ],
+      "literaryHistory": {
+        "edition": "1917 Scofield Reference Bible notes, per the module's own declaration (page-read)",
+        "note": "Our file header's '(1917)' was typed into our own build script; the module is the evidence for the edition, not the header. The 1967 New Scofield is a different, copyrighted work."
+      }
     },
     {
       "sourceId": "spurgeon",
@@ -231,7 +397,33 @@
       "obligations": [],
       "openQuestions": [
         "Confirm our actual text matches the identified source; licence of that repository not read this session."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Current copy from GitHub lyteword/chspurgeon-tod (Oct). It replaced a June copy taken from the CrossWire SWORD module TDavid.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Seventh Rabbit Trail",
+            "note": "lyteword/chspurgeon-tod"
+          },
+          {
+            "kind": "code-comment",
+            "ref": "Worker v22 comment",
+            "note": "says CC0 1.0 for that repo; the repo licence file was not re-read here"
+          },
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "June copy from TDavid via diatheke; git first-add 2026-06-26/27"
+          }
+        ],
+        "notRecovered": [
+          "The repo's own licence statement, re-read",
+          "Which edition of the Treasury the repo transcribes"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "barnes-nt",
@@ -256,7 +448,25 @@
       "obligations": [],
       "openQuestions": [
         "No source or edition recorded; no witness compared."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "CCEL full-text cache ntnotes.txt, parsed in October into per-verse files.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Seventh Rabbit Trail",
+            "note": "CCEL ntnotes.txt"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-10-05",
+            "note": "matches"
+          }
+        ],
+        "notRecovered": [],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "tyndale",
@@ -295,7 +505,23 @@
       "openQuestions": [
         "Check whether the Worker shows the attribution.",
         "Exodus 36 gap (repo roadmap)."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "code-comment",
+        "summary": "Worker v24 comment: converted from a 'public-domain-books' GitHub repo into per-verse files; CC BY-SA 4.0 per the same comment.",
+        "records": [
+          {
+            "kind": "code-comment",
+            "ref": "Worker v24 comment",
+            "note": "repo not named"
+          }
+        ],
+        "notRecovered": [
+          "Name of the source repo",
+          "Licence statement read at the source"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "xref",
@@ -321,7 +547,23 @@
       ],
       "openQuestions": [
         "Authoritative licence page could not be read on 2026-11-03 (redirect loop)."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "The Worker footer and the seed script name OpenBible.info as the cross-reference source (255,675 references in per-book files).",
+        "records": [
+          {
+            "kind": "code-comment",
+            "ref": "Worker footer text",
+            "note": "OpenBible.info cross-reference dataset"
+          }
+        ],
+        "notRecovered": [
+          "Download date and original file",
+          "Licence version on the OpenBible page"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "barnes-legacy",
@@ -345,7 +587,22 @@
       "obligations": [],
       "openQuestions": [
         "Retired; never served. Licence to settle when a replacement source is chosen."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Barnes (old): scraped from biblehub.com in July. Retired from use.",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "MILESTONES, July 5",
+            "note": "scraped from biblehub.com via scripts/parse_missing_commentaries.py"
+          }
+        ],
+        "notRecovered": [
+          "biblehub.com's own terms for the scraped text"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "clarke",
@@ -369,7 +626,22 @@
       "obligations": [],
       "openQuestions": [
         "Retired; never served. Licence to settle when a replacement source is chosen."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Clarke: scraped from biblehub.com in July. Retired from use.",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "MILESTONES, July 5",
+            "note": "scraped from biblehub.com via scripts/parse_missing_commentaries.py"
+          }
+        ],
+        "notRecovered": [
+          "biblehub.com's own terms for the scraped text"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "vincent",
@@ -393,7 +665,22 @@
       "obligations": [],
       "openQuestions": [
         "Retired; never served. Licence to settle when a replacement source is chosen."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Vincent: scraped from biblehub.com in July. Retired from use.",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "MILESTONES, July 5",
+            "note": "scraped from biblehub.com via scripts/parse_missing_commentaries.py"
+          }
+        ],
+        "notRecovered": [
+          "biblehub.com's own terms for the scraped text"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "meyer",
@@ -417,7 +704,22 @@
       "obligations": [],
       "openQuestions": [
         "Retired; never served. Licence to settle when a replacement source is chosen."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Meyer: scraped from biblehub.com in July. Retired from use.",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "MILESTONES, July 5",
+            "note": "scraped from biblehub.com via scripts/parse_missing_commentaries.py"
+          }
+        ],
+        "notRecovered": [
+          "biblehub.com's own terms for the scraped text"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "bsb",
@@ -454,7 +756,32 @@
       "openQuestions": [
         "Does the dedication cover the exact text in our file, which is labelled 'Berean Study Bible'?",
         "Is our text the 2023 Berean Standard Bible text?"
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "seven1m/open-bibles eng-bsb.usfx.xml, parsed July 3.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "3rdRabbiRabbit",
+            "note": "parsing"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-07-03",
+            "note": "matches"
+          },
+          {
+            "kind": "code-comment",
+            "ref": "library/bible/BSB file headers",
+            "note": "source: bereanbibles.com via seven1m/open-bibles"
+          }
+        ],
+        "notRecovered": [
+          "Licence wording versus the 'Berean Study Bible' label (see triage doc item)"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "web",
@@ -479,7 +806,16 @@
       "openQuestions": [
         "Dedication page not read this session.",
         "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "none-found",
+        "summary": "No acquisition record surfaced in past chats or the repo.",
+        "records": [],
+        "notRecovered": [
+          "Where the file was obtained"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "kjv",
@@ -503,7 +839,16 @@
       "obligations": [],
       "openQuestions": [
         "Not verified this session."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "none-found",
+        "summary": "No acquisition record surfaced in past chats or the repo.",
+        "records": [],
+        "notRecovered": [
+          "Where the file was obtained"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "asv",
@@ -527,7 +872,16 @@
       "obligations": [],
       "openQuestions": [
         "Not verified this session."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "none-found",
+        "summary": "No acquisition record surfaced in past chats or the repo.",
+        "records": [],
+        "notRecovered": [
+          "Where the file was obtained"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "strongs-hebrew",
@@ -551,7 +905,37 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "rightsDeclarations": [
+        {
+          "declaredBy": "CrossWire module, as recorded in the Debian copyright file for sword-dict-strongs-hebrew",
+          "url": "https://metadata.ftp-master.debian.org/changelogs/main/s/sword-dict-strongs-hebrew/stable_copyright",
+          "statement": "taken from Strong's Exhaustive Concordance by James Strong, 1890; licence public-domain; holders listed James Strong and Jens Grebner; digital text from walljm.com heb_strongs.zip",
+          "scope": "the CrossWire module as packaged; not established for our extracted copy",
+          "status": "page-read",
+          "dateChecked": "2026-11-04"
+        }
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "CrossWire SWORD dictionary module (chat date July 1; git first-add 2026-06-26).",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "diatheke extraction"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-06-26",
+            "note": ""
+          }
+        ],
+        "notRecovered": [
+          "Module version extracted"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "strongs-greek",
@@ -575,7 +959,32 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "rightsDeclarations": [
+        {
+          "declaredBy": "CrossWire module, as recorded in the Debian copyright file for sword-dict-strongs-greek",
+          "url": "https://metadata.ftp-master.debian.org/changelogs/main/s/sword-dict-strongs-greek/testing_copyright",
+          "statement": "based on Strong's Exhaustive Concordance (1890); licence public-domain; holders listed James Strong and Ulrik Sandborg-Petersen (his content from the morphgnt strongs-dictionary-xml project); no full licence text in the file",
+          "scope": "the CrossWire module as packaged; not established for our extracted copy",
+          "status": "page-read",
+          "dateChecked": "2026-11-04"
+        }
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "CrossWire SWORD dictionary module (chat date July 1).",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "diatheke extraction"
+          }
+        ],
+        "notRecovered": [
+          "Module version extracted"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "concordance",
@@ -599,7 +1008,27 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Built Aug 11 from CrossWire's original OSIS KJV data tagged with Strong's numbers, after a bug was found in an earlier third-party conversion.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Fourth rabbit handoff",
+            "note": "OSIS-based build"
+          },
+          {
+            "kind": "code-comment",
+            "ref": "Worker comment",
+            "note": "same account"
+          }
+        ],
+        "notRecovered": [
+          "Exact OSIS file and version"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "naves",
@@ -623,7 +1052,38 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "rightsDeclarations": [
+        {
+          "declaredBy": "CrossWire module, as recorded in the Debian copyright file for sword-dict-naves",
+          "url": "https://metadata.ftp-master.debian.org/changelogs/main/s/sword-dict-naves/stable_copyright",
+          "statement": "'Public Domain -- Copy Freely.'; electronic text copyright line 'Bible Foundation 2000'; no edition stated",
+          "scope": "the CrossWire module as packaged; not established for our extracted copy",
+          "status": "page-read",
+          "dateChecked": "2026-11-04"
+        }
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "CrossWire SWORD module Nave's; first 72 curated topics, later 5,319.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit; 3rdRabbiRabbit",
+            "note": "module extraction and later expansion"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-07-01",
+            "note": ""
+          }
+        ],
+        "notRecovered": [
+          "Source of the expansion from 72 to 5,319 topics",
+          "Module version extracted"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "topic-scores",
@@ -647,7 +1107,28 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "OpenBible.info Topic Scores dataset (6,711 topics).",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Fourth rabbit handoff",
+            "note": "dataset named; chat date Aug"
+          },
+          {
+            "kind": "git-history",
+            "ref": "first add 2026-07-24",
+            "note": "earlier than the chat date"
+          }
+        ],
+        "notRecovered": [
+          "Licence statement on the OpenBible page (Tom reports it links CC BY 4.0; the attribution wording is not yet recorded)",
+          "Download date and file"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "xref-seed",
@@ -671,7 +1152,20 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Our own script build-xref-seed-pool.cjs, derived from the OpenBible cross-references.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "Sixth rabbit handoff",
+            "note": ""
+          }
+        ],
+        "notRecovered": [],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "overview-map",
@@ -695,7 +1189,20 @@
       "obligations": [],
       "openQuestions": [
         "No source or licence recorded."
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "chat-history",
+        "summary": "Our own work (v13, July 5): hinge-chapter map for 66 books.",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "MILESTONES v13, July 5",
+            "note": ""
+          }
+        ],
+        "notRecovered": [],
+        "dateRecorded": "2026-11-04"
+      }
     },
     {
       "sourceId": "characters",
@@ -754,7 +1261,32 @@
           "status": "unresolved",
           "source": "docs/data-source-bibliography.md, 2026-11-03"
         }
-      ]
+      ],
+      "acquisition": {
+        "evidenceClass": "code-comment",
+        "summary": "MILESTONES v12 (July 4): a 1,894-figure index built from Easton's Bible Dictionary plus Theographic Bible Metadata.",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "MILESTONES v12; first add 2026-07-03",
+            "note": ""
+          }
+        ],
+        "notRecovered": [
+          "How each source was obtained",
+          "How the two were combined",
+          "Theographic licence terms (CC BY-SA 4.0) against the repo's MIT root"
+        ],
+        "dateRecorded": "2026-11-04"
+      }
     }
-  ]
+  ],
+  "acquisitionEvidenceClasses": {
+    "chat-history": "A past Claude chat describes what was downloaded or built. A record of what was done, not an independent check of the source or of its identity.",
+    "git-history": "First-add or last-upload date read from this repository's git history. Dates when the file entered the repo, not necessarily when it was acquired.",
+    "code-comment": "A comment in our own Worker or tools. A claim by earlier sessions.",
+    "page-read": "A page was read in this review (for example a Debian packager's copyright file). The page's statement is recorded; it is not a finding about our extracted copy.",
+    "none-found": "Searched past chats and the repo; no acquisition record surfaced."
+  },
+  "dateNote": "Chat dates and git first-add dates sometimes disagree (for example Scofield: chat says extracted July 1, git first-add 2026-06-26/27; topic scores: chat says August, git 2026-07-24). Both are recorded; treat chat dates as approximate."
 }
