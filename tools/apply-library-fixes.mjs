@@ -220,6 +220,25 @@ for (const rule of fixes.rules) {
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }
+    } else if (rule.op === 'set-entry-text') {
+      // dictionary-style entries (library/people/characters.json): a bio is added where there is none, or carried on where it was cut short.
+      // The text and its sha256 come from a patch file. It only ADDS or EXTENDS: an existing bio must be exactly the start of the new text,
+      // otherwise nothing is written. A patch key that is not in the file also stops the tool.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const t = d[rule.target], nt = {}
+      for (const k of Object.keys(patch.entries)) if (!Object.prototype.hasOwnProperty.call(t, k)) throw new Error(`patch names ${k}, which is not in ${file}; nothing written`)
+      for (const [k, rec] of Object.entries(t)) {
+        const e = patch.entries[k]
+        if (!e) { nt[k] = rec; continue }
+        if (crypto.createHash('sha256').update(e.bio).digest('hex') !== e.sha256) throw new Error(`patch entry ${k}: text does not match its recorded sha256`)
+        const cur = rec.bio || ''
+        if (cur === e.bio) { nt[k] = rec; continue }
+        if (cur && !e.bio.startsWith(cur)) throw new Error(`${k}: the existing bio is not the start of the patch text; not overwriting`)
+        bump(e.category)
+        const { name, bio, ...rest } = rec
+        nt[k] = { name, bio: e.bio, ...rest }
+      }
+      nd = { ...d, [rule.target]: nt }
     } else throw new Error('unknown op ' + rule.op)
     pending.push({ file, out: JSON.stringify(nd) }); overlay[file] = JSON.stringify(nd)
   }

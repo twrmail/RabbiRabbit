@@ -457,6 +457,27 @@ function scoreRef(src) {
         const ka = new Set(Object.keys(a)), renamed = Object.keys(b).filter(k => !ka.has(k)).length
         if (a && b && !Array.isArray(a) && !Array.isArray(b) && vs(a) === vs(b)) { st = 'PASS'; extra = `Not byte-identical: ${renamed} keys were renamed to the standard book codes (e.g. DEUT -> DEU); every value is identical to the original. Deliberate standardisation recorded in the manifest build (Oct 24).` }
       } catch { /* leave FAIL */ }
+      // recorded fixes (library/fixes.json, op set-entry-text): re-apply them to the original with code separate from apply-library-fixes.mjs;
+      // PASS only if the result equals the library file exactly. Only ADDING or EXTENDING a bio is allowed: the original text must be the start of the new text.
+      const textRules = st === 'FAIL' && fixes ? fixes.rules.filter(r => r.source === src.id && r.op === 'set-entry-text') : []
+      if (textRules.length) {
+        try {
+          const repoRoot = path.dirname(path.resolve(libDir))
+          let want = JSON.parse(fs.readFileSync(origFile, 'utf8')), changedBios = 0, problem = null
+          for (const r of textRules) {
+            const patch = readJSON(path.join(repoRoot, r.patchFile)), table = { ...want[r.target] }
+            for (const [k, e] of Object.entries(patch.entries)) {
+              const cur = table[k] && table[k].bio || ''
+              if (!table[k] || crypto.createHash('sha256').update(e.bio).digest('hex') !== e.sha256 || (cur && !e.bio.startsWith(cur))) { problem = `patch entry ${k} is not a valid addition or extension`; break }
+              if (cur !== e.bio) changedBios++
+              table[k] = { ...table[k], bio: e.bio }
+            }
+            want = { ...want, [r.target]: table }
+          }
+          if (!problem && isDeepStrictEqual(want, d)) { st = 'PASS'; extra = `Not byte-identical: ${changedBios} bios were added or completed by recorded fixes (${textRules.map(r => r.id).join(', ')}); re-applied to the original here, the result equals the library file exactly, and no existing bio text was shortened or changed.` }
+          else if (problem) extra = problem
+        } catch { /* leave FAIL */ }
+      }
     }
     g.gates[4] = [st, [E('m', `library file sha256_16 ${sha} ${osha === sha ? '=' : '!='} original ${src.originalLocation} ${osha}${src.sha256_16 ? '; manifest says ' + src.sha256_16 : ''}`), extra]]
   } else g.gates[4] = ['UNKNOWN', [E('m', 'original in data/ not found next to library/' + (src.sha256_16 ? `; manifest hash ${src.sha256_16} vs file ${sha} ${src.sha256_16 === sha ? 'agree' : 'DIFFER'}` : '')), E('e', 'library/ vs data/ was validated Oct 24')]]
