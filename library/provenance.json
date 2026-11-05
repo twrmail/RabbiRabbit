@@ -1417,6 +1417,80 @@
         ],
         "dateRecorded": "2026-11-05"
       }
+    },
+    {
+      "sourceId": "easton",
+      "work": {
+        "title": "Easton's Bible Dictionary (Illustrated Bible Dictionary, Third Edition)",
+        "author": "M. G. Easton",
+        "firstPublished": "1897 (Third Edition; the CCEL title page reads \"Third Edition 1897\"; illustrations not included)"
+      },
+      "repositoryCopy": {
+        "edition": "Third Edition, 1897 (per the CCEL title page in the file)",
+        "origin": "CCEL e-text easton_ebd2.xml (ThML 2.0) as held in neuu-org/bible-dictionary-dataset, data/00_raw/ccel/xml/",
+        "originStatus": "established"
+      },
+      "witnesses": [
+        {
+          "name": "CCEL file header (easton_ebd2.xml)",
+          "url": "file header, not a web page",
+          "editionClaim": "published 1897; DC.Rights: Public Domain; DC.Source: Online Bible; created 2000-07-09; ThML version 2.0",
+          "status": "page-read",
+          "dateChecked": "2026-11-05"
+        }
+      ],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "CCEL file header (DC.Rights: Public Domain) and age of the work (1897; author died 1894)",
+        "scope": "the work and the CCEL e-text it was built from",
+        "repositoryCopyCoverage": "not-established",
+        "dateChecked": "2026-11-05",
+        "digitalEditionLicence": "The CCEL e-text states Public Domain in its own header. The repository we obtained the file from (neuu-org/bible-dictionary-dataset) licenses its own parsed data CC BY 4.0 and says the underlying texts are public domain (README and LICENSE read 2026-11-05); that licence is not applied to our copy, which is built from the raw CCEL file."
+      },
+      "evidenceLevel": "established",
+      "obligations": [],
+      "openQuestions": [
+        "Whether the neuu dataset's CC BY 4.0 reaches the raw CCEL file held in its repository (it is described as its own parsed data); credit to CCEL and the dataset is worth giving either way.",
+        "Whether the 2000-era Online Bible source text carries any restriction of its own; the CCEL header says Public Domain.",
+        "Six character bios in library/people/characters.json are not found inside any entry (listed in library/dictionary/Easton/_index.json); corrections not yet made."
+      ],
+      "acquisition": {
+        "evidenceClass": "measured",
+        "versionMarker": "neuu-org/bible-dictionary-dataset commit b8e82aa7ca847f4d97fb432cd965e398a111333c (2026-03-16), data/00_raw/ccel/xml/easton_ebd2.xml sha256 10e3f432e38ee8197c30a613576dc363af3f29fa4aa90ebd0782533df906e5f1 (CCEL ThML version 2.0)",
+        "summary": "Built 2026-11-05 (PR #48) directly from the raw CCEL file; every one of its 3,964 terms is an entry, in file order with its CCEL id. The same file is the source of the Easton character bios (PR #36). Compared with two other copies earlier the same day: the neuu parse is identical in 3,925 terms (35 missing text), Theographic in 3,050 (196 missing text), the Hugging Face file has the same words apart from stray bracketed link numbers (it was made from the CCEL web text).",
+        "records": [
+          {
+            "kind": "git-history",
+            "ref": "PR #48, merged after 2026-11-05 (library/dictionary/Easton)",
+            "note": "built by tools/build-easton-dictionary.py; checked by tools/check-easton-dictionary.mjs"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05, claude/easton-copies-compared-nov5.md",
+            "note": "raw CCEL XML against neuu parse and Theographic easton.json, all 3,961 distinct terms"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05, claude/easton-huggingface-full-nov5.md",
+            "note": "full Hugging Face file against the CCEL XML: same words in all 3,960 shared terms apart from stray bracketed link numbers"
+          },
+          {
+            "kind": "measured",
+            "ref": "build check 2026-11-05",
+            "note": "3,964 entries, unique ids, per-entry sha256; 1,286 of the 1,292 character bios sit inside an entry"
+          },
+          {
+            "kind": "page-read",
+            "ref": "github.com/neuu-org/bible-dictionary-dataset (README, LICENSE), read 2026-11-05",
+            "note": "dataset CC BY 4.0; underlying texts public domain; Easton's parsed from CCEL ThML XML"
+          }
+        ],
+        "notRecovered": [
+          "How the raw CCEL file first reached the neuu repository (their process, before their commit)",
+          "Which printed copy CCEL's 2000 e-text was keyed from beyond 'Third Edition 1897'"
+        ],
+        "dateRecorded": "2026-11-05"
+      }
     }
   ],
   "acquisitionEvidenceClasses": {

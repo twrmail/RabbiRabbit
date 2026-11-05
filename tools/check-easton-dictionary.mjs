@@ -24,6 +24,7 @@ for (const f of fs.readdirSync(dir).filter(f => /^[A-Z_]\.json$/.test(f)).sort()
     texts.push(e.text)
   }
 }
+if (!index.sourceLine || !/\b1897\b/.test(index.sourceLine)) bad.push('_index.json has no sourceLine naming the work and year')
 if (total !== index.total) bad.push(`_index total ${index.total} but files hold ${total}`)
 if (Object.keys(index.letters).length !== fs.readdirSync(dir).filter(f => /^[A-Z_]\.json$/.test(f)).length) bad.push('_index lists a different set of letters than the files')
 const chars = JSON.parse(fs.readFileSync(path.join(root, 'library/people/characters.json'), 'utf8')).characters

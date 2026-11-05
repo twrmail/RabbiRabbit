@@ -1,5 +1,6 @@
 {
  "note": "Easton's Bible Dictionary, complete, one entry per headword, built by tools/build-easton-dictionary.py. Text only; no senses split, nothing merged.",
+ "sourceLine": "Easton's Bible Dictionary (M. G. Easton, Third Edition, 1897, public domain); text from the CCEL e-text easton_ebd2.xml (ThML 2.0, 'Public Domain' in its own header) as held in neuu-org/bible-dictionary-dataset, built by tools/build-easton-dictionary.py",
  "source": {
   "work": "Easton's Bible Dictionary (M. G. Easton, 1897, public domain)",
   "file": "easton_ebd2.xml (CCEL ThML) as held in neuu-org/bible-dictionary-dataset data/00_raw/ccel/xml/",

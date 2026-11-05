@@ -34,8 +34,9 @@ for letter, entries in sorted(by_letter.items()):
 alltext = [e['text'] for v in by_letter.values() for e in v]
 chars = json.load(open(f'{root}/library/people/characters.json', encoding='utf8'))['characters']
 not_found = sorted(k for k, v in chars.items() if v.get('bio') and not any(v['bio'] in t for t in alltext))
+source_line = "Easton's Bible Dictionary (M. G. Easton, Third Edition, 1897, public domain); text from the CCEL e-text easton_ebd2.xml (ThML 2.0, 'Public Domain' in its own header) as held in neuu-org/bible-dictionary-dataset, built by tools/build-easton-dictionary.py"
 index = {'note': "Easton's Bible Dictionary, complete, one entry per headword, built by tools/build-easton-dictionary.py. Text only; no senses split, nothing merged.",
-         'source': source, 'total': total, 'letters': {k: len(v) for k, v in sorted(by_letter.items())},
+         'sourceLine': source_line, 'source': source, 'total': total, 'letters': {k: len(v) for k, v in sorted(by_letter.items())},
          'repeatedHeadwords': sorted(t for t, n in dup_terms.items() if n > 1), 'characterBiosNotFoundInAnyEntry': not_found}
 with open(f'{root}/library/dictionary/Easton/_index.json', 'w', encoding='utf8') as f: json.dump(index, f, indent=1, ensure_ascii=False); f.write('\n')
 print('entries', total, 'letters', len(by_letter), 'repeated headwords', index['repeatedHeadwords'], 'character bios not found:', not_found)
