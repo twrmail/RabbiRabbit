@@ -702,6 +702,23 @@
         "Wesley's Explanatory Notes on the Bible (1765)": 39
       },
       "reason": "Old Testament half of the same correction (39 books). Wesley's own preface to the Old Testament notes says they are an abridgement of Matthew Henry's commentary, made shorter and plainer, and gives his age as entering his sixty-third year (about 1765). Only the source field changes; no commentary text is touched."
+    },
+    {
+      "id": "characters-easton-bios",
+      "source": "characters",
+      "folder": "library/people",
+      "files": [
+        "characters"
+      ],
+      "target": "characters",
+      "op": "set-entry-text",
+      "patchFile": "library/patches/easton-bios.json",
+      "expectedCount": {
+        "add-missing-bio": 164,
+        "extend-entry-prefix": 76,
+        "extend-sense": 24
+      },
+      "reason": "164 characters had no bio although Easton's Bible Dictionary has an entry under exactly that name, and 100 bios were cut short (71 of the 104 bios cut at exactly 1,200 characters, mid-sentence, plus 29 other shortened openings). The text comes from the CCEL file easton_ebd2.xml (1897, public domain). The rule only adds or extends: an existing bio must be the exact start of the new text. The other 33 bios cut at 1,200 characters, and every character without an entry under exactly its name, are not touched; they are listed in the patch under heldNotChanged."
     }
   ],
   "openIssues": [
