@@ -1312,7 +1312,9 @@
         "Read 2026-11-03 at github.com/robertrouse/theographic-bible-metadata: README states CC BY-SA 4.0, a LICENSE file exists, and the README says to credit the original sources, 'several of which have their own licenses'. The earlier theographic-web link is the website, not the data.",
         "The repository's docs/data-source-bibliography.md lists 26 sources; it states a licence for only one: STEPBible TIPNR, 'CC BY 4.0'. The other 25 carry no licence statement, including Jones (Chronology of the Old Testament), Atwood, Torrey, Ussher, Easton's, OpenBible geocoding, Pleiades, GeoNames, Wikidata, Hurlbut and Brisco atlases. Their rights are unresolved, not cleared.",
         "The bibliography asks anyone publishing work built on Theographic to credit those sources and respect their licences. We must decide which characters fields derive from which source.",
-        "Conflict to resolve: the same owner's STEPBible-Data fork is described as CC BY-NC 4.0, while the bibliography says STEPBible TIPNR is CC BY 4.0. Check the STEPBible page for the TIPNR licence."
+        "Conflict to resolve: the same owner's STEPBible-Data fork is described as CC BY-NC 4.0, while the bibliography says STEPBible TIPNR is CC BY 4.0. Check the STEPBible page for the TIPNR licence.",
+        "Easton's text agrees with the CCEL edition and a second copy made from it. No scan of the 1897 print has been compared; the honest label is 'agrees with the CCEL digital edition'.",
+        "Still open in characters.json (listed under heldNotChanged in library/patches/easton-bios.json): 33 bios cut at 1,200 characters, 30 bios whose text is not in the Easton entry of their own name (for example Adoniram, Daniel, Naomi), 171 names with no exact Easton term."
       ],
       "rightsComponents": [
         {
@@ -1335,21 +1337,49 @@
         }
       ],
       "acquisition": {
-        "evidenceClass": "code-comment",
-        "summary": "MILESTONES v12 (July 4): a 1,894-figure index built from Easton's Bible Dictionary plus Theographic Bible Metadata.",
+        "evidenceClass": "measured",
+        "summary": "MILESTONES v12 (July 4) records a 1,894-figure index built from Easton's Bible Dictionary plus Theographic Bible Metadata. Measured 2026-11-05: all 766 name-only entries are in Theographic people.json, and 855 of the 1,128 original bios were identical to Theographic easton.json (537 to a parse of the CCEL file), so the file reached us through Theographic. On 2026-11-05 (PR #36) 264 bios were added or completed from the CCEL text easton_ebd2.xml; the Easton text now agrees word for word with the CCEL file and with a second copy (Hugging Face, made from the CCEL web text).",
         "records": [
           {
             "kind": "git-history",
             "ref": "MILESTONES v12; first add 2026-07-03",
             "note": ""
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05, claude/characters-origin-nov5.md",
+            "note": "names and first-appearance passages: 766 of 766 name-only entries found in Theographic people.json (commit 3f461f2). Bios: 855 of 1,128 identical to Theographic easton.json, 537 to the CCEL parse of neuu-org/bible-dictionary-dataset (commit b8e82aa)"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05, claude/easton-copies-compared-nov5.md",
+            "note": "against the raw CCEL XML, all 3,961 terms: neuu parse identical in 3,925 (35 missing text), Theographic identical in 3,050 (196 missing text). Theographic is therefore not the fullest copy; the CCEL XML is"
+          },
+          {
+            "kind": "git-history",
+            "ref": "PR #36, merged 2026-11-05 (library/fixes.json rule characters-easton-bios)",
+            "note": "164 missing bios added and 100 cut-short bios completed from easton_ebd2.xml; only adds or extends; scorecard Gate 4 stays PASS by re-applying the rule to data/"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05, claude/easton-huggingface-full-nov5.md",
+            "note": "full Hugging Face file JWBickel/BibleDictionaries (saved by Tom from the raw link; 3,963 valid JSON lines, no HTML, links or script): same words as the CCEL XML in all 3,960 shared terms apart from stray bracketed link numbers; all 264 bios from PR #36 match it word for word"
+          },
+          {
+            "kind": "page-read",
+            "ref": "github.com/neuu-org/bible-dictionary-dataset (README, LICENSE), read 2026-11-05",
+            "note": "dataset CC BY 4.0; underlying texts public domain; Easton's parsed from CCEL ThML XML"
           }
         ],
         "notRecovered": [
           "How each source was obtained",
           "How the two were combined",
-          "Theographic licence terms (CC BY-SA 4.0) against the repo's MIT root"
+          "Theographic licence terms (CC BY-SA 4.0) against the repo's MIT root",
+          "Which Theographic download (date or commit) the original file came from",
+          "How the original build combined the two sources, and why 164 bios were left empty and 104 cut at 1,200 characters",
+          "Whether the Hugging Face file is an independent witness of the 1897 print: the stray bracketed numbers indicate it was made from the CCEL web text, so it is a second rendition of the same source"
         ],
-        "dateRecorded": "2026-11-04"
+        "dateRecorded": "2026-11-05"
       }
     }
   ],
