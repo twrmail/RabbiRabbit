@@ -42,7 +42,16 @@ N/A for retired sources that are never served.
 - A "verified licence page" for works that are public domain by age. For them the date of the work is the evidence.
 - Proof that a digital edition is the one the author printed. That is Gate 2, and "edition unidentified" is an honest UNKNOWN.
 
+## Where the code stands
+
+The scorecard (`tools/source-scorecard.mjs`) now applies these definitions when the register is present, and prints each criterion as an evidence line.
+
+- Gate 2: PASS only when all four criteria hold. Criterion 1 needs a year in the file's `source` line and no "not recorded", "not identified" or "origin and edition". Criterion 4 needs `acquisition.versionMarker` in the register, a field no entry has yet. So no source can reach Gate 2 PASS until a version marker is recorded. FAIL stays only for "not recorded".
+- Gate 6, public domain by age: PASS needs the work (title, author) and a date, where a date only "claimed in repo" does not count unless the file's own source line gives it, and the digital edition's licence recorded (a conversion licence in the rights claim, or `rights.digitalEditionLicence`).
+- Gate 6, licensed: PASS needs licence, source and obligations recorded, the Worker naming the attribution, and, for share-alike, `shareAlikeDecision` written in the register.
+- A witness, a licence statement or a measured match alone never turns UNKNOWN into PASS.
+
 ## Next steps (separate changes, one at a time)
 
-1. Record origin in the `source` lines that still say "not recorded" (MHC, JFB, Calvin), through `library/fixes.json`.
-2. Change the scorecard code to apply the definitions above, with the baseline updated by hand and reviewed.
+1. Header lines for the Bible files and Wesley, so criterion 1 and 2 can be met.
+2. Version markers (`acquisition.versionMarker`) and `digitalEditionLicence` where they are known, in the register.

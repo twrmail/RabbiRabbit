@@ -168,6 +168,7 @@ function applyRecordedFixes(srcId, code, obj) {
   return { obj: o, used }
 }
 const codes = Array.isArray(manifest.bookCodes) ? manifest.bookCodes : manifest.bookCodes.split(/\s+/)
+const srcLines = new Map()   // each source's own `source` line, kept for the Gate 2 / Gate 6 rules applied with the register
 const worker = workerFile && exists(workerFile) ? fs.readFileSync(workerFile, 'utf8') : null
 
 // ---- reference structure: the KJV files in the library (chapters and verse counts) ----
@@ -306,6 +307,7 @@ function scoreText(src) {
   }
   const notRecorded = /not recorded/i.test(srcStr)
   g.facts.provenanceRecorded = { text: srcStr.slice(0, 160), ...rec }
+  srcLines.set(src.id, srcStr)
   g.gates[2] = [notRecorded ? 'FAIL' : 'UNKNOWN', [E('r', `file says: "${srcStr.slice(0, 150)}"`), E('m', `recorded: year ${rec.year ? 'yes' : 'NO'}, origin ${rec.origin ? 'yes' : 'NO'}, upstream hash NO (manifest holds only the whole-data fingerprint ${manifest.sourceSnapshot})`), notRecorded ? 'The data file itself says the origin/edition was never recorded: a known defect.' : 'Edition identity not independently established.']]
 
   // ---- Gate 3 cleanliness ----
@@ -437,6 +439,7 @@ function scoreRef(src) {
   if (!exists(full)) { g.gates[1] = ['FAIL', [E('m', `file ${src.folder} not found`)]]; for (let i = 2; i <= 7; i++) g.gates[i] = ['UNKNOWN', []]; return g }
   const buf = fs.readFileSync(full); const sha = crypto.createHash('sha256').update(buf).digest('hex').slice(0, 16)
   let d; try { d = JSON.parse(buf.toString('utf8')) } catch { d = null }
+  srcLines.set(src.id, d && typeof d.source === 'string' ? d.source : '')
   const count = d == null ? null : Array.isArray(d) ? d.length : Object.keys(d).length
   g.facts = { bytes: buf.length, entries: count, sha256_16: sha, manifestSha: src.sha256_16 || null }
   const keys = d && !Array.isArray(d) ? Object.keys(d) : []
@@ -531,6 +534,40 @@ if (exists(provPath)) {
     g.gates[6][1].push(E('p', `rights claim "${e.rights.claim}" from ${e.rights.claimSource}, scope: ${e.rights.scope}; applies to our copy: ${e.rights.repositoryCopyCoverage}; checked ${e.rights.dateChecked || 'unknown date'}`))
     for (const c of e.rightsComponents || []) g.gates[6][1].push(E('p', `rights component: ${c.component}: ${c.claim} (${c.status}; ${c.source || 'no source'})`))
     if (e.obligations && e.obligations.length) g.gates[6][1].push(E('p', `obligations: ${e.obligations.join(' | ')}`))
+
+    // ---- Gate 2 and Gate 6 rules (tools/GATE-DEFINITIONS.md). PASS needs every criterion; a witness or a licence statement alone never does. ----
+    const line = srcLines.get(e.sourceId) || ''
+    const yearIn = x => /\b(1[5-9]\d\d|20[0-2]\d)\b/.test(x || '')
+    if (g.scope !== 'retired') {
+      // Gate 2
+      const recs = (e.acquisition && e.acquisition.records) || []
+      const c1 = !!line && !/not recorded|not identified|origin and edition/i.test(line) && yearIn(line)
+      const c2 = !!line && /via |from |rebuilt|CCEL|seven1m|bereanbibles|lyteword|tyndaleopenresources|openbible|HelloAO/i.test(line)
+      const c3 = recs.some(r => r.kind === 'measured' || r.kind === 'git-history')
+      const c4 = !!(e.acquisition && e.acquisition.versionMarker)
+      g.gates[2][1].push(E('p', `Gate 2 criteria: (1) work and edition named in the file's source line: ${c1 ? 'yes' : 'NO'}; (2) digital origin named in the file: ${c2 ? 'yes' : 'NO'}; (3) a measured match or git-history record in the register: ${c3 ? 'yes' : 'NO'}; (4) a version marker in the register (acquisition.versionMarker): ${c4 ? 'yes' : 'NO'}`))
+      if (g.gates[2][0] !== 'FAIL' && c1 && c2 && c3 && c4) g.gates[2][0] = 'PASS'
+      // Gate 6
+      const claim = (e.rights && e.rights.claim) || '', obligations = e.obligations || []
+      const licensed = /CC BY/i.test(claim + ' ' + ((manifest.sources.find(x => x.id === e.sourceId) || {}).license || ''))
+      if (licensed) {
+        const m = e.sourceId === 'tyndale' ? 'Tyndale' : e.sourceId === 'xref' ? 'OpenBible' : null
+        const shown = m && worker ? new RegExp(m, 'i').test(worker) : null
+        const sa = /SA|share/i.test(claim)
+        const saOk = !sa || !!e.shareAlikeDecision
+        const recorded = !!(claim && e.rights.claimSource && obligations.length)
+        g.gates[6][1].push(E('p', `Gate 6 criteria (licensed): licence, source and conditions recorded: ${recorded ? 'yes' : 'NO'}; attribution shown by the Worker: ${shown === null ? 'not checked' : shown ? 'yes' : 'NO'}; share-alike decision written down (shareAlikeDecision): ${sa ? (saOk ? 'yes' : 'NO') : 'not applicable'}`))
+        if (g.gates[6][0] === 'UNKNOWN' && recorded && shown === true && saOk) g.gates[6][0] = 'PASS'
+      } else if (/public domain/i.test(claim)) {
+        const w = e.work || {}
+        const dateText = [w.year, w.date, w.firstPublished, (e.repositoryCopy || {}).edition, line].filter(Boolean).join(' ')
+        const claimed = /claimed|per repo/i.test((e.repositoryCopy || {}).edition || '')
+        const workId = !!(w.title && w.author) && yearIn(dateText) && !(claimed && !yearIn([w.year, w.date, w.firstPublished, line].filter(Boolean).join(' ')))
+        const digLic = !!(e.rights.digitalEditionLicence || /conversion|CC0/i.test(claim))
+        g.gates[6][1].push(E('p', `Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): ${workId ? 'yes' : 'NO'}; licence of the digital edition recorded (rights.digitalEditionLicence, "none found" counts once checked): ${digLic ? 'yes' : 'NO'}`))
+        if (g.gates[6][0] === 'UNKNOWN' && workId && digLic) g.gates[6][0] = 'PASS'
+      }
+    }
   }
 }
 
