@@ -1,0 +1,49 @@
+{
+ "note": "Easton's Bible Dictionary, complete, one entry per headword, built by tools/build-easton-dictionary.py. Text only; no senses split, nothing merged.",
+ "source": {
+  "work": "Easton's Bible Dictionary (M. G. Easton, 1897, public domain)",
+  "file": "easton_ebd2.xml (CCEL ThML) as held in neuu-org/bible-dictionary-dataset data/00_raw/ccel/xml/",
+  "fileSha256": "10e3f432e38ee8197c30a613576dc363af3f29fa4aa90ebd0782533df906e5f1"
+ },
+ "total": 3964,
+ "letters": {
+  "A": 381,
+  "B": 295,
+  "C": 278,
+  "D": 146,
+  "E": 197,
+  "F": 103,
+  "G": 161,
+  "H": 294,
+  "I": 65,
+  "J": 229,
+  "K": 77,
+  "L": 116,
+  "M": 293,
+  "N": 122,
+  "O": 63,
+  "P": 209,
+  "Q": 10,
+  "R": 128,
+  "S": 383,
+  "T": 188,
+  "U": 23,
+  "V": 17,
+  "W": 63,
+  "Y": 5,
+  "Z": 118
+ },
+ "repeatedHeadwords": [
+  "hail",
+  "kadesh",
+  "salmon"
+ ],
+ "characterBiosNotFoundInAnyEntry": [
+  "eber (a benjamite)",
+  "ishmael (son of hagar)",
+  "jonadab",
+  "judah (patriarch)",
+  "pharez",
+  "shishak"
+ ]
+}
