@@ -1,0 +1,14 @@
+{
+ "translation": "WEB",
+ "layer": "translators-notes",
+ "book": "SNG",
+ "source": {
+  "work": "World English Bible, translators' notes",
+  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
+  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
+  "emptyBracesNotKept": 1,
+  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+ },
+ "count": 0,
+ "notes": []
+}
