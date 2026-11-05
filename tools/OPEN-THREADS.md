@@ -17,11 +17,11 @@ Last updated: 2026-11-05 (after PR #47; Easton dictionary PR open). Evidence for
 | Thread | State | Needs | Evidence |
 |---|---|---|---|
 | Easton bios, 38 characters whose bio was not inside Easton's entry of the same name | Decided 2026-11-05: 11 corrected, 4 completed, 27 kept (correct Easton text under a variant spelling); in PR #46 | Merge #46 | easton-review-resolution-nov5 |
-| Easton: 171 names with no exact Easton entry | Held, unchanged | A name map (decide spelling matches), later | easton-bios-fix-nov5 |
+| Easton: 171 names with no exact Easton entry; 27 bios filed under a variant spelling | Held, unchanged | A name map from characters to dictionary entries (now possible: the full dictionary is in the library) | easton-bios-fix-nov5 |
 | WEB translator notes (354 notes on 329 verses) removed at build time | Layer built (PR #45) in `library/bible-notes/WEB`, apart from verse text; nothing reads it yet | Register entry and manifest line for the layer; Worker use later; read the WEB's terms on dropping notes from the text | web-and-mhc-checks-nov5 |
 | WEB `year: 2020` field in the files | Hand-typed, not a release; left in place | Tom's call on changing the field | web-and-mhc-checks-nov5 |
 | Full Easton's Bible Dictionary (3,964 entries) | Data in PR #48; register, manifest line and scorecard row in the next PR (Gate 2 and Gate 6 PASS by the agreed definitions) | Name map from characters to entries; Worker use later; credit line for CCEL and the neuu dataset | easton-copies-compared-nov5 |
-| 6 character bios not found inside any Easton entry (eber (a benjamite), ishmael (son of hagar), jonadab, judah (patriarch), pharez, shishak) | Listed in `library/dictionary/Easton/_index.json`; four are the same small damage as the 11 corrected in #46 | One correction PR | easton-review-resolution-nov5 |
+| 6 character bios not found inside any Easton entry, and Daniel's bio (Belteshazzar note only) | Done 2026-11-05: all 1,292 bios now sit inside an Easton entry; Daniel is the prophet's sense | Eber's bio reads "(8:12)" as Easton prints it, without the "1 Chr." an earlier tool had added | easton-review-resolution-nov5 |
 | Calvin leftovers; JFB and Wesley word differences vs CCEL | Open from earlier handoffs | Per handoff-nov4 | handoff-nov4 |
 | Identity-cards installer | Not started | Tom's go | identity-cards |
 
