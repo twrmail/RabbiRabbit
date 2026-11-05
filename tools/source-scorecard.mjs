@@ -31,6 +31,7 @@ function applyRecordedFixes(srcId, code, obj) {
     // a replace-all on a field the original does not have (the standardised `source` line of MHC, JFB and Calvin is added at build time by
     // build-library.mjs; it is metadata and gate 4 does not compare it) has nothing to re-apply to the original
     if (r.op === 'replace-all' && o[r.target] === undefined) continue
+    if (r.op === 'add-field') continue   // a source line added to the library copy; metadata, not compared in gate 4
     used.push(r.id)
     if (r.op === 'replace-all') {
       let s = JSON.stringify(o[r.target])
@@ -542,7 +543,7 @@ if (exists(provPath)) {
       // Gate 2
       const recs = (e.acquisition && e.acquisition.records) || []
       const c1 = !!line && !/not recorded|not identified|origin and edition/i.test(line) && yearIn(line)
-      const c2 = !!line && /via |from |rebuilt|CCEL|seven1m|bereanbibles|lyteword|tyndaleopenresources|openbible|HelloAO/i.test(line)
+      const c2 = !!line && /via |from |rebuilt|CCEL|seven1m|bereanbibles|lyteword|tyndaleopenresources|openbible|HelloAO|scrollmapper/i.test(line)
       const c3 = recs.some(r => r.kind === 'measured' || r.kind === 'git-history')
       const c4 = !!(e.acquisition && e.acquisition.versionMarker)
       g.gates[2][1].push(E('p', `Gate 2 criteria: (1) work and edition named in the file's source line: ${c1 ? 'yes' : 'NO'}; (2) digital origin named in the file: ${c2 ? 'yes' : 'NO'}; (3) a measured match or git-history record in the register: ${c3 ? 'yes' : 'NO'}; (4) a version marker in the register (acquisition.versionMarker): ${c4 ? 'yes' : 'NO'}`))

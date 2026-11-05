@@ -220,6 +220,17 @@ for (const rule of fixes.rules) {
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }
+    } else if (rule.op === 'add-field') {
+      // a top-level text field the file does not have yet (a source line), placed just before `rule.before`. Never overwrites: a different
+      // value already there stops the run; the same value is left alone.
+      if (Object.prototype.hasOwnProperty.call(d, rule.target)) {
+        if (d[rule.target] !== rule.value) throw new Error(`${file}: ${rule.target} already exists and differs; not overwriting`)
+      } else {
+        bump(rule.target)
+        nd = {}
+        for (const [k, v] of Object.entries(d)) { if (k === rule.before) nd[rule.target] = rule.value; nd[k] = v }
+        if (!(rule.target in nd)) nd[rule.target] = rule.value
+      }
     } else if (rule.op === 'set-entry-text') {
       // dictionary-style entries (library/people/characters.json): a bio is added where there is none, or carried on where it was cut short.
       // The text and its sha256 come from a patch file. It only ADDS or EXTENDS: an existing bio must be exactly the start of the new text,
