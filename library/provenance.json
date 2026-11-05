@@ -25,7 +25,8 @@
       "sourceId": "mhc",
       "work": {
         "title": "Commentary on the Whole Bible",
-        "author": "Matthew Henry"
+        "author": "Matthew Henry",
+        "firstPublished": "1706-1721 (CCEL header: originally published 1706-1721)"
       },
       "repositoryCopy": {
         "edition": "unknown",
@@ -51,7 +52,8 @@
         "scope": "CCEL transcription",
         "repositoryCopyCoverage": "not-established",
         "statementText": "Public domain. May be copied and distributed freely.",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-03",
+        "digitalEditionLicence": "CC0 1.0 Universal on the repository (LICENSE read 2026-11-04); its README says the text is reformatted into Markdown with no content changes. The underlying work is public domain by age."
       },
       "evidenceLevel": "witnessed",
       "obligations": [],
@@ -90,13 +92,19 @@
             "kind": "measured",
             "ref": "comparison 2026-11-04",
             "note": "99.87% of our 6-word runs found in the repository; lowest book Proverbs 99.1%; see Project doc claude/henry-source-found-nov4.md"
+          },
+          {
+            "kind": "measured",
+            "ref": "re-comparison 2026-11-05 against the commit named in versionMarker (1,189 chapter-N.md and psalm-N.md files)",
+            "note": "98.74% of the repository's 6-word runs are in our copy (source to ours) and 99.86% of ours are in the repository (ours to source), punctuation, case and markdown links ignored. The gap in the source-to-ours direction is text the repository has that our copy does not (not yet itemised)."
           }
         ],
         "notRecovered": [
           "Why git (last upload 2026-07-22) and the chat (rebuilt Aug 11) give different dates",
           "The printed edition: the repository does not name one"
         ],
-        "dateRecorded": "2026-11-04"
+        "dateRecorded": "2026-11-05",
+        "versionMarker": "lyteword/mhenry-complete, branch default, commit fff64e68c59ee4597a2b451cbe4e207adc77148d (2026-07-23, Merge pull request #37): the version our copy was measured against, not a recovered download commit"
       },
       "literaryHistory": {
         "edition": "Strongly suspected Complete Commentary (6 vols, 1706-1721); NOT established.",
