@@ -233,7 +233,7 @@ for (const rule of fixes.rules) {
       }
     } else if (rule.op === 'set-entry-text') {
       // dictionary-style entries (library/people/characters.json): a bio is added where there is none, or carried on where it was cut short.
-      // The text and its sha256 come from a patch file. It only ADDS or EXTENDS: an existing bio must be exactly the start of the new text,
+      // The text and its sha256 come from a patch file. It ADDS or EXTENDS: an existing bio must be exactly the start of the new text, or (a correction) must be exactly the text whose sha256 the patch entry names as oldSha256;
       // otherwise nothing is written. A patch key that is not in the file also stops the tool.
       const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
       const t = d[rule.target], nt = {}
@@ -244,7 +244,10 @@ for (const rule of fixes.rules) {
         if (crypto.createHash('sha256').update(e.bio).digest('hex') !== e.sha256) throw new Error(`patch entry ${k}: text does not match its recorded sha256`)
         const cur = rec.bio || ''
         if (cur === e.bio) { nt[k] = rec; continue }
-        if (cur && !e.bio.startsWith(cur)) throw new Error(`${k}: the existing bio is not the start of the patch text; not overwriting`)
+        if (e.oldSha256) {
+          // a correction: allowed only for the exact earlier text named by its hash (artifacts such as a stray apostrophe, missing "(See X.)" pointers, a cut at 1,200)
+          if (crypto.createHash('sha256').update(cur).digest('hex') !== e.oldSha256) throw new Error(`${k}: the existing bio is not the text the patch was built to correct (oldSha256 differs); not overwriting`)
+        } else if (cur && !e.bio.startsWith(cur)) throw new Error(`${k}: the existing bio is not the start of the patch text; not overwriting`)
         bump(e.category)
         const { name, bio, ...rest } = rec
         nt[k] = { name, bio: e.bio, ...rest }

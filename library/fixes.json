@@ -1289,6 +1289,22 @@
         "source": 66
       },
       "reason": "The WEB files carried no source line. Chat history (2ndRabbiRabbit) records the CSV downloaded from scrollmapper/bible_databases (2024 branch) and converted to JSON on 2026-06-10, and the build script removed {note} text from WEB verses on purpose (473 spans in 446 verses, measured 2026-11-05). The 2020 in the file's year field was typed into that script by hand, is not a release identification, and is not repeated in this line. Only this field is added; no text changes."
+    },
+    {
+      "id": "characters-easton-bios-fixes",
+      "source": "characters",
+      "folder": "library/people",
+      "files": [
+        "characters"
+      ],
+      "target": "characters",
+      "op": "set-entry-text",
+      "patchFile": "library/patches/easton-bios-fixes.json",
+      "expectedCount": {
+        "replace-corrupted": 11,
+        "extend-in-variant-entry": 4
+      },
+      "reason": "Tom reviewed the 38 characters whose bio was not inside the Easton entry of the same name (2026-11-05) and decided: 11 are Easton's own entry with small damage and are replaced with the exact Easton text (a stray apostrophe or digit, missing '(See X.)' pointers, and for Belshazzar, Isaac, Nebuchadnezzar and Paul a cut at 1,200 characters); 27 are correct Easton text filed under a variant spelling and are kept; 4 of those (Hadarezer, Joram, Timotheus, Pontius Pilate) are cut at 1,200 and are completed inside the Easton entry where the text is found. Each replacement names the sha256 of the text it replaces, so the tool refuses to write if the file holds anything else."
     }
   ],
   "openIssues": [
