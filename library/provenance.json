@@ -13,7 +13,7 @@
     ]
   },
   "note": "Evidence register for gates 2 (Provenance) and 6 (Licence). Descriptive only: nothing here changes a gate result. A rights statement about a witness is not a rights finding about our copy. Reconciled 2026-11-04: each source may now carry three separate histories. literaryHistory (who wrote the work, which edition, whose work it derives from), acquisition (where RabbiRabbit got its files and how they were changed; recovered from past chats, git history and code comments, NOT from a source document), and rights (the licence statement, with rightsDeclarations for statements read on a page). None of the new fields changes an evidence level or a gate result.",
-  "dateCompiled": "2026-11-04",
+  "dateCompiled": "2026-11-05",
   "evidenceLevels": {
     "established": "origin and edition of our copy known (Gate 2 PASS)",
     "witnessed": "an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)",
@@ -59,11 +59,12 @@
         "Where did the original repository copy come from?",
         "Is the Revell edition claim correct?",
         "75 restored quotation blocks have a CCEL witness (library/patches/henry-blocks.json); the rest of the text does not.",
-        "Settle Complete versus Concise from the original repo's own description, then decide the footer wording."
+        "Settle Complete versus Concise from the original repo's own description, then decide the footer wording.",
+        "The repository's sibling lyteword/mhenry-concise exists; ours matches the complete repository, so the 'Concise' footer label is likely wrong, to be settled with the edition question."
       ],
       "acquisition": {
-        "evidenceClass": "chat-history",
-        "summary": "Current copy rebuilt from a GitHub repo of per-chapter markdown files (chapter-N.md, psalm-N.md), described as CC0. Replaced an earlier 39-book copy with mislabelled chapters.",
+        "evidenceClass": "measured",
+        "summary": "Current copy rebuilt from the GitHub repository lyteword/mhenry-complete (CC0-1.0; six volumes, 1,267 markdown files named chapter-N.md and psalm-N.md). 99.87% of the 6-word runs in our 66 files appear in the repository's text. Replaced an earlier 39-book copy with mislabelled chapters.",
         "records": [
           {
             "kind": "chat-history",
@@ -79,12 +80,21 @@
             "kind": "chat-history",
             "ref": "Tom, Nov 4",
             "note": "found the repo himself on GitHub; name not recalled; unconfirmed lead: the BibleCommentaries organisation"
+          },
+          {
+            "kind": "page-read",
+            "ref": "github.com/lyteword/mhenry-complete (README, LICENSE), read 2026-11-04",
+            "note": "README: complete text reformatted into Markdown, no content changes, CC0 1.0; latest commit seen 2026-07-23 (PR #37)"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-04",
+            "note": "99.87% of our 6-word runs found in the repository; lowest book Proverbs 99.1%; see Project doc claude/henry-source-found-nov4.md"
           }
         ],
         "notRecovered": [
-          "Name of the GitHub repository",
-          "Whether the repo's own licence statement says CC0",
-          "Why git and the chat give different dates"
+          "Why git (last upload 2026-07-22) and the chat (rebuilt Aug 11) give different dates",
+          "The printed edition: the repository does not name one"
         ],
         "dateRecorded": "2026-11-04"
       },
@@ -94,7 +104,8 @@
           "CCEL witness (mhc1.xml) calls itself unabridged and agrees with our text after repairs",
           "1,189 chapters, about 38.9M characters (about 33,000 per chapter)",
           "Two earlier sessions concluded Complete",
-          "The live app footer says 'Concise Commentary, 1706'; the v37 draft footer says 'edition not identified'"
+          "The live app footer says 'Concise Commentary, 1706'; the v37 draft footer says 'edition not identified'",
+          "README of the source repository calls it the complete text and does not use the word 'Concise' (page-read 2026-11-04)"
         ],
         "note": "The footer label is NOT changed by this register entry. The edition question (what the work is) is separate from the file-provenance question (which repo our files came from)."
       }
@@ -775,6 +786,11 @@
             "kind": "code-comment",
             "ref": "library/bible/BSB file headers",
             "note": "source: bereanbibles.com via seven1m/open-bibles"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05",
+            "note": "97.5% of our runs found in seven1m/open-bibles eng-bsb.usfx.xml (open-bibles commit d4cb31f of 2026-11-03), 94.3% in lyteword/bsb; supports the recorded seven1m origin"
           }
         ],
         "notRecovered": [
@@ -805,16 +821,38 @@
       "obligations": [],
       "openQuestions": [
         "Dedication page not read this session.",
-        "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition."
+        "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition.",
+        "Which WEB release our text is; the header year 2020 appears to be wrong. Compare with dated releases (eBible.org archives) before relabelling."
       ],
       "acquisition": {
-        "evidenceClass": "none-found",
-        "summary": "No acquisition record surfaced in past chats or the repo.",
-        "records": [],
-        "notRecovered": [
-          "Where the file was obtained"
+        "evidenceClass": "measured",
+        "summary": "Matches scrollmapper/bible_databases (2024 branch) t_web.csv (99.7% / 99.2% of 6-word runs, ours to source / source to ours). Chat history shows WEB and ASV were downloaded from that repository as CSV and converted to JSON on 2026-06-10 (git first-add of data/web.json); KJV is not shown in the chat excerpts I read but matches the same file.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "download of WEB and ASV CSVs from scrollmapper bible_databases 2024"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05",
+            "note": "t_web.csv: 99.7% / 99.2%; 31102 rows"
+          },
+          {
+            "kind": "page-read",
+            "ref": "scrollmapper README and csv/bible_version_key.csv, read 2026-11-05",
+            "note": "states \"All included Bible translations are in the public domain\"; version key lists WEB, KJV, ASV as Public Domain; the repository itself carries a GPL v3 notice for its code and database tooling"
+          }
         ],
-        "dateRecorded": "2026-11-04"
+        "notRecovered": [
+          "Exact download date and commit of the 2024 branch",
+          "For KJV: a chat record of the download (match is measured only)"
+        ],
+        "dateRecorded": "2026-11-05"
+      },
+      "literaryHistory": {
+        "edition": "NOT the current WEB. Our text uses older wording (for example 'sojourn' 26 times against 3 in the open-bibles WEB; Ruth 1:1 'It happened in the days when the judges judged, that there was a famine'). It matches scrollmapper's WEB (99.7%) but only about 73% of the revised WEB in lyteword/web and 78% of open-bibles eng-web.",
+        "note": "Our file headers say 'year: 2020'. That year is not supported by the text: the wording is that of an earlier release. Which release (for example 2012) is not identified, and the scrollmapper CSV does not state it."
       }
     },
     {
@@ -841,13 +879,30 @@
         "Not verified this session."
       ],
       "acquisition": {
-        "evidenceClass": "none-found",
-        "summary": "No acquisition record surfaced in past chats or the repo.",
-        "records": [],
-        "notRecovered": [
-          "Where the file was obtained"
+        "evidenceClass": "measured",
+        "summary": "Matches scrollmapper/bible_databases (2024 branch) t_kjv.csv (99.4% / 99.3% of 6-word runs, ours to source / source to ours). Chat history shows WEB and ASV were downloaded from that repository as CSV and converted to JSON on 2026-06-10 (git first-add of data/web.json); KJV is not shown in the chat excerpts I read but matches the same file.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "download of WEB and ASV CSVs from scrollmapper bible_databases 2024"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05",
+            "note": "t_kjv.csv: 99.4% / 99.3%; 31103 rows"
+          },
+          {
+            "kind": "page-read",
+            "ref": "scrollmapper README and csv/bible_version_key.csv, read 2026-11-05",
+            "note": "states \"All included Bible translations are in the public domain\"; version key lists WEB, KJV, ASV as Public Domain; the repository itself carries a GPL v3 notice for its code and database tooling"
+          }
         ],
-        "dateRecorded": "2026-11-04"
+        "notRecovered": [
+          "Exact download date and commit of the 2024 branch",
+          "For KJV: a chat record of the download (match is measured only)"
+        ],
+        "dateRecorded": "2026-11-05"
       }
     },
     {
@@ -874,13 +929,30 @@
         "Not verified this session."
       ],
       "acquisition": {
-        "evidenceClass": "none-found",
-        "summary": "No acquisition record surfaced in past chats or the repo.",
-        "records": [],
-        "notRecovered": [
-          "Where the file was obtained"
+        "evidenceClass": "measured",
+        "summary": "Matches scrollmapper/bible_databases (2024 branch) t_asv.csv (100% / 99.96% of 6-word runs, ours to source / source to ours). Chat history shows WEB and ASV were downloaded from that repository as CSV and converted to JSON on 2026-06-10 (git first-add of data/web.json); KJV is not shown in the chat excerpts I read but matches the same file.",
+        "records": [
+          {
+            "kind": "chat-history",
+            "ref": "2ndRabbiRabbit",
+            "note": "download of WEB and ASV CSVs from scrollmapper bible_databases 2024"
+          },
+          {
+            "kind": "measured",
+            "ref": "comparison 2026-11-05",
+            "note": "t_asv.csv: 100% / 99.96%; 31103 rows"
+          },
+          {
+            "kind": "page-read",
+            "ref": "scrollmapper README and csv/bible_version_key.csv, read 2026-11-05",
+            "note": "states \"All included Bible translations are in the public domain\"; version key lists WEB, KJV, ASV as Public Domain; the repository itself carries a GPL v3 notice for its code and database tooling"
+          }
         ],
-        "dateRecorded": "2026-11-04"
+        "notRecovered": [
+          "Exact download date and commit of the 2024 branch",
+          "For KJV: a chat record of the download (match is measured only)"
+        ],
+        "dateRecorded": "2026-11-05"
       }
     },
     {
@@ -1286,7 +1358,8 @@
     "git-history": "First-add or last-upload date read from this repository's git history. Dates when the file entered the repo, not necessarily when it was acquired.",
     "code-comment": "A comment in our own Worker or tools. A claim by earlier sessions.",
     "page-read": "A page was read in this review (for example a Debian packager's copyright file). The page's statement is recorded; it is not a finding about our extracted copy.",
-    "none-found": "Searched past chats and the repo; no acquisition record surfaced."
+    "none-found": "Searched past chats and the repo; no acquisition record surfaced.",
+    "measured": "Our files were compared with the named source's own text (share of 6-word runs in common, spelling and punctuation ignored). Shows the text matches; does not by itself prove it was the download source or settle the licence."
   },
   "dateNote": "Chat dates and git first-add dates sometimes disagree (for example Scofield: chat says extracted July 1, git first-add 2026-06-26/27; topic scores: chat says August, git 2026-07-24). Both are recorded; treat chat dates as approximate."
 }
