@@ -1,0 +1,204 @@
+{
+ "translation": "WEB",
+ "layer": "translators-notes",
+ "book": "GEN",
+ "source": {
+  "work": "World English Bible, translators' notes",
+  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
+  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
+  "emptyBracesNotKept": 1,
+  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+ },
+ "count": 27,
+ "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 20,
+   "after": "In the beginning God",
+   "text": "After \"God,\" the Hebrew has the two letters \"Aleph Tav\" (the first and last letters of the Hebrew alphabet) as a grammatical marker."
+  },
+  {
+   "chapter": 5,
+   "verse": 2,
+   "at": 78,
+   "after": "lessed them, and called their name Adam,",
+   "text": "\"Adam\" and \"Man\" are spelled with the exact same consonants in Hebrew, so this can be correctly translated either way."
+  },
+  {
+   "chapter": 12,
+   "verse": 7,
+   "at": 71,
+   "after": "aid, \"I will give this land to your seed",
+   "text": "or, offspring"
+  },
+  {
+   "chapter": 16,
+   "verse": 14,
+   "at": 45,
+   "after": "fore the well was called Beer Lahai Roi.",
+   "text": "Beer Lahai Roi means \"well of the one who lives and sees me.\""
+  },
+  {
+   "chapter": 17,
+   "verse": 19,
+   "at": 88,
+   "after": "ou a son. You shall call his name Isaac.",
+   "text": "Isaac means \"he laughs.\""
+  },
+  {
+   "chapter": 19,
+   "verse": 22,
+   "at": 114,
+   "after": "re the name of the city was called Zoar.",
+   "text": "Zoar means \"little.\""
+  },
+  {
+   "chapter": 21,
+   "verse": 3,
+   "at": 74,
+   "after": "n to him, whom Sarah bare to him, Isaac.",
+   "text": "Isaac means \"He laughs.\""
+  },
+  {
+   "chapter": 21,
+   "verse": 31,
+   "at": 41,
+   "after": "herefore he called that place Beersheba,",
+   "text": "Beersheba can mean \"well of the oath\" or \"well of seven.\""
+  },
+  {
+   "chapter": 22,
+   "verse": 14,
+   "at": 51,
+   "after": "led the name of that place Yahweh-Jireh.",
+   "text": "\"Yahweh-Jireh\" means \"Yahweh is my provider.\""
+  },
+  {
+   "chapter": 24,
+   "verse": 7,
+   "at": 175,
+   "after": "ing, 'I will give this land to your seed",
+   "text": "or, offspring"
+  },
+  {
+   "chapter": 26,
+   "verse": 33,
+   "at": 20,
+   "after": "He called it Shibah.",
+   "text": "Shibah means \"oath\" or \"seven.\""
+  },
+  {
+   "chapter": 26,
+   "verse": 33,
+   "at": 64,
+   "after": "refore the name of the city is Beersheba",
+   "text": "Beersheba means \"well of the oath\" or \"well of the seven\""
+  },
+  {
+   "chapter": 30,
+   "verse": 24,
+   "at": 21,
+   "after": "She named him Joseph,",
+   "text": "Joseph means \"may he add.\""
+  },
+  {
+   "chapter": 31,
+   "verse": 19,
+   "at": 68,
+   "after": "his sheep: and Rachel stole the teraphim",
+   "text": "teraphim were household idols that may have been associated with inheritance rights to the household property."
+  },
+  {
+   "chapter": 31,
+   "verse": 47,
+   "at": 32,
+   "after": "Laban called it Jegar Sahadutha,",
+   "text": "\"Jegar Sahadutha\" means \"Witness Heap\" in Aramaic."
+  },
+  {
+   "chapter": 31,
+   "verse": 47,
+   "at": 60,
+   "after": "r Sahadutha, but Jacob called it Galeed.",
+   "text": "\"Galeed\" means \"Witness Heap\" in Hebrew."
+  },
+  {
+   "chapter": 32,
+   "verse": 30,
+   "at": 41,
+   "after": "acob called the name of the place Peniel",
+   "text": "Peniel means \"face of God.\""
+  },
+  {
+   "chapter": 33,
+   "verse": 17,
+   "at": 134,
+   "after": "the name of the place is called Succoth.",
+   "text": "succoth means shelters or booths."
+  },
+  {
+   "chapter": 33,
+   "verse": 20,
+   "at": 57,
+   "after": "ar there, and called it El Elohe Israel.",
+   "text": "El Elohe Israel means \"God, the God of Israel\" or \"The God of Israel is mighty.\""
+  },
+  {
+   "chapter": 34,
+   "verse": 17,
+   "at": 82,
+   "after": "rcumcised, then we will take our sister,",
+   "text": "Hebrew has, literally, \"daughter\""
+  },
+  {
+   "chapter": 35,
+   "verse": 18,
+   "at": 82,
+   "after": "r she died), that she named him Ben-oni,",
+   "text": "\"Ben-oni\" means \"son of my trouble.\""
+  },
+  {
+   "chapter": 35,
+   "verse": 18,
+   "at": 117,
+   "after": "-oni, but his father named him Benjamin.",
+   "text": "\"Benjamin\" means \"son of my right hand.\""
+  },
+  {
+   "chapter": 37,
+   "verse": 35,
+   "at": 128,
+   "after": "d. He said, \"For I will go down to Sheol",
+   "text": "Sheol is the place of the dead or the grave."
+  },
+  {
+   "chapter": 38,
+   "verse": 29,
+   "at": 167,
+   "after": "f?\" Therefore his name was called Perez.",
+   "text": "Perez means \"breaking out.\""
+  },
+  {
+   "chapter": 38,
+   "verse": 30,
+   "at": 103,
+   "after": "his hand, and his name was called Zerah.",
+   "text": "Zerah means \"scarlet\" or \"brightness.\""
+  },
+  {
+   "chapter": 41,
+   "verse": 51,
+   "at": 49,
+   "after": "lled the name of the firstborn Manasseh,",
+   "text": "\"Manasseh\" sounds like the Hebrew for \"forget.\""
+  },
+  {
+   "chapter": 41,
+   "verse": 52,
+   "at": 41,
+   "after": "he name of the second, he called Ephraim",
+   "text": "\"Ephraim\" sounds like the Hebrew for \"twice fruitful.\""
+  }
+ ]
+}

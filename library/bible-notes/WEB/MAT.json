@@ -1,0 +1,351 @@
+{
+ "translation": "WEB",
+ "layer": "translators-notes",
+ "book": "MAT",
+ "source": {
+  "work": "World English Bible, translators' notes",
+  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
+  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
+  "emptyBracesNotKept": 1,
+  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+ },
+ "count": 48,
+ "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 42,
+   "after": "e book of the generation of Jesus Christ",
+   "text": "Christ (Greek) and Messiah (Hebrew) both mean \"Anointed One\""
+  },
+  {
+   "chapter": 1,
+   "verse": 16,
+   "at": 80,
+   "after": "usband of Mary, from whom was born Jesus",
+   "text": "\"Jesus\" is a Greek variant of the Jewish name \"Yehoshua,\" which means \"Yah saves.\" \"Jesus\" is also the masculine form of \"Yeshu'ah,\" which means \"Salvation.\""
+  },
+  {
+   "chapter": 2,
+   "verse": 1,
+   "at": 93,
+   "after": "days of Herod the king, behold, wise men",
+   "text": "The word for \"wise men\" (magoi) can also mean teachers, priests, physicians, astrologers, seers, interpreters of dreams, or sorcerers."
+  },
+  {
+   "chapter": 3,
+   "verse": 11,
+   "at": 169,
+   "after": " He will baptize you in the Holy Spirit.",
+   "text": "TR and NU add \"and with fire\""
+  },
+  {
+   "chapter": 4,
+   "verse": 10,
+   "at": 39,
+   "after": "Then Jesus said to him, \"Get behind me,",
+   "text": "TR and NU read \"Go away\" instead of \"Get behind me\""
+  },
+  {
+   "chapter": 4,
+   "verse": 18,
+   "at": 33,
+   "after": "Walking by the sea of Galilee, he",
+   "text": "TR reads \"Jesus\" instead of \"he\""
+  },
+  {
+   "chapter": 5,
+   "verse": 18,
+   "at": 94,
+   "after": " pass away, not even one smallest letter",
+   "text": "literally, iota"
+  },
+  {
+   "chapter": 5,
+   "verse": 18,
+   "at": 117,
+   "after": "e smallest letter or one tiny pen stroke",
+   "text": "or, serif"
+  },
+  {
+   "chapter": 5,
+   "verse": 22,
+   "at": 155,
+   "after": " whoever shall say to his brother, 'Raca",
+   "text": "\"Raca\" is an Aramaic insult, related to the word for \"empty\" and conveying the idea of empty-headedness."
+  },
+  {
+   "chapter": 5,
+   "verse": 22,
+   "at": 269,
+   "after": "hall be in danger of the fire of Gehenna",
+   "text": "Gehenna is another name for Hell that brings to mind an image of a burning garbage dump with dead bodies in it."
+  },
+  {
+   "chapter": 5,
+   "verse": 26,
+   "at": 102,
+   "after": "ere, until you have paid the last penny.",
+   "text": "Literally, kodrantes. A kodrantes was a small copper coin worth about 2 lepta (widow's mites)--not enough to buy very much of anything."
+  },
+  {
+   "chapter": 5,
+   "verse": 27,
+   "at": 34,
+   "after": "\"You have heard that it was said, ",
+   "text": "TR adds \"to the ancients,\""
+  },
+  {
+   "chapter": 7,
+   "verse": 14,
+   "at": 3,
+   "after": "How",
+   "text": "TR reads \"Because\" instead of \"How\""
+  },
+  {
+   "chapter": 8,
+   "verse": 15,
+   "at": 71,
+   "after": "ver left her. She got up and served him.",
+   "text": "TR reads \"them\" instead of \"him\""
+  },
+  {
+   "chapter": 9,
+   "verse": 36,
+   "at": 97,
+   "after": "ion for them, because they were harassed",
+   "text": "TR reads \"weary\" instead of \"harassed\""
+  },
+  {
+   "chapter": 10,
+   "verse": 8,
+   "at": 33,
+   "after": "Heal the sick, cleanse the lepers",
+   "text": "TR adds \", raise the dead\""
+  },
+  {
+   "chapter": 10,
+   "verse": 29,
+   "at": 41,
+   "after": "Aren't two sparrows sold for an assarion",
+   "text": "An assarion is a small coin worth one tenth of a drachma or a sixteenth of a denarius (approximately the wages of one half hour of agricultural labor)."
+  },
+  {
+   "chapter": 12,
+   "verse": 35,
+   "at": 103,
+   "after": "nd the evil man out of his evil treasure",
+   "text": "TR adds \"of the heart\""
+  },
+  {
+   "chapter": 13,
+   "verse": 25,
+   "at": 55,
+   "after": "e slept, his enemy came and sowed darnel",
+   "text": "darnel is a weed grass (probably bearded darnel or lolium temulentum) that looks very much like wheat until it is mature, when the difference becomes very apparent."
+  },
+  {
+   "chapter": 13,
+   "verse": 33,
+   "at": 117,
+   "after": " a woman took, and hid in three measures",
+   "text": "Literally, satas. 3 satas = about 0.5 bushel or 22 litres"
+  },
+  {
+   "chapter": 14,
+   "verse": 25,
+   "at": 33,
+   "after": "In the fourth watch of the night,",
+   "text": "The night was equally divided into four watches, so the fourth watch is approximately 3:00 A. M. to sunrise."
+  },
+  {
+   "chapter": 14,
+   "verse": 27,
+   "at": 60,
+   "after": "s spoke to them, saying \"Cheer up! I AM!",
+   "text": "see Exodus 3:14."
+  },
+  {
+   "chapter": 16,
+   "verse": 18,
+   "at": 35,
+   "after": "I also tell you that you are Peter,",
+   "text": "Peter's name, Petros in Greek, is the word for a specific rock or stone."
+  },
+  {
+   "chapter": 16,
+   "verse": 18,
+   "at": 52,
+   "after": "you that you are Peter, and on this rock",
+   "text": "Greek, petra, a rock mass or bedrock."
+  },
+  {
+   "chapter": 17,
+   "verse": 24,
+   "at": 72,
+   "after": " those who collected the didrachma coins",
+   "text": "A didrachma is a Greek silver coin worth 2 drachmas, about as much as 2 Roman denarii, or about 2 days wages. It was commonly used to pay the half-shekel temple tax, because 2 drachmas were worth one half shekel of silver."
+  },
+  {
+   "chapter": 17,
+   "verse": 27,
+   "at": 170,
+   "after": " its mouth, you will find a stater coin.",
+   "text": "A stater is a silver coin equivalent to four Attic or two Alexandrian drachmas, or a Jewish shekel: just exactly enough to cover the half-shekel Temple Tax for two people."
+  },
+  {
+   "chapter": 18,
+   "verse": 9,
+   "at": 180,
+   "after": "ing two eyes to be cast into the Gehenna",
+   "text": "or, Hell"
+  },
+  {
+   "chapter": 18,
+   "verse": 24,
+   "at": 89,
+   "after": "o him who owed him ten thousand talents.",
+   "text": "Ten thousand talents represents an extremely large sum of money, equivalent to about 60,000,000 denarii, where one denarius was typical of one day's wages for agricultural labor."
+  },
+  {
+   "chapter": 18,
+   "verse": 28,
+   "at": 99,
+   "after": "vants, who owed him one hundred denarii,",
+   "text": "100 denarii was about one sixtieth of a talent."
+  },
+  {
+   "chapter": 20,
+   "verse": 2,
+   "at": 51,
+   "after": " agreed with the laborers for a denarius",
+   "text": "A denarius is a silver Roman coin worth 1/25th of a Roman aureus. This was a common wage for a day of farm labor."
+  },
+  {
+   "chapter": 20,
+   "verse": 3,
+   "at": 33,
+   "after": "He went out about the third hour,",
+   "text": "Time was measured from sunrise to sunset, so the third hour would be about 9:00 AM."
+  },
+  {
+   "chapter": 20,
+   "verse": 5,
+   "at": 53,
+   "after": " out about the sixth and the ninth hour,",
+   "text": "noon and 3:00 P. M."
+  },
+  {
+   "chapter": 20,
+   "verse": 6,
+   "at": 23,
+   "after": "About the eleventh hour",
+   "text": "5:00 PM"
+  },
+  {
+   "chapter": 20,
+   "verse": 26,
+   "at": 84,
+   "after": "sires to become great among you shall be",
+   "text": "TR reads \"let him be\" instead of \"shall be\""
+  },
+  {
+   "chapter": 21,
+   "verse": 1,
+   "at": 57,
+   "after": "ar to Jerusalem, and came to Bethsphage,",
+   "text": "TR reads \"Bethphage\" instead of \"Bethsphage\""
+  },
+  {
+   "chapter": 23,
+   "verse": 14,
+   "at": 198,
+   "after": "llow those who are entering in to enter.",
+   "text": "Some Greek manuscripts reverse the order of verses 13 and 14, and some omit verse 13, numbering verse 14 as 13."
+  },
+  {
+   "chapter": 23,
+   "verse": 23,
+   "at": 84,
+   "after": "es! For you tithe mint, dill, and cumin,",
+   "text": " cumin is an aromatic seed from Cuminum cyminum, resembling caraway in flavor and appearance. It is used as a spice."
+  },
+  {
+   "chapter": 23,
+   "verse": 25,
+   "at": 163,
+   "after": "e full of extortion and unrighteousness.",
+   "text": "TR reads \"self-indulgence\" instead of \"unrighteousness\""
+  },
+  {
+   "chapter": 24,
+   "verse": 28,
+   "at": 52,
+   "after": " the carcass is, there will the vultures",
+   "text": "or, eagles"
+  },
+  {
+   "chapter": 24,
+   "verse": 34,
+   "at": 42,
+   "after": "st assuredly I tell you, this generation",
+   "text": "The word for \"generation\" (genea) can also be translated as \"race.\""
+  },
+  {
+   "chapter": 25,
+   "verse": 40,
+   "at": 119,
+   "after": "to one of the least of these my brothers",
+   "text": "The word for \"brothers\" here may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+  },
+  {
+   "chapter": 26,
+   "verse": 26,
+   "at": 54,
+   "after": "ating, Jesus took bread, gave thanks for",
+   "text": "TR reads \"blessed\" instead of \"gave thanks for\""
+  },
+  {
+   "chapter": 27,
+   "verse": 35,
+   "at": 80,
+   "after": "d his clothing among them, casting lots,",
+   "text": "TR adds \"that it might be fulfilled which was spoken by the prophet: 'They divided my garments among them, and for my clothing they cast lots;'\" [see Psalm 22:18 and John 19:24]"
+  },
+  {
+   "chapter": 27,
+   "verse": 41,
+   "at": 73,
+   "after": "ocking, with the scribes, the Pharisees,",
+   "text": "TR omits \"the Pharisees\""
+  },
+  {
+   "chapter": 27,
+   "verse": 45,
+   "at": 23,
+   "after": "Now from the sixth hour",
+   "text": "noon"
+  },
+  {
+   "chapter": 27,
+   "verse": 45,
+   "at": 82,
+   "after": " over all the land until the ninth hour.",
+   "text": "3:00 P. M."
+  },
+  {
+   "chapter": 27,
+   "verse": 46,
+   "at": 75,
+   "after": "th a loud voice, saying, \"Eli, Eli, lima",
+   "text": "TR reads \"lama\" instead of \"lima\""
+  },
+  {
+   "chapter": 28,
+   "verse": 10,
+   "at": 62,
+   "after": "m, \"Don't be afraid. Go tell my brothers",
+   "text": "The word for \"brothers\" here may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+  }
+ ]
+}

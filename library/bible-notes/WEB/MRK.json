@@ -1,0 +1,190 @@
+{
+ "translation": "WEB",
+ "layer": "translators-notes",
+ "book": "MRK",
+ "source": {
+  "work": "World English Bible, translators' notes",
+  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
+  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
+  "emptyBracesNotKept": 1,
+  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+ },
+ "count": 25,
+ "notes": [
+  {
+   "chapter": 1,
+   "verse": 4,
+   "at": 19,
+   "after": "John came baptizing",
+   "text": "To baptize means to immerse in (or wash with) water (or fire). This baptizm is not just to cleanse the body, but as an outward sign of an inward spiritual cleansing and commitment."
+  },
+  {
+   "chapter": 1,
+   "verse": 8,
+   "at": 17,
+   "after": "I baptized you in",
+   "text": "The Greek word (en) translated here as \"in\" could also be translated as \"with\" in some contexts."
+  },
+  {
+   "chapter": 3,
+   "verse": 32,
+   "at": 108,
+   "after": " mother, your brothers, and your sisters",
+   "text": "TR omits \"your sisters\""
+  },
+  {
+   "chapter": 4,
+   "verse": 4,
+   "at": 71,
+   "after": "ome seed fell by the road, and the birds",
+   "text": "TR adds \"of the air\""
+  },
+  {
+   "chapter": 4,
+   "verse": 21,
+   "at": 62,
+   "after": "he lamp brought to be put under a basket",
+   "text": "Literally, a modion, a dry measuring basket containing about a peck (about 9 litres)"
+  },
+  {
+   "chapter": 6,
+   "verse": 33,
+   "at": 4,
+   "after": "They",
+   "text": "TR reads \"The multitudes\" instead of \"They\""
+  },
+  {
+   "chapter": 6,
+   "verse": 37,
+   "at": 112,
+   "after": "\"Shall we go and buy two hundred denarii",
+   "text": "200 denarii was about 7 or 8 months wages for an agricultural laborer."
+  },
+  {
+   "chapter": 6,
+   "verse": 44,
+   "at": 29,
+   "after": "Those who ate the loaves were",
+   "text": "TR adds \"about\""
+  },
+  {
+   "chapter": 6,
+   "verse": 50,
+   "at": 114,
+   "after": "m, and said to them, \"Cheer up! It is I!",
+   "text": "Literally, \"I AM!\""
+  },
+  {
+   "chapter": 7,
+   "verse": 11,
+   "at": 113,
+   "after": "ou might have received from me is Corban",
+   "text": "Corban is a Hebrew word for an offering devoted to God."
+  },
+  {
+   "chapter": 8,
+   "verse": 12,
+   "at": 67,
+   "after": "rit, and said, \"Why does this generation",
+   "text": "The word translated \"generation\" here (genea) could also be translated \"people,\" \"race,\" or \"family.\""
+  },
+  {
+   "chapter": 9,
+   "verse": 43,
+   "at": 149,
+   "after": "aving your two hands to go into Gehenna,",
+   "text": "Gehenna is a word for Hell that originated as the name for a place where live babies were thrown crying into the fire under the arms of the idol, Moloch, to die. This place was so despised by the people after the righteous King Josiah abolished this hideous practice, that not only was it made into a garbage heap, but dead bodies of diseased animals and executed criminals were thrown there and burned."
+  },
+  {
+   "chapter": 10,
+   "verse": 25,
+   "at": 40,
+   "after": "It is easier for a camel to go through a",
+   "text": "or, the"
+  },
+  {
+   "chapter": 10,
+   "verse": 51,
+   "at": 91,
+   "after": "?\" The blind man said to him, \"Rhabboni,",
+   "text": "Rhabboni is a transliteration of the Hebrew word for \"great teacher.\""
+  },
+  {
+   "chapter": 11,
+   "verse": 1,
+   "at": 47,
+   "after": "ey drew near to Jerusalem, to Bethsphage",
+   "text": "TR reads \"Bethphage\" instead of \"Bethsphage\""
+  },
+  {
+   "chapter": 12,
+   "verse": 42,
+   "at": 57,
+   "after": ", and she cast in two small brass coins,",
+   "text": "Literally, lepta (or widow's mites). Lepta are very small brass coins worth half a quadrans each, which is a quarter of the copper assarion. Lepta are worth less than 1% of an agricultural worker's daily wages."
+  },
+  {
+   "chapter": 12,
+   "verse": 42,
+   "at": 86,
+   "after": "rass coins, which equal a quadrans coin.",
+   "text": "A quadrans is a coin worth about 1/64 of a denarius. A denarius is about one day's wages for an agricultural laborer."
+  },
+  {
+   "chapter": 13,
+   "verse": 6,
+   "at": 48,
+   "after": " will come in my name, saying, 'I am he!",
+   "text": "Literally, \"I AM!\""
+  },
+  {
+   "chapter": 13,
+   "verse": 30,
+   "at": 44,
+   "after": " assuredly I say to you, this generation",
+   "text": "The word translated \"generation\" (genea) could also be translated \"race,\" \"family,\" or \"people.\""
+  },
+  {
+   "chapter": 14,
+   "verse": 5,
+   "at": 66,
+   "after": "old for more than three hundred denarii,",
+   "text": "300 denarii was about a years wages for an agricultural laborer."
+  },
+  {
+   "chapter": 15,
+   "verse": 25,
+   "at": 22,
+   "after": "It was the third hour,",
+   "text": "9:00 A. M."
+  },
+  {
+   "chapter": 15,
+   "verse": 32,
+   "at": 98,
+   "after": " cross, that we may see and believe him.",
+   "text": "TR omits \"him\""
+  },
+  {
+   "chapter": 15,
+   "verse": 33,
+   "at": 19,
+   "after": "When the sixth hour",
+   "text": "or, noon"
+  },
+  {
+   "chapter": 15,
+   "verse": 33,
+   "at": 90,
+   "after": "ver the whole land until the ninth hour.",
+   "text": "3:00 PM"
+  },
+  {
+   "chapter": 16,
+   "verse": 8,
+   "at": 14,
+   "after": "They went out,",
+   "text": "TR adds \"quickly\""
+  }
+ ]
+}
