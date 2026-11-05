@@ -28,6 +28,9 @@ function applyRecordedFixes(srcId, code, obj) {
   if (!fixes) return { obj: o, used }
   for (const r of fixes.rules) {
     if (r.source !== srcId || !r.files.includes(code)) continue
+    // a replace-all on a field the original does not have (the standardised `source` line of MHC, JFB and Calvin is added at build time by
+    // build-library.mjs; it is metadata and gate 4 does not compare it) has nothing to re-apply to the original
+    if (r.op === 'replace-all' && o[r.target] === undefined) continue
     used.push(r.id)
     if (r.op === 'replace-all') {
       let s = JSON.stringify(o[r.target])

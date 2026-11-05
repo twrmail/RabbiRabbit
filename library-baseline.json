@@ -3,7 +3,7 @@
  "gates": {
   "mhc": {
    "1": "PASS",
-   "2": "FAIL",
+   "2": "UNKNOWN",
    "3": "PASS",
    "4": "PASS",
    "5": "FAIL",
@@ -12,7 +12,7 @@
   },
   "jfb": {
    "1": "PASS",
-   "2": "FAIL",
+   "2": "UNKNOWN",
    "3": "PASS",
    "4": "PASS",
    "5": "FAIL",
@@ -21,7 +21,7 @@
   },
   "calvin": {
    "1": "UNKNOWN",
-   "2": "FAIL",
+   "2": "UNKNOWN",
    "3": "FAIL",
    "4": "PASS",
    "5": "FAIL",
