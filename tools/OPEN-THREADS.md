@@ -19,7 +19,7 @@ Last updated: 2026-11-05 (after PR #47; Easton dictionary PR open). Evidence for
 | Easton bios, 38 characters whose bio was not inside Easton's entry of the same name | Decided 2026-11-05: 11 corrected, 4 completed, 27 kept (correct Easton text under a variant spelling); in PR #46 | Merge #46 | easton-review-resolution-nov5 |
 | Easton: 171 names with no exact Easton entry; 27 bios filed under a variant spelling | Held, unchanged | A name map from characters to dictionary entries (now possible: the full dictionary is in the library) | easton-bios-fix-nov5 |
 | WEB translator notes (354 notes on 329 verses) removed at build time | Layer built (PR #45) in `library/bible-notes/WEB`, apart from verse text; nothing reads it yet | Register entry and manifest line for the layer; Worker use later; read the WEB's terms on dropping notes from the text | web-and-mhc-checks-nov5 |
-| WEB `year: 2020` field in the files | Hand-typed, not a release; left in place | Tom's call on changing the field | web-and-mhc-checks-nov5 |
+| WEB `year: 2020` field in the files | Page read 2026-11-05: eBible.org calls the current text "the 2020 stable text edition", so 2020 is a real edition name; field left as is | Show our copy is that edition (compare the dated 2020 file) | web-bsb-pages |
 | Full Easton's Bible Dictionary (3,964 entries) | Data in PR #48; register, manifest line and scorecard row in the next PR (Gate 2 and Gate 6 PASS by the agreed definitions) | Name map from characters to entries; Worker use later; credit line for CCEL and the neuu dataset | easton-copies-compared-nov5 |
 | 6 character bios not found inside any Easton entry, and Daniel's bio (Belteshazzar note only) | Done 2026-11-05: all 1,292 bios now sit inside an Easton entry; Daniel is the prophet's sense | Eber's bio reads "(8:12)" as Easton prints it, without the "1 Chr." an earlier tool had added | easton-review-resolution-nov5 |
 | Calvin leftovers; JFB and Wesley word differences vs CCEL | Open from earlier handoffs | Per handoff-nov4 | handoff-nov4 |
@@ -31,9 +31,9 @@ Last updated: 2026-11-05 (after PR #47; Easton dictionary PR open). Evidence for
 | Gate 2 PASS: KJV, ASV. Gate 6 PASS: KJV, ASV, MHC, Spurgeon | Done | none | PRs #39-#43 |
 | MHC register note says 1.3% of repo text "not itemised" | Wrong: it is the repo's own front matter (content match 99.9%) | One-line register correction | web-and-mhc-checks-nov5 |
 | Printed edition not identified: MHC, JFB, Calvin, Wesley, Henry | Gate 2 criterion 1 fails by design | Identify editions (page reads) | provenance-remaining-questions-nov4 |
-| WEB release | Not identified | Page read of the WEB's own release history | web-and-mhc-checks-nov5 |
-| WEB terms: does removing notes change "the actual text"? | Not checked | Read the WEB's own licence page | web-and-mhc-checks-nov5 |
-| BSB: label ("Berean Study Bible" vs "Standard"), year, 2023 text | Source line has no year | Page read, Tom's decision | provenance-licence-triage |
+| WEB release | Page read: 2020 stable text edition is the name; our copy not yet proven to be it | Compare with the dated eBible.org 2020 file | web-bsb-pages |
+| WEB terms: does removing notes change "the actual text"? | Page read: public domain, but "World English Bible" is an eBible.org trademark and a changed text should not use the name; the page is silent on notes | Ask eBible.org, or relabel | web-bsb-pages |
+| BSB: label ("Berean Study Bible" vs "Standard"), year, 2023 text | Page read: the owner's name is Berean Standard Bible (text 2022, public domain 30 Apr 2023); our file says "Study"; Berean asks that varied text not use the Berean name | Tom's decision: relabel to Standard; clean spaces inside quotes or keep label with a note | web-bsb-pages |
 | Tyndale and Theographic share-alike vs the repo's MIT root | No `shareAlikeDecision` recorded | Tom's decision | provenance-licence-triage |
 | Theographic: 25 listed sources with no licence | Open | Page reads | characters-origin-nov5 |
 | STEPBible TIPNR licence conflict | Open | Page read | provenance-licence-triage |
