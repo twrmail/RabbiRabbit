@@ -795,7 +795,7 @@
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
-        "summary": "seven1m/open-bibles eng-bsb.usfx.xml, parsed July 3.",
+        "summary": "Verse text equals the publisher's whole-translation file https://bereanbible.com/bsb.txt, saved 2026-11-06 as data/bsb/bsb.txt (library repaired from it by recorded fix bsb-from-publisher). Before that the files were a July 3 conversion of seven1m/open-bibles eng-bsb.usfx.xml, which lost words in about 5,300 verses.",
         "records": [
           {
             "kind": "chat-history",
@@ -821,12 +821,18 @@
             "kind": "page-read",
             "ref": "data/bsb/bsb.txt (publisher's file, 2026-11-06)",
             "note": "the publisher's whole-translation file; library/bible/BSB repaired from it by recorded fix bsb-from-publisher (2026-11-06)"
+          },
+          {
+            "kind": "measured",
+            "ref": "tools/check-bsb-against-publisher.mjs 2026-11-06",
+            "note": "31,086 verses byte-identical to data/bsb/bsb.txt, 0 differ, the 16 verses the publisher leaves empty are absent"
           }
         ],
         "notRecovered": [
-          "Licence wording versus the 'Berean Study Bible' label (see triage doc item)"
+          "Which dated release the publisher's file is (no version line); the old July 3 download commit"
         ],
-        "dateRecorded": "2026-11-04"
+        "dateRecorded": "2026-11-06",
+        "versionMarker": "Publisher's file https://bereanbible.com/bsb.txt as saved by Tom on 2026-11-06, sha256 beacd9018a81c368fd36ca254599e1a259a861863c5c767dbfd0ad378a29badb (data/bsb/bsb.txt); the file has no version or date line, so this is the copy compared, not a named release. All 31,086 library verses equal it (tools/check-bsb-against-publisher.mjs)."
       }
     },
     {
