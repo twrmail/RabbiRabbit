@@ -231,6 +231,34 @@ for (const rule of fixes.rules) {
         for (const [k, v] of Object.entries(d)) { if (k === rule.before) nd[rule.target] = rule.value; nd[k] = v }
         if (!(rule.target in nd)) nd[rule.target] = rule.value
       }
+    } else if (rule.op === 'set-verses-from-file') {
+      // Bible verses set to the text of a publisher's file kept in the repo (rule.patchFile names it and lists, per verse, the sha256 of the text
+      // now in the library and of the publisher's line; the text is read from the file, not copied). A verse is changed only if it is exactly
+      // the text named by oldSha256; one already equal to the publisher's line is left alone; anything else stops the tool with nothing written.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const raw = fs.readFileSync(path.join(root, patch.sourceFile)), srcText = raw.toString('utf8')
+      if (crypto.createHash('sha256').update(raw).digest('hex') !== patch.sourceSha256) throw new Error(`${patch.sourceFile} does not match the sha256 recorded in the patch; nothing written`)
+      if (!patchCache[rule.patchFile + '#pub']) {
+        const m = new Map()
+        for (const line of srcText.split('\n').slice(3)) { if (!line) continue; const t = line.indexOf('\t'); m.set(line.slice(0, t), line.slice(t + 1)) }
+        patchCache[rule.patchFile + '#pub'] = m
+      }
+      const pub = patchCache[rule.patchFile + '#pub'], name = patch.bookNames[code]
+      const ents = patch.verses.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const here = ents.filter(x => x.chapter === ch.chapter)
+        if (!here.length) return ch
+        const verses = { ...ch.verses }
+        for (const e of here) {
+          const want = pub.get(`${name} ${ch.chapter}:${e.verse}`), cur = verses[String(e.verse)]
+          if (want === undefined || H(want) !== e.newSha256) throw new Error(`${code} ${ch.chapter}:${e.verse}: the publisher's line is missing or does not match the recorded sha256; nothing written`)
+          if (cur === want) continue
+          if (cur === undefined || H(cur) !== e.oldSha256) throw new Error(`${code} ${ch.chapter}:${e.verse}: the verse is not the text the patch was built to replace (oldSha256 differs); not overwriting`)
+          verses[String(e.verse)] = want; bump('verses replaced')
+        }
+        return { ...ch, verses }
+      }) }
     } else if (rule.op === 'set-entry-text') {
       // dictionary-style entries (library/people/characters.json): a bio is added where there is none, or carried on where it was cut short.
       // The text and its sha256 come from a patch file. It ADDS or EXTENDS: an existing bio must be exactly the start of the new text, or (a correction) must be exactly the text whose sha256 the patch entry names as oldSha256;
