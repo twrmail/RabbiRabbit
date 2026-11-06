@@ -756,7 +756,15 @@
           "url": "https://berean.bible/terms.htm",
           "editionClaim": "texts dedicated to the public domain as of April 30, 2023",
           "status": "page-read",
-          "dateChecked": "2026-11-03"
+          "dateChecked": "2026-11-03",
+          "note": "Page read again 2026-11-05: the attribution names the Berean Standard Bible (BSB); \"Berean Study Bible\" appears only inside a URL path, not as a translation name. Rule: works that vary from the official text are asked not to use the Berean name."
+        },
+        {
+          "name": "BibleDawn translation page (secondary)",
+          "url": "https://bibledawn.pages.dev/translations/bsb",
+          "editionClaim": "Berean Standard Bible, text year 2022, public-domain dedication 2023 (CC0); this page does not use the name \"Berean Study Bible\".",
+          "status": "page-read",
+          "dateChecked": "2026-11-05"
         }
       ],
       "rights": {
@@ -773,8 +781,9 @@
         "Do not call modified text 'Berean'."
       ],
       "openQuestions": [
-        "Does the dedication cover the exact text in our file, which is labelled 'Berean Study Bible'?",
-        "Is our text the 2023 Berean Standard Bible text?"
+        "Does the dedication cover the exact text in our file? The file is labelled \"Berean Study Bible (BSB)\", but the owner's page names the translation the Berean Standard Bible; \"Study Bible\" is an older name, so the label should change to Standard (Tom's decision, header change not made here).",
+        "Is our text the 2023 Berean Standard Bible text? Our file matches seven1m/open-bibles at 97.5%; why the other 2.5% of runs differ is not established. Compare with the dated Berean download to settle it.",
+        "Our file has spaces inside quotation marks (for example \"\u201c Let there be light,\u201d\"), which the official text may not. The Berean terms ask that works that vary from the official text do not use the Berean name; decide whether to clean the spaces (a recorded fix) or keep the label with a note."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -817,7 +826,15 @@
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "eBible.org World English Bible copyright page",
+          "url": "https://ebible.org/eng-web/copyright.htm",
+          "editionClaim": "This is the 2020 stable text edition of the World English Bible.",
+          "status": "page-read",
+          "dateChecked": "2026-11-05"
+        }
+      ],
       "rights": {
         "claim": "public domain",
         "claimSource": "repo manifest",
@@ -827,11 +844,14 @@
         "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists WEB as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
       },
       "evidenceLevel": "work-identified",
-      "obligations": [],
+      "obligations": [
+        "Trademark rule (eBible.org copyright page): \"World English Bible\" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. The page does not mention footnotes or translator notes, so whether our removal of inline translator notes is a change of the actual text is not settled (see open questions)."
+      ],
       "openQuestions": [
         "Dedication page not read this session.",
         "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition.",
-        "Which WEB release our text is; the header year 2020 appears to be wrong. Compare with dated releases (eBible.org archives) before relabelling."
+        "Header year 2020: the WEB's own page calls the current text \"the 2020 stable text edition\", so the year is a real edition name, not a mistake. What is not shown is that our scrollmapper copy is that edition (it matches at 99.7% / 99.2%; the copy came with the notes in the text, which we remove). Compare with the dated eBible.org 2020 stable text file to settle it.",
+        "Does removing the inline translator notes (kept in library/bible-notes/WEB) change \"the actual text\" under the eBible.org trademark rule? The page is silent on notes. Ask eBible.org or keep the notes layer and say so in the label."
       ],
       "acquisition": {
         "evidenceClass": "measured",
