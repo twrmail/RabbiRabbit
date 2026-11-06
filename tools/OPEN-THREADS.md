@@ -33,7 +33,7 @@ Last updated: 2026-11-05 (after PR #47; Easton dictionary PR open). Evidence for
 | Printed edition not identified: MHC, JFB, Calvin, Wesley, Henry | Gate 2 criterion 1 fails by design | Identify editions (page reads) | provenance-remaining-questions-nov4 |
 | WEB release | Page read: 2020 stable text edition is the name; our copy not yet proven to be it | Compare with the dated eBible.org 2020 file | web-bsb-pages |
 | WEB terms: does removing notes change "the actual text"? | Page read: public domain, but "World English Bible" is an eBible.org trademark and a changed text should not use the name; the page is silent on notes | Ask eBible.org, or relabel | web-bsb-pages |
-| BSB: label ("Berean Study Bible" vs "Standard"), year, 2023 text | Page read: the owner's name is Berean Standard Bible (text 2022, public domain 30 Apr 2023); our file says "Study"; Berean asks that varied text not use the Berean name | Tom's decision: relabel to Standard; clean spaces inside quotes or keep label with a note | web-bsb-pages |
+| BSB: label, year, 2023 text | Done 2026-11-06: relabelled to Berean Standard Bible and 8,224 spaces inside quotes/apostrophes/parentheses removed (recorded fixes bsb-label, bsb-quote-spacing). Source line still has no year | Add the year to the source line; show our text is the 2023 release | web-bsb-pages |
 | Tyndale and Theographic share-alike vs the repo's MIT root | No `shareAlikeDecision` recorded | Tom's decision | provenance-licence-triage |
 | Theographic: 25 listed sources with no licence | Open | Page reads | characters-origin-nov5 |
 | STEPBible TIPNR licence conflict | Open | Page read | provenance-licence-triage |
