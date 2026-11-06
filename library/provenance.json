@@ -743,7 +743,7 @@
     {
       "sourceId": "bsb",
       "work": {
-        "title": "Berean Bible (labelled 'Berean Study Bible' in our file)"
+        "title": "Berean Standard Bible (the file said 'Berean Study Bible' until the 2026-11-06 relabel)"
       },
       "repositoryCopy": {
         "edition": "unknown",
@@ -781,9 +781,9 @@
         "Do not call modified text 'Berean'."
       ],
       "openQuestions": [
-        "Does the dedication cover the exact text in our file? The file is labelled \"Berean Study Bible (BSB)\", but the owner's page names the translation the Berean Standard Bible; \"Study Bible\" is an older name, so the label should change to Standard (Tom's decision, header change not made here).",
+        "Does the dedication cover the exact text in our file? Label now matches the owner's name (Berean Standard Bible, relabelled 2026-11-06 by recorded fix bsb-label).",
         "Is our text the 2023 Berean Standard Bible text? Our file matches seven1m/open-bibles at 97.5%; why the other 2.5% of runs differ is not established. Compare with the dated Berean download to settle it.",
-        "Our file has spaces inside quotation marks (for example \"\u201c Let there be light,\u201d\"), which the official text may not. The Berean terms ask that works that vary from the official text do not use the Berean name; decide whether to clean the spaces (a recorded fix) or keep the label with a note."
+        "Spaces inside quotation marks, apostrophes and parentheses were removed by recorded fix bsb-quote-spacing (2026-11-06; 8,224 spaces in 5,312+ verses); checked against lyteword/bsb, an independent copy with none of the spaced forms. Other differences from the official text, if any, are not established."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
