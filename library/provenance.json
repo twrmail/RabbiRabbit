@@ -770,9 +770,9 @@
           "name": "bereanbible.com/bsb.txt (publisher's whole-translation file)",
           "url": "https://bereanbible.com/bsb.txt",
           "editionClaim": "Berean Standard Bible, 31,102 verse lines in 66 books; header: dedicated to the public domain; no version or date line",
-          "status": "file-read",
+          "status": "page-read",
           "dateChecked": "2026-11-06",
-          "note": "Saved in the repo as data/bsb/bsb.txt, sha256 beacd9018a81c368fd36ca254599e1a259a861863c5c767dbfd0ad378a29badb. Compared with library/bible/BSB on 2026-11-06: 25,747 verses byte-identical, 2,161 same words with different spacing/punctuation, 3,178 words differ (cut-short verses and missing words from the open-bibles conversion). 16 verses are empty in the file and absent from ours."
+          "note": "Saved in the repo as data/bsb/bsb.txt, sha256 beacd9018a81c368fd36ca254599e1a259a861863c5c767dbfd0ad378a29badb. Compared with library/bible/BSB on 2026-11-06: 25,747 verses byte-identical, 2,161 same words with different spacing/punctuation, 3,178 words differ (cut-short verses and missing words from the open-bibles conversion); all repaired by bsb-from-publisher, after which every library verse equals the file. 16 verses are empty in the file and absent from ours."
         }
       ],
       "rights": {
@@ -818,9 +818,9 @@
             "note": "97.5% of our runs found in seven1m/open-bibles eng-bsb.usfx.xml (open-bibles commit d4cb31f of 2026-11-03), 94.3% in lyteword/bsb; supports the recorded seven1m origin"
           },
           {
-            "kind": "file-read",
+            "kind": "page-read",
             "ref": "data/bsb/bsb.txt (publisher's file, 2026-11-06)",
-            "note": "reference copy for checking and repairing library/bible/BSB; the library files are not yet repaired from it"
+            "note": "the publisher's whole-translation file; library/bible/BSB repaired from it by recorded fix bsb-from-publisher (2026-11-06)"
           }
         ],
         "notRecovered": [

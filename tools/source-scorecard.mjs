@@ -45,6 +45,28 @@ function applyRecordedFixes(srcId, code, obj) {
       // written separately from apply-library-fixes.mjs: rebuild the object from its entries
       const ent = Object.entries(o[r.target] || {})
       if (ent.some(([k]) => k === r.from) && !ent.some(([k]) => k === r.to)) o = { ...o, [r.target]: Object.fromEntries(ent.map(([k, v]) => [k === r.from ? r.to : k, v])) }
+    } else if (r.op === 'set-verses-from-file') {
+      // written separately from apply-library-fixes.mjs: reads the patch and the publisher's file itself; any mismatch (file hash, line hash,
+      // text not the one named) changes nothing, so the comparison with the original then fails visibly
+      const pf = path.resolve(libDir, '..', r.patchFile)
+      if (exists(pf)) {
+        const patch = readJSON(pf), sf = path.resolve(libDir, '..', patch.sourceFile)
+        if (exists(sf)) {
+          const buf = fs.readFileSync(sf), HH = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+          if (crypto.createHash('sha256').update(buf).digest('hex') === patch.sourceSha256) {
+            const lines = {}; for (const ln of buf.toString('utf8').split('\n').slice(3)) { const i = ln.indexOf('\t'); if (i > 0) lines[ln.slice(0, i)] = ln.slice(i + 1) }
+            const nm = patch.bookNames[code], mine = patch.verses.filter(v => v.book === code)
+            o = { ...o, chapters: o.chapters.map(ch => {
+              const vs = { ...ch.verses }
+              for (const e of mine.filter(v => v.chapter === ch.chapter)) {
+                const want = lines[`${nm} ${ch.chapter}:${e.verse}`], cur = vs[String(e.verse)]
+                if (want !== undefined && HH(want) === e.newSha256 && cur !== undefined && (cur === want || HH(cur) === e.oldSha256)) vs[String(e.verse)] = want
+              }
+              return { ...ch, verses: vs }
+            }) }
+          }
+        }
+      }
     } else if (r.op === 'add-chapters') {
       // written separately: reads the patch file itself and hashes with its own call; on any mismatch it adds nothing,
       // so the comparison with the original then fails visibly
