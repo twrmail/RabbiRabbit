@@ -577,12 +577,19 @@ if (exists(provPath)) {
     if (g.scope !== 'retired') {
       // Gate 2
       const recs = (e.acquisition && e.acquisition.records) || []
-      const c1 = !!line && !/not recorded|not identified|origin and edition/i.test(line) && yearIn(line)
+      // Option A (Tom, 2026-11-07): Gate 2 identifies the DIGITAL edition we hold. The printed edition is recorded separately and never fails the gate.
+      // Criterion 1 needs the work named with a date (in the file's source line, or the work's own date in the register); "not recorded" still fails.
+      // A year that only names a repository branch ("2024 branch") is not the date of the work, so it does not count.
+      const wk = e.work || {}
+      const regWorkDated = !!(wk.title && (wk.author || wk.authors || wk.publisher) && yearIn([wk.year, wk.firstPublished, wk.date].filter(Boolean).join(' ')))
+      const c1 = !!line && !/not recorded|origin and edition/i.test(line) && (yearIn(line.replace(/\b(1[5-9]\d\d|20[0-2]\d)\s+branch\b/gi, '')) || regWorkDated)
+      const printedUnknown = /printed edition[^;)]*not identified|not identified/i.test(line)
       const c2 = !!line && /via |from |rebuilt|CCEL|seven1m|bereanbibles|bereanbible\.com|lyteword|tyndaleopenresources|openbible|HelloAO|scrollmapper/i.test(line)
       const c3 = recs.some(r => r.kind === 'measured' || r.kind === 'git-history')
       const c4 = !!(e.acquisition && e.acquisition.versionMarker)
-      g.gates[2][1].push(E('p', `Gate 2 criteria: (1) work and edition named in the file's source line: ${c1 ? 'yes' : 'NO'}; (2) digital origin named in the file: ${c2 ? 'yes' : 'NO'}; (3) a measured match or git-history record in the register: ${c3 ? 'yes' : 'NO'}; (4) a version marker in the register (acquisition.versionMarker): ${c4 ? 'yes' : 'NO'}`))
+      g.gates[2][1].push(E('p', `Gate 2 criteria: (1) work and a date named (source line or register): ${c1 ? 'yes' : 'NO'}; (2) digital origin named in the file: ${c2 ? 'yes' : 'NO'}; (3) a measured match or git-history record in the register: ${c3 ? 'yes' : 'NO'}; (4) a version marker in the register (acquisition.versionMarker): ${c4 ? 'yes' : 'NO'}`))
       if (g.gates[2][0] !== 'FAIL' && c1 && c2 && c3 && c4) g.gates[2][0] = 'PASS'
+      if (printedUnknown) g.gates[2][1].push(E('p', 'printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)'))
       // Gate 6
       const claim = (e.rights && e.rights.claim) || '', obligations = e.obligations || []
       const licensed = /CC BY/i.test(claim + ' ' + ((manifest.sources.find(x => x.id === e.sourceId) || {}).license || ''))

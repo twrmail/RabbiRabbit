@@ -8,7 +8,7 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 
 | Source | Complete | Provenance | Clean | Preserved | Verse coverage | Licence | Regression |
 |---|---|---|---|---|---|---|---|
-| Matthew Henry (mhc) | PASS | UNKNOWN | PASS | PASS | FAIL | PASS | UNKNOWN |
+| Matthew Henry (mhc) | PASS | PASS | PASS | PASS | FAIL | PASS | UNKNOWN |
 | Jamieson, Fausset & Brown (jfb) | PASS | UNKNOWN | PASS | PASS | FAIL | UNKNOWN | UNKNOWN |
 | Calvin's Commentaries (calvin) | UNKNOWN | UNKNOWN | FAIL | PASS | FAIL | UNKNOWN | UNKNOWN |
 | Scofield Reference Notes (1917) (scofield) | UNKNOWN | UNKNOWN | PASS | PASS | FAIL | UNKNOWN | UNKNOWN |
@@ -35,7 +35,7 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 | xref-seed (xref-seed) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 | overview-map (overview-map) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 
-Gate results over 26 sources: 53 PASS, 88 UNKNOWN, 15 FAIL, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
+Gate results over 26 sources: 54 PASS, 15 FAIL, 87 UNKNOWN, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
 
 Moved text: 14 of 14 moved block(s) found at their destination chapter; for each, the text cut equals the text added (same length and sha256).
 
@@ -51,13 +51,14 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **1. Complete: PASS**
   - [measured] 66/66 books, 1189 chapters vs KJV structure 1189; missing books 0, missing chapters 0, extra/unknown chapters 0 , empty chapters 0 , duplicates 0
   - [measured] structure only: this cannot detect a chapter that is present but incomplete (see gate 3)
-- **2. Provenance: UNKNOWN**
+- **2. Provenance: PASS**
   - [recorded] file says: "Matthew Henry's Commentary on the Whole Bible (public domain; text from the GitHub repository lyteword/mhenry-complete, CC0 1.0; printed edition not i"
   - [measured] recorded: year NO, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)
   - Edition identity not independently established.
   - [provenance register] evidence level "witnessed" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL mhc1.xml (measured; all 1,189 chapters compared after repairs; 6 differences of 4+ words remain, all Bible-reference lists)
   - [provenance register] 5 open question(s): Where did the original repository copy come from? | Is the Revell edition claim correct? | 75 restored quotation blocks have a CCEL witness (library/patches/henry-blocks.json); the rest of the text does not. | Settle Complete versus Concise from the original repo's own description, then decide the footer wording. | The repository's sibling lyteword/mhenry-concise exists; ours matches the complete repository, so the 'Concise' footer label is likely wrong, to be settled with the edition question.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -91,7 +92,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "witnessed" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL jfb.xml (measured; 1,186 chapters compared; share of CCEL text found in ours at least 0.986 in every chapter; 163 differences recorded in claude/jfb-ccel-word-differences.tsv, made up of 66 title-line differences and 97 word differences)
   - [provenance register] 2 open question(s): Where did our original text originate? | 97 word-level differences (of the 163 recorded; the other 66 are title lines) await adjudication. Only objective errors in ours were fixed.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -128,7 +130,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "witnessed" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL calcom01-45 (45 volumes) (measured; 285 of 286 chapter boundaries have an explicit CCEL chapter heading; 42 blocks moved with witness coverage at least 0.95)
   - [provenance register] 4 open question(s): Is our copy from the same translation and edition? | Baker 1996 is a modern printing; does that add any rights claim to its typesetting? | Acts and Isaiah 1-16 compared with CCEL (no commentary missing). Exodus-Deuteronomy, Matthew-Luke, Psalms, Jonah, Micah, Nahum, Obadiah, Jude, Malachi and Philemon still need their own CCEL readers. | Chapter-opening translations (Calvin's translation of the chapter, English with Latin) exist in CCEL and not in our copy; see open issue calvin-chapter-opening-translations in library/fixes.json. They are not in data/ or library/, so if imported they are newly sourced CCEL material needing their own provenance and rights review. The Calvin repairs so far drew moved text from our own copy; the two Acts arguments are the only CCEL-sourced text added.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)
 - **3. Clean: FAIL**
   - [measured] 3 chapters with literal HTML entities: &gt; x7, &lt; x4, &amp; x2 (e.g. GEN 47, HEB 13, PSA 6)
   - [recorded] open issue calvin-chapter-opening-translations (ISA 1-16 measured (16 chapters, about 14,800 words); about 240 chapters in 26 books estimated, provisional): Chapter-opening translations: CCEL contains Calvin's translation of the biblical chapter, generally with Latin alongside English. These blocks are absent from the repository copy. Comparison of Isaiah 1-16 found no missing commentary; the large word-count difference is explained by these translations and by translator footnotes retained in the repository copy. Do not treat the translations as missing commentary or merge them into commentary text. Revisit as a separate content type when designing the comparison-site schema. Estimated occurrence across Calvin's corpus (about 159,000 words) comes from an earlier comparison that pre-dates some repairs and remains provisional pending complete volume coverage. If imported later, they are newly sourced CCEL translation material and need their own provenance and rights review: they are in neither data/ nor library/. Not auto-fixed: the translations are a different content type from commentary; adding them to the chapter text would distort verse-level comparison, and no field for them exists yet.
@@ -178,7 +181,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 2 open question(s): Verify the actual text is the 1917 edition and not the copyrighted 1967 New Scofield. | No witness compared.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (942 chapters)
   - [measured] 98 very short chapters (under 40 characters): expected for selective notes, not counted as a defect
@@ -210,7 +213,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "witnessed" (an external identifiable witness agrees; our copy's origin unknown (Gate 2 UNKNOWN)); witnesses: CCEL ccelw/notes.xml (measured; 125 word disagreements to adjudicate)
   - [provenance register] 5 open question(s): Can the original copy's source be recovered? | 2 Samuel 24: probably no notes; unconfirmed. | NT edition year: confirm 1755 from a source other than the WesleyWalk note. | Is Poole in the OT derivation? Only the WesleyWalk note says so. | Count Wesley and Henry as one voice on OT passages in the Worker prompt?
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1188 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -250,7 +254,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: lyteword/chspurgeon-tod (recorded-only)
   - [provenance register] 1 open question(s): Confirm our actual text matches the identified source; licence of that repository not read this session.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (150 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -284,7 +288,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or edition recorded; no witness compared.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (260 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -317,7 +321,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: freely-given.org (page-read)
   - [provenance register] 2 open question(s): Check whether the Worker shows the attribution. | Exodus 36 gap (repo roadmap).
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1188 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -350,7 +354,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): Authoritative licence page could not be read on 2026-11-03 (redirect loop).
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: N/A**
   - Cross-reference table: no prose to damage; row validity is gate 5.
 - **4. Preserved: PASS**
@@ -475,7 +479,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: berean.bible terms (page-read); BibleDawn translation page (secondary) (page-read); bereanbible.com/bsb.txt (publisher's whole-translation file) (page-read)
   - [provenance register] 3 open question(s): Does the dedication cover the exact text in our file? Label now matches the owner's name (Berean Standard Bible, relabelled 2026-11-06 by recorded fix bsb-label). | Is our text the 2023 Berean Standard Bible text? Our file matches seven1m/open-bibles at 97.5%; why the other 2.5% of runs differ is not established. Compare with the dated Berean download to settle it. | Spaces inside quotation marks, apostrophes and parentheses were removed by recorded fix bsb-quote-spacing (2026-11-06; 8,224 spaces in 5,312+ verses); checked against lyteword/bsb, an independent copy with none of the spaced forms. Other differences from the official text, if any, are not established.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -510,7 +514,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: eBible.org World English Bible copyright page (page-read)
   - [provenance register] 4 open question(s): Dedication page not read this session. | 7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition. | Header year 2020: the WEB's own page calls the current text "the 2020 stable text edition", so the year is a real edition name, not a mistake. What is not shown is that our scrollmapper copy is that edition (it matches at 99.7% / 99.2%; the copy came with the notes in the text, which we remove). Compare with the dated eBible.org 2020 stable text file to settle it. | Does removing the inline translator notes (kept in library/bible-notes/WEB) change "the actual text" under the eBible.org trademark rule? The page is silent on notes. Ask eBible.org or keep the notes layer and say so in the label.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -543,7 +548,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): Not verified this session.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -574,7 +579,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Edition identity not independently established.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): Not verified this session.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
@@ -604,7 +609,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -629,7 +634,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -654,7 +659,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -679,7 +684,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -704,7 +709,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -729,7 +734,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: Theographic wiki (page-read)
   - [provenance register] 6 open question(s): Read 2026-11-03 at github.com/robertrouse/theographic-bible-metadata: README states CC BY-SA 4.0, a LICENSE file exists, and the README says to credit the original sources, 'several of which have their own licenses'. The earlier theographic-web link is the website, not the data. | The repository's docs/data-source-bibliography.md lists 26 sources; it states a licence for only one: STEPBible TIPNR, 'CC BY 4.0'. The other 25 carry no licence statement, including Jones (Chronology of the Old Testament), Atwood, Torrey, Ussher, Easton's, OpenBible geocoding, Pleiades, GeoNames, Wikidata, Hurlbut and Brisco atlases. Their rights are unresolved, not cleared. | The bibliography asks anyone publishing work built on Theographic to credit those sources and respect their licences. We must decide which characters fields derive from which source. | Conflict to resolve: the same owner's STEPBible-Data fork is described as CC BY-NC 4.0, while the bibliography says STEPBible TIPNR is CC BY 4.0. Check the STEPBible page for the TIPNR licence. | Easton's text agrees with the CCEL edition and a second copy made from it. No scan of the 1897 print has been compared; the honest label is 'agrees with the CCEL digital edition'. | Still open in characters.json (listed under heldNotChanged in library/patches/easton-bios.json): 33 bios cut at 1,200 characters, 30 bios whose text is not in the Easton entry of their own name (for example Adoniram, Daniel, Naomi), 171 names with no exact Easton term.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -760,7 +765,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "established" (origin and edition of our copy known (Gate 2 PASS)); witnesses: CCEL file header (easton_ebd2.xml) (page-read)
   - [provenance register] 3 open question(s): Whether the neuu dataset's CC BY 4.0 reaches the raw CCEL file held in its repository (it is described as its own parsed data); credit to CCEL and the dataset is worth giving either way. | Whether the 2000-era Online Bible source text carries any restriction of its own; the CCEL header says Public Domain. | Six character bios in library/people/characters.json are not found inside any entry (listed in library/dictionary/Easton/_index.json); corrections not yet made.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: UNKNOWN**
@@ -786,7 +791,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -811,7 +816,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
   - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and edition named in the file's source line: NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
