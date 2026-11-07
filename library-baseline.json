@@ -3,7 +3,7 @@
  "gates": {
   "mhc": {
    "1": "PASS",
-   "2": "UNKNOWN",
+   "2": "PASS",
    "3": "PASS",
    "4": "PASS",
    "5": "FAIL",
