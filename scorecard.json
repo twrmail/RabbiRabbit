@@ -905,8 +905,8 @@
       "[recorded] file says: \"OpenBible.info CC-BY\"",
       "[measured] recorded: year NO, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)",
       "Edition identity not independently established.",
-      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): Authoritative licence page could not be read on 2026-11-03 (redirect loop).",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: OpenBible.info Bible Cross References page (page-read)",
+      "[provenance register] 2 open question(s): Licence version (the pages read do not state one; Tom reports 4.0). | Confirm the Worker shows the OpenBible credit.",
       "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
@@ -936,7 +936,7 @@
       "[recorded] licence: CC BY (OpenBible.info)",
       "Worker file not given, so the attribution could not be checked.",
       "",
-      "[provenance register] rights claim \"CC BY (OpenBible.info)\" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03",
+      "[provenance register] rights claim \"CC BY (OpenBible.info)\" from openbible.info cross-references page, page read 2026-11-07 (earlier: repo manifest), scope: our copy; applies to our copy: not-established; checked 2026-11-07",
       "[provenance register] obligations: CC BY credit to OpenBible.info (to confirm).",
       "[provenance register] Gate 6 criteria (licensed): licence, source and conditions recorded: yes; attribution shown by the Worker: not checked; share-alike decision written down (shareAlikeDecision): not applicable"
      ]
@@ -1751,9 +1751,9 @@
      [
       "[recorded] manifest records originalLocation data/dict/strongs_hebrew.json and sha256_16 593bd8e7027574db",
       "No edition, year or upstream origin recorded.",
-      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
-      "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO"
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 2 open question(s): Which module version we extracted (not recorded in our files). | Whether Jens Grebner's digital contribution has any licence beyond the module's public-domain declaration.",
+      "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
     "3": [
@@ -1776,11 +1776,12 @@
      ]
     ],
     "6": [
-     "UNKNOWN",
+     "PASS",
      [
       "[recorded] no licence recorded in the manifest",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"public domain\" from CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-hebrew (page read 2026-11-04), scope: the work (1890) and the CrossWire module as packaged; not established that our extracted copy is that module version; applies to our copy: not-established; checked 2026-11-04",
+      "[provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, \"none found\" counts once checked): yes"
      ]
     ],
     "7": [
@@ -1819,9 +1820,9 @@
      [
       "[recorded] manifest records originalLocation data/dict/strongs_greek.json and sha256_16 dc11d57373975dbb",
       "No edition, year or upstream origin recorded.",
-      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
-      "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO"
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded",
+      "[provenance register] 2 open question(s): Which module version we extracted (not recorded in our files). | Whether Ulrik Sandborg-Petersen's digital contribution has any licence beyond the module's public-domain declaration.",
+      "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
     "3": [
@@ -1844,11 +1845,12 @@
      ]
     ],
     "6": [
-     "UNKNOWN",
+     "PASS",
      [
       "[recorded] no licence recorded in the manifest",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"public domain\" from CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-greek (page read 2026-11-04), scope: the work (1890) and the CrossWire module as packaged; not established that our extracted copy is that module version; applies to our copy: not-established; checked 2026-11-04",
+      "[provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, \"none found\" counts once checked): yes"
      ]
     ],
     "7": [
@@ -1888,7 +1890,7 @@
       "[recorded] manifest records originalLocation data/dict/strongs_concordance.json and sha256_16 356d59493a902f50",
       "No edition, year or upstream origin recorded.",
       "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
+      "[provenance register] 2 open question(s): Read the licence statement of CrossWire's Strong's-tagged KJV OSIS file (the KJV text itself: see the kjv entry; the Strong's numbers: see strongs-hebrew and strongs-greek). | Which OSIS file and version the build used.",
       "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
@@ -1916,7 +1918,7 @@
      [
       "[recorded] no licence recorded in the manifest",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"none recorded\" from project history: built by us from CrossWire's Strong's-tagged KJV OSIS file; that file's own licence statement has not been read, scope: our own build; rights in the underlying OSIS file not established; applies to our copy: not-established; checked 2026-11-03"
      ]
     ],
     "7": [
@@ -1955,8 +1957,8 @@
      [
       "[recorded] manifest records originalLocation data/dict/naves/naves_topics.json and sha256_16 8bbfa43e4fca40c3",
       "No edition, year or upstream origin recorded.",
-      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
+      "[provenance register] evidence level \"work-identified\" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: CCEL work page for Nave's Topical Bible (page-read)",
+      "[provenance register] 3 open question(s): Which module version we extracted (not recorded in our files). | Where the expansion from 72 to 5,319 topics came from, and whether it is the same work. | Whether the 'Bible Foundation 2000' electronic-text line restricts anything beyond the module's 'Public Domain -- Copy Freely.'",
       "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
@@ -1980,11 +1982,12 @@
      ]
     ],
     "6": [
-     "UNKNOWN",
+     "PASS",
      [
       "[recorded] no licence recorded in the manifest",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"public domain\" from CrossWire module declaration (Debian copyright file for sword-dict-naves, page read 2026-11-04) and the age of the work (1896; author died 1917), scope: the original work and the CrossWire module as packaged. NOT the expansion from 72 to 5,319 topics, whose source has not been recovered; applies to our copy: partial; checked 2026-11-07",
+      "[provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, \"none found\" counts once checked): yes"
      ]
     ],
     "7": [
@@ -2023,8 +2026,8 @@
      [
       "[recorded] manifest records originalLocation data/dict/openbible_topic_scores.json and sha256_16 25d658a6ff923ce3",
       "No edition, year or upstream origin recorded.",
-      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: OpenBible.info Topical Bible page (page-read)",
+      "[provenance register] 3 open question(s): Download date and file used (not recorded). | Licence version (4.0 reported by Tom, not read on the pages above). | Check that the Worker shows the OpenBible credit.",
       "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
@@ -2052,7 +2055,9 @@
      [
       "[recorded] no licence recorded in the manifest",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"CC BY (OpenBible.info)\" from openbible.info topical Bible page, page read 2026-11-07, scope: OpenBible.info content; licence version not stated on the pages read (Tom reports 4.0; not read); applies to our copy: not-established; checked 2026-11-07",
+      "[provenance register] obligations: Credit OpenBible.info wherever the data is used (the site's geocoding page says it may be used for any purpose as long as OpenBible.info is credited). | Attribution wording in the Worker not yet checked.",
+      "[provenance register] Gate 6 criteria (licensed): licence, source and conditions recorded: yes; attribution shown by the Worker: not checked; share-alike decision written down (shareAlikeDecision): not applicable"
      ]
     ],
     "7": [
@@ -2233,8 +2238,8 @@
      [
       "[recorded] manifest records originalLocation data/dict/xref_seed_pool.json and sha256_16 11703343bc8463e2",
       "No edition, year or upstream origin recorded.",
-      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
+      "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: OpenBible.info Bible Cross References page (page-read)",
+      "[provenance register] 1 open question(s): Which OpenBible download the script used (not recorded).",
       "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
@@ -2262,7 +2267,9 @@
      [
       "[recorded] no licence recorded in the manifest",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"CC BY (derived from OpenBible.info cross references)\" from openbible.info cross-references page, page read 2026-11-07; seed built by our own script build-xref-seed-pool.cjs, scope: our derived seed pool; applies to our copy: not-established; checked 2026-11-07",
+      "[provenance register] obligations: Credit OpenBible.info (the seed pool is derived from its cross references).",
+      "[provenance register] Gate 6 criteria (licensed): licence, source and conditions recorded: yes; attribution shown by the Worker: not checked; share-alike decision written down (shareAlikeDecision): not applicable"
      ]
     ],
     "7": [
@@ -2302,7 +2309,7 @@
       "[recorded] manifest records originalLocation data/dict/book_overview_map.json and sha256_16 (none)",
       "No edition, year or upstream origin recorded.",
       "[provenance register] evidence level \"unidentified\" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded",
-      "[provenance register] 1 open question(s): No source or licence recorded.",
+      "[provenance register] 1 open question(s): Tom to confirm this is entirely his and Claude's own work, with no third-party list copied in.",
       "[provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO"
      ]
     ],
@@ -2330,7 +2337,7 @@
      [
       "[recorded] keys changed to the standard book codes",
       "",
-      "[provenance register] rights claim \"none recorded\" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03"
+      "[provenance register] rights claim \"own work (RabbiRabbit project); no third-party licence applies\" from project history (MILESTONES v13, 2026-07-05); Tom to confirm, scope: our own hinge-chapter map for 66 books; applies to our copy: not-established; checked 2026-11-07"
      ]
     ],
     "7": [

@@ -552,20 +552,30 @@
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "OpenBible.info Bible Cross References page",
+          "url": "https://www.openbible.info/labs/cross-references/",
+          "editionClaim": "'Unless otherwise indicated, all content is licensed under a Creative Commons Attribution License.' (site footer). Licence version not stated on these pages. The page says the data draws primarily from public-domain sources, especially the Treasury of Scripture Knowledge.",
+          "status": "page-read",
+          "dateChecked": "2026-11-07",
+          "note": "Licence and lineage statement. Says nothing about our file."
+        }
+      ],
       "rights": {
         "claim": "CC BY (OpenBible.info)",
-        "claimSource": "repo manifest",
+        "claimSource": "openbible.info cross-references page, page read 2026-11-07 (earlier: repo manifest)",
         "scope": "our copy",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-07"
       },
       "evidenceLevel": "work-identified",
       "obligations": [
         "CC BY credit to OpenBible.info (to confirm)."
       ],
       "openQuestions": [
-        "Authoritative licence page could not be read on 2026-11-03 (redirect loop)."
+        "Licence version (the pages read do not state one; Tom reports 4.0).",
+        "Confirm the Worker shows the OpenBible credit."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -1033,7 +1043,9 @@
     {
       "sourceId": "strongs-hebrew",
       "work": {
-        "title": "Strong's Hebrew"
+        "title": "Strong's Exhaustive Concordance (dictionary of Strong's numbers, Hebrew)",
+        "author": "James Strong",
+        "firstPublished": "1890 (as stated by the CrossWire module, per the Debian copyright file, page read 2026-11-04)"
       },
       "repositoryCopy": {
         "edition": "unknown",
@@ -1042,16 +1054,18 @@
       },
       "witnesses": [],
       "rights": {
-        "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
+        "claim": "public domain",
+        "claimSource": "CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-hebrew (page read 2026-11-04)",
+        "scope": "the work (1890) and the CrossWire module as packaged; not established that our extracted copy is that module version",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-04",
+        "digitalEditionLicence": "The module declares public-domain and names James Strong and Jens Grebner as holders. No separate licence text for Jens Grebner's digital contribution was read."
       },
-      "evidenceLevel": "unidentified",
+      "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
-        "No source or licence recorded."
+        "Which module version we extracted (not recorded in our files).",
+        "Whether Jens Grebner's digital contribution has any licence beyond the module's public-domain declaration."
       ],
       "rightsDeclarations": [
         {
@@ -1087,7 +1101,9 @@
     {
       "sourceId": "strongs-greek",
       "work": {
-        "title": "Strong's Greek"
+        "title": "Strong's Exhaustive Concordance (dictionary of Strong's numbers, Greek)",
+        "author": "James Strong",
+        "firstPublished": "1890 (as stated by the CrossWire module, per the Debian copyright file, page read 2026-11-04)"
       },
       "repositoryCopy": {
         "edition": "unknown",
@@ -1096,16 +1112,18 @@
       },
       "witnesses": [],
       "rights": {
-        "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
+        "claim": "public domain",
+        "claimSource": "CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-greek (page read 2026-11-04)",
+        "scope": "the work (1890) and the CrossWire module as packaged; not established that our extracted copy is that module version",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-04",
+        "digitalEditionLicence": "The module declares public-domain and names James Strong and Ulrik Sandborg-Petersen as holders. No separate licence text for Ulrik Sandborg-Petersen's digital contribution was read."
       },
-      "evidenceLevel": "unidentified",
+      "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
-        "No source or licence recorded."
+        "Which module version we extracted (not recorded in our files).",
+        "Whether Ulrik Sandborg-Petersen's digital contribution has any licence beyond the module's public-domain declaration."
       ],
       "rightsDeclarations": [
         {
@@ -1146,15 +1164,16 @@
       "witnesses": [],
       "rights": {
         "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
+        "claimSource": "project history: built by us from CrossWire's Strong's-tagged KJV OSIS file; that file's own licence statement has not been read",
+        "scope": "our own build; rights in the underlying OSIS file not established",
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
-        "No source or licence recorded."
+        "Read the licence statement of CrossWire's Strong's-tagged KJV OSIS file (the KJV text itself: see the kjv entry; the Strong's numbers: see strongs-hebrew and strongs-greek).",
+        "Which OSIS file and version the build used."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -1180,25 +1199,39 @@
     {
       "sourceId": "naves",
       "work": {
-        "title": "Nave's Topical Bible"
+        "title": "Nave's Topical Bible",
+        "author": "Orville J. Nave",
+        "firstPublished": "1896 (CCEL work page, page read 2026-11-07: Nave 1841-1917, concordance of over 20,000 topics created in 1896)"
       },
       "repositoryCopy": {
         "edition": "unknown",
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "CCEL work page for Nave's Topical Bible",
+          "url": "https://ccel.org/ccel/nave/bible/bible.",
+          "editionClaim": "by Orville J. Nave (1841-1917); topical Bible of over 20,000 topics created in 1896",
+          "status": "page-read",
+          "dateChecked": "2026-11-07",
+          "note": "Identifies the work, author and date. Says nothing about our copy."
+        }
+      ],
       "rights": {
-        "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
-        "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "claim": "public domain",
+        "claimSource": "CrossWire module declaration (Debian copyright file for sword-dict-naves, page read 2026-11-04) and the age of the work (1896; author died 1917)",
+        "scope": "the original work and the CrossWire module as packaged. NOT the expansion from 72 to 5,319 topics, whose source has not been recovered",
+        "repositoryCopyCoverage": "partial",
+        "dateChecked": "2026-11-07",
+        "digitalEditionLicence": "The module declares 'Public Domain -- Copy Freely.' and carries an electronic-text copyright line 'Bible Foundation 2000'; no edition is stated."
       },
-      "evidenceLevel": "unidentified",
+      "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
-        "No source or licence recorded."
+        "Which module version we extracted (not recorded in our files).",
+        "Where the expansion from 72 to 5,319 topics came from, and whether it is the same work.",
+        "Whether the 'Bible Foundation 2000' electronic-text line restricts anything beyond the module's 'Public Domain -- Copy Freely.'"
       ],
       "rightsDeclarations": [
         {
@@ -1242,18 +1275,32 @@
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "OpenBible.info Topical Bible page",
+          "url": "https://www.openbible.info/topics/",
+          "editionClaim": "'Unless otherwise indicated, all content is licensed under a Creative Commons Attribution License.' (site footer). Licence version not stated on these pages. The page says the topical data and raw counts are available for download.",
+          "status": "page-read",
+          "dateChecked": "2026-11-07",
+          "note": "Licence statement only. Which download file we used, and when, is not recorded."
+        }
+      ],
       "rights": {
-        "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
+        "claim": "CC BY (OpenBible.info)",
+        "claimSource": "openbible.info topical Bible page, page read 2026-11-07",
+        "scope": "OpenBible.info content; licence version not stated on the pages read (Tom reports 4.0; not read)",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-07"
       },
       "evidenceLevel": "unidentified",
-      "obligations": [],
+      "obligations": [
+        "Credit OpenBible.info wherever the data is used (the site's geocoding page says it may be used for any purpose as long as OpenBible.info is credited).",
+        "Attribution wording in the Worker not yet checked."
+      ],
       "openQuestions": [
-        "No source or licence recorded."
+        "Download date and file used (not recorded).",
+        "Licence version (4.0 reported by Tom, not read on the pages above).",
+        "Check that the Worker shows the OpenBible credit."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -1287,18 +1334,29 @@
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "OpenBible.info Bible Cross References page",
+          "url": "https://www.openbible.info/labs/cross-references/",
+          "editionClaim": "'Unless otherwise indicated, all content is licensed under a Creative Commons Attribution License.' (site footer). Licence version not stated on these pages. The page says the data draws primarily from public-domain sources, especially the Treasury of Scripture Knowledge, plus seed data from the site's own Topical Bible and Twitter Bible Search.",
+          "status": "page-read",
+          "dateChecked": "2026-11-07",
+          "note": "Licence and lineage statement for the source data. Says nothing about our derived file."
+        }
+      ],
       "rights": {
-        "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
+        "claim": "CC BY (derived from OpenBible.info cross references)",
+        "claimSource": "openbible.info cross-references page, page read 2026-11-07; seed built by our own script build-xref-seed-pool.cjs",
+        "scope": "our derived seed pool",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-07"
       },
       "evidenceLevel": "unidentified",
-      "obligations": [],
+      "obligations": [
+        "Credit OpenBible.info (the seed pool is derived from its cross references)."
+      ],
       "openQuestions": [
-        "No source or licence recorded."
+        "Which OpenBible download the script used (not recorded)."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -1326,16 +1384,16 @@
       },
       "witnesses": [],
       "rights": {
-        "claim": "none recorded",
-        "claimSource": "repo manifest",
-        "scope": "none",
+        "claim": "own work (RabbiRabbit project); no third-party licence applies",
+        "claimSource": "project history (MILESTONES v13, 2026-07-05); Tom to confirm",
+        "scope": "our own hinge-chapter map for 66 books",
         "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03"
+        "dateChecked": "2026-11-07"
       },
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
-        "No source or licence recorded."
+        "Tom to confirm this is entirely his and Claude's own work, with no third-party list copied in."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
