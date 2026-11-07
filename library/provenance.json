@@ -10,7 +10,19 @@
       "not-established",
       "partial",
       "established"
-    ]
+    ],
+    "tier": [
+      "A",
+      "B",
+      "C",
+      "U"
+    ],
+    "tierMeaning": {
+      "A": "Clear historical public domain: old work, rights statement read or stated in the file, no specific uncertainty recorded",
+      "B": "Public domain (or own work) claimed, with a named uncertainty or only our own manifest as backing",
+      "C": "Licensed or mixed: needs credit, share-alike or other obligations",
+      "U": "Unrated: no rights claim recorded"
+    }
   },
   "note": "Evidence register for gates 2 (Provenance) and 6 (Licence). Descriptive only: nothing here changes a gate result. A rights statement about a witness is not a rights finding about our copy. Reconciled 2026-11-04: each source may now carry three separate histories. literaryHistory (who wrote the work, which edition, whose work it derives from), acquisition (where RabbiRabbit got its files and how they were changed; recovered from past chats, git history and code comments, NOT from a source document), and rights (the licence statement, with rightsDeclarations for statements read on a page). None of the new fields changes an evidence level or a gate result.",
   "dateCompiled": "2026-11-05",
@@ -55,6 +67,8 @@
         "dateChecked": "2026-11-03",
         "digitalEditionLicence": "CC0 1.0 Universal on the repository (LICENSE read 2026-11-04); its README says the text is reformatted into Markdown with no content changes. The underlying work is public domain by age."
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (Henry, d. 1714); CCEL header states it",
       "evidenceLevel": "witnessed",
       "obligations": [],
       "openQuestions": [
@@ -148,6 +162,8 @@
         "statementText": "Public Domain",
         "dateChecked": "2026-11-03"
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (1871); CCEL header states it",
       "evidenceLevel": "witnessed",
       "obligations": [],
       "openQuestions": [
@@ -200,6 +216,8 @@
         "statementText": "Public Domain",
         "dateChecked": "2026-11-03"
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (Calvin Translation Society, 1840s-50s); CCEL header states it",
       "evidenceLevel": "witnessed",
       "obligations": [],
       "openQuestions": [
@@ -260,6 +278,8 @@
         "statementText": "Public Domain",
         "dateChecked": "2026-11-03"
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (Wesley, d. 1791); CCEL header states it",
       "evidenceLevel": "witnessed",
       "obligations": [],
       "openQuestions": [
@@ -344,6 +364,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "B",
+      "tierReason": "Public domain claimed on our manifest only; 1917 text vs copyrighted 1967 New Scofield not yet checked",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -412,6 +434,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "A",
+      "tierReason": "Text public domain by age; conversion CC0 stated in file header",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -463,6 +487,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "B",
+      "tierReason": "Public domain by age expected, but the claim rests on our manifest only and no edition is recorded",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -516,6 +542,8 @@
         "statementText": "(c) 2022 by Tyndale House Publishers -- CC BY-SA 4.0",
         "dateChecked": "2026-11-03"
       },
+      "tier": "C",
+      "tierReason": "CC BY-SA 4.0 (share-alike; attribution required)",
       "evidenceLevel": "work-identified",
       "obligations": [
         "Attribute to Tyndale House Publishers (2022), CC BY-SA 4.0, with a licence link, and indicate that changes were made.",
@@ -569,6 +597,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-07"
       },
+      "tier": "C",
+      "tierReason": "CC BY (OpenBible.info); credit required",
       "evidenceLevel": "work-identified",
       "obligations": [
         "CC BY credit to OpenBible.info (to confirm)."
@@ -612,6 +642,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "U",
+      "tierReason": "No rights recorded",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
@@ -651,6 +683,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "U",
+      "tierReason": "No rights recorded",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
@@ -690,6 +724,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "U",
+      "tierReason": "No rights recorded",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
@@ -729,6 +765,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "U",
+      "tierReason": "No rights recorded",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
@@ -793,6 +831,8 @@
         "statementText": "officially dedicated to the public domain as of April 30, 2023",
         "dateChecked": "2026-11-03"
       },
+      "tier": "A",
+      "tierReason": "Dedicated to the public domain 2023-04-30; owner page read. Open question whether the dedication covers our exact text",
       "evidenceLevel": "work-identified",
       "obligations": [
         "Credit to Bible Hub, Discovery Bible, OpenBible.com and the Berean Bible Translation Committee is appreciated, not required.",
@@ -872,6 +912,8 @@
         "dateChecked": "2026-11-03",
         "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists WEB as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
       },
+      "tier": "B",
+      "tierReason": "Public domain; \"World English Bible\" is an eBible.org trademark and our copy removes translator notes (eBible.org asked)",
       "evidenceLevel": "work-identified",
       "obligations": [
         "Trademark rule (eBible.org copyright page): \"World English Bible\" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. The page does not mention footnotes or translator notes, so whether our removal of inline translator notes is a change of the actual text is not settled (see open questions)."
@@ -944,6 +986,8 @@
         "dateChecked": "2026-11-03",
         "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists it as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
       },
+      "tier": "B",
+      "tierReason": "Public domain claimed; UK Crown patent caveat applies in the UK; claim rests on a repository README",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -1002,6 +1046,8 @@
         "dateChecked": "2026-11-03",
         "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists it as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
       },
+      "tier": "B",
+      "tierReason": "Public domain by age (1901); claim rests on a repository README, no dedication read",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -1061,6 +1107,8 @@
         "dateChecked": "2026-11-04",
         "digitalEditionLicence": "The module declares public-domain and names James Strong and Jens Grebner as holders. No separate licence text for Jens Grebner's digital contribution was read."
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (1890); CrossWire declaration read",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -1119,6 +1167,8 @@
         "dateChecked": "2026-11-04",
         "digitalEditionLicence": "The module declares public-domain and names James Strong and Ulrik Sandborg-Petersen as holders. No separate licence text for Ulrik Sandborg-Petersen's digital contribution was read."
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (1890); CrossWire declaration read",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -1169,6 +1219,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03"
       },
+      "tier": "U",
+      "tierReason": "No rights recorded; built by us from a CrossWire Strong's-tagged KJV OSIS file whose licence is not yet confirmed",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
@@ -1226,6 +1278,8 @@
         "dateChecked": "2026-11-07",
         "digitalEditionLicence": "The module declares 'Public Domain -- Copy Freely.' and carries an electronic-text copyright line 'Bible Foundation 2000'; no edition is stated."
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (1896); CrossWire declaration and CCEL page read",
       "evidenceLevel": "work-identified",
       "obligations": [],
       "openQuestions": [
@@ -1292,6 +1346,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-07"
       },
+      "tier": "C",
+      "tierReason": "CC BY (OpenBible.info); credit required",
       "evidenceLevel": "unidentified",
       "obligations": [
         "Credit OpenBible.info wherever the data is used (the site's geocoding page says it may be used for any purpose as long as OpenBible.info is credited).",
@@ -1351,6 +1407,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-07"
       },
+      "tier": "C",
+      "tierReason": "CC BY (derived from OpenBible.info); credit required",
       "evidenceLevel": "unidentified",
       "obligations": [
         "Credit OpenBible.info (the seed pool is derived from its cross references)."
@@ -1390,6 +1448,8 @@
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-07"
       },
+      "tier": "B",
+      "tierReason": "Own work (RabbiRabbit); Tom still to confirm nothing third-party is in it",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
@@ -1436,6 +1496,8 @@
         "statementText": "free to use and copy under a Creative Commons Attribution-ShareAlike 4.0 International License. Please also credit the original sources, several of which have their own licenses.",
         "dateChecked": "2026-11-03"
       },
+      "tier": "C",
+      "tierReason": "CC BY-SA 4.0 (derived from Theographic); underlying sources carry their own licences",
       "evidenceLevel": "work-identified",
       "obligations": [
         "CC BY-SA 4.0 attribution and share-alike.",
@@ -1544,6 +1606,8 @@
         "dateChecked": "2026-11-05",
         "digitalEditionLicence": "The CCEL e-text states Public Domain in its own header. The repository we obtained the file from (neuu-org/bible-dictionary-dataset) licenses its own parsed data CC BY 4.0 and says the underlying texts are public domain (README and LICENSE read 2026-11-05); that licence is not applied to our copy, which is built from the raw CCEL file."
       },
+      "tier": "A",
+      "tierReason": "Public domain by age (1897); CCEL header states it",
       "evidenceLevel": "established",
       "obligations": [],
       "openQuestions": [
@@ -1598,5 +1662,6 @@
     "none-found": "Searched past chats and the repo; no acquisition record surfaced.",
     "measured": "Our files were compared with the named source's own text (share of 6-word runs in common, spelling and punctuation ignored). Shows the text matches; does not by itself prove it was the download source or settle the licence."
   },
-  "dateNote": "Chat dates and git first-add dates sometimes disagree (for example Scofield: chat says extracted July 1, git first-add 2026-06-26/27; topic scores: chat says August, git 2026-07-24). Both are recorded; treat chat dates as approximate."
+  "dateNote": "Chat dates and git first-add dates sometimes disagree (for example Scofield: chat says extracted July 1, git first-add 2026-06-26/27; topic scores: chat says August, git 2026-07-24). Both are recorded; treat chat dates as approximate.",
+  "tierNote": "Tiers (Tom approved the idea 2026-11-07) classify rights confidence only. They are descriptive: nothing here changes a gate result. The assignments below are proposals for Tom to review."
 }
