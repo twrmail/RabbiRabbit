@@ -551,6 +551,8 @@ if (exists(provPath)) {
     const os = e.repositoryCopy && e.repositoryCopy.originStatus, cov = e.rights && e.rights.repositoryCopyCoverage
     const okOs = prov.allowedValues.originStatus, okCov = prov.allowedValues.repositoryCopyCoverage
     if (!okOs.includes(os)) problems.push(`${e.sourceId}: originStatus "${os}" is not one of ${okOs.join('/')}`)
+    if (!(prov.allowedValues.tier || []).includes(e.tier)) problems.push(`${e.sourceId}: tier "${e.tier}" is not one of ${(prov.allowedValues.tier || []).join('/')}`)
+    if (!e.tierReason) problems.push(`${e.sourceId}: a tier needs a tierReason`)
     if (!okCov.includes(cov)) problems.push(`${e.sourceId}: repositoryCopyCoverage "${cov}" is not one of ${okCov.join('/')}`)
     if ((e.evidenceLevel === 'established') !== (os === 'established')) problems.push(`${e.sourceId}: evidenceLevel "${e.evidenceLevel}" is inconsistent with originStatus "${os}" (both must say established, or neither)`)
     if (os === 'recorded-in-repo' && e.evidenceLevel === 'unidentified') problems.push(`${e.sourceId}: origin recorded in the repo but level is "unidentified"`)
