@@ -11,7 +11,7 @@ Nothing open. Done Nov 7: Worker v40 deployed; the Cloudflare log showed `Easton
 | Thread | State | Needs | Evidence |
 |---|---|---|---|
 | Worker switch from `data/` to `library/` for commentaries, Strong's, Nave's, topic scores, xref, overview map | Scripture text (v34), characters (v38) and BSB verse/passage lookups (v40, deployed Nov 7) read `library/` | Re-baseline `library-adapter.mjs` and `contract-test.mjs` (built on v28) to v40; switch one source at a time: Calvin, JFB, Henry, Wesley, then the rest | handoff-nov7 section 6 |
-| Seven served sources with no source or licence recorded | strongs-hebrew, strongs-greek, concordance, naves, topic-scores, xref-seed, overview-map | Enter the CrossWire page reads (Scofield, Nave's, both Strong's declare public domain), record the unknown module versions; state "our own work" for the seed pool and the overview map if Tom confirms | crosswire-module-licences-nov4 |
+| Seven served sources: licence entries (done in this change) | Recorded from page reads: Strong's Hebrew and Greek (public domain, 1890, CrossWire module declarations), Nave's (public domain, 1896, CCEL work page plus module declaration; the 72 to 5,319 topic expansion is NOT covered), OpenBible topic scores and xref seed (CC BY, OpenBible pages read Nov 7), overview map (own work, Tom to confirm), concordance (our own build; the licence of CrossWire's OSIS file still unread). Gate 6 now PASS for Strong's Hebrew, Strong's Greek and Nave's | Still open: module versions; Nave's expansion source; OpenBible licence version and whether the Worker shows the credit; concordance OSIS licence; Tom to confirm the overview map is all our own work | claude/crosswire-module-licences-nov4, this PR |
 | Easton name map | 171 character names have no exact Easton entry; 27 bios sit under a variant spelling | A mapping file (character -> Easton entry) with a checker; credit line for CCEL and the neuu dataset | easton-bios-fix-nov5 |
 | WEB notes layer (`library/bible-notes/WEB`, 354 notes on 329 verses) | Built (#45); nothing reads it; not in the register or manifest | Register entry and manifest line; Worker use later (keep Bible files translation-only) | web-and-mhc-checks-nov5 |
 | WEB name and notes | Tom's decision (Nov 7): keep the name and label the text "World English Bible (translator notes shown separately)"; email sent to eBible.org (`mpj@ebible.org`, address from CrossWire's WEB page, may be stale; web form is the fallback). eBible.org's page: public domain, "World English Bible" is their trademark, rename only if the actual text is changed; silent on notes | Wait for the reply; add the label in the next library PR; if they object, rename and keep the Bible. Still to do: is our copy the 2020 stable text? | web-and-mhc-checks-nov5 |
@@ -26,7 +26,7 @@ Nothing open. Done Nov 7: Worker v40 deployed; the Cloudflare log showed `Easton
 |---|---|---|---|
 | Spurgeon | Repo licence not re-read; edition of the Treasury not named | Page read | provenance-licence-triage |
 | Tyndale | Licence statement at source not read; Worker attribution not checked; Exodus 36 gap | Page read; check the Worker text | provenance-licence-triage |
-| OpenBible (xref, topic scores) | Licence page unreadable on Nov 3 (redirect loop); attribution wording not checked in the Worker | Page read; Worker text | provenance-licence-triage |
+| OpenBible (xref, topic scores, xref seed) | Licence read Nov 7 on openbible.info pages: all content CC BY unless indicated; cross references draw mainly on public-domain sources (Treasury of Scripture Knowledge). Licence version not stated there (Tom reports 4.0) | Check the attribution wording in the Worker; find the licence version | provenance-licence-triage |
 | STEPBible TIPNR | CC BY vs CC BY-NC conflict between the bibliography and the fork | Page read | provenance-licence-triage |
 | Scofield | 1917 vs 1967 edition unverified; completeness unverified (481 chapters under 300 characters) | Compare the text | provenance-remaining-questions-nov4 |
 | Theographic | 25 of 26 listed sources carry no licence statement | Page reads; decide which fields derive from which source | characters-origin-nov5 |
@@ -44,7 +44,7 @@ Nothing open. Done Nov 7: Worker v40 deployed; the Cloudflare log showed `Easton
 4. Share-alike: ask Tyndale House; NOTICE file meanwhile (P1).
 5. Identity cards: postponed. Revisit as a seal on a release when library content has settled.
 6. WEB: keep the name with the label; email sent (P1).
-7. Wesley and Henry count as two voices (the Worker counts sources by name). Whether Wesley's Old Testament notes derive from Poole or Henry is unverified; labels unchanged.
+7. Wesley and Henry: Tom chose to count them as two voices (Nov 7), but our own evidence says Wesley's OT preface states the Old Testament notes are an abridgement of Henry (page read of the CCEL PDF, `claude/wesley-two-works-evidence-nov4.md`), and the NT notes draw on Bengel, Doddridge, Guyse and Heylin. On an OT passage they are not independent. Tom to re-decide with this evidence; labels unchanged until then.
 8. Commentary switch: start soon (re-baseline the test kit to v40, then Calvin, JFB, Henry, Wesley, one Worker version each).
 9. Branch protection and deletion: done.
 Idea (Tom, Nov 7, back burner): a comprehensive modernised public-domain commentary, built from the real commentaries with every claim traced to a quoted passage and reviewed by three models (Claude, ChatGPT and Tom). AI-written text must stay labelled apart from the sourced texts.
@@ -62,7 +62,7 @@ Idea (Tom, Nov 7, back burner): a comprehensive modernised public-domain comment
 | Older `validate-library.mjs` | Reports 142 failures on main by design (library/ repaired vs data/) | Retire or update | library-validation-memo |
 
 ## Done recently (for orientation; details in the handoff)
-Worker v40 (BSB lookups from the library) deployed; branches cleaned up; protection on. BSB: relabelled, repaired from the publisher's file (5,339 verses), source line, Gate 2 PASS (#53-#56). Easton: full dictionary and all 1,292 character bios inside an Easton entry (#36, #46, #48, #50, #51). WEB notes layer (#45). Gate 2 PASS: KJV, ASV, Easton, BSB, Henry (MHC). Gate 6 PASS: KJV, ASV, MHC, Spurgeon, Easton.
+Worker v40 (BSB lookups from the library) deployed; branches cleaned up; protection on. BSB: relabelled, repaired from the publisher's file (5,339 verses), source line, Gate 2 PASS (#53-#56). Easton: full dictionary and all 1,292 character bios inside an Easton entry (#36, #46, #48, #50, #51). WEB notes layer (#45). Gate 2 PASS: KJV, ASV, Easton, BSB, Henry (MHC). Gate 6 PASS: KJV, ASV, MHC, Spurgeon, Easton, Strong's Hebrew, Strong's Greek, Nave's.
 
 ## Housekeeping
 - Stray backslashes in `claude/data-origins-from-chats-nov4.md`.

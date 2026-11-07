@@ -25,23 +25,23 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 | World English Bible (web) | PASS | UNKNOWN | PASS | PASS | PASS | UNKNOWN | UNKNOWN |
 | King James Version (kjv) | PASS | PASS | PASS | PASS | PASS | PASS | UNKNOWN |
 | American Standard Version (asv) | PASS | PASS | PASS | PASS | PASS | PASS | UNKNOWN |
-| strongs-hebrew (strongs-hebrew) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
-| strongs-greek (strongs-greek) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
+| strongs-hebrew (strongs-hebrew) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | PASS | UNKNOWN |
+| strongs-greek (strongs-greek) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | PASS | UNKNOWN |
 | concordance (concordance) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
-| naves (naves) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
+| naves (naves) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | PASS | UNKNOWN |
 | topic-scores (topic-scores) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 | characters (characters) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 | Easton's Bible Dictionary (easton) | UNKNOWN | PASS | UNKNOWN | UNKNOWN | N/A | PASS | UNKNOWN |
 | xref-seed (xref-seed) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 | overview-map (overview-map) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 
-Gate results over 26 sources: 54 PASS, 15 FAIL, 87 UNKNOWN, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
+Gate results over 26 sources: 57 PASS, 15 FAIL, 84 UNKNOWN, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
 
 Moved text: 14 of 14 moved block(s) found at their destination chapter; for each, the text cut equals the text added (same length and sha256).
 
 Held material: 42 item(s), 53,684 words in 2 file(s) in library/held; 0 still present in the library text (not yet cut). 26 applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.
 
-Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unidentified, 1 established. These describe evidence; they do not change any gate result.
+Provenance register evidence levels: 4 witnessed, 13 work-identified, 8 unidentified, 1 established. These describe evidence; they do not change any gate result.
 
 ## Detail and next action per source
 
@@ -352,8 +352,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - [recorded] file says: "OpenBible.info CC-BY"
   - [measured] recorded: year NO, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)
   - Edition identity not independently established.
-  - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): Authoritative licence page could not be read on 2026-11-03 (redirect loop).
+  - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: OpenBible.info Bible Cross References page (page-read)
+  - [provenance register] 2 open question(s): Licence version (the pages read do not state one; Tom reports 4.0). | Confirm the Worker shows the OpenBible credit.
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: N/A**
   - Cross-reference table: no prose to damage; row validity is gate 5.
@@ -365,7 +365,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **6. Licence: UNKNOWN**
   - [recorded] licence: CC BY (OpenBible.info)
   - Worker file not given, so the attribution could not be checked.
-  - [provenance register] rights claim "CC BY (OpenBible.info)" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "CC BY (OpenBible.info)" from openbible.info cross-references page, page read 2026-11-07 (earlier: repo manifest), scope: our copy; applies to our copy: not-established; checked 2026-11-07
   - [provenance register] obligations: CC BY credit to OpenBible.info (to confirm).
   - [provenance register] Gate 6 criteria (licensed): licence, source and conditions recorded: yes; attribution shown by the Worker: not checked; share-alike decision written down (shareAlikeDecision): not applicable
 - **7. Regression: UNKNOWN**
@@ -607,9 +607,9 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **2. Provenance: UNKNOWN**
   - [recorded] manifest records originalLocation data/dict/strongs_hebrew.json and sha256_16 593bd8e7027574db
   - No edition, year or upstream origin recorded.
-  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
+  - [provenance register] 2 open question(s): Which module version we extracted (not recorded in our files). | Whether Jens Grebner's digital contribution has any licence beyond the module's public-domain declaration.
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -617,9 +617,10 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Byte-identical to the copy we hold in data/; not proof that data/ matches the published work.
 - **5. Verse coverage: N/A**
   - Not a verse-indexed commentary.
-- **6. Licence: UNKNOWN**
+- **6. Licence: PASS**
   - [recorded] no licence recorded in the manifest
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "public domain" from CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-hebrew (page read 2026-11-04), scope: the work (1890) and the CrossWire module as packaged; not established that our extracted copy is that module version; applies to our copy: not-established; checked 2026-11-04
+  - [provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, "none found" counts once checked): yes
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
@@ -632,9 +633,9 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **2. Provenance: UNKNOWN**
   - [recorded] manifest records originalLocation data/dict/strongs_greek.json and sha256_16 dc11d57373975dbb
   - No edition, year or upstream origin recorded.
-  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
-  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
+  - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: none recorded
+  - [provenance register] 2 open question(s): Which module version we extracted (not recorded in our files). | Whether Ulrik Sandborg-Petersen's digital contribution has any licence beyond the module's public-domain declaration.
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
@@ -642,9 +643,10 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Byte-identical to the copy we hold in data/; not proof that data/ matches the published work.
 - **5. Verse coverage: N/A**
   - Not a verse-indexed commentary.
-- **6. Licence: UNKNOWN**
+- **6. Licence: PASS**
   - [recorded] no licence recorded in the manifest
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "public domain" from CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-greek (page read 2026-11-04), scope: the work (1890) and the CrossWire module as packaged; not established that our extracted copy is that module version; applies to our copy: not-established; checked 2026-11-04
+  - [provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, "none found" counts once checked): yes
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
@@ -658,7 +660,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - [recorded] manifest records originalLocation data/dict/strongs_concordance.json and sha256_16 356d59493a902f50
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
+  - [provenance register] 2 open question(s): Read the licence statement of CrossWire's Strong's-tagged KJV OSIS file (the KJV text itself: see the kjv entry; the Strong's numbers: see strongs-hebrew and strongs-greek). | Which OSIS file and version the build used.
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
@@ -669,7 +671,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Not a verse-indexed commentary.
 - **6. Licence: UNKNOWN**
   - [recorded] no licence recorded in the manifest
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "none recorded" from project history: built by us from CrossWire's Strong's-tagged KJV OSIS file; that file's own licence statement has not been read, scope: our own build; rights in the underlying OSIS file not established; applies to our copy: not-established; checked 2026-11-03
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
@@ -682,8 +684,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **2. Provenance: UNKNOWN**
   - [recorded] manifest records originalLocation data/dict/naves/naves_topics.json and sha256_16 8bbfa43e4fca40c3
   - No edition, year or upstream origin recorded.
-  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
+  - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: CCEL work page for Nave's Topical Bible (page-read)
+  - [provenance register] 3 open question(s): Which module version we extracted (not recorded in our files). | Where the expansion from 72 to 5,319 topics came from, and whether it is the same work. | Whether the 'Bible Foundation 2000' electronic-text line restricts anything beyond the module's 'Public Domain -- Copy Freely.'
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
@@ -692,9 +694,10 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Byte-identical to the copy we hold in data/; not proof that data/ matches the published work.
 - **5. Verse coverage: N/A**
   - Not a verse-indexed commentary.
-- **6. Licence: UNKNOWN**
+- **6. Licence: PASS**
   - [recorded] no licence recorded in the manifest
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "public domain" from CrossWire module declaration (Debian copyright file for sword-dict-naves, page read 2026-11-04) and the age of the work (1896; author died 1917), scope: the original work and the CrossWire module as packaged. NOT the expansion from 72 to 5,319 topics, whose source has not been recovered; applies to our copy: partial; checked 2026-11-07
+  - [provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, "none found" counts once checked): yes
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
@@ -707,8 +710,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **2. Provenance: UNKNOWN**
   - [recorded] manifest records originalLocation data/dict/openbible_topic_scores.json and sha256_16 25d658a6ff923ce3
   - No edition, year or upstream origin recorded.
-  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
+  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: OpenBible.info Topical Bible page (page-read)
+  - [provenance register] 3 open question(s): Download date and file used (not recorded). | Licence version (4.0 reported by Tom, not read on the pages above). | Check that the Worker shows the OpenBible credit.
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
@@ -719,7 +722,9 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Not a verse-indexed commentary.
 - **6. Licence: UNKNOWN**
   - [recorded] no licence recorded in the manifest
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "CC BY (OpenBible.info)" from openbible.info topical Bible page, page read 2026-11-07, scope: OpenBible.info content; licence version not stated on the pages read (Tom reports 4.0; not read); applies to our copy: not-established; checked 2026-11-07
+  - [provenance register] obligations: Credit OpenBible.info wherever the data is used (the site's geocoding page says it may be used for any purpose as long as OpenBible.info is credited). | Attribution wording in the Worker not yet checked.
+  - [provenance register] Gate 6 criteria (licensed): licence, source and conditions recorded: yes; attribution shown by the Worker: not checked; share-alike decision written down (shareAlikeDecision): not applicable
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
@@ -789,8 +794,8 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
 - **2. Provenance: UNKNOWN**
   - [recorded] manifest records originalLocation data/dict/xref_seed_pool.json and sha256_16 11703343bc8463e2
   - No edition, year or upstream origin recorded.
-  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
+  - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: OpenBible.info Bible Cross References page (page-read)
+  - [provenance register] 1 open question(s): Which OpenBible download the script used (not recorded).
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: NO; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
@@ -801,7 +806,9 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Not a verse-indexed commentary.
 - **6. Licence: UNKNOWN**
   - [recorded] no licence recorded in the manifest
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "CC BY (derived from OpenBible.info cross references)" from openbible.info cross-references page, page read 2026-11-07; seed built by our own script build-xref-seed-pool.cjs, scope: our derived seed pool; applies to our copy: not-established; checked 2026-11-07
+  - [provenance register] obligations: Credit OpenBible.info (the seed pool is derived from its cross references).
+  - [provenance register] Gate 6 criteria (licensed): licence, source and conditions recorded: yes; attribution shown by the Worker: not checked; share-alike decision written down (shareAlikeDecision): not applicable
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
@@ -815,7 +822,7 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - [recorded] manifest records originalLocation data/dict/book_overview_map.json and sha256_16 (none)
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): No source or licence recorded.
+  - [provenance register] 1 open question(s): Tom to confirm this is entirely his and Claude's own work, with no third-party list copied in.
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
@@ -826,6 +833,6 @@ Provenance register evidence levels: 4 witnessed, 10 work-identified, 11 unident
   - Not a verse-indexed commentary.
 - **6. Licence: UNKNOWN**
   - [recorded] keys changed to the standard book codes
-  - [provenance register] rights claim "none recorded" from repo manifest, scope: none; applies to our copy: not-established; checked 2026-11-03
+  - [provenance register] rights claim "own work (RabbiRabbit project); no third-party licence applies" from project history (MILESTONES v13, 2026-07-05); Tom to confirm, scope: our own hinge-chapter map for 66 books; applies to our copy: not-established; checked 2026-11-07
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)

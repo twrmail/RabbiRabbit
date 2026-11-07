@@ -160,7 +160,7 @@
    "3": "UNKNOWN",
    "4": "PASS",
    "5": "N/A",
-   "6": "UNKNOWN",
+   "6": "PASS",
    "7": "UNKNOWN"
   },
   "strongs-greek": {
@@ -169,7 +169,7 @@
    "3": "UNKNOWN",
    "4": "PASS",
    "5": "N/A",
-   "6": "UNKNOWN",
+   "6": "PASS",
    "7": "UNKNOWN"
   },
   "concordance": {
@@ -187,7 +187,7 @@
    "3": "UNKNOWN",
    "4": "PASS",
    "5": "N/A",
-   "6": "UNKNOWN",
+   "6": "PASS",
    "7": "UNKNOWN"
   },
   "topic-scores": {
