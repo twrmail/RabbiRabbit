@@ -2,25 +2,22 @@
 
 One list of everything unfinished, so nothing is lost between chats. Update it in the same pull request as the work. A thread is done only when all three agree: the library file exists, the register records its origin and licence, and the Worker either reads it or this list says "not read yet, on purpose".
 
-Last updated: 2026-11-07 (after PR #56). The full handoff, with recipes and the Worker plan, is `claude/handoff-nov7.md` in the Project. Evidence for each item lives in the Project docs named in the last column (folder `claude/`). Owner: T = Tom, C = Claude.
+Last updated: 2026-11-07 (after PR #57; Worker v40 deployed; Tom's nine decisions recorded). The full handoff, with recipes and the Worker plan, is `claude/handoff-nov7.md` in the Project. Evidence for each item lives in the Project docs named in the last column (folder `claude/`). Owner: T = Tom, C = Claude.
 
 ## P0: next hour
-| Thread | State | Needs | Owner |
-|---|---|---|---|
-| Worker v39 is live; did the Easton bio reach the prompt? | v39 logs `Easton bio supplied: <name>, <n> chars, cap ...`. The study footer lists a source only if the study names it, so a missing Easton in the footer proves nothing | One Apollos study, then read the Cloudflare log for that line | T |
-| Branch protection on `main` | GitHub banner: not protected | Settings > Rules > Rulesets: restrict deletions, block force pushes. Required status check only after confirming `library-check.yml` runs on every PR | T |
-| Merged branches | About 50 remote branches, nearly all merged | Delete them; KEEP `ccel-sources-nov2` and `wesley-source-oct30`; `identity-cards-1104-1625` waits for a decision (below) | T's go |
+Nothing open. Done Nov 7: Worker v40 deployed; the Cloudflare log showed `Easton bio supplied: Apollos, 870 chars, cap not needed` (the study footer did not name Easton because the study did not quote it; Tom does not mind, source use will be redesigned later); branch protection on `main` is on; merged branches deleted (55 down to 4: `main`, `ccel-sources-nov2`, `wesley-source-oct30`, `identity-cards-1104-1625`); auto-delete of merged head branches is on.
 
 ## P1: what users see, or what can mislead them
 | Thread | State | Needs | Evidence |
 |---|---|---|---|
-| Worker BSB lookups (`fetchBSBVerse`, `fetchBSBPassage`) | Still read `data/bsb/bsb.json`: the old text (about 5,300 cut-short or word-short verses) and book codes that fail for 37 books | Read `library/bible/BSB`; one small Worker version | contract-test-memo |
-| Worker switch from `data/` to `library/` for commentaries, Strong's, Nave's, topic scores, xref, overview map | Only scripture text (v34) and characters (v38) read `library/` | Re-baseline `library-adapter.mjs` and `contract-test.mjs` (built on v28) to v39; switch one source at a time: Calvin, JFB, Henry, Wesley, then the rest | handoff-nov7 section 6 |
+| Worker switch from `data/` to `library/` for commentaries, Strong's, Nave's, topic scores, xref, overview map | Scripture text (v34), characters (v38) and BSB verse/passage lookups (v40, deployed Nov 7) read `library/` | Re-baseline `library-adapter.mjs` and `contract-test.mjs` (built on v28) to v40; switch one source at a time: Calvin, JFB, Henry, Wesley, then the rest | handoff-nov7 section 6 |
 | Seven served sources with no source or licence recorded | strongs-hebrew, strongs-greek, concordance, naves, topic-scores, xref-seed, overview-map | Enter the CrossWire page reads (Scofield, Nave's, both Strong's declare public domain), record the unknown module versions; state "our own work" for the seed pool and the overview map if Tom confirms | crosswire-module-licences-nov4 |
 | Easton name map | 171 character names have no exact Easton entry; 27 bios sit under a variant spelling | A mapping file (character -> Easton entry) with a checker; credit line for CCEL and the neuu dataset | easton-bios-fix-nov5 |
 | WEB notes layer (`library/bible-notes/WEB`, 354 notes on 329 verses) | Built (#45); nothing reads it; not in the register or manifest | Register entry and manifest line; Worker use later (keep Bible files translation-only) | web-and-mhc-checks-nov5 |
-| WEB: is our copy the 2020 stable text edition? Does removing the inline notes change "the actual text"? | Page read: "2020 stable text edition"; "World English Bible" is an eBible.org trademark; the page is silent on notes | Compare with the dated eBible.org 2020 file; ask eBible.org, or relabel | web-bsb-pages |
-| Church Fathers | Fetched live from `HistoricalChristianFaith/Commentaries-Database` (master), an outside repo that is not in our register | Decide: copy into the library with licence and provenance, or register it as an external dependency | handoff-nov7 section 6.2 |
+| WEB name and notes | Tom's decision (Nov 7): keep the name and label the text "World English Bible (translator notes shown separately)"; email sent to eBible.org (`mpj@ebible.org`, address from CrossWire's WEB page, may be stale; web form is the fallback). eBible.org's page: public domain, "World English Bible" is their trademark, rename only if the actual text is changed; silent on notes | Wait for the reply; add the label in the next library PR; if they object, rename and keep the Bible. Still to do: is our copy the 2020 stable text? | web-and-mhc-checks-nov5 |
+| Gate 2 policy: printed edition | Tom chose option A (Nov 7): Gate 2 criterion 1 is met by a named digital edition (exact file, origin, commit or hash); the printed edition becomes a separate recorded field, shown openly, that does not fail the gate. Scan comparison (option B) stays an optional upgrade | One PR: `tools/GATE-DEFINITIONS.md`, `tools/source-scorecard.mjs`, baseline; show Tom which sources change status before merge | handoff-nov7 section 9 |
+| Share-alike (Tyndale, Theographic) | Email sent to Tyndale House Publishers (`permission@tyndale.com`, their permissions address; no address for the Open Study Notes found) asking whether converted files and quoted notes are adaptations. Plan meanwhile: a NOTICE file listing each folder's licence; Tyndale layer and `characters.json` labelled CC BY-SA 4.0; MIT for code and our own work. Tyndale House Cambridge (STEPBible) is a different organisation | Wait for the reply; then record `shareAlikeDecision` | provenance-licence-triage |
+| Church Fathers | Fetched live from `HistoricalChristianFaith/Commentaries-Database` (master), an outside repo not in our register. Tom's decision (Nov 7): bring it into our library so the project is independent | Read the repo's licence first; if it permits redistribution, copy with licence, recorded commit and register entry; if not, keep external and register that | handoff-nov7 section 6.2 |
 
 ## P2: provenance and licence lookups (short page reads, then register-only PRs)
 | Thread | State | Needs | Evidence |
@@ -38,14 +35,17 @@ Last updated: 2026-11-07 (after PR #56). The full handoff, with recipes and the 
 | Barnes NT register note "no source recorded" | Origin now known (CCEL `ntnotes.txt`) | Update the entry | provenance-remaining-questions-nov4 |
 | BSB release | The publisher's file (`data/bsb/bsb.txt`) has no version or date line, so no named release is claimed. Gate 6 not yet | Author/date for Gate 6; find a dated release to compare | web-bsb-pages |
 
-## P3: decisions only Tom can make
-1. Should the prompt ask the model to cite the Easton bio when it uses it (so the footer lists it)? The 3,000-character cap stays.
-2. Church Fathers: bring into the library or keep external (P1).
-3. Tyndale and Theographic share-alike (CC BY-SA 4.0) vs the repo's MIT root: how to state it (`shareAlikeDecision`).
-4. Identity cards: rebuild on current main and merge, drop, or postpone (branch `identity-cards-1104-1625`, built Nov 4 on an older library; if merged, every library change must regenerate the cards).
-5. WEB: email eBible.org, or relabel.
-6. Does the Worker count Wesley as a separate voice from Henry on Old Testament passages?
-7. When to start the commentary switch (P1).
+## P3: decisions (answered Nov 7; the work they trigger is in P1)
+1. Easton cap stays at 3,000 characters. No prompt change now; how sources are used in studies will be redesigned after the repo work.
+2. Church Fathers: bring into the library (P1).
+3. Gate 2: option A (P1).
+4. Share-alike: ask Tyndale House; NOTICE file meanwhile (P1).
+5. Identity cards: postponed. Revisit as a seal on a release when library content has settled.
+6. WEB: keep the name with the label; email sent (P1).
+7. Wesley and Henry count as two voices (the Worker counts sources by name). Whether Wesley's Old Testament notes derive from Poole or Henry is unverified; labels unchanged.
+8. Commentary switch: start soon (re-baseline the test kit to v40, then Calvin, JFB, Henry, Wesley, one Worker version each).
+9. Branch protection and deletion: done.
+Idea (Tom, Nov 7, back burner): a comprehensive modernised public-domain commentary, built from the real commentaries with every claim traced to a quoted passage and reviewed by three models (Claude, ChatGPT and Tom). AI-written text must stay labelled apart from the sourced texts.
 
 ## P4: long tail (library content)
 | Thread | State | Needs | Evidence |
@@ -60,10 +60,9 @@ Last updated: 2026-11-07 (after PR #56). The full handoff, with recipes and the 
 | Older `validate-library.mjs` | Reports 142 failures on main by design (library/ repaired vs data/) | Retire or update | library-validation-memo |
 
 ## Done recently (for orientation; details in the handoff)
-BSB: relabelled, repaired from the publisher's file (5,339 verses), source line, Gate 2 PASS (#53-#56). Easton: full dictionary and all 1,292 character bios inside an Easton entry (#36, #46, #48, #50, #51). WEB notes layer (#45). Gate 2 PASS: KJV, ASV, Easton, BSB. Gate 6 PASS: KJV, ASV, MHC, Spurgeon, Easton.
+Worker v40 (BSB lookups from the library) deployed; branches cleaned up; protection on. BSB: relabelled, repaired from the publisher's file (5,339 verses), source line, Gate 2 PASS (#53-#56). Easton: full dictionary and all 1,292 character bios inside an Easton entry (#36, #46, #48, #50, #51). WEB notes layer (#45). Gate 2 PASS: KJV, ASV, Easton, BSB. Gate 6 PASS: KJV, ASV, MHC, Spurgeon, Easton.
 
 ## Housekeeping
 - Stray backslashes in `claude/data-origins-from-chats-nov4.md`.
 - The Project's knowledge is about 74% full: ask Tom before deleting old Worker versions (v20-v37) or superseded status docs.
 - Hugging Face Easton is CCEL-derived, not an independent copy (noted; no action).
-- Worker v39 header comment still says "DRAFT -- NOT DEPLOYED": correct it in the next version.
