@@ -822,7 +822,7 @@ Provenance register evidence levels: 4 witnessed, 13 work-identified, 8 unidenti
   - [recorded] manifest records originalLocation data/dict/book_overview_map.json and sha256_16 (none)
   - No edition, year or upstream origin recorded.
   - [provenance register] evidence level "unidentified" (neither work nor edition adequately established (Gate 2 UNKNOWN)); witnesses: none recorded
-  - [provenance register] 1 open question(s): Tom to confirm this is entirely his and Claude's own work, with no third-party list copied in.
+  - [provenance register] 1 open question(s): Claude drafted the table from its own knowledge, so no third-party outline is cited and none can be ruled out by a source check. Tom to review the 66 entries over time; treat as editorial judgment, never as evidence.
   - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: NO; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): NO
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
@@ -833,6 +833,6 @@ Provenance register evidence levels: 4 witnessed, 13 work-identified, 8 unidenti
   - Not a verse-indexed commentary.
 - **6. Licence: UNKNOWN**
   - [recorded] keys changed to the standard book codes
-  - [provenance register] rights claim "own work (RabbiRabbit project); no third-party licence applies" from project history (MILESTONES v13, 2026-07-05); Tom to confirm, scope: our own hinge-chapter map for 66 books; applies to our copy: not-established; checked 2026-11-07
+  - [provenance register] rights claim "own work: Tom's design (a hinge-chapter overview for each book), content drafted by Claude (AI) in a chat with Tom; editorial, not a historical source; no third-party list is known to be copied" from chat 3rdRabbiRabbit (read 2026-11-07): Tom set the idea (large books flyover, small books feel complete); Claude proposed and drafted the 66-book table; Tom said yes. Earlier note: MILESTONES v13, July 2026, scope: our own hinge-chapter map for 66 books (not from Theographic); applies to our copy: not-established; checked 2026-11-07
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)

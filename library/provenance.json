@@ -1442,22 +1442,22 @@
       },
       "witnesses": [],
       "rights": {
-        "claim": "own work (RabbiRabbit project); no third-party licence applies",
-        "claimSource": "project history (MILESTONES v13, 2026-07-05); Tom to confirm",
-        "scope": "our own hinge-chapter map for 66 books",
+        "claim": "own work: Tom's design (a hinge-chapter overview for each book), content drafted by Claude (AI) in a chat with Tom; editorial, not a historical source; no third-party list is known to be copied",
+        "claimSource": "chat 3rdRabbiRabbit (read 2026-11-07): Tom set the idea (large books flyover, small books feel complete); Claude proposed and drafted the 66-book table; Tom said yes. Earlier note: MILESTONES v13, July 2026",
+        "scope": "our own hinge-chapter map for 66 books (not from Theographic)",
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-07"
       },
       "tier": "B",
-      "tierReason": "Own work (RabbiRabbit); Tom still to confirm nothing third-party is in it",
+      "tierReason": "Own editorial work, AI-drafted at Tom's direction; no outside source known; it only picks which chapters an overview walks through",
       "evidenceLevel": "unidentified",
       "obligations": [],
       "openQuestions": [
-        "Tom to confirm this is entirely his and Claude's own work, with no third-party list copied in."
+        "Claude drafted the table from its own knowledge, so no third-party outline is cited and none can be ruled out by a source check. Tom to review the 66 entries over time; treat as editorial judgment, never as evidence."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
-        "summary": "Our own work (v13, July 5): hinge-chapter map for 66 books.",
+        "summary": "Tom's concept; table drafted by Claude in chat 3rdRabbiRabbit (hinge-chapter map for 66 books); no outside list recorded.",
         "records": [
           {
             "kind": "git-history",
