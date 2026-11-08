@@ -434,7 +434,15 @@ function scoreText(src) {
   } else if (['spurgeon', 'barnes-nt', 'tyndale'].includes(src.id)) {
     const bad = keyIssues.nonInt + keyIssues.outOfRange.length
     g.gates[5] = [bad ? 'FAIL' : 'UNKNOWN', [E('m', `verse-keyed; ${keyIssues.versesWithEntry} of ${keyIssues.versesTotal} verses (in books present) have an entry; keys outside the chapter's real range: ${keyIssues.outOfRange.length} ${keyIssues.outOfRange.slice(0, 6).join(', ')}; non-numeric keys ${keyIssues.nonInt}`), E('m', `allowed variants: ${keyIssues.heading.length} keys numbered 0 (psalm superscriptions: ${keyIssues.heading.slice(0, 4).join(', ')}${keyIssues.heading.length > 4 ? ', ...' : ''}); ${keyIssues.versif.length} keys one past the KJV verse count (a different versification: ${keyIssues.versif.slice(0, 4).join(', ') || 'none'})`), bad ? '' : 'Keys are valid; whether the text under key N is about verse N is not independently validated.']]
-  } else g.gates[5] = ['FAIL', [E('m', 'chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time'), src.id === 'jfb' ? E('e', 'JFB notes shape with explicit coverage built and validated (pilot, Oct 26); it also found 12 verses the old reader served wrongly') : src.id === 'scofield' ? 'Scofield notes are anchored to words, not verses: verse coverage may never apply; label it as word-anchored.' : src.id === 'wesley' ? 'Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed.' : '']]
+  } else if (src.id === 'scofield') {
+    g.gates[5] = ['N/A', [E('m', `word-anchored notes (${chTotal} chapters hold notes tied to words or phrases, not to verse numbers): verse coverage does not apply to this kind`), 'Rule for this kind: no verse coverage claim is made; Gate 1 covers which chapters have notes.']]
+  } else {
+    // chapter-anchored commentary: the repo holds chapter text and the Worker finds the verses with code at request time. Rule for this kind: FAIL only when a source that claims the whole
+    // Bible has missing or empty chapters (that is a coverage hole at any resolution); otherwise UNKNOWN, never PASS, because no verse index in the repo says what each verse's note is.
+    const holes = missingCh.length + emptyCh.length
+    const bad = src.scope === 'full' && holes
+    g.gates[5] = [bad ? 'FAIL' : 'UNKNOWN', [E('m', `chapter-anchored: ${chTotal} chapters in ${present.length} books; missing chapters in present books ${missingCh.length}, empty chapters ${emptyCh.length} (same measure as Gate 1)`), 'No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here.' + (src.id === 'jfb' ? ' A JFB notes shape with explicit coverage was built and validated in a pilot (Oct 26); it also found 12 verses the old reader served wrongly.' : '') + (src.id === 'wesley' ? ' Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed. The source is incomplete (see Gate 1).' : '')]]
+  }
 
   // ---- Gate 6 licensing ----
   const needsAttr = /CC BY/i.test(license + srcStr)
