@@ -705,7 +705,10 @@
         "extend-entry-prefix": 76,
         "extend-sense": 24
       },
-      "reason": "164 characters had no bio although Easton's Bible Dictionary has an entry under exactly that name, and 100 bios were cut short (71 of the 104 bios cut at exactly 1,200 characters, mid-sentence, plus 29 other shortened openings). The text comes from the CCEL file easton_ebd2.xml (1897, public domain). The rule only adds or extends: an existing bio must be the exact start of the new text. The other 33 bios cut at 1,200 characters, and every character without an entry under exactly its name, are not touched; they are listed in the patch under heldNotChanged."
+      "reason": "164 characters had no bio although Easton's Bible Dictionary has an entry under exactly that name, and 100 bios were cut short (71 of the 104 bios cut at exactly 1,200 characters, mid-sentence, plus 29 other shortened openings). The text comes from the CCEL file easton_ebd2.xml (1897, public domain). The rule only adds or extends: an existing bio must be the exact start of the new text. The other 33 bios cut at 1,200 characters, and every character without an entry under exactly its name, are not touched; they are listed in the patch under heldNotChanged.",
+      "supersededBy": {
+        "jesus": "characters-easton-bios-fixes-3"
+      }
     },
     {
       "id": "mhc-source-origin",
@@ -1308,6 +1311,22 @@
         "replace-wrong-sense": 1
       },
       "reason": "With the full Easton dictionary in the library (library/dictionary/Easton), the check of character bios against it found 6 bios not inside any entry, and Daniel's bio was Easton's note on his Babylonian name only. Tom decided on 2026-11-05 to correct them: Eber (a Benjamite), Ishmael (son of Hagar), Jonadab, Judah (patriarch), Pharez and Shishak are Easton's own text with small damage (a stray apostrophe, missing '(See X.)' pointers, '1 Chr.' added before a bare reference, Ishmael cut at 1,200) and become the exact Easton text; Daniel (the prophet, Ezekiel 14) takes Easton's sense (2.) of Daniel. Each replacement names the sha256 of the text it replaces, so the tool refuses to write if the file holds anything else."
+    },
+    {
+      "id": "characters-easton-bios-fixes-3",
+      "source": "characters",
+      "folder": "library/people",
+      "files": [
+        "characters"
+      ],
+      "target": "characters",
+      "op": "set-entry-text",
+      "patchFile": "library/patches/easton-bios-fixes-3.json",
+      "expectedCount": {
+        "replace-wrong-sense": 1,
+        "set-passage": 2
+      },
+      "reason": "Tom approved on 2026-11-08. The Jesus bio opened with Easton's numbered sense (2.) of the entry 'Jesus', a Jewish Christian surnamed Justus (Col. 4:11), before the entry on our Lord, and its passage was Colossians 4, so a character study of Jesus anchored on the wrong man. The bio becomes Easton's exact entry on our Lord (the old text must match its sha256) and the passage becomes Matthew 1. David's passage was Ruth 4 (a first mention, the genealogy ending with him) and becomes 1 Samuel 16 (his anointing); his bio is unchanged. A passage changes only from the exact old value named in the patch."
     },
     {
       "id": "bsb-label",

@@ -271,14 +271,29 @@ for (const rule of fixes.rules) {
         if (!e) { nt[k] = rec; continue }
         if (crypto.createHash('sha256').update(e.bio).digest('hex') !== e.sha256) throw new Error(`patch entry ${k}: text does not match its recorded sha256`)
         const cur = rec.bio || ''
-        if (cur === e.bio) { nt[k] = rec; continue }
-        if (e.oldSha256) {
-          // a correction: allowed only for the exact earlier text named by its hash (artifacts such as a stray apostrophe, missing "(See X.)" pointers, a cut at 1,200)
-          if (crypto.createHash('sha256').update(cur).digest('hex') !== e.oldSha256) throw new Error(`${k}: the existing bio is not the text the patch was built to correct (oldSha256 differs); not overwriting`)
-        } else if (cur && !e.bio.startsWith(cur)) throw new Error(`${k}: the existing bio is not the start of the patch text; not overwriting`)
-        bump(e.category)
-        const { name, bio, ...rest } = rec
-        nt[k] = { name, bio: e.bio, ...rest }
+        let out = rec
+        // an earlier rule's entry that a later rule deliberately replaced: left alone only if the file now holds exactly the later patch's text
+        const lateId = rule.supersededBy && rule.supersededBy[k]
+        if (lateId && cur !== e.bio) {
+          const lateRule = fixes.rules.find(r => r.id === lateId), late = lateRule && JSON.parse(fs.readFileSync(path.join(root, lateRule.patchFile), 'utf8')).entries[k]
+          if (late && cur === late.bio) { nt[k] = rec; continue }
+        }
+        if (cur !== e.bio) {
+          if (e.oldSha256) {
+            // a correction: allowed only for the exact earlier text named by its hash (artifacts such as a stray apostrophe, missing "(See X.)" pointers, a cut at 1,200, a different man's sense at the start)
+            if (crypto.createHash('sha256').update(cur).digest('hex') !== e.oldSha256) throw new Error(`${k}: the existing bio is not the text the patch was built to correct (oldSha256 differs); not overwriting`)
+          } else if (cur && !e.bio.startsWith(cur)) throw new Error(`${k}: the existing bio is not the start of the patch text; not overwriting`)
+          bump(e.category)
+          const { name, bio, ...rest } = rec
+          out = { name, bio: e.bio, ...rest }
+        }
+        if (e.passage && JSON.stringify(rec.passage) !== JSON.stringify(e.passage)) {
+          // a passage change: allowed only from the exact value the patch names as oldPassage
+          if (JSON.stringify(rec.passage) !== JSON.stringify(e.oldPassage)) throw new Error(`${k}: the existing passage is not the value the patch was built to change (oldPassage differs); not overwriting`)
+          bump('set-passage')
+          out = { ...out, passage: e.passage }
+        }
+        nt[k] = out
       }
       nd = { ...d, [rule.target]: nt }
     } else throw new Error('unknown op ' + rule.op)

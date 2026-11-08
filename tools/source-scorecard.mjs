@@ -505,18 +505,23 @@ function scoreRef(src) {
       if (textRules.length) {
         try {
           const repoRoot = path.dirname(path.resolve(libDir))
-          let want = JSON.parse(fs.readFileSync(origFile, 'utf8')), changedBios = 0, problem = null, corrected = 0
+          let want = JSON.parse(fs.readFileSync(origFile, 'utf8')), changedBios = 0, problem = null, corrected = 0, passages = 0
           for (const r of textRules) {
             const patch = readJSON(path.join(repoRoot, r.patchFile)), table = { ...want[r.target] }
             for (const [k, e] of Object.entries(patch.entries)) {
               const cur = table[k] && table[k].bio || ''
               if (!table[k] || crypto.createHash('sha256').update(e.bio).digest('hex') !== e.sha256 || (e.oldSha256 ? crypto.createHash('sha256').update(cur).digest('hex') !== e.oldSha256 : (cur && !e.bio.startsWith(cur)))) { problem = `patch entry ${k} is not a valid addition or extension`; break }
               if (cur !== e.bio) { changedBios++; if (e.oldSha256) corrected++ }
-              table[k] = { ...table[k], bio: e.bio }
+              let ent = { ...table[k], bio: e.bio }
+              if (e.passage && JSON.stringify(ent.passage) !== JSON.stringify(e.passage)) {
+                if (JSON.stringify(ent.passage) !== JSON.stringify(e.oldPassage)) { problem = `patch entry ${k}: passage is not the value the patch changes`; break }
+                ent.passage = e.passage; passages++
+              }
+              table[k] = ent
             }
             want = { ...want, [r.target]: table }
           }
-          if (!problem && isDeepStrictEqual(want, d)) { st = 'PASS'; extra = `Not byte-identical: ${changedBios} bios were added or completed by recorded fixes (${textRules.map(r => r.id).join(', ')}); re-applied to the original here, the result equals the library file exactly, and ${corrected ? corrected + ' of them are corrections that replace an earlier text named by its sha256, every other existing bio only grew' : 'no existing bio text was shortened or changed'}.` }
+          if (!problem && isDeepStrictEqual(want, d)) { st = 'PASS'; extra = `Not byte-identical: ${changedBios} bios were added or completed by recorded fixes (${textRules.map(r => r.id).join(', ')}); re-applied to the original here, the result equals the library file exactly, ${passages ? ' ' + passages + ' passages were changed, each from the exact old value named in the patch, and' : ' and'} ${corrected ? corrected + ' of them are corrections that replace an earlier text named by its sha256, every other existing bio only grew' : 'no existing bio text was shortened or changed'}.` }
           else if (problem) extra = problem
         } catch { /* leave FAIL */ }
       }
