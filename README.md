@@ -124,7 +124,7 @@ The live Cloudflare Worker code is **not stored in this repository** — it live
 
 ## License
 
-MIT License — see `LICENSE` for details.
+MIT License — see `LICENSE` for details. That covers the code only. The Bible texts, commentaries and reference works in `library/` each have their own terms; see `library/NOTICE.md`.
 
 Bible texts are public domain. Cross-reference data is CC-BY (credit: OpenBible.info). Commentary and patristic sources are public domain, fetched live from their respective open services.
 
