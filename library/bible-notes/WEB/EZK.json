@@ -3,20 +3,69 @@
  "layer": "translators-notes",
  "book": "EZK",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 0,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 3,
+ "count": 38,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 178,
+   "after": "s were opened, and I saw visions of God.",
+   "text": "The Hebrew word rendered “God” is “ אֱלֹהִ֑ים” (Elohim)."
+  },
+  {
+   "chapter": 1,
+   "verse": 3,
+   "at": 10,
+   "after": "the LORD’s",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 1,
+   "verse": 4,
+   "at": 21,
+   "after": "I looked, and behold,",
+   "text": "“Behold”, from “ הִנֵּה”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
   {
    "chapter": 1,
    "verse": 26,
    "at": 105,
    "after": " throne, as the appearance of a sapphire",
    "text": "or, lapis lazuli"
+  },
+  {
+   "chapter": 2,
+   "verse": 4,
+   "at": 118,
+   "after": " shall tell them, ‘This is what the Lord",
+   "text": "The word translated “Lord” is “Adonai.”"
+  },
+  {
+   "chapter": 3,
+   "verse": 7,
+   "at": 121,
+   "after": "or all the house of Israel are obstinate",
+   "text": "Literally, have a hard forehead"
+  },
+  {
+   "chapter": 4,
+   "verse": 10,
+   "at": 64,
+   "after": "l eat shall be by weight, twenty shekels",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 4,
+   "verse": 11,
+   "at": 58,
+   "after": "ter by measure, the sixth part of a hin.",
+   "text": "A hin is about 6.5 liters or 1.7 gallons."
   },
   {
    "chapter": 10,
@@ -26,11 +75,207 @@
    "text": "or, lapis lazuli"
   },
   {
+   "chapter": 17,
+   "verse": 13,
+   "at": 35,
+   "after": "He took one of the royal offspring,",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 20,
+   "verse": 29,
+   "at": 94,
+   "after": "ou go mean?’ So its name is called Bamah",
+   "text": "“Bamah” means “High Place”."
+  },
+  {
+   "chapter": 21,
+   "verse": 6,
+   "at": 85,
+   "after": "gh before their eyes with a broken heart",
+   "text": "literally, the breaking of your thighs"
+  },
+  {
+   "chapter": 21,
+   "verse": 21,
+   "at": 167,
+   "after": "ck and forth. He consulted the teraphim.",
+   "text": "teraphim were household idols that may have been associated with inheritance rights to the household property."
+  },
+  {
+   "chapter": 22,
+   "verse": 7,
+   "at": 57,
+   "after": "treated father and mother with contempt.",
+   "text": "Literally, made light of father and mother."
+  },
+  {
    "chapter": 28,
    "verse": 13,
-   "at": 126,
-   "after": "erald, chrysolite, onx, jasper, sapphire",
+   "at": 128,
+   "after": "ald, chrysolite, onyx, jasper, sapphire,",
    "text": "or, lapis lazuli"
+  },
+  {
+   "chapter": 31,
+   "verse": 15,
+   "at": 59,
+   "after": " ‘In the day when he went down to Sheol,",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 31,
+   "verse": 16,
+   "at": 83,
+   "after": " his fall, when I cast him down to Sheol",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 32,
+   "verse": 21,
+   "at": 72,
+   "after": " speak to him out of the middle of Sheol",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 40,
+   "verse": 5,
+   "at": 114,
+   "after": "e man’s hand a measuring reed six cubits",
+   "text": "A normal cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters. A handbreadth is about 4.3 inches or 11 centimeters, so the long cubit described here would be about 22.3 inches or 57 centimeters long. Thus, a 6 long cubit measuring reed would have been about 3 yards 26.6 inches or about 3.42 meters long."
+  },
+  {
+   "chapter": 41,
+   "verse": 2,
+   "at": 41,
+   "after": "he width of the entrance was ten cubits,",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 42,
+   "verse": 2,
+   "at": 39,
+   "after": "Facing the length of one hundred cubits",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 43,
+   "verse": 13,
+   "at": 61,
+   "after": "ements of the altar by cubits (the cubit",
+   "text": "A normal cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters. A hand width is about 4.3 inches or 11 cm."
+  },
+  {
+   "chapter": 43,
+   "verse": 13,
+   "at": 182,
+   "after": ", and its border around its edge a span;",
+   "text": "A span is the length from the tip of a man’s thumb to the tip of his little finger when his hand is stretched out (about half a cubit, or 9 inches, or 22.8 cm.)"
+  },
+  {
+   "chapter": 45,
+   "verse": 2,
+   "at": 97,
+   "after": "are for the holy place, and fifty cubits",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 45,
+   "verse": 10,
+   "at": 44,
+   "after": " shall have just balances, a just ephah,",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 45,
+   "verse": 11,
+   "at": 95,
+   "after": "e bath may contain one tenth of a homer,",
+   "text": "1 homer is about 220 liters or 6 bushels"
+  },
+  {
+   "chapter": 45,
+   "verse": 12,
+   "at": 10,
+   "after": "The shekel",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 45,
+   "verse": 12,
+   "at": 34,
+   "after": "The shekel shall be twenty gerahs.",
+   "text": "a gerah is about 0.5 grams or about 7.7 grains"
+  },
+  {
+   "chapter": 45,
+   "verse": 12,
+   "at": 115,
+   "after": "plus fifteen shekels shall be your mina.",
+   "text": "A mina is about 600 grams or 1.3 U. S. pounds."
+  },
+  {
+   "chapter": 45,
+   "verse": 14,
+   "at": 145,
+   "after": "ven a homer (for ten baths are a homer),",
+   "text": "1 cor is the same as 1 homer in volume, and is about 211 liters, 55.9 gallons, or 6 bushels. 1 bath is about 21.1 liters, 5.59 gallons, or 2.4 pecks."
+  },
+  {
+   "chapter": 45,
+   "verse": 24,
+   "at": 42,
+   "after": " shall prepare a meal offering, an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 45,
+   "verse": 24,
+   "at": 84,
+   "after": "or a bull, an ephah for a ram, and a hin",
+   "text": "A hin is about 6.5 liters or 1.7 gallons."
+  },
+  {
+   "chapter": 46,
+   "verse": 5,
+   "at": 121,
+   "after": "e lambs as he is able to give, and a hin",
+   "text": "A hin is about 6.5 liters or 1.7 gallons."
+  },
+  {
+   "chapter": 46,
+   "verse": 5,
+   "at": 141,
+   "after": "e to give, and a hin of oil to an ephah.",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 46,
+   "verse": 11,
+   "at": 83,
+   "after": "ays, the meal offering shall be an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 46,
+   "verse": 14,
+   "at": 89,
+   "after": " by morning, the sixth part of an ephah,",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 46,
+   "verse": 22,
+   "at": 73,
+   "after": "there were courts enclosed, forty cubits",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 47,
+   "verse": 3,
+   "at": 90,
+   "after": "s hand, he measured one thousand cubits,",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
   }
  ]
 }

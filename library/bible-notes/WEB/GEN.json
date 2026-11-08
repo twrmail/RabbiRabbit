@@ -3,110 +3,257 @@
  "layer": "translators-notes",
  "book": "GEN",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 0,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 27,
+ "count": 52,
  "notes": [
   {
    "chapter": 1,
    "verse": 1,
-   "at": 20,
-   "after": "In the beginning God",
-   "text": "After \"God,\" the Hebrew has the two letters \"Aleph Tav\" (the first and last letters of the Hebrew alphabet) as a grammatical marker."
+   "at": 21,
+   "after": "In the beginning, God",
+   "text": "The Hebrew word rendered “God” is “ אֱלֹהִ֑ים” (Elohim)."
+  },
+  {
+   "chapter": 1,
+   "verse": 29,
+   "at": 18,
+   "after": "God said, “Behold,",
+   "text": "“Behold”, from “ הִנֵּה”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
+  {
+   "chapter": 2,
+   "verse": 4,
+   "at": 119,
+   "after": "y were created, in the day that the LORD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 2,
+   "verse": 12,
+   "at": 43,
+   "after": " the gold of that land is good. Bdellium",
+   "text": "or, aromatic resin"
+  },
+  {
+   "chapter": 2,
+   "verse": 18,
+   "at": 98,
+   "after": ". I will make him a helper comparable to",
+   "text": "or, suitable for, or appropriate for."
+  },
+  {
+   "chapter": 3,
+   "verse": 24,
+   "at": 47,
+   "after": "rove out the man; and he placed cherubim",
+   "text": "cherubim are powerful angelic creatures, messengers of God with wings. See Ezekiel 10."
+  },
+  {
+   "chapter": 4,
+   "verse": 1,
+   "at": 12,
+   "after": "The man knew",
+   "text": "or, lay with, or, had relations with"
+  },
+  {
+   "chapter": 4,
+   "verse": 1,
+   "at": 41,
+   "after": "he man knew Eve his wife. She conceived,",
+   "text": "or, became pregnant"
   },
   {
    "chapter": 5,
    "verse": 2,
-   "at": 78,
-   "after": "lessed them, and called their name Adam,",
-   "text": "\"Adam\" and \"Man\" are spelled with the exact same consonants in Hebrew, so this can be correctly translated either way."
+   "at": 100,
+   "after": "y they were created, he named them Adam.",
+   "text": "“Adam” and “Man” are spelled with the exact same consonants in Hebrew, so this can be correctly translated either way."
+  },
+  {
+   "chapter": 6,
+   "verse": 4,
+   "at": 12,
+   "after": "The Nephilim",
+   "text": "or, giants"
+  },
+  {
+   "chapter": 6,
+   "verse": 15,
+   "at": 84,
+   "after": " the ship shall be three hundred cubits,",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 7,
+   "verse": 20,
+   "at": 30,
+   "after": "The waters rose fifteen cubits",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 11,
+   "verse": 2,
+   "at": 22,
+   "after": "As they traveled east,",
+   "text": "LXX reads “from the east”."
   },
   {
    "chapter": 12,
    "verse": 7,
-   "at": 71,
-   "after": "aid, \"I will give this land to your seed",
-   "text": "or, offspring"
+   "at": 79,
+   "after": " will give this land to your offspring.”",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 12,
+   "verse": 8,
+   "at": 167,
+   "after": "ast. There he built an altar to the LORD",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 15,
+   "verse": 2,
+   "at": 17,
+   "after": "Abram said, “Lord",
+   "text": "The word translated “Lord” is “Adonai”."
   },
   {
    "chapter": 16,
    "verse": 14,
    "at": 45,
    "after": "fore the well was called Beer Lahai Roi.",
-   "text": "Beer Lahai Roi means \"well of the one who lives and sees me.\""
+   "text": "Beer Lahai Roi means “well of the one who lives and sees me”."
   },
   {
    "chapter": 17,
    "verse": 19,
    "at": 88,
    "after": "ou a son. You shall call his name Isaac.",
-   "text": "Isaac means \"he laughs.\""
+   "text": "Isaac means “he laughs”."
+  },
+  {
+   "chapter": 18,
+   "verse": 6,
+   "at": 78,
+   "after": ", and said, “Quickly prepare three seahs",
+   "text": "1 seah is about 7 liters or 1.9 gallons or 0.8 pecks"
   },
   {
    "chapter": 19,
    "verse": 22,
    "at": 114,
    "after": "re the name of the city was called Zoar.",
-   "text": "Zoar means \"little.\""
+   "text": "Zoar means “little”."
   },
   {
    "chapter": 21,
    "verse": 3,
    "at": 74,
-   "after": "n to him, whom Sarah bare to him, Isaac.",
-   "text": "Isaac means \"He laughs.\""
+   "after": "n to him, whom Sarah bore to him, Isaac.",
+   "text": "Isaac means “He laughs”."
   },
   {
    "chapter": 21,
    "verse": 31,
    "at": 41,
    "after": "herefore he called that place Beersheba,",
-   "text": "Beersheba can mean \"well of the oath\" or \"well of seven.\""
+   "text": "Beersheba can mean “well of the oath” or “well of seven”."
+  },
+  {
+   "chapter": 21,
+   "verse": 33,
+   "at": 90,
+   "after": "there he called on the name of the LORD,",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
   },
   {
    "chapter": 22,
    "verse": 14,
-   "at": 51,
-   "after": "led the name of that place Yahweh-Jireh.",
-   "text": "\"Yahweh-Jireh\" means \"Yahweh is my provider.\""
+   "at": 62,
+   "after": "e of that place “The LORD Will Provide”.",
+   "text": "or, the LORD Jireh, or, the LORD Seeing"
+  },
+  {
+   "chapter": 23,
+   "verse": 15,
+   "at": 84,
+   "after": "and worth four hundred shekels of silver",
+   "text": "A shekel is about 10 grams, so 400 shekels would be about 4 kg. or 8.8 pounds."
   },
   {
    "chapter": 24,
-   "verse": 7,
-   "at": 175,
-   "after": "ing, 'I will give this land to your seed",
-   "text": "or, offspring"
+   "verse": 22,
+   "at": 80,
+   "after": " man took a golden ring of half a shekel",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 25,
+   "verse": 30,
+   "at": 119,
+   "after": "ed.” Therefore his name was called Edom.",
+   "text": "“Edom” means “red”."
+  },
+  {
+   "chapter": 26,
+   "verse": 19,
+   "at": 69,
+   "after": "alley, and found there a well of flowing",
+   "text": "Or, living. Or, fresh."
+  },
+  {
+   "chapter": 26,
+   "verse": 20,
+   "at": 120,
+   "after": " So he called the name of the well Esek,",
+   "text": "“Esek” means “contention”."
+  },
+  {
+   "chapter": 26,
+   "verse": 21,
+   "at": 85,
+   "after": "hat, also. So he called its name Sitnah.",
+   "text": "“Sitnah” means “hostility”."
+  },
+  {
+   "chapter": 26,
+   "verse": 22,
+   "at": 100,
+   "after": "over that one. So he called it Rehoboth.",
+   "text": "“Rehoboth” means “broad places”."
   },
   {
    "chapter": 26,
    "verse": 33,
-   "at": 20,
-   "after": "He called it Shibah.",
-   "text": "Shibah means \"oath\" or \"seven.\""
+   "at": 22,
+   "after": "He called it “Shibah”.",
+   "text": "Shibah means “oath” or “seven”."
   },
   {
    "chapter": 26,
    "verse": 33,
-   "at": 64,
-   "after": "refore the name of the city is Beersheba",
-   "text": "Beersheba means \"well of the oath\" or \"well of the seven\""
+   "at": 68,
+   "after": "fore the name of the city is “Beersheba”",
+   "text": "Beersheba means “well of the oath” or “well of the seven”"
   },
   {
    "chapter": 30,
    "verse": 24,
    "at": 21,
    "after": "She named him Joseph,",
-   "text": "Joseph means \"may he add.\""
+   "text": "Joseph means “may he add”."
   },
   {
    "chapter": 31,
    "verse": 19,
    "at": 68,
-   "after": "his sheep: and Rachel stole the teraphim",
+   "after": "his sheep; and Rachel stole the teraphim",
    "text": "teraphim were household idols that may have been associated with inheritance rights to the household property."
   },
   {
@@ -114,26 +261,33 @@
    "verse": 47,
    "at": 32,
    "after": "Laban called it Jegar Sahadutha,",
-   "text": "\"Jegar Sahadutha\" means \"Witness Heap\" in Aramaic."
+   "text": "“Jegar Sahadutha” means “Witness Heap” in Aramaic."
   },
   {
    "chapter": 31,
    "verse": 47,
    "at": 60,
    "after": "r Sahadutha, but Jacob called it Galeed.",
-   "text": "\"Galeed\" means \"Witness Heap\" in Hebrew."
+   "text": "“Galeed” means “Witness Heap” in Hebrew."
+  },
+  {
+   "chapter": 32,
+   "verse": 2,
+   "at": 94,
+   "after": " called the name of that place Mahanaim.",
+   "text": "“Mahanaim” means “two camps”."
   },
   {
    "chapter": 32,
    "verse": 30,
-   "at": 41,
-   "after": "acob called the name of the place Peniel",
-   "text": "Peniel means \"face of God.\""
+   "at": 42,
+   "after": "cob called the name of the place Peniel;",
+   "text": "Peniel means “face of God”."
   },
   {
    "chapter": 33,
    "verse": 17,
-   "at": 134,
+   "at": 137,
    "after": "the name of the place is called Succoth.",
    "text": "succoth means shelters or booths."
   },
@@ -142,63 +296,84 @@
    "verse": 20,
    "at": 57,
    "after": "ar there, and called it El Elohe Israel.",
-   "text": "El Elohe Israel means \"God, the God of Israel\" or \"The God of Israel is mighty.\""
+   "text": "El Elohe Israel means “God, the God of Israel” or “The God of Israel is mighty”."
   },
   {
    "chapter": 34,
    "verse": 17,
    "at": 82,
    "after": "rcumcised, then we will take our sister,",
-   "text": "Hebrew has, literally, \"daughter\""
+   "text": "Hebrew has, literally, “daughter”"
   },
   {
    "chapter": 35,
    "verse": 18,
-   "at": 82,
-   "after": "r she died), that she named him Ben-oni,",
-   "text": "\"Ben-oni\" means \"son of my trouble.\""
+   "at": 63,
+   "after": "ng (for she died), she named him Benoni,",
+   "text": "“Benoni” means “son of my trouble”."
   },
   {
    "chapter": 35,
    "verse": 18,
-   "at": 117,
-   "after": "-oni, but his father named him Benjamin.",
-   "text": "\"Benjamin\" means \"son of my right hand.\""
+   "at": 98,
+   "after": "noni, but his father named him Benjamin.",
+   "text": "“Benjamin” means “son of my right hand”."
   },
   {
    "chapter": 37,
    "verse": 35,
    "at": 128,
-   "after": "d. He said, \"For I will go down to Sheol",
-   "text": "Sheol is the place of the dead or the grave."
+   "after": "d. He said, “For I will go down to Sheol",
+   "text": "Sheol is the place of the dead."
   },
   {
    "chapter": 38,
    "verse": 29,
-   "at": 167,
-   "after": "f?\" Therefore his name was called Perez.",
-   "text": "Perez means \"breaking out.\""
+   "at": 149,
+   "after": "f?” Therefore his name was called Perez.",
+   "text": "Perez means “breaking out”."
   },
   {
    "chapter": 38,
    "verse": 30,
-   "at": 103,
+   "at": 102,
    "after": "his hand, and his name was called Zerah.",
-   "text": "Zerah means \"scarlet\" or \"brightness.\""
+   "text": "Zerah means “scarlet” or “brightness”."
   },
   {
    "chapter": 41,
    "verse": 51,
    "at": 49,
    "after": "lled the name of the firstborn Manasseh,",
-   "text": "\"Manasseh\" sounds like the Hebrew for \"forget.\""
+   "text": "“Manasseh” sounds like the Hebrew for “forget”."
   },
   {
    "chapter": 41,
    "verse": 52,
-   "at": 41,
-   "after": "he name of the second, he called Ephraim",
-   "text": "\"Ephraim\" sounds like the Hebrew for \"twice fruitful.\""
+   "at": 42,
+   "after": "e name of the second, he called Ephraim:",
+   "text": "“Ephraim” sounds like the Hebrew for “twice fruitful”."
+  },
+  {
+   "chapter": 42,
+   "verse": 38,
+   "at": 206,
+   "after": "own my gray hairs with sorrow to Sheol.”",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 44,
+   "verse": 29,
+   "at": 116,
+   "after": "own my gray hairs with sorrow to Sheol.’",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 44,
+   "verse": 31,
+   "at": 167,
+   "after": "rvant, our father, with sorrow to Sheol.",
+   "text": "Sheol is the place of the dead."
   }
  ]
 }

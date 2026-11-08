@@ -129,11 +129,11 @@
   },
   "web": {
    "1": "PASS",
-   "2": "UNKNOWN",
+   "2": "PASS",
    "3": "PASS",
    "4": "PASS",
    "5": "PASS",
-   "6": "UNKNOWN",
+   "6": "PASS",
    "7": "UNKNOWN"
   },
   "kjv": {

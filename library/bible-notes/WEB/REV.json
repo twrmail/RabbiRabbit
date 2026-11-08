@@ -3,193 +3,284 @@
  "layer": "translators-notes",
  "book": "REV",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 5,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 35,
+ "count": 55,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 39,
+   "after": "This is the Revelation of Jesus Christ,",
+   "text": "“Christ” means “Anointed One”."
+  },
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 159,
+   "after": "hich he sent and made known by his angel",
+   "text": "or, messenger (here and wherever angel is mentioned)"
+  },
+  {
+   "chapter": 1,
+   "verse": 7,
+   "at": 7,
+   "after": "Behold,",
+   "text": "“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
   {
    "chapter": 1,
    "verse": 8,
    "at": 30,
-   "after": "\"I am the Alpha and the Omega,",
-   "text": "TR adds \"the Beginning and the End\""
+   "after": "“I am the Alpha and the Omega,",
+   "text": "TR adds “the Beginning and the End”"
   },
   {
    "chapter": 1,
    "verse": 8,
-   "at": 50,
-   "after": "Alpha and the Omega,\" says the Lord God,",
-   "text": "TR omits \"God\""
+   "at": 51,
+   "after": "lpha and the Omega, ” says the Lord God,",
+   "text": "TR omits “God”"
   },
   {
    "chapter": 1,
    "verse": 11,
-   "at": 9,
-   "after": "saying, \"",
-   "text": "TR adds \"I am the Alpha and the Omega, the First and the Last.\""
+   "at": 7,
+   "after": "saying,",
+   "text": "TR adds “I am the Alpha and the Omega, the First and the Last.”"
   },
   {
    "chapter": 1,
    "verse": 11,
-   "at": 71,
-   "after": " a book and send to the seven assemblies",
-   "text": "TR adds \"which are in Asia\""
+   "at": 72,
+   "after": "a book and send to the seven assemblies:",
+   "text": "TR adds “which are in Asia”"
+  },
+  {
+   "chapter": 1,
+   "verse": 18,
+   "at": 117,
+   "after": ". I have the keys of Death and of Hades.",
+   "text": "or, Hell"
+  },
+  {
+   "chapter": 1,
+   "verse": 20,
+   "at": 135,
+   "after": " is this: The seven stars are the angels",
+   "text": "or, messengers (here and wherever angels are mentioned)"
   },
   {
    "chapter": 2,
    "verse": 3,
-   "at": 67,
-   "after": "ave endured for my name's sake, and have",
-   "text": "TR adds \"have labored and\""
+   "at": 68,
+   "after": "ve endured for my name’s sake, and have ",
+   "text": "TR adds “have labored and”"
   },
   {
    "chapter": 2,
    "verse": 15,
-   "at": 74,
-   "after": "the teaching of the Nicolaitans likewise",
-   "text": "TR reads \"which I hate\" instead of \"likewise\""
+   "at": 75,
+   "after": "hold to the teaching of the Nicolaitans.",
+   "text": "TR reads “which I hate” instead of “likewise”"
   },
   {
    "chapter": 2,
    "verse": 17,
-   "at": 133,
-   "after": " to him I will give of the hidden manna,",
-   "text": "Manna is supernatural food, named after the Hebrew for \"What is it?\". See Exodus 11:7-9."
+   "at": 134,
+   "after": "to him I will give of the hidden manna, ",
+   "text": "Manna is supernatural food, named after the Hebrew for “What is it?”. See Exodus 11:7-9."
   },
   {
    "chapter": 2,
    "verse": 20,
    "at": 51,
    "after": "this against you, that you tolerate your",
-   "text": "TR, NU read \"that\" instead of \"your\""
+   "text": "TR, NU read “that” instead of “your”"
+  },
+  {
+   "chapter": 3,
+   "verse": 2,
+   "at": 82,
+   "after": "ain, which you were about to throw away,",
+   "text": "NU & TR read “which were about to die” instead of “which you were about to throw away”."
+  },
+  {
+   "chapter": 3,
+   "verse": 14,
+   "at": 104,
+   "after": "Faithful and True Witness, the Beginning",
+   "text": "or, Source, or Head"
   },
   {
    "chapter": 4,
    "verse": 8,
-   "at": 198,
-   "after": "holy, holy, holy, holy, holy, holy, holy",
-   "text": "TR and NU read \"holy\" 3 times instead of 9."
+   "at": 156,
+   "after": "day and night, saying, “Holy, holy, holy",
+   "text": "Hodges/Farstad MT reads “holy” 9 times instead of 3."
   },
   {
    "chapter": 4,
    "verse": 11,
    "at": 48,
    "after": "are you, our Lord and God, the Holy One,",
-   "text": "TR omits \"and God, the Holy One,\""
+   "text": "TR omits “and God, the Holy One,”"
   },
   {
    "chapter": 5,
    "verse": 13,
    "at": 251,
-   "after": "nd the dominion, forever and ever! Amen!",
-   "text": "TR omits \"Amen!\""
+   "after": "d the dominion, forever and ever! Amen!”",
+   "text": "TR omits “Amen!”"
   },
   {
    "chapter": 5,
    "verse": 14,
-   "at": 44,
-   "after": "four living creatures said, \"Amen!\" The ",
-   "text": "TR adds \"twenty-four\""
+   "at": 48,
+   "after": " living creatures said, “Amen!” Then the",
+   "text": "TR adds “twenty-four”"
   },
   {
    "chapter": 5,
    "verse": 14,
-   "at": 75,
-   "after": "en!\" The elders fell down and worshiped.",
-   "text": "TR adds \"the one living forever and ever\""
+   "at": 80,
+   "after": "Then the elders fell down and worshiped.",
+   "text": "TR adds “the one living forever and ever”"
   },
   {
    "chapter": 6,
    "verse": 6,
-   "at": 76,
-   "after": "four living creatures saying, \"A choenix",
-   "text": "A choenix is a dry volume measure that is a little more than a litre (a little more than a quart)."
+   "at": 77,
+   "after": "four living creatures saying, “A choenix",
+   "text": "A choenix is a dry volume measure that is a little more than a liter (a little more than a quart)."
+  },
+  {
+   "chapter": 6,
+   "verse": 8,
+   "at": 75,
+   "after": "ame of he who sat on it was Death. Hades",
+   "text": "or, Hell"
   },
   {
    "chapter": 6,
    "verse": 11,
    "at": 146,
    "after": "heir fellow servants and their brothers,",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 7,
+   "verse": 14,
+   "at": 101,
+   "after": "ose who came out of the great suffering.",
+   "text": "or, oppression"
   },
   {
    "chapter": 8,
    "verse": 7,
-   "at": 142,
-   "after": "th. One third of the earth was burnt up,",
-   "text": "TR omits \"One third of the earth was burnt up\""
+   "at": 143,
+   "after": "h. One third of the earth was burned up,",
+   "text": "TR omits “One third of the earth was burned up”"
   },
   {
    "chapter": 8,
    "verse": 13,
    "at": 28,
    "after": "I saw, and I heard an eagle,",
-   "text": "TR reads \"angel\" instead of \"eagle\""
+   "text": "TR reads “angel” instead of “eagle”"
   },
   {
    "chapter": 9,
    "verse": 2,
    "at": 87,
    "after": "up out of the pit, like the smoke from a",
-   "text": "TR adds \"great\""
+   "text": "TR adds “great”"
   },
   {
    "chapter": 9,
    "verse": 11,
    "at": 84,
-   "after": " abyss. His name in Hebrew is \"Abaddon,\"",
-   "text": "\"Abaddon\" is a Hebrew word that means ruin, destruction, or the place of destruction"
+   "after": " abyss. His name in Hebrew is “Abaddon”,",
+   "text": "“Abaddon” is a Hebrew word that means “ruin”, “destruction”, or “the place of destruction”"
   },
   {
    "chapter": 9,
    "verse": 11,
    "at": 126,
-   "after": "ut in Greek, he has the name \"Apollyon.\"",
-   "text": "\"Apollyon\" means \"Destroyer.\""
+   "after": "ut in Greek, he has the name “Apollyon”.",
+   "text": "“Apollyon” means “Destroyer”."
   },
   {
    "chapter": 9,
    "verse": 16,
-   "at": 64,
-   "after": " of the horsemen was two hundred million",
-   "text": "literally, \"ten thousands of ten thousands\""
+   "at": 65,
+   "after": "of the horsemen was two hundred million.",
+   "text": "literally, “ten thousands of ten thousands”"
   },
   {
    "chapter": 9,
    "verse": 21,
-   "at": 60,
-   "after": "f their murders, nor of their sorceries,",
-   "text": "The word for \"sorceries\" (pharmakeia) also implies the use of potions, poisons, and drugs"
+   "at": 53,
+   "after": "epent of their murders, their sorceries,",
+   "text": "The word for “sorceries” (pharmakeia) also implies the use of potions, poisons, and drugs"
+  },
+  {
+   "chapter": 10,
+   "verse": 11,
+   "at": 4,
+   "after": "They",
+   "text": "TR reads “He” instead of “They”"
   },
   {
    "chapter": 11,
    "verse": 17,
-   "at": 79,
-   "after": "the Almighty, the one who is and who was",
-   "text": "TR adds \"and who is coming\""
+   "at": 80,
+   "after": "he Almighty, the one who is and who was,",
+   "text": "TR adds “and who is coming”"
+  },
+  {
+   "chapter": 12,
+   "verse": 17,
+   "at": 95,
+   "after": "make war with the rest of her offspring,",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 13,
+   "verse": 1,
+   "at": 12,
+   "after": "Then I stood",
+   "text": "NU reads he stood"
   },
   {
    "chapter": 13,
    "verse": 10,
-   "at": 84,
-   "after": "ne is with the sword, he must be killed.",
-   "text": "TR reads \"If anyone leads into captivity, into captivity he goes. If anyone will kill with the sword, he must be killed with a sword.\" instead of \"If anyone has captivity, he goes away. If anyone is with the sword, he must be killed.\""
+   "at": 122,
+   "after": "illed with the sword, he must be killed.",
+   "text": "TR reads “If anyone leads into captivity, into captivity he goes. If anyone will kill with the sword, he must be killed with a sword.” instead of “If anyone is to go into captivity, he will go into captivity. If anyone is to be killed with the sword, he must be killed.”"
+  },
+  {
+   "chapter": 13,
+   "verse": 14,
+   "at": 18,
+   "after": "He deceives my own",
+   "text": "NU omits “my own”"
   },
   {
    "chapter": 14,
    "verse": 5,
    "at": 56,
    "after": "as found no lie, for they are blameless.",
-   "text": "TR adds \"before the throne of God\""
+   "text": "TR adds “before the throne of God”"
   },
   {
    "chapter": 14,
    "verse": 20,
-   "at": 163,
+   "at": 161,
    "after": " far as one thousand six hundred stadia.",
    "text": "1600 stadia = 296 kilometers or 184 miles"
   },
@@ -198,42 +289,77 @@
    "verse": 2,
    "at": 97,
    "after": "those who overcame the beast, his image,",
-   "text": "TR adds \"his mark,\""
+   "text": "TR adds “his mark,”"
+  },
+  {
+   "chapter": 16,
+   "verse": 12,
+   "at": 161,
+   "after": "or the kings that come from the sunrise.",
+   "text": "or, east"
   },
   {
    "chapter": 16,
    "verse": 21,
    "at": 47,
    "after": "ailstones, about the weight of a talent,",
-   "text": "1 talent is about 34 kilograms or 75 pounds"
+   "text": "A talent is about 30 kilograms or 66 pounds."
   },
   {
    "chapter": 17,
    "verse": 8,
    "at": 308,
    "after": "t was, and is not, and shall be present.",
-   "text": "TR reads \"yet is\" instead of \"shall be present\""
+   "text": "TR reads “yet is” instead of “shall be present”"
   },
   {
    "chapter": 19,
    "verse": 17,
    "at": 164,
    "after": "red together to the great supper of God,",
-   "text": "TR reads \"supper of the great God\" instead of \"great supper of God\""
+   "text": "TR reads “supper of the great God” instead of “great supper of God”"
+  },
+  {
+   "chapter": 20,
+   "verse": 2,
+   "at": 106,
+   "after": " who deceives the whole inhabited earth,",
+   "text": "TR and NU omit “who deceives the whole inhabited earth”."
+  },
+  {
+   "chapter": 20,
+   "verse": 13,
+   "at": 56,
+   "after": "the dead who were in it. Death and Hades",
+   "text": "or, Hell"
+  },
+  {
+   "chapter": 20,
+   "verse": 14,
+   "at": 15,
+   "after": "Death and Hades",
+   "text": "or, Hell"
+  },
+  {
+   "chapter": 21,
+   "verse": 8,
+   "at": 43,
+   "after": " for the cowardly, unbelieving, sinners,",
+   "text": "TR and NU omit “sinners”"
   },
   {
    "chapter": 21,
    "verse": 8,
    "at": 95,
    "after": " murderers, sexually immoral, sorcerers,",
-   "text": "The word for \"sorcerers\" here also includes users of potions and drugs."
+   "text": "The word for “sorcerers” here also includes users of potions and drugs."
   },
   {
    "chapter": 21,
    "verse": 16,
-   "at": 134,
-   "after": " the reed, Twelve thousand twelve stadia",
-   "text": "12,012 stadia = or 2,221 kilometers or 1,380 miles. TR reads 12,000 stadia instead of 12,012 stadia."
+   "at": 123,
+   "after": "the reed: twelve thousand twelve stadia.",
+   "text": "12,012 stadia = 2,221 kilometers or 1,380 miles. TR reads 12,000 stadia instead of 12,012 stadia."
   },
   {
    "chapter": 21,
@@ -246,7 +372,7 @@
    "chapter": 21,
    "verse": 19,
    "at": 136,
-   "after": "ndation was jasper; the second, sapphire",
+   "after": "ndation was jasper, the second sapphire,",
    "text": "or, lapis lazuli"
   },
   {
@@ -254,7 +380,21 @@
    "verse": 1,
    "at": 14,
    "after": "He showed me a",
-   "text": "TR adds \"pure\""
+   "text": "TR adds “pure”"
+  },
+  {
+   "chapter": 22,
+   "verse": 14,
+   "at": 42,
+   "after": "essed are those who do his commandments,",
+   "text": "NU reads “wash their robes” instead of “do his commandments”."
+  },
+  {
+   "chapter": 22,
+   "verse": 19,
+   "at": 107,
+   "after": "od will take away his part from the tree",
+   "text": "TR reads “Book” instead of “tree”"
   }
  ]
 }

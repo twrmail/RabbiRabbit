@@ -22,7 +22,7 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 | Vincent's Word Studies (old file) (vincent) | FAIL | UNKNOWN | FAIL | N/A | N/A | N/A | N/A |
 | Meyer's NT Commentary (old file) (meyer) | FAIL | UNKNOWN | FAIL | N/A | N/A | N/A | N/A |
 | Berean Standard Bible (BSB) (bsb) | PASS | PASS | PASS | PASS | PASS | UNKNOWN | UNKNOWN |
-| World English Bible (web) | PASS | UNKNOWN | PASS | PASS | PASS | UNKNOWN | UNKNOWN |
+| World English Bible Updated (web) | PASS | PASS | PASS | PASS | PASS | PASS | UNKNOWN |
 | King James Version (kjv) | PASS | PASS | PASS | PASS | PASS | PASS | UNKNOWN |
 | American Standard Version (asv) | PASS | PASS | PASS | PASS | PASS | PASS | UNKNOWN |
 | strongs-hebrew (strongs-hebrew) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | PASS | UNKNOWN |
@@ -35,13 +35,13 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 | xref-seed (xref-seed) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 | overview-map (overview-map) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 
-Gate results over 26 sources: 57 PASS, 15 FAIL, 84 UNKNOWN, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
+Gate results over 26 sources: 59 PASS, 15 FAIL, 82 UNKNOWN, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
 
 Moved text: 14 of 14 moved block(s) found at their destination chapter; for each, the text cut equals the text added (same length and sha256).
 
 Held material: 42 item(s), 53,684 words in 2 file(s) in library/held; 0 still present in the library text (not yet cut). 26 applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.
 
-Provenance register evidence levels: 4 witnessed, 13 work-identified, 8 unidentified, 1 established. These describe evidence; they do not change any gate result.
+Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidentified, 2 established. These describe evidence; they do not change any gate result.
 
 ## Detail and next action per source
 
@@ -502,37 +502,35 @@ Provenance register evidence levels: 4 witnessed, 13 work-identified, 8 unidenti
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 
-### World English Bible (web) - undefined, active
+### World English Bible Updated (web) - undefined, active
 **Next action:** Record the exact WEB edition/date and upstream hash.
 
 - **1. Complete: PASS**
-  - [measured] 66/66 books, 1189 chapters = KJV structure (1189); verse numbers absent vs KJV numbering: 0 (); empty/placeholder: 7 (ACT 8:37, ACT 15:34, ACT 24:7, LUK 17:36, ROM 16:25, ROM 16:26, ROM 16:27)
+  - [measured] 66/66 books, 1189 chapters = KJV structure (1189); verse numbers absent vs KJV numbering: 2 (ROM 16:26, ROM 16:27); empty/placeholder: 5 (ACT 8:37, ACT 15:34, ACT 24:7, LUK 17:36, ROM 16:25)
   - [recorded] manifest and Worker treat empty = edition prints no text, missing = no such verse number
-- **2. Provenance: UNKNOWN**
-  - [recorded] file says: "World English Bible (public domain); text from scrollmapper/bible_databases (2024 branch, csv/t_web.csv) with the inline translator notes removed when"
+- **2. Provenance: PASS**
+  - [recorded] file says: "World English Bible Updated (public domain; "World English Bible" is a trademark of eBible.org, which agreed in writing that the name may be kept with"
   - [measured] recorded: year yes, origin yes, upstream hash NO (manifest holds only the whole-data fingerprint 885bb01f336336b7)
   - Edition identity not independently established.
-  - [provenance register] evidence level "work-identified" (work recognised; edition or source copy not established (Gate 2 UNKNOWN)); witnesses: eBible.org World English Bible copyright page (page-read)
-  - [provenance register] 4 open question(s): Dedication page not read this session. | 7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition. | Header year 2020: the WEB's own page calls the current text "the 2020 stable text edition", so the year is a real edition name, not a mistake. What is not shown is that our scrollmapper copy is that edition (it matches at 99.7% / 99.2%; the copy came with the notes in the text, which we remove). Compare with the dated eBible.org 2020 stable text file to settle it. | Does removing the inline translator notes (kept in library/bible-notes/WEB) change "the actual text" under the eBible.org trademark rule? The page is silent on notes. Ask eBible.org or keep the notes layer and say so in the label.
-  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): NO; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
-  - [provenance register] printed edition: stated as not identified in the source line. Recorded openly; it does not fail or block Gate 2 (digital edition is what this gate tests)
+  - [provenance register] evidence level "established" (origin and edition of our copy known (Gate 2 PASS)); witnesses: copr.htm inside the zip (eBible.org's own copyright page for this file) (page-read); lyteword/web (independent Markdown copy of the WEB, commit 39ddde4, 2026-03-14) (measured; 30,796 of 31,103 verses equal after the divine name is normalised (99.0%); 1,613 of 756,253 words differ, mostly Psalm superscriptions, Selah marks and later eBible.org updates)
+  - [provenance register] 5 open question(s): Verse numbering: this edition prints the doxology at Romans 14:24-26 (a footnote says the Textus Receptus places it at 16:25-27). Romans 16:26-27 do not exist in this text and 16:25 is empty. Lookups by the usual numbering (16:25-27) return nothing. | Five verses are empty in the source and in the library (Luke 17:36, Acts 8:37, Acts 15:34, Acts 24:7, Romans 16:25); treat as not in this edition. The older file had seven (it also lacked Romans 16:26-27). | Psalm superscriptions ("A Psalm by David.") are placed at the start of the verse that follows them, as eBible.org's own quotation of Psalm 23:1 does; the 22 Psalm 119 section names (ALEPH ... TAV) are headings and are not in the verse text. | Cross references (340) and Strong's numbers in the zip are not carried into the library; they remain in the untouched zip. | The Updated edition is dated 30 Oct 2026; eBible.org says small updates continue (worldenglish.bible/webupdates.php). Re-check before relying on it as 'latest'.
+  - [provenance register] Gate 2 criteria: (1) work and a date named (source line or register): yes; (2) digital origin named in the file: yes; (3) a measured match or git-history record in the register: yes; (4) a version marker in the register (acquisition.versionMarker): yes
 - **3. Clean: PASS**
   - [measured] no hits on: identical-length plateau, replacement characters, mojibake, control characters, HTML tags/entities, empty chapters (1189 chapters)
   - Cannot detect silent omissions or a chapter cut at a natural boundary.
-  - [recorded] fix recorded in library/fixes.json: web-psalm-poetry-marker (117 changes)
   - [recorded] fix recorded in library/fixes.json: web-source-line ({"source":66} changes)
 - **4. Preserved: PASS**
-  - [measured] 66 of 66 books equal the original verse by verse after re-applying the recorded fixes (web-psalm-poetry-marker); missing verses 0, extra verses 0, emptied verses 0, changed text 0, chapter mismatches 0, no original found 0; 7 verses are empty in the original and in the library
+  - [measured] 66 of 66 books equal the original verse by verse after re-applying the recorded fixes (none); missing verses 0, extra verses 0, emptied verses 0, changed text 0, chapter mismatches 0, no original found 0; 5 verses are empty in the original and in the library
   - This proves library = the copy we hold in data/. It does not prove data/ matches the published edition (gate 2).
 - **5. Verse coverage: PASS**
-  - [measured] every verse is keyed by its number; 0 keys outside KJV chapter ranges 
+  - [measured] every verse is keyed by its number; 2 keys outside KJV chapter ranges ROM 14:25, ROM 14:26
   - A Bible edition is its own verse index.
-- **6. Licence: UNKNOWN**
+- **6. Licence: PASS**
   - [recorded] licence recorded: Public Domain
   - Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.
-  - [provenance register] rights claim "public domain" from repo manifest, scope: our copy; applies to our copy: not-established; checked 2026-11-03
-  - [provenance register] obligations: Trademark rule (eBible.org copyright page): "World English Bible" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. The page does not mention footnotes or translator notes, so whether our removal of inline translator notes is a change of the actual text is not settled (see open questions).
-  - [provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): NO; licence of the digital edition recorded (rights.digitalEditionLicence, "none found" counts once checked): yes
+  - [provenance register] rights claim "public domain" from eBible.org copyright page (copr.htm inside the zip, read 2026-11-08) and eBible.org's World English Bible Updated page, scope: the World English Bible Updated text as eBible.org publishes it; applies to our copy: established; checked 2026-11-08
+  - [provenance register] obligations: Trademark rule (eBible.org): "World English Bible" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. eBible.org agreed in writing (2026-11-07) that moving the footnotes to a separate layer is not a change, and that the name may be kept with a line such as "translator notes shown separately". | Name shown to readers: "World English Bible Updated" (eBible.org's name for this edition); say that the footnotes are shown separately where notes are not displayed.
+  - [provenance register] Gate 6 criteria (public domain by age): work and date identified (a date only claimed in the repo does not count): yes; licence of the digital edition recorded (rights.digitalEditionLicence, "none found" counts once checked): yes
 - **7. Regression: UNKNOWN**
   - [measured] workflow library-check.yml is installed and runs this scorecard on changes under library/; this report was not produced inside Actions, so a run on GitHub is the evidence still needed (Actions tab)
 

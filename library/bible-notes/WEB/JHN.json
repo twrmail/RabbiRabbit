@@ -3,76 +3,146 @@
  "layer": "translators-notes",
  "book": "JHN",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 33,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 26,
+ "count": 46,
  "notes": [
   {
    "chapter": 1,
    "verse": 5,
    "at": 66,
-   "after": "rkness, and the darkness hasn't overcome",
-   "text": "The word translated \"overcome\" (katelaben) can also be translated \"comprehended.\" It refers to getting a grip on an enemy to defeat him."
+   "after": "rkness, and the darkness hasn’t overcome",
+   "text": "The word translated “overcome” (κατέλαβεν) can also be translated “comprehended.” It refers to getting a grip on an enemy to defeat him."
+  },
+  {
+   "chapter": 1,
+   "verse": 14,
+   "at": 90,
+   "after": "is glory, such glory as of the only born",
+   "text": "The phrase “only born” is from the Greek word “μονογενους”, which is sometimes translated “only begotten” or “one and only”."
+  },
+  {
+   "chapter": 1,
+   "verse": 17,
+   "at": 88,
+   "after": "ruth were realized through Jesus Christ.",
+   "text": "“Christ” means “Anointed One”."
+  },
+  {
+   "chapter": 1,
+   "verse": 18,
+   "at": 46,
+   "after": " has seen God at any time. The only born",
+   "text": "The phrase “only born” is from the Greek word “μονογενη”, which is sometimes translated “only begotten” or “one and only”."
+  },
+  {
+   "chapter": 1,
+   "verse": 18,
+   "at": 51,
+   "after": "seen God at any time. The only born Son,",
+   "text": "NU reads “God”"
+  },
+  {
+   "chapter": 1,
+   "verse": 29,
+   "at": 60,
+   "after": " Jesus coming to him, and said, “Behold,",
+   "text": "“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
   },
   {
    "chapter": 1,
    "verse": 39,
-   "at": 137,
+   "at": 136,
    "after": "m that day. It was about the tenth hour.",
-   "text": "4:00 PM."
+   "text": "4:00 p.m."
   },
   {
    "chapter": 1,
    "verse": 41,
    "at": 121,
-   "after": "h!\" (which is, being interpreted, Christ",
-   "text": "\"Messiah\" (Hebrew) and \"Christ\" (Greek) both mean \"Anointed One\"."
+   "after": "h!” (which is, being interpreted, Christ",
+   "text": "“Messiah” (Hebrew) and “Christ” (Greek) both mean “Anointed One”."
+  },
+  {
+   "chapter": 1,
+   "verse": 42,
+   "at": 152,
+   "after": "as” (which is by interpretation, Peter).",
+   "text": "“Cephas” (Aramaic) and “Peter” (Greek) both mean “Rock”."
   },
   {
    "chapter": 2,
    "verse": 6,
-   "at": 118,
+   "at": 115,
    "after": "ifying, containing two or three metretes",
-   "text": "2 to 3 metretes is about 20 to 30 U. S. Gallons, 16 to 25 imperial gallons, or 75 to 115 litres."
+   "text": "2 to 3 metretes is about 20 to 30 U. S. Gallons, or 75 to 115 liters."
   },
   {
    "chapter": 3,
    "verse": 3,
    "at": 73,
-   "after": "ly, I tell you, unless one is born anew,",
-   "text": "The word translated \"anew\" here and in John 3:7 (anothen) also means \"again\" and \"from above\"."
+   "after": "ly I tell you, unless one is born anew, ",
+   "text": "The word translated “anew” here and in John 3:7 (ἄνωθεν) also means “again” and “from above”."
   },
   {
    "chapter": 3,
    "verse": 8,
    "at": 8,
    "after": "The wind",
-   "text": "The same Greek word (pneuma) means wind, breath, and spirit."
+   "text": "The same Greek word (πνεῦμα) means wind, breath, and spirit."
+  },
+  {
+   "chapter": 3,
+   "verse": 16,
+   "at": 54,
+   "after": "ed the world, that he gave his only born",
+   "text": "The phrase “only born” is from the Greek word “μονογενη”, which is sometimes translated “only begotten” or “one and only”."
   },
   {
    "chapter": 3,
    "verse": 36,
    "at": 66,
    "after": "n has eternal life, but one who disobeys",
-   "text": "The same word can be translated \"disobeys\" or \"disbelieves\" in this context."
+   "text": "The same word can be translated “disobeys” or “disbelieves” in this context."
   },
   {
    "chapter": 4,
    "verse": 6,
-   "at": 120,
-   "after": "by the well. It was about the sixth hour",
+   "at": 121,
+   "after": "y the well. It was about the sixth hour.",
    "text": "noon"
+  },
+  {
+   "chapter": 4,
+   "verse": 25,
+   "at": 79,
+   "after": "siah is coming, he who is called Christ.",
+   "text": "“Messiah” (Hebrew) and “Christ” (Greek) both mean “Anointed One”."
   },
   {
    "chapter": 4,
    "verse": 52,
    "at": 120,
-   "after": " to him, \"Yesterday at the seventh hour,",
-   "text": "1:00 P. M."
+   "after": " to him, “Yesterday at the seventh hour,",
+   "text": "1:00 p.m."
+  },
+  {
+   "chapter": 5,
+   "verse": 4,
+   "at": 175,
+   "after": "r was healed of whatever disease he had.",
+   "text": "NU omits from “waiting” in verse 3 to the end of verse 4."
+  },
+  {
+   "chapter": 6,
+   "verse": 7,
+   "at": 41,
+   "after": "hilip answered him, “Two hundred denarii",
+   "text": "A denarius was a silver coin worth about a day’s wages for an agricultural laborer, so 200 denarii would be between 6 and 7 month’s pay."
   },
   {
    "chapter": 6,
@@ -83,24 +153,52 @@
   },
   {
    "chapter": 6,
+   "verse": 20,
+   "at": 30,
+   "after": "But he said to them, “It is I.",
+   "text": "or, I AM"
+  },
+  {
+   "chapter": 6,
    "verse": 31,
    "at": 96,
-   "after": "itten, 'He gave them bread out of heaven",
-   "text": "Greek and Hebrew use the same word for \"heaven\", \"the heavens\", \"the sky\", and \"the air\"."
+   "after": "itten, ‘He gave them bread out of heaven",
+   "text": "Greek and Hebrew use the same word for “heaven”, “the heavens”, “the sky”, and “the air”."
+  },
+  {
+   "chapter": 7,
+   "verse": 42,
+   "at": 64,
+   "after": "d that the Christ comes of the offspring",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 8,
+   "verse": 11,
+   "at": 104,
+   "after": " Go your way. From now on, sin no more.”",
+   "text": "NU includes John 7:53–John 8:11, but puts brackets around it to indicate that the textual critics had less confidence that this was original."
+  },
+  {
+   "chapter": 8,
+   "verse": 24,
+   "at": 88,
+   "after": "r sins; for unless you believe that I am",
+   "text": "or, I AM"
   },
   {
    "chapter": 10,
    "verse": 22,
    "at": 34,
    "after": "It was the Feast of the Dedication",
-   "text": "The \"Feast of the Dedication\" is the Greek name for \"Chanukkah,\" a celebration of the rededication of the Temple."
+   "text": "The “Feast of the Dedication” is the Greek name for “Hanukkah”, a celebration of the rededication of the Temple."
   },
   {
    "chapter": 11,
    "verse": 16,
    "at": 40,
    "after": "Thomas therefore, who is called Didymus,",
-   "text": "\"Didymus\" means \"Twin\""
+   "text": "“Didymus” means “Twin”."
   },
   {
    "chapter": 11,
@@ -110,74 +208,116 @@
    "text": "15 stadia is about 2.8 kilometers or 1.7 miles"
   },
   {
+   "chapter": 11,
+   "verse": 41,
+   "at": 72,
+   "after": " the place where the dead man was lying.",
+   "text": "NU omits “from the place where the dead man was lying.”"
+  },
+  {
    "chapter": 12,
    "verse": 3,
-   "at": 29,
-   "after": "Mary, therefore, took a pound",
+   "at": 27,
+   "after": "Therefore Mary took a pound",
    "text": "a Roman pound of 12 ounces, or about 340 grams"
   },
   {
    "chapter": 12,
    "verse": 5,
-   "at": 57,
-   "after": "ointment sold for three hundred denarii,",
-   "text": "300 denarii was about a year's wages for an agricultural laborer."
+   "at": 56,
+   "after": " ointment sold for three hundred denarii",
+   "text": "300 denarii was about a year’s wages for an agricultural laborer."
+  },
+  {
+   "chapter": 12,
+   "verse": 13,
+   "at": 91,
+   "after": "ut to meet him, and cried out, “Hosanna!",
+   "text": "“Hosanna” means “save us” or “help us, we pray”."
   },
   {
    "chapter": 14,
    "verse": 16,
-   "at": 66,
-   "after": " and he will give you another Counselor,",
-   "text": "Greek Parakleton: Counselor, Helper, Intercessor, Advocate, and Comfortor."
+   "at": 67,
+   "after": "and he will give you another Counselor, ",
+   "text": "Greek παρακλητον: Counselor, Helper, Intercessor, Advocate, and Comforter."
   },
   {
    "chapter": 15,
    "verse": 26,
    "at": 19,
-   "after": "\"When the Counselor",
-   "text": "Greek Parakletos: Counselor, Helper, Advocate, Intercessor, and Comfortor."
+   "after": "“When the Counselor",
+   "text": "Greek Parakletos: Counselor, Helper, Advocate, Intercessor, and Comforter."
   },
   {
    "chapter": 16,
    "verse": 3,
    "at": 25,
    "after": "They will do these things",
-   "text": "TR adds \"to you\""
+   "text": "TR adds “to you”"
   },
   {
    "chapter": 16,
    "verse": 15,
-   "at": 75,
+   "at": 71,
    "after": "are mine; therefore I said that he takes",
-   "text": "TR reads \"will take\" instead of \"takes\""
+   "text": "TR reads “will take” instead of “takes”"
   },
   {
    "chapter": 19,
    "verse": 14,
    "at": 72,
    "after": "f the Passover, at about the sixth hour.",
-   "text": "noon"
+   "text": "“the sixth hour” would have been 6:00 a.m. according to the Roman timekeeping system, or noon for the Jewish timekeeping system in use, then."
   },
   {
    "chapter": 19,
    "verse": 28,
    "at": 25,
    "after": "After this, Jesus, seeing",
-   "text": "NU, TR read \"knowing\" instead of \"seeing\""
+   "text": "NU, TR read “knowing” instead of “seeing”"
   },
   {
    "chapter": 19,
    "verse": 39,
-   "at": 120,
-   "after": "myrrh and aloes, about a hundred pounds.",
+   "at": 126,
+   "after": "and aloes, about a hundred Roman pounds.",
    "text": "100 Roman pounds of 12 ounces each, or about 72 pounds, or 33 Kilograms."
+  },
+  {
+   "chapter": 20,
+   "verse": 16,
+   "at": 65,
+   "after": "” She turned and said to him, “Rabboni!”",
+   "text": "Rabboni is a transliteration of the Aramaic word for “great teacher.”"
+  },
+  {
+   "chapter": 20,
+   "verse": 16,
+   "at": 93,
+   "after": ", “Rabboni!” which is to say, “Teacher!”",
+   "text": "or, Master"
+  },
+  {
+   "chapter": 20,
+   "verse": 24,
+   "at": 46,
+   "after": "omas, one of the twelve, called Didymus,",
+   "text": "or, Twin"
   },
   {
    "chapter": 20,
    "verse": 29,
    "at": 45,
-   "after": " said to him, \"Because you have seen me,",
-   "text": "TR adds \" Thomas,\""
+   "after": " said to him, “Because you have seen me,",
+   "text": "TR adds “Thomas,”"
+  },
+  {
+   "chapter": 21,
+   "verse": 2,
+   "at": 35,
+   "after": "Simon Peter, Thomas called Didymus,",
+   "text": "or, Twin"
   },
   {
    "chapter": 21,
@@ -191,7 +331,7 @@
    "verse": 23,
    "at": 49,
    "after": "ng therefore went out among the brothers",
-   "text": "The word for \"brothers\" here may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here may be also correctly translated “brothers and sisters” or “siblings.”"
   }
  ]
 }
