@@ -902,6 +902,13 @@
           "editionClaim": "This is the 2020 stable text edition of the World English Bible.",
           "status": "page-read",
           "dateChecked": "2026-11-05"
+        },
+        {
+          "name": "eBible.org reply from Michael Johnson (email, answering Tom's question of 2026-11-07)",
+          "status": "recorded-only",
+          "editionClaim": "Recommends new projects use the latest release; says the changes since the text was declared stable are tiny but add up to better quality",
+          "note": "Q1: moving the translator notes to a separate layer is not a change of the actual text; Q2: yes, the name may be used with a line such as \"translator notes shown separately\"; he suggests the more specific names \"World English Bible Classic\" or \"World English Bible Updated\" (see worldenglish.bible); list of changes at worldenglish.bible/webupdates.php",
+          "dateChecked": "2026-11-08"
         }
       ],
       "rights": {
@@ -910,19 +917,22 @@
         "scope": "our copy",
         "repositoryCopyCoverage": "not-established",
         "dateChecked": "2026-11-03",
-        "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists WEB as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
+        "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists WEB as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05.",
+        "permissionNote": "Written reply from eBible.org (Michael Johnson, received 2026-11-07/08): the name may be kept with a line such as \"translator notes shown separately\"; separating the notes is not a change of the actual text. Recorded from the email Tom pasted, not a public page."
       },
       "tier": "B",
-      "tierReason": "Public domain; \"World English Bible\" is an eBible.org trademark and our copy removes translator notes (eBible.org asked)",
+      "tierReason": "Public domain; eBible.org confirmed in writing that we may keep the name \"World English Bible\" with a notes label. Still B because our copy is an older release than the current WEB and its exact release is unidentified",
       "evidenceLevel": "work-identified",
       "obligations": [
-        "Trademark rule (eBible.org copyright page): \"World English Bible\" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. The page does not mention footnotes or translator notes, so whether our removal of inline translator notes is a change of the actual text is not settled (see open questions)."
+        "Trademark rule (eBible.org copyright page): \"World English Bible\" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. The page does not mention footnotes or translator notes, so whether our removal of inline translator notes is a change of the actual text is not settled (see open questions).",
+        "Label: \"World English Bible (translator notes shown separately)\", as eBible.org agreed. eBible.org also suggests \"World English Bible Classic\" or \"World English Bible Updated\" for the specific release."
       ],
       "openQuestions": [
         "Dedication page not read this session.",
         "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition.",
         "Header year 2020: the WEB's own page calls the current text \"the 2020 stable text edition\", so the year is a real edition name, not a mistake. What is not shown is that our scrollmapper copy is that edition (it matches at 99.7% / 99.2%; the copy came with the notes in the text, which we remove). Compare with the dated eBible.org 2020 stable text file to settle it.",
-        "Does removing the inline translator notes (kept in library/bible-notes/WEB) change \"the actual text\" under the eBible.org trademark rule? The page is silent on notes. Ask eBible.org or keep the notes layer and say so in the label."
+        "Closed 2026-11-08: translator-notes question answered by eBible.org (see permissionNote).",
+        "Tom to decide: keep our older copy and name its release (Classic?), or replace it with the latest eBible.org release, which eBible.org recommends for new projects. Our text is an older wording than the current WEB (about 73% match to the revised text), so \"Updated\" would not describe it."
       ],
       "acquisition": {
         "evidenceClass": "measured",
