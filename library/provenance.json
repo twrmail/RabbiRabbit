@@ -912,6 +912,13 @@
           "agreement": "30,796 of 31,103 verses equal after the divine name is normalised (99.0%); 1,613 of 756,253 words differ, mostly Psalm superscriptions, Selah marks and later eBible.org updates",
           "editionClaim": "older than our file by about seven months",
           "dateChecked": "2026-11-08"
+        },
+        {
+          "name": "eBible.org reply from Michael Johnson (email answering Tom's questions of 2026-11-07)",
+          "status": "recorded-only",
+          "editionClaim": "Recommends new projects use the latest release; changes since \"stable\" are small but add up to better quality",
+          "note": "Moving the translator notes to a separate layer is not a change of the actual text; the name may be kept with a line such as \"translator notes shown separately\"; he also suggests the names \"World English Bible Classic\" or \"World English Bible Updated\" (worldenglish.bible); list of changes at worldenglish.bible/webupdates.php",
+          "dateChecked": "2026-11-08"
         }
       ],
       "rights": {
@@ -922,7 +929,7 @@
         "statementText": "The World English Bible is in the Public Domain. That means that it is not copyrighted. However, \"World English Bible\" is a Trademark of eBible.org.",
         "dateChecked": "2026-11-08",
         "digitalEditionLicence": "Text: public domain (eBible.org). We hold eBible.org's own USFM zip, so the digital edition and the published edition are the same file. The earlier scrollmapper README statement no longer applies to our text.",
-        "permissionNote": null
+        "permissionNote": "Written reply from eBible.org (Michael Johnson, received 2026-11-07/08): the name may be kept with a line such as \"translator notes shown separately\"; separating the notes is not a change of the actual text. Recorded from the email Tom pasted, not a public page."
       },
       "tier": "A",
       "tierReason": "Public domain, text taken straight from the publisher's file (eBible.org, 30 Oct 2026); eBible.org confirmed in writing that the name may be kept with a notes label",
