@@ -3,12 +3,153 @@
  "layer": "translators-notes",
  "book": "DEU",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 0,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 0,
- "notes": []
+ "count": 20,
+ "notes": [
+  {
+   "chapter": 1,
+   "verse": 3,
+   "at": 144,
+   "after": "of Israel according to all that the LORD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 1,
+   "verse": 6,
+   "at": 17,
+   "after": "“The LORD our God",
+   "text": "The Hebrew word rendered “God” is “ אֱלֹהִ֑ים” (Elohim)."
+  },
+  {
+   "chapter": 1,
+   "verse": 8,
+   "at": 7,
+   "after": "Behold,",
+   "text": "“Behold”, from “ הִנֵּה”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
+  {
+   "chapter": 1,
+   "verse": 8,
+   "at": 177,
+   "after": "b—to give to them and to their offspring",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 3,
+   "verse": 11,
+   "at": 169,
+   "after": "ah of the children of Ammon? Nine cubits",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
+  },
+  {
+   "chapter": 3,
+   "verse": 24,
+   "at": 5,
+   "after": "“Lord",
+   "text": "The word translated “Lord” is “Adonai.”"
+  },
+  {
+   "chapter": 5,
+   "verse": 11,
+   "at": 42,
+   "after": "ou shall not misuse the name of the LORD",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 5,
+   "verse": 11,
+   "at": 52,
+   "after": "ot misuse the name of the LORD your God;",
+   "text": "or, You shall not take the name of the LORD your God in vain;"
+  },
+  {
+   "chapter": 22,
+   "verse": 12,
+   "at": 33,
+   "after": "You shall make yourselves fringes",
+   "text": "or, tassels"
+  },
+  {
+   "chapter": 22,
+   "verse": 19,
+   "at": 50,
+   "after": " fine him one hundred shekels of silver,",
+   "text": "A shekel is about 10 grams or about 0.35 ounces, so 100 shekels is about a kilogram or 2.2 pounds."
+  },
+  {
+   "chapter": 22,
+   "verse": 29,
+   "at": 75,
+   "after": " give to the lady’s father fifty shekels",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 23,
+   "verse": 18,
+   "at": 80,
+   "after": "tute, or the wages of a male prostitute,",
+   "text": "literally, dog"
+  },
+  {
+   "chapter": 26,
+   "verse": 5,
+   "at": 61,
+   "after": "say before the LORD your God, “My father",
+   "text": "or, forefather"
+  },
+  {
+   "chapter": 27,
+   "verse": 20,
+   "at": 27,
+   "after": "‘Cursed is he who lies with",
+   "text": "i.e., has sexual relations with"
+  },
+  {
+   "chapter": 28,
+   "verse": 58,
+   "at": 145,
+   "after": "this glorious and fearful name, THE LORD",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 32,
+   "verse": 22,
+   "at": 66,
+   "after": "y anger, that burns to the lowest Sheol,",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 32,
+   "verse": 43,
+   "at": 184,
+   "after": "onement for his land and for his people.",
+   "text": "For this verse, LXX reads: Rejoice, you heavens, with him, and let all the angels of God worship him; rejoice you Gentiles, with his people, and let all the sons of God strengthen themselves in him; for he will avenge the blood of his sons, and he will give vengeance, and recompense justice to his enemies, and will reward them that hate him; and the Lord shall purge the land of his people."
+  },
+  {
+   "chapter": 33,
+   "verse": 2,
+   "at": 179,
+   "after": "his right hand was a fiery law for them.",
+   "text": "another manuscript reads “He came with myriads of holy ones from the south, from his mountain slopes.”"
+  },
+  {
+   "chapter": 33,
+   "verse": 16,
+   "at": 98,
+   "after": " good will of him who lived in the bush.",
+   "text": "i.e., the burning bush of Exodus 3:3-4."
+  },
+  {
+   "chapter": 34,
+   "verse": 3,
+   "at": 14,
+   "after": "and the south,",
+   "text": "or, Negev"
+  }
+ ]
 }

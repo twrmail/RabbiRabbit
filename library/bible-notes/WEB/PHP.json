@@ -3,41 +3,62 @@
  "layer": "translators-notes",
  "book": "PHP",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 0,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 4,
+ "count": 7,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 43,
+   "after": "l and Timothy, servants of Jesus Christ,",
+   "text": "“Christ” means “Anointed One”."
+  },
   {
    "chapter": 1,
    "verse": 1,
    "at": 117,
    "after": " who are at Philippi, with the overseers",
-   "text": "The word translated \"overseers\" (episkopos) can also be translated superintendents, guardians, curators, or bishops."
+   "text": "or, superintendents, or bishops"
   },
   {
    "chapter": 1,
    "verse": 1,
-   "at": 129,
-   "after": "Philippi, with the overseers and deacons",
-   "text": "Or, servants"
+   "at": 131,
+   "after": "ilippi, with the overseers and servants:",
+   "text": "Or, deacons"
   },
   {
    "chapter": 1,
    "verse": 5,
    "at": 20,
    "after": "for your partnership",
-   "text": "The word translated \"partnership\" (koinonia) also means \"fellowship\" and \"sharing.\""
+   "text": "The word translated “partnership” (κοινωνίᾳ) also means “fellowship” and “sharing”."
   },
   {
    "chapter": 1,
    "verse": 12,
    "at": 40,
    "after": "Now I desire to have you know, brothers,",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 1,
+   "verse": 13,
+   "at": 45,
+   "after": "at it became evident to the whole palace",
+   "text": "or, praetorian"
+  },
+  {
+   "chapter": 1,
+   "verse": 26,
+   "at": 18,
+   "after": "that your boasting",
+   "text": "or, rejoicing"
   }
  ]
 }

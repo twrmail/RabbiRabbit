@@ -3,41 +3,104 @@
  "layer": "translators-notes",
  "book": "ISA",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 0,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 7,
+ "count": 50,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 2,
+   "at": 46,
+   "after": "heavens, and listen, earth; for the LORD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 1,
+   "verse": 4,
+   "at": 58,
+   "after": "a people loaded with iniquity, offspring",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 1,
+   "verse": 10,
+   "at": 72,
+   "after": " of Sodom! Listen to the law of our God,",
+   "text": "The Hebrew word rendered “God” is “ אֱלֹהִ֑ים” (Elohim)."
+  },
+  {
+   "chapter": 1,
+   "verse": 24,
+   "at": 19,
+   "after": "Therefore the Lord,",
+   "text": "The word translated “Lord” is “Adonai.”"
+  },
+  {
+   "chapter": 1,
+   "verse": 25,
+   "at": 94,
+   "after": " dross, and will take away all your tin.",
+   "text": "tin is a metal that is separated from silver during the refining and purification process."
+  },
+  {
+   "chapter": 3,
+   "verse": 1,
+   "at": 12,
+   "after": "For, behold,",
+   "text": "“Behold”, from “ הִנֵּה”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
+  {
+   "chapter": 3,
+   "verse": 1,
+   "at": 26,
+   "after": "For, behold, the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 3,
+   "verse": 8,
+   "at": 105,
+   "after": "e and their doings are against the LORD,",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 3,
+   "verse": 15,
+   "at": 94,
+   "after": "he face of the poor?” says the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
   {
    "chapter": 5,
    "verse": 10,
    "at": 13,
    "after": "For ten acres",
-   "text": "Literally, ten yokes, or the amount of land that ten yokes of oxen can plow in one day, which is about 10 acres or 4 hectares."
+   "text": "literally, ten yokes, or the amount of land that ten yokes of oxen can plow in one day, which is about 10 acres or 4 hectares."
   },
   {
    "chapter": 5,
    "verse": 10,
    "at": 47,
    "after": " acres of vineyard shall yield one bath,",
-   "text": "1 bath is about 22 litres, 5.8 U. S. gallons, or 4.8 imperial gallons"
+   "text": "1 bath is about 22 liters or 5.8 U. S. gallons"
   },
   {
    "chapter": 5,
    "verse": 10,
    "at": 59,
-   "after": "neyard shall yield one bath, And a homer",
-   "text": "1 homer is about 220 litres or 6 bushels"
+   "after": "neyard shall yield one bath, and a homer",
+   "text": "1 homer is about 220 liters or 6 bushels"
   },
   {
    "chapter": 5,
    "verse": 10,
-   "at": 89,
-   "after": "nd a homer of seed shall yield an ephah.",
-   "text": "1 ephah is about 22 litres or 0.6 bushels or about 2 pecks)-- only one tenth of what was sown."
+   "at": 90,
+   "after": "d a homer of seed shall yield an ephah.”",
+   "text": "1 ephah is about 22 liters or 0.6 bushels or about 2 pecks—only one tenth of what was sown."
   },
   {
    "chapter": 5,
@@ -51,14 +114,252 @@
    "verse": 14,
    "at": 132,
    "after": "a son, and shall call his name Immanuel.",
-   "text": "\"Immanuel\" means \"God with us.\""
+   "text": "“Immanuel” means “God with us”."
+  },
+  {
+   "chapter": 7,
+   "verse": 23,
+   "at": 110,
+   "after": "d vines worth a thousand silver shekels,",
+   "text": "A shekel is about 10 grams or about 0.35 ounces, so 1000 shekels is about 10 kilograms or 22 pounds."
   },
   {
    "chapter": 8,
    "verse": 1,
-   "at": 102,
-   "after": "a man's pen, 'For Maher Shalal Hash Baz;",
-   "text": "\"Maher Shalal Hash Baz\" means \"quick to the plunder, swift to the spoil.\""
+   "at": 105,
+   "after": " man’s pen, ‘For Maher Shalal Hash Baz’;",
+   "text": "“Maher Shalal Hash Baz” means “quick to the plunder, swift to the prey”."
+  },
+  {
+   "chapter": 10,
+   "verse": 16,
+   "at": 23,
+   "after": "Therefore the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 10,
+   "verse": 20,
+   "at": 187,
+   "after": "struck them, but shall lean on the LORD,",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 10,
+   "verse": 23,
+   "at": 17,
+   "after": "For the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 12,
+   "verse": 1,
+   "at": 63,
+   "after": "y, “I will give thanks to you, the LORD;",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 12,
+   "verse": 2,
+   "at": 80,
+   "after": "t, and will not be afraid; for the LORD,",
+   "text": "Hebrew: יה Yah"
+  },
+  {
+   "chapter": 12,
+   "verse": 2,
+   "at": 90,
+   "after": "l not be afraid; for the LORD, the LORD,",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 14,
+   "verse": 9,
+   "at": 5,
+   "after": "Sheol",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 14,
+   "verse": 11,
+   "at": 35,
+   "after": "Your pomp is brought down to Sheol,",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 14,
+   "verse": 15,
+   "at": 39,
+   "after": "Yet you shall be brought down to Sheol,",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 19,
+   "verse": 4,
+   "at": 116,
+   "after": "will rule over them,” says the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 22,
+   "verse": 5,
+   "at": 88,
+   "after": "wn, and of perplexity from the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 22,
+   "verse": 12,
+   "at": 26,
+   "after": "In that day, the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 22,
+   "verse": 14,
+   "at": 8,
+   "after": "The LORD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 25,
+   "verse": 6,
+   "at": 82,
+   "after": "make all peoples a feast of choice meat,",
+   "text": "literally, fat things"
+  },
+  {
+   "chapter": 26,
+   "verse": 4,
+   "at": 17,
+   "after": "Trust in the LORD",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 26,
+   "verse": 4,
+   "at": 43,
+   "after": "st in the LORD forever; for in the LORD,",
+   "text": "Hebrew: יה Yah"
+  },
+  {
+   "chapter": 28,
+   "verse": 15,
+   "at": 96,
+   "after": "ath, and we are in agreement with Sheol.",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 28,
+   "verse": 18,
+   "at": 73,
+   "after": " annulled, and your agreement with Sheol",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 28,
+   "verse": 22,
+   "at": 124,
+   "after": "decree of destruction from the Lord, GOD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 29,
+   "verse": 2,
+   "at": 110,
+   "after": ". She shall be to me as an altar hearth.",
+   "text": "or, Ariel"
+  },
+  {
+   "chapter": 34,
+   "verse": 14,
+   "at": 123,
+   "after": "y to his fellow. Yes, the night creature",
+   "text": "literally, lilith, which could also be a night demon or night monster"
+  },
+  {
+   "chapter": 38,
+   "verse": 1,
+   "at": 124,
+   "after": " came to him, and said to him, “The LORD",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 38,
+   "verse": 10,
+   "at": 63,
+   "after": "of my life I go into the gates of Sheol.",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 38,
+   "verse": 11,
+   "at": 30,
+   "after": "I said, “I won’t see the LORD,",
+   "text": "Hebrew: יה Yah"
+  },
+  {
+   "chapter": 38,
+   "verse": 11,
+   "at": 39,
+   "after": "I said, “I won’t see the LORD, the LORD",
+   "text": "Hebrew: יה Yah"
+  },
+  {
+   "chapter": 38,
+   "verse": 18,
+   "at": 9,
+   "after": "For Sheol",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 45,
+   "verse": 5,
+   "at": 87,
+   "after": "s me, there is no God. I will strengthen",
+   "text": "or, equip"
+  },
+  {
+   "chapter": 52,
+   "verse": 15,
+   "at": 18,
+   "after": "so he will cleanse",
+   "text": "or, sprinkle"
+  },
+  {
+   "chapter": 53,
+   "verse": 11,
+   "at": 54,
+   "after": "ering of his soul, he will see the light",
+   "text": "So read the Dead Sea Scrolls and Septuagint. Masoretic Text omits “the light”."
+  },
+  {
+   "chapter": 57,
+   "verse": 9,
+   "at": 123,
+   "after": "ff, and degraded yourself even to Sheol.",
+   "text": "Sheol is the place of the dead."
+  },
+  {
+   "chapter": 61,
+   "verse": 1,
+   "at": 217,
+   "after": "ives and release to those who are bound,",
+   "text": "LXX and DSS add: recovery of sight to the blind"
+  },
+  {
+   "chapter": 62,
+   "verse": 4,
+   "at": 123,
+   "after": " more; but you will be called Hephzibah,",
+   "text": "Hephzibah means “I delight in her”."
+  },
+  {
+   "chapter": 62,
+   "verse": 4,
+   "at": 145,
+   "after": " called Hephzibah, and your land Beulah;",
+   "text": "Beulah means “married”"
   }
  ]
 }

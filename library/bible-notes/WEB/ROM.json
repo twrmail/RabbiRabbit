@@ -3,48 +3,83 @@
  "layer": "translators-notes",
  "book": "ROM",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 59,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 17,
+ "count": 19,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 32,
+   "after": "Paul, a servant of Jesus Christ,",
+   "text": "“Christ” means “Anointed One”."
+  },
+  {
+   "chapter": 1,
+   "verse": 3,
+   "at": 49,
+   "after": "g his Son, who was born of the offspring",
+   "text": "or, seed"
+  },
   {
    "chapter": 3,
    "verse": 25,
-   "at": 45,
-   "after": "God set forth to be an atoning sacrifice",
+   "at": 40,
+   "after": "whom God sent to be an atoning sacrifice",
    "text": "or, a propitiation"
   },
   {
    "chapter": 7,
    "verse": 1,
    "at": 27,
-   "after": "Or don't you know, brothers",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "after": "Or don’t you know, brothers",
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 8,
+   "verse": 1,
+   "at": 140,
+   "after": " the flesh, but according to the Spirit.",
+   "text": "NU omits “who don’t walk according to the flesh, but according to the Spirit”"
   },
   {
    "chapter": 8,
    "verse": 15,
-   "at": 122,
-   "after": "pirit of adoption, by whom we cry, \"Abba",
-   "text": "Abba is a Chaldee word for father or daddy, often used affectionately and respectfully in prayer to our Father in heaven."
+   "at": 123,
+   "after": "irit of adoption, by whom we cry, “Abba!",
+   "text": "Abba is an Aramaic word for “Father” or “Daddy”, which can be used affectionately and respectfully in prayer to our Father in heaven."
   },
   {
    "chapter": 8,
    "verse": 29,
    "at": 134,
    "after": "ht be the firstborn among many brothers.",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 9,
+   "verse": 11,
+   "at": 160,
+   "after": "and, not of works, but of him who calls,",
+   "text": "NU puts the phrase “not of works, but of him who calls” at the beginning of verse 12 instead of the end of verse 11."
   },
   {
    "chapter": 9,
    "verse": 29,
-   "at": 52,
-   "after": "s said before, \"Unless the Lord of Hosts",
-   "text": "Greek: Sabaoth"
+   "at": 53,
+   "after": " said before, “Unless the Lord of Armies",
+   "text": "Greek: Sabaoth (or Hebrew: Tze’va’ot)"
+  },
+  {
+   "chapter": 9,
+   "verse": 33,
+   "at": 31,
+   "after": "even as it is written, “Behold,",
+   "text": "“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
   },
   {
    "chapter": 10,
@@ -56,76 +91,55 @@
   {
    "chapter": 11,
    "verse": 25,
-   "at": 29,
-   "after": "For I don't desire, brothers,",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "at": 48,
+   "after": "n’t desire you to be ignorant, brothers,",
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 13,
    "verse": 9,
-   "at": 162,
-   "after": "false testimony,\" \"You shall not covet,\"",
-   "text": "TR adds \"You shall not give false testimony,\""
+   "at": 101,
+   "after": "hall not murder,” “You shall not steal,”",
+   "text": "TR adds “You shall not give false testimony,”"
   },
   {
    "chapter": 14,
-   "verse": 23,
-   "at": 563,
+   "verse": 26,
+   "at": 79,
    "after": "ist, to whom be the glory forever! Amen.",
    "text": "TR places verses 24-26 after Romans 16:24 as verses 25-27."
   },
   {
    "chapter": 15,
    "verse": 7,
-   "at": 64,
-   "after": "other, even as Christ also received you,",
-   "text": "TR reads \"us\" instead of \"you\""
+   "at": 63,
+   "after": "other, even as Christ also accepted you,",
+   "text": "TR reads “us” instead of “you”"
   },
   {
    "chapter": 15,
    "verse": 14,
-   "at": 49,
-   "after": "am also persuaded about you, my brothers",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "at": 50,
+   "after": "m also persuaded about you, my brothers,",
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 16,
    "verse": 1,
    "at": 53,
    "after": "you Phoebe, our sister, who is a servant",
-   "text": "literally, deacon"
+   "text": "or, deacon"
   },
   {
    "chapter": 16,
    "verse": 14,
    "at": 69,
    "after": "rmes, Patrobas, Hermas, and the brothers",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 16,
    "verse": 25,
-   "at": 0,
-   "after": "",
-   "text": "See Romans 14:23"
-  },
-  {
-   "chapter": 16,
-   "verse": 26,
-   "at": 0,
-   "after": "",
-   "text": "See Romans 14:23"
-  },
-  {
-   "chapter": 16,
-   "verse": 27,
-   "at": 0,
-   "after": "",
-   "text": "See Romans 14:23"
-  },
-  {
-   "chapter": 16,
-   "verse": 27,
    "at": 0,
    "after": "",
    "text": "TR places Romans 14:24-26 at the end of Romans instead of at the end of chapter 14, and numbers these verses 16:25-27."

@@ -3,27 +3,251 @@
  "layer": "translators-notes",
  "book": "LEV",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 0,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 2,
+ "count": 34,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 1,
+   "at": 8,
+   "after": "The LORD",
+   "text": "When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “ יהוה”, usually pronounced Yahweh)."
+  },
+  {
+   "chapter": 2,
+   "verse": 13,
+   "at": 121,
+   "after": "low the salt of the covenant of your God",
+   "text": "The Hebrew word rendered “God” is “ אֱלֹהִ֑ים” (Elohim)."
+  },
+  {
+   "chapter": 5,
+   "verse": 11,
+   "at": 153,
+   "after": "ich he has sinned, one tenth of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 5,
+   "verse": 15,
+   "at": 252,
+   "after": "lver by shekels, according to the shekel",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 6,
+   "verse": 20,
+   "at": 136,
+   "after": "en he is anointed: one tenth of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 10,
+   "verse": 16,
+   "at": 74,
+   "after": "e goat of the sin offering, and, behold,",
+   "text": "“Behold”, from “ הִנֵּה”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
+  {
+   "chapter": 11,
+   "verse": 5,
+   "at": 10,
+   "after": "The hyrax,",
+   "text": "or rock badger, or cony"
+  },
+  {
+   "chapter": 13,
+   "verse": 48,
+   "at": 30,
+   "after": "whether it is in warp or woof;",
+   "text": "warp and woof are the vertical and horizontal threads in woven cloth"
+  },
+  {
+   "chapter": 14,
+   "verse": 10,
+   "at": 128,
+   "after": "without defect, three tenths of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 14,
+   "verse": 10,
+   "at": 191,
+   "after": "al offering, mixed with oil, and one log",
+   "text": "a log is a liquid measure of about 300 ml or 10 ounces"
+  },
+  {
+   "chapter": 14,
+   "verse": 21,
+   "at": 164,
+   "after": "ement for him, and one tenth of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 14,
+   "verse": 21,
+   "at": 224,
+   "after": " with oil for a meal offering, and a log",
+   "text": "a log is a liquid measure of about 300 ml or 10 ounces"
+  },
+  {
+   "chapter": 18,
+   "verse": 21,
+   "at": 126,
+   "after": "ane the name of your God. I am the LORD.",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 19,
+   "verse": 12,
+   "at": 90,
+   "after": "ane the name of your God. I am the LORD.",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
   {
    "chapter": 19,
    "verse": 16,
-   "at": 105,
-   "after": "neither shall you stand against the life",
-   "text": "literally, \"blood\""
+   "at": 93,
+   "after": "eople. “‘You shall not endanger the life",
+   "text": "literally, “blood”"
   },
   {
    "chapter": 19,
    "verse": 23,
    "at": 123,
    "after": "ou shall count their fruit as forbidden.",
-   "text": "literally, \"uncircumcised\""
+   "text": "literally, “uncircumcised”"
+  },
+  {
+   "chapter": 19,
+   "verse": 36,
+   "at": 57,
+   "after": "st balances, just weights, a just ephah,",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 19,
+   "verse": 36,
+   "at": 73,
+   "after": "t weights, a just ephah, and a just hin.",
+   "text": "A hin is about 6.5 liters or 1.7 gallons."
+  },
+  {
+   "chapter": 20,
+   "verse": 2,
+   "at": 169,
+   "after": "n Israel, who gives any of his offspring",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 22,
+   "verse": 2,
+   "at": 178,
+   "after": "not profane my holy name. I am the LORD.",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 22,
+   "verse": 32,
+   "at": 103,
+   "after": "ng the children of Israel. I am the LORD",
+   "text": "LORD or GOD in all caps is from the Hebrew יהוה Yahweh except when otherwise noted as being from the short form יה Yah."
+  },
+  {
+   "chapter": 23,
+   "verse": 13,
+   "at": 57,
+   "after": " with it shall be two tenths of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 23,
+   "verse": 13,
+   "at": 221,
+   "after": "ll be of wine, the fourth part of a hin.",
+   "text": "A hin is about 6.5 liters or 1.7 gallons."
+  },
+  {
+   "chapter": 23,
+   "verse": 17,
+   "at": 110,
+   "after": " offering made of two tenths of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 23,
+   "verse": 34,
+   "at": 109,
+   "after": "his seventh month is the feast of booths",
+   "text": "or, feast of tents, or Succoth"
+  },
+  {
+   "chapter": 23,
+   "verse": 42,
+   "at": 37,
+   "after": "You shall dwell in temporary shelters",
+   "text": "or, booths"
+  },
+  {
+   "chapter": 23,
+   "verse": 42,
+   "at": 122,
+   "after": "srael shall dwell in temporary shelters,",
+   "text": "or, booths"
+  },
+  {
+   "chapter": 23,
+   "verse": 43,
+   "at": 96,
+   "after": "of Israel to dwell in temporary shelters",
+   "text": "or, booths"
+  },
+  {
+   "chapter": 24,
+   "verse": 5,
+   "at": 79,
+   "after": "elve cakes of it: two tenths of an ephah",
+   "text": "1 ephah is about 22 liters or about 2/3 of a bushel"
+  },
+  {
+   "chapter": 27,
+   "verse": 3,
+   "at": 123,
+   "after": "ekels of silver, according to the shekel",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 27,
+   "verse": 16,
+   "at": 150,
+   "after": "o the seed for it. The sowing of a homer",
+   "text": "1 homer is about 220 liters or 6 bushels"
+  },
+  {
+   "chapter": 27,
+   "verse": 16,
+   "at": 193,
+   "after": " barley shall be valued at fifty shekels",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
+  },
+  {
+   "chapter": 27,
+   "verse": 25,
+   "at": 84,
+   "after": "e shekel of the sanctuary: twenty gerahs",
+   "text": "A gerah is about 0.5 grams or about 7.7 grains."
+  },
+  {
+   "chapter": 27,
+   "verse": 25,
+   "at": 99,
+   "after": " sanctuary: twenty gerahs to the shekel.",
+   "text": "A shekel is about 10 grams or about 0.35 ounces."
   }
  ]
 }

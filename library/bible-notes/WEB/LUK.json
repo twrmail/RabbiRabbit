@@ -3,48 +3,90 @@
  "layer": "translators-notes",
  "book": "LUK",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 25,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 32,
+ "count": 49,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 20,
+   "at": 7,
+   "after": "Behold,",
+   "text": "“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
+  {
+   "chapter": 1,
+   "verse": 37,
+   "at": 41,
+   "after": "or nothing spoken by God is impossible.”",
+   "text": "or, “For everything spoken by God is possible.”"
+  },
+  {
+   "chapter": 1,
+   "verse": 55,
+   "at": 56,
+   "after": "ur fathers, to Abraham and his offspring",
+   "text": "or, seed"
+  },
+  {
+   "chapter": 2,
+   "verse": 11,
+   "at": 72,
+   "after": "in David’s city, a Savior, who is Christ",
+   "text": "“Christ” means “Anointed One”."
+  },
   {
    "chapter": 2,
    "verse": 26,
    "at": 113,
-   "after": "th before he had seen the Lord's Christ.",
-   "text": "\"Christ\" (Greek) and \"Messiah\" (Hebrew) both mean \"Anointed One\""
+   "after": "th before he had seen the Lord’s Christ.",
+   "text": "“Christ” (Greek) and “Messiah” (Hebrew) both mean “Anointed One”"
+  },
+  {
+   "chapter": 3,
+   "verse": 19,
+   "at": 23,
+   "after": "but Herod the tetrarch,",
+   "text": "a tetrarch is one of four governors of a province"
   },
   {
    "chapter": 3,
    "verse": 19,
    "at": 73,
-   "after": "roved by him for Herodias, his brother's",
-   "text": "TR reads \"brother Philip's instead of brother's\""
+   "after": "roved by him for Herodias, his brother’s",
+   "text": "TR reads “brother Philip’s” instead of “brother’s”"
   },
   {
    "chapter": 3,
    "verse": 33,
-   "at": 56,
-   "after": "adab, the son of Aram, the son of Joram,",
-   "text": "TR omits \"the son of Joram\""
+   "at": 38,
+   "after": "the son of Amminadab, the son of Aram,",
+   "text": "NU reads “Admin, the son of Arni” instead of “Aram”"
+  },
+  {
+   "chapter": 4,
+   "verse": 18,
+   "at": 136,
+   "after": " has sent me to heal the broken hearted,",
+   "text": "NU omits “to heal the broken hearted”"
   },
   {
    "chapter": 6,
    "verse": 26,
    "at": 4,
    "after": "Woe,",
-   "text": "TR adds \"to you\""
+   "text": "TR adds “to you”"
   },
   {
    "chapter": 6,
    "verse": 26,
    "at": 9,
    "after": "Woe, when",
-   "text": "TR adds \"all\""
+   "text": "TR adds “all”"
   },
   {
    "chapter": 6,
@@ -55,45 +97,80 @@
   },
   {
    "chapter": 7,
+   "verse": 12,
+   "at": 102,
+   "after": " was dead was carried out, the only born",
+   "text": "The phrase “only born” is from the Greek word “μονογενη”, which is sometimes translated “only begotten” or “one and only”."
+  },
+  {
+   "chapter": 7,
    "verse": 31,
-   "at": 18,
-   "after": "But the Lord said,",
-   "text": "So reads TR. MT omits \"But the Lord said,\""
+   "at": 0,
+   "after": "",
+   "text": "TR adds “But the Lord said,”"
   },
   {
    "chapter": 8,
    "verse": 3,
-   "at": 97,
-   "after": " and many others; who ministered to them",
-   "text": "TR reads \"him\" instead of \"them\""
+   "at": 89,
+   "after": "Susanna; and many others who served them",
+   "text": "TR reads “him” instead of “them”"
+  },
+  {
+   "chapter": 8,
+   "verse": 42,
+   "at": 23,
+   "after": "for he had an only born",
+   "text": "The phrase “only born” is from the Greek word “μονογενη”, which is sometimes translated “only begotten” or “one and only”."
+  },
+  {
+   "chapter": 8,
+   "verse": 44,
+   "at": 38,
+   "after": "came behind him and touched the fringe",
+   "text": "or, tassel"
   },
   {
    "chapter": 9,
    "verse": 1,
    "at": 20,
    "after": "He called the twelve",
-   "text": "TR reads \"his twelve disciples\" instead of \"the twelve\""
+   "text": "TR reads “his twelve disciples” instead of “the twelve”"
+  },
+  {
+   "chapter": 9,
+   "verse": 10,
+   "at": 127,
+   "after": "and withdrew apart to a desert region of",
+   "text": "NU omits “a desert region of”."
   },
   {
    "chapter": 9,
    "verse": 23,
    "at": 93,
    "after": "let him deny himself, take up his cross,",
-   "text": "TR, NU add \"daily\""
+   "text": "TR, NU add “daily”"
   },
   {
    "chapter": 9,
    "verse": 31,
-   "at": 50,
-   "after": "ed in glory, and spoke of his departure,",
-   "text": "Literally, \"exodus\""
+   "at": 49,
+   "after": "red in glory and spoke of his departure,",
+   "text": "literally, “exodus”"
+  },
+  {
+   "chapter": 9,
+   "verse": 38,
+   "at": 110,
+   "after": "o look at my son, for he is my only born",
+   "text": "The phrase “only born” is from the Greek word “μονογενη”, which is sometimes translated “only begotten” or “one and only”."
   },
   {
    "chapter": 10,
    "verse": 1,
    "at": 101,
    "after": "s, and sent them two by two ahead of him",
-   "text": "literally, \"before his face\""
+   "text": "literally, “before his face”"
   },
   {
    "chapter": 10,
@@ -105,7 +182,7 @@
   {
    "chapter": 12,
    "verse": 5,
-   "at": 108,
+   "at": 107,
    "after": " killed, has power to cast into Gehenna.",
    "text": "or, Hell"
   },
@@ -114,111 +191,153 @@
    "verse": 6,
    "at": 48,
    "after": "five sparrows sold for two assaria coins",
-   "text": "An assarion was a small copper coin worth about an hour's wages for an agricultural laborer."
+   "text": "An assarion was a small copper coin worth about an hour’s wages for an agricultural laborer."
+  },
+  {
+   "chapter": 12,
+   "verse": 25,
+   "at": 45,
+   "after": " of you by being anxious can add a cubit",
+   "text": "A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters."
   },
   {
    "chapter": 12,
    "verse": 59,
-   "at": 91,
+   "at": 90,
    "after": "until you have paid the very last penny.",
-   "text": "Literally, lepton. A lepton is a very small brass Jewish coin worth half a Roman quadrans each, which is worth a quarter of the copper assarion. Lepta are worth less than 1% of an agricultural worker's daily wages."
+   "text": "literally, lepton. A lepton is a very small brass Jewish coin worth half a Roman quadrans each, which is worth a quarter of the copper assarion. Lepta are worth less than 1% of an agricultural worker’s daily wages."
   },
   {
    "chapter": 13,
    "verse": 21,
-   "at": 62,
-   "after": "h a woman took and hid in three measures",
-   "text": "literally, three sata. 3 sata is about 39 litres or a bit more than a bushel"
+   "at": 63,
+   "after": " a woman took and hid in three measures ",
+   "text": "literally, three sata. 3 sata is about 39 liters or a bit more than a bushel."
   },
   {
    "chapter": 14,
    "verse": 5,
    "at": 44,
-   "after": "nswered them, \"Which of you, if your son",
-   "text": "TR reads \"donkey\" instead of \"son\""
+   "after": "nswered them, “Which of you, if your son",
+   "text": "TR reads “donkey” instead of “son”"
+  },
+  {
+   "chapter": 14,
+   "verse": 24,
+   "at": 120,
+   "after": "For many are called, but few are chosen.",
+   "text": "RP MT includes the last sentence. TR, NU, and FH MT omit: For many are called, but few are chosen."
+  },
+  {
+   "chapter": 14,
+   "verse": 26,
+   "at": 45,
+   "after": "nyone comes to me, and doesn’t disregard",
+   "text": "or, hate"
   },
   {
    "chapter": 15,
    "verse": 8,
-   "at": 37,
-   "after": "Or what woman, if she had ten drachma",
-   "text": "A drachma coin was worth about 2 days wages for an agricultural laborer."
+   "at": 38,
+   "after": "“Or what woman, if she had ten drachma",
+   "text": "A drachma coin was worth about a days wages for an agricultural laborer."
   },
   {
    "chapter": 16,
    "verse": 6,
    "at": 25,
-   "after": "He said, 'A hundred batos",
-   "text": "100 batos is about 395 litres, 104 U. S. gallons, or 87 imperial gallons."
+   "after": "He said, ‘A hundred batos",
+   "text": "100 batos is about 395 liters or 104 U. S. gallons."
   },
   {
    "chapter": 16,
    "verse": 7,
    "at": 72,
-   "after": "ch do you owe?' He said, 'A hundred cors",
-   "text": " 100 cors = about 3,910 litres or 600 bushels. "
+   "after": "ch do you owe?’ He said, ‘A hundred cors",
+   "text": "100 cors = about 2,110 liters or 600 bushels."
   },
   {
    "chapter": 16,
    "verse": 13,
    "at": 178,
-   "after": " You aren't able to serve God and mammon",
-   "text": "\"Mammon\" refers to riches or a false god of wealth."
+   "after": "ou aren’t able to serve God and Mammon.”",
+   "text": "“Mammon” refers to riches or a false god of wealth."
+  },
+  {
+   "chapter": 16,
+   "verse": 23,
+   "at": 9,
+   "after": "In Hades,",
+   "text": "or, Hell"
   },
   {
    "chapter": 17,
    "verse": 36,
    "at": 0,
    "after": "",
-   "text": "Some Greek manuscripts add: \"Two will be in the field, the one taken, and the other left.\""
+   "text": "Some Greek manuscripts add: “Two will be in the field: the one taken, and the other left.”"
   },
   {
    "chapter": 19,
    "verse": 13,
    "at": 60,
-   "after": "ts of his, and gave them ten mina coins,",
-   "text": "10 minas was more than 3 year's wages for an agricultural laborer."
+   "after": "ts of his and gave them ten mina coins, ",
+   "text": "10 minas was more than 3 years’ wages for an agricultural laborer."
   },
   {
    "chapter": 19,
    "verse": 29,
-   "at": 44,
-   "after": "appened, when he drew near to Bethsphage",
-   "text": "TR, NU read \"Bethpage\" instead of \"Bethsphage\""
+   "at": 31,
+   "after": "When he came near to Bethsphage",
+   "text": "TR, NU read “Bethpage” instead of “Bethsphage”"
   },
   {
    "chapter": 20,
    "verse": 1,
-   "at": 113,
-   "after": "mple and preaching the Gospel, that the ",
-   "text": "TR adds \"chief\""
+   "at": 98,
+   "after": " temple and preaching the Good News, the",
+   "text": "TR adds “chief”"
   },
   {
    "chapter": 20,
    "verse": 9,
    "at": 45,
-   "after": "gan to tell the people this parable. \"A ",
-   "text": "NU (in brackets) and TR add \"certain\""
+   "after": "gan to tell the people this parable: “A ",
+   "text": "NU (in brackets) and TR add “certain”"
   },
   {
    "chapter": 21,
    "verse": 2,
    "at": 61,
    "after": " widow casting in two small brass coins.",
-   "text": "literally, \"two lepta.\" 2 lepta was about 1% of a day's wages for an agricultural laborer."
+   "text": "literally, “two lepta.” 2 lepta was about 1% of a day’s wages for an agricultural laborer."
+  },
+  {
+   "chapter": 21,
+   "verse": 8,
+   "at": 98,
+   "after": "y will come in my name, saying, ‘I am he",
+   "text": "or, I AM"
   },
   {
    "chapter": 22,
    "verse": 32,
-   "at": 114,
-   "after": "ve turned again, establish your brothers",
-   "text": "The word for \"brothers\" here may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+   "at": 116,
+   "after": " turned again, establish your brothers.”",
+   "text": "The word for “brothers” here may be also correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 23,
+   "verse": 17,
+   "at": 56,
+   "after": "lease one prisoner to them at the feast.",
+   "text": "NU omits verse 17."
   },
   {
    "chapter": 23,
    "verse": 44,
-   "at": 31,
-   "after": "It was now about the sixth hour",
+   "at": 32,
+   "after": "It was now about the sixth hour,",
    "text": "Time was counted from sunrise, so the sixth hour was about noon."
   },
   {
@@ -226,7 +345,7 @@
    "verse": 44,
    "at": 92,
    "after": "ver the whole land until the ninth hour.",
-   "text": "3:00 PM"
+   "text": "3:00 p.m."
   },
   {
    "chapter": 24,

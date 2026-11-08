@@ -888,82 +888,85 @@
     {
       "sourceId": "web",
       "work": {
-        "title": "World English Bible"
+        "title": "World English Bible Updated",
+        "publisher": "eBible.org",
+        "year": "2026 (eBible.org generated the files from source files dated 30 Oct 2026)",
+        "note": "American English; LORD/GOD for the divine name; otherwise identical to the Classic edition (eBible.org description)",
+        "author": "the World English Bible translation team (eBible.org)"
       },
       "repositoryCopy": {
-        "edition": "2020 (per repo)",
-        "origin": "unknown",
-        "originStatus": "not-recorded"
+        "edition": "World English Bible Updated, eBible.org files of 30 Oct 2026",
+        "origin": "eBible.org engwebu_usfm.zip (sha256 ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5), downloaded by Tom 2026-11-08 from https://ebible.org/find/show.php?id=engwebu; kept untouched in source-originals/ebible-engwebu/",
+        "originStatus": "established"
       },
       "witnesses": [
         {
-          "name": "eBible.org World English Bible copyright page",
-          "url": "https://ebible.org/eng-web/copyright.htm",
-          "editionClaim": "This is the 2020 stable text edition of the World English Bible.",
+          "name": "copr.htm inside the zip (eBible.org's own copyright page for this file)",
           "status": "page-read",
-          "dateChecked": "2026-11-05"
+          "editionClaim": "World English Bible Updated; \"HTML generated with Haiola by eBible.org 30 Oct 2026 from source files dated 30 Oct 2026\"; public domain; the name is an eBible.org trademark if the actual text is changed",
+          "dateChecked": "2026-11-08"
+        },
+        {
+          "name": "lyteword/web (independent Markdown copy of the WEB, commit 39ddde4, 2026-03-14)",
+          "status": "measured",
+          "agreement": "30,796 of 31,103 verses equal after the divine name is normalised (99.0%); 1,613 of 756,253 words differ, mostly Psalm superscriptions, Selah marks and later eBible.org updates",
+          "editionClaim": "older than our file by about seven months",
+          "dateChecked": "2026-11-08"
+        },
+        {
+          "name": "eBible.org reply from Michael Johnson (email answering Tom's questions of 2026-11-07)",
+          "status": "recorded-only",
+          "editionClaim": "Recommends new projects use the latest release; changes since \"stable\" are small but add up to better quality",
+          "note": "Moving the translator notes to a separate layer is not a change of the actual text; the name may be kept with a line such as \"translator notes shown separately\"; he also suggests the names \"World English Bible Classic\" or \"World English Bible Updated\" (worldenglish.bible); list of changes at worldenglish.bible/webupdates.php",
+          "dateChecked": "2026-11-08"
         }
       ],
       "rights": {
         "claim": "public domain",
-        "claimSource": "repo manifest",
-        "scope": "our copy",
-        "repositoryCopyCoverage": "not-established",
-        "dateChecked": "2026-11-03",
-        "digitalEditionLicence": "Text: public domain (scrollmapper README: 'All included Bible translations are in the public domain'; bible_version_key.csv lists WEB as Public Domain). The repository's GPL v3 notice covers its code and database tooling, not the translation text. Page read 2026-11-05."
+        "claimSource": "eBible.org copyright page (copr.htm inside the zip, read 2026-11-08) and eBible.org's World English Bible Updated page",
+        "scope": "the World English Bible Updated text as eBible.org publishes it",
+        "repositoryCopyCoverage": "established",
+        "statementText": "The World English Bible is in the Public Domain. That means that it is not copyrighted. However, \"World English Bible\" is a Trademark of eBible.org.",
+        "dateChecked": "2026-11-08",
+        "digitalEditionLicence": "Text: public domain (eBible.org). We hold eBible.org's own USFM zip, so the digital edition and the published edition are the same file. The earlier scrollmapper README statement no longer applies to our text.",
+        "permissionNote": "Written reply from eBible.org (Michael Johnson, received 2026-11-07/08): the name may be kept with a line such as \"translator notes shown separately\"; separating the notes is not a change of the actual text. Recorded from the email Tom pasted, not a public page."
       },
-      "tier": "B",
-      "tierReason": "Public domain; \"World English Bible\" is an eBible.org trademark and our copy removes translator notes (eBible.org asked)",
-      "evidenceLevel": "work-identified",
+      "tier": "A",
+      "tierReason": "Public domain, text taken straight from the publisher's file (eBible.org, 30 Oct 2026); eBible.org confirmed in writing that the name may be kept with a notes label",
+      "evidenceLevel": "established",
       "obligations": [
-        "Trademark rule (eBible.org copyright page): \"World English Bible\" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. The page does not mention footnotes or translator notes, so whether our removal of inline translator notes is a change of the actual text is not settled (see open questions)."
+        "Trademark rule (eBible.org): \"World English Bible\" is a trademark of eBible.org; if the actual text is changed in any way, the result should not be called the World English Bible. eBible.org agreed in writing (2026-11-07) that moving the footnotes to a separate layer is not a change, and that the name may be kept with a line such as \"translator notes shown separately\".",
+        "Name shown to readers: \"World English Bible Updated\" (eBible.org's name for this edition); say that the footnotes are shown separately where notes are not displayed."
       ],
       "openQuestions": [
-        "Dedication page not read this session.",
-        "7 verses are empty in the original and the library (Luke 17:36; Acts 8:37, 15:34, 24:7; Romans 16:25-27): a property of this edition, treat as not in this edition.",
-        "Header year 2020: the WEB's own page calls the current text \"the 2020 stable text edition\", so the year is a real edition name, not a mistake. What is not shown is that our scrollmapper copy is that edition (it matches at 99.7% / 99.2%; the copy came with the notes in the text, which we remove). Compare with the dated eBible.org 2020 stable text file to settle it.",
-        "Does removing the inline translator notes (kept in library/bible-notes/WEB) change \"the actual text\" under the eBible.org trademark rule? The page is silent on notes. Ask eBible.org or keep the notes layer and say so in the label."
+        "Verse numbering: this edition prints the doxology at Romans 14:24-26 (a footnote says the Textus Receptus places it at 16:25-27). Romans 16:26-27 do not exist in this text and 16:25 is empty. Lookups by the usual numbering (16:25-27) return nothing.",
+        "Five verses are empty in the source and in the library (Luke 17:36, Acts 8:37, Acts 15:34, Acts 24:7, Romans 16:25); treat as not in this edition. The older file had seven (it also lacked Romans 16:26-27).",
+        "Psalm superscriptions (\"A Psalm by David.\") are placed at the start of the verse that follows them, as eBible.org's own quotation of Psalm 23:1 does; the 22 Psalm 119 section names (ALEPH ... TAV) are headings and are not in the verse text.",
+        "Cross references (340) and Strong's numbers in the zip are not carried into the library; they remain in the untouched zip.",
+        "The Updated edition is dated 30 Oct 2026; eBible.org says small updates continue (worldenglish.bible/webupdates.php). Re-check before relying on it as 'latest'."
       ],
       "acquisition": {
         "evidenceClass": "measured",
-        "summary": "Matches scrollmapper/bible_databases (2024 branch) t_web.csv (99.7% / 99.2% of 6-word runs, ours to source / source to ours). Chat history shows WEB and ASV were downloaded from that repository as CSV and converted to JSON on 2026-06-10 (git first-add of data/web.json); KJV is not shown in the chat excerpts I read but matches the same file.",
+        "summary": "Text built mechanically from eBible.org's engwebu_usfm.zip (sha256 ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5) by tools/build-web-updated.py; footnotes in library/bible-notes/WEB; held verse copy data/web-updated.json.",
+        "versionMarker": "engwebu_usfm.zip sha256 ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5; eBible.org files of 30 Oct 2026",
         "records": [
           {
-            "kind": "chat-history",
-            "ref": "2ndRabbiRabbit",
-            "note": "download of WEB and ASV CSVs from scrollmapper bible_databases 2024"
+            "kind": "git-history",
+            "ref": "source-originals/ebible-engwebu/engwebu_usfm.zip, added 2026-11-08",
+            "note": "untouched original, hash recorded"
           },
           {
             "kind": "measured",
-            "ref": "comparison 2026-11-05",
-            "note": "t_web.csv: 99.7% / 99.2%; 31102 rows"
-          },
-          {
-            "kind": "page-read",
-            "ref": "scrollmapper README and csv/bible_version_key.csv, read 2026-11-05",
-            "note": "states \"All included Bible translations are in the public domain\"; version key lists WEB, KJV, ASV as Public Domain; the repository itself carries a GPL v3 notice for its code and database tooling"
-          },
-          {
-            "kind": "chat-history",
-            "ref": "2ndRabbiRabbit, build script",
-            "note": "WEB-only step re.sub(r'\\{[^}]*\\}', '', text) removed the {translator note} text from verses on purpose; and the year 2020 was typed into the csv_to_json call by hand after an answer in that chat calling WEB 'completed and stable as of 2020'. Neither is a release identification."
-          },
-          {
-            "kind": "measured",
-            "ref": "verse-by-verse comparison 2026-11-05 against the commit named in versionMarker",
-            "note": "31,102 verses in both; 30,656 identical; 446 differ only by 473 spans of the source's inline notes that our copy lacks; no span where ours has text the source lacks"
+            "ref": "comparison 2026-11-08",
+            "note": "99.0% of verses equal to lyteword/web (independent) after normalising the divine name"
           }
         ],
-        "notRecovered": [
-          "Exact download date and commit of the 2024 branch",
-          "For KJV: a chat record of the download (match is measured only)"
-        ],
-        "dateRecorded": "2026-11-05",
-        "versionMarker": "scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5 (2024-11-08), csv/t_web.csv sha256 b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536: the version our copy was measured against, not a recovered download commit"
+        "notRecovered": [],
+        "dateRecorded": "2026-11-08"
       },
       "literaryHistory": {
-        "edition": "NOT the current WEB. Our text uses older wording (for example 'sojourn' 26 times against 3 in the open-bibles WEB; Ruth 1:1 'It happened in the days when the judges judged, that there was a famine'). It matches scrollmapper's WEB (99.7%) but only about 73% of the revised WEB in lyteword/web and 78% of open-bibles eng-web.",
-        "note": "Our file headers say 'year: 2020'. That year is not supported by the text: the wording is that of an earlier release. Which release (for example 2012) is not identified, and the scrollmapper CSV does not state it."
+        "edition": "World English Bible Updated: eBible.org's current edition, with LORD/GOD for the divine name. The earlier file in the repo (scrollmapper conversion, older wording) was replaced on 2026-11-08; it remains in git history and in data/web.json.",
+        "note": "The earlier file's header said 2020; the 2020 stable text is the Classic edition. Our earlier file was an older wording than either."
       }
     },
     {

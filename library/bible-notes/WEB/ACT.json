@@ -3,181 +3,265 @@
  "layer": "translators-notes",
  "book": "ACT",
  "source": {
-  "work": "World English Bible, translators' notes",
-  "file": "csv/t_web.csv, scrollmapper/bible_databases, branch 2024, commit 19e966337b1d27fc454d06d3d1d4a723e4760ca5",
-  "fileSha256": "b291ac64a1abebe850f390e4e8ab57be0d5300bd7532faa06ad836c348b6c536",
-  "emptyBracesNotKept": 1,
-  "note": "Notes were removed from library/bible/WEB at conversion (2026-06). They are kept here, apart from the verse text, as the translators wrote them. Built by tools/build-web-notes.py."
+  "work": "World English Bible Updated, footnotes",
+  "file": "engwebu_usfm.zip from ebible.org/find/show.php?id=engwebu",
+  "fileSha256": "ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5",
+  "crossReferencesNotKept": 27,
+  "note": "Footnotes are kept here, apart from the verse text, as eBible.org wrote them. Built by tools/build-web-updated.py."
  },
- "count": 48,
+ "count": 62,
  "notes": [
+  {
+   "chapter": 1,
+   "verse": 10,
+   "at": 68,
+   "after": "dfastly into the sky as he went, behold,",
+   "text": "“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection."
+  },
   {
    "chapter": 2,
    "verse": 15,
-   "at": 85,
-   "after": "ing it is only the third hour of the day",
-   "text": "about 9:00 AM"
+   "at": 86,
+   "after": "ng it is only the third hour of the day.",
+   "text": "about 9:00 a.m."
+  },
+  {
+   "chapter": 2,
+   "verse": 27,
+   "at": 44,
+   "after": "use you will not leave my soul in Hades,",
+   "text": "or, Hell"
+  },
+  {
+   "chapter": 2,
+   "verse": 30,
+   "at": 162,
+   "after": " the flesh, he would raise up the Christ",
+   "text": "“Christ” means “Anointed One”."
+  },
+  {
+   "chapter": 2,
+   "verse": 31,
+   "at": 99,
+   "after": "ist, that his soul wasn’t left in Hades,",
+   "text": "or, Hell"
   },
   {
    "chapter": 3,
    "verse": 1,
-   "at": 82,
-   "after": "le at the hour of prayer, the ninth hour",
-   "text": "3:00 PM"
+   "at": 83,
+   "after": "e at the hour of prayer, the ninth hour.",
+   "text": "3:00 p.m."
   },
   {
    "chapter": 3,
    "verse": 17,
-   "at": 14,
-   "after": "\"Now, brothers",
-   "text": "The word for \"brothers\" here may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+   "at": 15,
+   "after": "“Now, brothers,",
+   "text": "The word for “brothers” here may be also correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 3,
+   "verse": 25,
+   "at": 181,
+   "after": "will be blessed through your offspring.’",
+   "text": "or, seed"
   },
   {
    "chapter": 4,
    "verse": 26,
-   "at": 115,
-   "after": "Against the Lord, and against his Christ",
-   "text": "Christ (Greek) and Messiah (Hebrew) both mean Anointed One. (Compare Psalm 2)"
+   "at": 109,
+   "after": "ainst the Lord, and against his Christ.’",
+   "text": "Christ (Greek) and Messiah (Hebrew) both mean Anointed One."
+  },
+  {
+   "chapter": 4,
+   "verse": 27,
+   "at": 11,
+   "after": "“For truly,",
+   "text": "nu adds “in this city,”"
+  },
+  {
+   "chapter": 6,
+   "verse": 1,
+   "at": 106,
+   "after": "g, a complaint arose from the Hellenists",
+   "text": "The Hellenists used Greek language and culture, even though they were also of Hebrew descent."
   },
   {
    "chapter": 7,
    "verse": 23,
-   "at": 77,
-   "after": "ame into his heart to visit his brothers",
-   "text": "The word for \"brothers\" here and where the context allows may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+   "at": 78,
+   "after": "me into his heart to visit his brothers,",
+   "text": "The word for “brothers” here and where the context allows may be also correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 7,
    "verse": 37,
    "at": 140,
-   "after": "r you from among your brothers, like me.",
-   "text": "TR adds \"You shall listen to him.\""
+   "after": " you from among your brothers, like me.’",
+   "text": "TR adds “You shall listen to him.”"
+  },
+  {
+   "chapter": 7,
+   "verse": 42,
+   "at": 66,
+   "after": "ve them up to serve the army of the sky,",
+   "text": "This idiom could also be translated “host of heaven”, or “angelic beings”, or “heavenly bodies.”"
   },
   {
    "chapter": 8,
    "verse": 37,
    "at": 0,
    "after": "",
-   "text": "TR adds \"Philip said, 'If you believe with all your heart, you may.' He answered, 'I believe that Jesus Christ is the Son of God.'\""
+   "text": "TR adds Philip said, “If you believe with all your heart, you may.” He answered, “I believe that Jesus Christ is the Son of God.”"
   },
   {
    "chapter": 9,
    "verse": 5,
    "at": 83,
-   "after": ", \"I am Jesus, whom you are persecuting.",
-   "text": "TR adds \"It's hard for you to kick against the goads.\""
+   "after": ", “I am Jesus, whom you are persecuting.",
+   "text": "TR adds “It’s hard for you to kick against the cattle prods.”"
   },
   {
    "chapter": 9,
    "verse": 6,
    "at": 3,
    "after": "But",
-   "text": "TR omits \"But\" "
+   "text": "TR omits “But”"
+  },
+  {
+   "chapter": 9,
+   "verse": 11,
+   "at": 109,
+   "after": "aight, and inquire in the house of Judah",
+   "text": "or, Judas"
   },
   {
    "chapter": 9,
    "verse": 28,
    "at": 30,
    "after": "He was with them entering into",
-   "text": "TR and NU add \"and going out\""
+   "text": "TR and NU add “and going out”"
+  },
+  {
+   "chapter": 9,
+   "verse": 29,
+   "at": 47,
+   "after": "ng boldly in the name of the Lord Jesus.",
+   "text": "TR and NU omit “Jesus” and reverse the order of verses 28 & 29."
+  },
+  {
+   "chapter": 9,
+   "verse": 29,
+   "at": 93,
+   "after": "oke and disputed against the Hellenists,",
+   "text": "The Hellenists were Hebrews who used Greek language and culture."
   },
   {
    "chapter": 9,
    "verse": 30,
    "at": 17,
    "after": "When the brothers",
-   "text": "The word for \"brothers\" here and where the context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where the context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 9,
    "verse": 36,
-   "at": 93,
-   "after": "ha, which when translated, means Dorcas.",
-   "text": "\"Dorcas\" is Greek for \"Gazelle.\""
+   "at": 92,
+   "after": "tha, which when translated means Dorcas.",
+   "text": "“Dorcas” is Greek for “Gazelle.”"
   },
   {
    "chapter": 9,
    "verse": 38,
    "at": 82,
    "after": "aring that Peter was there, sent two men",
-   "text": "Reading from NU, TR; MT omits \"two men\""
+   "text": "Reading from NU, TR; MT omits “two men”"
   },
   {
    "chapter": 10,
    "verse": 3,
-   "at": 34,
-   "after": "At about the ninth hour of the day",
-   "text": "3:00 PM"
+   "at": 35,
+   "after": "At about the ninth hour of the day,",
+   "text": "3:00 p.m."
   },
   {
    "chapter": 10,
    "verse": 6,
-   "at": 66,
-   "after": "a tanner, whose house is by the seaside.",
-   "text": "TR adds \"This one will tell you what it is necessary for you to do.\""
+   "at": 71,
+   "after": "ed Simon, whose house is by the seaside.",
+   "text": "TR adds “This one will tell you what it is necessary for you to do.”"
   },
   {
    "chapter": 10,
    "verse": 19,
    "at": 76,
-   "after": ", the Spirit said to him, \"Behold, three",
-   "text": "Reading from TR and NU. MT omits \"three\""
+   "after": ", the Spirit said to him, “Behold, three",
+   "text": "Reading from TR and NU. MT omits “three”"
   },
   {
    "chapter": 10,
    "verse": 30,
    "at": 85,
-   "after": " until this hour, and at the ninth hour,",
-   "text": "3:00 P. M."
+   "after": " until this hour; and at the ninth hour,",
+   "text": "3:00 p.m."
   },
   {
    "chapter": 10,
    "verse": 39,
-   "at": 103,
-   "after": "e Jews, and in Jerusalem; whom they also",
-   "text": "TR omits \"also\""
+   "at": 102,
+   "after": "he Jews and in Jerusalem; whom they also",
+   "text": "TR omits “also”"
   },
   {
    "chapter": 11,
    "verse": 1,
    "at": 33,
    "after": "Now the apostles and the brothers",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 11,
+   "verse": 20,
+   "at": 115,
+   "after": "ome to Antioch, spoke to the Hellenists,",
+   "text": "A Hellenist is someone who keeps Greek customs and culture."
   },
   {
    "chapter": 12,
    "verse": 25,
    "at": 29,
    "after": "Barnabas and Saul returned to",
-   "text": "TR reads \"from\" instead of \"to\""
+   "text": "TR reads “from” instead of “to”"
   },
   {
    "chapter": 13,
    "verse": 17,
    "at": 22,
    "after": "The God of this people",
-   "text": "TR, NU add \"Israel\""
+   "text": "TR, NU add “Israel”"
   },
   {
    "chapter": 13,
    "verse": 23,
-   "at": 47,
-   "after": "is man's seed, God has brought salvation",
-   "text": "TR, NU read \"a Savior, Jesus\" instead of \"salvation\""
+   "at": 52,
+   "after": "n’s offspring, God has brought salvation",
+   "text": "TR, NU read “a Savior, Jesus” instead of “salvation”"
   },
   {
    "chapter": 13,
    "verse": 24,
    "at": 84,
    "after": "hed the baptism of repentance to Israel.",
-   "text": "TR, NU read \"to all the people of Israel\" instead of \"to Israel\""
+   "text": "TR, NU read “to all the people of Israel” instead of “to Israel”"
   },
   {
    "chapter": 13,
    "verse": 38,
-   "at": 38,
-   "after": "Be it known to you therefore, brothers",
-   "text": "The word for \"brothers\" here and where the context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "at": 39,
+   "after": "Be it known to you therefore, brothers,",
+   "text": "The word for “brothers” here and where the context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 14,
@@ -191,28 +275,28 @@
    "verse": 17,
    "at": 77,
    "after": "itness, in that he did good and gave you",
-   "text": "TR reads \"us\" instead of \"you\""
+   "text": "TR reads “us” instead of “you”"
   },
   {
    "chapter": 15,
-   "verse": 3,
-   "at": 174,
-   "after": "ey caused great joy to all the brothers.",
-   "text": "The word for \"brothers\" here and where the context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "verse": 1,
+   "at": 54,
+   "after": "down from Judea and taught the brothers,",
+   "text": "The word for “brothers” here and where the context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 15,
    "verse": 11,
    "at": 69,
    "after": "ved through the grace of the Lord Jesus,",
-   "text": "TR adds \"Christ\""
+   "text": "TR adds “Christ”"
   },
   {
    "chapter": 15,
    "verse": 22,
    "at": 226,
    "after": "and Silas, chief men among the brothers.",
-   "text": "The word for \"brothers\" here and where the context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where the context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 15,
@@ -226,110 +310,117 @@
    "verse": 5,
    "at": 35,
    "after": "But the unpersuaded Jews took along",
-   "text": "TR reads \"And the Jews who were unpersuaded, becoming envious and taking along\" instead of \"But the unpersuaded Jews took along\""
+   "text": "TR reads “And the Jews who were unpersuaded, becoming envious and taking along” instead of “But the unpersuaded Jews took along”"
   },
   {
    "chapter": 17,
    "verse": 6,
    "at": 67,
    "after": " they dragged Jason and certain brothers",
-   "text": "The word for \"brothers\" here and where the context allows may be also correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where the context allows may be also correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 17,
    "verse": 18,
    "at": 49,
    "after": "he Epicurean and Stoic philosophers also",
-   "text": "TR omits \"also\""
+   "text": "TR omits “also”"
   },
   {
    "chapter": 18,
    "verse": 18,
    "at": 78,
    "after": "re days, took his leave of the brothers,",
-   "text": "The word for \"brothers\" here and where the context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where the context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 19,
+   "verse": 4,
+   "at": 174,
+   "after": "me after him, that is, in Christ Jesus.”",
+   "text": "NU omits Christ."
   },
   {
    "chapter": 19,
    "verse": 19,
-   "at": 190,
+   "at": 184,
    "after": "t to be fifty thousand pieces of silver.",
    "text": "The 50,000 pieces of silver here probably referred to 50,000 drachmas. If so, the value of the burned books was equivalent to about 160 man-years of wages for agricultural laborers"
   },
   {
    "chapter": 20,
    "verse": 8,
-   "at": 52,
-   "after": "any lights in the upper chamber where we",
-   "text": "TR reads \"they\" instead of \"we\""
+   "at": 49,
+   "after": "e many lights in the upper room where we",
+   "text": "TR reads “they” instead of “we”"
   },
   {
    "chapter": 20,
    "verse": 21,
-   "at": 93,
-   "after": "rd God, and faith toward our Lord Jesus.",
-   "text": "TR adds \"Christ\""
+   "at": 92,
+   "after": "ard God and faith toward our Lord Jesus.",
+   "text": "TR adds “Christ”"
   },
   {
    "chapter": 20,
    "verse": 28,
-   "at": 148,
+   "at": 147,
    "after": "to shepherd the assembly of the Lord and",
-   "text": "TR, NU omit \"the Lord and\""
+   "text": "TR, NU omit “the Lord and”"
   },
   {
    "chapter": 20,
    "verse": 32,
    "at": 14,
    "after": "Now, brothers,",
-   "text": "The word for \"brothers\" here and where the context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where the context allows may also be correctly translated “brothers and sisters” or “siblings.”"
   },
   {
    "chapter": 23,
    "verse": 23,
-   "at": 202,
-   "after": "h spears, at the third hour of the night",
-   "text": "about 9:00 PM"
+   "at": 203,
+   "after": "spears, at the third hour of the night.”",
+   "text": "about 9:00 p.m."
   },
   {
    "chapter": 24,
    "verse": 6,
    "at": 57,
    "after": "profane the temple, and we arrested him.",
-   "text": "TR adds \"We wanted to judge him according to our law,\""
+   "text": "TR adds “We wanted to judge him according to our law,”"
   },
   {
    "chapter": 24,
    "verse": 7,
    "at": 0,
    "after": "",
-   "text": "TR adds \"but the commanding officer, Lysias, came by and with great violence took him out of our hands,\""
+   "text": "TR adds “but the commanding officer, Lysias, came by and with great violence took him out of our hands,”"
   },
   {
    "chapter": 24,
    "verse": 8,
    "at": 0,
    "after": "",
-   "text": "TR adds \"commanding his accusers to come to you.\""
+   "text": "TR adds “commanding his accusers to come to you.”"
   },
   {
    "chapter": 27,
    "verse": 14,
-   "at": 85,
+   "at": 80,
    "after": " from shore, which is called Euroclydon.",
-   "text": "Or, \"a northeaster.\""
+   "text": "Or, “a northeaster”."
   },
   {
    "chapter": 27,
    "verse": 28,
-   "at": 46,
-   "after": "ook soundings, and found twenty fathoms.",
+   "at": 45,
+   "after": "took soundings and found twenty fathoms.",
    "text": "20 fathoms = 120 feet = 36.6 meters"
   },
   {
    "chapter": 27,
    "verse": 28,
-   "at": 122,
+   "at": 121,
    "after": "ndings again, and found fifteen fathoms.",
    "text": "15 fathoms = 90 feet = 27.4 meters"
   },
@@ -338,14 +429,21 @@
    "verse": 1,
    "at": 30,
    "after": "When we had escaped, then they",
-   "text": "NU reads \"we\""
+   "text": "NU reads “we”"
   },
   {
    "chapter": 28,
    "verse": 14,
    "at": 24,
    "after": "where we found brothers,",
-   "text": "The word for \"brothers\" here and where context allows may also be correctly translated \"brothers and sisters\" or \"siblings.\""
+   "text": "The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”"
+  },
+  {
+   "chapter": 28,
+   "verse": 29,
+   "at": 89,
+   "after": "having a great dispute among themselves.",
+   "text": "NU omits verse 29."
   }
  ]
 }

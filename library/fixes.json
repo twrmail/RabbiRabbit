@@ -3,19 +3,6 @@
   "note": "library = data + these rules. data/ is never edited. Each rule is mechanical, exact and counted: apply-library-fixes.mjs refuses to write unless the number of changes equals expectedCount, and source-scorecard.mjs re-applies the same rules to the originals in data/ (with separate code) and requires the result to equal library/. A change that is not listed here cannot pass gate 4.",
   "rules": [
     {
-      "id": "web-psalm-poetry-marker",
-      "source": "web",
-      "folder": "library/bible/WEB",
-      "files": [
-        "PSA"
-      ],
-      "target": "verses",
-      "op": "strip-leading",
-      "find": "&gt;",
-      "expectedCount": 117,
-      "reason": "The WEB conversion left a literal '&gt; ' (an escaped markdown quote marker for the first line of a poem) at the start of 117 Psalm verses. It is formatting, not scripture. The Worker was supplying it to the model inside quoted scripture."
-    },
-    {
       "id": "spurgeon-html-entities",
       "source": "spurgeon",
       "folder": "library/commentary/Spurgeon",
@@ -1284,11 +1271,11 @@
       "target": "source",
       "op": "add-field",
       "before": "translationId",
-      "value": "World English Bible (public domain); text from scrollmapper/bible_databases (2024 branch, csv/t_web.csv) with the inline translator notes removed when it was converted; release not identified",
+      "value": "World English Bible Updated (public domain; \"World English Bible\" is a trademark of eBible.org, which agreed in writing that the name may be kept with a notes label). Text from eBible.org engwebu_usfm.zip (sha256 ef9caa44388e502c1d920ff841c9c7b703f09f390765e53a14ffe74230a227b5), downloaded 2026-11-08 by Tom; the eBible.org page says the files were generated from source files dated 30 Oct 2026. Footnotes are kept in library/bible-notes/WEB; Strong's tags, cross references and headings are not in the verse text. Built by tools/build-web-updated.py.",
       "expectedCount": {
         "source": 66
       },
-      "reason": "The WEB files carried no source line. Chat history (2ndRabbiRabbit) records the CSV downloaded from scrollmapper/bible_databases (2024 branch) and converted to JSON on 2026-06-10, and the build script removed {note} text from WEB verses on purpose (473 spans in 446 verses, measured 2026-11-05). The 2020 in the file's year field was typed into that script by hand, is not a release identification, and is not repeated in this line. Only this field is added; no text changes."
+      "reason": "Replaced 2026-11-08 when the WEB text was replaced by eBible.org's World English Bible Updated (tools/build-web-updated.py). The earlier version of this rule recorded the scrollmapper conversion; that history is in git. The rule still adds one field to each file and changes no text. The rule web-psalm-poetry-marker was retired at the same time: the new text has no '&gt;' marks."
     },
     {
       "id": "characters-easton-bios-fixes",
