@@ -8,11 +8,11 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 
 | Source | Complete | Provenance | Clean | Preserved | Verse coverage | Licence | Regression |
 |---|---|---|---|---|---|---|---|
-| Matthew Henry (mhc) | PASS | PASS | PASS | PASS | FAIL | PASS | UNKNOWN |
-| Jamieson, Fausset & Brown (jfb) | PASS | UNKNOWN | PASS | PASS | FAIL | UNKNOWN | UNKNOWN |
-| Calvin's Commentaries (calvin) | UNKNOWN | UNKNOWN | FAIL | PASS | FAIL | UNKNOWN | UNKNOWN |
-| Scofield Reference Notes (1917) (scofield) | UNKNOWN | UNKNOWN | PASS | PASS | FAIL | UNKNOWN | UNKNOWN |
-| Wesley's Explanatory Notes (wesley) | FAIL | UNKNOWN | PASS | PASS | FAIL | UNKNOWN | UNKNOWN |
+| Matthew Henry (mhc) | PASS | PASS | PASS | PASS | UNKNOWN | PASS | UNKNOWN |
+| Jamieson, Fausset & Brown (jfb) | PASS | UNKNOWN | PASS | PASS | UNKNOWN | UNKNOWN | UNKNOWN |
+| Calvin's Commentaries (calvin) | UNKNOWN | UNKNOWN | FAIL | PASS | UNKNOWN | UNKNOWN | UNKNOWN |
+| Scofield Reference Notes (1917) (scofield) | UNKNOWN | UNKNOWN | PASS | PASS | N/A | UNKNOWN | UNKNOWN |
+| Wesley's Explanatory Notes (wesley) | FAIL | UNKNOWN | PASS | PASS | UNKNOWN | UNKNOWN | UNKNOWN |
 | Spurgeon, Treasury of David (spurgeon) | UNKNOWN | UNKNOWN | PASS | PASS | UNKNOWN | PASS | UNKNOWN |
 | Barnes' Notes (New Testament only) (barnes-nt) | UNKNOWN | UNKNOWN | PASS | PASS | UNKNOWN | UNKNOWN | UNKNOWN |
 | Tyndale Open Study Notes (tyndale) | UNKNOWN | UNKNOWN | PASS | PASS | UNKNOWN | UNKNOWN | UNKNOWN |
@@ -35,7 +35,7 @@ Evidence tags: **[measured]** computed from the files now; **[recorded]** writte
 | xref-seed (xref-seed) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 | overview-map (overview-map) | UNKNOWN | UNKNOWN | UNKNOWN | PASS | N/A | UNKNOWN | UNKNOWN |
 
-Gate results over 26 sources: 59 PASS, 15 FAIL, 82 UNKNOWN, 26 N/A. **Fully verified sources (all applicable gates PASS): 0.**
+Gate results over 26 sources: 59 PASS, 86 UNKNOWN, 10 FAIL, 27 N/A. **Fully verified sources (all applicable gates PASS): 0.**
 
 Moved text: 14 of 14 moved block(s) found at their destination chapter; for each, the text cut equals the text added (same length and sha256).
 
@@ -70,8 +70,9 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
 - **4. Preserved: PASS**
   - [measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/MHC; different: 0 ; no original found: 0 ; metadata-only differences: {"book":66,"sourceId":66,"source":66}; recorded fixes re-applied to the originals before comparing: mhc-1co16-subscription-brackets, henry-restore-quotation-blocks
   - This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).
-- **5. Verse coverage: FAIL**
-  - [measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time
+- **5. Verse coverage: UNKNOWN**
+  - [measured] chapter-anchored: 1189 chapters in 66 books; missing chapters in present books 0, empty chapters 0 (same measure as Gate 1)
+  - No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here.
 - **6. Licence: PASS**
   - [recorded] licence recorded: public domain
   - Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.
@@ -106,9 +107,9 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
   - [measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/JFB; different: 0 ; no original found: 0 ; metadata-only differences: {"book":66,"sourceId":66,"source":66}; recorded fixes re-applied to the originals before comparing: jfb-frac12-entity, jfb-ocr-typos, jfb-mic5-replacement-char
   - This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).
   - [earlier] JFB notes pilot: rejoin byte-exact on 1,189/1,189 chapters, validator PASS in Tom's Codespace (Oct 26); output not in the repo
-- **5. Verse coverage: FAIL**
-  - [measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time
-  - [earlier] JFB notes shape with explicit coverage built and validated (pilot, Oct 26); it also found 12 verses the old reader served wrongly
+- **5. Verse coverage: UNKNOWN**
+  - [measured] chapter-anchored: 1189 chapters in 66 books; missing chapters in present books 0, empty chapters 0 (same measure as Gate 1)
+  - No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here. A JFB notes shape with explicit coverage was built and validated in a pilot (Oct 26); it also found 12 verses the old reader served wrongly.
 - **6. Licence: UNKNOWN**
   - [recorded] licence recorded: public domain
   - Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.
@@ -152,14 +153,16 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
   - [recorded] fix recorded in library/fixes.json: calvin-psalms-from-ccel ({"chapters replaced":148} changes)
   - [recorded] fix recorded in library/fixes.json: calvin-psa85-duplicate-argument ({"misplaced tails cut":1} changes)
   - [recorded] fix recorded in library/fixes.json: calvin-source-origin ({"Calvin's Commentaries (public domain; origin not recorded in the original files)":48} changes)
+  - [recorded] fix recorded in library/fixes.json: calvin-restore-lost-text ({"chapters replaced":4} changes)
   - [measured] HELD, NOT MISSING: 42 classified item(s), 53,684 words, cut from the commentary and kept word for word in library/held (1 title-page, 20 index, 2 placeholder, 19 translation). Not counted as missing commentary and not served as commentary. 26 cut(s) were rebuilt from the library chapter plus the held text and match the recorded original exactly
   - [measured] MOVED, NOT LOST: 14 block(s) of front matter, arguments, dedications and chapter-opening tables were cut from the wrong chapter and added to the right one; for each, the cut and the added text have the same length and sha256 and the text is found at the destination in the library
   - [measured] boundary and back-matter scans: no unexplained finding in calvin (end of each chapter against the start of the next; CCEL title-page text; index runs); 1 accepted with a recorded reason in library/scan-exceptions.json, each present in the untouched original
 - **4. Preserved: PASS**
-  - [measured] 48 of 48 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Calvin; different: 0 ; no original found: 0 ; metadata-only differences: {"book":48,"sourceId":48,"source":48}; recorded fixes re-applied to the originals before comparing: calvin-chapter-boundaries-from-ccel, calvin-move-front-matter-and-chapter-openings, calvin-move-1th-argument, calvin-move-thessalonian-dedications, calvin-restore-truncated-chapters, calvin-hold-volume-indexes, calvin-duplicate-chapter-tails, calvin-acts-chapter-arguments, calvin-col4-duplicate-thessalonians-table, calvin-hold-volume-back-matter-translations, calvin-ezk12-duplicate-chapter-13-table, calvin-hold-volume-title-page, calvin-move-minor-prophet-chapter-tables, calvin-psalms-from-ccel, calvin-psa85-duplicate-argument
+  - [measured] 48 of 48 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Calvin; different: 0 ; no original found: 0 ; metadata-only differences: {"book":48,"sourceId":48,"source":48}; recorded fixes re-applied to the originals before comparing: calvin-chapter-boundaries-from-ccel, calvin-move-front-matter-and-chapter-openings, calvin-move-1th-argument, calvin-move-thessalonian-dedications, calvin-restore-truncated-chapters, calvin-hold-volume-indexes, calvin-duplicate-chapter-tails, calvin-acts-chapter-arguments, calvin-col4-duplicate-thessalonians-table, calvin-restore-lost-text, calvin-hold-volume-back-matter-translations, calvin-ezk12-duplicate-chapter-13-table, calvin-hold-volume-title-page, calvin-move-minor-prophet-chapter-tables, calvin-psalms-from-ccel, calvin-psa85-duplicate-argument
   - This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).
-- **5. Verse coverage: FAIL**
-  - [measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time
+- **5. Verse coverage: UNKNOWN**
+  - [measured] chapter-anchored: 819 chapters in 48 books; missing chapters in present books 28, empty chapters 0 (same measure as Gate 1)
+  - No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here.
 - **6. Licence: UNKNOWN**
   - [recorded] licence recorded: public domain
   - Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.
@@ -190,9 +193,9 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
 - **4. Preserved: PASS**
   - [measured] 65 of 65 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Scofield; different: 0 ; no original found: 0 ; metadata-only differences: {"sourceId":65}
   - This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).
-- **5. Verse coverage: FAIL**
-  - [measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time
-  - Scofield notes are anchored to words, not verses: verse coverage may never apply; label it as word-anchored.
+- **5. Verse coverage: N/A**
+  - [measured] word-anchored notes (942 chapters hold notes tied to words or phrases, not to verse numbers): verse coverage does not apply to this kind
+  - Rule for this kind: no verse coverage claim is made; Gate 1 covers which chapters have notes.
 - **6. Licence: UNKNOWN**
   - [recorded] licence recorded: public domain
   - Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.
@@ -230,9 +233,9 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
 - **4. Preserved: PASS**
   - [measured] 66 of 66 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Wesley; different: 0 ; no original found: 0 ; metadata-only differences: {"sourceId":66}; recorded fixes re-applied to the originals before comparing: wesley-restore-headword-dashes, wesley-source-ot-work, wesley-source-origin, wesley-source-nt-work, wesley-2jn-chapter-number, wesley-lev1-from-introduction, wesley-chapter-structure
   - This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).
-- **5. Verse coverage: FAIL**
-  - [measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time
-  - Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed.
+- **5. Verse coverage: UNKNOWN**
+  - [measured] chapter-anchored: 1188 chapters in 66 books; missing chapters in present books 1, empty chapters 0 (same measure as Gate 1)
+  - No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here. Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed. The source is incomplete (see Gate 1).
 - **6. Licence: UNKNOWN**
   - [recorded] licence recorded: public domain
   - Recorded by whoever built the file; public-domain status depends on the exact edition and has not been independently confirmed.
@@ -730,7 +733,7 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
 **Next action:** Add the CC BY-SA attribution to the sources footer; record the Theographic version.
 
 - **1. Complete: UNKNOWN**
-  - [measured] 4 top-level entries, 781166 bytes
+  - [measured] 4 top-level entries, 782169 bytes
   - Whether this matches the full published work is not established.
 - **2. Provenance: UNKNOWN**
   - [recorded] manifest records originalLocation data/dict/characters.json and sha256_16 9076660e163b152b
@@ -741,8 +744,8 @@ Provenance register evidence levels: 4 witnessed, 12 work-identified, 8 unidenti
 - **3. Clean: UNKNOWN**
   - [measured] parses as JSON; no damage signatures run for this file type yet
 - **4. Preserved: PASS**
-  - [measured] library file sha256_16 49536af99274c9ac != original data/dict/characters.json 9076660e163b152b; manifest says 9076660e163b152b
-  - Not byte-identical: 286 bios were added or completed by recorded fixes (characters-easton-bios, characters-easton-bios-fixes, characters-easton-bios-fixes-2); re-applied to the original here, the result equals the library file exactly, and 22 of them are corrections that replace an earlier text named by its sha256, every other existing bio only grew.
+  - [measured] library file sha256_16 94fb748f8af64001 != original data/dict/characters.json 9076660e163b152b; manifest says 9076660e163b152b
+  - Not byte-identical: 287 bios were added or completed by recorded fixes (characters-easton-bios, characters-easton-bios-fixes, characters-easton-bios-fixes-2, characters-easton-bios-fixes-3); re-applied to the original here, the result equals the library file exactly,  2 passages were changed, each from the exact old value named in the patch, and 23 of them are corrections that replace an earlier text named by its sha256, every other existing bio only grew.
 - **5. Verse coverage: N/A**
   - Not a verse-indexed commentary.
 - **6. Licence: UNKNOWN**
