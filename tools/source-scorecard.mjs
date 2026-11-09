@@ -166,6 +166,30 @@ function applyRecordedFixes(srcId, code, obj) {
           return e && sha(ch.commentary) === e.beforeSha256 && sha(e.text) === e.afterSha256 ? { ...ch, commentary: e.text } : ch
         }) }
       }
+    } else if (r.op === 'split-notes') {
+      // written separately: cuts each recorded marker and footnote list out of the chapter (a list only if the notes file rebuilds it exactly), and
+      // takes out a chapter only if the notes file holds it word for word; a chapter is accepted only if its sha256 equals the recorded "after" hash
+      const pf = path.resolve(libDir, '..', r.patchFile), nfp = path.resolve(libDir, '..', r.notesFolder, code + '.json')
+      if (exists(pf) && exists(nfp) && Array.isArray(o.chapters)) {
+        const patch = readJSON(pf), nf = readJSON(nfp), sha = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+        const list = (chapter, nums) => '\n\nFootnotes:' + nums.map(k => { const n = nf.notes.find(x => x.chapter === chapter && x.n === k); return n ? '\n\n[' + k + '] ' + (n.empty ? '{Bogus footnote}' : n.text) : '\u0000' }).join('')
+        o = { ...o, chapters: o.chapters.filter(ch => {
+          const e = patch.chapters.find(x => x.book === code && x.chapter === ch.chapter)
+          if (!e || !e.removeChapter) return true
+          const m = (nf.chapterMatter || []).find(x => x.chapter === ch.chapter)
+          return !(m && m.text === ch.commentary && sha(ch.commentary) === e.beforeSha256)
+        }).map(ch => {
+          const e = patch.chapters.find(x => x.book === code && x.chapter === ch.chapter)
+          if (!e || e.removeChapter || sha(ch.commentary) !== e.beforeSha256) return ch
+          let t = ch.commentary
+          for (const sp of [...e.spans].sort((a, b) => b.off - a.off)) {
+            const cut = t.slice(sp.off, sp.off + sp.len)
+            if (sp.kind === 'marker' ? cut !== sp.s : (sha(cut) !== sp.sha256 || cut !== list(ch.chapter, sp.n))) return ch
+            t = t.slice(0, sp.off) + t.slice(sp.off + sp.len)
+          }
+          return sha(t) === e.afterSha256 ? { ...ch, commentary: t } : ch
+        }) }
+      }
     } else if (r.op === 'restructure-chapters') {
       // written separately: slices from the patch offsets and accepts a piece only if its sha256 matches the patch
       const pf = path.resolve(libDir, '..', r.patchFile)
@@ -629,6 +653,39 @@ if (exists(provPath)) {
   }
 }
 
+// ---- editors' notes (library/commentary-notes/*): notes cut out of a commentary and kept apart. Every cut must be reversible ----
+// For each applied split-notes rule: the library chapter + the recorded markers + the lists rebuilt from the notes file must hash to the recorded
+// original ("before"); every note in the file must be called from a place inside its chapter; a chapter moved out must be in the file word for word.
+const notesProblems = [], notesSummary = { files: 0, notes: 0, empty: 0, chaptersRebuilt: 0, chaptersMovedOut: 0 }
+for (const r of (fixes ? fixes.rules : []).filter(x => x.op === 'split-notes')) {
+  const patch = readJSON(path.join(libDir, '..', r.patchFile)), sha = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+  for (const code of r.files) {
+    const lf = path.join(libDir, '..', r.folder, code + '.json'), nfp = path.join(libDir, '..', r.notesFolder, code + '.json')
+    if (!exists(nfp)) { notesProblems.push(`rule ${r.id}: notes file for ${code} is missing`); continue }
+    const nf = readJSON(nfp), lib = (readJSON(lf).chapters || []); notesSummary.files++
+    notesSummary.notes += (nf.notes || []).length; notesSummary.empty += (nf.notes || []).filter(n => n.empty).length
+    for (const e of patch.chapters.filter(x => x.book === code)) {
+      const ch = lib.find(c => c.chapter === e.chapter)
+      if (e.removeChapter) {
+        const m = (nf.chapterMatter || []).find(x => x.chapter === e.chapter)
+        if (ch) continue  // not applied yet
+        if (!m || sha(m.text) !== e.beforeSha256 || sha(m.text) !== m.sha256) notesProblems.push(`${code} ${e.chapter}: the chapter was moved out but the notes file does not hold it word for word`); else notesSummary.chaptersMovedOut++
+        continue
+      }
+      if (!ch || sha(ch.commentary) !== e.afterSha256) continue  // not applied yet
+      let rb = '', last = 0
+      for (const sp of e.spans) {
+        rb += ch.commentary.slice(last, sp.at); last = sp.at
+        rb += sp.kind === 'marker' ? sp.s : '\n\nFootnotes:' + sp.n.map(k => { const n = nf.notes.find(x => x.chapter === e.chapter && x.n === k); return n ? '\n\n[' + k + '] ' + (n.empty ? '{Bogus footnote}' : n.text) : '\u0000' }).join('')
+      }
+      rb += ch.commentary.slice(last)
+      if (sha(rb) !== e.beforeSha256) notesProblems.push(`${code} ${e.chapter}: CANNOT be rebuilt: the library chapter plus the notes file does not give the recorded original`); else notesSummary.chaptersRebuilt++
+    }
+    for (const n of nf.notes || []) { const ch = lib.find(c => c.chapter === n.chapter); if (!ch || (n.at !== undefined && n.at > ch.commentary.length)) notesProblems.push(`${code} ch ${n.chapter} note ${n.n}: its place is outside the chapter text`) }
+  }
+}
+if (notesProblems.length) { console.error('library/commentary-notes problems:\n- ' + notesProblems.join('\n- ')); process.exit(1) }
+
 // ---- held material (library/held/*.json): text cut from a source because it is not what that source's chapter should hold ----
 // Checked strictly (a problem stops the run): every item must hash to its own text, ids must be unique, the rule that cut it must exist, and
 // every item that a hold-blocks rule names must be in the patch. It never changes a gate result; it adds an evidence line under gate 3, so
@@ -793,7 +850,7 @@ const names = { 1: 'Complete', 2: 'Provenance', 3: 'Clean', 4: 'Preserved', 5: '
 let md = `# RabbiRabbit source scorecard\n\nGenerated by source-scorecard.mjs from \`${libDir}\` (manifest snapshot \`${manifest.sourceSnapshot}\`, ${manifest.sources.length} sources)${worker ? ` and Worker file \`${path.basename(workerFile)}\`` : ' (no Worker file given: attribution checks are UNKNOWN)'}. Read-only.\n\nEvidence tags: **[measured]** computed from the files now; **[recorded]** written in the manifest/data file, not independently confirmed; **[earlier]** an earlier result, not rechecked. A PASS needs evidence that meets the criterion; no evidence is UNKNOWN.\n\n## Summary\n\n| Source | ${Object.values(names).join(' | ')} |\n|---|${Object.values(names).map(() => '---').join('|')}|\n`
 for (const g of card) md += `| ${g.name} (${g.id}) | ${[1, 2, 3, 4, 5, 6, 7].map(i => sym[g.gates[i][0]]).join(' | ')} |\n`
 const tally = {}; for (const g of card) for (let i = 1; i <= 7; i++) tally[g.gates[i][0]] = (tally[g.gates[i][0]] || 0) + 1
-md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${movedSummary ? `\n\nMoved text: ${movedSummary.checked} of ${movedSummary.blocks} moved block(s) found at their destination chapter${movedSummary.notYet ? ', ' + movedSummary.notYet + ' not yet applied' : ''}; for each, the text cut equals the text added (same length and sha256).` : ''}${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
+md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${movedSummary ? `\n\nMoved text: ${movedSummary.checked} of ${movedSummary.blocks} moved block(s) found at their destination chapter${movedSummary.notYet ? ', ' + movedSummary.notYet + ' not yet applied' : ''}; for each, the text cut equals the text added (same length and sha256).` : ''}${notesSummary.files ? `\n\nEditors' notes (library/commentary-notes): ${notesSummary.notes.toLocaleString()} note(s) in ${notesSummary.files} file(s) (${notesSummary.empty} empty placeholders listed without text); ${notesSummary.chaptersRebuilt} chapter(s) rebuilt exactly from the library text plus the notes file and match the recorded original; ${notesSummary.chaptersMovedOut} chapter(s) moved out and held word for word. These notes are not Calvin's text and are not counted as missing or served as commentary.` : ''}${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
 for (const g of card) {
   md += `\n### ${g.name} (${g.id}) - ${g.scope}, ${g.status}\n**Next action:** ${g.next[0]}\n\n`
   for (let i = 1; i <= 7; i++) { const [st, ev] = g.gates[i]; md += `- **${i}. ${names[i]}: ${st}**${ev.filter(Boolean).length ? '\n' + ev.filter(Boolean).map(e => `  - ${e}`).join('\n') : ''}\n` }

@@ -1719,6 +1719,27 @@
         "chapters replaced": 76
       },
       "reason": "Our Calvin on Isaiah and Acts was made from a copy in which every Hebrew and Greek word was turned into plain letters (CCEL's חזון (chazon,) is 'chzvn (chazon,)' in ours; [καθεξης] is [kathexes]). The other 46 books keep the real script. Calvin writes these words in word studies, so the script is his text. 577 stand-ins in 430 paragraphs (Isaiah 462, Acts 115) are swapped for CCEL's own script; every other character stays. A paragraph is changed only if, after the swap, it agrees with CCEL's paragraph to 99.5% (verse numbers, footnote markers, quote style and accents ignored). 8 Isaiah paragraphs did not pass and are left as they were; they are listed in tools/calvin-ccel-audit/script-restore-review-2026-11-09.tsv with all 577 swaps. Reverse: replace each chapter with the text of the recorded before hash from git history."
+    },
+    {
+      "id": "calvin-notes-split",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "ISA",
+        "ACT",
+        "EZK"
+      ],
+      "op": "split-notes",
+      "patchFile": "library/patches/calvin-notes-split.json",
+      "notesFolder": "library/commentary-notes/Calvin",
+      "expectedCount": {
+        "chapters changed": 94,
+        "markers removed": 2607,
+        "footnote lists moved": 242,
+        "notes kept": 2600,
+        "chapters moved out": 1
+      },
+      "reason": "Our Calvin on Isaiah and Acts carried the Calvin Translation Society editors' footnotes inside the commentary: a marker such as [7] in the text and a Footnotes: list (one at the end of each Isaiah chapter, one after each section in Acts). That is the editors' voice, not Calvin's (they add Latin glosses, 'Eng. Ver.' comparisons and history notes). 2,607 markers (Isaiah 1,087, Acts 1,520) and 242 lists (Isaiah 66, Acts 176) are cut out of 94 chapters; the 2,600 notes are kept word for word, each with its place in the text, in library/commentary-notes/Calvin (394 were empty {Bogus footnote} placeholders in our source: listed, no text). Where a marker stood between spaces, one space goes with it. Seven Isaiah markers (25: 137 and 17, 26: 21, 27: 28, 61: 10 and 11, 66: 24) had no note in their own chapter; they are cut and recorded in the patch only. Ezekiel 'chapter 21' (14,217 characters, 'As Calvin's Latin Translation ends here...') is the translator's closing note, not Calvin (his Latin ends at chapter 20); it moves, whole, to the notes file. Nothing else changes. Reverse: put each marker back at its recorded place and each list back from the notes file; the scorecard does this and checks the result hashes to the recorded before."
     }
   ],
   "openIssues": [
