@@ -1704,6 +1704,21 @@
         "chapters replaced": 4
       },
       "reason": "Found by the Calvin-against-CCEL audit (tools/calvin-ccel-audit/REPORT-2026-11-09.md). Our Genesis 1 and Isaiah 19 start at verse 2: the commentary on verse 1 (2 and 4 paragraphs) was never there. Lamentations 5 stops before its last 5 paragraphs (verse 22 and Calvin's closing note, 'I will begin tomorrow the explanation of Ezekiel'). One paragraph of Deuteronomy 16:16 stops mid-sentence at 'was a'; about 400 characters of its end were missing. Each is restored word for word from CCEL, without CCEL's footnotes, as in the rest of our Calvin. The only change to CCEL's wording is the verse number 'l.' (a scanning slip) written '1.'. Reverse: replace the chapter with the recorded before hash text from git history."
+    },
+    {
+      "id": "calvin-restore-hebrew-greek",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "ISA",
+        "ACT"
+      ],
+      "op": "replace-chapters",
+      "patchFile": "library/patches/calvin-script.json",
+      "expectedCount": {
+        "chapters replaced": 76
+      },
+      "reason": "Our Calvin on Isaiah and Acts was made from a copy in which every Hebrew and Greek word was turned into plain letters (CCEL's חזון (chazon,) is 'chzvn (chazon,)' in ours; [καθεξης] is [kathexes]). The other 46 books keep the real script. Calvin writes these words in word studies, so the script is his text. 577 stand-ins in 430 paragraphs (Isaiah 462, Acts 115) are swapped for CCEL's own script; every other character stays. A paragraph is changed only if, after the swap, it agrees with CCEL's paragraph to 99.5% (verse numbers, footnote markers, quote style and accents ignored). 8 Isaiah paragraphs did not pass and are left as they were; they are listed in tools/calvin-ccel-audit/script-restore-review-2026-11-09.tsv with all 577 swaps. Reverse: replace each chapter with the text of the recorded before hash from git history."
     }
   ],
   "openIssues": [
