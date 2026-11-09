@@ -49,10 +49,10 @@
      ]
     ],
     "5": [
-     "FAIL",
+     "UNKNOWN",
      [
-      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
-      ""
+      "[measured] chapter-anchored: 1189 chapters in 66 books; missing chapters in present books 0, empty chapters 0 (same measure as Gate 1)",
+      "No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here."
      ]
     ],
     "6": [
@@ -156,10 +156,10 @@
      ]
     ],
     "5": [
-     "FAIL",
+     "UNKNOWN",
      [
-      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
-      "[earlier] JFB notes shape with explicit coverage built and validated (pilot, Oct 26); it also found 12 verses the old reader served wrongly"
+      "[measured] chapter-anchored: 1189 chapters in 66 books; missing chapters in present books 0, empty chapters 0 (same measure as Gate 1)",
+      "No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here. A JFB notes shape with explicit coverage was built and validated in a pilot (Oct 26); it also found 12 verses the old reader served wrongly."
      ]
     ],
     "6": [
@@ -265,6 +265,7 @@
       "[recorded] fix recorded in library/fixes.json: calvin-psalms-from-ccel ({\"chapters replaced\":148} changes)",
       "[recorded] fix recorded in library/fixes.json: calvin-psa85-duplicate-argument ({\"misplaced tails cut\":1} changes)",
       "[recorded] fix recorded in library/fixes.json: calvin-source-origin ({\"Calvin's Commentaries (public domain; origin not recorded in the original files)\":48} changes)",
+      "[recorded] fix recorded in library/fixes.json: calvin-restore-lost-text ({\"chapters replaced\":4} changes)",
       "[measured] HELD, NOT MISSING: 42 classified item(s), 53,684 words, cut from the commentary and kept word for word in library/held (1 title-page, 20 index, 2 placeholder, 19 translation). Not counted as missing commentary and not served as commentary. 26 cut(s) were rebuilt from the library chapter plus the held text and match the recorded original exactly",
       "[measured] MOVED, NOT LOST: 14 block(s) of front matter, arguments, dedications and chapter-opening tables were cut from the wrong chapter and added to the right one; for each, the cut and the added text have the same length and sha256 and the text is found at the destination in the library",
       "[measured] boundary and back-matter scans: no unexplained finding in calvin (end of each chapter against the start of the next; CCEL title-page text; index runs); 1 accepted with a recorded reason in library/scan-exceptions.json, each present in the untouched original"
@@ -273,16 +274,16 @@
     "4": [
      "PASS",
      [
-      "[measured] 48 of 48 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Calvin; different: 0 ; no original found: 0 ; metadata-only differences: {\"book\":48,\"sourceId\":48,\"source\":48}; recorded fixes re-applied to the originals before comparing: calvin-chapter-boundaries-from-ccel, calvin-move-front-matter-and-chapter-openings, calvin-move-1th-argument, calvin-move-thessalonian-dedications, calvin-restore-truncated-chapters, calvin-hold-volume-indexes, calvin-duplicate-chapter-tails, calvin-acts-chapter-arguments, calvin-col4-duplicate-thessalonians-table, calvin-hold-volume-back-matter-translations, calvin-ezk12-duplicate-chapter-13-table, calvin-hold-volume-title-page, calvin-move-minor-prophet-chapter-tables, calvin-psalms-from-ccel, calvin-psa85-duplicate-argument",
+      "[measured] 48 of 48 library files have content (everything except listed metadata fields) deep-equal to the original in data/commentary/Calvin; different: 0 ; no original found: 0 ; metadata-only differences: {\"book\":48,\"sourceId\":48,\"source\":48}; recorded fixes re-applied to the originals before comparing: calvin-chapter-boundaries-from-ccel, calvin-move-front-matter-and-chapter-openings, calvin-move-1th-argument, calvin-move-thessalonian-dedications, calvin-restore-truncated-chapters, calvin-hold-volume-indexes, calvin-duplicate-chapter-tails, calvin-acts-chapter-arguments, calvin-col4-duplicate-thessalonians-table, calvin-restore-lost-text, calvin-hold-volume-back-matter-translations, calvin-ezk12-duplicate-chapter-13-table, calvin-hold-volume-title-page, calvin-move-minor-prophet-chapter-tables, calvin-psalms-from-ccel, calvin-psa85-duplicate-argument",
       "This proves library = the copy we hold in data/. It does not prove data/ matches the published work (gate 2) and is not the notes-shape rejoin test (not built for this source in the repo).",
       ""
      ]
     ],
     "5": [
-     "FAIL",
+     "UNKNOWN",
      [
-      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
-      ""
+      "[measured] chapter-anchored: 819 chapters in 48 books; missing chapters in present books 28, empty chapters 0 (same measure as Gate 1)",
+      "No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here."
      ]
     ],
     "6": [
@@ -400,10 +401,10 @@
      ]
     ],
     "5": [
-     "FAIL",
+     "N/A",
      [
-      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
-      "Scofield notes are anchored to words, not verses: verse coverage may never apply; label it as word-anchored."
+      "[measured] word-anchored notes (942 chapters hold notes tied to words or phrases, not to verse numbers): verse coverage does not apply to this kind",
+      "Rule for this kind: no verse coverage claim is made; Gate 1 covers which chapters have notes."
      ]
     ],
     "6": [
@@ -511,10 +512,10 @@
      ]
     ],
     "5": [
-     "FAIL",
+     "UNKNOWN",
      [
-      "[measured] chapter text with no explicit verse coverage in the repo: the Worker finds verses with code at request time",
-      "Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed."
+      "[measured] chapter-anchored: 1188 chapters in 66 books; missing chapters in present books 1, empty chapters 0 (same measure as Gate 1)",
+      "No verse index in the repo: the Worker finds the verses with code at request time, so verse-level coverage is not measured here. Wesley paragraphs are verse-numbered inside the chapter string; not yet indexed. The source is incomplete (see Gate 1)."
      ]
     ],
     "6": [
@@ -2085,7 +2086,7 @@
     "1": [
      "UNKNOWN",
      [
-      "[measured] 4 top-level entries, 781166 bytes",
+      "[measured] 4 top-level entries, 782169 bytes",
       "Whether this matches the full published work is not established."
      ]
     ],
@@ -2108,8 +2109,8 @@
     "4": [
      "PASS",
      [
-      "[measured] library file sha256_16 49536af99274c9ac != original data/dict/characters.json 9076660e163b152b; manifest says 9076660e163b152b",
-      "Not byte-identical: 286 bios were added or completed by recorded fixes (characters-easton-bios, characters-easton-bios-fixes, characters-easton-bios-fixes-2); re-applied to the original here, the result equals the library file exactly, and 22 of them are corrections that replace an earlier text named by its sha256, every other existing bio only grew."
+      "[measured] library file sha256_16 94fb748f8af64001 != original data/dict/characters.json 9076660e163b152b; manifest says 9076660e163b152b",
+      "Not byte-identical: 287 bios were added or completed by recorded fixes (characters-easton-bios, characters-easton-bios-fixes, characters-easton-bios-fixes-2, characters-easton-bios-fixes-3); re-applied to the original here, the result equals the library file exactly,  2 passages were changed, each from the exact old value named in the patch, and 23 of them are corrections that replace an earlier text named by its sha256, every other existing bio only grew."
      ]
     ],
     "5": [
@@ -2139,9 +2140,9 @@
     ]
    },
    "facts": {
-    "bytes": 781166,
+    "bytes": 782169,
     "entries": 4,
-    "sha256_16": "49536af99274c9ac",
+    "sha256_16": "94fb748f8af64001",
     "manifestSha": "9076660e163b152b"
    },
    "next": [

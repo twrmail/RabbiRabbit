@@ -1687,6 +1687,23 @@
         "bereanbibles.com via seven1m/open-bibles": 66
       },
       "reason": "The source line said where the text was first converted from (seven1m/open-bibles) and gave no year. Since bsb-from-publisher every verse equals the publisher's file, so the line now names that file, the date it was saved and the 2023 public-domain date. It does not claim a release date for the file, which has none. Tom asked to finalize the BSB items on 2026-11-06."
+    },
+    {
+      "id": "calvin-restore-lost-text",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "GEN",
+        "ISA",
+        "LAM",
+        "DEU"
+      ],
+      "op": "replace-chapters",
+      "patchFile": "library/patches/calvin-restore-text.json",
+      "expectedCount": {
+        "chapters replaced": 4
+      },
+      "reason": "Found by the Calvin-against-CCEL audit (tools/calvin-ccel-audit/REPORT-2026-11-09.md). Our Genesis 1 and Isaiah 19 start at verse 2: the commentary on verse 1 (2 and 4 paragraphs) was never there. Lamentations 5 stops before its last 5 paragraphs (verse 22 and Calvin's closing note, 'I will begin tomorrow the explanation of Ezekiel'). One paragraph of Deuteronomy 16:16 stops mid-sentence at 'was a'; about 400 characters of its end were missing. Each is restored word for word from CCEL, without CCEL's footnotes, as in the rest of our Calvin. The only change to CCEL's wording is the verse number 'l.' (a scanning slip) written '1.'. Reverse: replace the chapter with the recorded before hash text from git history."
     }
   ],
   "openIssues": [
