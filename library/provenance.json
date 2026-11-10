@@ -207,6 +207,15 @@
           "agreement": "285 of 286 chapter boundaries have an explicit CCEL chapter heading; 42 blocks moved with witness coverage at least 0.95. A word-by-word comparison of every chapter against CCEL (tools/calvin-ccel-audit/) found 146 places where our copy is the damaged one (typos, run-together or split words, dropped words, Hebrew/Greek left in plain letters, 1 Corinthians 16 cut off); all 146 are repaired from CCEL's reading by the rule calvin-word-fixes. The remaining differences are listed in word-fixes-review-2026-11-10.tsv and left unchanged. Completeness check (tools/check-calvin-ccel.py, recorded in library/calvin-ccel-gate.json): of 35,081 CCEL commentary paragraphs, 34,495 are exact and 437 near in our text, notes layer or held material; 154 are accepted exceptions with reasons (mostly the Scripture index at the back of CCEL's Isaiah volume); 10,604 of our 10,609 paragraphs are found in CCEL. 291 Hebrew and Greek words in Isaiah 1-16 were restored by the rule calvin-script-words.",
           "basis": "CCEL header and full text (ThML XML staged by Tom, branch ccel-sources-nov2); the 45 files are listed with sha256 in source-originals/ccel-calvin/MANIFEST.json",
           "independence": "Not independent: our copy came from a CrossWire SWORD module that was itself sourced from CCEL (see acquisition). The comparison shows our copy matches CCEL after repair; it does not prove either matches the 19th-century print."
+        },
+        {
+          "name": "Printed Calvin Translation Society volumes (archive.org scans), spot-check",
+          "url": "https://archive.org/details/commentaryonepis02calv",
+          "editionClaim": "Calvin Translation Society, 1840s-50s; items commentaryonboo01calv, calvinscommentar0014calv, commentaryonepis02calv, commentariesonbo02calvuoft",
+          "status": "page-read",
+          "agreement": "About 14 printed pages (Isaiah 16 and 19, 1 Corinthians 16 including the end of the chapter, Jeremiah 10) read against our text: no wrong English words. Differences are punctuation and style that CCEL's file already has: full stops lost after italic verse headings and footnote markers, one dropped word (Jer 10:2), two Latin typos (1 Cor 16:16-17), one Greek accent (Isa 16:10), spelling style, modernized citations. Listed in tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md; left unchanged by decision, because the stance is that our Calvin is CCEL's text.",
+          "basis": "Page images photographed by Tom from archive.org scans, read by Claude",
+          "independence": "Independent of CCEL (the printed books). Not a full collation."
         }
       ],
       "rights": {
@@ -220,14 +229,15 @@
       "tier": "A",
       "tierReason": "Public domain by age (Calvin Translation Society, 1840s-50s); CCEL header states it",
       "evidenceLevel": "witnessed",
-      "obligations": [],
-      "openQuestions": [
-        "Is our copy from the same translation and edition? Both copies appear to descend from the same CCEL transcription, so only a scan of the Calvin Translation Society print volumes (1840s-50s) could settle the print edition; none has been compared yet.",
-        "Baker 1996 is a modern printing; does that add any rights claim to its typesetting?",
-        "Chapter-opening translations (Calvin's translation of the chapter, English with Latin) exist in CCEL and not in our copy; see open issue calvin-chapter-opening-translations in library/fixes.json. If imported they are newly sourced CCEL material needing their own provenance and rights review.",
-        "The 45 CCEL files (74 MB) live on branch ccel-sources-nov2, not on main. Decision for Tom: leave on the branch (manifest on main proves identity), or attach to a release."
+      "obligations": [
+        "Credit is appreciated, not required: Christian Classics Ethereal Library (ccel.org) for the digitization, and the Calvin Translation Society translators. Calvin's Commentaries here are CCEL's text of the Calvin Translation Society edition; see tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md for the known differences from the print."
       ],
-      "note": "Library Calvin = HelloAO/CrossWire copy, repaired by recorded rules in library/fixes.json using CCEL as the witness: chapter boundaries, restored truncated text, Hebrew and Greek, 146 word fixes, editors' footnotes moved to library/commentary-notes/Calvin/, verse index in library/commentary-index/Calvin/. Moved blocks take text from our own old copy, with CCEL as witness only; restored text, script and word fixes take CCEL's text, which CCEL labels Public Domain.",
+      "openQuestions": [
+        "Baker 1996 is a modern printing; does that add any rights claim to its typesetting?",
+        "Is our copy from the same translation and edition as the print? A spot-check of about 14 printed pages (Isaiah, 1 Corinthians, Jeremiah) found no wrong English words, but a full collation against a scan has not been done and is not planned.",
+        "Chapter-opening translations (Calvin's English and Latin verse table) are present in our copy for many books and absent in others (for example Isaiah, where the book defers the translation to a later volume); which books lack them and whether CCEL has them there has not been counted exactly. See open issue calvin-chapter-opening-translations in library/fixes.json, whose text still says they are absent."
+      ],
+      "note": "Library Calvin = HelloAO/CrossWire copy, repaired by recorded rules in library/fixes.json using CCEL as the witness: chapter boundaries, restored truncated text, Hebrew and Greek, 146 word fixes, editors' footnotes moved to library/commentary-notes/Calvin/, verse index in library/commentary-index/Calvin/. Moved blocks take text from our own old copy, with CCEL as witness only; restored text, script and word fixes take CCEL's text, which CCEL labels Public Domain. The 45 CCEL files are kept as release asset ccel-calvin-2026-11-10 (zip sha256 d19c82e1c5e16ddf0a1b0e3561bfae0cb01e7ada3a8bb2faab8785185cfd1731; per-file sha256 in source-originals/ccel-calvin/MANIFEST.json), the copy of record. Stance: our Calvin is CCEL's text, unchanged from here.",
       "acquisition": {
         "evidenceClass": "chat-history",
         "summary": "HelloAO john-calvin dataset (a CrossWire SWORD module sourced from CCEL), rebuilt Aug 7. Later repairs from CCEL are recorded as rules in library/fixes.json.",
