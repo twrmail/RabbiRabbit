@@ -2,6 +2,8 @@
 
 Written after Calvin's Commentaries, the hardest series so far (48 books, 800+ chapters, three digitizations, one of them damaged in ways that only show up word by word). Every step below was done for Calvin; the tool that does it is named so the next series can reuse it.
 
+The standard that this method must meet (levels, what we may claim, when to stop, the reproducibility test and a close-out checklist) is `PUBLIC-DOMAIN-STANDARD.md`.
+
 The rule behind all of it: **nothing is trusted because it is on a website.** A text is complete when we can show where it came from, that a second copy agrees, what we changed, and that we can undo every change.
 
 ## 1. Find the work, then the edition
