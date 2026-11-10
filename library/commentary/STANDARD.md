@@ -69,10 +69,16 @@ note = ch["verses"].get("16") or next(
 | Tyndale Open Study Notes | verse-keyed | conforms |
 | Barnes' Notes (NT) | verse-keyed | conforms |
 | Spurgeon, Treasury of David | verse-keyed (with `overview`) | conforms |
-| Calvin's Commentaries | chapter text | converting (next) |
+| Calvin's Commentaries | chapter text + verse index (`library/commentary-index/Calvin`) | verse lookup works through the index; text not copied (see below) |
 | Matthew Henry | chapter text, sectioned by the Worker | to convert |
 | Jamieson, Fausset & Brown | chapter text | to convert |
 | Wesley's Explanatory Notes | chapter text with verse numbers inside | to convert |
 | Scofield Reference Notes | chapter text, notes tied to words | to convert last; may stay word-anchored |
 
 A source in "chapter text" shape is still valid and served. Moving it to this standard is done one source at a time: a builder script in `tools/` produces the `verses` and `spans` from the repaired text, a recorded rule applies it, and the scorecard re-derives it independently. The standard is complete for a source when every verse it has a note on can be found with the reader above.
+
+## Calvin: chapter text with a verse index
+
+Calvin's repairs, holds, moves and checks all work on the repaired chapter text, so that text stays the master and is not copied into a second shape. The standard's promise (find the note on a verse) is kept by an index instead: `library/commentary-index/Calvin/<BOOK>.json` records, for each chapter, where every section of Calvin's commentary starts and ends in the chapter text (character offsets), the verse it opens on (from CCEL's own section markers) and, where there is one, the verses it covers (`span`: from Calvin's own heading such as "Acts 1:3-5", otherwise every verse up to the next commented verse). A chapter's `overview` is whatever comes before the first section. Overview and sections together cover the whole chapter. Each chapter entry carries the sha256 of the exact text it was built for, and the scorecard fails if the text changes without the index being rebuilt (`CCEL_DIR=/tmp/ccel python3 -I tools/build-calvin-index.py library`).
+
+To read a verse: take the sections whose `verse` is the verse; if there are none, the section whose `span` contains it (the nearest one that opens below it); if there is none, Calvin has no section there. `node tools/read-calvin-verse.mjs GEN 1 6` does this. A few chapters in the harmony books list verses out of order, and several sections may open on the same verse; read them all.

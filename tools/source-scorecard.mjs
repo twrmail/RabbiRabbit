@@ -686,6 +686,50 @@ for (const r of (fixes ? fixes.rules : []).filter(x => x.op === 'split-notes')) 
 }
 if (notesProblems.length) { console.error('library/commentary-notes problems:\n- ' + notesProblems.join('\n- ')); process.exit(1) }
 
+// ---- verse index (library/commentary-index/*): where each section of a commentary starts and ends in its chapter text ----
+// Binds every index chapter to the exact text it was built for (sha256 and length), so it cannot go stale: change one letter of a chapter and this fails
+// until tools/build-calvin-index.py is run again. Offsets must lie inside the text, run in order without overlap, start on a non-space character,
+// and every chapter of the commentary must have an entry.
+const indexProblems = [], indexSummary = { books: 0, chapters: 0, sections: 0, unplaced: 0, withSpan: 0, noSections: 0, notAscending: 0 }
+const idxDir = path.join(libDir, 'commentary-index', 'Calvin')
+if (exists(idxDir)) {
+  const shaI = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+  for (const f of fs.readdirSync(idxDir).filter(x => x.endsWith('.json')).sort()) {
+    const code = f.replace('.json', ''), ix = readJSON(path.join(idxDir, f)), lf = path.join(libDir, 'commentary', 'Calvin', f)
+    if (!exists(lf)) { indexProblems.push(`${code}: index has no commentary file`); continue }
+    indexSummary.books++
+    const lib = readJSON(lf).chapters || []
+    for (const ch of lib) if (!ix.chapters.some(c => c.chapter === ch.chapter)) indexProblems.push(`${code} ${ch.chapter}: chapter has no index entry`)
+    for (const e of ix.chapters) {
+      const ch = lib.find(c => c.chapter === e.chapter)
+      if (!ch) { indexProblems.push(`${code} ${e.chapter}: index entry for a chapter the commentary does not have`); continue }
+      indexSummary.chapters++
+      const t = ch.commentary
+      if (shaI(t) !== e.textSha256 || t.length !== e.textLength) { indexProblems.push(`${code} ${e.chapter}: the chapter text has changed since the index was built (rebuild with tools/build-calvin-index.py)`); continue }
+      let prev = 0, vprev = 0
+      if (e.overview && !(e.overview[0] === 0 && e.overview[1] > 0 && e.overview[1] <= (e.sections[0] ? e.sections[0].start : t.length))) indexProblems.push(`${code} ${e.chapter}: overview does not lie before the first section`)
+      if (!e.sections.length) indexSummary.noSections++
+      if (e.verseOrderNotAscending) indexSummary.notAscending++
+      // together the overview and the sections must cover the whole chapter: only white space may lie between them or after the last one
+      { const parts = [...(e.overview ? [{ start: e.overview[0], end: e.overview[1] }] : []), ...e.sections]; let at = 0
+        for (const x of parts) { if (t.slice(at, x.start).trim() !== '') indexProblems.push(`${code} ${e.chapter}: text between offsets ${at} and ${x.start} belongs to no section`); at = x.end }
+        if (t.slice(at).trim() !== '') indexProblems.push(`${code} ${e.chapter}: text after offset ${at} belongs to no section`) }
+      for (const sct of e.sections) {
+        indexSummary.sections++
+        if (t.slice(sct.start, sct.start + sct.head.length) !== sct.head) indexProblems.push(`${code} ${e.chapter}: section for verse ${sct.verse} does not start where recorded (its first characters differ)`)
+        if (!(sct.start >= prev && sct.start < sct.end && sct.end <= t.length) || /\s/.test(t[sct.start])) indexProblems.push(`${code} ${e.chapter}: section for verse ${sct.verse} has bad offsets [${sct.start}, ${sct.end}]`)
+        if (!Number.isInteger(sct.verse) || sct.verse < 1) indexProblems.push(`${code} ${e.chapter}: bad verse ${sct.verse}`)
+        if (sct.span) { indexSummary.withSpan++; if (!(sct.span[0] === sct.verse && sct.span[1] > sct.span[0])) indexProblems.push(`${code} ${e.chapter}: span of verse ${sct.verse} is not [verse, later verse]`) }
+        if (sct.verse < vprev && !e.verseOrderNotAscending) indexProblems.push(`${code} ${e.chapter}: verses not ascending but not flagged`)
+        prev = sct.end; vprev = sct.verse
+      }
+      indexSummary.unplaced += (e.unplaced || []).length
+    }
+  }
+  // reported and counted as a failed run, but the gates are still worked out, so a changed letter is also seen by Gate 4 on its own
+  if (indexProblems.length) { console.error('library/commentary-index problems:\n- ' + indexProblems.slice(0, 40).join('\n- ') + (indexProblems.length > 40 ? `\n... and ${indexProblems.length - 40} more` : '')); process.exitCode = 1 }
+}
+
 // ---- held material (library/held/*.json): text cut from a source because it is not what that source's chapter should hold ----
 // Checked strictly (a problem stops the run): every item must hash to its own text, ids must be unique, the rule that cut it must exist, and
 // every item that a hold-blocks rule names must be in the patch. It never changes a gate result; it adds an evidence line under gate 3, so
@@ -850,7 +894,7 @@ const names = { 1: 'Complete', 2: 'Provenance', 3: 'Clean', 4: 'Preserved', 5: '
 let md = `# RabbiRabbit source scorecard\n\nGenerated by source-scorecard.mjs from \`${libDir}\` (manifest snapshot \`${manifest.sourceSnapshot}\`, ${manifest.sources.length} sources)${worker ? ` and Worker file \`${path.basename(workerFile)}\`` : ' (no Worker file given: attribution checks are UNKNOWN)'}. Read-only.\n\nEvidence tags: **[measured]** computed from the files now; **[recorded]** written in the manifest/data file, not independently confirmed; **[earlier]** an earlier result, not rechecked. A PASS needs evidence that meets the criterion; no evidence is UNKNOWN.\n\n## Summary\n\n| Source | ${Object.values(names).join(' | ')} |\n|---|${Object.values(names).map(() => '---').join('|')}|\n`
 for (const g of card) md += `| ${g.name} (${g.id}) | ${[1, 2, 3, 4, 5, 6, 7].map(i => sym[g.gates[i][0]]).join(' | ')} |\n`
 const tally = {}; for (const g of card) for (let i = 1; i <= 7; i++) tally[g.gates[i][0]] = (tally[g.gates[i][0]] || 0) + 1
-md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${movedSummary ? `\n\nMoved text: ${movedSummary.checked} of ${movedSummary.blocks} moved block(s) found at their destination chapter${movedSummary.notYet ? ', ' + movedSummary.notYet + ' not yet applied' : ''}; for each, the text cut equals the text added (same length and sha256).` : ''}${notesSummary.files ? `\n\nEditors' notes (library/commentary-notes): ${notesSummary.notes.toLocaleString()} note(s) in ${notesSummary.files} file(s) (${notesSummary.empty} empty placeholders listed without text); ${notesSummary.chaptersRebuilt} chapter(s) rebuilt exactly from the library text plus the notes file and match the recorded original; ${notesSummary.chaptersMovedOut} chapter(s) moved out and held word for word. These notes are not Calvin's text and are not counted as missing or served as commentary.` : ''}${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
+md += `\nGate results over ${card.length} sources: ${Object.entries(tally).map(([k, v]) => `${v} ${k}`).join(', ')}. **Fully verified sources (all applicable gates PASS): ${card.filter(g => [1, 2, 3, 4, 5, 6, 7].every(i => ['PASS', 'N/A'].includes(g.gates[i][0]))).length}.**${movedSummary ? `\n\nMoved text: ${movedSummary.checked} of ${movedSummary.blocks} moved block(s) found at their destination chapter${movedSummary.notYet ? ', ' + movedSummary.notYet + ' not yet applied' : ''}; for each, the text cut equals the text added (same length and sha256).` : ''}${indexSummary.books ? `\n\nVerse index (library/commentary-index/Calvin): ${indexSummary.sections.toLocaleString()} section(s) in ${indexSummary.chapters} chapter(s) of ${indexSummary.books} books, ${indexSummary.withSpan.toLocaleString()} with a verse span, ${indexSummary.unplaced} CCEL section(s) not placed, ${indexSummary.notAscending} chapter(s) whose sections are not in verse order (harmony passages), ${indexSummary.noSections} chapter(s) with no sections. Every entry is bound to the sha256 of the chapter text it was built for; no text is copied.` : ''}${notesSummary.files ? `\n\nEditors' notes (library/commentary-notes): ${notesSummary.notes.toLocaleString()} note(s) in ${notesSummary.files} file(s) (${notesSummary.empty} empty placeholders listed without text); ${notesSummary.chaptersRebuilt} chapter(s) rebuilt exactly from the library text plus the notes file and match the recorded original; ${notesSummary.chaptersMovedOut} chapter(s) moved out and held word for word. These notes are not Calvin's text and are not counted as missing or served as commentary.` : ''}${heldSummary ? `\n\nHeld material: ${heldSummary.items} item(s), ${heldSummary.words.toLocaleString()} words in ${heldSummary.files} file(s) in library/held; ${heldSummary.stillInLibrary} still present in the library text (not yet cut). ${heldSummary.rebuilt} applied cut(s) rebuilt exactly from the library plus the held text. Held material is classified and visible here; it is not counted as missing commentary.` : ''}${provLevels ? `\n\nProvenance register evidence levels: ${Object.entries(provLevels).map(([k, v]) => `${v} ${k}`).join(', ')}. These describe evidence; they do not change any gate result.` : ''}\n\n## Detail and next action per source\n`
 for (const g of card) {
   md += `\n### ${g.name} (${g.id}) - ${g.scope}, ${g.status}\n**Next action:** ${g.next[0]}\n\n`
   for (let i = 1; i <= 7; i++) { const [st, ev] = g.gates[i]; md += `- **${i}. ${names[i]}: ${st}**${ev.filter(Boolean).length ? '\n' + ev.filter(Boolean).map(e => `  - ${e}`).join('\n') : ''}\n` }
