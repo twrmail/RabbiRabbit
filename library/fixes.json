@@ -1758,6 +1758,21 @@
       "reason": "Checking our Calvin against the CCEL digitization word by word found damage that is not Calvin's: OCR-level typos, words run together or split apart, a few dropped words, 8 Isaiah paragraphs still in plain letters instead of Greek or Hebrew, and 1 Corinthians 16 cut off in the middle of the last paragraph (1 Cor 16:22 onward). Each fix is recorded with its place, the old text and the new text (taken from CCEL), and only made where CCEL's reading is the better one by word frequency and surrounding words. Differences that could be Calvin's own wording, citations, numbers and transliterations are left unchanged and listed in tools/calvin-ccel-audit/word-fixes-review-2026-11-10.tsv."
     },
     {
+      "id": "calvin-script-words",
+      "source": "calvin",
+      "folder": "library/commentary/Calvin",
+      "files": [
+        "ISA"
+      ],
+      "op": "replace-words",
+      "patchFile": "library/patches/calvin-script-words.json",
+      "expectedCount": {
+        "words fixed": 291,
+        "chapters changed": 16
+      },
+      "reason": "The completeness check against CCEL (tools/check-calvin-ccel.py) found that Isaiah 1-16 still had Hebrew and Greek words as plain-letter stand-ins (CCEL's חזון is 'chzvn' in ours). 291 are replaced by CCEL's own text, only where the two words before and the two after are identical in both copies and CCEL has at most 8 script words there. 4 places did not meet that rule and are left (listed in tools/calvin-ccel-audit/script-words-review-2026-11-10.tsv)."
+    },
+    {
       "id": "calvin-notes-split",
       "source": "calvin",
       "folder": "library/commentary/Calvin",

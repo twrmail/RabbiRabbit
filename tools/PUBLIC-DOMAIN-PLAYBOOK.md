@@ -30,12 +30,14 @@ The rule behind all of it: **nothing is trusted because it is on a website.** A 
 - Material we cannot place (back matter, indexes, translated chapter openings) is **held**, not deleted.
 
 ## 6. Keep the witness
-- The witness is part of the proof. Keep it where we can get it again: a branch, a release, or a manifest of URLs and sha256 on main. Calvin: `source-originals/ccel-calvin/MANIFEST.json` (45 files, 74 MB, copy on branch `ccel-sources-nov2`).
+- The witness is part of the proof. Keep it where we can get it again: a branch, a release, or a manifest of URLs and sha256 on main. Calvin: `source-originals/ccel-calvin/MANIFEST.json` (45 files, 74 MB) with the copy of record as a GitHub release asset (`ccel-calvin-2026-11-10`, 21 MB zipped) and a second copy on branch `ccel-sources-nov2`.
 - If a file is too big for main, the manifest is mandatory. A repair that cannot be re-run is a claim, not a proof.
 
 ## 7. Gate it
 - Scorecard (`tools/source-scorecard.mjs`) re-implements every repair independently from the originals, checks the notes rebuild exactly, and checks the verse index covers every chapter.
 - Baseline check (`tools/check-scorecard-baseline.mjs`): no gate may get worse. Damage suite (`tools/tests/damage-suite.mjs`): deliberately break the library in known ways and make sure the checks catch it. Guardian (`tools/guardian.mjs`) and CI run the same.
+
+- **The equality check** (`tools/check-calvin-ccel.py`): every paragraph of the witness is looked up in ours and every paragraph of ours in the witness; what is not exact or near is listed and each must carry a reason. Run it *before* declaring a series done. For Calvin it found 291 more stand-in words that the chapter-level and word-level audits had missed, so build it earlier next time.
 
 ## 8. Close out in writing
 - A report that says what was found, what was fixed (counts and samples), what was left alone and why, and what is still open. Put the open items in `tools/OPEN-THREADS.md`.

@@ -1,0 +1,1880 @@
+{
+ "schemaVersion": 1,
+ "note": "Hebrew and Greek words that were still plain-letter stand-ins in our Calvin, put back from CCEL (see tools/build-calvin-script-words.py). off = place in the text before the change; old must match there.",
+ "chapters": [
+  {
+   "book": "ISA",
+   "chapter": 1,
+   "beforeSha256": "d80c5d6ab6abca0e57a7694096b45e7ae5cfc8820ba5c11f6ae5340af78a6e70",
+   "afterSha256": "155e8b9f2134c1b2cfb3f29103639a4cf60f4ed9375c8d9d6367f5aef5b2baa4",
+   "edits": [
+    {
+     "off": 37,
+     "old": "chzvn",
+     "new": "חזון",
+     "cls": "script"
+    },
+    {
+     "off": 79,
+     "old": "chzh",
+     "new": "חזה",
+     "cls": "script"
+    },
+    {
+     "off": 400,
+     "old": "mr'h",
+     "new": "מראה",
+     "cls": "script"
+    },
+    {
+     "off": 566,
+     "old": "chzvn",
+     "new": "חזון",
+     "cls": "script"
+    },
+    {
+     "off": 661,
+     "old": "mr'h",
+     "new": "מראה",
+     "cls": "script"
+    },
+    {
+     "off": 877,
+     "old": "mr'h",
+     "new": "מראה",
+     "cls": "script"
+    },
+    {
+     "off": 961,
+     "old": "hr'h",
+     "new": "הראה",
+     "cls": "script"
+    },
+    {
+     "off": 2007,
+     "old": "l",
+     "new": "על",
+     "cls": "script"
+    },
+    {
+     "off": 3838,
+     "old": "kat ' exochen",
+     "new": "κατ ᾿ ἐξοχὴν",
+     "cls": "script"
+    },
+    {
+     "off": 9425,
+     "old": "phs",
+     "new": "פשע",
+     "cls": "script"
+    },
+    {
+     "off": 15023,
+     "old": "hvy",
+     "new": "הוי",
+     "cls": "script"
+    },
+    {
+     "off": 15451,
+     "old": "hamartolon",
+     "new": "ἁμαρτωλὸν",
+     "cls": "script"
+    },
+    {
+     "off": 16770,
+     "old": "mschytym",
+     "new": "משחיתים",
+     "cls": "script"
+    },
+    {
+     "off": 26118,
+     "old": "zrym",
+     "new": "זרים",
+     "cls": "script"
+    },
+    {
+     "off": 26147,
+     "old": "zrm",
+     "new": "זרם",
+     "cls": "script"
+    },
+    {
+     "off": 35944,
+     "old": "k",
+     "new": "כ",
+     "cls": "script"
+    },
+    {
+     "off": 64396,
+     "old": "n",
+     "new": "נא",
+     "cls": "script"
+    },
+    {
+     "off": 84163,
+     "old": "hopoia he despoina, toiai kai hai therapainides",
+     "new": "ὁποῖα ἡ δέσποινα, τοῖαι καὶ αἱ θεραπαινίδες",
+     "cls": "script"
+    },
+    {
+     "off": 88249,
+     "old": "h'dvn",
+     "new": "האדון",
+     "cls": "script"
+    },
+    {
+     "off": 88361,
+     "old": "yhvh",
+     "new": "יהוה",
+     "cls": "script"
+    },
+    {
+     "off": 91427,
+     "old": "hvy",
+     "new": "הוי",
+     "cls": "script"
+    },
+    {
+     "off": 91810,
+     "old": "anadiplosis",
+     "new": "ἀναδίπλωσις",
+     "cls": "script"
+    },
+    {
+     "off": 101907,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 102140,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 102214,
+     "old": "klh",
+     "new": "כלה",
+     "cls": "script"
+    },
+    {
+     "off": 102552,
+     "old": "lym",
+     "new": "אלים",
+     "cls": "script"
+    },
+    {
+     "off": 103125,
+     "old": "gnvt",
+     "new": "גנות",
+     "cls": "script"
+    },
+    {
+     "off": 104824,
+     "old": "ethelothreskeia",
+     "new": "ἐθελοθρησκεία",
+     "cls": "script"
+    },
+    {
+     "off": 107399,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 108469,
+     "old": "chsn",
+     "new": "חסן",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 2,
+   "beforeSha256": "a5af16edbe7138f24694be7298ff61ef9667765f9311a6c3dc8f8e860502bd9b",
+   "afterSha256": "401a23a15642885d64a35c597cfb7538f9ceac2986050192f3241366f55b81c4",
+   "edits": [
+    {
+     "off": 3007,
+     "old": "hdvr",
+     "new": "הדבר",
+     "cls": "script"
+    },
+    {
+     "off": 8725,
+     "old": "rvym",
+     "new": "רבים",
+     "cls": "script"
+    },
+    {
+     "off": 12830,
+     "old": "vyvrnv mdrkyv",
+     "new": "ויורנו מדרכיו",
+     "cls": "script"
+    },
+    {
+     "off": 14116,
+     "old": "tvrh",
+     "new": "תורה",
+     "cls": "script"
+    },
+    {
+     "off": 19750,
+     "old": "spht",
+     "new": "שפט",
+     "cls": "script"
+    },
+    {
+     "off": 21121,
+     "old": "ykch",
+     "new": "יכח",
+     "cls": "script"
+    },
+    {
+     "off": 24803,
+     "old": "lmd",
+     "new": "למד",
+     "cls": "script"
+    },
+    {
+     "off": 25537,
+     "old": "anarchian",
+     "new": "ἀναρχίαν",
+     "cls": "script"
+    },
+    {
+     "off": 31509,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 31950,
+     "old": "qdm",
+     "new": "קדם",
+     "cls": "script"
+    },
+    {
+     "off": 32842,
+     "old": "m",
+     "new": "מ",
+     "cls": "script"
+    },
+    {
+     "off": 32876,
+     "old": "mqdm",
+     "new": "מקדם",
+     "cls": "script"
+    },
+    {
+     "off": 35726,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 38381,
+     "old": "lylym",
+     "new": "אלילים",
+     "cls": "script"
+    },
+    {
+     "off": 40453,
+     "old": "douleia",
+     "new": "δουλεία",
+     "cls": "script"
+    },
+    {
+     "off": 49589,
+     "old": "l",
+     "new": "ל",
+     "cls": "script"
+    },
+    {
+     "off": 59168,
+     "old": "lrts h'rph",
+     "new": "לערץ הארף",
+     "cls": "script"
+    },
+    {
+     "off": 64392,
+     "old": "rvch",
+     "new": "רוח",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 3,
+   "beforeSha256": "4755f0cb0c65967ef4ca45d98e1d14d70e5e7f5f8a70098ac00d28c11481020d",
+   "afterSha256": "f2aa7612e5f7b822668e08b63e5824457c7043a61c157d08a2e15d99a2afc7af",
+   "edits": [
+    {
+     "off": 605,
+     "old": "hnh",
+     "new": "הנה",
+     "cls": "script"
+    },
+    {
+     "off": 2542,
+     "old": "vmsnh msn",
+     "new": "ומשענה משען",
+     "cls": "script"
+    },
+    {
+     "off": 3237,
+     "old": "msn vmsnh",
+     "new": "משען ומשענה",
+     "cls": "script"
+    },
+    {
+     "off": 8098,
+     "old": "pentekontarchous",
+     "new": "πεντηκοντάρχους",
+     "cls": "script"
+    },
+    {
+     "off": 8349,
+     "old": "yvph",
+     "new": "יועף",
+     "cls": "script"
+    },
+    {
+     "off": 9224,
+     "old": "lchs",
+     "new": "לחש",
+     "cls": "script"
+    },
+    {
+     "off": 16970,
+     "old": "ngs",
+     "new": "נגש",
+     "cls": "script"
+    },
+    {
+     "off": 17293,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 20727,
+     "old": "deiktikos",
+     "new": "δεικτικῶς",
+     "cls": "script"
+    },
+    {
+     "off": 20925,
+     "old": "chvs",
+     "new": "חבש",
+     "cls": "script"
+    },
+    {
+     "off": 21356,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 27047,
+     "old": "tvv",
+     "new": "טוב",
+     "cls": "script"
+    },
+    {
+     "off": 27145,
+     "old": "rh",
+     "new": "רעה",
+     "cls": "script"
+    },
+    {
+     "off": 27169,
+     "old": "tvv",
+     "new": "טוב",
+     "cls": "script"
+    },
+    {
+     "off": 27221,
+     "old": "rh",
+     "new": "רעה",
+     "cls": "script"
+    },
+    {
+     "off": 27335,
+     "old": "ky tvv",
+     "new": "כי טוב",
+     "cls": "script"
+    },
+    {
+     "off": 27395,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 28000,
+     "old": "ky tvv",
+     "new": "כי טוב",
+     "cls": "script"
+    },
+    {
+     "off": 33115,
+     "old": "ysr",
+     "new": "ישר",
+     "cls": "script"
+    },
+    {
+     "off": 43728,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 4,
+   "beforeSha256": "e6ede90d4a02331142e947dec127bbeb4710869aebd9307a83105b7d101b1df0",
+   "afterSha256": "33870362499570a32bebe0b0c3ab307cb3440724697ab69518198f612d43796d",
+   "edits": [
+    {
+     "off": 6303,
+     "old": "phlytt",
+     "new": "פליטת",
+     "cls": "script"
+    },
+    {
+     "off": 14081,
+     "old": "anadiplosis",
+     "new": "ἀναδίπλωσις",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 5,
+   "beforeSha256": "7c2342b9eff7f79bfc6be3ed2f54efbb6e97e3eddcea6da1cf9c6a7b0f5a688b",
+   "afterSha256": "e490857ebbabd68400b29628c47b02f57c21355717b20c51eb72be0a300c0406",
+   "edits": [
+    {
+     "off": 3423,
+     "old": "dvdy",
+     "new": "דודי",
+     "cls": "script"
+    },
+    {
+     "off": 17856,
+     "old": "mspht",
+     "new": "משפט",
+     "cls": "script"
+    },
+    {
+     "off": 17890,
+     "old": "msphch",
+     "new": "משפח",
+     "cls": "script"
+    },
+    {
+     "off": 17942,
+     "old": "tsdqh",
+     "new": "צדקה",
+     "cls": "script"
+    },
+    {
+     "off": 17982,
+     "old": "tsqh",
+     "new": "צעקה",
+     "cls": "script"
+    },
+    {
+     "off": 26627,
+     "old": "koros",
+     "new": "κόρος",
+     "cls": "script"
+    },
+    {
+     "off": 37233,
+     "old": "lkn",
+     "new": "לכן",
+     "cls": "script"
+    },
+    {
+     "off": 39368,
+     "old": "dm",
+     "new": "אדם",
+     "cls": "script"
+    },
+    {
+     "off": 39388,
+     "old": "ys",
+     "new": "איש",
+     "cls": "script"
+    },
+    {
+     "off": 39628,
+     "old": "ys",
+     "new": "איש",
+     "cls": "script"
+    },
+    {
+     "off": 39667,
+     "old": "dm",
+     "new": "אדם",
+     "cls": "script"
+    },
+    {
+     "off": 46667,
+     "old": "kat exochen",
+     "new": "κατ ἐξοχὴν",
+     "cls": "script"
+    },
+    {
+     "off": 50948,
+     "old": "l",
+     "new": "ל",
+     "cls": "script"
+    },
+    {
+     "off": 57477,
+     "old": "epi to polu",
+     "new": "ἐπὶ τὸ\n\t\t\t πολὺ",
+     "cls": "script"
+    },
+    {
+     "off": 62932,
+     "old": "l-kn",
+     "new": "על-כן",
+     "cls": "script"
+    },
+    {
+     "off": 64655,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 6,
+   "beforeSha256": "fa7e3398c30bc6c77fb61c3d8623a495604fc860a9f52803081c791034164009",
+   "afterSha256": "8ff87cfb3881fb7712930a903f525d4863163edddb9050dddfaad28e2a68be36",
+   "edits": [
+    {
+     "off": 6542,
+     "old": "dvny",
+     "new": "אדוני",
+     "cls": "script"
+    },
+    {
+     "off": 20334,
+     "old": "dmh",
+     "new": "דמה",
+     "cls": "script"
+    },
+    {
+     "off": 39794,
+     "old": "hnh",
+     "new": "הנה",
+     "cls": "script"
+    },
+    {
+     "off": 49609,
+     "old": "storgai phusikai",
+     "new": "στοργαὶ φυσικαὶ",
+     "cls": "script"
+    },
+    {
+     "off": 53000,
+     "old": "syryh",
+     "new": "עשיריה",
+     "cls": "script"
+    },
+    {
+     "off": 53144,
+     "old": "syryt",
+     "new": "עשירית",
+     "cls": "script"
+    },
+    {
+     "off": 53170,
+     "old": "syryh",
+     "new": "עשיריה",
+     "cls": "script"
+    },
+    {
+     "off": 54514,
+     "old": "syryh",
+     "new": "עשיריה",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 7,
+   "beforeSha256": "b7238ddb80c86f7ff203f26d2a072bdb256a745140199180dbc5bdfedf8ed030",
+   "afterSha256": "fcef5c9dd7d7065d45d1f129f979e7b2ce8a4d47ff47a6dfbea1940ea4eee85e",
+   "edits": [
+    {
+     "off": 3497,
+     "old": "nchh",
+     "new": "נחה",
+     "cls": "script"
+    },
+    {
+     "off": 3709,
+     "old": "l",
+     "new": "על",
+     "cls": "script"
+    },
+    {
+     "off": 3739,
+     "old": "l",
+     "new": "אל",
+     "cls": "script"
+    },
+    {
+     "off": 3784,
+     "old": "nvch",
+     "new": "נוח",
+     "cls": "script"
+    },
+    {
+     "off": 3815,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 3930,
+     "old": "nchh",
+     "new": "נחה",
+     "cls": "script"
+    },
+    {
+     "off": 3954,
+     "old": "chnh",
+     "new": "חנה",
+     "cls": "script"
+    },
+    {
+     "off": 8743,
+     "old": "smr",
+     "new": "שמר",
+     "cls": "script"
+    },
+    {
+     "off": 13377,
+     "old": "nqytsnh",
+     "new": "נקיצנה",
+     "cls": "script"
+    },
+    {
+     "off": 13949,
+     "old": "nvqynh",
+     "new": "נבקיענה",
+     "cls": "script"
+    },
+    {
+     "off": 14114,
+     "old": "vq",
+     "new": "בקע",
+     "cls": "script"
+    },
+    {
+     "off": 17079,
+     "old": "tqym",
+     "new": "תקים",
+     "cls": "script"
+    },
+    {
+     "off": 17331,
+     "old": "l' thyh",
+     "new": "לא תהיה",
+     "cls": "script"
+    },
+    {
+     "off": 18519,
+     "old": "mm",
+     "new": "מעם",
+     "cls": "script"
+    },
+    {
+     "off": 21120,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 21672,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 22088,
+     "old": "t'mynv",
+     "new": "תאמינו",
+     "cls": "script"
+    },
+    {
+     "off": 22170,
+     "old": "t'mnv",
+     "new": "תאמנו",
+     "cls": "script"
+    },
+    {
+     "off": 22379,
+     "old": "mn",
+     "new": "אמן",
+     "cls": "script"
+    },
+    {
+     "off": 22754,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 40496,
+     "old": "lkn",
+     "new": "לכן",
+     "cls": "script"
+    },
+    {
+     "off": 40603,
+     "old": "hv",
+     "new": "הוא",
+     "cls": "script"
+    },
+    {
+     "off": 41033,
+     "old": "lkm",
+     "new": "לכם",
+     "cls": "script"
+    },
+    {
+     "off": 42168,
+     "old": "lmh",
+     "new": "עלמה",
+     "cls": "script"
+    },
+    {
+     "off": 42210,
+     "old": "lm",
+     "new": "עלם",
+     "cls": "script"
+    },
+    {
+     "off": 42576,
+     "old": "lmh",
+     "new": "עלמה",
+     "cls": "script"
+    },
+    {
+     "off": 46862,
+     "old": "l",
+     "new": "ל",
+     "cls": "script"
+    },
+    {
+     "off": 48107,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 48635,
+     "old": "h",
+     "new": "ה",
+     "cls": "script"
+    },
+    {
+     "off": 48679,
+     "old": "hnr",
+     "new": "הנער",
+     "cls": "script"
+    },
+    {
+     "off": 48705,
+     "old": "h",
+     "new": "ה",
+     "cls": "script"
+    },
+    {
+     "off": 49045,
+     "old": "hzh",
+     "new": "הזה",
+     "cls": "script"
+    },
+    {
+     "off": 50803,
+     "old": "mphny",
+     "new": "מפני",
+     "cls": "script"
+    },
+    {
+     "off": 57565,
+     "old": "v",
+     "new": "ב",
+     "cls": "script"
+    },
+    {
+     "off": 60689,
+     "old": "ychyh",
+     "new": "יחיה",
+     "cls": "script"
+    },
+    {
+     "off": 63921,
+     "old": "l",
+     "new": "ל",
+     "cls": "script"
+    },
+    {
+     "off": 64439,
+     "old": "yv",
+     "new": "יבא",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 8,
+   "beforeSha256": "29b2fd1ec75bdb418086845256db081cf268d5438334b3c66365e139b004888f",
+   "afterSha256": "f6d8ee131fc55a4b5c357320dce0da755d532e21946a6921069453eda7e36178",
+   "edits": [
+    {
+     "off": 1473,
+     "old": "ns",
+     "new": "אנש",
+     "cls": "script"
+    },
+    {
+     "off": 2362,
+     "old": "mhr sll hs vz",
+     "new": "מהר שלל הש בז",
+     "cls": "script"
+    },
+    {
+     "off": 3095,
+     "old": "dym",
+     "new": "עדים",
+     "cls": "script"
+    },
+    {
+     "off": 3124,
+     "old": "yd",
+     "new": "אעיד",
+     "cls": "script"
+    },
+    {
+     "off": 5998,
+     "old": "hnr",
+     "new": "הנער",
+     "cls": "script"
+    },
+    {
+     "off": 15485,
+     "old": "chlph",
+     "new": "חלפ",
+     "cls": "script"
+    },
+    {
+     "off": 18848,
+     "old": "apostrophe",
+     "new": "ἀποστροφὴ",
+     "cls": "script"
+    },
+    {
+     "off": 19036,
+     "old": "rv",
+     "new": "רעו",
+     "cls": "script"
+    },
+    {
+     "off": 19076,
+     "old": "rv",
+     "new": "רוע",
+     "cls": "script"
+    },
+    {
+     "off": 19095,
+     "old": "rh",
+     "new": "רעה",
+     "cls": "script"
+    },
+    {
+     "off": 19137,
+     "old": "rh",
+     "new": "רעה",
+     "cls": "script"
+    },
+    {
+     "off": 19757,
+     "old": "rv",
+     "new": "רעו",
+     "cls": "script"
+    },
+    {
+     "off": 21630,
+     "old": "mym",
+     "new": "עמים",
+     "cls": "script"
+    },
+    {
+     "off": 27128,
+     "old": "ky mnv 'l",
+     "new": "כי עמנו אל",
+     "cls": "script"
+    },
+    {
+     "off": 35226,
+     "old": "l' tyr'v",
+     "new": "לא תיראו",
+     "cls": "script"
+    },
+    {
+     "off": 38990,
+     "old": "mqds",
+     "new": "מקדש",
+     "cls": "script"
+    },
+    {
+     "off": 47196,
+     "old": "tsvr",
+     "new": "צור",
+     "cls": "script"
+    },
+    {
+     "off": 47213,
+     "old": "ntsr",
+     "new": "נצר",
+     "cls": "script"
+    },
+    {
+     "off": 48898,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 58865,
+     "old": "kat ' exochen",
+     "new": "κατ ᾿ ἐξοχὴν",
+     "cls": "script"
+    },
+    {
+     "off": 58992,
+     "old": "lhyv",
+     "new": "אלהיו",
+     "cls": "script"
+    },
+    {
+     "off": 59020,
+     "old": "lhym",
+     "new": "אלהים",
+     "cls": "script"
+    },
+    {
+     "off": 59911,
+     "old": "vd",
+     "new": "בעד",
+     "cls": "script"
+    },
+    {
+     "off": 60551,
+     "old": "vd",
+     "new": "בעד",
+     "cls": "script"
+    },
+    {
+     "off": 61651,
+     "old": "l",
+     "new": "ל",
+     "cls": "script"
+    },
+    {
+     "off": 66194,
+     "old": "vr",
+     "new": "עבר",
+     "cls": "script"
+    },
+    {
+     "off": 66449,
+     "old": "vh",
+     "new": "בה",
+     "cls": "script"
+    },
+    {
+     "off": 67903,
+     "old": "sunekdochikos",
+     "new": "συνεκδοχικῶς",
+     "cls": "script"
+    },
+    {
+     "off": 68538,
+     "old": "mlkm",
+     "new": "מלכם",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 9,
+   "beforeSha256": "c1034d574c518628ccb67a7088a501cc14490213922049df3c425e238e7da2c6",
+   "afterSha256": "314dae850ed723413b297447c07811344e33700c4e4e07d2aff0ba8148be7db5",
+   "edits": [
+    {
+     "off": 1109,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 3408,
+     "old": "mvph",
+     "new": "מועף",
+     "cls": "script"
+    },
+    {
+     "off": 3543,
+     "old": "vh",
+     "new": "בה",
+     "cls": "script"
+    },
+    {
+     "off": 3827,
+     "old": "hql",
+     "new": "הקל",
+     "cls": "script"
+    },
+    {
+     "off": 4235,
+     "old": "hkvyd",
+     "new": "הכביד",
+     "cls": "script"
+    },
+    {
+     "off": 10264,
+     "old": "l",
+     "new": "לא",
+     "cls": "script"
+    },
+    {
+     "off": 10298,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 20072,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 24309,
+     "old": "kat ' exochen",
+     "new": "κατ ᾿ ἐξοχὴν",
+     "cls": "script"
+    },
+    {
+     "off": 27263,
+     "old": "yqr",
+     "new": "יקרא",
+     "cls": "script"
+    },
+    {
+     "off": 28548,
+     "old": "yvts",
+     "new": "יועץ",
+     "cls": "script"
+    },
+    {
+     "off": 30825,
+     "old": "l",
+     "new": "אל",
+     "cls": "script"
+    },
+    {
+     "off": 31062,
+     "old": "gvvr",
+     "new": "גבור",
+     "cls": "script"
+    },
+    {
+     "off": 32510,
+     "old": "mellontos",
+     "new": "μέλλοντος",
+     "cls": "script"
+    },
+    {
+     "off": 38685,
+     "old": "lmrvh",
+     "new": "לםרבה",
+     "cls": "script"
+    },
+    {
+     "off": 38772,
+     "old": "m",
+     "new": "ם",
+     "cls": "script"
+    },
+    {
+     "off": 45481,
+     "old": "v",
+     "new": "ב",
+     "cls": "script"
+    },
+    {
+     "off": 53042,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 62305,
+     "old": "chnph",
+     "new": "חנף",
+     "cls": "script"
+    },
+    {
+     "off": 63100,
+     "old": "nvlh",
+     "new": "נבלה",
+     "cls": "script"
+    },
+    {
+     "off": 64936,
+     "old": "sv",
+     "new": "שב",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 10,
+   "beforeSha256": "2243a890de9072aa438115c235b74ccbca7b96d5fe522f49ff45f9c02c801a18",
+   "afterSha256": "ff467a7fad0000c101fd66f70c5a778d2871492a06eef1b9cd5d64c6523a2f4e",
+   "edits": [
+    {
+     "off": 747,
+     "old": "vn",
+     "new": "און",
+     "cls": "script"
+    },
+    {
+     "off": 905,
+     "old": "ml",
+     "new": "עמל",
+     "cls": "script"
+    },
+    {
+     "off": 1712,
+     "old": "chqqym",
+     "new": "חקקים",
+     "cls": "script"
+    },
+    {
+     "off": 1754,
+     "old": "mktvym",
+     "new": "מכתבים",
+     "cls": "script"
+    },
+    {
+     "off": 8017,
+     "old": "zv",
+     "new": "עזב",
+     "cls": "script"
+    },
+    {
+     "off": 8407,
+     "old": "vlty",
+     "new": "בלתי",
+     "cls": "script"
+    },
+    {
+     "off": 10857,
+     "old": "hvy",
+     "new": "הוי",
+     "cls": "script"
+    },
+    {
+     "off": 12996,
+     "old": "vydm",
+     "new": "בידם",
+     "cls": "script"
+    },
+    {
+     "off": 29208,
+     "old": "l",
+     "new": "על",
+     "cls": "script"
+    },
+    {
+     "off": 30237,
+     "old": "emphatikoteron",
+     "new": "ἐμφατικώτερον",
+     "cls": "script"
+    },
+    {
+     "off": 31412,
+     "old": "sunekdochikos",
+     "new": "συνεκδοχικῶς",
+     "cls": "script"
+    },
+    {
+     "off": 37447,
+     "old": "t",
+     "new": "את",
+     "cls": "script"
+    },
+    {
+     "off": 37533,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 45944,
+     "old": "krml",
+     "new": "כרמל",
+     "cls": "script"
+    },
+    {
+     "off": 51775,
+     "old": "s'r ysvv",
+     "new": "שאר ישוב",
+     "cls": "script"
+    },
+    {
+     "off": 52673,
+     "old": "l",
+     "new": "אל",
+     "cls": "script"
+    },
+    {
+     "off": 52751,
+     "old": "gvvr",
+     "new": "גבור",
+     "cls": "script"
+    },
+    {
+     "off": 53738,
+     "old": "klh",
+     "new": "כלה",
+     "cls": "script"
+    },
+    {
+     "off": 57591,
+     "old": "nhrtsh",
+     "new": "נהרצה",
+     "cls": "script"
+    },
+    {
+     "off": 58218,
+     "old": "logos",
+     "new": "λόγος",
+     "cls": "script"
+    },
+    {
+     "off": 58787,
+     "old": "logos",
+     "new": "λόγος",
+     "cls": "script"
+    },
+    {
+     "off": 58849,
+     "old": "dvr",
+     "new": "דבר",
+     "cls": "script"
+    },
+    {
+     "off": 58912,
+     "old": "dvr",
+     "new": "דבר",
+     "cls": "script"
+    },
+    {
+     "off": 60392,
+     "old": "v",
+     "new": "ב",
+     "cls": "script"
+    },
+    {
+     "off": 60422,
+     "old": "drk",
+     "new": "דרך",
+     "cls": "script"
+    },
+    {
+     "off": 63288,
+     "old": "klh",
+     "new": "כלה",
+     "cls": "script"
+    },
+    {
+     "off": 68782,
+     "old": "smn",
+     "new": "שמן",
+     "cls": "script"
+    },
+    {
+     "off": 69820,
+     "old": "smn",
+     "new": "שמן",
+     "cls": "script"
+    },
+    {
+     "off": 71144,
+     "old": "phqd",
+     "new": "פקד",
+     "cls": "script"
+    },
+    {
+     "off": 71751,
+     "old": "kly",
+     "new": "כלי",
+     "cls": "script"
+    },
+    {
+     "off": 74827,
+     "old": "sunekdochikos",
+     "new": "συνεκδοχικῶς",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 11,
+   "beforeSha256": "a47f6da0ae5bf1124aeb418a53c37fabc7b9a243d6245d97181bac5e3d19b2e3",
+   "afterSha256": "a68f63c8736cf4c44f7f38d58ad372d5402b2acf628d54fde5539126c52b8908",
+   "edits": [
+    {
+     "off": 1197,
+     "old": "gz",
+     "new": "גזע",
+     "cls": "script"
+    },
+    {
+     "off": 10338,
+     "old": "rych",
+     "new": "ריח",
+     "cls": "script"
+    },
+    {
+     "off": 24617,
+     "old": "mvnh",
+     "new": "אמונה",
+     "cls": "script"
+    },
+    {
+     "off": 25934,
+     "old": "ataxias",
+     "new": "ἀταξίας",
+     "cls": "script"
+    },
+    {
+     "off": 33433,
+     "old": "philautian",
+     "new": "φιλαυτίαν",
+     "cls": "script"
+    },
+    {
+     "off": 37127,
+     "old": "elpiousi",
+     "new": "ἐλπιοῦσι",
+     "cls": "script"
+    },
+    {
+     "off": 38846,
+     "old": "snyt",
+     "new": "שנית",
+     "cls": "script"
+    },
+    {
+     "off": 50502,
+     "old": "rvch",
+     "new": "רוח",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 12,
+   "beforeSha256": "689eb878763d08d5a2bfe49926f4792305f999822b6c16a5dca5c8eb550c225e",
+   "afterSha256": "e051dd5d6bfaa8358794565e8de3ecdffd2ca570ca3b8023ae7cd85c1e35ad77",
+   "edits": [
+    {
+     "off": 1495,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 4005,
+     "old": "hnh",
+     "new": "הנה",
+     "cls": "script"
+    },
+    {
+     "off": 10773,
+     "old": "sunekdochikos",
+     "new": "συνεκδοχικῶς",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 13,
+   "beforeSha256": "66f4b3f203a90f51793b7c23290d2c093b997b272aacc6d1b38bba570194806c",
+   "afterSha256": "cb6269791d0f12581f3fa0b1fe665b062888eeb7cd976d369d77efeebc2c7da2",
+   "edits": [
+    {
+     "off": 9502,
+     "old": "ndyvym",
+     "new": "נדיבים",
+     "cls": "script"
+    },
+    {
+     "off": 9602,
+     "old": "euergetai kalountai",
+     "new": "εὐεργέται καλοῦνται",
+     "cls": "script"
+    },
+    {
+     "off": 10236,
+     "old": "qds",
+     "new": "קדש",
+     "cls": "script"
+    },
+    {
+     "off": 11933,
+     "old": "hupotuposin",
+     "new": "ὑποτύπωσιν",
+     "cls": "script"
+    },
+    {
+     "off": 17750,
+     "old": "sdd",
+     "new": "שדד",
+     "cls": "script"
+    },
+    {
+     "off": 17825,
+     "old": "sdy",
+     "new": "שדי",
+     "cls": "script"
+    },
+    {
+     "off": 18084,
+     "old": "sdy",
+     "new": "שדי",
+     "cls": "script"
+    },
+    {
+     "off": 19275,
+     "old": "tsyrym",
+     "new": "צירים",
+     "cls": "script"
+    },
+    {
+     "off": 26809,
+     "old": "emphatikos",
+     "new": "ἐμφατικῶς",
+     "cls": "script"
+    },
+    {
+     "off": 34389,
+     "old": "nvs",
+     "new": "אנוש",
+     "cls": "script"
+    },
+    {
+     "off": 34432,
+     "old": "dm",
+     "new": "אדם",
+     "cls": "script"
+    },
+    {
+     "off": 34706,
+     "old": "phz",
+     "new": "פז",
+     "cls": "script"
+    },
+    {
+     "off": 38012,
+     "old": "sphh",
+     "new": "ספה",
+     "cls": "script"
+    },
+    {
+     "off": 38459,
+     "old": "sphh",
+     "new": "ספה",
+     "cls": "script"
+    },
+    {
+     "off": 45411,
+     "old": "pros auxesin",
+     "new": "πρὸς αὔξησιν",
+     "cls": "script"
+    },
+    {
+     "off": 45670,
+     "old": "tsv",
+     "new": "תשב",
+     "cls": "script"
+    },
+    {
+     "off": 46601,
+     "old": "skenetai",
+     "new": "σκηνήται",
+     "cls": "script"
+    },
+    {
+     "off": 47213,
+     "old": "tsyym",
+     "new": "ציים",
+     "cls": "script"
+    },
+    {
+     "off": 47707,
+     "old": "tsyym",
+     "new": "ציים",
+     "cls": "script"
+    },
+    {
+     "off": 48318,
+     "old": "tsyym",
+     "new": "ציים",
+     "cls": "script"
+    },
+    {
+     "off": 48394,
+     "old": "tsyh",
+     "new": "ציה",
+     "cls": "script"
+    },
+    {
+     "off": 48449,
+     "old": "yym",
+     "new": "איים",
+     "cls": "script"
+    },
+    {
+     "off": 48477,
+     "old": "ym",
+     "new": "אים",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 14,
+   "beforeSha256": "877bb647b2be15a27fa26fe50dee4ca925ec396ba29c23b8588b35f97ceff0e6",
+   "afterSha256": "12f2d20522b04ac1bbe7e4aafbbc324fbe966dd545630eb234ff0b30d45f626d",
+   "edits": [
+    {
+     "off": 57,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 334,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 9059,
+     "old": "msl",
+     "new": "משל",
+     "cls": "script"
+    },
+    {
+     "off": 10661,
+     "old": "mdhvh",
+     "new": "מדהבה",
+     "cls": "script"
+    },
+    {
+     "off": 18801,
+     "old": "hvls",
+     "new": "הולש",
+     "cls": "script"
+    },
+    {
+     "off": 18970,
+     "old": "l",
+     "new": "על",
+     "cls": "script"
+    },
+    {
+     "off": 22400,
+     "old": "yd",
+     "new": "יעד",
+     "cls": "script"
+    },
+    {
+     "off": 22488,
+     "old": "mvd",
+     "new": "מועד",
+     "cls": "script"
+    },
+    {
+     "off": 22707,
+     "old": "mvd",
+     "new": "מועד",
+     "cls": "script"
+    },
+    {
+     "off": 36465,
+     "old": "lvlm",
+     "new": "לעולם",
+     "cls": "script"
+    },
+    {
+     "off": 36671,
+     "old": "lvlm",
+     "new": "לעולם",
+     "cls": "script"
+    },
+    {
+     "off": 38563,
+     "old": "l",
+     "new": "ל",
+     "cls": "script"
+    },
+    {
+     "off": 39898,
+     "old": "vn",
+     "new": "עון",
+     "cls": "script"
+    },
+    {
+     "off": 46510,
+     "old": "v",
+     "new": "ו",
+     "cls": "script"
+    },
+    {
+     "off": 48399,
+     "old": "qphd",
+     "new": "קפד",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 15,
+   "beforeSha256": "7a0556775f34582203d60fa3a88944be96968cdbd3f83fa485c2c36a2390723a",
+   "afterSha256": "3253ae35eada3141e4e0169ba9a73184aa8e88b8cfdd01cc3bd04bb6ef2bbf4f",
+   "edits": [
+    {
+     "off": 2411,
+     "old": "r",
+     "new": "ער",
+     "cls": "script"
+    },
+    {
+     "off": 2435,
+     "old": "qyr",
+     "new": "קיר",
+     "cls": "script"
+    },
+    {
+     "off": 2466,
+     "old": "r mv'v",
+     "new": "ער מואב",
+     "cls": "script"
+    },
+    {
+     "off": 3878,
+     "old": "vyt",
+     "new": "בית",
+     "cls": "script"
+    },
+    {
+     "off": 8172,
+     "old": "l kn",
+     "new": "על כן",
+     "cls": "script"
+    },
+    {
+     "off": 11523,
+     "old": "rh",
+     "new": "רעה",
+     "cls": "script"
+    },
+    {
+     "off": 11655,
+     "old": "yrv",
+     "new": "יעערו",
+     "cls": "script"
+    },
+    {
+     "off": 11697,
+     "old": "vr",
+     "new": "עור",
+     "cls": "script"
+    },
+    {
+     "off": 13705,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    }
+   ]
+  },
+  {
+   "book": "ISA",
+   "chapter": 16,
+   "beforeSha256": "fba7beefd2694c0a0d3d46887940b3079ce4647f61d605a4fb8a56554da2938c",
+   "afterSha256": "e68c01beb7149c454ed5bfe833d19274168397fec02c3f7ee23782a045d75818",
+   "edits": [
+    {
+     "off": 2233,
+     "old": "eironikos",
+     "new": "εἰρωνικῶς",
+     "cls": "script"
+    },
+    {
+     "off": 2885,
+     "old": "rts",
+     "new": "ארץ",
+     "cls": "script"
+    },
+    {
+     "off": 12835,
+     "old": "ky",
+     "new": "כי",
+     "cls": "script"
+    },
+    {
+     "off": 17720,
+     "old": "mt",
+     "new": "אמת",
+     "cls": "script"
+    },
+    {
+     "off": 18755,
+     "old": "spht",
+     "new": "שפת",
+     "cls": "script"
+    },
+    {
+     "off": 21221,
+     "old": "vrh",
+     "new": "עברה",
+     "cls": "script"
+    },
+    {
+     "off": 21392,
+     "old": "vr",
+     "new": "עבר",
+     "cls": "script"
+    },
+    {
+     "off": 22613,
+     "old": "vdym",
+     "new": "בדים",
+     "cls": "script"
+    },
+    {
+     "off": 22774,
+     "old": "manteia",
+     "new": "μαντεἰα",
+     "cls": "script"
+    },
+    {
+     "off": 23241,
+     "old": "kn",
+     "new": "כן",
+     "cls": "script"
+    },
+    {
+     "off": 23820,
+     "old": "l' kn",
+     "new": "לא כן",
+     "cls": "script"
+    },
+    {
+     "off": 24029,
+     "old": "kn",
+     "new": "כן",
+     "cls": "script"
+    },
+    {
+     "off": 26279,
+     "old": "nk'ym",
+     "new": "נכאים",
+     "cls": "script"
+    },
+    {
+     "off": 26359,
+     "old": "k",
+     "new": "אך",
+     "cls": "script"
+    },
+    {
+     "off": 26766,
+     "old": "k",
+     "new": "אך",
+     "cls": "script"
+    },
+    {
+     "off": 28531,
+     "old": "sr",
+     "new": "אשר",
+     "cls": "script"
+    },
+    {
+     "off": 30357,
+     "old": "nphl",
+     "new": "נפל",
+     "cls": "script"
+    },
+    {
+     "off": 30469,
+     "old": "hydd",
+     "new": "הידד",
+     "cls": "script"
+    },
+    {
+     "off": 32004,
+     "old": "keleusma",
+     "new": "κἐλευσμα",
+     "cls": "script"
+    },
+    {
+     "off": 34182,
+     "old": "l' yvkl",
+     "new": "לא יוכל",
+     "cls": "script"
+    },
+    {
+     "off": 34589,
+     "old": "nr'h",
+     "new": "נראה",
+     "cls": "script"
+    }
+   ]
+  }
+ ]
+}
