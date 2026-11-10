@@ -18,7 +18,7 @@ let abort = false
 const patchCache = {}
 const laterPatch = r => (patchCache[r.patchFile] ||= JSON.parse(fs.readFileSync(path.join(root, r.patchFile), 'utf8')))
 const laterRuleOwns = (rule, code, chapter, h) => fixes.rules.slice(fixes.rules.indexOf(rule) + 1).some(r2 =>
-  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks', 'hold-blocks', 'split-notes'].includes(r2.op) &&
+  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks', 'hold-blocks', 'split-notes', 'replace-words'].includes(r2.op) &&
   laterPatch(r2).chapters.some(e => e.book === code && e.chapter === chapter && e.afterSha256 === h))
 for (const rule of fixes.rules) {
   const counts = {}, pending = []
@@ -218,6 +218,28 @@ for (const rule of fixes.rules) {
         const head = ch.commentary.slice(0, ent.cut.offset).replace(/\s+$/, ''), rest = ch.commentary.slice(ent.cut.offset + ent.cut.length).replace(/^\s+/, '')
         const out = rest ? head + '\n\n' + rest : head; bump(rule.countLabel || 'back-matter tails held and cut')
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        return { ...ch, commentary: out }
+      }) }
+    } else if (rule.op === 'replace-words') {
+      // small wording repairs from a patch: for each chapter the patch records the sha256 before and after and a list of edits (place in the old text,
+      // the exact old text, the new text, the kind). Every old text is checked at its place; the result must match the recorded "after" hash or the
+      // tool stops with nothing written. A chapter already matching "after" is left alone; one matching neither stops the tool.
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      nd = { ...d, chapters: d.chapters.map(ch => {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) return ch
+        const h = H(ch.commentary)
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) return ch
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        let out = ch.commentary
+        for (const e of [...ent.edits].sort((a, b) => b.off - a.off)) {
+          if (out.slice(e.off, e.off + e.old.length) !== e.old) throw new Error(`${code} ${ch.chapter}: expected "${e.old}" at ${e.off}; nothing written`)
+          out = out.slice(0, e.off) + e.new + out.slice(e.off + e.old.length); bump('words fixed')
+        }
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        counts['chapters changed'] = (counts['chapters changed'] || 0) + 1
         return { ...ch, commentary: out }
       }) }
     } else if (rule.op === 'split-notes') {

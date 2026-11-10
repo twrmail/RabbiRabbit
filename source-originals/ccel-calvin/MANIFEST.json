@@ -1,0 +1,286 @@
+{
+ "schemaVersion": 1,
+ "what": "The 45 CCEL ThML files (calcom01-calcom45, Calvin's Commentaries, Calvin Translation Society translations) used as the independent witness for our Calvin text.",
+ "why": "Every Calvin repair (chapter boundaries, restored text, Hebrew and Greek, word fixes, notes split, verse index) was checked against these files. The files are 74 MB, so they are not stored on main; this manifest records exactly which files they were, so a copy can be re-fetched and proven identical.",
+ "howToUse": "Fetch each file from its URL (or take them from the branch below), then check bytes and sha256 against this list before running tools/build-calvin-*.py with CCEL_DIR set to the folder.",
+ "copyOfRecord": "git branch ccel-sources-nov2 (staged by Tom, Nov 2 2026)",
+ "header": {
+  "DC.Rights": "Public Domain",
+  "DC.Publisher": "Christian Classics Ethereal Library",
+  "printSource": "Baker, 1996 on calcom01 and one other volume; blank on the rest",
+  "note": "The ThML header gives no print edition year; the translations are the Calvin Translation Society's 19th-century translations."
+ },
+ "totalBytes": 74240076,
+ "files": [
+  {
+   "file": "calcom01.xml",
+   "bytes": 1760992,
+   "sha256": "4b700a5aa4f799f9363cc232cde85409a4f2ff58ebba6c82d9c4830ba83c7b33",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom01"
+  },
+  {
+   "file": "calcom02.xml",
+   "bytes": 1633371,
+   "sha256": "fa675fccdbe4d1ad0e555069e0c00c46d732974cc1989b1ca3df87bb073f0663",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom02"
+  },
+  {
+   "file": "calcom03.xml",
+   "bytes": 1961516,
+   "sha256": "5f153f44091059eff0d75451785cee7e3d0d9e63edecee645fe7b1b7c1dcaf53",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom03"
+  },
+  {
+   "file": "calcom04.xml",
+   "bytes": 2127111,
+   "sha256": "d0af9b325ea95e6fec6cd69e7cb67e660379868cfed63006424e147e086db721",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom04"
+  },
+  {
+   "file": "calcom05.xml",
+   "bytes": 2122727,
+   "sha256": "228608eda64658283ba7672b84267f0a62615eec37abe72c2128ede9fce9ee7c",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom05"
+  },
+  {
+   "file": "calcom06.xml",
+   "bytes": 1611118,
+   "sha256": "de96d1361801c31a76db343b05fe227664184aeefeb365b895d1ecf3e7592ad6",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom06"
+  },
+  {
+   "file": "calcom07.xml",
+   "bytes": 1152629,
+   "sha256": "98657e5ee3b1564e7d16729a8fd4fc73b1f46439f02e750fdbe700488fc33879",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom07"
+  },
+  {
+   "file": "calcom08.xml",
+   "bytes": 2199058,
+   "sha256": "d536c3aef54fbece4f8411ee9e76279333c97cd321ce1fc99241da17ea917586",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom08"
+  },
+  {
+   "file": "calcom09.xml",
+   "bytes": 1640391,
+   "sha256": "ed4df1781f8f4fcc5c192adae0702a198f19176e2ae5e4790b34b5780971a591",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom09"
+  },
+  {
+   "file": "calcom10.xml",
+   "bytes": 1801480,
+   "sha256": "7663f8e936be7b2f896a01e146ac30e03884f6edc04f3fc65d2b97bb51f99070",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom10"
+  },
+  {
+   "file": "calcom11.xml",
+   "bytes": 1731132,
+   "sha256": "ba8b446e8df7599db0e8088704f5c108fab17a873f34df75f7449eb79b13d6ea",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom11"
+  },
+  {
+   "file": "calcom12.xml",
+   "bytes": 1724469,
+   "sha256": "53e9f7cb53092c67c71ed3f6b0bf6f625f0fcdc4b4f4272327c8939fb9e4b3de",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom12"
+  },
+  {
+   "file": "calcom13.xml",
+   "bytes": 2106254,
+   "sha256": "f87ca5809cf9d52d8a4dd90bca1453254f8d6518a1668f7af1418865cfd80043",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom13"
+  },
+  {
+   "file": "calcom14.xml",
+   "bytes": 1592692,
+   "sha256": "d4875806cb10179dd4ec51d38260c8d85150ac3272c38916858b06c25905c00d",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom14"
+  },
+  {
+   "file": "calcom15.xml",
+   "bytes": 1671753,
+   "sha256": "5470801c8e4f73adb79bc425d586298c79ec45ddb1f4ee69bebff0b2163a76dc",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom15"
+  },
+  {
+   "file": "calcom16.xml",
+   "bytes": 1507464,
+   "sha256": "14f5e0b5fb890e04a18d0907e3d9303d3bc7a5f91bc6958d13ee7fbe5dcb683c",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom16"
+  },
+  {
+   "file": "calcom17.xml",
+   "bytes": 1816285,
+   "sha256": "798e2868501737dbad1257ada4cc88415384bd0513dc89f5c3bd662108435b78",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom17"
+  },
+  {
+   "file": "calcom18.xml",
+   "bytes": 1545485,
+   "sha256": "2c7989b0bef3b1d9b5a8d5c977eb409d1ba7f515643f4f01a52a7bc0bb3dd5f9",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom18"
+  },
+  {
+   "file": "calcom19.xml",
+   "bytes": 1591008,
+   "sha256": "bdde519e98338ce70f1ebf26efc3040e57b716ef15ecb88af529095df0ae6249",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom19"
+  },
+  {
+   "file": "calcom20.xml",
+   "bytes": 2096932,
+   "sha256": "1fb1279732e1ec3820a9458094b74074c4146c8bb0f72ad4b775fd9cad1a3b00",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom20"
+  },
+  {
+   "file": "calcom21.xml",
+   "bytes": 1903789,
+   "sha256": "2cf559a316f8dd267805ea332e66c62300a45baf5c579bb105cd1ecc6fa8727b",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom21"
+  },
+  {
+   "file": "calcom22.xml",
+   "bytes": 1281225,
+   "sha256": "e1f87bee30d0c44206811f55508b83e30df6b4738c665c3e3e473646bcd4a8a0",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom22"
+  },
+  {
+   "file": "calcom23.xml",
+   "bytes": 1506195,
+   "sha256": "545b547bdaea2b48492da3530a4e369806c20dc734d13691014cac24e44970e9",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom23"
+  },
+  {
+   "file": "calcom24.xml",
+   "bytes": 1389618,
+   "sha256": "852e065780ef1969630ce55d7310c8df1029ab4e303d3b7efbf05626b84a2496",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom24"
+  },
+  {
+   "file": "calcom25.xml",
+   "bytes": 1438004,
+   "sha256": "a0d0e8a8afc1027bbd960a5ee6a6dfbefee08a5cb60fbcc74b1a1780bb0041e0",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom25"
+  },
+  {
+   "file": "calcom26.xml",
+   "bytes": 1537578,
+   "sha256": "fa11e0f55eb5228fb048abc3a79c93c03d877604274bf7a137ed68149dcb4ee5",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom26"
+  },
+  {
+   "file": "calcom27.xml",
+   "bytes": 1505639,
+   "sha256": "706711217a3b7e0bf3698bf855f5675371e41faf82bd6369874ff5051c94c171",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom27"
+  },
+  {
+   "file": "calcom28.xml",
+   "bytes": 1689113,
+   "sha256": "b88752f77e187112a3f920aa82e9aaa125f32765a9843daf3c94290f3dd44a67",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom28"
+  },
+  {
+   "file": "calcom29.xml",
+   "bytes": 1239178,
+   "sha256": "11295fba3e70f79968a46a1a499e7daef96d51e20552a517f1ae919d630d2054",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom29"
+  },
+  {
+   "file": "calcom30.xml",
+   "bytes": 2105095,
+   "sha256": "90e826641081bd15d455a799da7f60574d4394d884de75d6f351ade0d1763ab8",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom30"
+  },
+  {
+   "file": "calcom31.xml",
+   "bytes": 1924843,
+   "sha256": "4989da59aa4b29fd076d95bae451def22de137db54bd7c52eb070f544913b428",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom31"
+  },
+  {
+   "file": "calcom32.xml",
+   "bytes": 1874608,
+   "sha256": "a6a0045ee9a75603a35142bdcfa2fdeac79a9d867ea32b1e16cbc47a8c0d6681",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom32"
+  },
+  {
+   "file": "calcom33.xml",
+   "bytes": 1423641,
+   "sha256": "28cecf1fe7cdf9837f6760f8febb9bea5cee08ead5950596fa4dac1dfb4a98af",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom33"
+  },
+  {
+   "file": "calcom34.xml",
+   "bytes": 1452233,
+   "sha256": "69f6362ccb18d6e09c8c4aae165179b8dc4838ae19b268b3a3787fb6ed37c39a",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom34"
+  },
+  {
+   "file": "calcom35.xml",
+   "bytes": 979783,
+   "sha256": "d4681c28a63055fa04fcd4883f8f9acf0e2614086bdfe40c0fd303bf26ddd035",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom35"
+  },
+  {
+   "file": "calcom36.xml",
+   "bytes": 1667294,
+   "sha256": "b48725d5eb77240b1bc4e5918d7141387811e9e2916e19f210a3cc75e6886af1",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom36"
+  },
+  {
+   "file": "calcom37.xml",
+   "bytes": 1304211,
+   "sha256": "a1ca28543d1700c301dfb9e72e9fa8646febd1575e76ae0bc91ddb95a871bf34",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom37"
+  },
+  {
+   "file": "calcom38.xml",
+   "bytes": 2269410,
+   "sha256": "83f148d977bb0e02928d209dd4cb2b19ebea440dd9c5e85fe3e73131fb53289c",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom38"
+  },
+  {
+   "file": "calcom39.xml",
+   "bytes": 1767435,
+   "sha256": "176ef9aa57b3973664dcf65d4ca12c1b7b319e51e8df7c270d237d6ad1aed012",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom39"
+  },
+  {
+   "file": "calcom40.xml",
+   "bytes": 1698566,
+   "sha256": "62b7b8c27c058d259cc4dc63564970ead43d516beeb9225b83a01c6d02fa1db2",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom40"
+  },
+  {
+   "file": "calcom41.xml",
+   "bytes": 1250834,
+   "sha256": "fac8c754eb4291391a28e94f9e285c40f9a5dfc43326f63a3438f65f9aa9aefd",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom41"
+  },
+  {
+   "file": "calcom42.xml",
+   "bytes": 1370466,
+   "sha256": "51096062bcf518040d5384f2597331b6e96dece4d0aaf2e5dda64c262dd921d2",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom42"
+  },
+  {
+   "file": "calcom43.xml",
+   "bytes": 1219919,
+   "sha256": "b5cdb241085c0eea44aa29388d88a53d2940ee0910cd43c39182f4a0c581528b",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom43"
+  },
+  {
+   "file": "calcom44.xml",
+   "bytes": 1443756,
+   "sha256": "b3bc9df38e418bc26ec525e01e9a4f59a41ca0b8f9c52ede49d880f0eac59827",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom44"
+  },
+  {
+   "file": "calcom45.xml",
+   "bytes": 1603776,
+   "sha256": "61ee8f73bf8a3f274bdf599c20631874a1070d489edf9fd659d572bfb20b1d1f",
+   "url": "https://ccel.org/ccel/calvin/calcom/calcom45"
+  }
+ ]
+}

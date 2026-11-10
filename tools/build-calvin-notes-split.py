@@ -81,6 +81,19 @@ for code in ('ISA', 'ACT'):
         about='The Calvin Translation Society editors\' footnotes to Calvin\'s %s, kept word for word and apart from the commentary text. "at" is the place in the chapter text (library/commentary/Calvin) where the note was called; a note with "empty": true had no text in our source (a placeholder) and is listed only so the numbering is complete. Not Calvin\'s own words.' % code,
         count=len(notes), emptyPlaceholders=st['empty'], notes=notes), open(os.path.join(lib, 'commentary-notes/Calvin', code + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     stats[code] = st
+
+# 1 Corinthians 16: the editors' footnote 180 (Beza's lines on Bullinger) had been copied into Calvin's paragraph and the chapter ended in the middle of it.
+# The repair rule calvin-word-fixes puts Calvin's own ending back; the footnote itself is kept here, word for word from CCEL (needs CCEL_DIR).
+import html
+CCEL = os.environ.get('CCEL_DIR', '/tmp/ccel')
+x = open(os.path.join(CCEL, 'calcom40.xml'), encoding='utf-8').read()
+m = next(m for m in re.finditer(r'<note[^>]*n="(\d+)"[^>]*>.*?</note>', x, re.S) if 'Bullingeri' in m.group(0))
+ntext = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', m.group(0)))).strip()
+t16 = next(c for c in load('1CO')['chapters'] if c['chapter'] == 16)['commentary']; at = t16.index('Now Bullinger') + len('Now Bullinger')
+json.dump(dict(layer='editors-notes', source='calvin', book='1CO',
+    about='The Calvin Translation Society editors\' footnote on 1 Corinthians 16:22 (Beza\'s lines on Bullinger), kept word for word from CCEL (volume 40, footnote %s). It had been copied into Calvin\'s paragraph in our text; "at" is the place in the chapter text where it is called. Not Calvin\'s own words.' % m.group(1),
+    count=1, emptyPlaceholders=0, notes=[dict(chapter=16, n=int(m.group(1)), at=at, text=ntext)]),
+    open(os.path.join(lib, 'commentary-notes/Calvin/1CO.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 # Ezekiel chapter 21 (the translator's closing note) moves out whole
 d = load('EZK'); c21 = next(c for c in d['chapters'] if c['chapter'] == 21)
 assert c21['commentary'].startswith('As Calvin’s Latin Translation ends here'), c21['commentary'][:60]
