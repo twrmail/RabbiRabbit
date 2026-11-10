@@ -3,7 +3,7 @@
  "what": "The 45 CCEL ThML files (calcom01-calcom45, Calvin's Commentaries, Calvin Translation Society translations) used as the independent witness for our Calvin text.",
  "why": "Every Calvin repair (chapter boundaries, restored text, Hebrew and Greek, word fixes, notes split, verse index) was checked against these files. The files are 74 MB, so they are not stored on main; this manifest records exactly which files they were, so a copy can be re-fetched and proven identical.",
  "howToUse": "Fetch each file from its URL (or take them from the branch below), then check bytes and sha256 against this list before running tools/build-calvin-*.py with CCEL_DIR set to the folder.",
- "copyOfRecord": "git branch ccel-sources-nov2 (staged by Tom, Nov 2 2026)",
+ "copyOfRecord": "GitHub release 'ccel-calvin-2026-11-10' on twrmail/RabbiRabbit, asset ccel-calvin-calcom01-45.zip (21,518,111 bytes, sha256 d19c82e1c5e16ddf0a1b0e3561bfae0cb01e7ada3a8bb2faab8785185cfd1731); the same files are also on branch ccel-sources-nov2",
  "header": {
   "DC.Rights": "Public Domain",
   "DC.Publisher": "Christian Classics Ethereal Library",
