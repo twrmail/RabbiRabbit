@@ -1,0 +1,28 @@
+import fs from 'fs'
+const LIB='/home/claude/rabbirabbit/library/bible'
+globalThis.fetch=async url=>{const m=String(url).match(/library\/bible\/(\w+)\/(\w+)\.json$/);if(!m)return {ok:false};try{const t=fs.readFileSync(`${LIB}/${m[1]}/${m[2]}.json`,'utf8');return {ok:true,json:async()=>JSON.parse(t)}}catch{return {ok:false}}}
+let src=fs.readFileSync('/home/claude/w/worker-v41.js','utf8').replace(/^export default/m,'const __w =')
+const {buildScriptureSupply,scriptureEditionKey,SCRIPTURE_EDITION_NAMES}=new Function(src+'\nreturn {buildScriptureSupply,scriptureEditionKey,SCRIPTURE_EDITION_NAMES}')()
+let fails=0; const ok=(c,m)=>{console.log((c?'PASS ':'FAIL ')+m); if(!c) fails++}
+const run=(a,r=[],e='web')=>buildScriptureSupply(e,a,r)
+let r=await run({bookId:'ROM',chapter:16,verse:25,verseEnd:27})
+ok(r.ok&&/PLACEMENT NOTE/.test(r.promptBlock),'Romans 16:25-27 gets the placement note')
+ok(/prints the doxology of Romans \(16:25-27 in many Bibles\) at Romans 14:24-26/.test(r.promptBlock),'note names the true place')
+ok(/\[24\] Now to/.test(r.promptBlock)||/\[24\] /.test(r.promptBlock.split('Romans 14:24-26 (WEB):')[1]||''),'text of 14:24 supplied under its true reference')
+ok(r.suppliedKeys.has('ROM 14:24')&&r.suppliedKeys.has('ROM 14:26'),'14:24-26 counted as supplied')
+ok(/the WEB prints no text for verse 25/.test(r.promptBlock),'16:25 still reported empty')
+ok(r.summary.placements==='Romans 14:24-26','summary logs the placement')
+r=await run({bookId:'ROM',chapter:16,verse:null})
+ok(/PLACEMENT NOTE/.test(r.promptBlock),'whole chapter Romans 16 gets the note')
+r=await run({bookId:'JHN',chapter:3,verse:16,verseEnd:17},['Romans 16:26','Psalm 23:1'])
+ok(/PLACEMENT NOTE/.test(r.promptBlock),'a cross-reference to Romans 16:26 triggers it')
+r=await run({bookId:'JHN',chapter:3,verse:16,verseEnd:17},['Psalm 23:1'])
+ok(!/PLACEMENT NOTE/.test(r.promptBlock)&&r.summary.placements===null,'John 3:16 gets no note')
+r=await run({bookId:'ROM',chapter:14,verse:24,verseEnd:26})
+ok(!/PLACEMENT NOTE/.test(r.promptBlock)&&/\[24\] /.test(r.promptBlock),'Romans 14:24-26 studied directly: no note, text supplied')
+r=await run({bookId:'ROM',chapter:16,verse:25,verseEnd:27},[],'kjv')
+ok(!/PLACEMENT NOTE/.test(r.promptBlock)&&/\[26\] /.test(r.promptBlock),'KJV Romans 16:25-27 unaffected (has its own text)')
+ok(SCRIPTURE_EDITION_NAMES.web==='World English Bible Updated (WEB)','label updated')
+const w=await run({bookId:'GEN',chapter:1,verse:1,verseEnd:2})
+ok(/LORD|God/.test(w.promptBlock)&&!/&gt;/.test(w.promptBlock),'Genesis 1:1-2 reads from the new WEB')
+console.log(fails?`\n${fails} FAILED`:'\nall passed'); process.exit(fails?1:0)
