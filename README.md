@@ -128,7 +128,7 @@ MIT License — see `LICENSE` for details. That covers the code only. The Bible 
 
 Bible texts are public domain. Cross-reference data is CC-BY (credit: OpenBible.info). Commentary and patristic sources are public domain, fetched live from their respective open services.
 
-Thanks to the Christian Classics Ethereal Library (ccel.org): Calvin's Commentaries here are CCEL's text of the Calvin Translation Society edition (1840s-50s), checked against it and against printed pages; the known differences and where to look a word up are in `tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md`.
+Thanks to the Christian Classics Ethereal Library (ccel.org): Calvin's Commentaries here are a CCEL-witnessed transcription of the Calvin Translation Society edition (historically 1840s-50s), checked against CCEL's digital text and spot-checked against printed pages; the known differences and where to look a word up are in `tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md`.
 
 The name *RabbiRabbit* is original. The Word of God belongs to everyone.
 | `data/cross-refs.json` | OpenBible.info cross-references | — | CC-BY |

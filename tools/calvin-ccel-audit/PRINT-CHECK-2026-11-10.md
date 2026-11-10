@@ -1,6 +1,13 @@
 # Calvin: print spot-check and where to look things up (2026-11-10)
 
-**Stance.** The Calvin in `library/commentary/Calvin` is the Christian Classics Ethereal Library's (CCEL) digitization of the Calvin Translation Society (CTS) edition, repaired by recorded rules in `library/fixes.json` and proven complete against CCEL by `tools/check-calvin-ccel.py`. We do not try to be better than CCEL. We checked it against scans of the printed volumes, found it faithful, and list below what differs, so a reader who cares about a single word can go to the book.
+**Stance.** RabbiRabbit's Calvin corpus is a CCEL-witnessed transcription of the Calvin Translation Society commentary: CCEL's digital transcription of that edition (historically published in the 1840s-50s), repaired by recorded rules in `library/fixes.json` and checked against CCEL's 45-volume transcription by `tools/check-calvin-ccel.py`. Remaining differences are documented, and the CCEL files are preserved as the comparison witness. We do not try to be better than CCEL, and we do not silently correct it.
+
+Three claims are kept apart:
+1. **Textual fidelity:** we preserve the CCEL digital text, subject to documented exceptions (35,081 CCEL paragraphs: 34,495 exact, 437 near, 144 missing and 5 partial on the CCEL side, all accepted with reasons; 10,604 of our 10,609 paragraphs found in CCEL, 5 extra of ours accepted). Near is not identical; the 154 accepted rows are both CCEL-side and ours.
+2. **Historical fidelity:** CCEL represents the Calvin Translation Society edition but is not itself the printed edition. CCEL's file metadata names a print source ("Baker, 1996") on two volumes and leaves it blank on the rest, so we do not claim each volume was traced to one original printed impression.
+3. **Public-domain status:** Calvin's work and the 19th-century translations are public domain; CCEL's files carry a Public Domain statement in their header. CCEL's website material, PDF wrappers and special contents may carry separate rights and are not what we use.
+
+The scan pages are a supplementary witness, not the basis of the completeness claim. The result on them is limited: **no incorrect English words were found in the roughly 14 printed pages examined.** That is not a statement about all 45 volumes.
 
 Thank you to CCEL for the gift, and to the Calvin Translation Society translators (1840s-50s) whose work it carries.
 
@@ -15,7 +22,7 @@ Printed pages photographed by Tom from archive.org scans and read against our te
 | `commentaryonepis02calv` | 1 Corinthians vol. 2, 16:10-19 and the end of the chapter | 74-77, 82-83 | words match; chapter end confirmed; 2 Latin typos; footnote notes mostly not in our library |
 | `commentariesonbo02calvuoft` | Jeremiah vol. 2, Jeremiah 10:1-2 | chapter opening, 6-7 | words match except one dropped word; chapter-opening translation (English and Latin) is present and in the printed order |
 
-No wrong English words were found on any page. About 14 pages is a spot-check, not a full collation.
+No incorrect English words were found in these pages. About 14 pages is a spot-check, not a full collation, and the pages were chosen near places already known to have had problems. If more confidence is wanted: one randomly chosen passage from a volume not listed above would test outside the known problem areas.
 
 ## Known differences (left as CCEL has them)
 

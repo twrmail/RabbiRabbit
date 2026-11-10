@@ -100,7 +100,7 @@ Tiers describe how sure we are about the rights, not the quality of the work. Th
 ### Calvin's Commentaries  (`library/commentary/Calvin`)
 - Rights: public domain
 - Why this tier: Public domain by age (Calvin Translation Society, 1840s-50s); CCEL header states it
-- Must do: Credit is appreciated, not required: Christian Classics Ethereal Library (ccel.org) for the digitization, and the Calvin Translation Society translators. Calvin's Commentaries here are CCEL's text of the Calvin Translation Society edition; see tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md for the known differences from the print.
+- Must do: Credit is appreciated, not required: Christian Classics Ethereal Library (ccel.org) for the digitization of the Calvin Translation Society edition (historically published 1840s-50s), and the translators. See tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md for the stance and the known differences from the print.
 
 ### Wesley's Explanatory Notes  (`library/commentary/Wesley`)
 - Rights: public domain

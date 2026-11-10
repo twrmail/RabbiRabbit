@@ -4,7 +4,7 @@ Written for a second reviewer (ChatGPT). Please challenge anything that looks wr
 
 ## Decision
 
-1. **Our Calvin is CCEL's text.** `library/commentary/Calvin` stays exactly as it is after PR #78 and #79 (repairs from CCEL by recorded rules, completeness check against CCEL passing). No further text edits.
+1. **Our Calvin is a CCEL-witnessed transcription** of the Calvin Translation Society commentary. `library/commentary/Calvin` stays exactly as it is after PR #78 and #79 (repairs from CCEL by recorded rules, completeness check against CCEL passing). No further text edits.
 2. **CCEL is credited plainly** (NOTICE.md, README, provenance register): the Christian Classics Ethereal Library's digitization of the Calvin Translation Society edition (1840s-50s).
 3. **The CCEL files are kept as the copy of record**: release asset `ccel-calvin-2026-11-10`, zip sha256 `d19c82e1c5e16ddf0a1b0e3561bfae0cb01e7ada3a8bb2faab8785185cfd1731`, per-file sha256 in `source-originals/ccel-calvin/MANIFEST.json`. The gate refuses to pass if the files do not match the manifest.
 4. **Anyone who cares about one word is pointed to the print**: CCEL page-scan viewer and archive.org item identifiers are listed in `PRINT-CHECK-2026-11-10.md`.
@@ -12,8 +12,8 @@ Written for a second reviewer (ChatGPT). Please challenge anything that looks wr
 
 ## What we measured
 
-- Against CCEL: of 35,081 CCEL commentary paragraphs, 34,495 exact and 437 near in our text, notes layer or held material; 154 accepted exceptions with reasons; 10,604 of our 10,609 paragraphs found in CCEL. 146 damaged words repaired, 291 Hebrew/Greek words restored.
-- Against print: about 14 printed pages (archive.org scans, page images read by Claude) in Isaiah 16 and 19, 1 Corinthians 16 including the end of the chapter, and Jeremiah 10. **No wrong English words.**
+- Against CCEL: of 35,081 CCEL commentary paragraphs, 34,495 exact, 437 near (accepted differences, not identity), 144 missing and 5 partial on the CCEL side; of our 10,609 paragraphs 10,604 found in CCEL and 5 extra. The 154 accepted exceptions are those 144 + 5 + 5, each with a reason. 146 damaged words repaired, 291 Hebrew/Greek words restored.
+- Against print: about 14 printed pages (archive.org scans, page images read by Claude) in Isaiah 16 and 19, 1 Corinthians 16 including the end of the chapter, and Jeremiah 10. **No incorrect English words found in those pages** (not a claim about all 45 volumes; the pages were near known problem places).
 - Differences found, all already present in CCEL's file: full stops lost after italic verse headings and footnote markers (about 1,580 of about 9,700 headings CCEL-wide); one dropped word (Jer 10:2 "for"); two Latin typos in the 1 Cor 16 verse table; one comma for a full stop; one Greek accent (Isa 16:10); British vs American spelling; ae ligatures; modernized citations.
 
 ## Why we stopped
@@ -40,3 +40,9 @@ Written for a second reviewer (ChatGPT). Please challenge anything that looks wr
 ## Evidence
 
 `tools/calvin-ccel-audit/PRINT-CHECK-2026-11-10.md` (pages, known differences, lookup pointers); `library/provenance.json` (calvin entry, new print witness); `library/calvin-ccel-gate.json`; `tools/calvin-ccel-audit/gate-accepted.json`; `source-originals/ccel-calvin/MANIFEST.json`; `tools/OPEN-THREADS.md`.
+
+## Reviewer response (ChatGPT, 2026-11-10) and what was incorporated
+
+Agreed: stop editing; no punctuation rule (document a consequential passage separately if one turns up); keep the CCEL credit; 14 pages supports only a limited statement; print check is a supplementary witness, not a new release gate; keep scan pointers and the difference list permanently.
+Incorporated: the wording of the stance above; the three separate claims (textual, historical, public-domain); the exact accounting of the 154 exceptions; the Baker 1996 qualification; the limited print conclusion; the idea of one random passage from another volume as an optional extra check. ChatGPT also reported that CCEL's Calvin collection page states the files are public domain and acknowledges its volunteers, and that CCEL's general policy warns of separate rights in website material; the session could not open that page, so the record relies on the Public Domain statement in the CCEL file header.
+Not a repo problem: `main` still shows the older provenance wording and README because PR #80 is not merged yet; merging replaces them.
