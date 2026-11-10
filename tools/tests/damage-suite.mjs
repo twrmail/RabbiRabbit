@@ -108,6 +108,10 @@ const CASES = [
   { name: 'an index run is left in a chapter', run: 'scans', damage: e => e.chapter(sk + 'MHC/EXO.json', 1, c => { c.commentary += ' ' + Array.from({ length: 15 }, (_, i) => `${i + 1}:${i + 2}`).join(' ') }), want: /new finding mhc EXO 1 back-matter/ },
   { name: 'volume title-page furniture is left in a chapter', run: 'scans', damage: e => e.chapter(sk + 'Scofield/GEN.json', 1, c => { c.commentary = (c.commentary || '') + ' Christian Classics Ethereal Library' }), want: /new finding scofield GEN 1 back-matter/, skipIf: e => false },
   { name: 'an accepted scan exception is withdrawn', run: 'scorecard', damage: e => e.json('library/scan-exceptions.json', d => { d.exceptions = d.exceptions.filter(x => !(x.source === 'scofield' && x.book === 'DAN')) }), want: /scofield gate 3: PASS->FAIL/ },
+  { name: 'an editors note is changed in the notes file', run: 'scorecard', damage: e => e.json('library/commentary-notes/Calvin/ACT.json', d => { d.notes.find(n => n.text).text += ' x' }), want: /^exit/ },
+  { name: 'an editors note is deleted from the notes file', run: 'scorecard', damage: e => e.json('library/commentary-notes/Calvin/ISA.json', d => { d.notes.splice(5, 1) }), want: /^exit/ },
+  { name: 'Ezekiel chapter 21 text is changed in the notes file', run: 'scorecard', damage: e => e.json('library/commentary-notes/Calvin/EZK.json', d => { d.chapterMatter[0].text += ' x' }), want: /^exit/ },
+  { name: 'a footnote marker comes back into an Acts chapter', run: 'apply', damage: e => e.chapter(sk + 'Calvin/ACT.json', 3, c => { c.commentary = c.commentary.replace('the', 'the[7]') }), want: /^exit/ },
   { name: 'a scan exception is left behind after its finding is gone', run: 'scorecard', damage: e => e.json('library/scan-exceptions.json', d => { d.exceptions.push({ source: 'mhc', book: 'GEN', chapter: 1, check: 'tail-head', reason: 'test' }) }), want: /^exit/ }
 ]
 

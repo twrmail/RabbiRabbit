@@ -18,7 +18,7 @@ let abort = false
 const patchCache = {}
 const laterPatch = r => (patchCache[r.patchFile] ||= JSON.parse(fs.readFileSync(path.join(root, r.patchFile), 'utf8')))
 const laterRuleOwns = (rule, code, chapter, h) => fixes.rules.slice(fixes.rules.indexOf(rule) + 1).some(r2 =>
-  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks', 'hold-blocks'].includes(r2.op) &&
+  r2.patchFile && r2.folder === rule.folder && ['replace-chapters', 'insert-blocks', 'move-blocks', 'add-blocks', 'hold-blocks', 'split-notes'].includes(r2.op) &&
   laterPatch(r2).chapters.some(e => e.book === code && e.chapter === chapter && e.afterSha256 === h))
 for (const rule of fixes.rules) {
   const counts = {}, pending = []
@@ -220,6 +220,46 @@ for (const rule of fixes.rules) {
         if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
         return { ...ch, commentary: out }
       }) }
+    } else if (rule.op === 'split-notes') {
+      // the editors' footnotes (markers in the text and "Footnotes:" lists) are cut out of a chapter and kept word for word in rule.notesFolder.
+      // The patch records, for each chapter, the sha256 before and after and every cut (place, length, and for a list its sha256 and note numbers).
+      // Before anything is cut the tool rebuilds each list from the notes file and checks it equals the text being cut, so nothing is cut that is
+      // not kept. A chapter already matching "after" is left alone; one matching neither stops the tool. An entry with removeChapter takes the
+      // whole chapter out, but only if the notes file holds its text exactly (chapterMatter, same sha256).
+      const patch = JSON.parse(fs.readFileSync(path.join(root, rule.patchFile), 'utf8'))
+      const nf = JSON.parse(fs.readFileSync(path.join(root, rule.notesFolder, code + '.json'), 'utf8'))
+      const H = x => crypto.createHash('sha256').update(x).digest('hex')
+      const ents = patch.chapters.filter(x => x.book === code)
+      const listText = (chapter, nums) => {
+        const byN = new Map(nf.notes.filter(n => n.chapter === chapter).map(n => [n.n, n]))
+        return '\n\nFootnotes:' + nums.map(k => { const n = byN.get(k); if (!n) throw new Error(`${code} ${chapter}: note ${k} is not in the notes file`); return '\n\n[' + k + '] ' + (n.empty ? '{Bogus footnote}' : n.text) }).join('')
+      }
+      const keep = []
+      for (const ch of d.chapters) {
+        const ent = ents.find(x => x.chapter === ch.chapter)
+        if (!ent) { keep.push(ch); continue }
+        const h = H(ch.commentary)
+        if (ent.removeChapter) {
+          const m = (nf.chapterMatter || []).find(x => x.chapter === ch.chapter)
+          if (!m || H(m.text) !== m.sha256 || m.sha256 !== ent.beforeSha256 || m.text !== ch.commentary) throw new Error(`${code} ${ch.chapter}: the notes file does not hold this chapter word for word; nothing written`)
+          bump('chapters moved out'); continue
+        }
+        if (h === ent.afterSha256 || laterRuleOwns(rule, code, ch.chapter, h)) { keep.push(ch); continue }
+        if (h !== ent.beforeSha256) throw new Error(`${code} ${ch.chapter}: text matches neither the recorded before nor after hash; nothing written`)
+        let out = ch.commentary
+        for (const sp of [...ent.spans].sort((a, b) => b.off - a.off)) {
+          const cut = out.slice(sp.off, sp.off + sp.len)
+          if (sp.kind === 'marker') { if (cut !== sp.s) throw new Error(`${code} ${ch.chapter}: expected "${sp.s}" at ${sp.off}; nothing written`); bump('markers removed') }
+          else {
+            if (cut.length !== sp.len || H(cut) !== sp.sha256 || cut !== listText(ch.chapter, sp.n)) throw new Error(`${code} ${ch.chapter}: the list at ${sp.off} is not what the notes file holds; nothing written`)
+            bump('footnote lists moved'); counts['notes kept'] = (counts['notes kept'] || 0) + sp.n.length
+          }
+          out = out.slice(0, sp.off) + out.slice(sp.off + sp.len)
+        }
+        if (H(out) !== ent.afterSha256) throw new Error(`${code} ${ch.chapter}: result does not match the recorded after hash; nothing written`)
+        bump('chapters changed'); keep.push({ ...ch, commentary: out })
+      }
+      nd = { ...d, chapters: keep }
     } else if (rule.op === 'add-field') {
       // a top-level text field the file does not have yet (a source line), placed just before `rule.before`. Never overwrites: a different
       // value already there stops the run; the same value is left alone.

@@ -1,0 +1,9130 @@
+{
+ "layer": "editors-notes",
+ "source": "calvin",
+ "book": "ACT",
+ "about": "The Calvin Translation Society editors' footnotes to Calvin's ACT, kept word for word and apart from the commentary text. \"at\" is the place in the chapter text (library/commentary/Calvin) where the note was called; a note with \"empty\": true had no text in our source (a placeholder) and is listed only so the numbering is complete. Not Calvin's own words.",
+ "count": 1520,
+ "emptyPlaceholders": 0,
+ "notes": [
+  {
+   "chapter": 1,
+   "n": 18,
+   "at": 3681,
+   "text": "\"Nimiae,\" too great."
+  },
+  {
+   "chapter": 1,
+   "n": 19,
+   "at": 11052,
+   "text": "\"Ab unico magistro,\" by the only master, omitted."
+  },
+  {
+   "chapter": 1,
+   "n": 20,
+   "at": 12018,
+   "text": "\"Et ultimum bonum,\" and it is his final good, omitted."
+  },
+  {
+   "chapter": 1,
+   "n": 21,
+   "at": 19095,
+   "text": "\"Generaliter de gratia regenerationis,\" generally of the grace of regeneration."
+  },
+  {
+   "chapter": 1,
+   "n": 22,
+   "at": 20210,
+   "text": "\"Ex hoc loco et similibus vulgo colligunt,\" commonly gather out of this and similar passages."
+  },
+  {
+   "chapter": 1,
+   "n": 23,
+   "at": 21385,
+   "text": "\"Christum spoliemus,\" we rob Christ."
+  },
+  {
+   "chapter": 1,
+   "n": 24,
+   "at": 25933,
+   "text": "\"Perstringit,\" reprimand."
+  },
+  {
+   "chapter": 1,
+   "n": 25,
+   "at": 26285,
+   "text": "\"Misere dissipatum,\" miserably laid waste."
+  },
+  {
+   "chapter": 1,
+   "n": 26,
+   "at": 30266,
+   "text": "\"Supra ingenii nostri captum,\" beyond the reach of our minds."
+  },
+  {
+   "chapter": 1,
+   "n": 27,
+   "at": 30856,
+   "text": "\"Perstringit,\" reprimandeth."
+  },
+  {
+   "chapter": 1,
+   "n": 28,
+   "at": 31174,
+   "text": "\"Molliter quiescere,\" to take soft repose."
+  },
+  {
+   "chapter": 1,
+   "n": 29,
+   "at": 32101,
+   "text": "\"Subtiliter philosophemur,\" we subtlely philosophize."
+  },
+  {
+   "chapter": 1,
+   "n": 30,
+   "at": 32371,
+   "text": "\"Atqui in primis renunciandum erat mundo,\" but they ought, in the first instance, to renounce the world, omitted."
+  },
+  {
+   "chapter": 1,
+   "n": 31,
+   "at": 32744,
+   "text": "\"Indefessis animis,\" with unwearied minds, indefatigably."
+  },
+  {
+   "chapter": 1,
+   "n": 32,
+   "at": 33197,
+   "text": "\"Delicias,\" dainties."
+  },
+  {
+   "chapter": 1,
+   "n": 33,
+   "at": 33637,
+   "text": "\"Hac in parte omnes fuisse hallucinatos,\" that they all labored under this hallucination."
+  },
+  {
+   "chapter": 1,
+   "n": 34,
+   "at": 34025,
+   "text": "\"Chiliastas,\" the Chiliasts."
+  },
+  {
+   "chapter": 1,
+   "n": 35,
+   "at": 34476,
+   "text": "Transpose thus: As for us, lest we be entangled in like errors, let us learn to apply our minds to hear the gospel preached, (a preached gospel,) which prepareth a place in our heart for the kingdom of Christ."
+  },
+  {
+   "chapter": 1,
+   "n": 36,
+   "at": 34701,
+   "text": "\"Oblique refutat,\" indirectly refuteth."
+  },
+  {
+   "chapter": 1,
+   "n": 37,
+   "at": 35450,
+   "text": "\"Experti sunt,\" experienced."
+  },
+  {
+   "chapter": 1,
+   "n": 38,
+   "at": 35674,
+   "text": "\"Ut de propinquo triumpho cogitare desinant,\" that they may cease to think of a near triumph."
+  },
+  {
+   "chapter": 1,
+   "n": 39,
+   "at": 37137,
+   "text": "\"Haesissent attoniti,\" might have stood astonished."
+  },
+  {
+   "chapter": 1,
+   "n": 40,
+   "at": 37189,
+   "text": "\"Quam in edito et undique experto ac patente loco et constituti,\" when they were standing on an elevated spot, open on all sides, with nothing to interrupt the view."
+  },
+  {
+   "chapter": 1,
+   "n": 41,
+   "at": 37885,
+   "text": "\"Modulo,\" little measure."
+  },
+  {
+   "chapter": 1,
+   "n": 42,
+   "at": 38785,
+   "text": "\"Ad eorum dicta attentiores,\" might be more attentive to what they said."
+  },
+  {
+   "chapter": 1,
+   "n": 43,
+   "at": 39847,
+   "text": "\"Secundo,\" a second time, omitted."
+  },
+  {
+   "chapter": 1,
+   "n": 44,
+   "at": 40106,
+   "text": "\"Haerebit,\" shall cling to."
+  },
+  {
+   "chapter": 1,
+   "n": 45,
+   "at": 41204,
+   "text": "\"Complexa,\" system."
+  },
+  {
+   "chapter": 1,
+   "n": 46,
+   "at": 47324,
+   "text": "\"Inquilinis,\" tenants or lodgers."
+  },
+  {
+   "chapter": 1,
+   "n": 47,
+   "at": 47516,
+   "text": "\"In angustum locum fuisse constrictos,\" were confined to a narrow space."
+  },
+  {
+   "chapter": 1,
+   "n": 48,
+   "at": 48540,
+   "text": "More properly, For the Lord doth in the law command, etc."
+  },
+  {
+   "chapter": 1,
+   "n": 49,
+   "at": 48834,
+   "text": "\"Communi sacerdotum concilio,\" by the common council of the priests, the Sanhedrim."
+  },
+  {
+   "chapter": 1,
+   "n": 50,
+   "at": 49430,
+   "text": "\"Primatum,\" primacy."
+  },
+  {
+   "chapter": 1,
+   "n": 51,
+   "at": 52390,
+   "text": "\"In melius,\" for the better."
+  },
+  {
+   "chapter": 1,
+   "n": 52,
+   "at": 53665,
+   "text": "\"Ut precibus nostris concedat,\" that he would grant our prayers."
+  },
+  {
+   "chapter": 1,
+   "n": 53,
+   "at": 53736,
+   "text": "\"Ut quotidiana Spiritus augmenta impetremus,\" that we may obtain daily increase of the Spirit."
+  },
+  {
+   "chapter": 1,
+   "n": 54,
+   "at": 54238,
+   "text": "\"Suspensos tenuit,\" kept them in suspense."
+  },
+  {
+   "chapter": 1,
+   "n": 55,
+   "at": 54328,
+   "text": "\"Differt,\" defer or delay."
+  },
+  {
+   "chapter": 1,
+   "n": 56,
+   "at": 57629,
+   "text": "\"Ut ita loquar claudicaret,\" had been, so to speak, lame, defective."
+  },
+  {
+   "chapter": 1,
+   "n": 57,
+   "at": 59101,
+   "text": "\"Universae Ecclesiae,\" the Universal Church."
+  },
+  {
+   "chapter": 1,
+   "n": 58,
+   "at": 59429,
+   "text": "\"Illis valere jussis,\" omitting these things."
+  },
+  {
+   "chapter": 1,
+   "n": 59,
+   "at": 60269,
+   "text": "\"Offendicula,\" small scandals."
+  },
+  {
+   "chapter": 1,
+   "n": 60,
+   "at": 62297,
+   "text": "\"Atrocitatem sceleris,\" the atrocity of the crime."
+  },
+  {
+   "chapter": 1,
+   "n": 61,
+   "at": 62349,
+   "text": "\"Ut sibi caveant et metuani,\" to be cautious and fear."
+  },
+  {
+   "chapter": 1,
+   "n": 62,
+   "at": 63785,
+   "text": "\"Lectoribus obscura essent,\" might be obscure to his readers."
+  },
+  {
+   "chapter": 1,
+   "n": 63,
+   "at": 64423,
+   "text": "\"Argento potitus non est,\" he did not obtain the money."
+  },
+  {
+   "chapter": 1,
+   "n": 64,
+   "at": 68912,
+   "text": "\"Contextus,\" context."
+  },
+  {
+   "chapter": 1,
+   "n": 65,
+   "at": 69322,
+   "text": "\"Oblique,\" indirectly."
+  },
+  {
+   "chapter": 1,
+   "n": 66,
+   "at": 69875,
+   "text": "\"Transferendo,\" transferring."
+  },
+  {
+   "chapter": 1,
+   "n": 67,
+   "at": 70245,
+   "text": "\"Quum opera nostra uti velit Deus,\" since God is pleased to use our agency."
+  },
+  {
+   "chapter": 1,
+   "n": 68,
+   "at": 73658,
+   "text": "\"Admirable speculum,\" an admirable mirror."
+  },
+  {
+   "chapter": 1,
+   "n": 69,
+   "at": 73897,
+   "text": "\"Quasi sepultam,\" as it were buried."
+  },
+  {
+   "chapter": 1,
+   "n": 70,
+   "at": 75655,
+   "text": "\"Tali dissidio,\" with such dissension."
+  },
+  {
+   "chapter": 1,
+   "n": 71,
+   "at": 76549,
+   "text": "\"Medium fuit temperamentum.\" a middle course was adopted."
+  },
+  {
+   "chapter": 1,
+   "n": 72,
+   "at": 77620,
+   "text": "\"Suis suffragiis,\" their suffrages."
+  },
+  {
+   "chapter": 1,
+   "n": 73,
+   "at": 77885,
+   "text": "\"Valere sinamus,\" let us leave them alone, bid them good day."
+  },
+  {
+   "chapter": 1,
+   "n": 74,
+   "at": 79002,
+   "text": "\"In fumum abeunt,\" go to smoke."
+  },
+  {
+   "chapter": 1,
+   "n": 75,
+   "at": 79008,
+   "text": "There is here a transposition in the translation. The 26th verse precedes the 25th."
+  },
+  {
+   "chapter": 1,
+   "n": 76,
+   "at": 82240,
+   "text": "\"Eorum suffragiis,\" by their suffrages."
+  },
+  {
+   "chapter": 2,
+   "n": 77,
+   "at": 1864,
+   "text": "\"Ut more videbimus,\" as we shall by and by see, omitted."
+  },
+  {
+   "chapter": 2,
+   "n": 78,
+   "at": 1946,
+   "text": "\"Festis diebus,\" on feast days, or festivals."
+  },
+  {
+   "chapter": 2,
+   "n": 79,
+   "at": 8452,
+   "text": "\"Hebraismis,\" Hebraisms."
+  },
+  {
+   "chapter": 2,
+   "n": 80,
+   "at": 9143,
+   "text": "\"Excellentiam quae obeundo muneri par futura esset.\" but that excellence which might be sufficient to enable each to execute his office."
+  },
+  {
+   "chapter": 2,
+   "n": 81,
+   "at": 9635,
+   "text": "\"Nativum,\" native."
+  },
+  {
+   "chapter": 2,
+   "n": 82,
+   "at": 10919,
+   "text": "\"Latine,\" in Latin."
+  },
+  {
+   "chapter": 2,
+   "n": 83,
+   "at": 11991,
+   "text": "\"Vere mutasse,\" truly changed."
+  },
+  {
+   "chapter": 2,
+   "n": 84,
+   "at": 12940,
+   "text": "\"Musto,\" must, new wine."
+  },
+  {
+   "chapter": 2,
+   "n": 85,
+   "at": 14113,
+   "text": "\"Linguae commercium,\" interchange of speech."
+  },
+  {
+   "chapter": 2,
+   "n": 86,
+   "at": 15511,
+   "text": "\"Ut peregrinas linguas discere potuerint,\" so as to be able to learn foreign tongues."
+  },
+  {
+   "chapter": 2,
+   "n": 87,
+   "at": 15917,
+   "text": "\"Idiotae,\" unlearned."
+  },
+  {
+   "chapter": 2,
+   "n": 88,
+   "at": 15940,
+   "text": "\"Nati in contempto angulo,\" born in a district of no repute."
+  },
+  {
+   "chapter": 2,
+   "n": 89,
+   "at": 20844,
+   "text": "\"Abhorret,\" differs from."
+  },
+  {
+   "chapter": 2,
+   "n": 90,
+   "at": 21283,
+   "text": "\"Veteribus,\" the ancients."
+  },
+  {
+   "chapter": 2,
+   "n": 91,
+   "at": 21457,
+   "text": "\"Anxia excusatio,\" anxious excuse."
+  },
+  {
+   "chapter": 2,
+   "n": 92,
+   "at": 21973,
+   "text": "\"Quod autem omnibus exprobrat paucorum vitium,\" as to his upbraiding all with the fault of a few."
+  },
+  {
+   "chapter": 2,
+   "n": 93,
+   "at": 22166,
+   "text": "\"Eam non negligit,\" he does not neglect it."
+  },
+  {
+   "chapter": 2,
+   "n": 94,
+   "at": 26066,
+   "text": "\"Antithesis,\" antithesis."
+  },
+  {
+   "chapter": 2,
+   "n": 95,
+   "at": 27594,
+   "text": "\"Paedagogiam,\" tutelage."
+  },
+  {
+   "chapter": 2,
+   "n": 96,
+   "at": 29035,
+   "text": "\"Suo seculo,\" for their own age."
+  },
+  {
+   "chapter": 2,
+   "n": 97,
+   "at": 30014,
+   "text": "\"OEconomia,\" economy."
+  },
+  {
+   "chapter": 2,
+   "n": 98,
+   "at": 36247,
+   "text": "\"Absurdum,\" absurd."
+  },
+  {
+   "chapter": 2,
+   "n": 99,
+   "at": 42724,
+   "text": "\"Male,\" ill, improperly."
+  },
+  {
+   "chapter": 2,
+   "n": 100,
+   "at": 42904,
+   "text": "\"Exhibitum,\" exhibited."
+  },
+  {
+   "chapter": 2,
+   "n": 101,
+   "at": 43827,
+   "text": "\"Virtutes.\""
+  },
+  {
+   "chapter": 2,
+   "n": 102,
+   "at": 43947,
+   "text": "\"Prodigia,\" prodigies."
+  },
+  {
+   "chapter": 2,
+   "n": 103,
+   "at": 44657,
+   "text": "\"Suis imposturis fidem facerent magi,\" magians might procure credit for their impostures."
+  },
+  {
+   "chapter": 2,
+   "n": 104,
+   "at": 46683,
+   "text": "\"Praetextus,\" pretext."
+  },
+  {
+   "chapter": 2,
+   "n": 105,
+   "at": 47949,
+   "text": "\"Morti addictum,\" subjected to death."
+  },
+  {
+   "chapter": 2,
+   "n": 106,
+   "at": 52207,
+   "text": "\"Ex duobus absurdis alterutrum,\" one of two absurdities."
+  },
+  {
+   "chapter": 2,
+   "n": 107,
+   "at": 52776,
+   "text": "\"Demum,\" only."
+  },
+  {
+   "chapter": 2,
+   "n": 108,
+   "at": 53215,
+   "text": "\"Cupiant,\" desire."
+  },
+  {
+   "chapter": 2,
+   "n": 109,
+   "at": 53488,
+   "text": "\"Peccant,\" they sin."
+  },
+  {
+   "chapter": 2,
+   "n": 110,
+   "at": 56426,
+   "text": "\"Christi,\" of Christ."
+  },
+  {
+   "chapter": 2,
+   "n": 111,
+   "at": 56714,
+   "text": "\"Inculcasset,\" inculcated."
+  },
+  {
+   "chapter": 2,
+   "n": 112,
+   "at": 59535,
+   "text": "\"Superiorem communi sorte,\" superior to the common lot."
+  },
+  {
+   "chapter": 2,
+   "n": 113,
+   "at": 62314,
+   "text": "\"Acquieverint,\" acquiesced in."
+  },
+  {
+   "chapter": 2,
+   "n": 114,
+   "at": 63001,
+   "text": "\"Eludunt,\" they evade, practice evasion."
+  },
+  {
+   "chapter": 2,
+   "n": 115,
+   "at": 63805,
+   "text": "\"Oblique,\" indirectly."
+  },
+  {
+   "chapter": 2,
+   "n": 116,
+   "at": 65312,
+   "text": "\"Non esse periculum ne unquam nos ac fidem nostram frustratur,\" there is no danger of his deceiving us or our faith."
+  },
+  {
+   "chapter": 2,
+   "n": 117,
+   "at": 65465,
+   "text": "\"Antevertere,\" outstrip."
+  },
+  {
+   "chapter": 2,
+   "n": 118,
+   "at": 66792,
+   "text": "\"Stupeant,\" be stupid or stunned."
+  },
+  {
+   "chapter": 2,
+   "n": 119,
+   "at": 67025,
+   "text": "\"Anxietate,\" anxiety."
+  },
+  {
+   "chapter": 2,
+   "n": 120,
+   "at": 67396,
+   "text": "\"Quin erumpat in linguae exultationem,\" but will burst forth into the language of exultation."
+  },
+  {
+   "chapter": 2,
+   "n": 121,
+   "at": 71200,
+   "text": "\"Specula,\" watch tower."
+  },
+  {
+   "chapter": 2,
+   "n": 122,
+   "at": 72041,
+   "text": "\"Hoc principium quod Paulus tradit Christum esse finem legis,\" etc., this principle which Paul delivers, viz., that Christ was the end of the law, was of great force, etc."
+  },
+  {
+   "chapter": 2,
+   "n": 123,
+   "at": 73141,
+   "text": "\"Pignoris instar,\" like a pledge, omitted."
+  },
+  {
+   "chapter": 2,
+   "n": 124,
+   "at": 74437,
+   "text": "\"Contextus,\" context."
+  },
+  {
+   "chapter": 2,
+   "n": 125,
+   "at": 79441,
+   "text": "\"Prophetia admoniti,\" admonished by prophecy, omitted."
+  },
+  {
+   "chapter": 2,
+   "n": 126,
+   "at": 90979,
+   "text": "\"Expiantur,\" expiated."
+  },
+  {
+   "chapter": 2,
+   "n": 127,
+   "at": 95162,
+   "text": "\"Expiatione,\" expiation."
+  },
+  {
+   "chapter": 2,
+   "n": 128,
+   "at": 96862,
+   "text": "\"Nihil absurdi est si partem alteram praetereat,\" there is no absurdity, there is nothing strange, in his omitting the other part."
+  },
+  {
+   "chapter": 2,
+   "n": 129,
+   "at": 98257,
+   "text": "\"Virtutem,\" virtue or efficacy."
+  },
+  {
+   "chapter": 2,
+   "n": 130,
+   "at": 102757,
+   "text": "\"Effugium in allegorico sensu captant,\" they attempt evasion by giving an allegorical meaning."
+  },
+  {
+   "chapter": 2,
+   "n": 131,
+   "at": 105468,
+   "text": "\"Multum institisse.\" insisted much."
+  },
+  {
+   "chapter": 2,
+   "n": 132,
+   "at": 105614,
+   "text": "\"Protinus,\" forthwith."
+  },
+  {
+   "chapter": 2,
+   "n": 133,
+   "at": 106857,
+   "text": "\"Alienorum,\" of strangers or aliens."
+  },
+  {
+   "chapter": 2,
+   "n": 134,
+   "at": 106972,
+   "text": "\"Medii stare,\" to hold a middle course, remain undecided."
+  },
+  {
+   "chapter": 2,
+   "n": 135,
+   "at": 107710,
+   "text": "\"Ordinarium Ecclesiae regimen,\" the ordinary government of the Church."
+  },
+  {
+   "chapter": 2,
+   "n": 136,
+   "at": 108202,
+   "text": "\"Ililari,\" cheerful."
+  },
+  {
+   "chapter": 2,
+   "n": 137,
+   "at": 108482,
+   "text": "\"Impetum,\" impulse."
+  },
+  {
+   "chapter": 2,
+   "n": 138,
+   "at": 110100,
+   "text": "\"Communiter,\" in common."
+  },
+  {
+   "chapter": 2,
+   "n": 139,
+   "at": 110916,
+   "text": "\"Ad vivum depicta,\" painted to the life."
+  },
+  {
+   "chapter": 2,
+   "n": 140,
+   "at": 111496,
+   "text": "\"Secure,\" confidently."
+  },
+  {
+   "chapter": 2,
+   "n": 141,
+   "at": 111947,
+   "text": "\"Conflata est,\" compounded."
+  },
+  {
+   "chapter": 2,
+   "n": 142,
+   "at": 112526,
+   "text": "\"Hic enim erit status,\" for the state (of the question) shall be."
+  },
+  {
+   "chapter": 2,
+   "n": 143,
+   "at": 113617,
+   "text": "\"Inane...nomen,\" the empty name."
+  },
+  {
+   "chapter": 2,
+   "n": 144,
+   "at": 114579,
+   "text": "\"Momentum,\" moment."
+  },
+  {
+   "chapter": 2,
+   "n": 145,
+   "at": 114872,
+   "text": "\"Sed qui suspensos tenet adeoque constrictos,\" but which keeps them in suspense and restrained."
+  },
+  {
+   "chapter": 2,
+   "n": 146,
+   "at": 115023,
+   "text": "\"Impliciti,\" entangled."
+  },
+  {
+   "chapter": 2,
+   "n": 147,
+   "at": 115593,
+   "text": "\"Alios nullo metu fuisse deterritos quin furiose adversus Ecclesiam saevirent,\" that others were not deterred by any fear from raging against the Church."
+  },
+  {
+   "chapter": 2,
+   "n": 148,
+   "at": 115734,
+   "text": "\"Obmuteceret,\" stood dumb."
+  },
+  {
+   "chapter": 2,
+   "n": 149,
+   "at": 116134,
+   "text": "\"In obsequium Dei,\" into obedience to God."
+  },
+  {
+   "chapter": 2,
+   "n": 150,
+   "at": 116632,
+   "text": "\"Emergeret,\" might emerge, or raise her head."
+  },
+  {
+   "chapter": 2,
+   "n": 151,
+   "at": 116669,
+   "text": "\"Subinde sumus experti,\" have ever and anon experienced."
+  },
+  {
+   "chapter": 2,
+   "n": 152,
+   "at": 119940,
+   "text": "\"Nec solliciti sunt si quisquam egeat,\" nor are solicitous if any man want."
+  },
+  {
+   "chapter": 2,
+   "n": 153,
+   "at": 120275,
+   "text": "\"Quorum aemuli haberi volunt,\" whose rivals they would be thought."
+  },
+  {
+   "chapter": 2,
+   "n": 154,
+   "at": 120968,
+   "text": "\"Ad templi cultum,\" to worship the temple."
+  },
+  {
+   "chapter": 2,
+   "n": 155,
+   "at": 121112,
+   "text": "\"Quibus alibi magis distracti fuissent,\" with which elsewhere they might have been more distracted."
+  },
+  {
+   "chapter": 2,
+   "n": 156,
+   "at": 121899,
+   "text": "\"Frugaliter,\" frugally."
+  },
+  {
+   "chapter": 2,
+   "n": 157,
+   "at": 122251,
+   "text": "\"Et probabilis est uterque contextus,\" and the context makes this probable."
+  },
+  {
+   "chapter": 2,
+   "n": 158,
+   "at": 122499,
+   "text": "\"Eam ubique coluerunt,\" did cultivate it everywhere."
+  },
+  {
+   "chapter": 2,
+   "n": 159,
+   "at": 123484,
+   "text": "\"Providi homines,\" the provident, or over careful."
+  },
+  {
+   "chapter": 2,
+   "n": 160,
+   "at": 124107,
+   "text": "\"Populo grati atque probati essent,\" that they were agreeable to, and approved by, the people."
+  },
+  {
+   "chapter": 2,
+   "n": 161,
+   "at": 124550,
+   "text": "\"Praxitati,\" wickedness."
+  },
+  {
+   "chapter": 2,
+   "n": 162,
+   "at": 124652,
+   "text": "\"Vendicat,\" claimeth."
+  },
+  {
+   "chapter": 2,
+   "n": 163,
+   "at": 125187,
+   "text": "\"Extra eam,\" out of it, (the Church,) omitted."
+  },
+  {
+   "chapter": 3,
+   "n": 164,
+   "at": 1893,
+   "text": "\"Naturae autem vitium,\" but a natural defect."
+  },
+  {
+   "chapter": 3,
+   "n": 165,
+   "at": 2753,
+   "text": "\"Ad vesperum,\" towards evening."
+  },
+  {
+   "chapter": 3,
+   "n": 166,
+   "at": 3852,
+   "text": "\"Ab invocatione et cultu Dei,\" with invocation and worship of God."
+  },
+  {
+   "chapter": 3,
+   "n": 167,
+   "at": 4171,
+   "text": "\"Statas horas,\" stated hours."
+  },
+  {
+   "chapter": 3,
+   "n": 168,
+   "at": 4864,
+   "text": "\"A nobis povocetur,\" until he is urged by us."
+  },
+  {
+   "chapter": 3,
+   "n": 169,
+   "at": 5134,
+   "text": "\"Partes nostras non omittamus,\" let us not omit our part."
+  },
+  {
+   "chapter": 3,
+   "n": 170,
+   "at": 7640,
+   "text": "\"Principio quidem erat hoc clusorium,\" at first, indeed, this was illusory."
+  },
+  {
+   "chapter": 3,
+   "n": 171,
+   "at": 11139,
+   "text": "\"Universalem typum,\" universal type."
+  },
+  {
+   "chapter": 3,
+   "n": 172,
+   "at": 12216,
+   "text": "\"Profectus,\" progress, or profiting."
+  },
+  {
+   "chapter": 3,
+   "n": 173,
+   "at": 13527,
+   "text": "\"Si volumus ad scopum pervenire,\" if we would attain to the mark, omitted."
+  },
+  {
+   "chapter": 3,
+   "n": 174,
+   "at": 14340,
+   "text": "\"Ex nostro stupore,\" from our stupor, or stupidity."
+  },
+  {
+   "chapter": 3,
+   "n": 175,
+   "at": 14497,
+   "text": "\"Suggeret mihi,\" will suggest to me."
+  },
+  {
+   "chapter": 3,
+   "n": 176,
+   "at": 14542,
+   "text": "\"Divinum hominem,\" a divine man."
+  },
+  {
+   "chapter": 3,
+   "n": 177,
+   "at": 14774,
+   "text": "\"Ubi nullus ecarguebat superstitionem,\" where none condemned the superstition."
+  },
+  {
+   "chapter": 3,
+   "n": 178,
+   "at": 14875,
+   "text": "\"Magis sollicite,\" the more anxiously."
+  },
+  {
+   "chapter": 3,
+   "n": 179,
+   "at": 14974,
+   "text": "\"Erectos,\" when we are lifted up, or aroused by."
+  },
+  {
+   "chapter": 3,
+   "n": 180,
+   "at": 18171,
+   "text": "\"Effugium,\" evasion or subterfuge."
+  },
+  {
+   "chapter": 3,
+   "n": 181,
+   "at": 20893,
+   "text": "\"Tacite admonet,\" tacitly reminds them."
+  },
+  {
+   "chapter": 3,
+   "n": 182,
+   "at": 22300,
+   "text": "\"Inculcant,\" inculcate."
+  },
+  {
+   "chapter": 3,
+   "n": 183,
+   "at": 28473,
+   "text": "\"Perfidia,\" perfidy."
+  },
+  {
+   "chapter": 3,
+   "n": 184,
+   "at": 29715,
+   "text": "\"Perdimus,\" destroy."
+  },
+  {
+   "chapter": 3,
+   "n": 185,
+   "at": 31376,
+   "text": "\"Ecliptica,\" elliptic."
+  },
+  {
+   "chapter": 3,
+   "n": 186,
+   "at": 31695,
+   "text": "\"Coactum,\" forced."
+  },
+  {
+   "chapter": 3,
+   "n": 187,
+   "at": 32252,
+   "text": "\"Quodam, ut ita loquar veterno obruti sunt,\" are oppressed, so to speak, with a kind of lethargy."
+  },
+  {
+   "chapter": 3,
+   "n": 188,
+   "at": 35068,
+   "text": "\"Codices,\" manuscripts."
+  },
+  {
+   "chapter": 3,
+   "n": 189,
+   "at": 36008,
+   "text": "\"Quamvis immensa locorum distamia sit remotus,\" although, in respect of place, he is at an immense distance from them."
+  },
+  {
+   "chapter": 3,
+   "n": 190,
+   "at": 36090,
+   "text": "\"Ambigua lequtio,\" an ambiguous expression."
+  },
+  {
+   "chapter": 3,
+   "n": 191,
+   "at": 37522,
+   "text": "\"Statim,\" immediately."
+  },
+  {
+   "chapter": 3,
+   "n": 192,
+   "at": 37573,
+   "text": "\"Completa,\" complete."
+  },
+  {
+   "chapter": 3,
+   "n": 193,
+   "at": 37654,
+   "text": "\"Antivertere,\" anticipate."
+  },
+  {
+   "chapter": 3,
+   "n": 194,
+   "at": 38338,
+   "text": "\"Ab ultima aetate,\" from the remotest age."
+  },
+  {
+   "chapter": 3,
+   "n": 195,
+   "at": 43241,
+   "text": "\"Aliquot...saecula,\" for some ages."
+  },
+  {
+   "chapter": 3,
+   "n": 196,
+   "at": 44312,
+   "text": "\"Velut intermedios.\" as intermediate."
+  },
+  {
+   "chapter": 3,
+   "n": 197,
+   "at": 48130,
+   "text": "\"Vacillaret,\" vacillate or waver."
+  },
+  {
+   "chapter": 3,
+   "n": 198,
+   "at": 52750,
+   "text": "\"Converso,\" conversely."
+  },
+  {
+   "chapter": 3,
+   "n": 199,
+   "at": 54539,
+   "text": "\"Populos,\" nations."
+  },
+  {
+   "chapter": 3,
+   "n": 200,
+   "at": 57646,
+   "text": "\"Restrictionem,\" a reservation."
+  },
+  {
+   "chapter": 4,
+   "n": 202,
+   "at": 4603,
+   "text": "\"Animosiores,\" more zealous."
+  },
+  {
+   "chapter": 4,
+   "n": 203,
+   "at": 6491,
+   "text": "\"Omnia machinando,\" by all their machinations."
+  },
+  {
+   "chapter": 4,
+   "n": 204,
+   "at": 10312,
+   "text": "\"Quanquam nec sic quidem soluta erit tota difficultas,\" although not even in this way will the whole difficulty be solved."
+  },
+  {
+   "chapter": 4,
+   "n": 205,
+   "at": 11692,
+   "text": "\"Fortitudine et prudentia,\" prudence and fortitude."
+  },
+  {
+   "chapter": 4,
+   "n": 206,
+   "at": 13420,
+   "text": "\"Subterfugia,\" subterfuges."
+  },
+  {
+   "chapter": 4,
+   "n": 207,
+   "at": 13460,
+   "text": "\"Si noluisset causam ingredi,\" if he had been unwilling to enter upon the cause."
+  },
+  {
+   "chapter": 4,
+   "n": 208,
+   "at": 14833,
+   "text": "\"Praesules,\" prelates."
+  },
+  {
+   "chapter": 4,
+   "n": 209,
+   "at": 15391,
+   "text": "\"Architectos,\" the architects."
+  },
+  {
+   "chapter": 4,
+   "n": 210,
+   "at": 20485,
+   "text": "\"Extinguere,\" to extinguish or annihilate."
+  },
+  {
+   "chapter": 4,
+   "n": 211,
+   "at": 26068,
+   "text": "\"Audacius,\" audaciously."
+  },
+  {
+   "chapter": 4,
+   "n": 212,
+   "at": 26493,
+   "text": "\"Quam pro nihilo ducendum sit quicquid decernunt et jubent,\" that whatever they order and decree ought to be held as null."
+  },
+  {
+   "chapter": 4,
+   "n": 213,
+   "at": 28195,
+   "text": "\"Hanc quaestionem lepide diremit Papa,\" the Pope wittily disposes of this question."
+  },
+  {
+   "chapter": 4,
+   "n": 214,
+   "at": 28313,
+   "text": "\"Effutire,\" to babble forth."
+  },
+  {
+   "chapter": 4,
+   "n": 215,
+   "at": 28602,
+   "text": "\"Non posse eos nisi ex Dei mandato praecipere,\" that no command can possibly proceed from them without being agreeable to the will of God."
+  },
+  {
+   "chapter": 4,
+   "n": 216,
+   "at": 30754,
+   "text": "\"Interdictis,\" the interdicts."
+  },
+  {
+   "chapter": 4,
+   "n": 217,
+   "at": 31571,
+   "text": "\"Libere,\" freely, omitted."
+  },
+  {
+   "chapter": 4,
+   "n": 218,
+   "at": 32438,
+   "text": "\"Ut illis nocendi via non pateat,\" that they have no means of doing harm."
+  },
+  {
+   "chapter": 4,
+   "n": 219,
+   "at": 34863,
+   "text": "\"Reputent,\" let them consider."
+  },
+  {
+   "chapter": 4,
+   "n": 220,
+   "at": 34962,
+   "text": "\"Obcundis,\" to obviate or face them."
+  },
+  {
+   "chapter": 4,
+   "n": 221,
+   "at": 35057,
+   "text": "\"Ne pigeat,\" let it not grieve them."
+  },
+  {
+   "chapter": 4,
+   "n": 222,
+   "at": 35109,
+   "text": "\"Confidant,\" let them confide."
+  },
+  {
+   "chapter": 4,
+   "n": 223,
+   "at": 35150,
+   "text": "\"Semper inexpugnabiles,\" always invincible."
+  },
+  {
+   "chapter": 4,
+   "n": 224,
+   "at": 35556,
+   "text": "\"Ut serviliter excipient,\" as servilely to submit."
+  },
+  {
+   "chapter": 4,
+   "n": 225,
+   "at": 37418,
+   "text": "\"Qui eos ab efficio abducat,\" which might draw them off from their duty."
+  },
+  {
+   "chapter": 4,
+   "n": 226,
+   "at": 37435,
+   "text": "\"Eniti,\" struggle after."
+  },
+  {
+   "chapter": 4,
+   "n": 227,
+   "at": 40154,
+   "text": "\"Per summas difficultates regno potitus est,\" came to the kingdom through the greatest difficulties."
+  },
+  {
+   "chapter": 4,
+   "n": 228,
+   "at": 42384,
+   "text": "\"Tumultuantes,\" in tumult."
+  },
+  {
+   "chapter": 4,
+   "n": 229,
+   "at": 42448,
+   "text": "\"Infensos illi,\" hostile to it."
+  },
+  {
+   "chapter": 4,
+   "n": 230,
+   "at": 53751,
+   "text": "\"Sincero cordis affectu,\" with sincere affection of heart, omitted."
+  },
+  {
+   "chapter": 4,
+   "n": 231,
+   "at": 53816,
+   "text": "\"Nam et externa beneficentia nisi oriatur ex corde, nihili est coram Deo,\" for even an external beneficence, if it comes not from the heart, is of no value in the sight of God, omitted."
+  },
+  {
+   "chapter": 4,
+   "n": 232,
+   "at": 55028,
+   "text": "\"Benefici,\" beneficient."
+  },
+  {
+   "chapter": 4,
+   "n": 233,
+   "at": 55292,
+   "text": "\"Latius exponit,\" expoundeth more at large."
+  },
+  {
+   "chapter": 4,
+   "n": 234,
+   "at": 56551,
+   "text": "\"Adhibitam fuisse prudentiam,\" that prudence was used."
+  },
+  {
+   "chapter": 4,
+   "n": 235,
+   "at": 58089,
+   "text": "\"Ut communem terrae habitationem, communem aquae, aeris, et coeli usum pauperibus invideant,\" that they envy the poor a common dwelling on the earth, the common use of water, air, and sky."
+  },
+  {
+   "chapter": 4,
+   "n": 236,
+   "at": 58881,
+   "text": "\"Delirium,\" delirium."
+  },
+  {
+   "chapter": 4,
+   "n": 201,
+   "at": 362,
+   "text": "\"Fortitudine,\" fortitude."
+  },
+  {
+   "chapter": 5,
+   "n": 237,
+   "at": 2821,
+   "text": "\"Accedit huc quoque obstinata mentiendi audacia,\" to this was also added an obstinate audacity in lying, omitted."
+  },
+  {
+   "chapter": 5,
+   "n": 238,
+   "at": 2865,
+   "text": "\"Praeclarum in speciem et memorabile,\" in appearance noble and memorable."
+  },
+  {
+   "chapter": 5,
+   "n": 239,
+   "at": 4024,
+   "text": "\"Theatri plausum appetamus,\" long for the plaudits of a theatre."
+  },
+  {
+   "chapter": 5,
+   "n": 240,
+   "at": 4779,
+   "text": "\"Criminis atrocitatem,\" the atrocity of the crime."
+  },
+  {
+   "chapter": 5,
+   "n": 241,
+   "at": 6028,
+   "text": "\"Veluti cornici, uti proverbio dicitur, configere oculos,\" and as the proverb says, \"put out the eyes of the crow.\""
+  },
+  {
+   "chapter": 5,
+   "n": 242,
+   "at": 11387,
+   "text": "\"Tam graviter,\" so grievously, severely."
+  },
+  {
+   "chapter": 5,
+   "n": 243,
+   "at": 13024,
+   "text": "\"Subito impetu,\" by sudden impulse."
+  },
+  {
+   "chapter": 5,
+   "n": 244,
+   "at": 13176,
+   "text": "\"Qui sibi veniam praecidunt,\" who cut themselves off from pardon."
+  },
+  {
+   "chapter": 5,
+   "n": 245,
+   "at": 13455,
+   "text": "\"Placida,\" calm."
+  },
+  {
+   "chapter": 5,
+   "n": 246,
+   "at": 13519,
+   "text": "\"Pergendo secure,\" in proceeding securely."
+  },
+  {
+   "chapter": 5,
+   "n": 247,
+   "at": 13994,
+   "text": "\"Olim,\" one day."
+  },
+  {
+   "chapter": 5,
+   "n": 248,
+   "at": 15073,
+   "text": "\"Absurdum,\" absurd or strange."
+  },
+  {
+   "chapter": 5,
+   "n": 249,
+   "at": 18498,
+   "text": "\"Genuino,\" genuine."
+  },
+  {
+   "chapter": 5,
+   "n": 250,
+   "at": 18614,
+   "text": "\"Quasi accidentale erat,\" was, as it were, accidental."
+  },
+  {
+   "chapter": 5,
+   "n": 251,
+   "at": 18698,
+   "text": "\"Fidei subserviunt,\" are subservient to faith."
+  },
+  {
+   "chapter": 5,
+   "n": 252,
+   "at": 20226,
+   "text": "\"Intra privates parietes se teneret,\" as to keep himself within a private buildings."
+  },
+  {
+   "chapter": 5,
+   "n": 253,
+   "at": 22653,
+   "text": "\"Sed quia illis divinum aliquid subolet nostra doctrina,\" but because our doctrine has somewhat of a divine savor to them."
+  },
+  {
+   "chapter": 5,
+   "n": 254,
+   "at": 25641,
+   "text": "\"Magnifice ornatum,\" magnificently furnished."
+  },
+  {
+   "chapter": 5,
+   "n": 255,
+   "at": 25876,
+   "text": "\"Ut de integro violentius saevirent,\" so that they anew become more violently enraged."
+  },
+  {
+   "chapter": 5,
+   "n": 256,
+   "at": 27518,
+   "text": "\"Totem Ecclesiae gubernationem horrenda vastitate tunc fuisse confusam,\" that the whole government of the Church was then confused and lying waste."
+  },
+  {
+   "chapter": 5,
+   "n": 257,
+   "at": 29062,
+   "text": "\"Novis rebus,\" a revolution."
+  },
+  {
+   "chapter": 5,
+   "n": 258,
+   "at": 29396,
+   "text": "\"Frena iracundiae suae laxare,\" to give loose reins to their wrath."
+  },
+  {
+   "chapter": 5,
+   "n": 259,
+   "at": 29544,
+   "text": "\"Atqui hoc ordine prius erat, habere boni et mali discrimen, ne temere quicquam improbetur,\" but the first thing in order was to observe the distinction between good and evil, that nothing might be rashly disapproved."
+  },
+  {
+   "chapter": 5,
+   "n": 260,
+   "at": 34389,
+   "text": "\"Speciosi juris praetextus,\" the specious pretexts of law."
+  },
+  {
+   "chapter": 5,
+   "n": 261,
+   "at": 35074,
+   "text": "\"Extinguendam,\" to extinguish."
+  },
+  {
+   "chapter": 5,
+   "n": 262,
+   "at": 35184,
+   "text": "\"Ambitu,\" by intrigue."
+  },
+  {
+   "chapter": 5,
+   "n": 263,
+   "at": 35300,
+   "text": "\"Mutuis caedibus,\" mutual slaughter."
+  },
+  {
+   "chapter": 5,
+   "n": 264,
+   "at": 36105,
+   "text": "\"Neque enim mihi probabile est,\" for it does not seem to me probable."
+  },
+  {
+   "chapter": 5,
+   "n": 265,
+   "at": 37142,
+   "text": "\"Inobedientiae et contumaciae,\" of contumacy and disobedience."
+  },
+  {
+   "chapter": 5,
+   "n": 266,
+   "at": 37813,
+   "text": "\"Pro confesso sumit,\" he takes for granted."
+  },
+  {
+   "chapter": 5,
+   "n": 267,
+   "at": 38172,
+   "text": "\"Vicissim,\" in his turn, is omitted in the translation."
+  },
+  {
+   "chapter": 5,
+   "n": 268,
+   "at": 38592,
+   "text": "\"Esse rebelles,\" are rebels."
+  },
+  {
+   "chapter": 5,
+   "n": 269,
+   "at": 40908,
+   "text": "\"Eadem in parentibus et dominis ratio,\" the same holds in parents and masters, omitted in the translation."
+  },
+  {
+   "chapter": 5,
+   "n": 270,
+   "at": 42105,
+   "text": "\"Dei,\" of God."
+  },
+  {
+   "chapter": 5,
+   "n": 271,
+   "at": 44552,
+   "text": "\"Ignominosam,\" ignominious."
+  },
+  {
+   "chapter": 5,
+   "n": 272,
+   "at": 46493,
+   "text": "\"Epitheto,\" epithet."
+  },
+  {
+   "chapter": 5,
+   "n": 273,
+   "at": 47105,
+   "text": "\"Luculenter,\" clearly."
+  },
+  {
+   "chapter": 5,
+   "n": 274,
+   "at": 47166,
+   "text": "\"Pietatis,\" of piety."
+  },
+  {
+   "chapter": 5,
+   "n": 275,
+   "at": 48734,
+   "text": "\"Consequimur,\" obtain."
+  },
+  {
+   "chapter": 5,
+   "n": 276,
+   "at": 49379,
+   "text": "\"Mutilum,\" mutilated."
+  },
+  {
+   "chapter": 5,
+   "n": 277,
+   "at": 50541,
+   "text": "\"Tergiversari,\" turn their back, backslide."
+  },
+  {
+   "chapter": 5,
+   "n": 278,
+   "at": 51963,
+   "text": "\"Fidei sinum aperiamus Deo,\" let us open a bosom of faith to God."
+  },
+  {
+   "chapter": 5,
+   "n": 279,
+   "at": 52045,
+   "text": "\"Sed longe diversum praemium hodie reportat nostra incredulitas,\" but our incredulity in the present day receiveth a very different recompence."
+  },
+  {
+   "chapter": 5,
+   "n": 280,
+   "at": 52273,
+   "text": "\"Sed rumpuntur,\" but they burst (with rage.)"
+  },
+  {
+   "chapter": 5,
+   "n": 281,
+   "at": 52930,
+   "text": "\"Se sentiunt,\" they feel themselves."
+  },
+  {
+   "chapter": 5,
+   "n": 282,
+   "at": 53162,
+   "text": "\"Quae omnes illorum delicias violenter discutit,\" which, with a strong hand, dispels all their delights."
+  },
+  {
+   "chapter": 5,
+   "n": 283,
+   "at": 55163,
+   "text": "\"Probaret,\" he approved."
+  },
+  {
+   "chapter": 5,
+   "n": 284,
+   "at": 55750,
+   "text": "\"In arbitrio nostro,\" at our pleasure."
+  },
+  {
+   "chapter": 5,
+   "n": 285,
+   "at": 56931,
+   "text": "\"Ex veris principiis perversam consequentiam deducit,\" deduces a false consequence from true principles."
+  },
+  {
+   "chapter": 5,
+   "n": 286,
+   "at": 57719,
+   "text": "\"Nullosque non moveant lapides,\" and leave not a stone unturned."
+  },
+  {
+   "chapter": 5,
+   "n": 287,
+   "at": 58216,
+   "text": "\"Ignavia,\" sluggishness."
+  },
+  {
+   "chapter": 5,
+   "n": 288,
+   "at": 58635,
+   "text": "\"Ne census ageretur,\" to prevent a census from being taken."
+  },
+  {
+   "chapter": 5,
+   "n": 289,
+   "at": 59123,
+   "text": "\"Promiscue miscere,\" mix promiscuously, confound the two."
+  },
+  {
+   "chapter": 5,
+   "n": 290,
+   "at": 60715,
+   "text": "\"Codices,\" manuscripts."
+  },
+  {
+   "chapter": 5,
+   "n": 291,
+   "at": 61269,
+   "text": "\"Consulit,\" consulteth."
+  },
+  {
+   "chapter": 5,
+   "n": 292,
+   "at": 61345,
+   "text": "\"Probandum,\" to be approved."
+  },
+  {
+   "chapter": 5,
+   "n": 293,
+   "at": 62055,
+   "text": "\"Docere,\" to teach."
+  },
+  {
+   "chapter": 5,
+   "n": 294,
+   "at": 62202,
+   "text": "\"Adeo tamen intemperanter se gerunt,\" yet conduct themselves to intemperately."
+  },
+  {
+   "chapter": 5,
+   "n": 295,
+   "at": 62412,
+   "text": "\"Parcatur,\" may be spared."
+  },
+  {
+   "chapter": 5,
+   "n": 296,
+   "at": 62910,
+   "text": "\"Flectant ad lenitatem.\" incline to lenity."
+  },
+  {
+   "chapter": 5,
+   "n": 297,
+   "at": 63248,
+   "text": "\"Humanitatis officio se qpud Deum redimere volunt,\" would purchase the favor of God to themselves by an act of humanity."
+  },
+  {
+   "chapter": 5,
+   "n": 298,
+   "at": 63455,
+   "text": "\"Ac dolerent etiam mali sui sensu; neque enim naturam prorsus exuerent,\" and were not insensible to their suffering; for they did not altogether divest themselves of their natural feelings."
+  },
+  {
+   "chapter": 5,
+   "n": 299,
+   "at": 63683,
+   "text": "\"Malorum,\" sufferings."
+  },
+  {
+   "chapter": 5,
+   "n": 300,
+   "at": 63875,
+   "text": "\"Nam mox retro vela flexissent, nisi novum vigorem dedisset ex gaudio nata alacritas,\" for they would immediately have altered their sails, (changed their course,) had not the alacrity produced by joy given them new vigor."
+  },
+  {
+   "chapter": 5,
+   "n": 301,
+   "at": 64113,
+   "text": "\"Anxietate,\" anxiety."
+  },
+  {
+   "chapter": 5,
+   "n": 302,
+   "at": 64329,
+   "text": "\"Dedecore,\" disgrace."
+  },
+  {
+   "chapter": 5,
+   "n": 303,
+   "at": 64943,
+   "text": "\"Filio Dei,\" the Son of God."
+  },
+  {
+   "chapter": 5,
+   "n": 304,
+   "at": 65561,
+   "text": "\"Socii et consortes,\" companions and sharers."
+  },
+  {
+   "chapter": 5,
+   "n": 305,
+   "at": 66272,
+   "text": "\"Facem resignamus,\" resign the torch."
+  },
+  {
+   "chapter": 6,
+   "n": 306,
+   "at": 2903,
+   "text": "\"In commune,\" in common."
+  },
+  {
+   "chapter": 6,
+   "n": 307,
+   "at": 3229,
+   "text": "\"Artificium,\" artifice."
+  },
+  {
+   "chapter": 6,
+   "n": 308,
+   "at": 3903,
+   "text": "\"Quotidie,\" daily, omitted."
+  },
+  {
+   "chapter": 6,
+   "n": 309,
+   "at": 4123,
+   "text": "\"Quam plurimos,\" as many as possible."
+  },
+  {
+   "chapter": 6,
+   "n": 310,
+   "at": 5528,
+   "text": "\"Resipit,\" savors."
+  },
+  {
+   "chapter": 6,
+   "n": 311,
+   "at": 5629,
+   "text": "\"Nobis obrepat,\" creep in upon us."
+  },
+  {
+   "chapter": 6,
+   "n": 312,
+   "at": 5993,
+   "text": "\"Judaeas,\" the Jewish widows."
+  },
+  {
+   "chapter": 6,
+   "n": 313,
+   "at": 6325,
+   "text": "\"Ad diaconiam,\" for ministering, as deaconnesses."
+  },
+  {
+   "chapter": 6,
+   "n": 314,
+   "at": 6680,
+   "text": "\"Quod non magis excandescunt apostoli,\" that the apostles are not more inflamed or offended."
+  },
+  {
+   "chapter": 6,
+   "n": 315,
+   "at": 6781,
+   "text": "\"Quod mature nascenti malo occurrunt,\" that they quickly meet the growing evil."
+  },
+  {
+   "chapter": 6,
+   "n": 316,
+   "at": 7111,
+   "text": "\"Cum plebe tamencommunicarent sua consilia,\" yet did communicate with the people as to their purpose."
+  },
+  {
+   "chapter": 6,
+   "n": 317,
+   "at": 7556,
+   "text": "\"Quo nominie Graeci nunc quod aliis praestat, et tanquam melius praeferendum est nunc quodvis placitum designant,\" by which term the Greeks designate sometimes \"whatever is better than, or is to be preferred to, other things;\" and at others, \"any thing whatever that pleases,\" or \"any decree.\""
+  },
+  {
+   "chapter": 6,
+   "n": 318,
+   "at": 7722,
+   "text": "\"Hac cura involvi,\" to be involved in such business."
+  },
+  {
+   "chapter": 6,
+   "n": 319,
+   "at": 7857,
+   "text": "\"Prudentiae usum esse patrem,\" that use (or experience) is the parent of prudence."
+  },
+  {
+   "chapter": 6,
+   "n": 320,
+   "at": 8331,
+   "text": "\"Negligi,\" neglected."
+  },
+  {
+   "chapter": 6,
+   "n": 321,
+   "at": 8938,
+   "text": "\"Sic fuisse implicitos,\" were so encumbered by it."
+  },
+  {
+   "chapter": 6,
+   "n": 322,
+   "at": 9086,
+   "text": "\"Solida,\" entire."
+  },
+  {
+   "chapter": 6,
+   "n": 323,
+   "at": 9380,
+   "text": "\"Operosum,\" laborious."
+  },
+  {
+   "chapter": 6,
+   "n": 324,
+   "at": 9601,
+   "text": "\"Ingurgitarunt,\" ingulf, swallow up."
+  },
+  {
+   "chapter": 6,
+   "n": 325,
+   "at": 9767,
+   "text": "\"Quibus vix sufficerent,\" for which they could hardly suffice."
+  },
+  {
+   "chapter": 6,
+   "n": 326,
+   "at": 9932,
+   "text": "\"Abysso,\" abyss."
+  },
+  {
+   "chapter": 6,
+   "n": 327,
+   "at": 10287,
+   "text": "\"Vacationem sibi sumit,\" keepeth himself free."
+  },
+  {
+   "chapter": 6,
+   "n": 328,
+   "at": 10620,
+   "text": "\"Difficultas monstratur,\" the difficulty is shown."
+  },
+  {
+   "chapter": 6,
+   "n": 329,
+   "at": 10848,
+   "text": "\"Spartae suae ornandae, (ut est in proverbio,\") to adorn his own Sparta, (as the proverb expresses it.)"
+  },
+  {
+   "chapter": 6,
+   "n": 330,
+   "at": 11414,
+   "text": "\"Occupationes,\" occupation."
+  },
+  {
+   "chapter": 6,
+   "n": 331,
+   "at": 11877,
+   "text": "\"Tractent,\" to handle."
+  },
+  {
+   "chapter": 6,
+   "n": 332,
+   "at": 12250,
+   "text": "\"Constituat suo arbitrio,\" constitute at his own pleasure."
+  },
+  {
+   "chapter": 6,
+   "n": 333,
+   "at": 12330,
+   "text": "\"Elegi communibus suffragiis,\" be elected by the common suffrages."
+  },
+  {
+   "chapter": 6,
+   "n": 334,
+   "at": 12356,
+   "text": "\"Obidentia,\" are to perform."
+  },
+  {
+   "chapter": 6,
+   "n": 335,
+   "at": 12504,
+   "text": "\"Probate fidei,\" of tried faith."
+  },
+  {
+   "chapter": 6,
+   "n": 336,
+   "at": 12527,
+   "text": "\"Prudentia,\" wisdom or prudence."
+  },
+  {
+   "chapter": 6,
+   "n": 337,
+   "at": 12617,
+   "text": "\"Licentiam,\" licentious freedom."
+  },
+  {
+   "chapter": 6,
+   "n": 338,
+   "at": 12646,
+   "text": "\"Nisi ex,\" except by."
+  },
+  {
+   "chapter": 6,
+   "n": 339,
+   "at": 12747,
+   "text": "\"Pastores tamen moderentur,\" let pastors, however, moderate."
+  },
+  {
+   "chapter": 6,
+   "n": 340,
+   "at": 12815,
+   "text": "\"Ad cohibendos plebis impetus,\" to curb the impetus (precipitancy or violence) of the people."
+  },
+  {
+   "chapter": 6,
+   "n": 341,
+   "at": 13066,
+   "text": "\"Si fortuito quoslibet accipimus, \"if we receive all persons whatsoever fortuitously."
+  },
+  {
+   "chapter": 6,
+   "n": 342,
+   "at": 13151,
+   "text": "\"Summa religio ne quis sumatur,\" the greatest care that none be chosen."
+  },
+  {
+   "chapter": 6,
+   "n": 343,
+   "at": 13259,
+   "text": "\"Accommodatus fuit,\" was accommodated."
+  },
+  {
+   "chapter": 6,
+   "n": 344,
+   "at": 13313,
+   "text": "\"Ne quis putet,\" let no man suppose."
+  },
+  {
+   "chapter": 6,
+   "n": 345,
+   "at": 13547,
+   "text": "\"Prudentia.\""
+  },
+  {
+   "chapter": 6,
+   "n": 346,
+   "at": 13647,
+   "text": "\"Imposturis et fraudibus,\" the imposition and fraud."
+  },
+  {
+   "chapter": 6,
+   "n": 347,
+   "at": 13708,
+   "text": "\"Exsugunt,\" suck up."
+  },
+  {
+   "chapter": 6,
+   "n": 348,
+   "at": 13947,
+   "text": "\"Non laboriosa modo, sed obnoxia sinistris murmuribus,\" is not only laborious, but liable to sinister murmurings."
+  },
+  {
+   "chapter": 6,
+   "n": 349,
+   "at": 14566,
+   "text": "\"Aliud studium, alius fervor, alia assiduitas exigitur,\" another kind of zeal, another kind of fervor, another kind of assiduity, is required."
+  },
+  {
+   "chapter": 6,
+   "n": 350,
+   "at": 14590,
+   "text": "\"Possint,\" may be able to."
+  },
+  {
+   "chapter": 6,
+   "n": 351,
+   "at": 15122,
+   "text": "\"Antesignanus,\" as a standard-bearer or leader."
+  },
+  {
+   "chapter": 6,
+   "n": 352,
+   "at": 15628,
+   "text": "\"Precandi studium,\" zeal in prayer."
+  },
+  {
+   "chapter": 6,
+   "n": 353,
+   "at": 17679,
+   "text": "\"Occulti fraudis recessus,\" hidden recesses of guile."
+  },
+  {
+   "chapter": 6,
+   "n": 354,
+   "at": 22668,
+   "text": "\"Uno quasi impetu in eum versa fuerit,\" was, as it were, with one impulse directed against him."
+  },
+  {
+   "chapter": 6,
+   "n": 355,
+   "at": 24090,
+   "text": "\"Quae peculiaris esset Judaeis qui Jerosolymam ex provinciis comeabant,\" that it might be appropriated to Jews coming to Jerusalem form the provinces."
+  },
+  {
+   "chapter": 6,
+   "n": 356,
+   "at": 24474,
+   "text": "\"Virulentos,\" virulent."
+  },
+  {
+   "chapter": 6,
+   "n": 357,
+   "at": 24821,
+   "text": "\"Fides et miracula,\" faith and miracles."
+  },
+  {
+   "chapter": 6,
+   "n": 358,
+   "at": 26002,
+   "text": "\"Ut quum homines essent idiotae, summos Papatus theologes sola voce non minus quam fulmine attonitos redderent,\" that though they were unlearned men, they, by their voice alone, astonished the chief theologians of the Papacy, as much as if it had been by a thunderbolt."
+  },
+  {
+   "chapter": 6,
+   "n": 359,
+   "at": 26964,
+   "text": "\"Quam in mendaciis causae suae praesidium constituere,\" than to place the defense of their cause in lies."
+  },
+  {
+   "chapter": 6,
+   "n": 360,
+   "at": 27058,
+   "text": "\"Non tamen falsis testimoniis est oppremendus,\" he ought not to be borne down with false testimony."
+  },
+  {
+   "chapter": 6,
+   "n": 361,
+   "at": 27562,
+   "text": "\"Ut doctrinam nostram reddant odiosam,\" that they may bring odium on our doctrine."
+  },
+  {
+   "chapter": 6,
+   "n": 362,
+   "at": 31523,
+   "text": "\"Bonorum et malorum discrimen a nobis tolli,\" that we destroy the distinction between good and evil."
+  },
+  {
+   "chapter": 6,
+   "n": 363,
+   "at": 36759,
+   "text": "\"Hoc ab initio mundi fuit ingenium, et erit usque in finem,\" this has been the disposition from the beginning of the world, and will be even to the end."
+  },
+  {
+   "chapter": 7,
+   "n": 364,
+   "at": 1040,
+   "text": "\"Sed tanum hoc quaerint,\" but the only thing they ask is."
+  },
+  {
+   "chapter": 7,
+   "n": 365,
+   "at": 1153,
+   "text": "\"Vulcano devoveant,\" devote him to Vulcan, (to the flames.)"
+  },
+  {
+   "chapter": 7,
+   "n": 366,
+   "at": 1499,
+   "text": "\"Et extra rem vagari,\" and wander from the subject."
+  },
+  {
+   "chapter": 7,
+   "n": 367,
+   "at": 1681,
+   "text": "\"Apposito,\" appositely."
+  },
+  {
+   "chapter": 7,
+   "n": 368,
+   "at": 1842,
+   "text": "\"Sedulo igitur inculcat,\" he therefore strenuously maintains."
+  },
+  {
+   "chapter": 7,
+   "n": 369,
+   "at": 1985,
+   "text": "\"Ita impiae defectiones cremen avertit,\" he thus repels the charge of impious defection or revolt."
+  },
+  {
+   "chapter": 7,
+   "n": 370,
+   "at": 2140,
+   "text": "\"Simulabant enim nihil sibi esse propositum quam,\" for they pretended that their only object was."
+  },
+  {
+   "chapter": 7,
+   "n": 371,
+   "at": 5212,
+   "text": "\"Migravit,\" migrated."
+  },
+  {
+   "chapter": 7,
+   "n": 372,
+   "at": 5668,
+   "text": "\"Geographi,\" geographers."
+  },
+  {
+   "chapter": 7,
+   "n": 373,
+   "at": 6522,
+   "text": "\"Leves et inconsiderati homines,\" fickle and inconsiderate."
+  },
+  {
+   "chapter": 7,
+   "n": 374,
+   "at": 8013,
+   "text": "\"A frustratione,\" from a frustrating of him, from rendering his journey vain."
+  },
+  {
+   "chapter": 7,
+   "n": 375,
+   "at": 8389,
+   "text": "\"Ac libentor cursum reflecterent,\" and they would willingly retrace their steps."
+  },
+  {
+   "chapter": 7,
+   "n": 376,
+   "at": 11229,
+   "text": "\"Non procrastinat, sed moras omnes rampit,\" he does not procrastinate, but breaks off all delay."
+  },
+  {
+   "chapter": 7,
+   "n": 377,
+   "at": 13868,
+   "text": "\"Ut oblique species frustrationis,\" that a species of frustration may be indirectly noted."
+  },
+  {
+   "chapter": 7,
+   "n": 378,
+   "at": 13970,
+   "text": "\"Quod liberum relinquo,\" I leave the point open, omitted."
+  },
+  {
+   "chapter": 7,
+   "n": 379,
+   "at": 14680,
+   "text": "\"Exhibitionem,\" the exhibition, or manifestation."
+  },
+  {
+   "chapter": 7,
+   "n": 380,
+   "at": 15431,
+   "text": "\"Feroces illorum spiritus,\" their fierce tempers."
+  },
+  {
+   "chapter": 7,
+   "n": 381,
+   "at": 17345,
+   "text": "\"Retractare,\" to retract."
+  },
+  {
+   "chapter": 7,
+   "n": 382,
+   "at": 17858,
+   "text": "\"Per innumeros anfractus,\" though innumerable wanderings."
+  },
+  {
+   "chapter": 7,
+   "n": 383,
+   "at": 18082,
+   "text": "\"Inhumaniter,\" inhumanly."
+  },
+  {
+   "chapter": 7,
+   "n": 384,
+   "at": 20131,
+   "text": "\"Degeneres,\" degenerate."
+  },
+  {
+   "chapter": 7,
+   "n": 385,
+   "at": 23579,
+   "text": "\"Impia et nefaria conspiratione,\" by a nefarious and impious conspiracy."
+  },
+  {
+   "chapter": 7,
+   "n": 386,
+   "at": 23649,
+   "text": "\"Abhorret,\" is abhorrent from."
+  },
+  {
+   "chapter": 7,
+   "n": 387,
+   "at": 24129,
+   "text": "\"Fratricidae,\" fratricides."
+  },
+  {
+   "chapter": 7,
+   "n": 388,
+   "at": 24521,
+   "text": "\"Salutis minister,\" the minister or instrument of their safety."
+  },
+  {
+   "chapter": 7,
+   "n": 389,
+   "at": 24857,
+   "text": "\"Pudore confusi,\" confounded with shame."
+  },
+  {
+   "chapter": 7,
+   "n": 390,
+   "at": 25274,
+   "text": "\"Ingenti moerore confundi,\" overwhelmed with deepest sorrow."
+  },
+  {
+   "chapter": 7,
+   "n": 391,
+   "at": 25523,
+   "text": "\"Illustre,\" illustrious."
+  },
+  {
+   "chapter": 7,
+   "n": 392,
+   "at": 26539,
+   "text": "\"Illi Deus gratiam conciliat,\" procureth favor for him."
+  },
+  {
+   "chapter": 7,
+   "n": 393,
+   "at": 26779,
+   "text": "\"Dexteritas,\" dexterity."
+  },
+  {
+   "chapter": 7,
+   "n": 394,
+   "at": 26875,
+   "text": "\"Pro modo inaequali,\" according to the unequal mode of distribution, omitted."
+  },
+  {
+   "chapter": 7,
+   "n": 395,
+   "at": 27159,
+   "text": "\"Non nisi Dei manu,\" by nought but the hand of God."
+  },
+  {
+   "chapter": 7,
+   "n": 396,
+   "at": 27330,
+   "text": "\"Ventura esset,\" was about to come."
+  },
+  {
+   "chapter": 7,
+   "n": 397,
+   "at": 27721,
+   "text": "\"Prorsus exterminatum,\" completely exterminated."
+  },
+  {
+   "chapter": 7,
+   "n": 398,
+   "at": 27926,
+   "text": "\"Non dubitaverant,\" had not hesitated."
+  },
+  {
+   "chapter": 7,
+   "n": 399,
+   "at": 28248,
+   "text": "\"Exulant,\" become exiles."
+  },
+  {
+   "chapter": 7,
+   "n": 400,
+   "at": 28748,
+   "text": "\"Apud quas recepta erat illa lectio,\" among whom that reading was received."
+  },
+  {
+   "chapter": 7,
+   "n": 401,
+   "at": 29132,
+   "text": "\"Nepotes ac pronepotes,\" grandsons and great-grandsons."
+  },
+  {
+   "chapter": 7,
+   "n": 402,
+   "at": 29880,
+   "text": "\"Librariorum,\" copyists."
+  },
+  {
+   "chapter": 7,
+   "n": 403,
+   "at": 30260,
+   "text": "\"Familiariter,\" familiar with."
+  },
+  {
+   "chapter": 7,
+   "n": 404,
+   "at": 32052,
+   "text": "\"[Kenotaphia],\" ceonotaphs."
+  },
+  {
+   "chapter": 7,
+   "n": 405,
+   "at": 33280,
+   "text": "\"Cujus praeludium,\" as a prelude to which."
+  },
+  {
+   "chapter": 7,
+   "n": 406,
+   "at": 35347,
+   "text": "\"Circumvenire,\" to circumvent."
+  },
+  {
+   "chapter": 7,
+   "n": 407,
+   "at": 38764,
+   "text": "\"Arculam,\" a little chest, a basket."
+  },
+  {
+   "chapter": 7,
+   "n": 408,
+   "at": 39615,
+   "text": "\"Carnis ratio,\" carnal reason."
+  },
+  {
+   "chapter": 7,
+   "n": 409,
+   "at": 39978,
+   "text": "\"Ad annum quadragesimum,\" till his fortieth year."
+  },
+  {
+   "chapter": 7,
+   "n": 410,
+   "at": 40376,
+   "text": "\"Astrologia,\" astrology, or, more properly here, astronomy."
+  },
+  {
+   "chapter": 7,
+   "n": 411,
+   "at": 42230,
+   "text": "\"Perspicaces,\" clear-sighted."
+  },
+  {
+   "chapter": 7,
+   "n": 412,
+   "at": 42900,
+   "text": "\"Ad res praeclaras gerendas aptus est,\" is fitted for greater exploits."
+  },
+  {
+   "chapter": 7,
+   "n": 413,
+   "at": 45313,
+   "text": "\"Haec heroica animi magnitudo,\" this heroic magnanimity."
+  },
+  {
+   "chapter": 7,
+   "n": 414,
+   "at": 46057,
+   "text": "\"Proterviam,\" petulance."
+  },
+  {
+   "chapter": 7,
+   "n": 415,
+   "at": 46078,
+   "text": "\"Tacent omnes,\" they are all silent."
+  },
+  {
+   "chapter": 7,
+   "n": 416,
+   "at": 46278,
+   "text": "\"Oppositas suis capitibus,\" by exposing their own hands."
+  },
+  {
+   "chapter": 7,
+   "n": 417,
+   "at": 46400,
+   "text": "\"Nonnisi per populum stetisse quominus levationem citius sentiret,\" that is was owing entirely to the people themselves that they did not sooner obtain some alleviation."
+  },
+  {
+   "chapter": 7,
+   "n": 418,
+   "at": 46896,
+   "text": "\"Atqui pessimam et iniquissimam mercedem reportat,\" but he receiveth a very bad and most iniquitous recompense, viz."
+  },
+  {
+   "chapter": 7,
+   "n": 419,
+   "at": 47425,
+   "text": "\"Impediunt ac turbant,\" impede and disturb."
+  },
+  {
+   "chapter": 7,
+   "n": 420,
+   "at": 47789,
+   "text": "\"Quae ad aequitatem revocet,\" which may call back or dispose to equity."
+  },
+  {
+   "chapter": 7,
+   "n": 421,
+   "at": 48717,
+   "text": "\"Furiose impetunt,\" furiously assault."
+  },
+  {
+   "chapter": 7,
+   "n": 422,
+   "at": 49205,
+   "text": "\"Sed horum malorum indignitas illis est devoranda,\" but the indignity of these evils must be devoured by them, (overlooked or submitted to.)"
+  },
+  {
+   "chapter": 7,
+   "n": 423,
+   "at": 49304,
+   "text": "\"Proinde ei probari,\" and is therefore approved by him."
+  },
+  {
+   "chapter": 7,
+   "n": 424,
+   "at": 50711,
+   "text": "\"Homo... stupidus,\" a stupid man."
+  },
+  {
+   "chapter": 7,
+   "n": 425,
+   "at": 50943,
+   "text": "\"Nos ad diffidentiam natura plusquam propensi,\" we are by nature too prone to distrust."
+  },
+  {
+   "chapter": 7,
+   "n": 426,
+   "at": 54068,
+   "text": "\"Quasi apparitores,\" as it were his officers."
+  },
+  {
+   "chapter": 7,
+   "n": 427,
+   "at": 55326,
+   "text": "\"Ingens numerus,\" a vast number."
+  },
+  {
+   "chapter": 7,
+   "n": 428,
+   "at": 55444,
+   "text": "\"Et compactis arbustis magis abundat,\" and the more numerous and compact its twigs are."
+  },
+  {
+   "chapter": 7,
+   "n": 429,
+   "at": 56044,
+   "text": "\"Insoltus,\" unwonted."
+  },
+  {
+   "chapter": 7,
+   "n": 430,
+   "at": 60095,
+   "text": "\"In veteri,\" on the old."
+  },
+  {
+   "chapter": 7,
+   "n": 431,
+   "at": 60856,
+   "text": "\"Inepta esset loquutio,\" the expression were inept."
+  },
+  {
+   "chapter": 7,
+   "n": 432,
+   "at": 61073,
+   "text": "\"Hoc enim exigit relatio ut membra inter se respondeant,\" for relation requires that the members (related) correspond to each other."
+  },
+  {
+   "chapter": 7,
+   "n": 433,
+   "at": 63030,
+   "text": "\"Annon quasi fodiendi sumus,\" must not we be, as it were, stabbed."
+  },
+  {
+   "chapter": 7,
+   "n": 434,
+   "at": 63460,
+   "text": "\"Quanto majorem vim ab hominibus percipi aequium est,\" how much more forcibly ought man to feel it?"
+  },
+  {
+   "chapter": 7,
+   "n": 435,
+   "at": 63800,
+   "text": "\"Perversus cultus fuit,\" it was perverted worship."
+  },
+  {
+   "chapter": 7,
+   "n": 436,
+   "at": 64162,
+   "text": "\"Sed nos totos exuere,\" but divest ourselves entirely."
+  },
+  {
+   "chapter": 7,
+   "n": 437,
+   "at": 67521,
+   "text": "\"Subaudiendae sunt antitheses,\" we must supply the antitheses."
+  },
+  {
+   "chapter": 7,
+   "n": 438,
+   "at": 70305,
+   "text": "\"Appendix,\" an appendix."
+  },
+  {
+   "chapter": 7,
+   "n": 439,
+   "at": 71100,
+   "text": "\"Reliqua pete,\" for the rest see."
+  },
+  {
+   "chapter": 7,
+   "n": 440,
+   "at": 71817,
+   "text": "\"Pravitate,\" depravity."
+  },
+  {
+   "chapter": 7,
+   "n": 441,
+   "at": 73717,
+   "text": "\"Tot malis,\" so many miseries."
+  },
+  {
+   "chapter": 7,
+   "n": 442,
+   "at": 73851,
+   "text": "\"Longe diversa est ratio,\" the explanation (of the two things) is very different."
+  },
+  {
+   "chapter": 7,
+   "n": 443,
+   "at": 75482,
+   "text": "\"Ferrea improbitas,\" their stubborn wickedness."
+  },
+  {
+   "chapter": 7,
+   "n": 444,
+   "at": 76307,
+   "text": "\"Vivifica,\" vivifying."
+  },
+  {
+   "chapter": 7,
+   "n": 445,
+   "at": 79049,
+   "text": "\"Minus consentaneum,\" less befitting."
+  },
+  {
+   "chapter": 7,
+   "n": 446,
+   "at": 80748,
+   "text": "\"Nihil... fingi potest,\" nothing can be imagined."
+  },
+  {
+   "chapter": 7,
+   "n": 447,
+   "at": 82339,
+   "text": "\"Quam alias referri,\" than to refer to any other."
+  },
+  {
+   "chapter": 7,
+   "n": 448,
+   "at": 82868,
+   "text": "\"Tanta in fingendis idolis, hominum lascivia fuerit,\" there was such wantonness in men in forming idols."
+  },
+  {
+   "chapter": 7,
+   "n": 449,
+   "at": 82896,
+   "text": "\"Accommodat,\" accommodate."
+  },
+  {
+   "chapter": 7,
+   "n": 450,
+   "at": 87401,
+   "text": "\"Deum... fabricari,\" to fabricate a god."
+  },
+  {
+   "chapter": 7,
+   "n": 451,
+   "at": 90283,
+   "text": "\"Distrahitur,\" torn asunder, withdrawn."
+  },
+  {
+   "chapter": 7,
+   "n": 452,
+   "at": 91624,
+   "text": "\"Adventitiae mixturae,\" adventitious mixtures."
+  },
+  {
+   "chapter": 7,
+   "n": 453,
+   "at": 91680,
+   "text": "\"De patribus apostatis,\" of the apostate fathers."
+  },
+  {
+   "chapter": 7,
+   "n": 454,
+   "at": 93028,
+   "text": "\"Ad extermum,\" to the extreme."
+  },
+  {
+   "chapter": 7,
+   "n": 455,
+   "at": 93687,
+   "text": "\"Affinitatem,\" its affinity to."
+  },
+  {
+   "chapter": 7,
+   "n": 456,
+   "at": 95439,
+   "text": "\"Effugium,\" evasion."
+  },
+  {
+   "chapter": 7,
+   "n": 457,
+   "at": 97122,
+   "text": "\"Sine freno,\" without a curb."
+  },
+  {
+   "chapter": 7,
+   "n": 458,
+   "at": 97789,
+   "text": "\"Pro crasso suo ingenio nihil nisi terrenum et carnale apprehenderent,\" in accordance with their gross disposition, they apprehend nothing but what was earthly and carnal."
+  },
+  {
+   "chapter": 7,
+   "n": 459,
+   "at": 100134,
+   "text": "\"Archetypum,\" archetype, model."
+  },
+  {
+   "chapter": 7,
+   "n": 460,
+   "at": 101346,
+   "text": "\"Primarium exemplar,\" the primary pattern, the original model."
+  },
+  {
+   "chapter": 7,
+   "n": 461,
+   "at": 101462,
+   "text": "\"Pervicaciam,\" perverseness."
+  },
+  {
+   "chapter": 7,
+   "n": 462,
+   "at": 101967,
+   "text": "\"Illius dignitas,\" its dignity."
+  },
+  {
+   "chapter": 7,
+   "n": 463,
+   "at": 103717,
+   "text": "\"Videtur hic oblique Stephanus Solomonem perstringere,\" Stephen here seemeth indirectly to rebuke Solomon."
+  },
+  {
+   "chapter": 7,
+   "n": 464,
+   "at": 105094,
+   "text": "\"Defuncti sunt,\" performed."
+  },
+  {
+   "chapter": 7,
+   "n": 465,
+   "at": 108116,
+   "text": "\"Neglecta pietate,\" neglecting a piety, omitted."
+  },
+  {
+   "chapter": 7,
+   "n": 466,
+   "at": 117245,
+   "text": "\"Contumaciter rejicient,\" contumaciously reject."
+  },
+  {
+   "chapter": 7,
+   "n": 467,
+   "at": 118994,
+   "text": "\"Gravabant,\" burdened, brought a charge against him, or threw obloquy on him."
+  },
+  {
+   "chapter": 7,
+   "n": 468,
+   "at": 119142,
+   "text": "\"Hunc qui titulum sibi... arrogabant,\" and arrogated this title to themselves."
+  },
+  {
+   "chapter": 7,
+   "n": 469,
+   "at": 119448,
+   "text": "\"Aggregare,\" to sum up, include."
+  },
+  {
+   "chapter": 7,
+   "n": 470,
+   "at": 120885,
+   "text": "\"Apostata,\" an apostate."
+  },
+  {
+   "chapter": 7,
+   "n": 471,
+   "at": 122756,
+   "text": "\"Perfidiae,\" perfidy."
+  },
+  {
+   "chapter": 7,
+   "n": 472,
+   "at": 123927,
+   "text": "\"Infestis clamoribus,\" hostile clamor."
+  },
+  {
+   "chapter": 7,
+   "n": 473,
+   "at": 125988,
+   "text": "\"Qui impiorum aures deliciis mulceri volunt, non tam respicere profectum,\" who would pour soothing wrods into the ears of the wicked, look not so much to their profit."
+  },
+  {
+   "chapter": 7,
+   "n": 474,
+   "at": 128637,
+   "text": "\"Quorum perspicacia,\" by their perspicacity."
+  },
+  {
+   "chapter": 7,
+   "n": 475,
+   "at": 129745,
+   "text": "\"Scissuram,\" rent or opening."
+  },
+  {
+   "chapter": 7,
+   "n": 476,
+   "at": 130021,
+   "text": "\"Apertam veritatis lucem,\" the open light of truth."
+  },
+  {
+   "chapter": 7,
+   "n": 477,
+   "at": 132919,
+   "text": "\"Ut videri posset ab eo,\" that he might be seen by him."
+  },
+  {
+   "chapter": 7,
+   "n": 478,
+   "at": 133011,
+   "text": "\"Per fidem,\" through faith, omitted."
+  },
+  {
+   "chapter": 7,
+   "n": 479,
+   "at": 133945,
+   "text": "\"Subito et intemperanter prosilire,\" break out suddenly and intemperately."
+  },
+  {
+   "chapter": 7,
+   "n": 480,
+   "at": 134559,
+   "text": "\"Martyrum probra,\" the ignominy."
+  },
+  {
+   "chapter": 7,
+   "n": 481,
+   "at": 134962,
+   "text": "\"In populo turbulento et prope indomito,\" in a turbulent and almost untameable people, omitted."
+  },
+  {
+   "chapter": 7,
+   "n": 482,
+   "at": 135212,
+   "text": "\"Ut mutuo confecti,\" that having mutually destroyed each other."
+  },
+  {
+   "chapter": 7,
+   "n": 483,
+   "at": 136421,
+   "text": "\"Per eum non stetisse quominus in sensum reprobum conjectus, cum aliis periret,\" that it was not owing to himself that he did not fall into a reprobate mind, and perish with the rest (of the Jews.)"
+  },
+  {
+   "chapter": 7,
+   "n": 484,
+   "at": 136529,
+   "text": "\"Tirocenio,\" training."
+  },
+  {
+   "chapter": 7,
+   "n": 485,
+   "at": 138457,
+   "text": "\"Animi magnitudo,\" magnanimity."
+  },
+  {
+   "chapter": 7,
+   "n": 486,
+   "at": 138666,
+   "text": "\"Secure,\" securely."
+  },
+  {
+   "chapter": 7,
+   "n": 487,
+   "at": 138910,
+   "text": "\"Non carnis nostrae sensu,\" not by our carnal senses."
+  },
+  {
+   "chapter": 7,
+   "n": 488,
+   "at": 139958,
+   "text": "\"Fortuito,\" fortuitously."
+  },
+  {
+   "chapter": 7,
+   "n": 489,
+   "at": 140433,
+   "text": "\"Ut quidam phrenetici delirant,\" as some phrenzied persons rave."
+  },
+  {
+   "chapter": 7,
+   "n": 490,
+   "at": 140692,
+   "text": "\"Un ejus fidem,\" to his faith."
+  },
+  {
+   "chapter": 7,
+   "n": 491,
+   "at": 141184,
+   "text": "\"A Christo,\" by Christ, omitted."
+  },
+  {
+   "chapter": 7,
+   "n": 492,
+   "at": 141218,
+   "text": "\"Quod autem Stephanum fecisse narrat Lucas,\" which Luke relates that Stephen did."
+  },
+  {
+   "chapter": 7,
+   "n": 493,
+   "at": 141809,
+   "text": "\"Illustre documentum,\" an illustrious proof."
+  },
+  {
+   "chapter": 8,
+   "n": 494,
+   "at": 2907,
+   "text": "\"Neque enim Stephanum ignominia notat Lucas,\" for Luke does not fix a stigma on Stephen."
+  },
+  {
+   "chapter": 8,
+   "n": 495,
+   "at": 3819,
+   "text": "\"Vulgo,\" commonly."
+  },
+  {
+   "chapter": 8,
+   "n": 496,
+   "at": 4138,
+   "text": "\"Consternati,\" in consternation."
+  },
+  {
+   "chapter": 8,
+   "n": 497,
+   "at": 4817,
+   "text": "\"Insipida... aemulatio,\" an insipid, senseless rivalship."
+  },
+  {
+   "chapter": 8,
+   "n": 498,
+   "at": 8051,
+   "text": "\"Propter ejus absentiam,\" on account of his absence."
+  },
+  {
+   "chapter": 8,
+   "n": 499,
+   "at": 9928,
+   "text": "\"Velut in custodiam,\" as it were in custody."
+  },
+  {
+   "chapter": 8,
+   "n": 500,
+   "at": 13864,
+   "text": "\"Ad ignaviam vel tarditatem,\" unto sloth or cowardice."
+  },
+  {
+   "chapter": 8,
+   "n": 501,
+   "at": 18886,
+   "text": "\"Samaritae,\" the Samaritans."
+  },
+  {
+   "chapter": 8,
+   "n": 502,
+   "at": 21262,
+   "text": "\"Non esse mirum aut insolens,\" that it is not strange or unusual."
+  },
+  {
+   "chapter": 8,
+   "n": 503,
+   "at": 23508,
+   "text": "\"Simul,\" at the same time."
+  },
+  {
+   "chapter": 8,
+   "n": 504,
+   "at": 24235,
+   "text": "\"Semideo,\" a demigod."
+  },
+  {
+   "chapter": 8,
+   "n": 505,
+   "at": 26497,
+   "text": "\"Venditant,\" make a display of."
+  },
+  {
+   "chapter": 8,
+   "n": 506,
+   "at": 26779,
+   "text": "\"Ponat obicem,\" interpose an obstacle."
+  },
+  {
+   "chapter": 8,
+   "n": 507,
+   "at": 27033,
+   "text": "\"Sonant,\" mean."
+  },
+  {
+   "chapter": 8,
+   "n": 508,
+   "at": 27080,
+   "text": "\"Modo,\" provided that."
+  },
+  {
+   "chapter": 8,
+   "n": 509,
+   "at": 27501,
+   "text": "\"Efficaciam,\" efficacy."
+  },
+  {
+   "chapter": 8,
+   "n": 510,
+   "at": 27759,
+   "text": "\"Desertor,\" deserter."
+  },
+  {
+   "chapter": 8,
+   "n": 511,
+   "at": 28557,
+   "text": "\"Neque enim simplex admlratio hie notatur, sed ecstasis, quae hominem extra se rapit,\" for the thing here denoted is not simple wonder, but ecstacy, by which a man is rapt (carried out of himself.)"
+  },
+  {
+   "chapter": 8,
+   "n": 512,
+   "at": 30674,
+   "text": "\"Minus dextre quam par esset,\" less dexterously than was meet."
+  },
+  {
+   "chapter": 8,
+   "n": 513,
+   "at": 31090,
+   "text": "\"Quae sanctae communicatione januam claudit,\" which shuts the door against holy communion."
+  },
+  {
+   "chapter": 8,
+   "n": 514,
+   "at": 31223,
+   "text": "\"Non exercuisse in collegas imperium,\" did not exercise authority over his colleagues."
+  },
+  {
+   "chapter": 8,
+   "n": 515,
+   "at": 31772,
+   "text": "\"Statione,\" station."
+  },
+  {
+   "chapter": 8,
+   "n": 516,
+   "at": 36705,
+   "text": "\"Detracta baptismo spolia,\" the spoils taken from baptism."
+  },
+  {
+   "chapter": 8,
+   "n": 517,
+   "at": 37659,
+   "text": "\"Inane duntaxat esset spectrum,\" it was only an empty specter."
+  },
+  {
+   "chapter": 8,
+   "n": 518,
+   "at": 39120,
+   "text": "\"Quasi sepulta,\" as it were buried."
+  },
+  {
+   "chapter": 8,
+   "n": 519,
+   "at": 39497,
+   "text": "\"Vult eam ad lucrum prostituere,\" he wishes to prostitute it to gain."
+  },
+  {
+   "chapter": 8,
+   "n": 520,
+   "at": 41083,
+   "text": "\"Nundinationi,\" trafficking."
+  },
+  {
+   "chapter": 8,
+   "n": 521,
+   "at": 41476,
+   "text": "\"Sceleris sui atrocitatem,\" the atrocity of his crime."
+  },
+  {
+   "chapter": 8,
+   "n": 522,
+   "at": 44193,
+   "text": "\"Quando nullus illuc emergere potest,\" since no man can rise there."
+  },
+  {
+   "chapter": 8,
+   "n": 523,
+   "at": 44755,
+   "text": "\"Modeste conferat,\" may modesty bestow."
+  },
+  {
+   "chapter": 8,
+   "n": 524,
+   "at": 47101,
+   "text": "\"Anathemate ferire,\" to strike with anathema."
+  },
+  {
+   "chapter": 8,
+   "n": 525,
+   "at": 50313,
+   "text": "\"Flagitio,\" flagitiousness."
+  },
+  {
+   "chapter": 8,
+   "n": 526,
+   "at": 52901,
+   "text": "\"Ab una urbe,\" from one city."
+  },
+  {
+   "chapter": 8,
+   "n": 527,
+   "at": 54554,
+   "text": "\"Simplici Dei imperio,\" with the simple command of God."
+  },
+  {
+   "chapter": 8,
+   "n": 528,
+   "at": 54665,
+   "text": "\"Statim,\" instantly."
+  },
+  {
+   "chapter": 8,
+   "n": 529,
+   "at": 55264,
+   "text": "\"Illius os,\" at his mouth."
+  },
+  {
+   "chapter": 8,
+   "n": 530,
+   "at": 55442,
+   "text": "\"Incuria,\" carelessness."
+  },
+  {
+   "chapter": 8,
+   "n": 531,
+   "at": 56895,
+   "text": "\"Promiscue,\" promiscuously."
+  },
+  {
+   "chapter": 8,
+   "n": 532,
+   "at": 57158,
+   "text": "\"Experietur,\" will experience."
+  },
+  {
+   "chapter": 8,
+   "n": 533,
+   "at": 57232,
+   "text": "\"Ejus auspiciis et mandato,\" under his auspices, and by his command."
+  },
+  {
+   "chapter": 8,
+   "n": 534,
+   "at": 57680,
+   "text": "\"Primaria sedes,\" metropolis."
+  },
+  {
+   "chapter": 8,
+   "n": 535,
+   "at": 58291,
+   "text": "\"Odor,\" savour."
+  },
+  {
+   "chapter": 8,
+   "n": 536,
+   "at": 58398,
+   "text": "\"Exilium populi,\" the exile of the people, the captivity of the Jews."
+  },
+  {
+   "chapter": 8,
+   "n": 537,
+   "at": 58638,
+   "text": "\"Turmatim multi ad eam transirent,\" from going over, becoming proselytes, to it in crowds"
+  },
+  {
+   "chapter": 8,
+   "n": 538,
+   "at": 58668,
+   "text": "\"Praeludia,\" preludes to."
+  },
+  {
+   "chapter": 8,
+   "n": 539,
+   "at": 59126,
+   "text": "\"Deum precari,\" have prayed to God."
+  },
+  {
+   "chapter": 8,
+   "n": 540,
+   "at": 59318,
+   "text": "\"Et clanculum,\" and stealthily, omitted."
+  },
+  {
+   "chapter": 8,
+   "n": 541,
+   "at": 59439,
+   "text": "\"Divortium facere,\" differ from."
+  },
+  {
+   "chapter": 8,
+   "n": 542,
+   "at": 60714,
+   "text": "\"Neminem ex apostolis illi Deus obtulerit,\" God cast none of the apostles in is way."
+  },
+  {
+   "chapter": 8,
+   "n": 543,
+   "at": 61173,
+   "text": "\"Liberius in otio et quiete,\" more freely in ease and quiet."
+  },
+  {
+   "chapter": 8,
+   "n": 544,
+   "at": 62259,
+   "text": "\"Nempe... agnoscit,\" namely, he acknowledgeth."
+  },
+  {
+   "chapter": 8,
+   "n": 545,
+   "at": 62582,
+   "text": "\"Idiota,\" unlearned."
+  },
+  {
+   "chapter": 8,
+   "n": 546,
+   "at": 62949,
+   "text": "\"Si multa eum latebant,\" though many things escaped him, were hidden from him."
+  },
+  {
+   "chapter": 8,
+   "n": 547,
+   "at": 63558,
+   "text": "\"Ultro et ingenue,\" spontaneously and ingenuously."
+  },
+  {
+   "chapter": 8,
+   "n": 548,
+   "at": 64421,
+   "text": "\"Superet ac fugiat,\" surpasses and escapes."
+  },
+  {
+   "chapter": 8,
+   "n": 549,
+   "at": 65420,
+   "text": "\"Ad nos docendos,\" to teach us, omitted."
+  },
+  {
+   "chapter": 8,
+   "n": 550,
+   "at": 65640,
+   "text": "\"Enthousiasmous,\" enthusiasms or inspirations."
+  },
+  {
+   "chapter": 8,
+   "n": 551,
+   "at": 67458,
+   "text": "\"Apte deduci,\" aptly deduced."
+  },
+  {
+   "chapter": 8,
+   "n": 552,
+   "at": 67747,
+   "text": "\"Sine involucris,\" without circumlocution, unequivocally."
+  },
+  {
+   "chapter": 8,
+   "n": 553,
+   "at": 67909,
+   "text": "\"Expiandis,\" to expiate."
+  },
+  {
+   "chapter": 8,
+   "n": 554,
+   "at": 68544,
+   "text": "\"Et restituat in vitam,\" and restore her to life, omitted."
+  },
+  {
+   "chapter": 8,
+   "n": 555,
+   "at": 69184,
+   "text": "\"In victimam,\" as a victim."
+  },
+  {
+   "chapter": 8,
+   "n": 556,
+   "at": 69575,
+   "text": "\"Ad patientiam,\" to patience."
+  },
+  {
+   "chapter": 8,
+   "n": 557,
+   "at": 69656,
+   "text": "\"Praecedit,\" precedes."
+  },
+  {
+   "chapter": 8,
+   "n": 558,
+   "at": 70247,
+   "text": "\"Et mactationi subjectum,\" and subjected to slaughter."
+  },
+  {
+   "chapter": 8,
+   "n": 559,
+   "at": 70737,
+   "text": "\"Ambigua,\" ambiguous, equivocal."
+  },
+  {
+   "chapter": 8,
+   "n": 560,
+   "at": 73656,
+   "text": "\"In membris omnibus,\" in all the members."
+  },
+  {
+   "chapter": 8,
+   "n": 561,
+   "at": 74891,
+   "text": "\"Per dubias ambages,\" through dubious, winding paths."
+  },
+  {
+   "chapter": 8,
+   "n": 562,
+   "at": 76520,
+   "text": "\"Superbo fastidio,\" by proud disdain, fastidiousness."
+  },
+  {
+   "chapter": 8,
+   "n": 563,
+   "at": 76644,
+   "text": "\"Instillat,\" instil."
+  },
+  {
+   "chapter": 8,
+   "n": 564,
+   "at": 77039,
+   "text": "\"Clarius,\" more clearly."
+  },
+  {
+   "chapter": 8,
+   "n": 565,
+   "at": 77063,
+   "text": "\"Commode,\" conveniently, omitted."
+  },
+  {
+   "chapter": 8,
+   "n": 566,
+   "at": 84258,
+   "text": "\"Petamus,\" seek."
+  },
+  {
+   "chapter": 8,
+   "n": 567,
+   "at": 84750,
+   "text": "\"Non ita necessariius,\" not absolutely necessary."
+  },
+  {
+   "chapter": 8,
+   "n": 568,
+   "at": 87308,
+   "text": "\"Strenuitas,\" strenuousness, activity."
+  },
+  {
+   "chapter": 9,
+   "n": 569,
+   "at": 1482,
+   "text": "\"Ab infausto trocinio,\" from that ominous commencement."
+  },
+  {
+   "chapter": 9,
+   "n": 570,
+   "at": 3171,
+   "text": "\"Oppportune,\" opportunely."
+  },
+  {
+   "chapter": 9,
+   "n": 571,
+   "at": 3308,
+   "text": "\"Anxietate,\" anxiety."
+  },
+  {
+   "chapter": 9,
+   "n": 572,
+   "at": 3718,
+   "text": "\"Domare,\" to tame."
+  },
+  {
+   "chapter": 9,
+   "n": 573,
+   "at": 4285,
+   "text": "\"Violenter fracta,\" forcibly broken."
+  },
+  {
+   "chapter": 9,
+   "n": 574,
+   "at": 7592,
+   "text": "\"Eadum ipsum sympathia tangi,\" that he is touched with the same sympathy."
+  },
+  {
+   "chapter": 9,
+   "n": 575,
+   "at": 8296,
+   "text": "\"Reditura,\" recoil upon."
+  },
+  {
+   "chapter": 9,
+   "n": 576,
+   "at": 15101,
+   "text": "\"Suspensum allo,\" in suspense, elsewhere."
+  },
+  {
+   "chapter": 9,
+   "n": 577,
+   "at": 17844,
+   "text": "\"Esse mendum,\" that there is a mistake."
+  },
+  {
+   "chapter": 9,
+   "n": 578,
+   "at": 17885,
+   "text": "\"Librarii,\" the copyist."
+  },
+  {
+   "chapter": 9,
+   "n": 579,
+   "at": 18703,
+   "text": "\"Articulate,\" articulately."
+  },
+  {
+   "chapter": 9,
+   "n": 580,
+   "at": 19017,
+   "text": "\"Acumen,\" acumen."
+  },
+  {
+   "chapter": 9,
+   "n": 581,
+   "at": 19770,
+   "text": "\"Expavefactum,\" terrified."
+  },
+  {
+   "chapter": 9,
+   "n": 582,
+   "at": 21776,
+   "text": "\"Symbolum,\" symbol."
+  },
+  {
+   "chapter": 9,
+   "n": 583,
+   "at": 22187,
+   "text": "\"Fallacibus spectris,\" with fallacious specters."
+  },
+  {
+   "chapter": 9,
+   "n": 584,
+   "at": 22373,
+   "text": "\"Impostura,\" imposture."
+  },
+  {
+   "chapter": 9,
+   "n": 585,
+   "at": 22517,
+   "text": "\"Fuisse intentum,\" was intent."
+  },
+  {
+   "chapter": 9,
+   "n": 586,
+   "at": 22813,
+   "text": "\"Precatione momenti,\" momentary or ejaculatory prayer."
+  },
+  {
+   "chapter": 9,
+   "n": 587,
+   "at": 23096,
+   "text": "\"Anxia,\" anxious."
+  },
+  {
+   "chapter": 9,
+   "n": 588,
+   "at": 24859,
+   "text": "\"Pietatis,\" piety."
+  },
+  {
+   "chapter": 9,
+   "n": 589,
+   "at": 25151,
+   "text": "\"Obliqua excusatione,\" indirect excuse."
+  },
+  {
+   "chapter": 9,
+   "n": 590,
+   "at": 25392,
+   "text": "\"Parabat,\" was preparing."
+  },
+  {
+   "chapter": 9,
+   "n": 591,
+   "at": 25452,
+   "text": "\"Debuit,\" must have been."
+  },
+  {
+   "chapter": 9,
+   "n": 592,
+   "at": 25532,
+   "text": "\"Misere cruciari,\" miserably tortured."
+  },
+  {
+   "chapter": 9,
+   "n": 593,
+   "at": 26038,
+   "text": "\"Genuinum,\" genuine."
+  },
+  {
+   "chapter": 9,
+   "n": 594,
+   "at": 26580,
+   "text": "\"Quibus possunt blanditiis,\" by all sorts of blandishment."
+  },
+  {
+   "chapter": 9,
+   "n": 595,
+   "at": 26748,
+   "text": "\"Quo magis notandum est Anniae exemplum, qui ad secundum mandatum moras omnes abrumpit.\" Wherefore it is the more necessary to give heed to the example of Ananias, who, on the second command, breaks off all delay, omitted."
+  },
+  {
+   "chapter": 9,
+   "n": 596,
+   "at": 31668,
+   "text": "\"Quin sibi multum placuerit in sua perspicacia,\" but he was much pleased with his own perspicacity.\""
+  },
+  {
+   "chapter": 9,
+   "n": 597,
+   "at": 31760,
+   "text": "\"Oculis,\" of his eyes, his bodily sight."
+  },
+  {
+   "chapter": 9,
+   "n": 598,
+   "at": 32229,
+   "text": "\"Ut totum suum acumen ignorantiae damnans,\" that confessing all his acuteness to be ignorance."
+  },
+  {
+   "chapter": 9,
+   "n": 599,
+   "at": 32615,
+   "text": "\"Ferventissimum,\" most fervent."
+  },
+  {
+   "chapter": 9,
+   "n": 600,
+   "at": 33618,
+   "text": "\"Statim prodient in publicum,\" immediately appeared in public."
+  },
+  {
+   "chapter": 9,
+   "n": 601,
+   "at": 33710,
+   "text": "\"Se... objecerit,\" exposed himself to."
+  },
+  {
+   "chapter": 9,
+   "n": 602,
+   "at": 34083,
+   "text": "\"Opera Ananiae formatum,\" formed or trained by the agency of Ananias."
+  },
+  {
+   "chapter": 9,
+   "n": 603,
+   "at": 36664,
+   "text": "\"Vim et energiam conjunctam,\" combined force and energy."
+  },
+  {
+   "chapter": 9,
+   "n": 604,
+   "at": 36821,
+   "text": "\"Quasi obruebat,\" as it were threwn down, overwhelmed."
+  },
+  {
+   "chapter": 9,
+   "n": 605,
+   "at": 36996,
+   "text": "\"Ut apud se non essent,\" that they were out of themselves."
+  },
+  {
+   "chapter": 9,
+   "n": 606,
+   "at": 38285,
+   "text": "\"Asylum,\" asylum."
+  },
+  {
+   "chapter": 9,
+   "n": 607,
+   "at": 38575,
+   "text": "\"Obstrependi,\" brawling, gainsaying."
+  },
+  {
+   "chapter": 9,
+   "n": 608,
+   "at": 38626,
+   "text": "\"In seipsis convicti,\" selfconvicted."
+  },
+  {
+   "chapter": 9,
+   "n": 609,
+   "at": 39276,
+   "text": "\"Donec promoveat,\" until he may further."
+  },
+  {
+   "chapter": 9,
+   "n": 610,
+   "at": 39640,
+   "text": "\"Caeco et praecipite impetu,\" with blind and headlong impulse."
+  },
+  {
+   "chapter": 9,
+   "n": 611,
+   "at": 40123,
+   "text": "\"Zelotae,\" zealots."
+  },
+  {
+   "chapter": 9,
+   "n": 612,
+   "at": 40360,
+   "text": "\"Nefarium,\" nefarious."
+  },
+  {
+   "chapter": 9,
+   "n": 613,
+   "at": 41786,
+   "text": "\"Tuti,\" safe."
+  },
+  {
+   "chapter": 9,
+   "n": 614,
+   "at": 42049,
+   "text": "\"Propulset,\" repel."
+  },
+  {
+   "chapter": 9,
+   "n": 615,
+   "at": 42328,
+   "text": "\"Flectandae,\" bent."
+  },
+  {
+   "chapter": 9,
+   "n": 616,
+   "at": 42751,
+   "text": "\"Hoc tirocinio ad crucem ferendam mature assuefactus fuit.\" He was early trained to bear the cross by this first trial."
+  },
+  {
+   "chapter": 9,
+   "n": 617,
+   "at": 43697,
+   "text": "\"Dura et aspera Paulo adhuc tironi rudimenta haec fuerunt,\" this was rough and harsh training for Paul, who was as yet a tyro."
+  },
+  {
+   "chapter": 9,
+   "n": 618,
+   "at": 44336,
+   "text": "\"Se horrori esse,\" that he is a terror to them."
+  },
+  {
+   "chapter": 9,
+   "n": 619,
+   "at": 45044,
+   "text": "\"Apostaticis,\" apostate."
+  },
+  {
+   "chapter": 9,
+   "n": 620,
+   "at": 45310,
+   "text": "\"Qui sponte in ordinem se cogit,\" who spontaneously reduces himself into insubordination."
+  },
+  {
+   "chapter": 9,
+   "n": 621,
+   "at": 45497,
+   "text": "\"Id nimiae forsan timiditatis fuit,\" that, perhaps, was owing to too great timidity."
+  },
+  {
+   "chapter": 9,
+   "n": 622,
+   "at": 45704,
+   "text": "\"Experti sunt,\" experienced."
+  },
+  {
+   "chapter": 9,
+   "n": 623,
+   "at": 46108,
+   "text": "\"Provocassent,\" challenged or defied."
+  },
+  {
+   "chapter": 9,
+   "n": 624,
+   "at": 47711,
+   "text": "\"Qui oriundi essent ex Graecis,\" who were of Greek extraction."
+  },
+  {
+   "chapter": 9,
+   "n": 625,
+   "at": 47840,
+   "text": "\"Ex suis provinciis,\" from their different provinces."
+  },
+  {
+   "chapter": 9,
+   "n": 626,
+   "at": 47942,
+   "text": "\"Advenis... hospitibus,\" with guests and strangers."
+  },
+  {
+   "chapter": 9,
+   "n": 627,
+   "at": 47982,
+   "text": "\"Indigenis,\" with natives."
+  },
+  {
+   "chapter": 9,
+   "n": 628,
+   "at": 49210,
+   "text": "\"Fidem figere,\" rest his foot."
+  },
+  {
+   "chapter": 9,
+   "n": 629,
+   "at": 50324,
+   "text": "\"Protinus,\" forthwith."
+  },
+  {
+   "chapter": 9,
+   "n": 630,
+   "at": 50972,
+   "text": "\"Indulget,\" is indulgent to."
+  },
+  {
+   "chapter": 9,
+   "n": 631,
+   "at": 52233,
+   "text": "\"Ad nostrum agnotheten,\" to him who judges our combat."
+  },
+  {
+   "chapter": 9,
+   "n": 632,
+   "at": 57907,
+   "text": "\"Redditum sibi vigorem,\" that his vigor was restored."
+  },
+  {
+   "chapter": 9,
+   "n": 633,
+   "at": 58835,
+   "text": "\"Initium et praeparatio conversionis ad ipsum,\" was a preparation and commencement of conversion to him."
+  },
+  {
+   "chapter": 9,
+   "n": 634,
+   "at": 61033,
+   "text": "\"Ut sanctae mulieris virtutibus non fuisse conforme sciremus, et in nomine parum honorifico fuisse quasi dejectam,\" that we might know that it was not suitable to the virtues of a holy woman, and that she was, as it were, degraded by a name far from honorable."
+  },
+  {
+   "chapter": 9,
+   "n": 635,
+   "at": 62346,
+   "text": "\"Ut pura aliquando ad Dei tribunal sisterentur,\" that they might one day stand pure at the judgmentseat of God."
+  },
+  {
+   "chapter": 9,
+   "n": 636,
+   "at": 62398,
+   "text": "\"Quotidianae ablutiones,\" their daily ablutions."
+  },
+  {
+   "chapter": 9,
+   "n": 637,
+   "at": 62898,
+   "text": "\"Superstites,\" survivors."
+  },
+  {
+   "chapter": 9,
+   "n": 638,
+   "at": 63280,
+   "text": "\"Praepostera,\" preposterous."
+  },
+  {
+   "chapter": 9,
+   "n": 639,
+   "at": 66549,
+   "text": "\"Suspensus licet atque... incertus,\" though in suspense and uncertain."
+  },
+  {
+   "chapter": 9,
+   "n": 640,
+   "at": 69471,
+   "text": "\"Ne fallax sit ac lusoria,\" that it be not elusory and fallacious."
+  },
+  {
+   "chapter": 9,
+   "n": 641,
+   "at": 70599,
+   "text": "\"Fanatici quidam,\" certain fanatics."
+  },
+  {
+   "chapter": 9,
+   "n": 642,
+   "at": 71358,
+   "text": "\"Utilitas,\" advantage, interest."
+  },
+  {
+   "chapter": 10,
+   "n": 643,
+   "at": 789,
+   "text": "\"Memorabilem,\" memorable."
+  },
+  {
+   "chapter": 10,
+   "n": 644,
+   "at": 1629,
+   "text": "\"Robur exercituum,\" the flower of their armies."
+  },
+  {
+   "chapter": 10,
+   "n": 645,
+   "at": 1809,
+   "text": "\"Stationes,\" stations."
+  },
+  {
+   "chapter": 10,
+   "n": 646,
+   "at": 7013,
+   "text": "\"Valde... exosa,\" exceedingly hated."
+  },
+  {
+   "chapter": 10,
+   "n": 647,
+   "at": 7049,
+   "text": "\"Impune,\" with impunity."
+  },
+  {
+   "chapter": 10,
+   "n": 648,
+   "at": 7223,
+   "text": "\"Timiditas,\" timidity or cowardice."
+  },
+  {
+   "chapter": 10,
+   "n": 649,
+   "at": 8319,
+   "text": "\"Ut omnia profundant,\" how profuse soever they be."
+  },
+  {
+   "chapter": 10,
+   "n": 650,
+   "at": 9145,
+   "text": "\"Probatum,\" approved by."
+  },
+  {
+   "chapter": 10,
+   "n": 651,
+   "at": 9322,
+   "text": "\"Quum tam multa offendicula occurrerent,\" when so many obstacles or offenses stood in the way."
+  },
+  {
+   "chapter": 10,
+   "n": 652,
+   "at": 9785,
+   "text": "\"Quantus... torpor,\" how great our torpor or sluggishness."
+  },
+  {
+   "chapter": 10,
+   "n": 653,
+   "at": 10012,
+   "text": "\"Insana cupidine,\" an insane desire."
+  },
+  {
+   "chapter": 10,
+   "n": 654,
+   "at": 10065,
+   "text": "\"Tanta crudelitate efferati sunt,\" so rage with cruelty."
+  },
+  {
+   "chapter": 10,
+   "n": 655,
+   "at": 11200,
+   "text": "\"Terror quo correptus est,\" the terror with which he was seized."
+  },
+  {
+   "chapter": 10,
+   "n": 656,
+   "at": 11253,
+   "text": "\"Ex sensu Divinae Majestatis,\" from a sense of the Divine Majesty."
+  },
+  {
+   "chapter": 10,
+   "n": 657,
+   "at": 12014,
+   "text": "\"Haabet male,\" is inaccurate."
+  },
+  {
+   "chapter": 10,
+   "n": 658,
+   "at": 13625,
+   "text": "\"Antevertat,\" anticipate."
+  },
+  {
+   "chapter": 10,
+   "n": 659,
+   "at": 14563,
+   "text": "\"Vendicat,\" claimeth."
+  },
+  {
+   "chapter": 10,
+   "n": 660,
+   "at": 15517,
+   "text": "\"Conciliant,\" procure."
+  },
+  {
+   "chapter": 10,
+   "n": 661,
+   "at": 15795,
+   "text": "\"Quae pretium illis statuit,\" which gives them their value."
+  },
+  {
+   "chapter": 10,
+   "n": 662,
+   "at": 18818,
+   "text": "\"Quin aliquid simal... audesset,\" without having at the same time heard."
+  },
+  {
+   "chapter": 10,
+   "n": 663,
+   "at": 19091,
+   "text": "\"Longe dissitas,\" widely separated."
+  },
+  {
+   "chapter": 10,
+   "n": 664,
+   "at": 19244,
+   "text": "\"Improprie,\" improperly."
+  },
+  {
+   "chapter": 10,
+   "n": 665,
+   "at": 20084,
+   "text": "\"Doctoris partes implet,\" fulfill the office of teacher."
+  },
+  {
+   "chapter": 10,
+   "n": 666,
+   "at": 20117,
+   "text": "\"Parum rationi consentareum,\" little accordant with reason."
+  },
+  {
+   "chapter": 10,
+   "n": 667,
+   "at": 20982,
+   "text": "\"Captarunt,\" have caught at, longed for."
+  },
+  {
+   "chapter": 10,
+   "n": 668,
+   "at": 21088,
+   "text": "\"Apud quos verbum suum deposuit,\" with whom he had deposited."
+  },
+  {
+   "chapter": 10,
+   "n": 669,
+   "at": 21957,
+   "text": "\"Mentis excessus,\" a suspension of mind or thought, a trance."
+  },
+  {
+   "chapter": 10,
+   "n": 670,
+   "at": 26562,
+   "text": "\"Totum fere diem,\" almost the whole day, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 671,
+   "at": 33835,
+   "text": "\"Lente,\" slowly."
+  },
+  {
+   "chapter": 10,
+   "n": 672,
+   "at": 37308,
+   "text": "\"Vel anxietas vel scrupulus,\" or anxiety or scruple, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 673,
+   "at": 38808,
+   "text": "\"Accepit hospitio,\" he hospitably entertained them."
+  },
+  {
+   "chapter": 10,
+   "n": 674,
+   "at": 42208,
+   "text": "\"Ab ejus congressu minus abhorreat,\" may be less averse to meet with him."
+  },
+  {
+   "chapter": 10,
+   "n": 675,
+   "at": 44291,
+   "text": "\"Sub vesperum,\" towards evening."
+  },
+  {
+   "chapter": 10,
+   "n": 676,
+   "at": 45649,
+   "text": "\"Quantum... deberet,\" how much he owed."
+  },
+  {
+   "chapter": 10,
+   "n": 677,
+   "at": 45884,
+   "text": "\"Foedae socordiae,\" shameful sloth."
+  },
+  {
+   "chapter": 10,
+   "n": 678,
+   "at": 46819,
+   "text": "\"Simplicitas,\" simplicity, singleness of mind."
+  },
+  {
+   "chapter": 10,
+   "n": 679,
+   "at": 47743,
+   "text": "\"Quaeritur tamen,\" it is asked, however."
+  },
+  {
+   "chapter": 10,
+   "n": 680,
+   "at": 48334,
+   "text": "\"Qui arctiore vinculo inter se conjuncti sunt,\" who are bound together by a closer tie."
+  },
+  {
+   "chapter": 10,
+   "n": 681,
+   "at": 53336,
+   "text": "\"Exasperet,\" exasperate."
+  },
+  {
+   "chapter": 10,
+   "n": 682,
+   "at": 53696,
+   "text": "\"Quasi legis contemptor,\" as if he had been a despiser of the law, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 683,
+   "at": 54806,
+   "text": "\"Ex professo,\" professedly, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 684,
+   "at": 55457,
+   "text": "\"Tantum,\" only, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 685,
+   "at": 55594,
+   "text": "\"Et salutis,\" and salvation, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 686,
+   "at": 55929,
+   "text": "\"Procul abigendo,\" driving far away."
+  },
+  {
+   "chapter": 10,
+   "n": 687,
+   "at": 56858,
+   "text": "\"Codices,\" manuscripts."
+  },
+  {
+   "chapter": 10,
+   "n": 688,
+   "at": 57023,
+   "text": "\"Codicibus,\" manuscripts."
+  },
+  {
+   "chapter": 10,
+   "n": 689,
+   "at": 57139,
+   "text": "\"Defunctorie,\" perfunctorily."
+  },
+  {
+   "chapter": 10,
+   "n": 690,
+   "at": 57404,
+   "text": "\"Hallucinationes in spectris,\" spectral delusions."
+  },
+  {
+   "chapter": 10,
+   "n": 691,
+   "at": 57623,
+   "text": "\"Phantasmatibus ac spectris,\" phantasms and specters."
+  },
+  {
+   "chapter": 10,
+   "n": 692,
+   "at": 58203,
+   "text": "\"Quae fulgere... debuit,\" which must have been refulgent."
+  },
+  {
+   "chapter": 10,
+   "n": 693,
+   "at": 58975,
+   "text": "\"Pro certo,\" for certain."
+  },
+  {
+   "chapter": 10,
+   "n": 694,
+   "at": 59345,
+   "text": "\"Neque tamen humani quidquam passum,\" and that he had no human property."
+  },
+  {
+   "chapter": 10,
+   "n": 695,
+   "at": 60060,
+   "text": "\"Idem semper erit finis,\" the result will be the same."
+  },
+  {
+   "chapter": 10,
+   "n": 696,
+   "at": 63900,
+   "text": "\"Illud arriperet,\" laid hold of the fact."
+  },
+  {
+   "chapter": 10,
+   "n": 697,
+   "at": 64581,
+   "text": "\"Reprobari,\" reprobated."
+  },
+  {
+   "chapter": 10,
+   "n": 698,
+   "at": 65146,
+   "text": "\"Judicem a causa abducunt,\" lead the judge away from the cause."
+  },
+  {
+   "chapter": 10,
+   "n": 699,
+   "at": 65265,
+   "text": "\"Gratam habeat ac probet,\" may approve and be pleased with."
+  },
+  {
+   "chapter": 10,
+   "n": 700,
+   "at": 65950,
+   "text": "\"Nondum tamen soluta est difficultas,\" the difficulty, however, is not yet solved."
+  },
+  {
+   "chapter": 10,
+   "n": 701,
+   "at": 71040,
+   "text": "\"Subaudire,\" to supply."
+  },
+  {
+   "chapter": 10,
+   "n": 702,
+   "at": 72582,
+   "text": "\"Solidam et perfectam,\" the perfect and entire."
+  },
+  {
+   "chapter": 10,
+   "n": 703,
+   "at": 72665,
+   "text": "\"Tetrum chaos,\" a dire chaos."
+  },
+  {
+   "chapter": 10,
+   "n": 704,
+   "at": 78092,
+   "text": "\"Totidem ferulae,\" so many rods."
+  },
+  {
+   "chapter": 10,
+   "n": 705,
+   "at": 78559,
+   "text": "\"Mentis alienatio,\" mental alienation."
+  },
+  {
+   "chapter": 10,
+   "n": 706,
+   "at": 78994,
+   "text": "\"Editae,\" exhibited, performed."
+  },
+  {
+   "chapter": 10,
+   "n": 707,
+   "at": 80391,
+   "text": "\"Ita loqui de rebus probe compertis,\" and so spake of things well ascertained, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 708,
+   "at": 80500,
+   "text": "\"Certos testes,\" sure witnesses."
+  },
+  {
+   "chapter": 10,
+   "n": 709,
+   "at": 80508,
+   "text": "\"Quo significat publicam apostolis impositam esse personam, utque ad hoc peculiariter delectos esse,\" by which he intimates that a public character was assigned to the apostles, and that for this they were specially chosen, omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 710,
+   "at": 82188,
+   "text": "\"Quas petere licebit ex Harmonia,\" which may be seen in my Harmony."
+  },
+  {
+   "chapter": 10,
+   "n": 711,
+   "at": 83966,
+   "text": "\"Nec video quorsum attineat ejusmodi subterfugia quaerere,\" nor do I see the use of having recourse to subterfuges (futile explanations) of this kind."
+  },
+  {
+   "chapter": 10,
+   "n": 712,
+   "at": 84136,
+   "text": "\"Ansa praecisa est,\" no handle is left for."
+  },
+  {
+   "chapter": 10,
+   "n": 713,
+   "at": 85528,
+   "text": "\"Vel potius concisus,\" or rather concise, (abrupt,) omitted."
+  },
+  {
+   "chapter": 10,
+   "n": 714,
+   "at": 86167,
+   "text": "\"Totum humanum genus exosum illi esse et infensum,\" that the whole human race is hostile and hateful to him."
+  },
+  {
+   "chapter": 10,
+   "n": 715,
+   "at": 87989,
+   "text": "\"Quicquid Dei erat in piaculis,\" every thing of an expiatory nature appointed by God."
+  },
+  {
+   "chapter": 10,
+   "n": 716,
+   "at": 88337,
+   "text": "\"Sed in eo nimio sunt praeposteri,\" but in this they are exceedingly preposterous."
+  },
+  {
+   "chapter": 10,
+   "n": 717,
+   "at": 89248,
+   "text": "\"Quae in evangelii summa praetermitti minime debuerat,\" which ought by no means to have been omitted in a summary of the gospel."
+  },
+  {
+   "chapter": 10,
+   "n": 718,
+   "at": 90165,
+   "text": "\"Mediatore interposito,\" by the imposition of a Mediator."
+  },
+  {
+   "chapter": 10,
+   "n": 719,
+   "at": 91055,
+   "text": "\"Putida... figmenta,\" the foul figments."
+  },
+  {
+   "chapter": 10,
+   "n": 720,
+   "at": 97006,
+   "text": "\"Tempore,\" in point of time."
+  },
+  {
+   "chapter": 10,
+   "n": 721,
+   "at": 97280,
+   "text": "\"Eamque exorcismis non secus elici putant e coelo,\" and think it can only be brought down from heaven by exorcisms."
+  },
+  {
+   "chapter": 10,
+   "n": 722,
+   "at": 97608,
+   "text": "\"Ad conferendum baptismum,\" in giving baptism."
+  },
+  {
+   "chapter": 10,
+   "n": 723,
+   "at": 98928,
+   "text": "\"Qui ingressum obstruat doctrinae,\" which obstructeth the entrance of doctrine."
+  },
+  {
+   "chapter": 11,
+   "n": 724,
+   "at": 4738,
+   "text": "\"Societam colant,\" may cultivate communion."
+  },
+  {
+   "chapter": 11,
+   "n": 725,
+   "at": 5080,
+   "text": "\"Misceri,\" were confounded."
+  },
+  {
+   "chapter": 11,
+   "n": 726,
+   "at": 6594,
+   "text": "\"Praecise,\" strictly."
+  },
+  {
+   "chapter": 11,
+   "n": 727,
+   "at": 7933,
+   "text": "\"Petrum ad causam dicendam libenter descendere quum ejus factum improbatur,\" that Peter readily condescends to plead his cause when his act is impugned."
+  },
+  {
+   "chapter": 11,
+   "n": 728,
+   "at": 8188,
+   "text": "\"Circuitu,\" circumlocution."
+  },
+  {
+   "chapter": 11,
+   "n": 729,
+   "at": 10443,
+   "text": "\"Famelicus inhiare mavult,\" it prefers gaping famished."
+  },
+  {
+   "chapter": 11,
+   "n": 730,
+   "at": 10930,
+   "text": "\"Ad se trahat,\" arrogate to himself."
+  },
+  {
+   "chapter": 11,
+   "n": 731,
+   "at": 13618,
+   "text": "\"Cum accessione,\" with the accessary."
+  },
+  {
+   "chapter": 11,
+   "n": 732,
+   "at": 13959,
+   "text": "\"Annon praeponderet cibus humanis consiliis,\" whether meat do not preponderate in man's counsels."
+  },
+  {
+   "chapter": 11,
+   "n": 733,
+   "at": 14492,
+   "text": "\"Non est quod perversa eorum judicia amplius moretur,\" there is no reason why he should any longer regard their perverse judgments."
+  },
+  {
+   "chapter": 11,
+   "n": 734,
+   "at": 20460,
+   "text": "Transpose thus: \"And fear, or else contempt of strangers, did cause those who had fled to keep silence.\""
+  },
+  {
+   "chapter": 11,
+   "n": 735,
+   "at": 20788,
+   "text": "Transpose thus: \"The gospel which was before included, etc., was spread abroad,\" etc."
+  },
+  {
+   "chapter": 11,
+   "n": 736,
+   "at": 21011,
+   "text": "\"Consumptio exundavit,\" the devastation overflowed."
+  },
+  {
+   "chapter": 11,
+   "n": 737,
+   "at": 21438,
+   "text": "\"Pauci exules ac profugi,\" a few exiles and fugitives."
+  },
+  {
+   "chapter": 11,
+   "n": 738,
+   "at": 23182,
+   "text": "\"Evangelii doctrinam sparsisse,\" did spread the doctrine of the gospel."
+  },
+  {
+   "chapter": 11,
+   "n": 739,
+   "at": 23539,
+   "text": "\"Strenue impendant,\" may strenously spend."
+  },
+  {
+   "chapter": 11,
+   "n": 740,
+   "at": 25768,
+   "text": "\"Otiosa frigidaque notitia,\" an idle and frigid knowledge."
+  },
+  {
+   "chapter": 11,
+   "n": 741,
+   "at": 30985,
+   "text": "\"Candide... probat,\" candidly approves."
+  },
+  {
+   "chapter": 11,
+   "n": 742,
+   "at": 32612,
+   "text": "\"Verum fuisse fontem ex quo primum fluxit Christanismus,\" was the true fountain from which Christianity did first flow."
+  },
+  {
+   "chapter": 11,
+   "n": 743,
+   "at": 34008,
+   "text": "\"Deformen vasitatem,\" hideous devastation."
+  },
+  {
+   "chapter": 11,
+   "n": 744,
+   "at": 36882,
+   "text": "\"Passim occurrunt,\" everywhere occur, are everywhere mentioned."
+  },
+  {
+   "chapter": 11,
+   "n": 745,
+   "at": 39252,
+   "text": "\"Immodica illa anxietate,\" that excessive anxiety."
+  },
+  {
+   "chapter": 11,
+   "n": 746,
+   "at": 39811,
+   "text": "\"Sibi constiterit,\" is consistent with himself."
+  },
+  {
+   "chapter": 11,
+   "n": 747,
+   "at": 40100,
+   "text": "\"Munus,\" gift."
+  },
+  {
+   "chapter": 12,
+   "n": 748,
+   "at": 930,
+   "text": "\"Perpetuam. quietem,\" perpetual rest."
+  },
+  {
+   "chapter": 12,
+   "n": 749,
+   "at": 962,
+   "text": "\"Vacationem,\" discharge."
+  },
+  {
+   "chapter": 12,
+   "n": 750,
+   "at": 2994,
+   "text": "\"In duces et capita animadverti solet,\" punishment is usually inflicted on the heads and captains."
+  },
+  {
+   "chapter": 12,
+   "n": 751,
+   "at": 5157,
+   "text": "\"Insaniant,\" rage against."
+  },
+  {
+   "chapter": 12,
+   "n": 752,
+   "at": 5176,
+   "text": "\"Incitat,\" instigated by."
+  },
+  {
+   "chapter": 12,
+   "n": 753,
+   "at": 6533,
+   "text": "\"Ad diem festum,\" to the feast, or festival."
+  },
+  {
+   "chapter": 12,
+   "n": 754,
+   "at": 6685,
+   "text": "\"In prima acie,\" in the front rank, the van."
+  },
+  {
+   "chapter": 12,
+   "n": 755,
+   "at": 8181,
+   "text": "\"In ejus morte,\" in his death."
+  },
+  {
+   "chapter": 12,
+   "n": 756,
+   "at": 8374,
+   "text": "\"Defunctorie,\" perfunctorily."
+  },
+  {
+   "chapter": 12,
+   "n": 757,
+   "at": 11455,
+   "text": "\"Nihil Herocli fuisse minus in animo,\" that there was nothing Herod less intended."
+  },
+  {
+   "chapter": 12,
+   "n": 758,
+   "at": 14477,
+   "text": "\"Momento uno,\" in one moment."
+  },
+  {
+   "chapter": 12,
+   "n": 759,
+   "at": 18977,
+   "text": "\"Christi nomen,\" the name of Christ."
+  },
+  {
+   "chapter": 12,
+   "n": 760,
+   "at": 23107,
+   "text": "\"Extemplo ad Supplicium rapi,\" that they should he immediately dragged off to execution."
+  },
+  {
+   "chapter": 12,
+   "n": 761,
+   "at": 24488,
+   "text": "\"Memorabilis,\" a memorable."
+  },
+  {
+   "chapter": 12,
+   "n": 762,
+   "at": 24911,
+   "text": "\"Ut solus emineat,\" that he alone may have the pre eminence."
+  },
+  {
+   "chapter": 12,
+   "n": 763,
+   "at": 25497,
+   "text": "\"Quibus obrepere suspieio poterat,\" who might be led to suspect."
+  },
+  {
+   "chapter": 12,
+   "n": 764,
+   "at": 25646,
+   "text": "\"Sed longa aliud fnit Dei consilium,\" but very different was the purpose of God."
+  },
+  {
+   "chapter": 12,
+   "n": 765,
+   "at": 27437,
+   "text": "\"Obscurae fortunas,\" of obscure origin."
+  },
+  {
+   "chapter": 12,
+   "n": 766,
+   "at": 27822,
+   "text": "\"Illis... importari,\" be imported to them."
+  },
+  {
+   "chapter": 12,
+   "n": 767,
+   "at": 28314,
+   "text": "\"Ut pacis esset interpres,\" to intercede for peace."
+  },
+  {
+   "chapter": 12,
+   "n": 768,
+   "at": 29348,
+   "text": "\"Consulataret,\" to salute him as."
+  },
+  {
+   "chapter": 12,
+   "n": 769,
+   "at": 29869,
+   "text": "\"Ludos celebraret,\" celebrated games."
+  },
+  {
+   "chapter": 12,
+   "n": 770,
+   "at": 31924,
+   "text": "\"Liberalis et regia castigatio,\" a dignified and royal chastisement."
+  },
+  {
+   "chapter": 12,
+   "n": 771,
+   "at": 35645,
+   "text": "\"Enim consilium Lucae fuit,\" for it was the purpose of God."
+  },
+  {
+   "chapter": 13,
+   "n": 772,
+   "at": 2372,
+   "text": "\"Multis locis,\" in many passages, omitted."
+  },
+  {
+   "chapter": 13,
+   "n": 773,
+   "at": 4905,
+   "text": "\"Quin se... subjiceret,\" without subjecting himself."
+  },
+  {
+   "chapter": 13,
+   "n": 774,
+   "at": 7074,
+   "text": "\"Dubium est,\" it is doubtful."
+  },
+  {
+   "chapter": 13,
+   "n": 775,
+   "at": 8368,
+   "text": "\"Divinitus vocatum esse eum de quo agitur,\" that he of whom we treat (whose election is in question) is divinely called."
+  },
+  {
+   "chapter": 13,
+   "n": 776,
+   "at": 8630,
+   "text": "\"Suffragiis,\" by the suffrages."
+  },
+  {
+   "chapter": 13,
+   "n": 777,
+   "at": 11465,
+   "text": "\"Tergiversandi causa,\" for the sake of tergiversation."
+  },
+  {
+   "chapter": 13,
+   "n": 778,
+   "at": 12927,
+   "text": "\"Hypostasin non designet,\" does not designate a hypostasis."
+  },
+  {
+   "chapter": 13,
+   "n": 779,
+   "at": 13042,
+   "text": "\"Inepta et absurda erit loqutio, quod Spiritus Sanctus dixerit,\" the expression, \"that the Holy Spirit said,\" will be absurd and inept."
+  },
+  {
+   "chapter": 13,
+   "n": 780,
+   "at": 13966,
+   "text": "\"Ut det pares servis suis humeros,\" that he may make the shoulders of his servants equal to the burden, may fit them for the office."
+  },
+  {
+   "chapter": 13,
+   "n": 781,
+   "at": 17482,
+   "text": "\"Ita nulla ratio prohibuit quin Judaeis promiscue et Gentibus operam suam conferrent,\" so nothing prevented them from bestowing their labor promiscuously on Jews and Gentiles."
+  },
+  {
+   "chapter": 13,
+   "n": 782,
+   "at": 21996,
+   "text": "\"Discuti,\" dispelled."
+  },
+  {
+   "chapter": 13,
+   "n": 783,
+   "at": 22354,
+   "text": "\"Nam ut non semper et ubique praesto sint magi qui negotium nobis facessant,\" for though magicians are not always and everywhere present to give us trouble."
+  },
+  {
+   "chapter": 13,
+   "n": 784,
+   "at": 22378,
+   "text": "\"Avocamenta,\" enticements."
+  },
+  {
+   "chapter": 13,
+   "n": 785,
+   "at": 23285,
+   "text": "\"Fultura,\" prop or support."
+  },
+  {
+   "chapter": 13,
+   "n": 786,
+   "at": 24943,
+   "text": "\"Gentile... nomen,\" his family name."
+  },
+  {
+   "chapter": 13,
+   "n": 787,
+   "at": 27883,
+   "text": "\"Blanditiis mulceri,\" soothed by flattery."
+  },
+  {
+   "chapter": 13,
+   "n": 788,
+   "at": 28106,
+   "text": "\"Usque ad summum fervorem efferamur, \"let us be carried even to the highest pitch of fervour."
+  },
+  {
+   "chapter": 13,
+   "n": 789,
+   "at": 28209,
+   "text": "\"Ad plagam infligendam,\" for inflicting a blow."
+  },
+  {
+   "chapter": 13,
+   "n": 790,
+   "at": 29741,
+   "text": "\"Inflicta,\" inflicted."
+  },
+  {
+   "chapter": 13,
+   "n": 791,
+   "at": 32566,
+   "text": "\"Memorabilem,\" memorable."
+  },
+  {
+   "chapter": 13,
+   "n": 792,
+   "at": 32981,
+   "text": "\"Indefatigabili,\" indefatigable."
+  },
+  {
+   "chapter": 13,
+   "n": 793,
+   "at": 34666,
+   "text": "\"Omnes... promiscue,\" all promiscuously."
+  },
+  {
+   "chapter": 13,
+   "n": 794,
+   "at": 35516,
+   "text": "\"Respuenda,\" rejecting."
+  },
+  {
+   "chapter": 13,
+   "n": 795,
+   "at": 35645,
+   "text": "\"Compositi,\" arranged."
+  },
+  {
+   "chapter": 13,
+   "n": 796,
+   "at": 35817,
+   "text": "\"Cantillant,\" chant."
+  },
+  {
+   "chapter": 13,
+   "n": 797,
+   "at": 36323,
+   "text": "\"Depositum,\" deposited with."
+  },
+  {
+   "chapter": 13,
+   "n": 798,
+   "at": 40217,
+   "text": "\"Degeneres,\" degenerate."
+  },
+  {
+   "chapter": 13,
+   "n": 799,
+   "at": 41656,
+   "text": "\"Nihil se minus captare,\" that there is nothing he less desires."
+  },
+  {
+   "chapter": 13,
+   "n": 800,
+   "at": 44645,
+   "text": "\"Sustinendo populo,\" in sustaining the people."
+  },
+  {
+   "chapter": 13,
+   "n": 801,
+   "at": 55802,
+   "text": "\"Plusquam ferrea,\" more than that of iron."
+  },
+  {
+   "chapter": 13,
+   "n": 802,
+   "at": 59539,
+   "text": "\"Nostra socordia,\" by our sluggishness."
+  },
+  {
+   "chapter": 13,
+   "n": 803,
+   "at": 59672,
+   "text": "\"Torvis aut lusciosis,\" with stern or purblind eyes."
+  },
+  {
+   "chapter": 13,
+   "n": 804,
+   "at": 59778,
+   "text": "\"Ingenue,\" ingenuously."
+  },
+  {
+   "chapter": 13,
+   "n": 805,
+   "at": 60653,
+   "text": "\"Sicut alibi, quum dicit, absconditam esse mundi principibus evangelii sapientiam,\" as elsewhere, when he says, That the wisdom of the gospel was hid from the princes of the world, omitted."
+  },
+  {
+   "chapter": 13,
+   "n": 806,
+   "at": 62182,
+   "text": "\"Larvatos Ecclesiae praesules,\" pretended prelates of the Church."
+  },
+  {
+   "chapter": 13,
+   "n": 807,
+   "at": 62503,
+   "text": "\"Providentiae,\" the providence."
+  },
+  {
+   "chapter": 13,
+   "n": 808,
+   "at": 64315,
+   "text": "\"Petulantla,\" petulance."
+  },
+  {
+   "chapter": 13,
+   "n": 809,
+   "at": 65109,
+   "text": "\"Se adjungerent socios,\" join themselves as associates."
+  },
+  {
+   "chapter": 13,
+   "n": 810,
+   "at": 67741,
+   "text": "\"Probe fuisse testatem,\" was well attested."
+  },
+  {
+   "chapter": 13,
+   "n": 811,
+   "at": 70409,
+   "text": "\"Patienter foverint,\" patiently foster."
+  },
+  {
+   "chapter": 13,
+   "n": 812,
+   "at": 72038,
+   "text": "\"Nisi sua infidelitate degenerent.\" unless they degenerate through their own infidelity."
+  },
+  {
+   "chapter": 13,
+   "n": 813,
+   "at": 74212,
+   "text": "\"A Domino,\" by the Lord, omitted."
+  },
+  {
+   "chapter": 13,
+   "n": 814,
+   "at": 74494,
+   "text": "\"Codices,\" manuscripts."
+  },
+  {
+   "chapter": 13,
+   "n": 815,
+   "at": 75069,
+   "text": "\"Sed in ea re non est multum momenti,\" but the point is not of much importance."
+  },
+  {
+   "chapter": 13,
+   "n": 816,
+   "at": 76384,
+   "text": "\"Praestantior esset,\" be more excellent than."
+  },
+  {
+   "chapter": 13,
+   "n": 817,
+   "at": 78390,
+   "text": "\"Augustini argutiam,\" the subtlety of Augustine."
+  },
+  {
+   "chapter": 13,
+   "n": 818,
+   "at": 81120,
+   "text": "\"Mutationi,\" change."
+  },
+  {
+   "chapter": 13,
+   "n": 819,
+   "at": 83618,
+   "text": "\"Lente,\" slowly."
+  },
+  {
+   "chapter": 13,
+   "n": 820,
+   "at": 84132,
+   "text": "\"Tametsi probabilis est,\" though it is probable."
+  },
+  {
+   "chapter": 13,
+   "n": 821,
+   "at": 86544,
+   "text": "\"Cujus manu in ea, tanquam in statione, ad tempus locati sunt,\" by whose hand they are placed in it for a time, as at a station."
+  },
+  {
+   "chapter": 13,
+   "n": 822,
+   "at": 87044,
+   "text": "\"Viri fratres,\" brethren, omitted."
+  },
+  {
+   "chapter": 13,
+   "n": 823,
+   "at": 89622,
+   "text": "\"Expiationem... peccati,\" expiation of sin."
+  },
+  {
+   "chapter": 13,
+   "n": 824,
+   "at": 90458,
+   "text": "\"Perstringere,\" glance at."
+  },
+  {
+   "chapter": 13,
+   "n": 825,
+   "at": 97630,
+   "text": "\"Hortatur,\" exhorteth."
+  },
+  {
+   "chapter": 13,
+   "n": 826,
+   "at": 99251,
+   "text": "\"Re ipsa impios coarguit,\" convicts the wicked by the reality."
+  },
+  {
+   "chapter": 13,
+   "n": 827,
+   "at": 100391,
+   "text": "\"Intermedio Sabbatho,\" in the interval between the Sabbaths."
+  },
+  {
+   "chapter": 13,
+   "n": 828,
+   "at": 102666,
+   "text": "\"Fastidio pleni,\" being full of disdain."
+  },
+  {
+   "chapter": 13,
+   "n": 829,
+   "at": 104549,
+   "text": "\"Sine controversia,\" without controversy."
+  },
+  {
+   "chapter": 13,
+   "n": 830,
+   "at": 104602,
+   "text": "\"Suspensi,\" suspended."
+  },
+  {
+   "chapter": 13,
+   "n": 831,
+   "at": 105964,
+   "text": "\"In illud praecipitium ruamus,\" we rush instantly over that precipice."
+  },
+  {
+   "chapter": 13,
+   "n": 832,
+   "at": 107310,
+   "text": "\"Vicissim,\" in their turn."
+  },
+  {
+   "chapter": 13,
+   "n": 833,
+   "at": 110522,
+   "text": "\"Cur ergo nunc demum ad gentes se convertit, quasi earurn vocatio ex electi populi infidelitate pendeat,\" why then does he now only turn to the Gentiles, as if their calling depended on the infidelity of the chosen people? omitted."
+  },
+  {
+   "chapter": 13,
+   "n": 834,
+   "at": 112549,
+   "text": "\"Victima expiatrix,\" expiatory victim"
+  },
+  {
+   "chapter": 13,
+   "n": 835,
+   "at": 116958,
+   "text": "\"Animi magnitudine,\" magnanimity."
+  },
+  {
+   "chapter": 13,
+   "n": 836,
+   "at": 118247,
+   "text": "\"Promiscue,\" indiscriminately."
+  },
+  {
+   "chapter": 13,
+   "n": 837,
+   "at": 119032,
+   "text": "\"Promiscue,\" indiscriminately."
+  },
+  {
+   "chapter": 13,
+   "n": 838,
+   "at": 120058,
+   "text": "\"Adoptio,\" adoption."
+  },
+  {
+   "chapter": 13,
+   "n": 839,
+   "at": 121557,
+   "text": "\"Progressum,\" the progress."
+  },
+  {
+   "chapter": 13,
+   "n": 840,
+   "at": 122218,
+   "text": "\"Athletas in arenam,\" as wrestlers into the arena."
+  },
+  {
+   "chapter": 13,
+   "n": 841,
+   "at": 123715,
+   "text": "\"Offendiculos,\" petty scandals."
+  },
+  {
+   "chapter": 13,
+   "n": 842,
+   "at": 123770,
+   "text": "\"Inanes virtutum larvae.\" empty masks or shows of virtue."
+  },
+  {
+   "chapter": 13,
+   "n": 843,
+   "at": 124994,
+   "text": "\"Defunctorie,\" in a perfunctory manner."
+  },
+  {
+   "chapter": 13,
+   "n": 844,
+   "at": 125307,
+   "text": "\"Histrionici Dei cultores,\" histrionic worshippers of God."
+  },
+  {
+   "chapter": 13,
+   "n": 845,
+   "at": 125949,
+   "text": "\"Imbutae,\" imbued with."
+  },
+  {
+   "chapter": 13,
+   "n": 846,
+   "at": 127026,
+   "text": "\"Si quis homicida,\" if any murderer, omitted."
+  },
+  {
+   "chapter": 13,
+   "n": 847,
+   "at": 127358,
+   "text": "\"Qui exterminentur,\" to be exterminated."
+  },
+  {
+   "chapter": 14,
+   "n": 1,
+   "at": 1001,
+   "text": "\"Verum quamvis duciter accepti,\" but however harshly they were received."
+  },
+  {
+   "chapter": 14,
+   "n": 2,
+   "at": 1633,
+   "text": "\"Animi praesentiam,\" presence of mind."
+  },
+  {
+   "chapter": 14,
+   "n": 3,
+   "at": 1774,
+   "text": "\"Quod Lucas nunc prosequitur,\" as Luke now relates in detail."
+  },
+  {
+   "chapter": 14,
+   "n": 4,
+   "at": 2505,
+   "text": "\"Ut invidiam fugitent, aut periculem formident,\" from shunning envy, or dreading danger."
+  },
+  {
+   "chapter": 14,
+   "n": 5,
+   "at": 3622,
+   "text": "\"Nisi liabellis illis accensae fuissent ad resistendum,\" had not these like fans kindled their resistance."
+  },
+  {
+   "chapter": 14,
+   "n": 6,
+   "at": 3670,
+   "text": "\"Inficere,\" to infect."
+  },
+  {
+   "chapter": 14,
+   "n": 7,
+   "at": 4284,
+   "text": "\"Innnib,\" he intimates."
+  },
+  {
+   "chapter": 14,
+   "n": 8,
+   "at": 7267,
+   "text": "\"Fulturis,\" the props or stays."
+  },
+  {
+   "chapter": 14,
+   "n": 9,
+   "at": 8596,
+   "text": "\"Catastrophe,\" the catastrophe."
+  },
+  {
+   "chapter": 14,
+   "n": 10,
+   "at": 9273,
+   "text": "\"Schismate,\" by a schism."
+  },
+  {
+   "chapter": 14,
+   "n": 11,
+   "at": 9520,
+   "text": "\"Omnes pariter,\" all alike."
+  },
+  {
+   "chapter": 14,
+   "n": 12,
+   "at": 9914,
+   "text": "\"Mundi pac.\""
+  },
+  {
+   "chapter": 14,
+   "n": 13,
+   "at": 11004,
+   "text": "\"Temere,\" rashly, omitted."
+  },
+  {
+   "chapter": 14,
+   "n": 14,
+   "at": 11636,
+   "text": "\"Probabile est,\" it is probable."
+  },
+  {
+   "chapter": 14,
+   "n": 15,
+   "at": 12136,
+   "text": "\"Sine difficultate,\" without difficulty."
+  },
+  {
+   "chapter": 14,
+   "n": 16,
+   "at": 12470,
+   "text": "\"Protinus,\" forthwith."
+  },
+  {
+   "chapter": 14,
+   "n": 17,
+   "at": 12994,
+   "text": "\"Hujus accessionis,\" of this accession."
+  },
+  {
+   "chapter": 14,
+   "n": 18,
+   "at": 13230,
+   "text": "\"Locum,\" room for."
+  },
+  {
+   "chapter": 14,
+   "n": 19,
+   "at": 13791,
+   "text": "\"Codices,\" manuscripts or copies."
+  },
+  {
+   "chapter": 14,
+   "n": 20,
+   "at": 14834,
+   "text": "\"Dux esset sormonis,\" took the lead in speaking."
+  },
+  {
+   "chapter": 14,
+   "n": 21,
+   "at": 15426,
+   "text": "\"Imbiberant,\" had imbibed."
+  },
+  {
+   "chapter": 14,
+   "n": 22,
+   "at": 16432,
+   "text": "\"Numen quodlibet. a se confictum,\" any kind of deity reigned by themselves."
+  },
+  {
+   "chapter": 14,
+   "n": 23,
+   "at": 16548,
+   "text": "\"Originem a veritate duxerant,\" had derived their origin from truth."
+  },
+  {
+   "chapter": 14,
+   "n": 24,
+   "at": 16718,
+   "text": "\"Non fuisse de nihilo confictum,\" was not reigned without some foundation."
+  },
+  {
+   "chapter": 14,
+   "n": 25,
+   "at": 17008,
+   "text": "\"Ubi ad infideles transiit,\" when it was transmitted to unbelievers, the heathen."
+  },
+  {
+   "chapter": 14,
+   "n": 26,
+   "at": 17127,
+   "text": "\"Fideles suos,\" his believing people."
+  },
+  {
+   "chapter": 14,
+   "n": 27,
+   "at": 17505,
+   "text": "\"Recte hactenus,\" so far right."
+  },
+  {
+   "chapter": 14,
+   "n": 28,
+   "at": 18676,
+   "text": "\"Donaria,\" gifts."
+  },
+  {
+   "chapter": 14,
+   "n": 29,
+   "at": 20146,
+   "text": "\"Verbis non contenti,\" not contented with words."
+  },
+  {
+   "chapter": 14,
+   "n": 30,
+   "at": 24315,
+   "text": "\"Quam vivos et spitantes homines,\" than living, breathing men."
+  },
+  {
+   "chapter": 14,
+   "n": 31,
+   "at": 27189,
+   "text": "\"Sic Galli sacrifici magnae Cybeles caelibatum genuerunt,\" so the priests of Gaul gave rise to the celibacy of great Cybele."
+  },
+  {
+   "chapter": 14,
+   "n": 32,
+   "at": 27304,
+   "text": "\"Pantheo successit Pantagion,\" Pantagion (All Saints) succeed Pantheon, (All Gods.)"
+  },
+  {
+   "chapter": 14,
+   "n": 33,
+   "at": 28228,
+   "text": "\"Statim,\" forthwith, omitted."
+  },
+  {
+   "chapter": 14,
+   "n": 34,
+   "at": 29380,
+   "text": "\"Debere praejudicium fieri,\" that any thing should be prejudged, (any judgment should be founded on.)"
+  },
+  {
+   "chapter": 14,
+   "n": 35,
+   "at": 33562,
+   "text": "\"Nullum sibi debere culpam imputari,\" that no blame ought to be imputed to them"
+  },
+  {
+   "chapter": 14,
+   "n": 36,
+   "at": 33719,
+   "text": "\"Anticipant,\" anticipate."
+  },
+  {
+   "chapter": 14,
+   "n": 37,
+   "at": 35911,
+   "text": "\"Vegetat,\" causes it to vegetate."
+  },
+  {
+   "chapter": 14,
+   "n": 38,
+   "at": 38506,
+   "text": "\"Sed quam libet simus restricti,\" but however we may be restrained (in ourselves.)"
+  },
+  {
+   "chapter": 14,
+   "n": 39,
+   "at": 38839,
+   "text": "\"Sed etiam cure impetu irruisse in turbam,\" but also rushed impetuously among the multitude."
+  },
+  {
+   "chapter": 14,
+   "n": 40,
+   "at": 38902,
+   "text": "\"Repressum,\" repressed."
+  },
+  {
+   "chapter": 14,
+   "n": 41,
+   "at": 41969,
+   "text": "\"Quin tumultuose in eum insurrexeret vulgus,\" that the mob rose tumultuously against him."
+  },
+  {
+   "chapter": 14,
+   "n": 42,
+   "at": 42288,
+   "text": "\"De ejus vita sollicitos,\" were anxious for his life."
+  },
+  {
+   "chapter": 14,
+   "n": 43,
+   "at": 42652,
+   "text": "\"Naufrago,\" when shipwrecked."
+  },
+  {
+   "chapter": 14,
+   "n": 44,
+   "at": 42788,
+   "text": "\"Periculum subire,\" run the risk."
+  },
+  {
+   "chapter": 14,
+   "n": 45,
+   "at": 44705,
+   "text": "\"Prompti et strenui,\" prompt and strenuous."
+  },
+  {
+   "chapter": 14,
+   "n": 46,
+   "at": 45432,
+   "text": "\"Difficultas,\" difficulty."
+  },
+  {
+   "chapter": 14,
+   "n": 47,
+   "at": 46045,
+   "text": "\"Optimum est non nasci; proximum vero, quam citissime mori,\" the best thing is not to be born; the next best to die as soon as possible."
+  },
+  {
+   "chapter": 14,
+   "n": 48,
+   "at": 46157,
+   "text": "\"Austerior est ac durior,\" he is more harsh and austere."
+  },
+  {
+   "chapter": 14,
+   "n": 49,
+   "at": 46597,
+   "text": "\"Maxime uruntur,\" they are most of all stung by. The translator appears to have read \"utuntur.\""
+  },
+  {
+   "chapter": 14,
+   "n": 50,
+   "at": 46749,
+   "text": "\"Valde infesta,\" exceedingly troubled."
+  },
+  {
+   "chapter": 14,
+   "n": 51,
+   "at": 47436,
+   "text": "\"Futilis et stulta,\" futile and foolish."
+  },
+  {
+   "chapter": 14,
+   "n": 52,
+   "at": 48148,
+   "text": "\"Communicant cum Christo,\" make them to be partakers with Christ."
+  },
+  {
+   "chapter": 14,
+   "n": 53,
+   "at": 48317,
+   "text": "\"Aut saltem paucis,\" or at least a few."
+  },
+  {
+   "chapter": 14,
+   "n": 54,
+   "at": 48348,
+   "text": "\"Tandem succumbunt,\" at length succumb."
+  },
+  {
+   "chapter": 14,
+   "n": 55,
+   "at": 50758,
+   "text": "\"Ad praesidium,\" as a guard."
+  },
+  {
+   "chapter": 14,
+   "n": 56,
+   "at": 51292,
+   "text": "\"Eligere,\" to elect."
+  },
+  {
+   "chapter": 14,
+   "n": 57,
+   "at": 51344,
+   "text": "\"An soli hoc privato officio faciunt,\" do they alone do this by their peculiar office?"
+  },
+  {
+   "chapter": 14,
+   "n": 58,
+   "at": 51421,
+   "text": "\"Omnium suffragiis,\" by the suffrages of all."
+  },
+  {
+   "chapter": 14,
+   "n": 59,
+   "at": 51704,
+   "text": "\"Plebi electionem permitti,\" election to be given (left) to the people."
+  },
+  {
+   "chapter": 14,
+   "n": 60,
+   "at": 52310,
+   "text": "\"Auspicia,\" auspices."
+  },
+  {
+   "chapter": 14,
+   "n": 61,
+   "at": 52564,
+   "text": "\"Sollicite,\" anxiously."
+  },
+  {
+   "chapter": 14,
+   "n": 62,
+   "at": 53037,
+   "text": "\"Adduntur jejunia, tamquam adminicula,\" fastings are added as helps."
+  },
+  {
+   "chapter": 14,
+   "n": 63,
+   "at": 53908,
+   "text": "\"Nisi quatenus alio refertur,\" except in so far as it has reference to something else."
+  },
+  {
+   "chapter": 14,
+   "n": 64,
+   "at": 54063,
+   "text": "\"Cura et labore,\" by their care and labour."
+  },
+  {
+   "chapter": 14,
+   "n": 65,
+   "at": 55275,
+   "text": "\"Verborum circuitu,\" by a circumlocution."
+  },
+  {
+   "chapter": 14,
+   "n": 66,
+   "at": 56348,
+   "text": "\"Amplum materiam,\" ample materials."
+  },
+  {
+   "chapter": 14,
+   "n": 67,
+   "at": 57368,
+   "text": "\"Impuros et alienos,\" impure men, aliens."
+  },
+  {
+   "chapter": 15,
+   "n": 68,
+   "at": 1832,
+   "text": "\"Plus tamen et intestinis dissidiis est periculi ne anlmos nostros frangant vel debilitent,\" yet there is more danger in intestine dissensions, lest they weaken or dispirit us."
+  },
+  {
+   "chapter": 15,
+   "n": 69,
+   "at": 3049,
+   "text": "\"Certum quidem est, sicuti unus est Deus, ita unam esse ejus veritatem,\" it is certain, indeed, that as God is one, so also his truth is one."
+  },
+  {
+   "chapter": 15,
+   "n": 70,
+   "at": 4244,
+   "text": "\"Per rivos,\" by streams."
+  },
+  {
+   "chapter": 15,
+   "n": 71,
+   "at": 5901,
+   "text": "\"Communis regulae praejudicium,\" be not prejudged as a common rule."
+  },
+  {
+   "chapter": 15,
+   "n": 72,
+   "at": 6343,
+   "text": "\"Apostolis nihil minus esse in animo,\" that the very last thing the apostles meant was."
+  },
+  {
+   "chapter": 15,
+   "n": 73,
+   "at": 6647,
+   "text": "\"Ad rem ipsam quaerendam accedere,\" to enter upon the investigation."
+  },
+  {
+   "chapter": 15,
+   "n": 74,
+   "at": 11925,
+   "text": "\"Evangelli,\" gospel."
+  },
+  {
+   "chapter": 15,
+   "n": 75,
+   "at": 13449,
+   "text": "\"Quam ut classicum protinus caniant,\" than forthwith to blow the trumpet."
+  },
+  {
+   "chapter": 15,
+   "n": 76,
+   "at": 14277,
+   "text": "\"Atrociores,\" more atrocious."
+  },
+  {
+   "chapter": 15,
+   "n": 77,
+   "at": 14766,
+   "text": "\"Superare,\" overcome."
+  },
+  {
+   "chapter": 15,
+   "n": 78,
+   "at": 14893,
+   "text": "\"Exarsit,\" blazed forth."
+  },
+  {
+   "chapter": 15,
+   "n": 79,
+   "at": 15299,
+   "text": "\"Aptas et commodas,\" fit and convenient."
+  },
+  {
+   "chapter": 15,
+   "n": 80,
+   "at": 15383,
+   "text": "\"Re ipsa,\" in reality."
+  },
+  {
+   "chapter": 15,
+   "n": 81,
+   "at": 16342,
+   "text": "\"Nihil se morari apostolos,\" that he cared not for the apostles."
+  },
+  {
+   "chapter": 15,
+   "n": 82,
+   "at": 17863,
+   "text": "\"Pariter,\" in like manner."
+  },
+  {
+   "chapter": 15,
+   "n": 83,
+   "at": 18265,
+   "text": "\"Suffragio,\" suffrage."
+  },
+  {
+   "chapter": 15,
+   "n": 84,
+   "at": 18584,
+   "text": "\"Ventosis suis clamoribus,\" with their vain clamor."
+  },
+  {
+   "chapter": 15,
+   "n": 85,
+   "at": 19165,
+   "text": "\"Abortivis,\" abortive."
+  },
+  {
+   "chapter": 15,
+   "n": 86,
+   "at": 19854,
+   "text": "\"Facessat,\" may be dismissed."
+  },
+  {
+   "chapter": 15,
+   "n": 87,
+   "at": 21255,
+   "text": "\"Reos,\" as men accused, defenders."
+  },
+  {
+   "chapter": 15,
+   "n": 88,
+   "at": 21308,
+   "text": "\"Huc accedit,\" to this is added."
+  },
+  {
+   "chapter": 15,
+   "n": 89,
+   "at": 23352,
+   "text": "\"Quanta confidentia, quale supercilium,\" how confident, how supercilious."
+  },
+  {
+   "chapter": 15,
+   "n": 90,
+   "at": 24245,
+   "text": "\"Quos illic imbiberunt mores,\" the habits which they contracted there."
+  },
+  {
+   "chapter": 15,
+   "n": 91,
+   "at": 25219,
+   "text": "\"Legitimi,\" lawful."
+  },
+  {
+   "chapter": 15,
+   "n": 92,
+   "at": 25551,
+   "text": "\"Sicut magis idonei erant cognitores,\" as they were more apt to take cognisance of it."
+  },
+  {
+   "chapter": 15,
+   "n": 93,
+   "at": 26090,
+   "text": "\"Ne inter eos quidem statim convenire potuit,\" not even could they come instantly to an agreement."
+  },
+  {
+   "chapter": 15,
+   "n": 94,
+   "at": 27811,
+   "text": "\"Dei imperio acquiescere,\" to aequiesce in the command of God."
+  },
+  {
+   "chapter": 15,
+   "n": 95,
+   "at": 29091,
+   "text": "\"In medio nostri,\" in the midst of us."
+  },
+  {
+   "chapter": 15,
+   "n": 96,
+   "at": 30308,
+   "text": "\"Exegetice,\" exegetically."
+  },
+  {
+   "chapter": 15,
+   "n": 97,
+   "at": 31472,
+   "text": "\"Tacita antithesis,\" a tacit antithesis."
+  },
+  {
+   "chapter": 15,
+   "n": 98,
+   "at": 31834,
+   "text": "\"Quae nobis occulta est,\" which is hidden from us."
+  },
+  {
+   "chapter": 15,
+   "n": 99,
+   "at": 32249,
+   "text": "\"Ad coeleste tribunal,\" to the heavenly tribunal."
+  },
+  {
+   "chapter": 15,
+   "n": 100,
+   "at": 32414,
+   "text": "\"Operum,\" of works."
+  },
+  {
+   "chapter": 15,
+   "n": 101,
+   "at": 32698,
+   "text": "\"Eum opponit,\" he opposes him to, or contrasts him with."
+  },
+  {
+   "chapter": 15,
+   "n": 102,
+   "at": 33137,
+   "text": "\"Utrosque pariter allectos esse,\" that both were in like manner allured."
+  },
+  {
+   "chapter": 15,
+   "n": 103,
+   "at": 36870,
+   "text": "\"Nihil esse absurdi si finem... imposuerit,\" there is no absurdity in his having put an end to."
+  },
+  {
+   "chapter": 15,
+   "n": 104,
+   "at": 40163,
+   "text": "\"Ad necessitatem servandae logis,\" to a necessity of observing the law."
+  },
+  {
+   "chapter": 15,
+   "n": 105,
+   "at": 41287,
+   "text": "\"Circumscribi,\" is circumscribed."
+  },
+  {
+   "chapter": 15,
+   "n": 106,
+   "at": 45529,
+   "text": "\"In horrendae desperationis abyssum,\" in the abyss of horrible despair."
+  },
+  {
+   "chapter": 15,
+   "n": 107,
+   "at": 45697,
+   "text": "\"Vulgo hominum.\" of the vulgar."
+  },
+  {
+   "chapter": 15,
+   "n": 108,
+   "at": 47380,
+   "text": "\"Carnis sensus,\" carnal propensities."
+  },
+  {
+   "chapter": 15,
+   "n": 109,
+   "at": 47743,
+   "text": "\"Sed ad inchoandum prorsus nulla,\" but that he shall have no power at all to begin."
+  },
+  {
+   "chapter": 15,
+   "n": 110,
+   "at": 48053,
+   "text": "\"Do Epicuro,\" of Epicurus."
+  },
+  {
+   "chapter": 15,
+   "n": 111,
+   "at": 49592,
+   "text": "\"Premebant,\" pressed."
+  },
+  {
+   "chapter": 15,
+   "n": 112,
+   "at": 50674,
+   "text": "\"Ut sui anathematis fulmen Petro et Paulo infligeret,\" to thunder out an anathema against Peter and Paul."
+  },
+  {
+   "chapter": 15,
+   "n": 113,
+   "at": 53127,
+   "text": "\"Jugo,\" yoke."
+  },
+  {
+   "chapter": 15,
+   "n": 114,
+   "at": 53138,
+   "text": "\"Verum quia legis officium est.\" but because it is the office of the law. Omitted."
+  },
+  {
+   "chapter": 15,
+   "n": 115,
+   "at": 53983,
+   "text": "\"Sine molestia,\" without trouble,repugnance."
+  },
+  {
+   "chapter": 15,
+   "n": 116,
+   "at": 54389,
+   "text": "\"Spem salutis,\" hope of salvation."
+  },
+  {
+   "chapter": 15,
+   "n": 117,
+   "at": 55570,
+   "text": "\"Fucum faceret,\" should make a gloss."
+  },
+  {
+   "chapter": 15,
+   "n": 118,
+   "at": 55813,
+   "text": "\"Commentum,\" fiction."
+  },
+  {
+   "chapter": 15,
+   "n": 119,
+   "at": 56597,
+   "text": "\"Vel severo et implacabili judice,\" or a severe and implacable judge."
+  },
+  {
+   "chapter": 15,
+   "n": 120,
+   "at": 64998,
+   "text": "\"Sibi praesse,\" to take precedence of him."
+  },
+  {
+   "chapter": 15,
+   "n": 121,
+   "at": 66484,
+   "text": "\"Propter,\" on account of."
+  },
+  {
+   "chapter": 15,
+   "n": 122,
+   "at": 69072,
+   "text": "\"Elici,\" inferred."
+  },
+  {
+   "chapter": 15,
+   "n": 123,
+   "at": 69816,
+   "text": "\"Pariter,\" in like manner."
+  },
+  {
+   "chapter": 15,
+   "n": 124,
+   "at": 70918,
+   "text": "\"Collapsa erat,\" had fallen down."
+  },
+  {
+   "chapter": 15,
+   "n": 125,
+   "at": 71771,
+   "text": "\"Hunc enim finem inter alios habebant ceremoniae, ut sanctum Dei populum a profanis Gentilus discernerent; nunc sublato discrimine, ceremonias quoque abrogari convenit,\" for ceremonies had this, among other ends, that they might distinguish the holy people of God from the profane Gentiles; the distinction being now removed, ceremonies must also be abolished. The whole of this passage is omitted in the translation."
+  },
+  {
+   "chapter": 15,
+   "n": 126,
+   "at": 72679,
+   "text": "\"Intestinis,\" intestine."
+  },
+  {
+   "chapter": 15,
+   "n": 127,
+   "at": 72796,
+   "text": "\"Quaedam erat desperationis materia,\" was a kind of material for despair."
+  },
+  {
+   "chapter": 15,
+   "n": 128,
+   "at": 73208,
+   "text": "\"Ex contempto et ignobili trunco,\" from an ignoble and despised trunk."
+  },
+  {
+   "chapter": 15,
+   "n": 129,
+   "at": 73341,
+   "text": "\"Ex ruinis,\" out of ruins."
+  },
+  {
+   "chapter": 15,
+   "n": 130,
+   "at": 73609,
+   "text": "\"In ejus obsequium conveniant,\" may accord in obeying him."
+  },
+  {
+   "chapter": 15,
+   "n": 131,
+   "at": 74110,
+   "text": "\"Specioso exilio,\" a specious exile."
+  },
+  {
+   "chapter": 15,
+   "n": 132,
+   "at": 74400,
+   "text": "\"Omnes ad unum,\" all to a man."
+  },
+  {
+   "chapter": 15,
+   "n": 133,
+   "at": 75696,
+   "text": "\"Prolepsis,\" an anticipation"
+  },
+  {
+   "chapter": 15,
+   "n": 134,
+   "at": 76466,
+   "text": "\"Ab ultima aeternitate,\" from the remotest eternity"
+  },
+  {
+   "chapter": 15,
+   "n": 135,
+   "at": 76857,
+   "text": "\"Exclament cum stupore,\" exclaim in amazement."
+  },
+  {
+   "chapter": 15,
+   "n": 136,
+   "at": 78213,
+   "text": "\"Qui non soldant foedus percutere,\" who were not accustomed to enter into any covenant."
+  },
+  {
+   "chapter": 15,
+   "n": 137,
+   "at": 79870,
+   "text": "\"Qui non prorsus erant degeneres,\" who were not wholly degenerate."
+  },
+  {
+   "chapter": 15,
+   "n": 138,
+   "at": 81290,
+   "text": "\"In eo nihil absurdi,\" in that there is an absurdity."
+  },
+  {
+   "chapter": 15,
+   "n": 139,
+   "at": 81694,
+   "text": "\"Respicit,\" refers to."
+  },
+  {
+   "chapter": 15,
+   "n": 140,
+   "at": 82233,
+   "text": "\"Et horrendum semel fieri ultorem,\" and that he will one day take fearful vengeance on them."
+  },
+  {
+   "chapter": 15,
+   "n": 141,
+   "at": 83177,
+   "text": "\"Quam retuli,\" to which I have referred"
+  },
+  {
+   "chapter": 15,
+   "n": 142,
+   "at": 83935,
+   "text": "\"Nempe, vitandae ambiguitatis causa,\" namely, for the purpose of avoiding ambiguity."
+  },
+  {
+   "chapter": 15,
+   "n": 143,
+   "at": 86009,
+   "text": "\"Prudenter vero Apostoli et Presbyteri Judam et Silam mittendos censuerunt, quo res minus suspecta esset,\" but the apostles prudently deemed it proper to send Judas and Silas, that there might be less ground for suspicion, omitted."
+  },
+  {
+   "chapter": 15,
+   "n": 144,
+   "at": 87187,
+   "text": "\"Se apostolorum mentem tenere,\" that they knew the mind of the apostles."
+  },
+  {
+   "chapter": 15,
+   "n": 145,
+   "at": 88482,
+   "text": "\"Paulo et Barnabas aspergeri,\" to asperse Paul and Barnabas."
+  },
+  {
+   "chapter": 15,
+   "n": 146,
+   "at": 90158,
+   "text": "\"Nihil a tumultuosis et phreneticis, nihil a gladiatoribus differrent,\" should differ in no respect from tumultuous and frenzied men, or from gladiators."
+  },
+  {
+   "chapter": 15,
+   "n": 147,
+   "at": 90359,
+   "text": "\"Oblique perstringere,\" indirectly to lash."
+  },
+  {
+   "chapter": 15,
+   "n": 148,
+   "at": 90477,
+   "text": "\"Ex sua umbra et deliciis prodierant,\" had come forth from their luxurious retirement."
+  },
+  {
+   "chapter": 15,
+   "n": 149,
+   "at": 90941,
+   "text": "\"Seque eo dictante statuisse quod scribunt,\" and that which they write was resolved on his dictation"
+  },
+  {
+   "chapter": 15,
+   "n": 150,
+   "at": 93962,
+   "text": "\"Refixam,\" remodeled."
+  },
+  {
+   "chapter": 15,
+   "n": 151,
+   "at": 95340,
+   "text": "\"Nihil minus in animo illis fuisse,\" that the last thing they meant was to."
+  },
+  {
+   "chapter": 15,
+   "n": 152,
+   "at": 95578,
+   "text": "\"Se... accommodent,\" accommodate themselves."
+  },
+  {
+   "chapter": 15,
+   "n": 153,
+   "at": 98400,
+   "text": "\"Fraterne communicate,\" must fraternally communicate."
+  },
+  {
+   "chapter": 15,
+   "n": 154,
+   "at": 99026,
+   "text": "\"Salvae maneant,\" may continue safe."
+  },
+  {
+   "chapter": 15,
+   "n": 155,
+   "at": 99814,
+   "text": "\"Titillibat,\" tickled with."
+  },
+  {
+   "chapter": 15,
+   "n": 156,
+   "at": 101210,
+   "text": "\"Temere transiliat,\" rashly overleap."
+  },
+  {
+   "chapter": 15,
+   "n": 157,
+   "at": 101823,
+   "text": "\"Parum opportune interpositum esset,\" should have been inappropriately interposed."
+  },
+  {
+   "chapter": 15,
+   "n": 158,
+   "at": 103083,
+   "text": "\"Intentos fuisse ad docendum, et in hoc opere assiduos,\" were intent on teaching, and assiduous in the work."
+  },
+  {
+   "chapter": 15,
+   "n": 159,
+   "at": 103125,
+   "text": "\"Aliis compluribus,\" to several other persons."
+  },
+  {
+   "chapter": 15,
+   "n": 160,
+   "at": 103207,
+   "text": "\"Sine aemulatione,\" without rivalship."
+  },
+  {
+   "chapter": 15,
+   "n": 161,
+   "at": 103619,
+   "text": "\"Nuper molitus erat,\" had lately plotted."
+  },
+  {
+   "chapter": 15,
+   "n": 162,
+   "at": 105169,
+   "text": "\"Experimur,\" we know by experience."
+  },
+  {
+   "chapter": 15,
+   "n": 163,
+   "at": 105205,
+   "text": "\"Quantum habeant momenti primariae ecclesiae,\" how great weight principal churches have."
+  },
+  {
+   "chapter": 15,
+   "n": 164,
+   "at": 107136,
+   "text": "\"Sine inspectione,\" without inspection."
+  },
+  {
+   "chapter": 15,
+   "n": 165,
+   "at": 107715,
+   "text": "\"Subinde,\" ever and anon."
+  },
+  {
+   "chapter": 15,
+   "n": 166,
+   "at": 108337,
+   "text": "\"Subinde lasciviant,\" do every now and then wanton."
+  },
+  {
+   "chapter": 15,
+   "n": 167,
+   "at": 109213,
+   "text": "\"Nimio Pauli rigori,\" on Paul's excessive rigor."
+  },
+  {
+   "chapter": 15,
+   "n": 168,
+   "at": 109813,
+   "text": "\"Minime humanum,\" contrary to humanity."
+  },
+  {
+   "chapter": 15,
+   "n": 169,
+   "at": 110054,
+   "text": "\"Celebre erat Ecclesiae hospitium,\" was celebrated for its hospitality to the Church."
+  },
+  {
+   "chapter": 15,
+   "n": 170,
+   "at": 110533,
+   "text": "\"Ejus operam respui,\" that his assistance should be spurned away."
+  },
+  {
+   "chapter": 15,
+   "n": 171,
+   "at": 110698,
+   "text": "\"Speciosum colorem... cur ignoscat,\" a specious excuse for pardoning him."
+  },
+  {
+   "chapter": 16,
+   "n": 172,
+   "at": 2299,
+   "text": "\"Obnoxia sit,\" be subjected to."
+  },
+  {
+   "chapter": 16,
+   "n": 173,
+   "at": 5099,
+   "text": "\"Locum adhuc habere apud Judaeos,\" is still binding on the Jews."
+  },
+  {
+   "chapter": 16,
+   "n": 174,
+   "at": 6196,
+   "text": "\"Puram doctrinam,\" the pure doctrine."
+  },
+  {
+   "chapter": 16,
+   "n": 175,
+   "at": 7097,
+   "text": "\"Sincera fides,\" sincere faith."
+  },
+  {
+   "chapter": 16,
+   "n": 176,
+   "at": 12042,
+   "text": "\"Accessorium,\" accessory."
+  },
+  {
+   "chapter": 16,
+   "n": 177,
+   "at": 13321,
+   "text": "\"Propagine,\" by propagation."
+  },
+  {
+   "chapter": 16,
+   "n": 178,
+   "at": 17648,
+   "text": "\"Dubiis,\" doubtful."
+  },
+  {
+   "chapter": 16,
+   "n": 179,
+   "at": 22590,
+   "text": "\"Specie,\" appearance."
+  },
+  {
+   "chapter": 16,
+   "n": 180,
+   "at": 24141,
+   "text": "\"Colonia Romana,\" a Roman colony."
+  },
+  {
+   "chapter": 16,
+   "n": 181,
+   "at": 25128,
+   "text": "\"Remoti,\" removed, at a distance from."
+  },
+  {
+   "chapter": 16,
+   "n": 182,
+   "at": 25358,
+   "text": "\"Novi hospites,\" new guests."
+  },
+  {
+   "chapter": 16,
+   "n": 183,
+   "at": 26054,
+   "text": "\"Tantum,\" only, omitted."
+  },
+  {
+   "chapter": 16,
+   "n": 184,
+   "at": 26739,
+   "text": "\"Obstructos esse Christo ingressus,\" that the entrance of Christ was hindered."
+  },
+  {
+   "chapter": 16,
+   "n": 185,
+   "at": 27105,
+   "text": "\"Acutiori ingenio,\" of acutor intellect."
+  },
+  {
+   "chapter": 16,
+   "n": 186,
+   "at": 28708,
+   "text": "\"[Enthousiasmous],\" inspirations."
+  },
+  {
+   "chapter": 16,
+   "n": 187,
+   "at": 28986,
+   "text": "\"Literalis,\" literal, (gone no farther than the letter.)"
+  },
+  {
+   "chapter": 16,
+   "n": 188,
+   "at": 29874,
+   "text": "\"Praeordinati,\" preordained."
+  },
+  {
+   "chapter": 16,
+   "n": 189,
+   "at": 30049,
+   "text": "\"Geographi,\" geographers."
+  },
+  {
+   "chapter": 16,
+   "n": 190,
+   "at": 31291,
+   "text": "\"Suo arbitrio,\" at her own will."
+  },
+  {
+   "chapter": 16,
+   "n": 191,
+   "at": 34663,
+   "text": "\"Figmento,\" fiction."
+  },
+  {
+   "chapter": 16,
+   "n": 192,
+   "at": 36067,
+   "text": "\"Egit igitur callido artificio aliam personam quam ferret ejus natura,\" there with cunning artifice he played a character different from that which naturally belonged to him."
+  },
+  {
+   "chapter": 16,
+   "n": 193,
+   "at": 37278,
+   "text": "\"Quasi per cuniculos obrepit,\" creeps in as if by burrowing."
+  },
+  {
+   "chapter": 16,
+   "n": 194,
+   "at": 37745,
+   "text": "\"Salvificam,\" saving."
+  },
+  {
+   "chapter": 16,
+   "n": 195,
+   "at": 42057,
+   "text": "\"Compescit,\" quelleth."
+  },
+  {
+   "chapter": 16,
+   "n": 196,
+   "at": 42727,
+   "text": "\"Impreccatio,\" impreccation, anathema."
+  },
+  {
+   "chapter": 16,
+   "n": 197,
+   "at": 43548,
+   "text": "\"Hic diversam rationem,\" that here there was a different reason."
+  },
+  {
+   "chapter": 16,
+   "n": 198,
+   "at": 43633,
+   "text": "\"Colludere puellae daemonum cum Paulo,\" that the demon of the damsel was in collision with Paul."
+  },
+  {
+   "chapter": 16,
+   "n": 199,
+   "at": 43776,
+   "text": "\"Sed recidisset in merum ludibrium,\" but became a mere laughing-stock."
+  },
+  {
+   "chapter": 16,
+   "n": 200,
+   "at": 44360,
+   "text": "\"Opponit Christum daemoni,\" he opposes Christ to the demon."
+  },
+  {
+   "chapter": 16,
+   "n": 201,
+   "at": 46219,
+   "text": "\"Acerrimi zelotae legis suae,\" the fiercest zealots for their law."
+  },
+  {
+   "chapter": 16,
+   "n": 202,
+   "at": 46547,
+   "text": "\"Flabellum,\" bellows."
+  },
+  {
+   "chapter": 16,
+   "n": 203,
+   "at": 47498,
+   "text": "\"Tertiam calumniam ex crimine seditionis concinnant,\" they concoct a third calamny out of the charge of sedition."
+  },
+  {
+   "chapter": 16,
+   "n": 204,
+   "at": 47619,
+   "text": "\"Odiose traductus fuit,\" was hatefully traduced."
+  },
+  {
+   "chapter": 16,
+   "n": 205,
+   "at": 49484,
+   "text": "\"Repente effervent,\" suddenly effervesce, break out."
+  },
+  {
+   "chapter": 16,
+   "n": 206,
+   "at": 50049,
+   "text": "\"Deploranda,\" desperate, deplorable."
+  },
+  {
+   "chapter": 16,
+   "n": 207,
+   "at": 50582,
+   "text": "\"Et alios quosvis sceleratos,\" and villains of any description."
+  },
+  {
+   "chapter": 16,
+   "n": 208,
+   "at": 52297,
+   "text": "\"Tumultuose,\" tumultuously."
+  },
+  {
+   "chapter": 16,
+   "n": 209,
+   "at": 54828,
+   "text": "\"Anxietate animi,\" anxiety of mind."
+  },
+  {
+   "chapter": 16,
+   "n": 210,
+   "at": 57420,
+   "text": "\"Subeunda,\" undergo."
+  },
+  {
+   "chapter": 16,
+   "n": 211,
+   "at": 58286,
+   "text": "\"Merum...ludicrum,\" a mere absurdity."
+  },
+  {
+   "chapter": 16,
+   "n": 212,
+   "at": 58362,
+   "text": "\"Ne quis esset usus,\" that there might be no use."
+  },
+  {
+   "chapter": 16,
+   "n": 213,
+   "at": 59064,
+   "text": "\"A morte,\" from death."
+  },
+  {
+   "chapter": 16,
+   "n": 214,
+   "at": 59698,
+   "text": "\"Pedem loco non movit,\" he did not stir a foot from the place."
+  },
+  {
+   "chapter": 16,
+   "n": 215,
+   "at": 60958,
+   "text": "\"Quam miraculo praeparatus,\" than prepared by the miracle."
+  },
+  {
+   "chapter": 16,
+   "n": 216,
+   "at": 61174,
+   "text": "\"Sprevisset igitur alto animo,\" hence he might have shown high contempt for."
+  },
+  {
+   "chapter": 16,
+   "n": 217,
+   "at": 61258,
+   "text": "\"Probrose,\" disgracefully."
+  },
+  {
+   "chapter": 16,
+   "n": 218,
+   "at": 61419,
+   "text": "\"Aliqua consternatione tanget,\" or throw us into consternation."
+  },
+  {
+   "chapter": 16,
+   "n": 219,
+   "at": 62614,
+   "text": "\"Serio,\" seriously."
+  },
+  {
+   "chapter": 16,
+   "n": 220,
+   "at": 63326,
+   "text": "\"Evanido,\" evanescent."
+  },
+  {
+   "chapter": 16,
+   "n": 221,
+   "at": 64018,
+   "text": "\"Unicum scopum,\" the only mark."
+  },
+  {
+   "chapter": 16,
+   "n": 222,
+   "at": 64212,
+   "text": "\"Immane chaos,\" immense chaos."
+  },
+  {
+   "chapter": 16,
+   "n": 223,
+   "at": 65812,
+   "text": "\"Sponte,\" of his own accord."
+  },
+  {
+   "chapter": 16,
+   "n": 224,
+   "at": 65950,
+   "text": "\"Torpeamus,\" become torpid."
+  },
+  {
+   "chapter": 16,
+   "n": 225,
+   "at": 66396,
+   "text": "\"Hospitaliter,\" hospitably."
+  },
+  {
+   "chapter": 16,
+   "n": 226,
+   "at": 67101,
+   "text": "\"Nec sereno gaudio potiuntur,\" nor do they obtain serene joy."
+  },
+  {
+   "chapter": 16,
+   "n": 227,
+   "at": 69015,
+   "text": "\"Ad mansuetudinem et sanam mentem,\" to mildness and a sound mind."
+  },
+  {
+   "chapter": 16,
+   "n": 228,
+   "at": 70385,
+   "text": "\"Circulatores,\" the circulators (of the charge.)"
+  },
+  {
+   "chapter": 16,
+   "n": 229,
+   "at": 70633,
+   "text": "\"Condonent.\" forgive."
+  },
+  {
+   "chapter": 16,
+   "n": 230,
+   "at": 71019,
+   "text": "\"Si non pergant usque in illos esse injusti et crudeles,\" if they do not persist to the last in injustice and cruelty towards them."
+  },
+  {
+   "chapter": 16,
+   "n": 231,
+   "at": 72050,
+   "text": "\"Solatium,\" solace, compensation."
+  },
+  {
+   "chapter": 16,
+   "n": 232,
+   "at": 72333,
+   "text": "\"Aliquid levationis in posterum afferret,\" produce some alleviation in future."
+  },
+  {
+   "chapter": 16,
+   "n": 233,
+   "at": 72488,
+   "text": "\"Quia illos jam sibi tenebat obnoxios,\" because he now had them in his power."
+  },
+  {
+   "chapter": 16,
+   "n": 234,
+   "at": 73236,
+   "text": "\"Nulla interposita cognitione,\" without any previous cognisance."
+  },
+  {
+   "chapter": 16,
+   "n": 235,
+   "at": 73523,
+   "text": "\"Securibus,\" axes."
+  },
+  {
+   "chapter": 16,
+   "n": 236,
+   "at": 73770,
+   "text": "\"Coloniae,\" colony."
+  },
+  {
+   "chapter": 16,
+   "n": 237,
+   "at": 73830,
+   "text": "\"Stupidam,\" stupid, dull."
+  },
+  {
+   "chapter": 16,
+   "n": 238,
+   "at": 73924,
+   "text": "\"Ultro,\" vengeance."
+  },
+  {
+   "chapter": 16,
+   "n": 239,
+   "at": 74595,
+   "text": "\"In officiis pictatis,\" in offices of piety."
+  },
+  {
+   "chapter": 17,
+   "n": 240,
+   "at": 228,
+   "text": "\"Disserebat,\" discoursed to."
+  },
+  {
+   "chapter": 17,
+   "n": 241,
+   "at": 2803,
+   "text": "\"Pravitas,\" depravity, perverseness."
+  },
+  {
+   "chapter": 17,
+   "n": 242,
+   "at": 3779,
+   "text": "\"Valet inter nos,\" is held good among us."
+  },
+  {
+   "chapter": 17,
+   "n": 243,
+   "at": 4545,
+   "text": "\"Ambagibus,\" ambiguities."
+  },
+  {
+   "chapter": 17,
+   "n": 244,
+   "at": 5548,
+   "text": "\"Necesse fuisset altius sumere exordium,\" it would have been necessary to go farther back with his exordium."
+  },
+  {
+   "chapter": 17,
+   "n": 245,
+   "at": 8717,
+   "text": "\"Ingenuitas,\" ingenuousness."
+  },
+  {
+   "chapter": 17,
+   "n": 246,
+   "at": 10289,
+   "text": "\"Ingenua,\" frank, ingenuous."
+  },
+  {
+   "chapter": 17,
+   "n": 247,
+   "at": 11522,
+   "text": "\"Dispersum fuisse aliquod prelatis semen,\" some seed of piety was spread."
+  },
+  {
+   "chapter": 17,
+   "n": 248,
+   "at": 11930,
+   "text": "\"Hoc compendio,\" by this compendious argument, viz."
+  },
+  {
+   "chapter": 17,
+   "n": 249,
+   "at": 13070,
+   "text": "\"Qualemcunque Dei cultum,\" any kind of divine worship."
+  },
+  {
+   "chapter": 17,
+   "n": 250,
+   "at": 14948,
+   "text": "\"Rabiosum... impetum,\" a rabid impulse."
+  },
+  {
+   "chapter": 17,
+   "n": 251,
+   "at": 15860,
+   "text": "\"Tumultuose,\" tumtultuously."
+  },
+  {
+   "chapter": 17,
+   "n": 252,
+   "at": 16408,
+   "text": "\"Per forum,\" through the market-place."
+  },
+  {
+   "chapter": 17,
+   "n": 253,
+   "at": 16527,
+   "text": "\"Operam suam locare,\" hire out their assistance in."
+  },
+  {
+   "chapter": 17,
+   "n": 254,
+   "at": 17130,
+   "text": "\"Donec ad vim inferendam sufficerent,\" until they were able to offer violence."
+  },
+  {
+   "chapter": 17,
+   "n": 255,
+   "at": 17641,
+   "text": "\"Ut homines ad mutuous conflictus accendat,\" that it may inflame men to mutual conflict."
+  },
+  {
+   "chapter": 17,
+   "n": 256,
+   "at": 17741,
+   "text": "\"Ad se benigne invitet,\" benignity invite us to himself."
+  },
+  {
+   "chapter": 17,
+   "n": 257,
+   "at": 17792,
+   "text": "\"Tumultuanture,\" make a tumult."
+  },
+  {
+   "chapter": 17,
+   "n": 258,
+   "at": 19095,
+   "text": "\"Sed colorem hunc malitiose obtendunt quaerendae invidiae causa. Non tanti erat apud Macedones religio, praesertim Judaica, ut ejus causa homines ignotos, protinus ad caedem raperent;\" but maliciously use this pretext for the purpose of producing obloquy. There was not so much religion, especially Jewish, among the Macedonians, that for its sake they would hurry off strangers to execution. Omitted."
+  },
+  {
+   "chapter": 17,
+   "n": 259,
+   "at": 21266,
+   "text": "\"Nec suscipitur causae cognitio,\" nor do theytake cognisance of the cause."
+  },
+  {
+   "chapter": 17,
+   "n": 260,
+   "at": 24243,
+   "text": "\"Quae Latinis auribus esset durior,\" which would have sounded harsher to Latin ears."
+  },
+  {
+   "chapter": 17,
+   "n": 261,
+   "at": 25511,
+   "text": "\"Nobiles et plebeios,\" that nobles and plebeians."
+  },
+  {
+   "chapter": 17,
+   "n": 262,
+   "at": 26229,
+   "text": "\"Per obliquas vias,\" through winding paths."
+  },
+  {
+   "chapter": 17,
+   "n": 263,
+   "at": 26427,
+   "text": "\"Quotidie,\" daily."
+  },
+  {
+   "chapter": 17,
+   "n": 264,
+   "at": 26534,
+   "text": "\"Initio a promptitudine,\" at the commencement for promptitude or readiness."
+  },
+  {
+   "chapter": 17,
+   "n": 265,
+   "at": 26766,
+   "text": "\"Proprio carnis sensu,\" our own carnal sense."
+  },
+  {
+   "chapter": 17,
+   "n": 266,
+   "at": 27138,
+   "text": "\"Ebulliunt,\" spring forth."
+  },
+  {
+   "chapter": 17,
+   "n": 267,
+   "at": 27247,
+   "text": "\"Fidei semen,\" seed of faith."
+  },
+  {
+   "chapter": 17,
+   "n": 268,
+   "at": 27300,
+   "text": "\"Absurdo,\" absurdities."
+  },
+  {
+   "chapter": 17,
+   "n": 269,
+   "at": 29727,
+   "text": "\"Statim plane,\" plainly, and at once."
+  },
+  {
+   "chapter": 17,
+   "n": 270,
+   "at": 30399,
+   "text": "\"Caeco levitatis impetu,\" with a blind and giddy impulse."
+  },
+  {
+   "chapter": 17,
+   "n": 271,
+   "at": 32133,
+   "text": "\"Qualiter initiati fuerint Christo,\" how they were initiated in Christ."
+  },
+  {
+   "chapter": 17,
+   "n": 272,
+   "at": 35822,
+   "text": "\"Barbaros,\" barbarians."
+  },
+  {
+   "chapter": 17,
+   "n": 273,
+   "at": 39655,
+   "text": "\"Quod nolint sine profectu tumultuare,\" that they are unwilling to excite tumult to no good purpose."
+  },
+  {
+   "chapter": 17,
+   "n": 274,
+   "at": 41114,
+   "text": "\"Anxie se torqueant,\" anxiously torment themselves."
+  },
+  {
+   "chapter": 17,
+   "n": 275,
+   "at": 42324,
+   "text": "\"Contumaciter insultaverint,\" did contumaciously insult him."
+  },
+  {
+   "chapter": 17,
+   "n": 276,
+   "at": 42886,
+   "text": "\"Ex diametro inter se essent oppositae,\" were diametrically opposed to each other."
+  },
+  {
+   "chapter": 17,
+   "n": 277,
+   "at": 43857,
+   "text": "\"Summum bonum,\" the supreme good."
+  },
+  {
+   "chapter": 17,
+   "n": 278,
+   "at": 44913,
+   "text": "\"Superba confidentia,\" with proud confidence."
+  },
+  {
+   "chapter": 17,
+   "n": 279,
+   "at": 45150,
+   "text": "\"Ferrea immanitus,\" iron-hearted cruelty."
+  },
+  {
+   "chapter": 17,
+   "n": 280,
+   "at": 46828,
+   "text": "\"Trivialis nugator,\" silly or paltry trifler."
+  },
+  {
+   "chapter": 17,
+   "n": 281,
+   "at": 48888,
+   "text": "\"Areopagitis,\" the Areopagites."
+  },
+  {
+   "chapter": 17,
+   "n": 282,
+   "at": 50262,
+   "text": "\"Doliis pertusis,\" broken, leaking casks."
+  },
+  {
+   "chapter": 17,
+   "n": 283,
+   "at": 50873,
+   "text": "\"In summa potentia,\" though in supreme power, (an independent state.)"
+  },
+  {
+   "chapter": 17,
+   "n": 284,
+   "at": 52707,
+   "text": "\"Fortuito,\" fortuitously."
+  },
+  {
+   "chapter": 17,
+   "n": 285,
+   "at": 53085,
+   "text": "\"Deum statuis vel picturis figurare,\" to figure God by picture or statues."
+  },
+  {
+   "chapter": 17,
+   "n": 286,
+   "at": 54719,
+   "text": "\"Perplexi haerent,\" remain perplexed."
+  },
+  {
+   "chapter": 17,
+   "n": 287,
+   "at": 56066,
+   "text": "\"Tali stupore magis tolerabilis est,\" is more tolerable than such stupor."
+  },
+  {
+   "chapter": 17,
+   "n": 288,
+   "at": 56572,
+   "text": "\"Popularibus,\" popular."
+  },
+  {
+   "chapter": 17,
+   "n": 289,
+   "at": 56661,
+   "text": "\"Indigetas et patrios,\" native and country gods."
+  },
+  {
+   "chapter": 17,
+   "n": 290,
+   "at": 58650,
+   "text": "\"Nititur et contentus est,\" founds on, and is contented with."
+  },
+  {
+   "chapter": 17,
+   "n": 291,
+   "at": 59361,
+   "text": "\"Pugnasset,\" contended with them by citing."
+  },
+  {
+   "chapter": 17,
+   "n": 292,
+   "at": 61968,
+   "text": "\"An inde sperassent,\" could they have hoped?"
+  },
+  {
+   "chapter": 17,
+   "n": 293,
+   "at": 62592,
+   "text": "\"Pro sensu carnis nostrae,\" according to our carnal sense."
+  },
+  {
+   "chapter": 17,
+   "n": 294,
+   "at": 64711,
+   "text": "\"In ergastulis,\" in houses of hard labor."
+  },
+  {
+   "chapter": 17,
+   "n": 295,
+   "at": 65889,
+   "text": "\"Familiariter... se insinuet,\" he may familiarly insinuate himself."
+  },
+  {
+   "chapter": 17,
+   "n": 296,
+   "at": 66635,
+   "text": "\"Talibus rudimentis,\" by such rudiments."
+  },
+  {
+   "chapter": 17,
+   "n": 297,
+   "at": 69815,
+   "text": "\"Codices,\" manuscripts."
+  },
+  {
+   "chapter": 17,
+   "n": 298,
+   "at": 77295,
+   "text": "\"Liquidam,\" clear."
+  },
+  {
+   "chapter": 17,
+   "n": 299,
+   "at": 78415,
+   "text": "\"Attoniti,\" in stupid amazement."
+  },
+  {
+   "chapter": 17,
+   "n": 300,
+   "at": 83289,
+   "text": "\"Aliquo Dei sensu imbuti sunt,\" are imbued with some knowledge of God"
+  },
+  {
+   "chapter": 17,
+   "n": 301,
+   "at": 84027,
+   "text": "\"Ex traduce Dei,\" are transferred from God."
+  },
+  {
+   "chapter": 17,
+   "n": 302,
+   "at": 89704,
+   "text": "\"Anticipat,\" anticipates."
+  },
+  {
+   "chapter": 17,
+   "n": 303,
+   "at": 93623,
+   "text": "\"Imo libenter et cupide hoc captant effugium,\" nay, they willingly and eagerly catch at this subterfuge."
+  },
+  {
+   "chapter": 17,
+   "n": 304,
+   "at": 93970,
+   "text": "\"Clangente evangelii tuba,\" during the clang of the gospel trumpet."
+  },
+  {
+   "chapter": 17,
+   "n": 305,
+   "at": 99319,
+   "text": "\"De reddenda semel vitae ratione,\" about one day rendering an account of our lives."
+  },
+  {
+   "chapter": 17,
+   "n": 306,
+   "at": 99399,
+   "text": "\"Supersedant,\" supersede."
+  },
+  {
+   "chapter": 17,
+   "n": 307,
+   "at": 99657,
+   "text": "\"Laqueo,\" snare or fetter."
+  },
+  {
+   "chapter": 17,
+   "n": 308,
+   "at": 100319,
+   "text": "\"Fastidio,\" fastidiousness or disdain."
+  },
+  {
+   "chapter": 17,
+   "n": 309,
+   "at": 101080,
+   "text": "\"Audaciae,\" effrontery."
+  },
+  {
+   "chapter": 18,
+   "n": 310,
+   "at": 2844,
+   "text": "\"Alieno solo,\" a foreign soil."
+  },
+  {
+   "chapter": 18,
+   "n": 311,
+   "at": 3174,
+   "text": "\"Infausta,\" ill-omened, unpropitious."
+  },
+  {
+   "chapter": 18,
+   "n": 312,
+   "at": 3501,
+   "text": "\"Affligit,\" afflict."
+  },
+  {
+   "chapter": 18,
+   "n": 313,
+   "at": 3604,
+   "text": "\"Per dura exilia,\" through the hardships of exile."
+  },
+  {
+   "chapter": 18,
+   "n": 314,
+   "at": 4087,
+   "text": "\"Consulto...passus fuerit,\" purposely suffered."
+  },
+  {
+   "chapter": 18,
+   "n": 315,
+   "at": 4241,
+   "text": "\"Ut fieri solet,\" as is usual, omitted."
+  },
+  {
+   "chapter": 18,
+   "n": 316,
+   "at": 4270,
+   "text": "\"In suis malis obstupuit,\" were stupified by their calamities."
+  },
+  {
+   "chapter": 18,
+   "n": 317,
+   "at": 5666,
+   "text": "\"Mirum est unde repserit quod legitur in Latinis codicibus,\" it is strange how the reading crept into the Latin manuscripts."
+  },
+  {
+   "chapter": 18,
+   "n": 318,
+   "at": 6606,
+   "text": "\"Concinna,\" appropriate."
+  },
+  {
+   "chapter": 18,
+   "n": 319,
+   "at": 7544,
+   "text": "\"Pro violento impulsu et extrinseco ut loquuntur,\" for a violent and extrinsic impulse, as it is called."
+  },
+  {
+   "chapter": 18,
+   "n": 320,
+   "at": 11547,
+   "text": "\"Si non annunciaveris ut se convertat,\" if you do not warn the wicked to be converted."
+  },
+  {
+   "chapter": 18,
+   "n": 321,
+   "at": 12717,
+   "text": "\"Confusi,\" confounded."
+  },
+  {
+   "chapter": 18,
+   "n": 322,
+   "at": 15095,
+   "text": "\"Temere,\" at random."
+  },
+  {
+   "chapter": 18,
+   "n": 323,
+   "at": 19715,
+   "text": "\"Penitus,\" altogether."
+  },
+  {
+   "chapter": 18,
+   "n": 324,
+   "at": 20867,
+   "text": "\"Victoria,\" victory."
+  },
+  {
+   "chapter": 18,
+   "n": 325,
+   "at": 24431,
+   "text": "\"Et coactum,\" and forced."
+  },
+  {
+   "chapter": 18,
+   "n": 326,
+   "at": 26396,
+   "text": "\"Aequum,\" equitable or just."
+  },
+  {
+   "chapter": 18,
+   "n": 327,
+   "at": 26753,
+   "text": "\"Optimum compendium,\" the best and shortest way."
+  },
+  {
+   "chapter": 18,
+   "n": 328,
+   "at": 27667,
+   "text": "\"Quid illis exprobet Paulis,\" how Paul upbraideth them."
+  },
+  {
+   "chapter": 18,
+   "n": 329,
+   "at": 29449,
+   "text": "\"Cessatio,\" non-interference."
+  },
+  {
+   "chapter": 18,
+   "n": 330,
+   "at": 29775,
+   "text": "\"Capitale erat,\" it was a capital offence."
+  },
+  {
+   "chapter": 18,
+   "n": 331,
+   "at": 29844,
+   "text": "\"In communi... licentia,\" while there was a common license."
+  },
+  {
+   "chapter": 18,
+   "n": 332,
+   "at": 30269,
+   "text": "\"Extingueretur,\" might be extinguished."
+  },
+  {
+   "chapter": 18,
+   "n": 333,
+   "at": 30421,
+   "text": "\"Afflictum,\" afflicted, oppressed."
+  },
+  {
+   "chapter": 18,
+   "n": 334,
+   "at": 30767,
+   "text": "\"Perfidis et malignis,\" malignant and perfidious."
+  },
+  {
+   "chapter": 18,
+   "n": 335,
+   "at": 30880,
+   "text": "\"Impunitatis,\" of impudity."
+  },
+  {
+   "chapter": 18,
+   "n": 336,
+   "at": 32322,
+   "text": "\"Pacem et quitem fidelibus redimere,\" to purchase the peace and quiet of the faithful."
+  },
+  {
+   "chapter": 18,
+   "n": 337,
+   "at": 33850,
+   "text": "\"Se accommodaret,\" accommodate himself."
+  },
+  {
+   "chapter": 18,
+   "n": 338,
+   "at": 34488,
+   "text": "\"Eliciunt,\" extract."
+  },
+  {
+   "chapter": 18,
+   "n": 339,
+   "at": 35473,
+   "text": "\"In signum detestationis,\" in token of detestation."
+  },
+  {
+   "chapter": 18,
+   "n": 340,
+   "at": 36830,
+   "text": "\"Pietatis officio,\" office of piety."
+  },
+  {
+   "chapter": 18,
+   "n": 341,
+   "at": 40897,
+   "text": "\"Sermocinandi,\" sermonising, haranguing."
+  },
+  {
+   "chapter": 18,
+   "n": 342,
+   "at": 41636,
+   "text": "\"Pauli infantia,\" Paul's want of utterance."
+  },
+  {
+   "chapter": 18,
+   "n": 343,
+   "at": 41821,
+   "text": "\"Vel inanem et fulinem,\" or futile and vain."
+  },
+  {
+   "chapter": 18,
+   "n": 344,
+   "at": 41869,
+   "text": "\"Cum majore...virtute,\" with a greater virtue or excellence."
+  },
+  {
+   "chapter": 18,
+   "n": 345,
+   "at": 42202,
+   "text": "\"Scripturae potius quam hominis laus est,\" is greater prase to Scripture than to the man."
+  },
+  {
+   "chapter": 18,
+   "n": 346,
+   "at": 42870,
+   "text": "\"Institutio,\" instruction."
+  },
+  {
+   "chapter": 18,
+   "n": 347,
+   "at": 43424,
+   "text": "\"Initient,\" initiate."
+  },
+  {
+   "chapter": 18,
+   "n": 348,
+   "at": 43586,
+   "text": "\"Avelli,\" to dissever."
+  },
+  {
+   "chapter": 18,
+   "n": 349,
+   "at": 44656,
+   "text": "\"Quae esset zeli moderatio,\" to moderate zeal."
+  },
+  {
+   "chapter": 18,
+   "n": 350,
+   "at": 46489,
+   "text": "\"Illis longe superior,\" and far superior to them."
+  },
+  {
+   "chapter": 18,
+   "n": 351,
+   "at": 48612,
+   "text": "\"Veteranos,\" veteran."
+  },
+  {
+   "chapter": 18,
+   "n": 352,
+   "at": 48927,
+   "text": "\"Superiores essent,\" might be victorious."
+  },
+  {
+   "chapter": 19,
+   "n": 353,
+   "at": 4220,
+   "text": "\"Decus,\" honour."
+  },
+  {
+   "chapter": 19,
+   "n": 354,
+   "at": 4802,
+   "text": "\"Ex carceribus,\" from the goal."
+  },
+  {
+   "chapter": 19,
+   "n": 355,
+   "at": 5211,
+   "text": "\"Viguit,\" flourish."
+  },
+  {
+   "chapter": 19,
+   "n": 356,
+   "at": 7036,
+   "text": "\"Absurdum,\" absurd."
+  },
+  {
+   "chapter": 19,
+   "n": 357,
+   "at": 8047,
+   "text": "\"Atqui utrumque respondet optima similitudo et partiurn omnium symmetria et conformitas.\" but there is perfect resemblance, and a complete symmetry and conformity of all the parts."
+  },
+  {
+   "chapter": 19,
+   "n": 358,
+   "at": 8269,
+   "text": "\"Anabaptismum invebere,\" to introduce Anabaptism."
+  },
+  {
+   "chapter": 19,
+   "n": 359,
+   "at": 8430,
+   "text": "\"Effugium sapit,\" savours of evasion."
+  },
+  {
+   "chapter": 19,
+   "n": 360,
+   "at": 8531,
+   "text": "\"AEmulatore,\" rival,"
+  },
+  {
+   "chapter": 19,
+   "n": 361,
+   "at": 11380,
+   "text": "\"In adultis,\" in adults."
+  },
+  {
+   "chapter": 19,
+   "n": 362,
+   "at": 14418,
+   "text": "\"Ut januam regno Dei aperirent,\" that they might open a dour for the gospel,"
+  },
+  {
+   "chapter": 19,
+   "n": 363,
+   "at": 14447,
+   "text": "\"Argutiae,\" subtle reasonings."
+  },
+  {
+   "chapter": 19,
+   "n": 364,
+   "at": 15336,
+   "text": "\"Hac tandem se projieiunt,\" at length proceed to such extremes that they."
+  },
+  {
+   "chapter": 19,
+   "n": 365,
+   "at": 16021,
+   "text": "\"Indigna contumelia afficitur,\" is grossly insulted."
+  },
+  {
+   "chapter": 19,
+   "n": 366,
+   "at": 18439,
+   "text": "\"Semicinctia,\" girdles."
+  },
+  {
+   "chapter": 19,
+   "n": 367,
+   "at": 18533,
+   "text": "\"Non obscurum est,\" it is clear."
+  },
+  {
+   "chapter": 19,
+   "n": 368,
+   "at": 19212,
+   "text": "\"Oscularentur venerabundi homines,\" men given to veneration might kiss them."
+  },
+  {
+   "chapter": 19,
+   "n": 369,
+   "at": 19386,
+   "text": "\"Vilissimas,\" most worthless."
+  },
+  {
+   "chapter": 19,
+   "n": 370,
+   "at": 21115,
+   "text": "\"Sanciatur,\" sanctioned or confirmed."
+  },
+  {
+   "chapter": 19,
+   "n": 371,
+   "at": 21394,
+   "text": "\"Exorelsmos,\" exorcisms."
+  },
+  {
+   "chapter": 19,
+   "n": 372,
+   "at": 21556,
+   "text": "\"Aliquid perfecerint,\" they accomplished somewhat."
+  },
+  {
+   "chapter": 19,
+   "n": 373,
+   "at": 23154,
+   "text": "\"Alieni,\" aliens from, strangers to."
+  },
+  {
+   "chapter": 19,
+   "n": 374,
+   "at": 24326,
+   "text": "\"Nisi quod statui potest,\" unless that it may be held there is."
+  },
+  {
+   "chapter": 19,
+   "n": 375,
+   "at": 28854,
+   "text": "\"Quid enim... affine habet,\" for what affinity has."
+  },
+  {
+   "chapter": 19,
+   "n": 376,
+   "at": 29579,
+   "text": "\"Ut clanculariis susurris in aurem proprii sacerdotes obmurmuret peccator,\" that the sinner mutter secret whispers into the ear of his own priest."
+  },
+  {
+   "chapter": 19,
+   "n": 377,
+   "at": 29603,
+   "text": "\"Quam dextre accommodent,\" how dexterously they accommodate."
+  },
+  {
+   "chapter": 19,
+   "n": 378,
+   "at": 30094,
+   "text": "\"Stulti homines,\" foolish men."
+  },
+  {
+   "chapter": 19,
+   "n": 379,
+   "at": 30665,
+   "text": "\"Sesterties an densrios,\" \"sestertii an densrios.\""
+  },
+  {
+   "chapter": 19,
+   "n": 380,
+   "at": 30875,
+   "text": "\"Densrios vel aliquod etiam praestantius numismatis genus,\" denarii, or even some more valuable species of coin."
+  },
+  {
+   "chapter": 19,
+   "n": 381,
+   "at": 32227,
+   "text": "\"De exitu ipsos celans,\" concealing the issue from them."
+  },
+  {
+   "chapter": 19,
+   "n": 382,
+   "at": 33078,
+   "text": "\"Nobis suppetit facultas,\" our living is derived."
+  },
+  {
+   "chapter": 19,
+   "n": 383,
+   "at": 34567,
+   "text": "\"Non dubitat,\" does not hesitate."
+  },
+  {
+   "chapter": 19,
+   "n": 384,
+   "at": 34893,
+   "text": "\"Si ex illiberali quaestu in diem vivunt,\" if they live from day to day by the gain of a mean occupation."
+  },
+  {
+   "chapter": 19,
+   "n": 385,
+   "at": 35443,
+   "text": "\"Tam acriter,\" so keenly help the meal chest, (larder.) gain"
+  },
+  {
+   "chapter": 19,
+   "n": 386,
+   "at": 35936,
+   "text": "\"Quae ad farinas valent,\" as"
+  },
+  {
+   "chapter": 19,
+   "n": 387,
+   "at": 36094,
+   "text": "\"Lucri cupiditas,\" eagerness for"
+  },
+  {
+   "chapter": 19,
+   "n": 388,
+   "at": 38175,
+   "text": "\"Pervertere,\" to pervert."
+  },
+  {
+   "chapter": 19,
+   "n": 389,
+   "at": 39195,
+   "text": "\"Hoc primum praepostere,\" this is, in the first place, preposterous."
+  },
+  {
+   "chapter": 19,
+   "n": 390,
+   "at": 39254,
+   "text": "\"Secundo tandem loco,\" only in the second place."
+  },
+  {
+   "chapter": 19,
+   "n": 391,
+   "at": 40126,
+   "text": "\"Captant honestos praetextus,\" catch at specious pretexts."
+  },
+  {
+   "chapter": 19,
+   "n": 392,
+   "at": 40463,
+   "text": "\"Dum privatae jacturae dolorem prodit,\" while he betrays grief for a private loss."
+  },
+  {
+   "chapter": 19,
+   "n": 393,
+   "at": 40642,
+   "text": "\"Sic praefati,\" premised this much."
+  },
+  {
+   "chapter": 19,
+   "n": 394,
+   "at": 42898,
+   "text": "\"Rationem reddere,\" have rendered an account."
+  },
+  {
+   "chapter": 19,
+   "n": 395,
+   "at": 43156,
+   "text": "\"In tabula,\" in a picture"
+  },
+  {
+   "chapter": 19,
+   "n": 396,
+   "at": 44311,
+   "text": "\"Quasi turbas ipsi concitemus,\" as if we ourselves excited the disturbance."
+  },
+  {
+   "chapter": 19,
+   "n": 397,
+   "at": 48187,
+   "text": "\"Periculum est,\" there is a danger."
+  },
+  {
+   "chapter": 19,
+   "n": 398,
+   "at": 49105,
+   "text": "\"In theatro,\" in the theatre."
+  },
+  {
+   "chapter": 19,
+   "n": 399,
+   "at": 50840,
+   "text": "\"Unius hominis impulsu et libidine,\" at the instigation and caprice of one man."
+  },
+  {
+   "chapter": 19,
+   "n": 400,
+   "at": 50866,
+   "text": "\"Proconsules,\" proconsuls."
+  },
+  {
+   "chapter": 19,
+   "n": 401,
+   "at": 51120,
+   "text": "\"Quia proconsuli oblatu erat occasio urbis male mulctandae,\" because an opportunity was given to the proconsul to impose a heavy fine on the city."
+  },
+  {
+   "chapter": 20,
+   "n": 402,
+   "at": 2486,
+   "text": "\"Defunctorie,\" perfunctorily."
+  },
+  {
+   "chapter": 20,
+   "n": 403,
+   "at": 7870,
+   "text": "\"Spernendae ac respuendae,\" in spurning and rejecting."
+  },
+  {
+   "chapter": 20,
+   "n": 404,
+   "at": 8658,
+   "text": "\"Naturae infirmitati,\" the infirmity of nature."
+  },
+  {
+   "chapter": 20,
+   "n": 405,
+   "at": 10184,
+   "text": "\"Perinde agit, acsi se misceret cum mortuo,\" he acts just as if he were mixing himself up with the young man."
+  },
+  {
+   "chapter": 20,
+   "n": 406,
+   "at": 11015,
+   "text": "\"Quasi insculpto sigillo apud eos sancivit,\" did sanction to them as with the impress of the seal."
+  },
+  {
+   "chapter": 20,
+   "n": 407,
+   "at": 12189,
+   "text": "\"Rigidus exactor,\" from being a rigid exactor."
+  },
+  {
+   "chapter": 20,
+   "n": 408,
+   "at": 12463,
+   "text": "\"Geographis,\" geographers."
+  },
+  {
+   "chapter": 20,
+   "n": 409,
+   "at": 14095,
+   "text": "\"Legalem culture,\" legal worship."
+  },
+  {
+   "chapter": 20,
+   "n": 410,
+   "at": 14412,
+   "text": "\"Ut improborum hominum calumnias refelleret,\" that he might refute the calumnies of wicked men."
+  },
+  {
+   "chapter": 20,
+   "n": 411,
+   "at": 15270,
+   "text": "\"Quos Ephesi creaverat pastores,\" those whom he had appointed pastors at Ephesus."
+  },
+  {
+   "chapter": 20,
+   "n": 412,
+   "at": 15448,
+   "text": "\"In verbis,\" verbally."
+  },
+  {
+   "chapter": 20,
+   "n": 413,
+   "at": 16899,
+   "text": "\"Probatio,\" proof or tests"
+  },
+  {
+   "chapter": 20,
+   "n": 414,
+   "at": 17604,
+   "text": "\"Longe imparem,\" far from being equal to it."
+  },
+  {
+   "chapter": 20,
+   "n": 415,
+   "at": 17791,
+   "text": "\"Adjungit,\" he addeth,"
+  },
+  {
+   "chapter": 20,
+   "n": 416,
+   "at": 17986,
+   "text": "\"Trepidam vitam,\" a life of trembling."
+  },
+  {
+   "chapter": 20,
+   "n": 417,
+   "at": 20064,
+   "text": "\"Argutas,\" subtle,"
+  },
+  {
+   "chapter": 20,
+   "n": 418,
+   "at": 20128,
+   "text": "\"Sub umbra et in otio,\" when at ease under the shade."
+  },
+  {
+   "chapter": 20,
+   "n": 419,
+   "at": 20979,
+   "text": "\"Plerique,\" the greater part."
+  },
+  {
+   "chapter": 20,
+   "n": 420,
+   "at": 21138,
+   "text": "\"Solidioris,\" more solid."
+  },
+  {
+   "chapter": 20,
+   "n": 421,
+   "at": 21906,
+   "text": "\"Ingenuam,\" candid."
+  },
+  {
+   "chapter": 20,
+   "n": 422,
+   "at": 22742,
+   "text": "\"Debiles et infirmas,\" the feeble and infirm."
+  },
+  {
+   "chapter": 20,
+   "n": 423,
+   "at": 23537,
+   "text": "\"Ferociter repellunt,\" fiercely repel."
+  },
+  {
+   "chapter": 20,
+   "n": 424,
+   "at": 28565,
+   "text": "\"Nos terrore exanimet,\" make us dead with terror."
+  },
+  {
+   "chapter": 20,
+   "n": 425,
+   "at": 29107,
+   "text": "\"Prorsus esse defixam,\" must be wholly fixed."
+  },
+  {
+   "chapter": 20,
+   "n": 426,
+   "at": 31110,
+   "text": "\"Non quod enthousiasmo correptus fuerit,\" not that he was so enraptured."
+  },
+  {
+   "chapter": 20,
+   "n": 427,
+   "at": 31200,
+   "text": "\"Spoute vel plaeide,\" calmly or spontaneously."
+  },
+  {
+   "chapter": 20,
+   "n": 428,
+   "at": 31854,
+   "text": "\"Impulsus,\" impulses."
+  },
+  {
+   "chapter": 20,
+   "n": 429,
+   "at": 32546,
+   "text": "\"Nec tamen violenter trahamur,\" and yet be not violently dragged, omitted."
+  },
+  {
+   "chapter": 20,
+   "n": 430,
+   "at": 32672,
+   "text": "\"Ad ejus impulsum,\" as he impels them."
+  },
+  {
+   "chapter": 20,
+   "n": 431,
+   "at": 38005,
+   "text": "\"Delibet,\" sip at."
+  },
+  {
+   "chapter": 20,
+   "n": 432,
+   "at": 39729,
+   "text": "\"Aenigmatice,\" enigmatitally."
+  },
+  {
+   "chapter": 20,
+   "n": 433,
+   "at": 40459,
+   "text": "Make loud boast."
+  },
+  {
+   "chapter": 20,
+   "n": 434,
+   "at": 40721,
+   "text": "\"Quod deglutiendis tantum ovibus intenti,\" in that being only intent on devouring the sheep."
+  },
+  {
+   "chapter": 20,
+   "n": 435,
+   "at": 44787,
+   "text": "\"Indifferenter,\" indifferently."
+  },
+  {
+   "chapter": 20,
+   "n": 436,
+   "at": 49866,
+   "text": "\"Insidiis,\" the snares."
+  },
+  {
+   "chapter": 20,
+   "n": 437,
+   "at": 51878,
+   "text": "\"Unus Magister,\" as the only Master."
+  },
+  {
+   "chapter": 20,
+   "n": 438,
+   "at": 53150,
+   "text": "\"Minus hoc consternat pias mentes,\" this does less alarm pious minds."
+  },
+  {
+   "chapter": 20,
+   "n": 439,
+   "at": 53246,
+   "text": "\"Classicum caught,\" blow the trumpet."
+  },
+  {
+   "chapter": 20,
+   "n": 440,
+   "at": 54167,
+   "text": "\"Continua serie,\" in an unbroken series."
+  },
+  {
+   "chapter": 20,
+   "n": 441,
+   "at": 54241,
+   "text": "\"Cavendum... admonet,\" admonishes us to beware."
+  },
+  {
+   "chapter": 20,
+   "n": 442,
+   "at": 55232,
+   "text": "\"Infractam,\" unbroken."
+  },
+  {
+   "chapter": 20,
+   "n": 443,
+   "at": 55893,
+   "text": "\"Assidue inculcaverat,\" had assiduously inculcated."
+  },
+  {
+   "chapter": 20,
+   "n": 444,
+   "at": 57933,
+   "text": "\"Quo utitur Paulus,\" which Paul uses."
+  },
+  {
+   "chapter": 20,
+   "n": 445,
+   "at": 58199,
+   "text": "\"Inchoato aedificio,\" to a commenced building."
+  },
+  {
+   "chapter": 20,
+   "n": 446,
+   "at": 58402,
+   "text": "\"Nutant,\" nod, totter."
+  },
+  {
+   "chapter": 20,
+   "n": 447,
+   "at": 59050,
+   "text": "\"Nobis affulsit,\" hath shone upon us."
+  },
+  {
+   "chapter": 20,
+   "n": 448,
+   "at": 62650,
+   "text": "\"Non negabant illi Corinthii debitam mercedem,\" those Corinthians did not deny that hire was due to him."
+  },
+  {
+   "chapter": 20,
+   "n": 449,
+   "at": 63585,
+   "text": "\"Politice,\" of what was politic."
+  },
+  {
+   "chapter": 20,
+   "n": 450,
+   "at": 64691,
+   "text": "\"Ipsos cuiquam esse obnoxios,\" that they themselves should be subjected (under obligation) to any one."
+  },
+  {
+   "chapter": 20,
+   "n": 451,
+   "at": 65495,
+   "text": "\"Fiduciae,\" confidence."
+  },
+  {
+   "chapter": 21,
+   "n": 452,
+   "at": 1212,
+   "text": "\"Ac flexuosis,\" and Winding."
+  },
+  {
+   "chapter": 21,
+   "n": 453,
+   "at": 1583,
+   "text": "\"Applicuit,\" touched,"
+  },
+  {
+   "chapter": 21,
+   "n": 454,
+   "at": 1710,
+   "text": "\"Consulantur geographi,\" geographers may be consulted."
+  },
+  {
+   "chapter": 21,
+   "n": 455,
+   "at": 2287,
+   "text": "\"Lusoria,\" elusory."
+  },
+  {
+   "chapter": 21,
+   "n": 456,
+   "at": 2931,
+   "text": "\"Color apprime speciosus,\" a very specious pretext."
+  },
+  {
+   "chapter": 21,
+   "n": 457,
+   "at": 3573,
+   "text": "\"Fortitudine,\" fortitude."
+  },
+  {
+   "chapter": 21,
+   "n": 458,
+   "at": 6756,
+   "text": "\"Temporale munus,\" a temporary trace, (appointment.)"
+  },
+  {
+   "chapter": 21,
+   "n": 459,
+   "at": 7208,
+   "text": "\"Nec praeficerentur certae staticni,\" and yet not be appointed to a fixed station."
+  },
+  {
+   "chapter": 21,
+   "n": 460,
+   "at": 8600,
+   "text": "\"Adventu suo,\" by his advent."
+  },
+  {
+   "chapter": 21,
+   "n": 461,
+   "at": 10360,
+   "text": "\"Jam satis superque admonitus fuerat,\" he had been more than sufficiently warned already."
+  },
+  {
+   "chapter": 21,
+   "n": 462,
+   "at": 11597,
+   "text": "\"Ludicra,\" ludicrous."
+  },
+  {
+   "chapter": 21,
+   "n": 463,
+   "at": 13075,
+   "text": "\"Inflexibilis,\" inflexible,"
+  },
+  {
+   "chapter": 21,
+   "n": 464,
+   "at": 13467,
+   "text": "\"A simplici ejus obsequio,\" from simple obedience to him."
+  },
+  {
+   "chapter": 21,
+   "n": 465,
+   "at": 13606,
+   "text": "\"Ferreum,\" iron-hearted."
+  },
+  {
+   "chapter": 21,
+   "n": 466,
+   "at": 13682,
+   "text": "\"Quin amore ad sumpatheian induceretur,\" but by love was induced to sympathy."
+  },
+  {
+   "chapter": 21,
+   "n": 467,
+   "at": 17729,
+   "text": "\"Sinistris ramoribus,\" sinister rumours."
+  },
+  {
+   "chapter": 21,
+   "n": 468,
+   "at": 18271,
+   "text": "\"Experti sumus,\" experienced."
+  },
+  {
+   "chapter": 21,
+   "n": 469,
+   "at": 18525,
+   "text": "\"Obliquos sermones,\" indirect speeches, insinuations. counsel."
+  },
+  {
+   "chapter": 21,
+   "n": 470,
+   "at": 19155,
+   "text": "\"Interius consilium,\" more private"
+  },
+  {
+   "chapter": 21,
+   "n": 471,
+   "at": 20566,
+   "text": "\"Remotis,\" remote."
+  },
+  {
+   "chapter": 21,
+   "n": 472,
+   "at": 22977,
+   "text": "\"Ipse est solidum corpus,\" he himself is the entire body."
+  },
+  {
+   "chapter": 21,
+   "n": 473,
+   "at": 23125,
+   "text": "\"Legitimum.\" legitimate."
+  },
+  {
+   "chapter": 21,
+   "n": 474,
+   "at": 25670,
+   "text": "\"Mallgnis rumoribus,\" malignant reports."
+  },
+  {
+   "chapter": 21,
+   "n": 475,
+   "at": 26939,
+   "text": "\"Nimis indulgent,\" are too indulgent to."
+  },
+  {
+   "chapter": 21,
+   "n": 476,
+   "at": 27475,
+   "text": "\"Liquidum ejus rei judicium,\" a clear judgment on the case."
+  },
+  {
+   "chapter": 21,
+   "n": 477,
+   "at": 27735,
+   "text": "\"Discessionis,\" schism or dissension."
+  },
+  {
+   "chapter": 21,
+   "n": 478,
+   "at": 28553,
+   "text": "\"An voturn exeesserint in medio relinquo,\" whether or not they went farther than they wished, I do not take it, upon me to determine,"
+  },
+  {
+   "chapter": 21,
+   "n": 479,
+   "at": 29461,
+   "text": "\"Parum consectianea,\" which ill accorded."
+  },
+  {
+   "chapter": 21,
+   "n": 480,
+   "at": 30096,
+   "text": "\"Sub praetextu charitatis,\" under a pretext of charity."
+  },
+  {
+   "chapter": 21,
+   "n": 481,
+   "at": 30179,
+   "text": "\"Expiationis,\" expiation"
+  },
+  {
+   "chapter": 21,
+   "n": 482,
+   "at": 31242,
+   "text": "\"Crassius,\" a thicker."
+  },
+  {
+   "chapter": 21,
+   "n": 483,
+   "at": 33615,
+   "text": "\"Astutiae,\" craftiness."
+  },
+  {
+   "chapter": 21,
+   "n": 484,
+   "at": 34784,
+   "text": "\"Morem gerit,\" defer to."
+  },
+  {
+   "chapter": 21,
+   "n": 485,
+   "at": 34883,
+   "text": "\"Expostulasset,\" expostulated with."
+  },
+  {
+   "chapter": 21,
+   "n": 486,
+   "at": 35155,
+   "text": "\"Durior,\" more severe on."
+  },
+  {
+   "chapter": 21,
+   "n": 487,
+   "at": 35587,
+   "text": "\"Acquiescit,\" acquiesces in."
+  },
+  {
+   "chapter": 21,
+   "n": 488,
+   "at": 36333,
+   "text": "\"Qualis ista est quam fingunt similitudo,\" what resemblance is there in it to that which they feign."
+  },
+  {
+   "chapter": 21,
+   "n": 489,
+   "at": 37958,
+   "text": "\"Atrocissimum,\" most atrocious."
+  },
+  {
+   "chapter": 21,
+   "n": 490,
+   "at": 38524,
+   "text": "\"Quod tumultuatur civitas in negotio pietatis,\" that the city is in a tumult in a matter relating to godliness."
+  },
+  {
+   "chapter": 21,
+   "n": 491,
+   "at": 41640,
+   "text": "\"Tribunum cohortis,\" tribune of the cohort."
+  },
+  {
+   "chapter": 21,
+   "n": 492,
+   "at": 41809,
+   "text": "\"Centurionos... a tribuno assumptos,\" that the tribune took with him centurions."
+  },
+  {
+   "chapter": 21,
+   "n": 493,
+   "at": 43846,
+   "text": "\"Neque enim.... tutum fuisset in varia hospitia passim distribui,\" for it had not been safe for them to have been quartered up and down in various places."
+  },
+  {
+   "chapter": 21,
+   "n": 494,
+   "at": 44861,
+   "text": "\"Hominum turbam ad defectionem impulerat?\" had induced a body of men to revolt."
+  },
+  {
+   "chapter": 21,
+   "n": 495,
+   "at": 45146,
+   "text": "\"Ut ad contumelias assuescamus,\" that we may accustom ourselves to contumely."
+  },
+  {
+   "chapter": 21,
+   "n": 496,
+   "at": 47304,
+   "text": "\"Latronibus infesta,\" infested with robbers."
+  },
+  {
+   "chapter": 22,
+   "n": 497,
+   "at": 3529,
+   "text": "\"Ex professo infensum,\" professedly hostile to."
+  },
+  {
+   "chapter": 22,
+   "n": 498,
+   "at": 5060,
+   "text": "\"Nulla disciplina imbutum,\" not imbued with any discipline."
+  },
+  {
+   "chapter": 22,
+   "n": 499,
+   "at": 5209,
+   "text": "\"Fiunt degeneres,\" become degenerate,"
+  },
+  {
+   "chapter": 22,
+   "n": 500,
+   "at": 6547,
+   "text": "\"Exacta ratio,\" an exact method."
+  },
+  {
+   "chapter": 22,
+   "n": 501,
+   "at": 8521,
+   "text": "\"Ab ilia genta... originem,\" origin from that nation."
+  },
+  {
+   "chapter": 22,
+   "n": 502,
+   "at": 12130,
+   "text": "\"Vocem audisse, neminem vidisse,\" heard a voice, and saw no one."
+  },
+  {
+   "chapter": 22,
+   "n": 503,
+   "at": 13426,
+   "text": "\"Commune documentum nobis praebuit,\" he hath given us a common proof,"
+  },
+  {
+   "chapter": 22,
+   "n": 504,
+   "at": 13629,
+   "text": "\"Probasset,\" he had proved."
+  },
+  {
+   "chapter": 22,
+   "n": 505,
+   "at": 14966,
+   "text": "\"Sinistram,\" sinister."
+  },
+  {
+   "chapter": 22,
+   "n": 506,
+   "at": 17894,
+   "text": "\"Proprio elogio,\" by the proper title."
+  },
+  {
+   "chapter": 22,
+   "n": 507,
+   "at": 18608,
+   "text": "\"Suo marte,\" by their own strength."
+  },
+  {
+   "chapter": 22,
+   "n": 508,
+   "at": 18727,
+   "text": "\"Non esse omnibus promiscue expositum,\" is not set before all promiscuously."
+  },
+  {
+   "chapter": 22,
+   "n": 509,
+   "at": 19058,
+   "text": "\"Graeci codices,\" the Greek manuscripts."
+  },
+  {
+   "chapter": 22,
+   "n": 510,
+   "at": 19357,
+   "text": "\"Concinne,\" elegantly, appositely."
+  },
+  {
+   "chapter": 22,
+   "n": 511,
+   "at": 20221,
+   "text": "\"Privatim,\" privately."
+  },
+  {
+   "chapter": 22,
+   "n": 512,
+   "at": 23432,
+   "text": "\"Expiata esse,\" were expiated."
+  },
+  {
+   "chapter": 22,
+   "n": 513,
+   "at": 26451,
+   "text": "\"Clausula,\" clause or sentence."
+  },
+  {
+   "chapter": 22,
+   "n": 514,
+   "at": 28049,
+   "text": "\"De modo visionis,\" as to the manner of the vision."
+  },
+  {
+   "chapter": 22,
+   "n": 515,
+   "at": 28567,
+   "text": "\"Sancti hominis pectus,\" the holy man's breast."
+  },
+  {
+   "chapter": 22,
+   "n": 516,
+   "at": 29360,
+   "text": "\"Mente aliena tam vel perplexum,\" alienated or perplexed in mind."
+  },
+  {
+   "chapter": 22,
+   "n": 517,
+   "at": 30089,
+   "text": "\"Ut familiariter in ejus sinum exonerent suos affeetus,\" to unburden their feelings familiarly into his breast."
+  },
+  {
+   "chapter": 22,
+   "n": 518,
+   "at": 31781,
+   "text": "\"Numinis sui,\" of his Deity."
+  },
+  {
+   "chapter": 22,
+   "n": 519,
+   "at": 31991,
+   "text": "\"Attriti,\" trampled upon."
+  },
+  {
+   "chapter": 22,
+   "n": 520,
+   "at": 33234,
+   "text": "\"Certum qua ex causa accusaretur a Judaeis,\" certainly for what cause he was accused by the Jews."
+  },
+  {
+   "chapter": 22,
+   "n": 521,
+   "at": 35215,
+   "text": "\"Civis Romani,\" a Roman citizen."
+  },
+  {
+   "chapter": 23,
+   "n": 522,
+   "at": 4208,
+   "text": "\"Intermedio illo tempore,\" during the intermediate time."
+  },
+  {
+   "chapter": 23,
+   "n": 523,
+   "at": 4593,
+   "text": "\"Promiscue,\" indiscriminately."
+  },
+  {
+   "chapter": 23,
+   "n": 524,
+   "at": 6887,
+   "text": "\"Silentio... quin saltem expostulet graviter verbis cum pontifice,\" in silence, without at least sharply expostulating with the high priest."
+  },
+  {
+   "chapter": 23,
+   "n": 525,
+   "at": 9233,
+   "text": "\"Contumelia,\" with contumely."
+  },
+  {
+   "chapter": 23,
+   "n": 526,
+   "at": 10356,
+   "text": "\"Eadem omnes intemperie laborasse,\" that they all laboured under the same intemperance,"
+  },
+  {
+   "chapter": 23,
+   "n": 527,
+   "at": 10579,
+   "text": "\"In commune illorum dedecus,\" to their common disgrace."
+  },
+  {
+   "chapter": 23,
+   "n": 528,
+   "at": 13664,
+   "text": "\"Anarchiam appetit,\" he longs for anarchy."
+  },
+  {
+   "chapter": 23,
+   "n": 529,
+   "at": 15723,
+   "text": "\"Stratagema,\" stratagem."
+  },
+  {
+   "chapter": 23,
+   "n": 530,
+   "at": 16553,
+   "text": "\"Intestinis dissidiis laborare,\" were involved in intestine dissensions."
+  },
+  {
+   "chapter": 23,
+   "n": 531,
+   "at": 17252,
+   "text": "\"Extremo remedio,\" an extreme remedy."
+  },
+  {
+   "chapter": 23,
+   "n": 532,
+   "at": 18164,
+   "text": "\"Fervent,\" prevail."
+  },
+  {
+   "chapter": 23,
+   "n": 533,
+   "at": 18635,
+   "text": "\"Fraterne,\" like brothers, omitted."
+  },
+  {
+   "chapter": 23,
+   "n": 534,
+   "at": 19384,
+   "text": "\"Simplex et genuina,\" simple and genuine."
+  },
+  {
+   "chapter": 23,
+   "n": 535,
+   "at": 23451,
+   "text": "\"Per marius tradita jactabant,\" boasted, bad been handed down."
+  },
+  {
+   "chapter": 23,
+   "n": 536,
+   "at": 23596,
+   "text": "\"Restringit, it,\" restricts."
+  },
+  {
+   "chapter": 23,
+   "n": 537,
+   "at": 24136,
+   "text": "\"Itaque addenda fuit exceptio,\" therefore, it was necessary to add the exception."
+  },
+  {
+   "chapter": 23,
+   "n": 538,
+   "at": 24803,
+   "text": "\"Benigne et indulgenter,\" kindly and indulgent1y."
+  },
+  {
+   "chapter": 23,
+   "n": 539,
+   "at": 25259,
+   "text": "\"Nec sapere,\" and not have a feeling or relish."
+  },
+  {
+   "chapter": 23,
+   "n": 540,
+   "at": 25705,
+   "text": "\"Tribus modis,\" in three ways."
+  },
+  {
+   "chapter": 23,
+   "n": 541,
+   "at": 26163,
+   "text": "\"Propriam Spiritus hypostasin... in Dei essentia,\" the proper personality of the Spirit in the divine essence."
+  },
+  {
+   "chapter": 23,
+   "n": 542,
+   "at": 26217,
+   "text": "\"Synonnyma esse,\" to be synonymous."
+  },
+  {
+   "chapter": 23,
+   "n": 543,
+   "at": 28962,
+   "text": "\"Cum Pharisaeis,\" with the Pharisees."
+  },
+  {
+   "chapter": 23,
+   "n": 544,
+   "at": 31262,
+   "text": "\"Succurrit,\" succour."
+  },
+  {
+   "chapter": 23,
+   "n": 545,
+   "at": 34015,
+   "text": "\"Inculcat,\" inculcates."
+  },
+  {
+   "chapter": 23,
+   "n": 546,
+   "at": 34939,
+   "text": "\"Tacita execratio,\" a tacit execration."
+  },
+  {
+   "chapter": 23,
+   "n": 547,
+   "at": 35065,
+   "text": "\"Anathematis,\" of anathema."
+  },
+  {
+   "chapter": 23,
+   "n": 548,
+   "at": 36744,
+   "text": "\"Turmatim,\" in crowds."
+  },
+  {
+   "chapter": 23,
+   "n": 549,
+   "at": 38327,
+   "text": "\"Ipso articulo,\" at the very nick of time"
+  },
+  {
+   "chapter": 23,
+   "n": 550,
+   "at": 38836,
+   "text": "\"Devota victima,\" a devoted victim."
+  },
+  {
+   "chapter": 23,
+   "n": 551,
+   "at": 40376,
+   "text": "\"Tu vero ne morem gesseris illis,\" but do not thou grant their request."
+  },
+  {
+   "chapter": 23,
+   "n": 552,
+   "at": 40885,
+   "text": "\"Lancerios,\" lancers."
+  },
+  {
+   "chapter": 23,
+   "n": 553,
+   "at": 41885,
+   "text": "\"In mediis augustiis,\" in the midst of straits."
+  },
+  {
+   "chapter": 23,
+   "n": 554,
+   "at": 42042,
+   "text": "\"Ad ejus promissiones surdi,\" deaf to his promises"
+  },
+  {
+   "chapter": 23,
+   "n": 555,
+   "at": 43134,
+   "text": "\"Si difficilis ad eum fuisset accessus,\" if he had been of difficult access."
+  },
+  {
+   "chapter": 23,
+   "n": 556,
+   "at": 44426,
+   "text": "\"Statariae militia?,\" stationary warfare."
+  },
+  {
+   "chapter": 23,
+   "n": 557,
+   "at": 46401,
+   "text": "\"Suo praejudicio,\" by bearing previous testimony in his favour."
+  },
+  {
+   "chapter": 23,
+   "n": 558,
+   "at": 47700,
+   "text": "\"Convelli,\" to be plucked up, eradicated."
+  },
+  {
+   "chapter": 23,
+   "n": 559,
+   "at": 48653,
+   "text": "\"Quam sacrilegiis impunitatem dare,\" than to let blasphemers escape without punishment."
+  },
+  {
+   "chapter": 23,
+   "n": 560,
+   "at": 48979,
+   "text": "\"Odium in adversarios retorquet,\" retorts upon his adversaries their hatred."
+  },
+  {
+   "chapter": 23,
+   "n": 561,
+   "at": 49909,
+   "text": "\"Tutum... non esse,\" it was not safe."
+  },
+  {
+   "chapter": 24,
+   "n": 562,
+   "at": 1485,
+   "text": "\"Strenuus,\" active. his innocence."
+  },
+  {
+   "chapter": 24,
+   "n": 563,
+   "at": 2449,
+   "text": "\"Perverterent ejus innocentiam,\""
+  },
+  {
+   "chapter": 24,
+   "n": 564,
+   "at": 4144,
+   "text": "\"Jam praecesserat,\" had already been committed."
+  },
+  {
+   "chapter": 24,
+   "n": 565,
+   "at": 5002,
+   "text": "\"Quae alioqui pessum ibant,\" which were otherwise becoming worse."
+  },
+  {
+   "chapter": 24,
+   "n": 566,
+   "at": 5484,
+   "text": "\"Seditionem... concitaverit,\" stirred up sedition."
+  },
+  {
+   "chapter": 24,
+   "n": 567,
+   "at": 6068,
+   "text": "\"Tumultusos illos sicarios qui se etiam plausibili nomine vociferabant zelotas,\" those tumultuary assassins who, assuming a specious name, boasted of being zelotae, (zealous)"
+  },
+  {
+   "chapter": 24,
+   "n": 568,
+   "at": 6073,
+   "text": "\"Quae factio circiter illud tempus emerserit; imo ex Josephi historia colligitur jamtunc fuisse grassatos,\" about this time that faction had broken out, nay, it appears from Josephus that it had even then made considerable progress, omitted."
+  },
+  {
+   "chapter": 24,
+   "n": 569,
+   "at": 7087,
+   "text": "\"Crimen velut ex trivio aereptum,\" some charge, picked up, as it were, in the streets."
+  },
+  {
+   "chapter": 24,
+   "n": 570,
+   "at": 8947,
+   "text": "\"AEqua,\" just, equitable."
+  },
+  {
+   "chapter": 24,
+   "n": 571,
+   "at": 9345,
+   "text": "\"Nec se ad probandum offerre nisi suo arbitrio,\" and that they do not offer proof unless he decide that it shall be taken."
+  },
+  {
+   "chapter": 24,
+   "n": 572,
+   "at": 9453,
+   "text": "\"Ampullis,\" bombast."
+  },
+  {
+   "chapter": 24,
+   "n": 573,
+   "at": 12042,
+   "text": "\"Propter inscitiam,\" through ignorance, omitted."
+  },
+  {
+   "chapter": 24,
+   "n": 574,
+   "at": 12254,
+   "text": "\"Composite,\" calmly."
+  },
+  {
+   "chapter": 24,
+   "n": 575,
+   "at": 13544,
+   "text": "\"Omne tempii discrimen,\" all distinction or temple."
+  },
+  {
+   "chapter": 24,
+   "n": 576,
+   "at": 14743,
+   "text": "\"Turmatim,\" in crowds."
+  },
+  {
+   "chapter": 24,
+   "n": 577,
+   "at": 15454,
+   "text": "\"Delatus fuerat tanquam,\" was charged with being."
+  },
+  {
+   "chapter": 24,
+   "n": 578,
+   "at": 16004,
+   "text": "\"Sola malevolentia impelli,\" were instigated by sheer malevolence."
+  },
+  {
+   "chapter": 24,
+   "n": 579,
+   "at": 20209,
+   "text": "\"Gentiles,\" the Gentile."
+  },
+  {
+   "chapter": 24,
+   "n": 580,
+   "at": 20587,
+   "text": "\"Adventitiis,\" adventitious."
+  },
+  {
+   "chapter": 24,
+   "n": 581,
+   "at": 21202,
+   "text": "\"Orthodoxae,\" orthodox."
+  },
+  {
+   "chapter": 24,
+   "n": 582,
+   "at": 21748,
+   "text": "\"Carnis sensu,\" from carnal sense."
+  },
+  {
+   "chapter": 24,
+   "n": 583,
+   "at": 21872,
+   "text": "\"Praecedit,\" take precedence"
+  },
+  {
+   "chapter": 24,
+   "n": 584,
+   "at": 21880,
+   "text": "\"Ejus anctoritas,\" its authority"
+  },
+  {
+   "chapter": 24,
+   "n": 585,
+   "at": 22632,
+   "text": "\"Promiscue,\" promiscuously."
+  },
+  {
+   "chapter": 24,
+   "n": 586,
+   "at": 23263,
+   "text": "\"Ad coarguendos,\" to convict."
+  },
+  {
+   "chapter": 24,
+   "n": 587,
+   "at": 23665,
+   "text": "\"Respicit,\" has repect to."
+  },
+  {
+   "chapter": 24,
+   "n": 588,
+   "at": 26754,
+   "text": "\"Et proprius quasi manu conserta congressos esse,\" and came, as it were, to close quarters."
+  },
+  {
+   "chapter": 24,
+   "n": 589,
+   "at": 28704,
+   "text": "\"Magis remissa... tractatio,\" mere indulgent treatment."
+  },
+  {
+   "chapter": 24,
+   "n": 590,
+   "at": 29698,
+   "text": "\"Tale praejudicium tulit,\" did so favourably prejudge it."
+  },
+  {
+   "chapter": 24,
+   "n": 591,
+   "at": 30142,
+   "text": "\"Officio defungi,\" to do offices of kindness to him."
+  },
+  {
+   "chapter": 24,
+   "n": 592,
+   "at": 32105,
+   "text": "\"Vel ut se subtraheret a curcis molestia,\" or that he might escape from bearing the cross"
+  },
+  {
+   "chapter": 24,
+   "n": 593,
+   "at": 34516,
+   "text": "\"Non submisse agit,\" he does not act crouchingly."
+  },
+  {
+   "chapter": 24,
+   "n": 594,
+   "at": 36790,
+   "text": "\"Liberationes redimendae,\" of purchasing deliverance."
+  },
+  {
+   "chapter": 24,
+   "n": 595,
+   "at": 37366,
+   "text": "\"Ut sagaces sunt et acuti qui jus habent venale,\" as those judges who act ve-nally are sagacious and acute"
+  },
+  {
+   "chapter": 24,
+   "n": 596,
+   "at": 37486,
+   "text": "\"Aliquid procul de ipso subodoratum esse,\" he had some distant idea of what kind of a person he was."
+  },
+  {
+   "chapter": 24,
+   "n": 597,
+   "at": 37947,
+   "text": "\"Pepercisse fratribus,\" spare the brethren."
+  },
+  {
+   "chapter": 25,
+   "n": 598,
+   "at": 5496,
+   "text": "\"Ab omni falsa obtrectatione,\" from all groundless detractation."
+  },
+  {
+   "chapter": 25,
+   "n": 599,
+   "at": 8050,
+   "text": "\"Jus Romanae civitatis,\" the privilege of a Roman citizen."
+  },
+  {
+   "chapter": 25,
+   "n": 600,
+   "at": 8410,
+   "text": "\"Quo minus sceleratis latronibus mactandum objiceret,\" that he did not expose himself to be murdered by nefarious assassins."
+  },
+  {
+   "chapter": 25,
+   "n": 601,
+   "at": 8668,
+   "text": "\"Si impetrasset,\" if he had obtained."
+  },
+  {
+   "chapter": 25,
+   "n": 602,
+   "at": 9434,
+   "text": "\"Judicium populi,\" the right of judging (formerly) in the people,"
+  },
+  {
+   "chapter": 25,
+   "n": 603,
+   "at": 10276,
+   "text": "\"Tergiversandi,\" by tergiversation."
+  },
+  {
+   "chapter": 25,
+   "n": 604,
+   "at": 14569,
+   "text": "\"Tetrarchiam,\" tetrarchy."
+  },
+  {
+   "chapter": 25,
+   "n": 605,
+   "at": 17369,
+   "text": "\"Impune violari.\" he violated with impunity."
+  },
+  {
+   "chapter": 25,
+   "n": 606,
+   "at": 19830,
+   "text": "\"Acsi quis fabulas narraret,\" as if one were telling them fables."
+  },
+  {
+   "chapter": 25,
+   "n": 607,
+   "at": 24204,
+   "text": "\"Apparentiam,\" show."
+  },
+  {
+   "chapter": 26,
+   "n": 608,
+   "at": 2438,
+   "text": "\"Illatio ista,\" the inference."
+  },
+  {
+   "chapter": 26,
+   "n": 609,
+   "at": 2879,
+   "text": "\"Ne praasertim ubi jam principiis imbuti sumus,\" and especially when we have already been imbued with the principles."
+  },
+  {
+   "chapter": 26,
+   "n": 610,
+   "at": 3127,
+   "text": "\"Causae sit infensus,\" be prejudiced against the cause."
+  },
+  {
+   "chapter": 26,
+   "n": 611,
+   "at": 9557,
+   "text": "\"Ubi in nihilum redacta fuerint,\" after being reduced to nothing."
+  },
+  {
+   "chapter": 26,
+   "n": 612,
+   "at": 10059,
+   "text": "\"Maligni... et injurii,\" malignant and injurious,"
+  },
+  {
+   "chapter": 26,
+   "n": 613,
+   "at": 10307,
+   "text": "\"Ad suas angustias,\" to their narrow capacity."
+  },
+  {
+   "chapter": 26,
+   "n": 614,
+   "at": 12263,
+   "text": "\"Abrupta esset,\" would have been abrupt."
+  },
+  {
+   "chapter": 26,
+   "n": 615,
+   "at": 12935,
+   "text": "\"Nocendi,\" to persecute"
+  },
+  {
+   "chapter": 26,
+   "n": 616,
+   "at": 13572,
+   "text": "\"Magnum ergo pondus habet ista antithesis,\" there is a great force, therefore, in the antithesis."
+  },
+  {
+   "chapter": 26,
+   "n": 617,
+   "at": 13734,
+   "text": "\"Nihil minus... quam factum,\" that he was by no means made."
+  },
+  {
+   "chapter": 26,
+   "n": 618,
+   "at": 13960,
+   "text": "\"Hoc modo,\" in this way."
+  },
+  {
+   "chapter": 26,
+   "n": 619,
+   "at": 15292,
+   "text": "\"Ultro sibi in crimen imputat,\" voluntarily charges upon himself as criminal."
+  },
+  {
+   "chapter": 26,
+   "n": 620,
+   "at": 16527,
+   "text": "\"Quae mentis sanitatem vel judicium illi eriperet,\" as deprived him of his sober senses, or the power of judging."
+  },
+  {
+   "chapter": 26,
+   "n": 621,
+   "at": 17300,
+   "text": "\"Qui poenam exigat,\" to punish him."
+  },
+  {
+   "chapter": 26,
+   "n": 622,
+   "at": 26082,
+   "text": "\"Pravitas,\" depravity."
+  },
+  {
+   "chapter": 26,
+   "n": 623,
+   "at": 26875,
+   "text": "\"Malam causam ipsos agere mala conscientia,\" that they pleaded a bad cause with a bad conscience."
+  },
+  {
+   "chapter": 26,
+   "n": 624,
+   "at": 29691,
+   "text": "\"Ad aetates hoc restringere,\" to confine this to periods of time."
+  },
+  {
+   "chapter": 26,
+   "n": 625,
+   "at": 34711,
+   "text": "\"Reconditam eruditionem,\" recondite erudition."
+  },
+  {
+   "chapter": 26,
+   "n": 626,
+   "at": 35875,
+   "text": "\"Honorifice eum corrpellat,\" addresses him in terms of honour."
+  },
+  {
+   "chapter": 26,
+   "n": 627,
+   "at": 36382,
+   "text": "\"Acumen,\" acuteness."
+  },
+  {
+   "chapter": 26,
+   "n": 628,
+   "at": 36569,
+   "text": "\"Opponitur,\" is opposed to."
+  },
+  {
+   "chapter": 26,
+   "n": 629,
+   "at": 39176,
+   "text": "\"Simplicius,\" more simply."
+  },
+  {
+   "chapter": 26,
+   "n": 630,
+   "at": 41265,
+   "text": "\"Humanitas et moderatio,\" humanity and moderation."
+  },
+  {
+   "chapter": 26,
+   "n": 631,
+   "at": 41753,
+   "text": "\"Damnosa esse,\" was injurious to."
+  },
+  {
+   "chapter": 26,
+   "n": 632,
+   "at": 41938,
+   "text": "\"Res jam non erat integra,\" matters were no longer entire."
+  },
+  {
+   "chapter": 27,
+   "n": 633,
+   "at": 1833,
+   "text": "\"Praetoria,\" the Praetorian."
+  },
+  {
+   "chapter": 27,
+   "n": 634,
+   "at": 2800,
+   "text": "\"Nec vero absurdum est,\" and there is no absurdity in supposing."
+  },
+  {
+   "chapter": 27,
+   "n": 635,
+   "at": 3516,
+   "text": "\"Sponte eandem cum Paulo fortunam subeat,\" spontaneously shares in Paul's fortunes."
+  },
+  {
+   "chapter": 27,
+   "n": 636,
+   "at": 3804,
+   "text": "\"Latebras nancisci poterat,\" might have found a place of concealment."
+  },
+  {
+   "chapter": 27,
+   "n": 637,
+   "at": 4133,
+   "text": "\"Navis prodore,\" the stench of the ship."
+  },
+  {
+   "chapter": 27,
+   "n": 638,
+   "at": 4240,
+   "text": "\"Turpi perfidia,\" base perfidy."
+  },
+  {
+   "chapter": 27,
+   "n": 639,
+   "at": 4477,
+   "text": "\"Ex geographis,\" out of geographers."
+  },
+  {
+   "chapter": 27,
+   "n": 640,
+   "at": 4799,
+   "text": "\"Saevior procella,\" a fiercer storm."
+  },
+  {
+   "chapter": 27,
+   "n": 641,
+   "at": 8733,
+   "text": "\"Plurimum deferret,\" he had very great deference for."
+  },
+  {
+   "chapter": 27,
+   "n": 642,
+   "at": 10353,
+   "text": "\"Insulam,\" island."
+  },
+  {
+   "chapter": 27,
+   "n": 643,
+   "at": 12059,
+   "text": "\"Ad humana media,\" to human means."
+  },
+  {
+   "chapter": 27,
+   "n": 644,
+   "at": 18717,
+   "text": "\"E naufragio,\" from shipwreck."
+  },
+  {
+   "chapter": 27,
+   "n": 645,
+   "at": 21494,
+   "text": "\"Sponsoris,\" sponsor or cautioner."
+  },
+  {
+   "chapter": 27,
+   "n": 646,
+   "at": 22154,
+   "text": "\"Quod humano sensu nondum comprehendi poterat,\" which could not yet be comprehended by human sense."
+  },
+  {
+   "chapter": 27,
+   "n": 647,
+   "at": 22307,
+   "text": "\"Aliquam regionem mediterraneam,\" some mainland."
+  },
+  {
+   "chapter": 27,
+   "n": 648,
+   "at": 25680,
+   "text": "\"Vacillat,\" waver."
+  },
+  {
+   "chapter": 27,
+   "n": 649,
+   "at": 25886,
+   "text": "\"Apud inferos,\" with the dead."
+  },
+  {
+   "chapter": 27,
+   "n": 650,
+   "at": 27060,
+   "text": "\"Alacres,\" alert, active."
+  },
+  {
+   "chapter": 27,
+   "n": 651,
+   "at": 29640,
+   "text": "\"Socios naufragii vana spe lactasse,\" had deluded his companions in shipwreck with a vain hope."
+  },
+  {
+   "chapter": 27,
+   "n": 652,
+   "at": 30315,
+   "text": "\"Fracta,\" wrecked,"
+  },
+  {
+   "chapter": 27,
+   "n": 653,
+   "at": 31544,
+   "text": "\"Nec amplius quicquam sapit,\" nor hath it any longer any relish."
+  },
+  {
+   "chapter": 28,
+   "n": 654,
+   "at": 1369,
+   "text": "\"Protectos,\" protected."
+  },
+  {
+   "chapter": 28,
+   "n": 655,
+   "at": 2114,
+   "text": "\"Oracula,\" predictions."
+  },
+  {
+   "chapter": 28,
+   "n": 656,
+   "at": 3529,
+   "text": "\"Sine exceptione,\" without exception, omitted,"
+  },
+  {
+   "chapter": 28,
+   "n": 657,
+   "at": 4344,
+   "text": "\"De hominibus ignotis,\" of persons unknown."
+  },
+  {
+   "chapter": 28,
+   "n": 658,
+   "at": 5584,
+   "text": "\"Mediocris,\" trivial."
+  },
+  {
+   "chapter": 28,
+   "n": 659,
+   "at": 7263,
+   "text": "\"In umbra et extra teli jacturam,\" in the shade, and out of bowshot."
+  },
+  {
+   "chapter": 28,
+   "n": 660,
+   "at": 7602,
+   "text": "\"Pestiferum,\" pestiferous, deadly."
+  },
+  {
+   "chapter": 28,
+   "n": 661,
+   "at": 8275,
+   "text": "\"Omni infamiae genere,\" every kind of infamy."
+  },
+  {
+   "chapter": 28,
+   "n": 662,
+   "at": 8331,
+   "text": "\"Ad inferos,\" to the dead."
+  },
+  {
+   "chapter": 28,
+   "n": 663,
+   "at": 8683,
+   "text": "\"Tristium rerum,\" of gloomy affairs."
+  },
+  {
+   "chapter": 28,
+   "n": 664,
+   "at": 9638,
+   "text": "\"Subinde,\" ever and anon."
+  },
+  {
+   "chapter": 28,
+   "n": 665,
+   "at": 12857,
+   "text": "\"Ad docilitatem,\" to docility."
+  },
+  {
+   "chapter": 28,
+   "n": 666,
+   "at": 12999,
+   "text": "\"Nam quam difficilis et lenta sit dysenteriae curatio,\" for since the cure of dysentery is slow and difficult."
+  },
+  {
+   "chapter": 28,
+   "n": 667,
+   "at": 15881,
+   "text": "\"Fabulati,\" they fabled."
+  },
+  {
+   "chapter": 28,
+   "n": 668,
+   "at": 18323,
+   "text": "\"Oblique... trajecerint,\" they made an indirect passage."
+  },
+  {
+   "chapter": 28,
+   "n": 669,
+   "at": 21453,
+   "text": "\"Fortitudine,\" fortitude."
+  },
+  {
+   "chapter": 28,
+   "n": 670,
+   "at": 22747,
+   "text": "\"Praefectus,\" the praefect."
+  },
+  {
+   "chapter": 28,
+   "n": 671,
+   "at": 22956,
+   "text": "\"Moderatum,\" temper."
+  },
+  {
+   "chapter": 28,
+   "n": 672,
+   "at": 23440,
+   "text": "\"Praefectum praetorio cujus illud officium fuisse ex historiis satis notum est,\" praefect of the praetorium, to whom it is well known from history that office belonged."
+  },
+  {
+   "chapter": 28,
+   "n": 673,
+   "at": 23484,
+   "text": "\"Mausuetudo,\" meekness."
+  },
+  {
+   "chapter": 28,
+   "n": 674,
+   "at": 23982,
+   "text": "\"Exacerbati,\" exasperated."
+  },
+  {
+   "chapter": 28,
+   "n": 675,
+   "at": 24245,
+   "text": "\"Pervicaciae,\" obstinacy and petulance."
+  },
+  {
+   "chapter": 28,
+   "n": 676,
+   "at": 24890,
+   "text": "\"Pessimi incendii faces essent,\" they should be torches to kindle a very bad fire."
+  },
+  {
+   "chapter": 28,
+   "n": 677,
+   "at": 25263,
+   "text": "\"Degeneres,\" degenerate."
+  },
+  {
+   "chapter": 28,
+   "n": 678,
+   "at": 26665,
+   "text": "\"Ita causam suam acturum,\" will so plead his cause."
+  },
+  {
+   "chapter": 28,
+   "n": 679,
+   "at": 28576,
+   "text": "\"Videri poterat,\" might seem."
+  },
+  {
+   "chapter": 28,
+   "n": 680,
+   "at": 29587,
+   "text": "\"Uno tenore,\" without stopping."
+  },
+  {
+   "chapter": 28,
+   "n": 681,
+   "at": 29833,
+   "text": "\"Vicissim,\" in their turn."
+  },
+  {
+   "chapter": 28,
+   "n": 682,
+   "at": 33133,
+   "text": "\"Pariter,\" equally."
+  },
+  {
+   "chapter": 28,
+   "n": 683,
+   "at": 33794,
+   "text": "\"Amarulento,\" bitter."
+  },
+  {
+   "chapter": 28,
+   "n": 684,
+   "at": 34734,
+   "text": "\"In suo conducto,\" in his hired room."
+  },
+  {
+   "chapter": 28,
+   "n": 685,
+   "at": 35467,
+   "text": "\"In diversas partes,\" into different parties."
+  },
+  {
+   "chapter": 28,
+   "n": 686,
+   "at": 42172,
+   "text": "\"Primarii,\" primary."
+  },
+  {
+   "chapter": 28,
+   "n": 687,
+   "at": 43280,
+   "text": "\"Disceptaverunt,\" disputed."
+  },
+  {
+   "chapter": 28,
+   "n": 688,
+   "at": 43781,
+   "text": "\"Bellare necesse est,\" we must of necessity war with."
+  },
+  {
+   "chapter": 28,
+   "n": 689,
+   "at": 44865,
+   "text": "\"Ullis difficultatibus,\" by any difficulties."
+  },
+  {
+   "chapter": 28,
+   "n": 690,
+   "at": 45279,
+   "text": "\"Exules,\" exiles."
+  }
+ ]
+}
