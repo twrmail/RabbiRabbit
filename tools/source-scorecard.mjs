@@ -743,6 +743,27 @@ if (exists(idxDir)) {
   if (indexProblems.length) { console.error('library/commentary-index problems:\n- ' + indexProblems.slice(0, 40).join('\n- ') + (indexProblems.length > 40 ? `\n... and ${indexProblems.length - 40} more` : '')); process.exitCode = 1 }
 }
 
+// ---- Calvin equals CCEL (library/calvin-ccel-gate.json, written by tools/check-calvin-ccel.py) ----
+// The check needs CCEL's 45 files (release asset, see source-originals/ccel-calvin/MANIFEST.json), so it is run by hand and its result is recorded.
+// Here the record is only held to account: it must be bound (sha256) to the Calvin files as they are now, the CCEL files it read must have matched the
+// manifest, and every paragraph that is not exact or near must be on the accepted list with a reason (tools/calvin-ccel-audit/gate-accepted.json).
+const gateFile = path.join(libDir, 'calvin-ccel-gate.json'), gateProblems = []; let gateLine = ''
+if (exists(gateFile)) {
+  const g = readJSON(gateFile)
+  const files = ['commentary', 'commentary-notes'].flatMap(d => { const dir = path.join(libDir, d, 'Calvin'); return exists(dir) ? fs.readdirSync(dir).filter(x => x.endsWith('.json')).map(x => [d + '/Calvin/' + x, path.join(dir, x)]) : [] })
+    .concat(exists(path.join(libDir, 'held')) ? fs.readdirSync(path.join(libDir, 'held')).filter(x => /^calvin-held.*\.json$/.test(x)).map(x => ['held/' + x, path.join(libDir, 'held', x)]) : [])
+  // same order and form as the python tool: sorted by full path, "<folder>/<file> <sha256>" lines
+  const lines = files.map(([n, f]) => [f, n.split('/').slice(-2).join('/') + ' ' + crypto.createHash('sha256').update(fs.readFileSync(f, 'utf8'), 'utf8').digest('hex') + '\n']).sort((a, b) => a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0).map(x => x[1]).join('')
+  const here = crypto.createHash('sha256').update(lines, 'utf8').digest('hex')
+  if (g.libraryHash !== here) gateProblems.push('the recorded CCEL check was run on different Calvin files than the ones in the library now (run tools/check-calvin-ccel.py --write again)')
+  if (!g.ccelFilesMatchManifest) gateProblems.push('the CCEL files it read did not match source-originals/ccel-calvin/MANIFEST.json')
+  if (g.flaggedNotAccepted) gateProblems.push(`${g.flaggedNotAccepted} paragraph(s) differ from CCEL and are not on the accepted list`)
+  if (g.acceptedNoLongerFlagged) gateProblems.push(`${g.acceptedNoLongerFlagged} accepted exception(s) no longer needed`)
+  gateLine = `Calvin vs CCEL (recorded run): ${g.ccelParagraphs} CCEL paragraphs, ${g.ccel.exact} exact, ${g.ccel.near} near, ${g.flaggedTotal} accepted exceptions; ${g.ours.found} of ${g.ours.found + g.ours.extra} of our paragraphs found in CCEL.`
+  console.log(gateLine)
+  if (gateProblems.length) { console.error('library/calvin-ccel-gate.json problems:\n- ' + gateProblems.join('\n- ')); process.exitCode = 1 }
+}
+
 // ---- held material (library/held/*.json): text cut from a source because it is not what that source's chapter should hold ----
 // Checked strictly (a problem stops the run): every item must hash to its own text, ids must be unique, the rule that cut it must exist, and
 // every item that a hold-blocks rule names must be in the patch. It never changes a gate result; it adds an evidence line under gate 3, so

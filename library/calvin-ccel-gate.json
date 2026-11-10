@@ -1,0 +1,1563 @@
+{
+ "schemaVersion": 1,
+ "ccelFilesMatchManifest": true,
+ "libraryHash": "520282b09ab544cbd99c0e2c036fc302a212f6b08314be67aca14d42f6e640ea",
+ "ccelParagraphs": 35081,
+ "ccel": {
+  "exact": 34495,
+  "near": 437,
+  "missing": 144,
+  "partial": 5
+ },
+ "ours": {
+  "found": 10604,
+  "extra": 5
+ },
+ "flaggedTotal": 154,
+ "flaggedAccepted": 154,
+ "flaggedNotAccepted": 0,
+ "acceptedNoLongerFlagged": 0,
+ "movedToAnotherChapter": 1,
+ "flagged": [
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "the translation is located here",
+   "key": "8bc04ff1b58b20bb99a021ff0edd2f690fd8427085dd782cbb0036f226125d21"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 26 1 30 3 5 3 22 10 14 11 31 12 3 12 17 13 15 13 16 17 7 17 8 18 20 18 21 19 5 19 23 19 24 19 37 20 3 20 16 20 17 22 17 22 17 25 25 26 31 19 31 30 32 28 34 7 ",
+   "key": "88a629b1d2480e56f8f0f0e96c1e22c3b6e90e2555c3315f717245fb109b7d50"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.053,
+   "text": "1 12 1 14 3 6 4 22 8 15 9 34 10 21 10 23 12 23 12 51 12 51 12 51 13 21 13 21 22 14 21 14 27 28 14 29 15 1 19 6 19 20 20 5 20 5 21 8 21 8 21 8 22 22 24 22 23 23 ",
+   "key": "57e0204218187b5b139e20d01708ca3db28486514c84326212ea619f03c8b7be"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.08,
+   "text": "1 11 10 1 19 18 23 40 26 26 18 26 18 26 21 26 21 26 24 26 26 26 28 26 31 26 36 26 36",
+   "key": "d8a3624025aef4403ddb085ee579aa8803d316e1a787a119b782795597495ba2"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "12 6 14 14 21 9 23 19 23 23 33 52 33 55",
+   "key": "e38e2bbfad0012650556319522a08ecd3b47b6cc02183756686adb3281849f71"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.028,
+   "text": "1 33 1 44 4 6 7 4 24 5 9 6 5 7 16 8 2 9 3 10 12 10 20 12 5 7 12 12 12 13 12 18 13 5 15 9 16 19 17 16 18 10 15 18 15 18 20 19 19 19 21 23 18 24 15 28 28 11 28 64",
+   "key": "df882624a005e4cbfe0d23f5a27e883a98004402bbf19f7cdc530ee8961daa4c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 16 17 7 15 9 23",
+   "key": "a59b5bc6a822e4cb2de5654fa98052d708cb8a55bb4901051986af045cf0b08c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "6 17 7 21 7 25 13 22 19 24",
+   "key": "63800fbda95131b9bdfc8fa4130687431486e254b45f4f9a055cfca9d7aa5d31"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.071,
+   "text": "3 1 3 13 9 9 14 4 5 15 22 15 22 16 1 16 11 12",
+   "key": "ec9b4574f952da768879feea1cbe1ae4abe3e508c4b7020ffb8a976d1b4f4f00"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.222,
+   "text": "7 8 7 8 7 12 13 7 13 7 13 7 14",
+   "key": "49a7338adf161f959f55da4a53c1c6d5274028338e21c16ee3297f4c00fd01ec"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.071,
+   "text": "8 30 9 11 11 7 11 7 11 26 12 16 19 11 20 23 20 28",
+   "key": "e04955a017e0572902271df12ababc98e9dc6cc54ba91e2dfda31e083ae2852b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.205,
+   "text": "3 5 6 14 7 15 1 15 5 15 29 15 29 15 30 15 32 15 33 15 33 16 2 16 2 16 3 16 5 16 7 16 9 16 9 16 9 16 11 17 1 17 3 17 6 17 6 17 25 18 2 18 8 18 13 18 17 18 17 18 ",
+   "key": "06f9ff8298e30d7f90f3d18a7a2ce9244fe97be1b227ea87042f6f5b0841c324"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 1 6 29 30 7 12 26 5 15 26 6 26 6 7 28 16 28 18 28 18 36 3 36 22 23",
+   "key": "2961f119b31d9304f5a740d5766f91e264540d71fa50b04f58885d52d485a94c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 1 6 2 2 2 2 3 8 4 4",
+   "key": "74b8c171e88d925e02d56a679eb094918d348c7aff38457eb330a91167f0e7d8"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "7 1 12 18 13 4 14 6 26 2 3",
+   "key": "373d92c4c0a4dabe4bd8093d43ab8df8f79f9bc9ffcea304314eac925627c378"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 2 7 7 14 11 7 12 2 12 5 15 1 18 25 26 18 26 19 9 24 3 30 5 33 11 34 16 38 9 39 1 41 1 45 7 45 7 45 12 46 4 7 46 5 48 2 50 13 14 50 23 55 21 65 1 68 5 73 13 ",
+   "key": "aa66e764ac4852a0db2b98c10c2764b27c86a31bf53ae2ecde523fc58195f702"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 34 10 7 18 10 21 30 29 18",
+   "key": "9a0f6594e144dcff68f31d3850b2fa8f254685b221b035c29e65538ba2598361"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "8 11 10 16",
+   "key": "98a3575a6b48875d5d82d0d52641d3edc76a2ea51397f53727ef4d65a04a8e1f"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.128,
+   "text": "1 9 1 9 1 9 1 9 1 10 1 22 1 23 2 3 2 3 2 10 2 11 2 17 3 1 3 12 3 24 3 26 5 1 5 4 5 24 7 3 7 14 7 14 7 14 7 16 7 18 8 1 8 22 9 3 9 6 10 20 10 22 10 22 10 22 10 2",
+   "key": "1cbf29b2a93653fb9d611724e0a0769f6439ac76b3235393288653a2fcd10031"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.047,
+   "text": "1 6 1 17 2 21 2 21 7 4 7 4 7 21 7 22 9 23 24 9 26 10 14 17 5 17 5 22 7 23 5 23 19 23 36 25 11 12 29 10 30 9 30 9 31 34 32 18 33 15 41 5 48 7 48 13 48 29 48 30 4",
+   "key": "6669c2651f8d3e97e65c11f7b88368daf6bc3a96b68eddfe81984c59a8f37fc6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 22 3 22",
+   "key": "be8e205c4579e6cc2d477c0d5b5eb6d83afc7097b14b64accbe8c1d0e9d46a26"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.043,
+   "text": "4 16 13 9 18 20 20 22 34 23 34 23 36 25 37 11 12 37 16 37 24 37 24 47 1 47 1",
+   "key": "ad2a5ad7736d661280b3a869e2e67d2f9ded48abc396cd72ee80942b744f98e7"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.375,
+   "text": "2 44 7 10 7 14 7 27 9 24 9 27",
+   "key": "59e2e2816e170302a45bc4ab233a856b09a9f74b98609174a82e2c837a2438e9"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.053,
+   "text": "2 5 2 13 2 18 2 19 20 2 23 3 4 3 5 6 6 13 11 14 2 14 9",
+   "key": "e90fe6afb40f0e9b4f7976088d690e75767f4cfddf76d3c7c20452001fb5a746"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 31 2 32 2 32",
+   "key": "4942e59b2c4d5e0227f5a27ffda0a2c9dbcf25cfe8de4c1fe53b6ac0fec63a03"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.2,
+   "text": "2 4 5 3 11 5 11 5 18 5 20 5 21 6 11 9 11 9 11",
+   "key": "05bbd9410a39df03f94bec64fd9cf4a053b720f0b6b91b0d5014fc466cdf0a55"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 3 10",
+   "key": "a2a08a814a9da1e82c27a53234a9d31525d9789db5099ae69d5fdd10fb36a50b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 16 5 10 6 7 8 7 8",
+   "key": "d8dad37648fc48a236a814a375abee6f9d21f536a7ee63fd0597515150dda39e"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 16 2 2 2 2",
+   "key": "1ad181bcd88c64eb0ac22bec2c8aad059f787917ef92578b7512986cfafe8718"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 5 1 7",
+   "key": "48c961266651e523395b28c6ae8e7df91897d2bd4ed3ecc6883812fba0fe3264"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 8 2 8 3 2 6 12",
+   "key": "7d0d5395c2db2265faf26a8a65199cfe12138bbd811dc6e0929988f719addb5a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 10 4 3 4 4",
+   "key": "789b12cc9d8e234c62ee0a51a1b2229397d3ed802e9eac82745abf633fa131e6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 5 3 2 4 15 4 16 5 10 11 5 45 5 45 6 21 7 2 9 13 10 5 10 28 11 5 11 28 13 25 13 31 32 15 14 21 42 21 44 23 23 25 32 28 18",
+   "key": "df6628707dd39cb2adb0473b79be8c72f4435839398c6a176219c9027f013210"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "4 32 6 3 12 10 16 10 16 15",
+   "key": "55597522d7837c9e48ccbbbab7aa2ef62656a9dd598b4767749a604c04b22d06"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.026,
+   "text": "1 33 1 33 1 74 75 2 46 2 52 6 25 10 16 10 16 10 20 11 17 12 32 12 47 15 7 15 10 16 29 21 19 21 19 22 25 22 36 23 30 24 47",
+   "key": "7951a30b51848f3e6000e36f525db08bd5a19949d3d2e76a9edcc8f02b76d82a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.055,
+   "text": "1 16 1 16 1 18 1 32 2 25 3 14 3 16 17 3 29 4 24 5 24 6 44 6 44 7 37 38 10 16 10 27 10 28 11 52 12 31 12 39 12 39 40 12 41 12 41 14 17 14 30 15 1 15 2 15 2 15 6 ",
+   "key": "43991333c7b5213c4ff8bf9508725033c43b454e2f51c2c3eca3f89b4278dade"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.038,
+   "text": "2 3 2 3 3 22 5 36 10 17 13 5 13 48 14 1 17 2 17 10 17 28 18 4 18 19 28 25 28 27",
+   "key": "35d7074a96b8a220040f497d73877731ad06af34819026f802353720f075154a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.035,
+   "text": "1 17 1 28 3 19 5 1 5 3 6 4 6 9 6 17 8 25 8 28 8 30 8 31 9 22 23 9 25 9 27 9 28 9 28 9 29 9 33 11 8 11 24 11 25 11 29 12 20 14 17 15 6 15 16 15 16 15 16 16 26",
+   "key": "57f272f3cbc6ebf5d3bba852ea314d57368f7cf4144d3980cf6f14bb4c85cc0d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 24 1 30 5 5 8 4 11 3 11 32 15 36",
+   "key": "0e7f0ddc71039bfc5b26c406b69618e0f6158715f738f4ca6e133e6bf54bbdd6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.077,
+   "text": "1 20 2 15 16 2 16 2 16 4 17 5 18 11 2 12 5",
+   "key": "b5b1f1604f3468968faebe369e99c09564acbec160b79795f8a9096189e9d31d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 8 9 2 8 3 23 3 24 4 3 4 4 5 22 23 6 14",
+   "key": "08c441784d80cb1c10de3718d20f1c344ddd27408f9b7310ee33f95bb4ac63fd"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.136,
+   "text": "1 4 1 10 1 10 1 10 1 17 2 2 2 19 4 7 4 14 5 14 5 29 6 12 6 17",
+   "key": "0bb8bd461c7e261b641d99b3cd0dfa2721326fcba1686b0fd03acc4d72f10a77"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 9 1 15 1 20 2 3 2 23 2 23 3 3 3 15 3 15 3 15",
+   "key": "9724450fc0d8df311aaa17f0ed9f19d7bbdf69e3c82af292c085cb92b78fd4bc"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 8 3 16 3 16",
+   "key": "eabeb03d8bde80d9cbd52cf22f350289898093476777e430142b953de92764dd"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 7 2 25",
+   "key": "d43e69a9b21747959665a2c952cdc11c32481c91fcffe82c7370e93a0ab6f888"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.045,
+   "text": "1 5 2 13 2 14 2 14 4 12 4 13 5 9 9 28 10 31 11 27 12 29 13 9 13 15",
+   "key": "483a1e40cfcc141f40f16530f83b61acd27b7e746e6bc8c0e92c50fb307f696d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.25,
+   "text": "1 17 2 13 2 13 4 6 4 6 4 13",
+   "key": "5e15d8b019458027b4febe3f06daa13a684b9f5c970e6c305e1f83471a33a255"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.125,
+   "text": "2 4 3 14 4 17 5 5 5 5 5 6",
+   "key": "4681af4e66d55d51c612316554ddf51799abdc3a2e200f0aa30f4563ace85e13"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 26 1 30 3 5 3 22 10 14 11 31 12 3 12 17 13 15 13 16 17 7 17 8 18 20 18 21 19 5 19 23 19 24 19 37 20 3 20 16 20 17 22 17 22 17 25 25 25 26 31 19 31 30 32 28 34",
+   "key": "04a75209bc3140793a13cd1ff3e6907ac5d21fe4839031f6ebbb5db9f7535837"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.063,
+   "text": "1 12 1 14 3 6 4 22 8 15 9 34 10 21 10 23 12 23 12 51 12 51 12 51 13 21 13 21 13 22 14 21 14 27 14 28 14 29 15 1 19 6 19 20 20 5 20 5 21 8 21 8 21 8 22 22 24 22 ",
+   "key": "4b88bd8d36451408663c38589edd46b75f0c425e3512e8a4b346defc6ffab1bf"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.08,
+   "text": "1 11 10 1 19 18 23 40 26 26 18 26 18 26 21 26 21 26 24 26 26 26 28 26 31 26 36 26 36",
+   "key": "d8a3624025aef4403ddb085ee579aa8803d316e1a787a119b782795597495ba2"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "12 6 14 14 21 9 23 19 23 23 33 52 33 55",
+   "key": "e38e2bbfad0012650556319522a08ecd3b47b6cc02183756686adb3281849f71"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.079,
+   "text": "1 33 1 44 4 6 4 7 4 24 5 9 6 5 7 16 8 2 9 3 10 12 10 20 12 5 12 6 12 7 12 12 12 13 12 18 13 5 15 9 16 19 17 16 18 10 15 18 15 18 20 19 19 19 21 23 18 24 15 28 2",
+   "key": "9d4adfe28ab7e18a9f79d66c539841c9245550a05c0f8763a470adc1cb35fc0c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 16 3 17 7 15 9 23",
+   "key": "968ec9f6b5374122a47b38e6adcf7d32c210637b61a6e98e44136d5aac15dcb3"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "6 17 7 21 7 25 13 22 19 24",
+   "key": "63800fbda95131b9bdfc8fa4130687431486e254b45f4f9a055cfca9d7aa5d31"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.062,
+   "text": "3 1 3 13 9 9 14 4 14 5 15 22 15 22 16 1 16 11 16 12",
+   "key": "c5ff8ad7a75af46e198edd1bc320f7270aa1c4d815863dde00271149cfa56c33"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.4,
+   "text": "7 8 7 8 7 12 7 13 7 13 7 13 7 14",
+   "key": "afb28e1903ddf8d739f0dd876988b07b9a50822d6805ea563422aa0943485b3b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.071,
+   "text": "8 30 9 11 11 7 11 7 11 26 12 16 19 11 20 23 20 28",
+   "key": "e04955a017e0572902271df12ababc98e9dc6cc54ba91e2dfda31e083ae2852b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.203,
+   "text": "3 5 3 6 14 7 15 1 15 5 15 29 15 29 15 30 15 32 15 33 15 33 16 2 16 2 16 3 16 5 16 7 16 9 16 9 16 9 16 11 17 1 17 3 17 6 17 6 17 25 18 2 18 8 18 13 18 17 18 17 1",
+   "key": "df33d315a91825274b647f89303db08eca4115c71ed5fd2fefbe2028b6378beb"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 1 6 29 6 30 7 12 26 5 15 26 6 26 6 26 7 28 16 28 18 28 18 36 3 36 22 36 23",
+   "key": "aa6a4427a3039604dde026bc04b2617ac8c52b18001fef74f30703a593f808ef"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 1 6 2 2 2 2 3 8 4 4",
+   "key": "74b8c171e88d925e02d56a679eb094918d348c7aff38457eb330a91167f0e7d8"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "7 1 12 18 13 4 14 6 26 2 26 3",
+   "key": "ef68458b7cfa650a969afe0bff7edbb89585f1e925a76d652c6ecf4d938d11b7"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 2 7 7 14 11 7 12 2 12 5 15 1 18 25 18 26 18 26 19 9 24 3 30 5 33 11 34 16 38 9 39 1 41 1 45 7 45 7 45 12 46 4 7 46 5 48 2 50 13 50 14 50 23 55 21 65 1 68 5 ",
+   "key": "80832697259ec3b09e63e94e1186a0e49679496c284e3e36eb1c7174f6ea2a03"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 34 10 7 18 10 21 30 29 18",
+   "key": "9a0f6594e144dcff68f31d3850b2fa8f254685b221b035c29e65538ba2598361"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "8 11 10 16",
+   "key": "98a3575a6b48875d5d82d0d52641d3edc76a2ea51397f53727ef4d65a04a8e1f"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.127,
+   "text": "1 9 1 9 1 9 1 9 1 10 1 22 1 23 2 3 2 3 2 10 2 11 2 17 3 1 3 12 3 24 3 26 5 1 5 4 5 24 7 3 7 14 7 14 7 14 7 16 7 18 8 1 8 22 9 3 9 6 10 20 10 22 10 22 10 22 10 2",
+   "key": "d4108de09aeb28de711f9aca16abd4a475c0132e4cee2c0cb0fc0ade7c08a220"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.03,
+   "text": "1 6 1 17 2 21 2 21 7 4 7 4 7 21 7 22 9 23 9 24 9 26 10 14 17 5 17 5 22 7 23 5 23 19 23 36 25 11 25 12 29 10 30 9 30 9 31 34 32 18 33 15 41 5 48 7 48 13 48 29 48",
+   "key": "f7a7239c6620f26753602fefcab410bddbed904c94673343e7cd7bfbf5109ddd"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 22 3 22",
+   "key": "be8e205c4579e6cc2d477c0d5b5eb6d83afc7097b14b64accbe8c1d0e9d46a26"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.042,
+   "text": "4 16 13 9 18 20 20 22 34 23 34 23 36 25 37 11 37 12 37 16 37 24 37 24 47 1 47 1",
+   "key": "e4db747adf2266b9b76d8c9e9bd41125c50c99efbfaaa30f2064973d0c5fc475"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.375,
+   "text": "2 44 7 10 7 14 7 27 9 24 9 27",
+   "key": "59e2e2816e170302a45bc4ab233a856b09a9f74b98609174a82e2c837a2438e9"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.05,
+   "text": "2 5 2 13 2 18 2 19 2 20 2 23 3 4 3 5 6 6 13 11 14 2 14 9",
+   "key": "795f3759c9157a991f15a80847f4fd44840085fe8b3e9f5ef028687cc3c70bad"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 31 2 32 2 32",
+   "key": "4942e59b2c4d5e0227f5a27ffda0a2c9dbcf25cfe8de4c1fe53b6ac0fec63a03"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.188,
+   "text": "2 4 2 5 3 11 5 11 5 18 5 20 5 21 6 11 9 11 9 11",
+   "key": "6be2799fd08e778ddf878571fe88cf8665ed03972ac80bb576bdc3ffd5cbdf8e"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 3 10",
+   "key": "a2a08a814a9da1e82c27a53234a9d31525d9789db5099ae69d5fdd10fb36a50b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.167,
+   "text": "1 16 5 10 6 7 6 8 7 8",
+   "key": "318b499698ed0135f2e4e022a33bb7d9e3122e398aa363bc82f70d65b57e662f"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 16 2 2 2 2",
+   "key": "1ad181bcd88c64eb0ac22bec2c8aad059f787917ef92578b7512986cfafe8718"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 5 1 7",
+   "key": "48c961266651e523395b28c6ae8e7df91897d2bd4ed3ecc6883812fba0fe3264"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 8 2 8 3 2 6 12",
+   "key": "7d0d5395c2db2265faf26a8a65199cfe12138bbd811dc6e0929988f719addb5a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 10 4 3 4 4",
+   "key": "789b12cc9d8e234c62ee0a51a1b2229397d3ed802e9eac82745abf633fa131e6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.023,
+   "text": "1 5 3 2 4 15 4 16 5 10 5 11 5 45 5 45 6 21 7 2 9 13 10 5 10 28 11 5 11 28 13 25 13 31 13 32 15 14 21 42 21 44 23 23 25 32 28 18",
+   "key": "41722e6543e21d48303b9e2af4297b07d22f6dc329b256f338d9c5f0802d60b1"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "4 32 6 3 12 10 16 10 16 15",
+   "key": "55597522d7837c9e48ccbbbab7aa2ef62656a9dd598b4767749a604c04b22d06"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.025,
+   "text": "1 33 1 33 1 74 1 75 2 46 2 52 6 25 10 16 10 16 10 20 11 17 12 32 12 47 15 7 15 10 16 29 21 19 21 19 22 25 22 36 23 30 24 47",
+   "key": "a694ddaf1f28cc4c555ef355136cd9c9bd94246ac83e60a483f9401a4dbb672b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.141,
+   "text": "1 16 1 16 1 18 1 32 2 25 3 14 3 16 3 17 3 29 4 24 5 24 6 44 6 44 7 37 7 38 10 16 10 27 10 28 11 52 12 31 12 39 12 39 12 40 12 41 12 41 14 17 14 30 15 1 15 2 15 ",
+   "key": "a35f2157499dceb455332b14aca59db771a744809ff64ce85821270e6a671f6d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.038,
+   "text": "2 3 2 3 3 22 5 36 10 17 13 5 13 48 14 1 17 2 17 10 17 28 18 4 18 19 28 25 28 27",
+   "key": "35d7074a96b8a220040f497d73877731ad06af34819026f802353720f075154a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.034,
+   "text": "1 17 1 28 3 19 5 1 5 3 6 4 6 9 6 17 8 25 8 28 8 30 8 31 9 22 9 23 9 25 9 27 9 28 9 28 9 29 9 33 11 8 11 24 11 25 11 29 12 20 14 17 15 6 15 16 15 16 15 16 16 26",
+   "key": "7f21a9acb29df08372c2583a291fc3a9ed2ee4d4c115f2cb40d938b2828c7b31"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 24 1 30 5 5 8 4 11 3 11 32 15 36",
+   "key": "0e7f0ddc71039bfc5b26c406b69618e0f6158715f738f4ca6e133e6bf54bbdd6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.286,
+   "text": "1 20 2 15 2 16 2 16 2 16 4 17 5 18 11 2 12 5",
+   "key": "23907d3c359c26736255b6ede7fb36eab365d942496435b6c87644ecfc4cbf2e"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.062,
+   "text": "1 8 1 9 2 8 3 23 3 24 4 3 4 4 5 22 5 23 6 14",
+   "key": "de6f9c45c13306779666117517ad1f95e740576b8a5f5209bc7a4504f9d49104"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.136,
+   "text": "1 4 1 10 1 10 1 10 1 17 2 2 2 19 4 7 4 14 5 14 5 29 6 12 6 17",
+   "key": "0bb8bd461c7e261b641d99b3cd0dfa2721326fcba1686b0fd03acc4d72f10a77"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 9 1 15 1 20 2 3 2 23 2 23 3 3 3 15 3 15 3 15",
+   "key": "9724450fc0d8df311aaa17f0ed9f19d7bbdf69e3c82af292c085cb92b78fd4bc"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "5 2 5 3",
+   "key": "6bf5e291f071d5f6e2d71741e79a34dc4c73bd741cb2e97c98cd8eae2dac9f53"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 8 3 16 3 16",
+   "key": "eabeb03d8bde80d9cbd52cf22f350289898093476777e430142b953de92764dd"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 7 2 25",
+   "key": "d43e69a9b21747959665a2c952cdc11c32481c91fcffe82c7370e93a0ab6f888"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.045,
+   "text": "1 5 2 13 2 14 2 14 4 12 4 13 5 9 9 28 10 31 11 27 12 29 13 9 13 15",
+   "key": "483a1e40cfcc141f40f16530f83b61acd27b7e746e6bc8c0e92c50fb307f696d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.25,
+   "text": "1 17 2 13 2 13 4 6 4 6 4 13",
+   "key": "5e15d8b019458027b4febe3f06daa13a684b9f5c970e6c305e1f83471a33a255"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.125,
+   "text": "2 4 3 14 4 17 5 5 5 5 5 6",
+   "key": "4681af4e66d55d51c612316554ddf51799abdc3a2e200f0aa30f4563ace85e13"
+  },
+  {
+   "side": "ccel",
+   "kind": "partial",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.726,
+   "text": "1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1 26 1 27 1 28 1 29 1 30 1 31 2 1 2 2 2 3 2 ",
+   "key": "2f80bdf08dc0a9f0a75bba2db02d11a38b87122e6a87a152ecd0f0d940b728c3"
+  },
+  {
+   "side": "ccel",
+   "kind": "partial",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.726,
+   "text": "1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1 26 1 27 1 28 1 29 1 30 1 31 2 1 2 2 2 3 2 ",
+   "key": "2f80bdf08dc0a9f0a75bba2db02d11a38b87122e6a87a152ecd0f0d940b728c3"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 26 1 30 3 5 3 22 10 14 11 31 12 3 12 17 13 15 13 16 17 7 17 8 18 20 18 21 19 5 19 23 19 24 19 37 20 3 20 16 20 17 22 17 22 17 25 25 26 31 19 31 30 32 28 34 7 ",
+   "key": "88a629b1d2480e56f8f0f0e96c1e22c3b6e90e2555c3315f717245fb109b7d50"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.053,
+   "text": "1 12 1 14 3 6 4 22 8 15 9 34 10 21 10 23 12 23 12 51 12 51 12 51 13 21 13 21 22 14 21 14 27 28 14 29 15 1 19 6 19 20 20 5 20 5 21 8 21 8 21 8 22 22 24 22 23 23 ",
+   "key": "57e0204218187b5b139e20d01708ca3db28486514c84326212ea619f03c8b7be"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.08,
+   "text": "1 11 10 1 19 18 23 40 26 26 18 26 18 26 21 26 21 26 24 26 26 26 28 26 31 26 36 26 36",
+   "key": "d8a3624025aef4403ddb085ee579aa8803d316e1a787a119b782795597495ba2"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "12 6 14 14 21 9 23 19 23 23 33 52 33 55",
+   "key": "e38e2bbfad0012650556319522a08ecd3b47b6cc02183756686adb3281849f71"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.028,
+   "text": "1 33 1 44 4 6 7 4 24 5 9 6 5 7 16 8 2 9 3 10 12 10 20 12 5 7 12 12 12 13 12 18 13 5 15 9 16 19 17 16 18 10 15 18 15 18 20 19 19 19 21 23 18 24 15 28 28 11 28 64",
+   "key": "df882624a005e4cbfe0d23f5a27e883a98004402bbf19f7cdc530ee8961daa4c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 16 17 7 15 9 23",
+   "key": "a59b5bc6a822e4cb2de5654fa98052d708cb8a55bb4901051986af045cf0b08c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "6 17 7 21 7 25 13 22 19 24",
+   "key": "63800fbda95131b9bdfc8fa4130687431486e254b45f4f9a055cfca9d7aa5d31"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.071,
+   "text": "3 1 3 13 9 9 14 4 5 15 22 15 22 16 1 16 11 12",
+   "key": "ec9b4574f952da768879feea1cbe1ae4abe3e508c4b7020ffb8a976d1b4f4f00"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.222,
+   "text": "7 8 7 8 7 12 13 7 13 7 13 7 14",
+   "key": "49a7338adf161f959f55da4a53c1c6d5274028338e21c16ee3297f4c00fd01ec"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.071,
+   "text": "8 30 9 11 11 7 11 7 11 26 12 16 19 11 20 23 20 28",
+   "key": "e04955a017e0572902271df12ababc98e9dc6cc54ba91e2dfda31e083ae2852b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.205,
+   "text": "3 5 6 14 7 15 1 15 5 15 29 15 29 15 30 15 32 15 33 15 33 16 2 16 2 16 3 16 5 16 7 16 9 16 9 16 9 16 11 17 1 17 3 17 6 17 6 17 25 18 2 18 8 18 13 18 17 18 17 18 ",
+   "key": "06f9ff8298e30d7f90f3d18a7a2ce9244fe97be1b227ea87042f6f5b0841c324"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 1 6 29 30 7 12 26 5 15 26 6 26 6 7 28 16 28 18 28 18 36 3 36 22 23",
+   "key": "2961f119b31d9304f5a740d5766f91e264540d71fa50b04f58885d52d485a94c"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 1 6 2 2 2 2 3 8 4 4",
+   "key": "74b8c171e88d925e02d56a679eb094918d348c7aff38457eb330a91167f0e7d8"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "7 1 12 18 13 4 14 6 26 2 3",
+   "key": "373d92c4c0a4dabe4bd8093d43ab8df8f79f9bc9ffcea304314eac925627c378"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 2 7 7 14 11 7 12 2 12 5 15 1 18 25 26 18 26 19 9 24 3 30 5 33 11 34 16 38 9 39 1 41 1 45 7 45 7 45 12 46 4 7 46 5 48 2 50 13 14 50 23 55 21 65 1 68 5 73 13 ",
+   "key": "aa66e764ac4852a0db2b98c10c2764b27c86a31bf53ae2ecde523fc58195f702"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "3 34 10 7 18 10 21 30 29 18",
+   "key": "9a0f6594e144dcff68f31d3850b2fa8f254685b221b035c29e65538ba2598361"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "8 11 10 16",
+   "key": "98a3575a6b48875d5d82d0d52641d3edc76a2ea51397f53727ef4d65a04a8e1f"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.128,
+   "text": "1 9 1 9 1 9 1 9 1 10 1 22 1 23 2 3 2 3 2 10 2 11 2 17 3 1 3 12 3 24 3 26 5 1 5 4 5 24 7 3 7 14 7 14 7 14 7 16 7 18 8 1 8 22 9 3 9 6 10 20 10 22 10 22 10 22 10 2",
+   "key": "1cbf29b2a93653fb9d611724e0a0769f6439ac76b3235393288653a2fcd10031"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.047,
+   "text": "1 6 1 17 2 21 2 21 7 4 7 4 7 21 7 22 9 23 24 9 26 10 14 17 5 17 5 22 7 23 5 23 19 23 36 25 11 12 29 10 30 9 30 9 31 34 32 18 33 15 41 5 48 7 48 13 48 29 48 30 4",
+   "key": "6669c2651f8d3e97e65c11f7b88368daf6bc3a96b68eddfe81984c59a8f37fc6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 22 3 22",
+   "key": "be8e205c4579e6cc2d477c0d5b5eb6d83afc7097b14b64accbe8c1d0e9d46a26"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.043,
+   "text": "4 16 13 9 18 20 20 22 34 23 34 23 36 25 37 11 12 37 16 37 24 37 24 47 1 47 1",
+   "key": "ad2a5ad7736d661280b3a869e2e67d2f9ded48abc396cd72ee80942b744f98e7"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.375,
+   "text": "2 44 7 10 7 14 7 27 9 24 9 27",
+   "key": "59e2e2816e170302a45bc4ab233a856b09a9f74b98609174a82e2c837a2438e9"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.053,
+   "text": "2 5 2 13 2 18 2 19 20 2 23 3 4 3 5 6 6 13 11 14 2 14 9",
+   "key": "e90fe6afb40f0e9b4f7976088d690e75767f4cfddf76d3c7c20452001fb5a746"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 31 2 32 2 32",
+   "key": "4942e59b2c4d5e0227f5a27ffda0a2c9dbcf25cfe8de4c1fe53b6ac0fec63a03"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.2,
+   "text": "2 4 5 3 11 5 11 5 18 5 20 5 21 6 11 9 11 9 11",
+   "key": "05bbd9410a39df03f94bec64fd9cf4a053b720f0b6b91b0d5014fc466cdf0a55"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 2 3 10",
+   "key": "a2a08a814a9da1e82c27a53234a9d31525d9789db5099ae69d5fdd10fb36a50b"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 16 5 10 6 7 8 7 8",
+   "key": "d8dad37648fc48a236a814a375abee6f9d21f536a7ee63fd0597515150dda39e"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 16 2 2 2 2",
+   "key": "1ad181bcd88c64eb0ac22bec2c8aad059f787917ef92578b7512986cfafe8718"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 5 1 7",
+   "key": "48c961266651e523395b28c6ae8e7df91897d2bd4ed3ecc6883812fba0fe3264"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 8 2 8 3 2 6 12",
+   "key": "7d0d5395c2db2265faf26a8a65199cfe12138bbd811dc6e0929988f719addb5a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 10 4 3 4 4",
+   "key": "789b12cc9d8e234c62ee0a51a1b2229397d3ed802e9eac82745abf633fa131e6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 5 3 2 4 15 4 16 5 10 11 5 45 5 45 6 21 7 2 9 13 10 5 10 28 11 5 11 28 13 25 13 31 32 15 14 21 42 21 44 23 23 25 32 28 18",
+   "key": "df6628707dd39cb2adb0473b79be8c72f4435839398c6a176219c9027f013210"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "4 32 6 3 12 10 16 10 16 15",
+   "key": "55597522d7837c9e48ccbbbab7aa2ef62656a9dd598b4767749a604c04b22d06"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.026,
+   "text": "1 33 1 33 1 74 75 2 46 2 52 6 25 10 16 10 16 10 20 11 17 12 32 12 47 15 7 15 10 16 29 21 19 21 19 22 25 22 36 23 30 24 47",
+   "key": "7951a30b51848f3e6000e36f525db08bd5a19949d3d2e76a9edcc8f02b76d82a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.055,
+   "text": "1 16 1 16 1 18 1 32 2 25 3 14 3 16 17 3 29 4 24 5 24 6 44 6 44 7 37 38 10 16 10 27 10 28 11 52 12 31 12 39 12 39 40 12 41 12 41 14 17 14 30 15 1 15 2 15 2 15 6 ",
+   "key": "43991333c7b5213c4ff8bf9508725033c43b454e2f51c2c3eca3f89b4278dade"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.038,
+   "text": "2 3 2 3 3 22 5 36 10 17 13 5 13 48 14 1 17 2 17 10 17 28 18 4 18 19 28 25 28 27",
+   "key": "35d7074a96b8a220040f497d73877731ad06af34819026f802353720f075154a"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.035,
+   "text": "1 17 1 28 3 19 5 1 5 3 6 4 6 9 6 17 8 25 8 28 8 30 8 31 9 22 23 9 25 9 27 9 28 9 28 9 29 9 33 11 8 11 24 11 25 11 29 12 20 14 17 15 6 15 16 15 16 15 16 16 26",
+   "key": "57f272f3cbc6ebf5d3bba852ea314d57368f7cf4144d3980cf6f14bb4c85cc0d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 24 1 30 5 5 8 4 11 3 11 32 15 36",
+   "key": "0e7f0ddc71039bfc5b26c406b69618e0f6158715f738f4ca6e133e6bf54bbdd6"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.077,
+   "text": "1 20 2 15 16 2 16 2 16 4 17 5 18 11 2 12 5",
+   "key": "b5b1f1604f3468968faebe369e99c09564acbec160b79795f8a9096189e9d31d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 8 9 2 8 3 23 3 24 4 3 4 4 5 22 23 6 14",
+   "key": "08c441784d80cb1c10de3718d20f1c344ddd27408f9b7310ee33f95bb4ac63fd"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.136,
+   "text": "1 4 1 10 1 10 1 10 1 17 2 2 2 19 4 7 4 14 5 14 5 29 6 12 6 17",
+   "key": "0bb8bd461c7e261b641d99b3cd0dfa2721326fcba1686b0fd03acc4d72f10a77"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 9 1 15 1 20 2 3 2 23 2 23 3 3 3 15 3 15 3 15",
+   "key": "9724450fc0d8df311aaa17f0ed9f19d7bbdf69e3c82af292c085cb92b78fd4bc"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "2 8 3 16 3 16",
+   "key": "eabeb03d8bde80d9cbd52cf22f350289898093476777e430142b953de92764dd"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.0,
+   "text": "1 7 2 25",
+   "key": "d43e69a9b21747959665a2c952cdc11c32481c91fcffe82c7370e93a0ab6f888"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.045,
+   "text": "1 5 2 13 2 14 2 14 4 12 4 13 5 9 9 28 10 31 11 27 12 29 13 9 13 15",
+   "key": "483a1e40cfcc141f40f16530f83b61acd27b7e746e6bc8c0e92c50fb307f696d"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.25,
+   "text": "1 17 2 13 2 13 4 6 4 6 4 13",
+   "key": "5e15d8b019458027b4febe3f06daa13a684b9f5c970e6c305e1f83471a33a255"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.125,
+   "text": "2 4 3 14 4 17 5 5 5 5 5 6",
+   "key": "4681af4e66d55d51c612316554ddf51799abdc3a2e200f0aa30f4563ace85e13"
+  },
+  {
+   "side": "ccel",
+   "kind": "partial",
+   "book": "ISA",
+   "chapter": 16,
+   "ref": "Isa.16.14",
+   "coverage": 0.726,
+   "text": "1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1 26 1 27 1 28 1 29 1 30 1 31 2 1 2 2 2 3 2 ",
+   "key": "2f80bdf08dc0a9f0a75bba2db02d11a38b87122e6a87a152ecd0f0d940b728c3"
+  },
+  {
+   "side": "ccel",
+   "kind": "partial",
+   "book": "JER",
+   "chapter": 4,
+   "ref": "Jer.4.30",
+   "coverage": 0.792,
+   "text": "these parts follow one another and the principal verb is found in these words in vain dost thou adorn thyself and the particle כיis to be rendered though",
+   "key": "75e8e954789609dfcdd54b0b2c667bd6d6c278795e03a7079056ae9e2b0b9d09"
+  },
+  {
+   "side": "ccel",
+   "kind": "partial",
+   "book": "ACT",
+   "chapter": 14,
+   "ref": "Acts.14.14",
+   "coverage": 0.842,
+   "text": "the zeal of thine house hath eaten me up and the rebukes of them that rebuked thee fell on me psalms 69 10",
+   "key": "46c6216baa9486142dfdb8b44946106f5535342f3e7d1872f249102b0743d5b8"
+  },
+  {
+   "side": "ccel",
+   "kind": "missing",
+   "book": "1CO",
+   "chapter": 16,
+   "ref": "1Cor.16.22",
+   "coverage": 0.0,
+   "text": "end of the commentaries on the first epistle",
+   "key": "d2eec3d5828a72b890c4ce7ee4a87650e68822ea6328ba87a45d03864daf604e"
+  },
+  {
+   "side": "ours",
+   "kind": "extra",
+   "book": "ACT",
+   "chapter": 14,
+   "ref": "",
+   "coverage": 0.842,
+   "text": "the zeal of thine house hath eaten me up and the rebukes of them that rebuked thee fell on me psalm 69 10",
+   "key": "f1a65831a99a26a1b34f32ca88dd5a3a8b0f89abf968c613ac02f283b1053675"
+  },
+  {
+   "side": "ours",
+   "kind": "extra",
+   "book": "ISA",
+   "chapter": 5,
+   "ref": "",
+   "coverage": 0.812,
+   "text": "riseth that he may go to his work and may be engaged in business till the evening psalm 104 23",
+   "key": "23ccc1908b8f9522baa0d3fc8f3102029585e536e02fd28387e9bebcd3df29cf"
+  },
+  {
+   "side": "ours",
+   "kind": "extra",
+   "book": "ISA",
+   "chapter": 10,
+   "ref": "",
+   "coverage": 0.769,
+   "text": "and does not permit his glory to be given to another isaiah 42 8 isaiah 48 11",
+   "key": "1d3f728b35b5144c27c335d2173a3bf98ef367521b98780395540e81d2d01459"
+  },
+  {
+   "side": "ours",
+   "kind": "extra",
+   "book": "ISA",
+   "chapter": 21,
+   "ref": "",
+   "coverage": 0.849,
+   "text": "out of seir mount seir as we learn from the book of genesis was a mountain of the edomites genesis 14 6 genesis 32 3 genesis 36 8 9 under the name of this mount",
+   "key": "8899e96559c102312f7548725de94898f11fe05592aa6f1145e61966e6dd7fe1"
+  },
+  {
+   "side": "ours",
+   "kind": "extra",
+   "book": "ISA",
+   "chapter": 41,
+   "ref": "",
+   "coverage": 0.0,
+   "text": "aio to aeacida romanos vincere posse",
+   "key": "ff6ec46fae1360e70cd68522c68ec3cc2a2946d0d9a55fccefd9799d0ac2cd19"
+  }
+ ]
+}
