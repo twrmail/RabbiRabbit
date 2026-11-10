@@ -112,6 +112,9 @@ const CASES = [
   { name: 'an editors note is deleted from the notes file', run: 'scorecard', damage: e => e.json('library/commentary-notes/Calvin/ISA.json', d => { d.notes.splice(5, 1) }), want: /^exit/ },
   { name: 'Ezekiel chapter 21 text is changed in the notes file', run: 'scorecard', damage: e => e.json('library/commentary-notes/Calvin/EZK.json', d => { d.chapterMatter[0].text += ' x' }), want: /^exit/ },
   { name: 'a footnote marker comes back into an Acts chapter', run: 'apply', damage: e => e.chapter(sk + 'Calvin/ACT.json', 3, c => { c.commentary = c.commentary.replace('the', 'the[7]') }), want: /^exit/ },
+  { name: 'a section offset in the Calvin verse index is moved', run: 'scorecard', damage: e => e.json('library/commentary-index/Calvin/GEN.json', d => { d.chapters[0].sections[1].start += 2 }), want: /^exit/ },
+  { name: 'a Calvin chapter changes after its verse index was built', run: 'scorecard', damage: e => e.chapter(sk + 'Calvin/GEN.json', 2, c => { c.commentary = flip(c.commentary) }), want: /^exit|calvin gate 4/ },
+  { name: 'a section is dropped from the Calvin verse index', run: 'scorecard', damage: e => e.json('library/commentary-index/Calvin/JHN.json', d => { d.chapters[2].sections.splice(3, 1) }), want: /^exit/ },
   { name: 'a scan exception is left behind after its finding is gone', run: 'scorecard', damage: e => e.json('library/scan-exceptions.json', d => { d.exceptions.push({ source: 'mhc', book: 'GEN', chapter: 1, check: 'tail-head', reason: 'test' }) }), want: /^exit/ }
 ]
 
