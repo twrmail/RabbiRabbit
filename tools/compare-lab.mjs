@@ -24,10 +24,18 @@ const words = t => norm(t).split(' ').filter(Boolean)
 function shingles(ws, n = 4) { const s = new Set(); for (let i = 0; i + n <= ws.length; i++) s.add(ws.slice(i, i + n).join(' ')); return s }
 
 async function run(url, body) {
-  const t0 = Date.now()
-  const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
-  const text = await res.text()
-  return { status: res.status, ms: Date.now() - t0, text, version: res.headers.get('x-worker-version') || 'NOT EXPOSED' }
+  let last = null
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const t0 = Date.now()
+    const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+    const text = await res.text()
+    last = { status: res.status, ms: Date.now() - t0, text, attempts: attempt, version: res.headers.get('x-worker-version') || 'NOT EXPOSED' }
+    const failed = res.status !== 200 || /^\s*<!DOCTYPE|^\s*<html/i.test(text) || text.length < 800
+    if (!failed) return last
+    process.stderr.write(`(failed try ${attempt}: HTTP ${res.status}, ${text.length} chars; waiting) `)
+    await new Promise(r => setTimeout(r, 20000))
+  }
+  return last
 }
 
 function parseBlocks(study) {
