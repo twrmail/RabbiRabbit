@@ -111,6 +111,7 @@ for (let i = 0; i < PASSAGES.length; i++) {
   blind.push(`\n\n# ${i + 1}. ${p}\n\n## Study X\n\n${swap ? bStudy : aStudy}\n\n## Study Y\n\n${swap ? aStudy : bStudy}\n\n**Which would you hand to someone leading a Bible study? X / Y / neither. Why? Anything wrong, irrelevant, or misleading in either?**`)
   process.stderr.write(`A ${a.status} ${m.A.seconds}s | B ${b.status} ${m.B.seconds}s\n`)
 }
+  await new Promise(r => setTimeout(r, 8000))
 fs.writeFileSync(path.join(OUT, 'blind.md'), '# Blind comparison. Do not open key.json until you have chosen.\n' + blind.join('\n---'))
 fs.writeFileSync(path.join(OUT, 'key.json'), JSON.stringify(key, null, 1))
 
