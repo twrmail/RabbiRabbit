@@ -5,7 +5,7 @@ on:
       worker_url: { description: 'Production Worker URL (A). Blank = repo variable WORKER_URL', required: false }
       lab_url:    { description: 'Lab Worker URL (B). Blank = repo variable LAB_URL', required: false }
       audience:   { description: 'Audience', required: false, default: 'general' }
-            only:       { description: 'Only these passage numbers, e.g. 4,5,6 (blank = all ten)', required: false }
+      only:       { description: 'Only these passage numbers, e.g. 4,5,6 (blank = all ten)', required: false }
 jobs:
   compare:
     runs-on: ubuntu-latest
