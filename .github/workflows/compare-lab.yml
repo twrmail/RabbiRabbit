@@ -1,0 +1,25 @@
+name: Compare production vs lab Worker
+on:
+  workflow_dispatch:
+    inputs:
+      worker_url: { description: 'Production Worker URL (A). Blank = repo variable WORKER_URL', required: false }
+      lab_url:    { description: 'Lab Worker URL (B). Blank = repo variable LAB_URL', required: false }
+      audience:   { description: 'Audience', required: false, default: 'general' }
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: tools }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Run comparison
+        env:
+          A: ${{ inputs.worker_url || vars.WORKER_URL }}
+          B: ${{ inputs.lab_url || vars.LAB_URL }}
+        run: |
+          [ -n "$A" ] && [ -n "$B" ] || { echo "Set WORKER_URL and LAB_URL (repo variables) or pass them as inputs"; exit 2; }
+          node tools/compare-lab.mjs --a "$A" --b "$B" --audience "${{ inputs.audience }}" --out compare-out | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: compare-out, path: compare-out }
