@@ -2,6 +2,7 @@
   command = "npm run build"
   publish = "dist"
   functions = "netlify/functions"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- src public index.html package.json package-lock.json vite.config.js vite.config.ts netlify.toml netlify/functions"
 
 # Icons folder — serve directly before catch-all
 [[redirects]]
@@ -15,3 +16,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
