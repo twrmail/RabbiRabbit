@@ -1793,6 +1793,32 @@
         "chapters moved out": 1
       },
       "reason": "Our Calvin on Isaiah and Acts carried the Calvin Translation Society editors' footnotes inside the commentary: a marker such as [7] in the text and a Footnotes: list (one at the end of each Isaiah chapter, one after each section in Acts). That is the editors' voice, not Calvin's (they add Latin glosses, 'Eng. Ver.' comparisons and history notes). 2,607 markers (Isaiah 1,087, Acts 1,520) and 242 lists (Isaiah 66, Acts 176) are cut out of 94 chapters; the 2,600 notes are kept word for word, each with its place in the text, in library/commentary-notes/Calvin (394 were empty {Bogus footnote} placeholders in our source: listed, no text). Where a marker stood between spaces, one space goes with it. Seven Isaiah markers (25: 137 and 17, 26: 21, 27: 28, 61: 10 and 11, 66: 24) had no note in their own chapter; they are cut and recorded in the patch only. Ezekiel 'chapter 21' (14,217 characters, 'As Calvin's Latin Translation ends here...') is the translator's closing note, not Calvin (his Latin ends at chapter 20); it moves, whole, to the notes file. Nothing else changes. Reverse: put each marker back at its recorded place and each list back from the notes file; the scorecard does this and checks the result hashes to the recorded before."
+    },
+    {
+      "id": "wesley-doubled-chap",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "1CH",
+        "1KI"
+      ],
+      "target": "chapters",
+      "op": "replace-all",
+      "pairs": [
+        [
+          "chap. chap. ",
+          "chap. "
+        ],
+        [
+          "chap.\nchap. ",
+          "chap. "
+        ]
+      ],
+      "expectedCount": {
+        "chap. chap. ": 2,
+        "chap.\nchap. ": 1
+      },
+      "reason": "The abbreviation \"chap.\" is printed twice in a row in three cross-references (1 Chronicles 2 and 1 Chronicles 13, \"chap. chap. viii, 1\" and \"chap. chap. xiv, 8\"; 1 Kings 11, \"chap.\\nchap. x, 29\", where the repeat falls across a line break). A doubled word from the digital copy, not Wesley's meaning. One \"chap.\" is removed in each place; the reference numbers are untouched."
     }
   ],
   "openIssues": [
