@@ -253,7 +253,7 @@ function readBooks(src) {
     if (src.id === 'wesley') {
       chs = Object.entries(d.chapters || {}).map(([k, v]) => ({ chapter: +k, text: String(v), keys: null }))
       if (d.intro) chs.push({ chapter: 0, text: String(d.intro), keys: null, intro: true })
-    } else if (['spurgeon', 'barnes-nt', 'tyndale'].includes(src.id)) {
+    } else if (['spurgeon', 'barnes-nt', 'tyndale', 'gill'].includes(src.id)) {
       chs = (d.chapters || []).map(c => ({ chapter: c.chapter, text: Object.values(c.verses || {}).join('\n') + (c.overview || c.preface || ''), keys: Object.keys(c.verses || {}).map(Number) }))
     } else if (src.kind === 'bible') {
       chs = (d.chapters || []).map(c => ({ chapter: c.chapter, text: Object.values(c.verses || {}).join(' '), keys: Object.keys(c.verses || {}).map(Number), verses: c.verses }))
@@ -468,7 +468,7 @@ function scoreText(src) {
       else bad++
     }
     g.gates[5] = [bad ? 'FAIL' : 'PASS', [E('m', `${n} cross-reference rows; ${bad} with a verse or chapter that does not exist even allowing a different versification; ${vers.length} rows point one verse past the KJV count (${vers.slice(0, 3).join('; ') || 'none'}): different versification, listed not hidden`)]]
-  } else if (['spurgeon', 'barnes-nt', 'tyndale'].includes(src.id)) {
+  } else if (['spurgeon', 'barnes-nt', 'tyndale', 'gill'].includes(src.id)) {
     const bad = keyIssues.nonInt + keyIssues.outOfRange.length
     g.gates[5] = [bad ? 'FAIL' : 'UNKNOWN', [E('m', `verse-keyed; ${keyIssues.versesWithEntry} of ${keyIssues.versesTotal} verses (in books present) have an entry; keys outside the chapter's real range: ${keyIssues.outOfRange.length} ${keyIssues.outOfRange.slice(0, 6).join(', ')}; non-numeric keys ${keyIssues.nonInt}`), E('m', `allowed variants: ${keyIssues.heading.length} keys numbered 0 (psalm superscriptions: ${keyIssues.heading.slice(0, 4).join(', ')}${keyIssues.heading.length > 4 ? ', ...' : ''}); ${keyIssues.versif.length} keys one past the KJV verse count (a different versification: ${keyIssues.versif.slice(0, 4).join(', ') || 'none'})`), bad ? '' : 'Keys are valid; whether the text under key N is about verse N is not independently validated.']]
   } else if (src.id === 'scofield') {
