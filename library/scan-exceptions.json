@@ -105,6 +105,13 @@
    "chapter": 2,
    "check": "tail-head",
    "reason": "Present identically in the untouched original (data/commentary/Barnes_NT/REV.json), so no repair of ours caused it. Overlap is a repeated note on the promise to the one who overcomes ('he that hath an ear'); accepted as the source's own text."
+  },
+  {
+   "source": "gill",
+   "book": "2CH",
+   "chapter": 27,
+   "check": "tail-head",
+   "reason": "Present identically in the untouched source (data/commentary/Gill/2CH.json); no repair of ours caused it. helloao's Gill carries an 84-word run of the Ahaz/Baalim comment (properly 2 Chronicles 28:1-3) at the end of the note on 2 Chronicles 27:9 as well as at the head of chapter 28. Accepted as the source's own chapter-boundary duplication."
   }
  ]
 }

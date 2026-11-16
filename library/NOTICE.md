@@ -110,6 +110,10 @@ Tiers describe how sure we are about the rights, not the quality of the work. Th
 - Rights: text public domain; conversion CC0
 - Why this tier: Text public domain by age; conversion CC0 stated in file header
 
+### John Gill's Exposition of the Bible  (`library/commentary/Gill`)
+- Rights: public domain
+- Why this tier: Clear historical public domain: Gill died 1771; the serving API states Public Domain Mark 1.0.
+
 ### Berean Standard Bible (BSB)  (`library/bible/BSB`)
 - Rights: public domain from April 30, 2023
 - Why this tier: Dedicated to the public domain 2023-04-30; owner page read. Open question whether the dedication covers our exact text

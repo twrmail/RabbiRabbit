@@ -73,7 +73,7 @@ export function scanFolder(folder, source, opts = {}) {
   }
   return findings
 }
-const FOLDERS = { mhc: 'MHC', jfb: 'JFB', calvin: 'Calvin', scofield: 'Scofield', wesley: 'Wesley', spurgeon: 'Spurgeon', 'barnes-nt': 'Barnes-NT', tyndale: 'Tyndale', 'barnes-legacy': 'Barnes', clarke: 'Clarke', vincent: 'Vincent', meyer: 'Meyer' }
+const FOLDERS = { mhc: 'MHC', jfb: 'JFB', calvin: 'Calvin', scofield: 'Scofield', wesley: 'Wesley', spurgeon: 'Spurgeon', 'barnes-nt': 'Barnes-NT', tyndale: 'Tyndale', gill: 'Gill', 'barnes-legacy': 'Barnes', clarke: 'Clarke', vincent: 'Vincent', meyer: 'Meyer' }
 export function scanLibrary(libDir, opts = {}) {
   const manifest = JSON.parse(fs.readFileSync(path.join(libDir, 'manifest.json'), 'utf8')), all = [], scanned = []
   for (const s of manifest.sources.filter(x => x.kind === 'commentary')) {

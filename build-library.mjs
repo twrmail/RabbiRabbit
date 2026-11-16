@@ -54,6 +54,7 @@ const PER_BOOK = [
   { id:'spurgeon', scope:'partial-by-design',  name:'Spurgeon, Treasury of David',      from:'data/commentary/TDavid',    to:'commentary/Spurgeon',  license:'public domain (conversion CC0)', status:'active', servable:true, declared:'Psalms only' },
   { id:'barnes-nt', scope:'partial-by-design', name:"Barnes' Notes (New Testament only)", from:'data/commentary/Barnes_NT', to:'commentary/Barnes-NT', license:'public domain', status:'active',     servable:true,  declared:'27 New Testament books only; never present as whole-Bible Barnes' },
   { id:'tyndale', scope:'partial-by-design',   name:'Tyndale Open Study Notes',         from:'data/commentary/Tyndale',   to:'commentary/Tyndale',   license:'CC BY-SA 4.0, (c) 2022 Tyndale House Publishers; attribution and share-alike required', status:'active', servable:true, declared:'selective notes' },
+  { id:'gill',                                 name:"John Gill's Exposition of the Bible", from:'data/commentary/Gill',    to:'commentary/Gill',      license:'public domain', status:'active', servable:true, declared:"all 66 books, verse-keyed; Gill batches genealogy/list runs under the run's first verse; 1 Chronicles 11 absent in the source" },
   { id:'xref',      name:'OpenBible cross-references',       from:'data/xref',                 to:'xref',                 license:'CC BY (OpenBible.info)', status:'active', servable:true },
 ]
 const LEGACY = [

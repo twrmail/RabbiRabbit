@@ -582,6 +582,64 @@
       }
     },
     {
+      "sourceId": "gill",
+      "work": {
+        "title": "An Exposition of the Old and New Testament",
+        "author": "John Gill",
+        "years": "1746-1763"
+      },
+      "repositoryCopy": {
+        "edition": "digital text as served by the Free Use Bible API (bible.helloao.org)",
+        "origin": "fetched per-chapter from bible.helloao.org JSON API (commentary id 'john-gill'), 2026-11-16",
+        "originStatus": "recorded-in-repo"
+      },
+      "witnesses": [
+        {
+          "name": "Free Use Bible API (helloao.org)",
+          "url": "https://bible.helloao.org/api/c/john-gill",
+          "editionClaim": "Public Domain Mark 1.0 (per the API's available-commentaries catalog)",
+          "status": "recorded-only"
+        }
+      ],
+      "rights": {
+        "claim": "public domain",
+        "claimSource": "helloao commentary catalog (Public Domain Mark 1.0) and age of work",
+        "scope": "text",
+        "repositoryCopyCoverage": "partial",
+        "dateChecked": "2026-11-16"
+      },
+      "tier": "A",
+      "tierReason": "Clear historical public domain: Gill died 1771; the serving API states Public Domain Mark 1.0.",
+      "evidenceLevel": "work-identified",
+      "obligations": [],
+      "openQuestions": [
+        "Which printed edition the helloao digitization follows is not stated.",
+        "1 Chronicles 11 is absent in the helloao Gill data (omitted here); Gill's own text for that chapter was not sourced."
+      ],
+      "acquisition": {
+        "evidenceClass": "page-read",
+        "versionMarker": "bible.helloao.org API, commentary 'john-gill', fetched 2026-11-16",
+        "summary": "Downloaded all 1,189 chapters from bible.helloao.org on 2026-11-16; verse text extracted from the API's per-verse content. Coverage 29,707 of 31,102 KJV verses (95.5%); gaps cluster in genealogy/list runs Gill batches under the first verse. Alignment measured: 99.62% of notes open with a catchword matching the KJV verse; 0 keys outside KJV numbering. 1 Chronicles 11 is absent upstream and omitted.",
+        "records": [
+          {
+            "kind": "page-read",
+            "ref": "bible.helloao.org/api/c/john-gill",
+            "note": "per-chapter JSON retrieved 2026-11-16"
+          },
+          {
+            "kind": "measured",
+            "ref": "catchword alignment scan",
+            "note": "29,595/29,707 notes catchword-aligned to KJV (99.62%); 0 keys outside KJV numbering"
+          }
+        ],
+        "notRecovered": [
+          "The printed edition behind the digitization",
+          "1 Chronicles 11 (absent upstream)"
+        ],
+        "dateRecorded": "2026-11-16"
+      }
+    },
+    {
       "sourceId": "xref",
       "work": {
         "title": "OpenBible.info cross references"
