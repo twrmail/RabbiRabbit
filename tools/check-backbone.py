@@ -45,6 +45,8 @@ NAVES_KNOWN_SOURCE_TYPOS = 5   # count cap; tightened to a named list once pinne
 # (the KJV has 14), so one weight-2 link starts at 3JN 1:15. It can never be reached from
 # a KJV verse, so it is harmless; it is named here so any OTHER such link fails the gate.
 XREF_KNOWN_ODD_STARTS = {("3JN", 1, 15)}
+# ...and the same 15-verse 3 John appears as a range END or target (3JN 1:15), same story.
+XREF_KNOWN_ODD_VERSES = {("3JN", 1, 15)}
 
 
 def load():
@@ -145,8 +147,15 @@ def check_xref(D):
         for r in refs:
             if not valid(D, fb, r.get("fc"), r.get("fv")) and (fb, r.get("fc"), r.get("fv")) not in XREF_KNOWN_ODD_STARTS:
                 bad.append(f"xref FROM {fb} {r.get('fc')}:{r.get('fv')} is not a KJV verse")
-            if not valid(D, r.get("tb"), r.get("tc"), r.get("tv")):
-                bad.append(f"xref TO {r.get('tb')} {r.get('tc')}:{r.get('tv')} (from {fb} {r.get('fc')}:{r.get('fv')}) is not a KJV verse")
+            ends = [(r.get("tb"), r.get("tc"), r.get("tv"))]
+            if "ev" in r:   # a range: also check its last verse (and that it does not run backwards)
+                eb, ec = r.get("eb", r.get("tb")), r.get("ec")
+                ends.append((eb, ec, r["ev"]))
+                if eb == r.get("tb") and (ec, r["ev"]) < (r.get("tc"), r.get("tv")):
+                    bad.append(f"xref range {r.get('tb')} {r.get('tc')}:{r.get('tv')}-{ec}:{r['ev']} runs backwards (from {fb} {r.get('fc')}:{r.get('fv')})")
+            for (xb, xc, xv) in ends:
+                if not valid(D, xb, xc, xv) and (xb, xc, xv) not in XREF_KNOWN_ODD_VERSES:
+                    bad.append(f"xref TO {xb} {xc}:{xv} (from {fb} {r.get('fc')}:{r.get('fv')}) is not a KJV verse")
     return bad
 
 
@@ -226,8 +235,9 @@ def scorecard(D):
                 hh, gg = teachers(b, c, v)
                 h += hh; g += gg; either += (hh or gg)
     out.append(f"every KJV verse ({tot:,}): Henry {100*h/tot:.1f}%  Gill {100*g/tot:.1f}%  at least one {100*either/tot:.1f}%")
-    # xref targets, all and by weight (the worn-path dial)
-    for label, floor in (("xref targets, all weights", 0), ("xref targets, worn paths (weight >= 30)", 30), ("xref targets, highways (weight >= 100)", 100)):
+    # xref targets, all and by weight (the worn-path dial). Votes are the Nov 16 2026 OpenBible
+    # snapshot, about 5x the scale of the earlier copy: 170 / 500 here match 30 / 100 there.
+    for label, floor in (("xref targets, all weights", 0), ("xref targets, worn paths (votes >= 170)", 170), ("xref targets, highways (votes >= 500)", 500)):
         seen = set(); n = 0; ok = 0
         for fb, refs in D["xref"].items():
             for r in refs:

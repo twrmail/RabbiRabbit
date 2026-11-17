@@ -678,7 +678,7 @@
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
-        "summary": "The Worker footer and the seed script name OpenBible.info as the cross-reference source (255,675 references in per-book files).",
+        "summary": "The Worker footer and the seed script name OpenBible.info as the cross-reference source. Rebuilt 2026-11-17 from OpenBible's official cross-references.zip (a.openbible.info/data/cross-references.zip, file header 'CC-BY 2026-11-16', 344,799 rows) by tools/build-xref-from-openbible.py: 341,383 references in per-book files, including 87,456 range links the earlier copy (255,675 single-verse references) had dropped. Rows with votes below 1 are left out. Vote counts are the 2026-11-16 snapshot, about 5x the scale of the earlier copy.",
         "records": [
           {
             "kind": "code-comment",
@@ -687,10 +687,10 @@
           }
         ],
         "notRecovered": [
-          "Download date and original file",
+          "Download date and original file of the earlier (255,675-row) copy",
           "Licence version on the OpenBible page"
         ],
-        "dateRecorded": "2026-11-04"
+        "dateRecorded": "2026-11-17"
       }
     },
     {
