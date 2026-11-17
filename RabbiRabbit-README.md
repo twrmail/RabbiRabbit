@@ -79,7 +79,7 @@ All of it is synthesized into one prompt and streamed live from Claude back to t
 | World English Bible (2020) | Translation | `data/web.json` | Public Domain |
 | King James Version (1769) | Translation | `data/kjv.json` | Public Domain |
 | American Standard Version (1901) | Translation | `data/asv.json` | Public Domain |
-| OpenBible.info Cross-References | 255,675 entries | `data/cross-refs.json` + `data/xref/*.json` (66 files, per book) | CC-BY |
+| OpenBible.info Cross-References | 341,383 entries (Nov 16 2026 snapshot, includes 87,456 range links) | `data/xref/*.json` (66 files, per book; rebuilt by `tools/build-xref-from-openbible.py`). `data/cross-refs.json` is the older 255,675-entry single-verse copy | CC-BY |
 | Matthew Henry, JFB, Clarke, Barnes | Commentary | Fetched live from HelloAO — not stored here | Public Domain |
 | Augustine, Chrysostom, Aquinas, Jerome | Patristic commentary | Fetched live from HistoricalChristianFaith — not stored here | Public Domain |
 
