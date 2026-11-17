@@ -16,8 +16,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
       - name: Recorded text fixes are all applied
         run: node tools/apply-library-fixes.mjs . --check
+      - name: Matthew Henry index has not drifted from the builder
+        run: python3 tools/check-mhc-index.py
       - name: Source scorecard
         run: node tools/source-scorecard.mjs library --out scorecard
       - name: No gate worse than the baseline
