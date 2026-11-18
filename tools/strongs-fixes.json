@@ -1,0 +1,173 @@
+{
+ "about": "Recorded corrections to cross-reference numbers inside Strong's entries (digit slips in our copy). Each is one number in one entry, applied byte-for-byte by tools/apply-strongs-fixes.py to library/lexicon and data/dict. Basis: an independent copy (Open Scriptures, compared 2026-11-18, not stored) cites a different number one digit away, and only the corrected number makes the cited word a component of the entry's own word. Entries where the two signals did not agree are NOT changed; they are listed in library/lexicon/STRONGS-REVIEW.md.",
+ "fixes": [
+  {
+   "lexicon": "hebrew",
+   "number": "50",
+   "find": "H7171",
+   "replace": "H7771",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H7771 (שׁוע); H7171 is קרץ, which is not part of אבישׁוּע"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "419",
+   "find": "H1780",
+   "replace": "H1730",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H1730 (דּד); H1780 is דּין, which is not part of אלדּד"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "590",
+   "find": "H479",
+   "replace": "H579",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H579 (אנה); H479 is אלּך, which is not part of אני"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "841",
+   "find": "H3840",
+   "replace": "H3480",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H3480 (ישׂראלה); H3840 is לבנה, which is not part of אשׂראלה"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "1968",
+   "find": "H530",
+   "replace": "H539",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H539 (אמן); H530 is אמנה, which is not part of הימן"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "2071",
+   "find": "H2054",
+   "replace": "H2064",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2064 (זבד); H2054 is וזר, which is not part of זבוּד"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "2381",
+   "find": "H2371",
+   "replace": "H2372",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2372 (חזה); H2371 is חזהאל, which is not part of חזיאל"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "2523",
+   "find": "H2322",
+   "replace": "H2522",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2522 (חלשׁ); H2322 is חדשׁה, which is not part of חלּשׁ"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "2558",
+   "find": "H2566",
+   "replace": "H2556",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2556 (חמץ); H2566 is חמרן, which is not part of חמץ"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "2593",
+   "find": "H2396",
+   "replace": "H2596",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2596 (חנך); H2396 is יחזקיּהוּ, which is not part of חניך"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "2932",
+   "find": "H2980",
+   "replace": "H2930",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2930 (טמא); H2980 is יבב, which is not part of טמאה"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "3041",
+   "find": "H3089",
+   "replace": "H3039",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H3039 (ידיד); H3089 is יהושׁבע, which is not part of ידידיה"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "3148",
+   "find": "H8498",
+   "replace": "H3498",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H3498 (יתר); H8498 is תּכוּנה, which is not part of יותר"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "3167",
+   "find": "H2371",
+   "replace": "H2372",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H2372 (חזה); H2371 is חזהאל, which is not part of יחזיה"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "3244",
+   "find": "H4398",
+   "replace": "H5398",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H5398 (נשׁף); H4398 is מלאך, which is not part of ינשׁוף"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "3425",
+   "find": "H2423",
+   "replace": "H3423",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H3423 (ירשׁ); H2423 is חיוא, which is not part of ירשּׁה"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "3524",
+   "find": "H3727",
+   "replace": "H3527",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H3527 (כּבר); H3727 is כּפּרת, which is not part of כּבּיר"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "4056",
+   "find": "H1648",
+   "replace": "H1684",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H1684 (דּבח); H1648 is גּרשׁום, which is not part of מדבּח"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "6337",
+   "find": "H6388",
+   "replace": "H6338",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H6338 (פּזז); H6388 is פּלג, which is not part of פּז"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "6361",
+   "find": "H6260",
+   "replace": "H6360",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H6360 (פּטּישׁ); H6260 is עתּד, which is not part of פּטּישׁ"
+  },
+  {
+   "lexicon": "hebrew",
+   "number": "7939",
+   "find": "H7986",
+   "replace": "H7936",
+   "expectedCount": 1,
+   "basis": "Open Scriptures copy cites H7936 (סכר); H7986 is שׁלּטת, which is not part of שׂכר"
+  }
+ ]
+}
