@@ -26,6 +26,12 @@ jobs:
         run: python3 tools/check-backbone.py
       - name: Backbone proof catches deliberate damage
         run: python3 tools/check-backbone.py --self-test
+      - name: Strong's corrections are all applied
+        run: python3 tools/apply-strongs-fixes.py --check
+      - name: Strong's integrity (complete, resolves, copies identical, Worker markers intact)
+        run: python3 tools/check-strongs.py
+      - name: Strong's gate catches deliberate damage
+        run: python3 tools/check-strongs.py --self-test
       - name: Source scorecard
         run: node tools/source-scorecard.mjs library --out scorecard
       - name: No gate worse than the baseline

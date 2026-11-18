@@ -1170,7 +1170,18 @@
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "Open Scriptures Strong's dictionary (JSON edition)",
+          "url": "https://github.com/openscriptures/strongs",
+          "editionClaim": "Header: dictionary from Strong's Exhaustive Concordance, 1890; XML prepared 2006 by Ulrik Petersen; JSON 2009 Open Scriptures, CC-BY-SA.",
+          "status": "measured",
+          "agreement": "same entries and words; 21 Hebrew cross-reference digit slips in ours corrected; 29 one-digit disagreements left open",
+          "dateChecked": "2026-11-18",
+          "sha256": "5ce6aeed551c709f49bcfa341cadf2f34bc7599b85d9de9e6ac2ecbf60fc3739",
+          "note": "CC BY-SA, so not kept in this repo; used only to check ours. Compared entry by entry: see library/lexicon/STRONGS-REVIEW.md. It is an edited edition, so it is a check, not a substitute."
+        }
+      ],
       "rights": {
         "claim": "public domain",
         "claimSource": "CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-hebrew (page read 2026-11-04)",
@@ -1230,7 +1241,18 @@
         "origin": "unknown",
         "originStatus": "not-recorded"
       },
-      "witnesses": [],
+      "witnesses": [
+        {
+          "name": "Open Scriptures Strong's dictionary (JSON edition)",
+          "url": "https://github.com/openscriptures/strongs",
+          "editionClaim": "Header: dictionary from Strong's Exhaustive Concordance, 1890; XML prepared 2006 by Ulrik Petersen; JSON 2009 Open Scriptures, CC-BY-SA.",
+          "status": "measured",
+          "agreement": "same entries and words; 21 Hebrew cross-reference digit slips in ours corrected; 29 one-digit disagreements left open",
+          "dateChecked": "2026-11-18",
+          "sha256": "7624ee738ae47e80f1a352223e28a26d011c9cd4898822cee52f47a010c04efd",
+          "note": "CC BY-SA, so not kept in this repo; used only to check ours. Compared entry by entry: see library/lexicon/STRONGS-REVIEW.md. It is an edited edition, so it is a check, not a substitute."
+        }
+      ],
       "rights": {
         "claim": "public domain",
         "claimSource": "CrossWire module declaration, as recorded in the Debian copyright file for sword-dict-strongs-greek (page read 2026-11-04)",
