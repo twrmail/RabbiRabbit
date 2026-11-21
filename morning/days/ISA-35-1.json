@@ -40,17 +40,17 @@
    "original": "The wilderness, and the solitary place, shall be glad for them,.... Either for the wild beasts, satyrs, owls, and vultures, that shall inhabit Edom or Rome, and because it shall be an habitation for them: or they shall be glad for them, the Edomites, and for the destruction of them; that is, as the Targum paraphrases it,\n\n\"they that dwell in the wilderness, in the dry land, shall rejoice;''",
    "ok": false,
    "metrics": {
-    "words": 66,
+    "words": 64,
     "sourceWords": 69,
-    "ratio": 0.96,
-    "ground": 0.71,
+    "ratio": 0.93,
+    "ground": 0.85,
     "refsKept": 0,
     "refsInBlock": 0
    },
    "reasons": [
-    "not shorter than the original (66 words against 69)"
+    "does not say whose view this is (Gill)"
    ],
-   "rejected": "Gill says the wilderness and solitary place will be glad for them. This means either the wild beasts, satyrs, owls, and vultures that will live in Edom or Rome will be glad because it becomes their home. Or it means people will be glad for the Edomites and their destruction. The Targum puts it this way: those living in the wilderness and dry land will rejoice."
+   "rejected": "The wilderness and solitary place shall be glad for them. This means either that wild beasts, satyrs, owls, and vultures will live in Edom or Rome, and the wilderness will be their home. Or it means the wilderness will be glad for the Edomites and their destruction. The Targum paraphrases it this way: those who dwell in the wilderness and dry land shall rejoice."
   },
   {
    "i": 1,
@@ -98,7 +98,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:29:23.277Z",
-  "cost": 0.00607
+  "builtAt": "2026-11-21T12:47:11.345Z",
+  "cost": 0.0076
  }
 }

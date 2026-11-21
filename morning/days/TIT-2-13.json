@@ -40,17 +40,19 @@
    "original": "(3.) To look for the glories of another world, to which a sober, righteous, and godly life in this is preparative: *Looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ.* Hope, by a metonymy, is put for the thing hoped for, namely, heaven and the felicities thereof, called emphatically *that hope,* because it is the great thing we look and long and wait for; and a *blessed hope,* because, when attained, we shall be completely happy for ever. *And the glorious appearing of the great God and our Saviour Jesus Christ.* This denotes both the time of the accomplishing of our hope and the sureness and greatness of it: it will be at the second appearing of Christ, when he shall come *in his own glory, and in his Father's, and of the holy angels,* Lu 9:26. His own glory which he had before the world was; and his Father's, being *the express image of his person,* and as God-man, his delegated ruler and Judge; and of the holy angels, as his ministers and glorious attendants. His first coming was in meanness, to satisfy justice and purchase happiness; his second will be in majesty, to bestow and instate his people in it. *Christ was once offered to bear the sins of many; and unto those that look for him will he appear the second time, without sin, unto salvation,* Heb 9:28.",
    "ok": false,
    "metrics": {
-    "words": 236,
+    "words": 265,
     "sourceWords": 240,
-    "ratio": 0.98,
+    "ratio": 1.1,
     "ground": 0.89,
     "refsKept": 2,
     "refsInBlock": 2
    },
    "reasons": [
-    "not shorter than the original (236 words against 240)"
+    "names “Paul”, who is not in the block",
+    "quotes Scripture from the block without quotation marks (“looking for that blessed hope and the glorious…”)",
+    "not shorter than the original (265 words against 240)"
    ],
-   "rejected": "Christians should look for the glories of another world. A sober, righteous, and godly life in this world prepares us for that. Henry explains that hope here means the thing we hope for—heaven and its blessings. It is called that hope because it is the great thing we look for and wait for, and a blessed hope because when we reach it, we will be completely happy forever.\n\nThe glorious appearing of the great God and our Saviour Jesus Christ shows both when our hope will be fulfilled and how sure and great it is. This will happen at Christ's second coming, when he will come in his own glory, in his Father's glory, and in the glory of the holy angels as his ministers and attendants (Lu 9:26). His own glory is what he had before the world was made. His Father's glory comes because Christ is the express image of his person and as God-man is his delegated ruler and Judge. The holy angels will be his glorious attendants.\n\nHenry points out that Christ's first coming was in humility, to satisfy justice and purchase happiness for us. His second coming will be in majesty, to give his people that happiness and place them in it. Christ was once offered to bear the sins of many, and to those who look for him he will appear the second time without sin, unto salvation (Heb 9:28)."
+   "rejected": "Christians should look for the glories of another world. A sober, righteous, and godly life in this world prepares us for it. This is what Paul means when he says we are looking for that blessed hope and the glorious appearing of the great God and our Saviour Jesus Christ.\n\nHenry explains that hope here stands for the thing hoped for itself—heaven and all its blessings. Paul calls it emphatically that hope because it is the great thing we look for, long for, and wait for. It is a blessed hope because when we reach it, we will be completely happy forever.\n\nThe glorious appearing of the great God and our Saviour Jesus Christ shows both when our hope will be fulfilled and how sure and great it is. This will happen at Christ's second appearing, when he comes in his own glory, in his Father's glory, and in the glory of the holy angels (Lu 9:26). His own glory is what he had before the world was made. His Father's glory comes because Christ is the express image of his person and, as God-man, is the delegated ruler and Judge. The holy angels' glory appears as his ministers and glorious attendants.\n\nHenry points out that Christ's first coming was in meanness to satisfy justice and purchase happiness. His second coming will be in majesty to give his people that happiness and place them in it. Christ was once offered to bear the sins of many, and to those who look for him he will appear the second time without sin, unto salvation (Heb 9:28)."
   },
   {
    "i": 1,
@@ -98,7 +100,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:28:26.758Z",
-  "cost": 0.01085
+  "builtAt": "2026-11-21T12:46:48.533Z",
+  "cost": 0.0138
  }
 }

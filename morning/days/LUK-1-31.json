@@ -54,18 +54,18 @@
    "original": "2. Though she lives in *poverty* and *obscurity,* yet she shall have the honour to be the mother of the Messiah; her son shall be named *Jesus—a Saviour,* such a one as the world *needs,* rather than such one as the Jews *expect.*",
    "ok": false,
    "metrics": {
-    "words": 43,
+    "words": 35,
     "sourceWords": 43,
-    "ratio": 1,
-    "ground": 0.76,
+    "ratio": 0.81,
+    "ground": 0.87,
     "refsKept": 0,
     "refsInBlock": 0
    },
    "reasons": [
     "names “Mary”, who is not in the block",
-    "not shorter than the original (43 words against 43)"
+    "does not say whose view this is (Henry)"
    ],
-   "rejected": "Though Mary lives in poverty and obscurity, Henry points out she will have the great honor of being the mother of the Messiah. Her son will be named Jesus—a Saviour the world truly needs, not the kind of saviour the Jews were expecting."
+   "rejected": "Though Mary lives in poverty and obscurity, she will have the honor of being the Messiah's mother. Her son will be named Jesus—a Saviour the world needs, not the kind of saviour the Jews expected."
   }
  ],
  "leads": [
@@ -98,7 +98,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:30:10.975Z",
-  "cost": 0.00406
+  "builtAt": "2026-11-21T12:47:38.373Z",
+  "cost": 0.00534
  }
 }

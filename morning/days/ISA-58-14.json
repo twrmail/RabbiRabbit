@@ -54,17 +54,17 @@
    "original": "2. We shall have the honour of it: *I will cause thee to ride upon the high places of the earth,* which denotes not only a great security (as that, Isa 32:16, *He shall dwell on high*), but great dignity and advancement. \"Thou shalt ride in state, shalt appear conspicuous, and the eyes of all thy neighbours shall be upon thee.\" It was said of Israel, when God led them triumphantly out of Egypt, that *he made them to ride on the high places of the earth,* De 32:12,13. Those that honour God and his sabbath he will thus honour. If God by his grace enable us to live above the world, and so to manage it as not only not to be hindered by it, but to be furthered and carried on by it in our journey towards heaven, then he makes us *to ride on the high places of the earth.*",
    "ok": false,
    "metrics": {
-    "words": 136,
+    "words": 135,
     "sourceWords": 153,
-    "ratio": 0.89,
-    "ground": 0.85,
+    "ratio": 0.88,
+    "ground": 0.87,
     "refsKept": 2,
     "refsInBlock": 2
    },
    "reasons": [
-    "quotes Scripture from the block without quotation marks (“to ride on the high places of the…”)"
+    "quotes Scripture from the block without quotation marks (“i will cause thee to ride upon the…”)"
    ],
-   "rejected": "We shall have the honour of it. Henry says God will cause us to ride upon the high places of the earth. This means not only great safety, as in Isaiah 32:16 where he shall dwell on high, but also great dignity and advancement. We shall ride in state, appear conspicuous, and all our neighbours will have their eyes on us. When God led Israel triumphantly out of Egypt, Henry notes, he made them ride on the high places of the earth (Deuteronomy 32:12,13). Those who honour God and his sabbath receive this honour from him. Henry explains that when God's grace enables us to live above the world and manage it so it helps rather than hinders us on our journey to heaven, then he makes us ride on the high places of the earth."
+   "rejected": "We shall have the honour of it. God says I will cause thee to ride upon the high places of the earth. This means not just great safety, as when he shall dwell on high (Isa 32:16), but also great dignity and advancement. You will ride in state, appear conspicuous, and all your neighbours will have their eyes on you. When God led Israel triumphantly out of Egypt, he made them ride on the high places of the earth (De 32:12,13). Those who honour God and his sabbath receive this honour from him. Henry points out that when God's grace enables us to live above the world and manage it so it helps rather than hinders us on our journey to heaven, then he makes us to ride on the high places of the earth."
   }
  ],
  "leads": [
@@ -97,7 +97,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:27:59.475Z",
-  "cost": 0.00574
+  "builtAt": "2026-11-21T12:46:28.320Z",
+  "cost": 0.00778
  }
 }
