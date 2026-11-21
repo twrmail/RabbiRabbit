@@ -1,0 +1,56 @@
+name: Build Morning Trail days
+# Run by hand: Actions -> Build Morning Trail days -> Run workflow.
+# It writes morning/days/*.json to a new branch (morning-build-<run>). Open the pull request from that branch to review, then merge.
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: 'First date, YYYY-MM-DD (blank = today)'
+        required: false
+        default: ''
+      days:
+        description: 'How many days from that date'
+        required: false
+        default: '30'
+      force:
+        description: 'Rebuild days that are already built (true or false)'
+        required: false
+        default: 'false'
+      max_cost:
+        description: 'Stop after about this many dollars'
+        required: false
+        default: '3'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build days
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IN_FROM: ${{ inputs.from }}
+          IN_DAYS: ${{ inputs.days }}
+          IN_FORCE: ${{ inputs.force }}
+          IN_MAX: ${{ inputs.max_cost }}
+        run: |
+          set -e
+          ARGS="--days ${IN_DAYS:-30} --max-cost ${IN_MAX:-3}"
+          if [ -n "$IN_FROM" ]; then ARGS="$ARGS --from $IN_FROM"; fi
+          if [ "$IN_FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
+          node tools/build-morning-days.mjs $ARGS
+      - name: Push a branch for review
+        run: |
+          git config user.name "morning-trail-bot"
+          git config user.email "morning-trail-bot@users.noreply.github.com"
+          B="morning-build-${{ github.run_id }}"
+          git checkout -b "$B"
+          git add morning
+          if git diff --cached --quiet; then echo "Nothing new to commit."; exit 0; fi
+          git commit -m "Morning Trail: build days (run ${{ github.run_id }})"
+          git push origin "$B"
+          echo "Branch $B is ready. Open a pull request from it." >> "$GITHUB_STEP_SUMMARY"
