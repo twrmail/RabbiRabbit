@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Revelation 19:13"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -40,10 +40,52 @@
   "sentences": 4,
   "points": 0,
   "pointKind": "none",
-  "noteBlocks": 1
+  "noteBlocks": 1,
+  "quoted": 3,
+  "pointsCovered": 0
  },
- "flow": [],
- "morning": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows what Christ is like by describing his attributes, armor, and name in this vision."
+  },
+  {
+   "type": "quote",
+   "text": "His attributes: he is *faithful and true* to his covenant and promise, he is righteous in all his judicial and military proceedings, he has a penetrating insight into all the strength and stratagems of his enemies, he has a large and extensive dominion, many crowns, for he is *King of kings, and Lord of lords.* 4.",
+   "from": 1,
+   "to": 1,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "Christ is faithful to his promises and righteous in all he does, ruling over all things as King of kings."
+  },
+  {
+   "type": "quote",
+   "text": "His armour; and that is *a vesture dipped in blood,* either his own blood, by which he purchased this mediatorial power, or the blood of his enemies, over whom he has always prevailed. 5.",
+   "from": 2,
+   "to": 2,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "His blood-dipped garment shows his power, purchased through his own sacrifice or displayed through victory over enemies."
+  },
+  {
+   "type": "quote",
+   "text": "His name: *The Word of God,* a name that none fully knows but himself, only this we know, that this *Word was God manifest in the flesh;* but his perfections are incomprehensible by any creature.",
+   "from": 3,
+   "to": 3,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the truth that Christ's power comes through his blood and his faithfulness to you.",
+  "phrase": "faithful and true to his covenant and promise"
+ },
  "trail": null,
  "leads": [
   {
@@ -77,47 +119,8 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:28:59.853Z",
-  "cost": 0.005832,
-  "attempts": 3
- },
- "reasons": [
-  "says \"three things\" but the note has no counted things",
-  "morning.phrase is not found word for word in the note"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows us three things about Christ in this verse: who he is, what he wears, and what he is called."
-   },
-   {
-    "quote": [
-     1,
-     1
-    ]
-   },
-   {
-    "say": "Christ's attributes reveal his complete power and authority over all things."
-   },
-   {
-    "quote": [
-     2,
-     2
-    ]
-   },
-   {
-    "say": "His blood-stained garment speaks of his victory and the price he paid for his rule."
-   },
-   {
-    "quote": [
-     3,
-     3
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry with you today the mystery of Christ's name and what it means for your life.",
-   "phrase": "The Word was God manifest in the flesh"
-  }
+  "builtAt": "2026-11-21T15:18:21.701Z",
+  "cost": 0.00288,
+  "attempts": 1
  }
 }

@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 14"
  },
  "structure": {
-  "sentences": 13,
+  "sentences": 17,
   "points": 2,
   "pointKind": "paren",
   "noteBlocks": 3
@@ -77,56 +77,47 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:32:15.318Z",
-  "cost": 0.009001,
+  "builtAt": "2026-11-21T15:21:20.077Z",
+  "cost": 0.009361000000000001,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 156 words (limit 80)",
-  "a quote is 121 words (limit 80)"
+  "a quote is 126 words (limit 110)",
+  "a quote has bad sentence numbers",
+  "morning.phrase is not found word for word in the note"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows how God gives Israel a sign of mercy through the promise of the Messiah, born of a virgin in a glorious way."
+    "say": "Henry shows how God gives a sign to David's house: the Messiah will be born of a virgin, extraordinary and holy, and his name will be Immanuel, God with us."
    },
    {
     "quote": [
-     3,
-     3
+     5,
+     6
     ]
    },
    {
-    "say": "Even though this birth lay far in the future, it assured David's house that God would not abandon them in their present danger."
+    "say": "This birth of the Messiah from a virgin would show God's divine power and purity, and prove that God would not cast off the house of David even in their distress."
    },
    {
     "quote": [
-     4,
-     4
+     10,
+     11
     ]
    },
    {
-    "say": "The Messiah's name Immanuel means God is with us, showing both his divine power and his peace with his people."
+    "say": "The child's name Immanuel means God is with us, at peace with us, in covenant with us. This is the greatest comfort in trouble: our relation to Christ and our hope in him."
    },
    {
     "quote": [
-     7,
-     8
-    ]
-   },
-   {
-    "say": "In times of trouble, Henry says, our strongest comfort comes from knowing Christ and trusting what he will do for us."
-   },
-   {
-    "quote": [
-     12,
-     12
+     14
     ]
    }
   ],
   "morning": {
-   "say": "Carry into today the truth that God's greatest comfort in hard times comes through Christ.",
-   "phrase": "The strongest consolations, in time of trouble, are those which are borrowed from Christ"
+   "say": "Carry into your day the comfort that God is with us through Christ, even in your deepest trouble.",
+   "phrase": "God with us, God at peace with us, in covenant with us"
   }
  }
 }

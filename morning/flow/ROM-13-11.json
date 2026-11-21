@@ -37,53 +37,65 @@
   "label": "Henry’s note on verse 11"
  },
  "structure": {
-  "sentences": 26,
+  "sentences": 27,
   "points": 0,
   "pointKind": "none",
   "noteBlocks": 3,
-  "quoted": 3,
+  "quoted": 4,
   "pointsCovered": 0
  },
  "flow": [
   {
    "type": "say",
-   "text": "Henry shows us four things a Christian must do each day, starting with when to wake up. He teaches that now is the time to stop sleeping spiritually."
+   "text": "Henry shows us four things a Christian must do each day, starting with when to wake up. The time demands it."
   },
   {
    "type": "quote",
-   "text": "When to awake: *Now it is high time to awake* (Ro 13:11), to awake out of the sleep of sin (for a sinful condition is a sleeping condition), out of the sleep of carnal security, sloth and negligence, out of the sleep of spiritual death, and out of the sleep of spiritual deadness; both the wise and foolish virgins slumbered and slept, Mt 25:5.",
+   "text": "When to awake: *Now it is high time to awake* (Ro 13:11), to awake out of the sleep of sin (for a sinful condition is a sleeping condition), out of the sleep of carnal security, sloth and negligence, out of the sleep of spiritual death, and out of the sleep of spiritual deadness; both the wise and foolish virgins slumbered and slept, Mt 25:5. We have need to be often excited and stirred up to awake.",
    "from": 4,
-   "to": 4,
+   "to": 6,
    "point": null,
    "points": []
   },
   {
    "type": "say",
-   "text": "Henry explains that we live in gospel time, when God's light shines on us and much work waits. We cannot afford to sleep while enemies surround us."
+   "text": "We sleep through sin, carelessness, and spiritual deadness. Christ's command to all his followers is to watch and be alert."
   },
   {
    "type": "quote",
-   "text": "It is gospel time, it is the accepted time, it is working time; it is a time when more is expected than was in the times of that ignorance which God winked at, when people sat in darkness. It is high time to awake; for the sun has been up a great while, and shines in our faces.",
+   "text": "\"The time we are cast into: *Knowing the time.* Consider what time of day it is with us, and you will see it is high time to awake. It is gospel time, it is the accepted time, it is working time; it is a time when more is expected than was in the times of that ignorance which God winked at, when people sat in darkness. It is high time to awake; for the sun has been up a great while, and shines in our faces.",
    "from": 10,
-   "to": 11,
+   "to": 12,
    "point": null,
    "points": []
   },
   {
    "type": "say",
-   "text": "He reminds us that our salvation draws closer every day than it was when we first believed. This nearness should make us move faster in our faith."
+   "text": "This is gospel time, a time of light and work. The sun shines on us; others are awake and busy around us."
   },
   {
    "type": "quote",
-   "text": "\"The salvation we are upon the brink of: *Now is our salvation nearer than when we believed*—than when we first believed, and so took upon us the profession of Christianity. The eternal happiness we chose for our portion is now nearer to us than it was when we became Christians.",
-   "from": 20,
-   "to": 21,
+   "text": "Know the time to be a perilous time. We are in the midst of enemies and snares. It is high time to awake, for the Philistines are upon us; our neighbour's house is on fire, and our own in danger. It is time to awake, for we have slept enough (1Pe 4:3), high time indeed, for *behold the bridegroom cometh.*\" 2.",
+   "from": 17,
+   "to": 20,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "We face danger and enemies. The bridegroom is coming, and we have slept long enough."
+  },
+  {
+   "type": "quote",
+   "text": "\"The salvation we are upon the brink of: *Now is our salvation nearer than when we believed*—than when we first believed, and so took upon us the profession of Christianity. The eternal happiness we chose for our portion is now nearer to us than it was when we became Christians. Let us mind our way and mend our pace, for we are now nearer our journey's end than we were when we had our first love.",
+   "from": 21,
+   "to": 23,
    "point": null,
    "points": []
   }
  ],
  "morning": {
-  "say": "Carry Henry's call with you: the time is now, and your salvation is nearer than ever.",
+  "say": "Carry Henry's call into your day: the time is now, and heaven is nearer than ever.",
   "phrase": "Now it is high time to awake"
  },
  "trail": null,
@@ -116,20 +128,16 @@
  "review": {
   "flags": [
    {
-    "b": "B0",
-    "issue": "Claims Henry shows 'four things a Christian must do each day' but only one thing (when to wake up) is evident in the provided quotes"
+    "b": "B1",
+    "issue": "Adds 'Christ's command to all his followers is to watch and be alert' which is not stated in the quotes or verse provided"
    }
   ],
   "status": "unreviewed"
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:29:39.197Z",
-  "cost": 0.00969,
+  "builtAt": "2026-11-21T15:18:56.686Z",
+  "cost": 0.01316,
   "attempts": 3
- },
- "reasons": [
-  "a quote is longer than 3 sentences",
-  "a quote is 89 words (limit 80)"
- ]
+ }
 }

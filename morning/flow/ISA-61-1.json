@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 1"
  },
  "structure": {
-  "sentences": 22,
+  "sentences": 29,
   "points": 1,
   "pointKind": "paren",
   "noteBlocks": 5
@@ -77,20 +77,18 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:31:55.826Z",
-  "cost": 0.010543,
+  "builtAt": "2026-11-21T15:20:59.196Z",
+  "cost": 0.011366000000000001,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 88 words (limit 80)",
-  "a quote is 85 words (limit 80)",
-  "a quote is 265 words (limit 80)",
-  "quotes total 583 words (limit 420)"
+  "a quote is 229 words (limit 110)",
+  "quotes total 522 words (limit 520)"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows how Christ was equipped, appointed, and sent to do three kinds of work for us."
+    "say": "Henry shows how Christ was equipped, appointed, and sent to do three kinds of work: preaching good news, healing broken hearts, and freeing captives from sin."
    },
    {
     "quote": [
@@ -108,35 +106,35 @@
     ]
    },
    {
-    "say": "God anointed Christ and sent him with full authority, just as he set apart kings and priests in old times."
+    "say": "God anointed him and sent him with full authority, just as he set apart kings and priests of old."
    },
    {
     "quote": [
-     14,
-     14
-    ]
-   },
-   {
-    "say": "Christ preached good tidings to the meek and humble, those most ready to receive the gospel with a willing heart."
-   },
-   {
-    "quote": [
-     16,
+     15,
      17
     ]
    },
    {
-    "say": "He binds up broken hearts by offering peace to those crushed by guilt and fear of God's justice."
+    "say": "Christ preached good tidings to the meek and humble, those most ready to receive the gospel."
    },
    {
     "quote": [
-     20,
-     21
+     21,
+     22
+    ]
+   },
+   {
+    "say": "He binds up broken hearts, bringing ease and comfort to those humbled by guilt and sorrow."
+   },
+   {
+    "quote": [
+     25,
+     27
     ]
    }
   ],
   "morning": {
-   "say": "Carry with you today the truth that Christ has made satisfaction for your debt and offers you freedom.",
+   "say": "Carry with you today the truth that Christ's Spirit makes you free indeed from sin's captivity.",
    "phrase": "The Son is ready by his Spirit to make us free"
   }
  }

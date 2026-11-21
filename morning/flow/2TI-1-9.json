@@ -9,7 +9,7 @@
   "ve": null,
   "label": "2 Timothy 1:9"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -37,14 +37,94 @@
   "label": "Henry treats verse 9 together with verses 9-10"
  },
  "structure": {
-  "sentences": 23,
+  "sentences": 29,
   "points": 6,
   "pointKind": "bracket",
-  "noteBlocks": 4
+  "noteBlocks": 4,
+  "quoted": 5,
+  "pointsCovered": 6
  },
- "flow": [],
- "morning": null,
- "trail": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows what great things God has done for us through the gospel, giving Timothy reasons to suffer for it."
+  },
+  {
+   "type": "quote",
+   "text": "Observe, The gospel aims at our salvation: *He has saved us,* and we must not think much to suffer for that which we hope to be saved by. He has begun to save us, and will complete it in due time; for God calls those things that are not (that are not yet completed) as though they were (Ro 4:17); therefore he says, who *has* saved us.",
+   "from": 5,
+   "to": 6,
+   "point": "B1",
+   "points": [
+    "B1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "God has begun saving us and will finish the work, so we should not hesitate to suffer for the salvation we hope to receive."
+  },
+  {
+   "type": "quote",
+   "text": "It is designed for our sanctification: *And called us with a holy calling,* called us to holiness. Christianity is a calling, a holy calling; it is the calling wherewith we are called, the calling to which we are called, to labour in it.",
+   "from": 7,
+   "to": 8,
+   "point": "B2",
+   "points": [
+    "B2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "The gospel calls us to holiness, and wherever that call truly takes hold, it makes people holy."
+  },
+  {
+   "type": "quote",
+   "text": "The origin of it is the free grace and eternal purpose of God in Christ Jesus. If we had merited it, it had been hard to suffer for it; but our salvation by it is of free grace, and not according to our works, and therefore we must not think much to suffer for it.",
+   "from": 11,
+   "to": 12,
+   "point": "B3",
+   "points": [
+    "B3"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "Our salvation comes from God's free grace and eternal purpose, not from anything we have earned, so suffering for it is reasonable."
+  },
+  {
+   "type": "quote",
+   "text": "By the gospel of Christ death is abolished: *He has abolished death,* not only weakened it, but taken it out of the way, has broken the power of death over us; by taking away sin he has abolished death (for the sting of death is sin, 1Co 15:56), in altering the property of it, and breaking the power of it.",
+   "from": 18,
+   "to": 19,
+   "point": "B5",
+   "points": [
+    "B5"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "Through the gospel, Christ has broken death's power over believers, turning it from an enemy into a passage to peace."
+  },
+  {
+   "type": "quote",
+   "text": "He has *brought life and immortality to light by the gospel;* he has shown us another world more clearly than it was before discovered under any former dispensation, and the happiness of that world, the certain recompence of our obedience by faith: we all with open face, as in a glass, behold the glory of God. He has brought it to light, not only set it before us, but offered it to us, by the gospel.",
+   "from": 24,
+   "to": 26,
+   "point": "B6",
+   "points": [
+    "B6"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry with you today what the gospel reveals: life and immortality are now brought to light for all who believe.",
+  "phrase": "life and immortality to light by the gospel"
+ },
+ "trail": {
+  "ref": "2 Timothy 1:11-12",
+  "text": "Consider the example of blessed Paul, 2Ti 1:11,12.",
+  "note": "Matthew Henry’s next thought"
+ },
  "leads": [
   {
    "ref": "Ephesians 2:8",
@@ -72,81 +152,18 @@
   }
  ],
  "review": {
-  "flags": [],
+  "flags": [
+   {
+    "b": "B4",
+    "issue": "The verse (2 Timothy 1:9) does not mention death or its abolishment. This connecting sentence introduces content from 2 Timothy 1:10 (not provided in the verse), shifting beyond the stated verse's scope."
+   }
+  ],
   "status": "unreviewed"
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:28:33.406Z",
-  "cost": 0.010788,
+  "builtAt": "2026-11-21T15:18:08.602Z",
+  "cost": 0.01236,
   "attempts": 3
- },
- "reasons": [
-  "a quote is 99 words (limit 80)",
-  "a quote is 114 words (limit 80)",
-  "quotes total 448 words (limit 420)",
-  "morning.phrase is not found word for word in the note"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows what God has done for us through the gospel by listing six great things."
-   },
-   {
-    "quote": [
-     4,
-     5
-    ]
-   },
-   {
-    "say": "Salvation is God's work from start to finish, not something we earn."
-   },
-   {
-    "quote": [
-     6,
-     7
-    ]
-   },
-   {
-    "say": "God calls us to holiness, and that calling changes us from the moment we answer it."
-   },
-   {
-    "quote": [
-     10,
-     12
-    ]
-   },
-   {
-    "say": "This grace was God's plan before time began, given to us through Christ alone."
-   },
-   {
-    "quote": [
-     13,
-     14
-    ]
-   },
-   {
-    "say": "Christ showed us this purpose by appearing and suffering, so we should not hesitate to suffer for it."
-   },
-   {
-    "quote": [
-     16,
-     17
-    ]
-   },
-   {
-    "say": "Through the gospel, death loses its power and becomes a doorway to peace instead of an enemy."
-   },
-   {
-    "quote": [
-     20,
-     21
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry with you today what the gospel has shown you about life beyond this world.",
-   "phrase": "life and immortality are brought to light by the gospel"
-  }
  }
 }

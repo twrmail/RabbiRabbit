@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 5"
  },
  "structure": {
-  "sentences": 7,
+  "sentences": 8,
   "points": 2,
   "pointKind": "paren",
   "noteBlocks": 1,
@@ -47,7 +47,7 @@
  "flow": [
   {
    "type": "say",
-   "text": "Henry shows how God's glory gets revealed in two stages, each with its own kind of preparation and its own kind of seeing."
+   "text": "Henry shows how the Lord prepares people for his glory to be revealed, first through one deliverance and then through another."
   },
   {
    "type": "quote",
@@ -61,7 +61,7 @@
   },
   {
    "type": "say",
-   "text": "First, when captives are made ready for freedom, those with courage to push through their fears will witness deliverance."
+   "text": "When captives are ready, Cyrus will proclaim freedom to those whose hearts the Lord stirs up with courage."
   },
   {
    "type": "quote",
@@ -75,7 +75,7 @@
   },
   {
    "type": "say",
-   "text": "Second, after John prepares people through repentance, the Messiah appears in glory, healing those wounded by conviction."
+   "text": "Later, after John Baptist prepares people through preaching repentance, the Messiah himself is revealed in glory, healing those wounded by conviction."
   },
   {
    "type": "quote",
@@ -89,13 +89,13 @@
   },
   {
    "type": "say",
-   "text": "This glory shines on all people everywhere, not just one nation, and all will see it and welcome it together."
+   "text": "All flesh will see this glory together, not just one nation, and they will welcome it."
   },
   {
    "type": "quote",
-   "text": "And it shall be the accomplishment of the word of God, not one *iota* or tittle of which shall fall to the ground: *The mouth of the Lord has spoken it,* and therefore the hand of the Lord will effect it.",
-   "from": 6,
-   "to": 6,
+   "text": "… *The mouth of the Lord has spoken it,* and therefore the hand of the Lord will effect it.",
+   "from": 7,
+   "to": 7,
    "point": "P2",
    "points": [
     "P2"
@@ -103,7 +103,7 @@
   }
  ],
  "morning": {
-  "say": "Carry into today the certainty that God's word will accomplish what it promises.",
+  "say": "Carry with you today that God's word will surely be done because his mouth has spoken it.",
   "phrase": "The mouth of the Lord has spoken it"
  },
  "trail": null,
@@ -134,18 +134,13 @@
   }
  ],
  "review": {
-  "flags": [
-   {
-    "b": "B2",
-    "issue": "Overstates the commentator's point by saying the Messiah 'appears in glory, healing those wounded by conviction.' The quote says the Messiah is revealed in his glory and heals 'with consolations those whom John had wounded with convictions'—healing is a result of grace, not the primary appearance itself."
-   }
-  ],
+  "flags": [],
   "status": "unreviewed"
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:30:22.368Z",
-  "cost": 0.00371,
-  "attempts": 1
+  "builtAt": "2026-11-21T15:19:40.089Z",
+  "cost": 0.00727,
+  "attempts": 2
  }
 }

@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Psalms 85:10"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -37,13 +37,75 @@
   "label": "Henry treats verse 10 together with verses 10-11"
  },
  "structure": {
-  "sentences": 16,
+  "sentences": 18,
   "points": 3,
   "pointKind": "paren",
-  "noteBlocks": 2
+  "noteBlocks": 2,
+  "quoted": 4,
+  "pointsCovered": 3
  },
- "flow": [],
- "morning": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how this verse pictures four great qualities meeting together in perfect harmony."
+  },
+  {
+   "type": "quote",
+   "text": "Graces meeting, and happily embracing (Ps 85:10,11): *Mercy and truth, righteousness and peace, kiss each other.* This may be understood, Of the reformation of the people and of the government, in the administration of which all those graces should be conspicuous and commanding. The rulers and ruled shall all be merciful and true, righteous and peaceable.",
+   "from": 1,
+   "to": 2,
+   "point": "P1",
+   "points": [
+    "P1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "When rulers and people alike practice mercy, truth, righteousness, and peace, a land flourishes. Without them, everything falls apart."
+  },
+  {
+   "type": "quote",
+   "text": "… but when these meet in the management of all affairs, when these give aim, when these give law, when there is such plenty of truth that it sprouts up like the grass of the earth, and of righteousness that it is showered down like rain from heaven, then things go well. When in every congress mercy and truth meet, in every embrace righteousness and peace kiss, and common honesty is indeed common, then glory dwells in a land, as the sin of reigning dishonesty is a reproach to any people.",
+   "from": 4,
+   "to": 5,
+   "point": "P1",
+   "points": [
+    "P1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "God promises to return favor to a people who return to him and live faithfully. If we are true to him, he will be merciful to us."
+  },
+  {
+   "type": "quote",
+   "text": "When a people return to God and adhere to him in a way of duty he will return to them and abide with them in a way of mercy. So some understand this, man's truth and God's mercy, man's righteousness and God's peace, meet together. If God find us true to him, to one another, to ourselves, we shall find him merciful.",
+   "from": 7,
+   "to": 9,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "Most importantly, Christ the Mediator brings all these qualities together perfectly. Through him, God can show mercy to sinners while remaining just and true."
+  },
+  {
+   "type": "quote",
+   "text": "In him who is both our salvation and our glory *mercy and truth have met together;* God's mercy and truth, and his *righteousness and peace, have kissed each other;* that is, the great affair of our salvation is so well contrived, so well concerted, that God may have mercy upon poor sinners, and be at peace with them, without any wrong to his truth and righteousness. He is true to the threatening, and just in his government, and yet pardons sinners and takes them into covenant with himself.",
+   "from": 14,
+   "to": 15,
+   "point": "P3",
+   "points": [
+    "P3"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into your day the truth that Christ brings mercy and justice together for you.",
+  "phrase": "God may have mercy upon poor sinners, and be at peace with them"
+ },
  "trail": null,
  "leads": [
   {
@@ -77,46 +139,8 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:31:08.448Z",
-  "cost": 0.008465,
+  "builtAt": "2026-11-21T15:20:17.818Z",
+  "cost": 0.01154,
   "attempts": 3
- },
- "reasons": [
-  "a quote is 88 words (limit 80)"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows how this verse describes three great meetings of God's graces: in a just government, in a people's return to God, and in Christ's work of salvation."
-   },
-   {
-    "quote": [
-     1,
-     2
-    ]
-   },
-   {
-    "say": "When rulers and people alike practice mercy, truth, righteousness, and peace together, a land flourishes instead of falling into ruin."
-   },
-   {
-    "quote": [
-     6,
-     8
-    ]
-   },
-   {
-    "say": "God promises to return mercy to those who return to him in truth and righteousness, and to give them the comfort of peace."
-   },
-   {
-    "quote": [
-     13,
-     14
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry into today the truth that Christ brings all these graces together for sinners.",
-   "phrase": "God may have mercy upon poor sinners, and be at peace with them"
-  }
  }
 }

@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Mark 13:35"
  },
- "status": "ok",
+ "status": "failed",
  "scripture": {
   "kjv": [
    {
@@ -37,75 +37,13 @@
   "label": "Henry treats verse 35 together with verses 35-37"
  },
  "structure": {
-  "sentences": 9,
+  "sentences": 13,
   "points": 4,
   "pointKind": "paren",
-  "noteBlocks": 1,
-  "quoted": 4,
-  "pointsCovered": 4
+  "noteBlocks": 1
  },
- "flow": [
-  {
-   "type": "say",
-   "text": "Henry shows us that Jesus will return as the Master to judge his servants, and we must stay watchful because we do not know when."
-  },
-  {
-   "type": "quote",
-   "text": "Our Lord *will come,* and will come as the *Master of the house,* to take account of his servants, of their work, and of the improvement they have made.",
-   "from": 2,
-   "to": 2,
-   "point": "P1",
-   "points": [
-    "P1"
-   ]
-  },
-  {
-   "type": "say",
-   "text": "The Lord kept the time hidden on purpose, so we would always be ready. He may come at evening, midnight, dawn, or morning—or at any stage of our lives."
-  },
-  {
-   "type": "quote",
-   "text": "We know not *when he will come;* and he has very wisely kept us at uncertainty, that we might all be always ready. We know not *when he will come,* just at what precise time; the *Master of the house* perhaps will come *at even,* at nine at night; or it may be *at midnight,* or a *cock-crowing,* at three in the morning, or perhaps not until six.",
-   "from": 3,
-   "to": 4,
-   "point": "P2",
-   "points": [
-    "P2"
-   ]
-  },
-  {
-   "type": "say",
-   "text": "We must not be found sleeping, careless, or unprepared when he arrives. Our guard must stay up and our duty must stay in mind."
-  },
-  {
-   "type": "quote",
-   "text": "Our great care must be, that, whenever our Lord comes, he do not *find us sleeping,* secure in ourselves, off our guard, indulging ourselves in ease and sloth, mindless of our work and duty, and thoughtless of our Lord's coming; *ready* to say, He will not come, and *unready* to meet him.",
-   "from": 7,
-   "to": 7,
-   "point": "P3",
-   "points": [
-    "P3"
-   ]
-  },
-  {
-   "type": "say",
-   "text": "His coming will be sudden and a shock to those who are careless, like a thief in the night."
-  },
-  {
-   "type": "quote",
-   "text": "His coming will indeed be *coming suddenly;* it will be a great *surprise* and *terror* to those that are careless, and asleep, it will come upon them as a thief in the night.",
-   "from": 8,
-   "to": 8,
-   "point": "P4",
-   "points": [
-    "P4"
-   ]
-  }
- ],
- "morning": {
-  "say": "Carry into today the thought that you must always be ready, since you do not know when the Master will come.",
-  "phrase": "we must expect death"
- },
+ "flow": [],
+ "morning": null,
  "trail": null,
  "leads": [
   {
@@ -134,18 +72,62 @@
   }
  ],
  "review": {
-  "flags": [
-   {
-    "b": "B1",
-    "issue": "Adds 'or at any stage of our lives' which shifts from the verse's specific times of day to a broader metaphorical application not stated in the quoted commentary."
-   }
-  ],
+  "flags": [],
   "status": "unreviewed"
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:29:50.604Z",
-  "cost": 0.0038,
-  "attempts": 1
+  "builtAt": "2026-11-21T15:19:10.845Z",
+  "cost": 0.008124,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote has bad sentence numbers",
+  "a quote has bad sentence numbers",
+  "a quote has bad sentence numbers",
+  "does not quote these required points: 1, 4"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows that Jesus will return as the Master to judge his servants, and we must stay watchful because we do not know when."
+   },
+   {
+    "quote": [
+     2
+    ]
+   },
+   {
+    "say": "The Master may come at any hour of the night—evening, midnight, or dawn—so we cannot know the time of his arrival or our death."
+   },
+   {
+    "quote": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "say": "We must guard against being found asleep and unprepared, secure in ourselves and careless about our duty."
+   },
+   {
+    "quote": [
+     10,
+     11
+    ]
+   },
+   {
+    "say": "His coming will be sudden and a shock to those who are careless, arriving like a thief in the night."
+   },
+   {
+    "quote": [
+     12
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the call to stay ready, since you do not know when the Master will come.",
+   "phrase": "we know not when he will come"
+  }
  }
 }

@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 13"
  },
  "structure": {
-  "sentences": 27,
+  "sentences": 31,
   "points": 4,
   "pointKind": "bracket",
   "noteBlocks": 4
@@ -77,55 +77,55 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:30:04.322Z",
-  "cost": 0.010971,
+  "builtAt": "2026-11-21T15:19:29.798Z",
+  "cost": 0.011042,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 120 words (limit 80)"
+  "a quote is 120 words (limit 110)"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows us that Christians share one blessed hope: Christ's glorious return will bring us to complete happiness forever."
+    "say": "Henry shows that Christians share one blessed hope: Christ's glorious return, which calls them to holy living now."
    },
    {
     "quote": [
-     7,
-     8
-    ]
-   },
-   {
-    "say": "This hope is not just a wish. It means Christ himself and the glory we will share with him, and it should shape how we live right now."
-   },
-   {
-    "quote": [
-     9,
+     10,
      11
     ]
    },
    {
-    "say": "When Christ appears in glory, all his hidden power and love will shine out like the sun, and believers will finally see him and be where he is."
+    "say": "This hope is not just any wish, but Christ himself and the happiness we will have through him."
    },
    {
     "quote": [
-     14,
-     15
+     12,
+     14
     ]
    },
    {
-    "say": "Our comfort rests on this: Jesus is the great God himself, with all power and mercy, so he alone can save us and bring us to glory."
+    "say": "When Christ appears in glory, Christians will reach their hope at last, seeing him and his divine power fully revealed."
    },
    {
     "quote": [
-     22,
-     24
+     17,
+     20
+    ]
+   },
+   {
+    "say": "Because Christ is truly God, not merely a creature, he alone can save his people and give them joy forever."
+   },
+   {
+    "quote": [
+     26,
+     28
     ]
    }
   ],
   "morning": {
-   "say": "Carry into today the thought that your Saviour is the great God who will gloriously return.",
-   "phrase": "the great God and our Saviour Jesus Christ"
+   "say": "Carry into today the thought that your hope rests on Christ as the great God.",
+   "phrase": "their Saviour is the great God, and will gloriously manifest himself"
   }
  }
 }

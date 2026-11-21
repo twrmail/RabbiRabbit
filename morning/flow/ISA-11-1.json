@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Isaiah 11:1"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -37,13 +37,47 @@
   "label": "Henry’s note on verse 1"
  },
  "structure": {
-  "sentences": 5,
+  "sentences": 6,
   "points": 1,
   "pointKind": "paren",
-  "noteBlocks": 1
+  "noteBlocks": 1,
+  "quoted": 2,
+  "pointsCovered": 1
  },
- "flow": [],
- "morning": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how this verse promises the Messiah will come from Jesse's line, but only after that royal family has been brought very low."
+  },
+  {
+   "type": "quote",
+   "text": "He comes forth out of the *stem,* or *stump,* of Jesse. When the royal family, that had been as a cedar, was cut down, and only the stump of it left, almost levelled with the ground and lost in the grass of the field (Da 4:15), yet it shall sprout again (Job 14:7); nay, it *shall grow out of his roots,* which are quite buried in the earth, and, like the roots of flowers in the winter, have no stem appearing above ground.",
+   "from": 0,
+   "to": 2,
+   "point": "P3",
+   "points": [
+    "P3"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "The family that once stood tall, like a great cedar, would be cut down to a stump, yet would sprout again from roots buried deep in the earth."
+  },
+  {
+   "type": "quote",
+   "text": "The house of David was reduced and brought very low at the time of Christ's birth, witness the obscurity and poverty of Joseph and Mary. The Messiah was thus to begin his estate of humiliation, for submitting to which he should be highly exalted, and would thus give early notice that his kingdom was not of this world.",
+   "from": 3,
+   "to": 4,
+   "point": "P3",
+   "points": [
+    "P3"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Notice how the Messiah comes not in earthly power, but through a humbled, hidden line.",
+  "phrase": "shall grow out of his roots"
+ },
  "trail": null,
  "leads": [
   {
@@ -77,46 +111,8 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:30:39.445Z",
-  "cost": 0.006024,
-  "attempts": 3
- },
- "reasons": [
-  "a quote is 83 words (limit 80)"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows how the Messiah comes from Jesse's line when it has been cut down to almost nothing."
-   },
-   {
-    "quote": [
-     0,
-     1
-    ]
-   },
-   {
-    "say": "Even though the royal family fell into poverty and obscurity, it would grow again from its buried roots."
-   },
-   {
-    "quote": [
-     2,
-     3
-    ]
-   },
-   {
-    "say": "This humble beginning showed that Christ's kingdom was not earthly power but something far greater."
-   },
-   {
-    "quote": [
-     4,
-     4
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry with you today the truth that God's greatest work often begins in the deepest humility.",
-   "phrase": "it shall sprout again"
-  }
+  "builtAt": "2026-11-21T15:20:00.209Z",
+  "cost": 0.00286,
+  "attempts": 1
  }
 }

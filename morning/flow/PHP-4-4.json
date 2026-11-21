@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 4"
  },
  "structure": {
-  "sentences": 9,
+  "sentences": 11,
   "points": 0,
   "pointKind": "none",
   "noteBlocks": 1
@@ -77,35 +77,37 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:31:46.111Z",
-  "cost": 0.007152,
+  "builtAt": "2026-11-21T15:20:49.760Z",
+  "cost": 0.00739,
   "attempts": 3
  },
  "reasons": [
-  "names “Paul”, who is not in the block"
+  "a quote has bad sentence numbers",
+  "a quote has bad sentence numbers",
+  "names “Paul”, who is not in the block",
+  "morning.phrase must be 3 to 16 words"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows us that Paul calls Christians to find their deepest joy in God himself, not in circumstances."
+    "say": "Henry shows that Paul calls Christians to rejoice in the Lord always, making this a duty of great consequence."
    },
    {
     "quote": [
      1,
-     1
+     2
     ]
    },
    {
-    "say": "This joy must fill all our thoughts about God and stay with us through every season of life."
+    "say": "Our joy must center on God himself, and even our difficult thoughts can be turned to delight in him."
    },
    {
     "quote": [
-     3,
      3
     ]
    },
    {
-    "say": "Even hardship and suffering cannot take away the joy we find in God, because he is enough in every condition."
+    "say": "This rejoicing applies at all times and in all conditions, even when we suffer or face hardship in serving God."
    },
    {
     "quote": [
@@ -114,18 +116,19 @@
     ]
    },
    {
-    "say": "Henry notes that Paul repeats this command because rejoicing in God is so important that Christians need constant reminding."
+    "say": "Paul repeats this command because joy in God is so important that Christians need to hear it again and again."
    },
    {
     "quote": [
      7,
-     7
+     8,
+     9
     ]
    }
   ],
   "morning": {
-   "say": "Carry into today the truth that God himself is enough to give you joy right now.",
-   "phrase": "There is enough in God to furnish us with matter of joy"
+   "say": "Carry into today Henry's reminder that God himself is enough to give you joy, no matter what happens.",
+   "phrase": "There is enough in God to furnish us with matter of joy in the worst circumstance on earth"
   }
  }
 }

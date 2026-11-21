@@ -37,7 +37,7 @@
   "label": "Gill’s note on verse 1"
  },
  "structure": {
-  "sentences": 3,
+  "sentences": 12,
   "points": 0,
   "pointKind": "none",
   "noteBlocks": 3
@@ -77,40 +77,45 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:31:18.545Z",
-  "cost": 0.006822,
+  "builtAt": "2026-11-21T15:20:30.559Z",
+  "cost": 0.007361000000000001,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 277 words (limit 80)",
-  "quotes must follow the note’s order without overlapping",
-  "a quote is 277 words (limit 80)",
-  "quotes total 554 words (limit 420)"
+  "a quote has bad sentence numbers"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Gill sees the wilderness blooming as a picture of the church and the Gentile world becoming fruitful after spiritual desolation."
+    "say": "Gill sees the wilderness and desert in this verse as the church and the Gentile world, which will flourish once their enemies fall."
    },
    {
     "quote": [
-     1,
-     1
+     3,
+     4
     ]
    },
    {
-    "say": "The desert that was barren transforms into something beautiful and fragrant, just as the Gospel brings life where there was none."
+    "say": "The desolate places become fruitful and beautiful, transformed by what brings them joy and spreads everywhere."
    },
    {
     "quote": [
-     1,
-     1
+     8,
+     9
+    ]
+   },
+   {
+    "say": "This promise reaches its fullest meaning in the latter days, when the church enters a most desirable and comfortable state."
+   },
+   {
+    "quote": [
+     10
     ]
    }
   ],
   "morning": {
-   "say": "Carry with you today the promise that what seems dead and empty can bloom again through God's work.",
-   "phrase": "the desert shall rejoice, and blossom as the rose"
+   "say": "Carry with you today the image of barren places becoming fruitful and flourishing.",
+   "phrase": "became fruitful and flourishing, and of a sweet odour"
   }
  }
 }

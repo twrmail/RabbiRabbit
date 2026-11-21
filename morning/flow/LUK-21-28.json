@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 28"
  },
  "structure": {
-  "sentences": 15,
+  "sentences": 17,
   "points": 0,
   "pointKind": "none",
   "noteBlocks": 2
@@ -77,26 +77,17 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:29:55.383Z",
-  "cost": 0.007464,
+  "builtAt": "2026-11-21T15:19:21.192Z",
+  "cost": 0.0077610000000000005,
   "attempts": 3
  },
  "reasons": [
-  "morning.phrase is not found word for word in the note"
+  "a quote has bad sentence numbers"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows how Jesus tells his followers to stay hopeful when troubles come. Even as the world falls apart around them, they should look up in faith."
-   },
-   {
-    "quote": [
-     1,
-     1
-    ]
-   },
-   {
-    "say": "When Jesus came to save Christians from persecution, the churches found peace. When he comes again at the end, he will free all his people from every hardship."
+    "say": "Henry shows how Jesus encourages his followers when troubles come: look up, because your rescue is near."
    },
    {
     "quote": [
@@ -105,18 +96,26 @@
     ]
    },
    {
-    "say": "Good Christians find joy in that coming day, not fear. They can hold their heads high because they know their rescue is near."
+    "say": "Whether Christ comes to free persecuted Christians or to judge the world at the end, his people can lift their heads with joy."
    },
    {
     "quote": [
-     5,
+     4,
+     6
+    ]
+   },
+   {
+    "say": "That day brings terror to the wicked but joy to the good, because they know their redemption draws near."
+   },
+   {
+    "quote": [
      5
     ]
    }
   ],
   "morning": {
-   "say": "Carry into today the courage to look up in faith, knowing your redemption draws near.",
-   "phrase": "lift up your heads with joy"
+   "say": "Carry into today the comfort that when troubles press down, looking up in faith means your redemption draws nigh.",
+   "phrase": "look up, when others are looking down, look heavenward, in faith, hope, and prayer"
   }
  }
 }

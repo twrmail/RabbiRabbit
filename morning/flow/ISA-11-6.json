@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Isaiah 11:6"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -37,13 +37,73 @@
   "label": "Henry’s note on verse 6"
  },
  "structure": {
-  "sentences": 19,
+  "sentences": 22,
   "points": 2,
   "pointKind": "paren",
-  "noteBlocks": 3
+  "noteBlocks": 3,
+  "quoted": 4,
+  "pointsCovered": 2
  },
- "flow": [],
- "morning": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how the gospel transforms fierce people into gentle ones, and how Christ's followers find safety in him."
+  },
+  {
+   "type": "quote",
+   "text": "Unity or concord, which is intimated in these figurative promises, that even *the wolf shall dwell* peaceably *with the lamb;* men of the most fierce and furious dispositions, who used to bite and devour all about them, shall have their temper so strangely altered by the efficacy of the gospel and grace of Christ that they shall live in love even with the weakest and such as formerly they would have made an easy prey of. So far shall the sheep be from hurting one another, as sometimes they have done (Eze 34:20,21), that even the wolves shall agree with them.",
+   "from": 1,
+   "to": 2,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "The wolf and lamb dwelling together means enemies become friends through the power of Christ's grace."
+  },
+  {
+   "type": "quote",
+   "text": "Now, This is fulfilled in the wonderful effect of the gospel upon the minds of those that sincerely embrace it; it changes the nature, and makes those that trampled on the meek of the earth, not only meek like them, but affectionate towards them.",
+   "from": 11,
+   "to": 12,
+   "point": "P1",
+   "points": [
+    "P1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "This happened when Paul the persecutor joined the saints, and it points to a future peace when weapons become tools."
+  },
+  {
+   "type": "quote",
+   "text": "When Paul, who had persecuted the saints, joined himself to them, then the *wolf dwelt with the lamb.* Some are willing to hope it shall yet have a further accomplishment in the latter days, when *swords shall be beaten into ploughshares.* 2. Safety or security. Christ, the great Shepherd, shall take such care of the flock that those who would hurt them shall not; they shall not only not destroy one another, but no enemy from without shall be permitted to give them any molestation.",
+   "from": 13,
+   "to": 15,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "God's people are kept safe from harm and fear alike, even as a child plays without terror where danger once was."
+  },
+  {
+   "type": "quote",
+   "text": "Even *the sucking child* shall without any terror *play upon the hole of the asp;* blessed Paul does so when he says, *Who shall separate us from the love of Christ?* and, *O death! where is thy sting?* Lastly, Observe what shall be the effect, and what the cause, of this wonderful softening and sweetening of men's tempers by the grace of God. 1. The effect of it shall be tractableness, and a willingness to receive instruction: *A little child shall lead those* who formerly scorned to be controlled by the strongest man.",
+   "from": 18,
+   "to": 19,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into your day the truth that Christ's grace can soften the hardest heart and make enemies into friends.",
+  "phrase": "the wolf shall dwell peaceably with the lamb"
+ },
  "trail": null,
  "leads": [
   {
@@ -72,63 +132,18 @@
   }
  ],
  "review": {
-  "flags": [],
+  "flags": [
+   {
+    "b": "B2",
+    "issue": "Overstates the commentator's point by saying the future fulfillment 'points to a future peace when weapons become tools.' The quote says some 'are willing to hope' for further accomplishment and mentions swords becoming ploughshares as a separate reference, but does not present this as the primary direction or emphasis of the prophecy's fulfillment."
+   }
+  ],
   "status": "unreviewed"
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:30:46.902Z",
-  "cost": 0.009611,
+  "builtAt": "2026-11-21T15:20:03.785Z",
+  "cost": 0.0129,
   "attempts": 3
- },
- "reasons": [
-  "a quote is 165 words (limit 80)",
-  "a quote is 86 words (limit 80)",
-  "a quote is 110 words (limit 80)",
-  "a quote has bad sentence numbers",
-  "morning.phrase is not found word for word in the note"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows how the gospel transforms fierce people into gentle ones, fulfilling this promise of peace."
-   },
-   {
-    "quote": [
-     1,
-     3
-    ]
-   },
-   {
-    "say": "When people truly embrace Christ, their nature changes so completely that former enemies live together in love."
-   },
-   {
-    "quote": [
-     9,
-     10
-    ]
-   },
-   {
-    "say": "Beyond that change in hearts, Christ as the great Shepherd also protects his flock from all harm."
-   },
-   {
-    "quote": [
-     12,
-     14
-    ]
-   },
-   {
-    "say": "This safety means God's people lose even their fear of trouble, and a child can lead those who once refused all control."
-   },
-   {
-    "quote": [
-     16
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry into today the truth that Christ's grace can transform the fiercest heart into a gentle one.",
-   "phrase": "the gospel changes the nature and makes those affectionate"
-  }
  }
 }

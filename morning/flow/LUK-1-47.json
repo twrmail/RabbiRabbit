@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 47"
  },
  "structure": {
-  "sentences": 4,
+  "sentences": 6,
   "points": 1,
   "pointKind": "paren",
   "noteBlocks": 1
@@ -77,12 +77,11 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:32:07.323Z",
-  "cost": 0.006482,
+  "builtAt": "2026-11-21T15:21:10.917Z",
+  "cost": 0.007431,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 145 words (limit 80)",
   "a quote has bad sentence numbers",
   "a quote has bad sentence numbers",
   "names “Mary”, who is not in the block",
@@ -100,7 +99,7 @@
     ]
    },
    {
-    "say": "She understood that even she needed Christ as her Saviour, just like all other believers do."
+    "say": "She understood from the angel that the child she would bear was Jesus, the Saviour, and she claimed that salvation for herself."
    },
    {
     "quote": [
@@ -108,16 +107,16 @@
     ]
    },
    {
-    "say": "This spiritual joy comes from having Christ as both God and Saviour."
+    "say": "Even as his mother, she needed him as her Saviour and valued that common bond with all believers more than her unique role."
    },
    {
     "quote": [
-     3
+     4
     ]
    }
   ],
   "morning": {
-   "say": "Carry into today the truth that having Christ as your Saviour gives you real reason to rejoice in spirit.",
+   "say": "Carry into your day the truth that having Christ as your Saviour is cause for deep spiritual joy.",
    "phrase": "Those that have Christ for their God and Saviour have a great deal of reason to rejoice"
   }
  }

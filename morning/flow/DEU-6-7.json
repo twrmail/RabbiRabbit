@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 7"
  },
  "structure": {
-  "sentences": 12,
+  "sentences": 14,
   "points": 0,
   "pointKind": "none",
   "noteBlocks": 1
@@ -77,46 +77,46 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:29:29.507Z",
-  "cost": 0.007618999999999999,
+  "builtAt": "2026-11-21T15:18:47.098Z",
+  "cost": 0.007913,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 128 words (limit 80)"
+  "a quote is 128 words (limit 110)"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows how this verse calls parents to teach God's word to their children constantly, in every moment of daily life."
+    "say": "Henry shows how this command calls parents to teach God's truth to their children with care and repetition, and to speak of these things naturally in daily life."
    },
    {
     "quote": [
      1,
-     1
-    ]
-   },
-   {
-    "say": "Teaching children God's word is not a burden but a way to strengthen your own faith as you share it."
-   },
-   {
-    "quote": [
-     3,
      3
     ]
    },
    {
-    "say": "Parents should look for every chance to speak about God's truths naturally, whether at home, on the road, or at bedtime."
+    "say": "The teaching should happen everywhere—at home, on the road, at bedtime, and when rising—woven into ordinary moments with those in your care."
    },
    {
     "quote": [
-     9,
-     10
+     10,
+     11
+    ]
+   },
+   {
+    "say": "Speaking often of God's plain truths and laws is not beneath sacred things but honors them, and helps both speaker and listener grow in understanding and love."
+   },
+   {
+    "quote": [
+     12,
+     13
     ]
    }
   ],
   "morning": {
-   "say": "Carry into today one moment to speak naturally with someone about what matters most to God.",
-   "phrase": "Take all occasions to discourse with those about thee of divine things"
+   "say": "Carry into today Henry's reminder that familiar talk of God's truths shapes hearts and minds.",
+   "phrase": "take all occasions to discourse with those about thee of divine things"
   }
  }
 }

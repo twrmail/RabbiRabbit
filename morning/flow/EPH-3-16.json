@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 16"
  },
  "structure": {
-  "sentences": 14,
+  "sentences": 15,
   "points": 0,
   "pointKind": "none",
   "noteBlocks": 1
@@ -77,18 +77,17 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:29:07.574Z",
-  "cost": 0.007594,
+  "builtAt": "2026-11-21T15:18:25.415Z",
+  "cost": 0.008272,
   "attempts": 3
  },
  "reasons": [
-  "a quote is 110 words (limit 80)",
   "names “Paul”, who is not in the block"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows Paul praying that believers receive spiritual strength from God's Spirit working deep in their souls."
+    "say": "Henry shows that Paul prays for spiritual strength in the inner person, not physical power, but the deep resources of God's grace at work in the soul."
    },
    {
     "quote": [
@@ -97,7 +96,7 @@
     ]
    },
    {
-    "say": "This inner strength means being mightily strengthened to serve God, resist temptation, and endure hardship."
+    "say": "This strength comes from God's Spirit and enables believers to serve, resist temptation, and endure with vigor."
    },
    {
     "quote": [
@@ -106,26 +105,26 @@
     ]
    },
    {
-    "say": "God gives this strength according to his glorious riches, pouring out his abundant grace and power through his Spirit."
+    "say": "Henry also notes that this same Spirit continues the work of grace throughout the Christian life, never stopping."
    },
    {
     "quote": [
-     6,
-     6
+     7,
+     7
     ]
    },
    {
-    "say": "The Spirit begins this work of grace in us and keeps carrying it forward throughout our Christian life."
+    "say": "The goal is for Christ to dwell in the heart through faith, which opens the soul to receive him and unite with him."
    },
    {
     "quote": [
-     11,
-     13
+     12,
+     14
     ]
    }
   ],
   "morning": {
-   "say": "Ask God today to strengthen your inner self through his Spirit, so you can serve him with vigor and joy.",
+   "say": "Ask the Spirit today to strengthen your inner self so you can serve God and persevere with joy.",
    "phrase": "strength from the Spirit of God in the inner man"
   }
  }

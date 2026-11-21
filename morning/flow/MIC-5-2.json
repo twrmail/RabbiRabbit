@@ -37,7 +37,7 @@
   "label": "Henry’s note on verse 2"
  },
  "structure": {
-  "sentences": 15,
+  "sentences": 17,
   "points": 2,
   "pointKind": "paren",
   "noteBlocks": 2
@@ -77,55 +77,56 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:32:25.412Z",
-  "cost": 0.008632,
+  "builtAt": "2026-11-21T15:21:29.952Z",
+  "cost": 0.009032,
   "attempts": 3
  },
  "reasons": [
-  "quotes must follow the note’s order without overlapping"
+  "a quote is 116 words (limit 110)",
+  "quotes must follow the note’s order without overlapping",
+  "a quote has bad sentence numbers"
  ],
  "rejected": {
   "flow": [
    {
-    "say": "Henry shows us two things about the Messiah that Micah foretold: where he would be born and what office he would hold."
+    "say": "Henry shows how this verse points to where Christ would be born and what kind of ruler he would be."
    },
    {
     "quote": [
-     7,
-     8
+     8,
+     10
     ]
    },
    {
-    "say": "The scribes knew from this verse that Christ would come from Bethlehem, and the Jews widely expected him there."
+    "say": "Bethlehem was small and ordinary, but God chose it anyway to honor his Son."
    },
    {
     "quote": [
-     11,
-     11
+     12,
+     13
     ]
    },
    {
-    "say": "Though Bethlehem was small and humble, God chose it to honor his Son, not the other way around."
-   },
-   {
-    "quote": [
-     0,
-     0
-    ]
-   },
-   {
-    "say": "The Messiah's true rule is spiritual, over the hearts and souls of all who believe in him."
+    "say": "Christ's rule is not earthly power but spiritual reign in the hearts of his followers."
    },
    {
     "quote": [
      2,
-     3
+     4
+    ]
+   },
+   {
+    "say": "Only one whose existence stretches back to eternity could truly be ruler over all things."
+   },
+   {
+    "quote": [
+     6
     ]
    }
   ],
   "morning": {
-   "say": "Carry with you today that Christ's kingdom is not of this world, but reigns in the hearts of his followers.",
-   "phrase": "My kingdom is not of this world"
+   "say": "Carry with you today that connection to Christ makes even small things great.",
+   "phrase": "A relation to Christ will magnify those that are little in the world."
   }
  }
 }

@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Zephaniah 3:17"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -40,10 +40,64 @@
   "sentences": 14,
   "points": 0,
   "pointKind": "none",
-  "noteBlocks": 2
+  "noteBlocks": 2,
+  "quoted": 4,
+  "pointsCovered": 0
  },
- "flow": [],
- "morning": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how God's power and delight work together in this verse about salvation and joy."
+  },
+  {
+   "type": "quote",
+   "text": "\"He has engaged his power for thy succour: *He will save. He will be Jesus,* will answer the name, for he will save his people from their sins.\"",
+   "from": 1,
+   "to": 2,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "God has committed his strength to save his people from their sins, which is what Jesus does."
+  },
+  {
+   "type": "quote",
+   "text": "God will take delight in them, and in doing them good. The expressions of this are very lively and affecting (Zep 3:17): *He will rejoice over thee with joy,* will not only be well pleased with thee, upon thy repentance and reformation, and take thee into favour, but will take a complacency in thee, as the bridegroom does in his bride, or the bride in her ornaments, Isa 62:3-5.",
+   "from": 4,
+   "to": 5,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "God takes real pleasure in his people, like a bridegroom delights in his bride, and this joy fills heaven itself."
+  },
+  {
+   "type": "quote",
+   "text": "He will *rest in his love,* will be *silent in his love,* so the word is. \"I will not rebuke thee as I have done, for thy sins; I will acquiesce in thee, and in my relation to thee.\"",
+   "from": 8,
+   "to": 9,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "God rests in his love and will not rebuke them anymore, showing a love so deep it has no equal."
+  },
+  {
+   "type": "quote",
+   "text": "He *will joy over them with singing.* He that is grieved for the sin of sinners rejoices in the graces and services of the saints, and is ready to express that joy by singing over them. *The Lord takes plea-sure in those that fear him,* and in them Jesus Christ will shortly be glorified and admired.",
+   "from": 12,
+   "to": 13,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the truth that God rejoices over you with singing.",
+  "phrase": "He will joy over them with singing"
+ },
  "trail": null,
  "leads": [
   {
@@ -72,60 +126,18 @@
   }
  ],
  "review": {
-  "flags": [],
+  "flags": [
+   {
+    "b": "B2",
+    "issue": "Adds 'this joy fills heaven itself' which is not stated in the verse or quotes provided"
+   }
+  ],
   "status": "unreviewed"
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:31:30.261Z",
-  "cost": 0.00763,
+  "builtAt": "2026-11-21T15:20:39.458Z",
+  "cost": 0.00878,
   "attempts": 3
- },
- "reasons": [
-  "morning.phrase is not found word for word in the note"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows how God's power and delight work together in this verse. God saves his people and then rejoices over them with overwhelming joy."
-   },
-   {
-    "quote": [
-     1,
-     2
-    ]
-   },
-   {
-    "say": "God does not just save us once. He takes ongoing pleasure in us, like a bridegroom delights in his bride."
-   },
-   {
-    "quote": [
-     5,
-     5
-    ]
-   },
-   {
-    "say": "This joy is so deep that God rests in his love for us, silent and satisfied, no longer rebuking but fully accepting us."
-   },
-   {
-    "quote": [
-     8,
-     9
-    ]
-   },
-   {
-    "say": "God's love runs so deep that he expresses it by singing over his people. His joy in them is complete and vocal."
-   },
-   {
-    "quote": [
-     12,
-     12
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry with you today the picture of God resting in his love for you, pleased and singing.",
-   "phrase": "he will rest in his love, he will joy over thee with singing"
-  }
  }
 }

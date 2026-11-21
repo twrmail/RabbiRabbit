@@ -9,7 +9,7 @@
   "ve": null,
   "label": "Isaiah 58:14"
  },
- "status": "failed",
+ "status": "ok",
  "scripture": {
   "kjv": [
    {
@@ -37,13 +37,67 @@
   "label": "Henry’s note on verse 14"
  },
  "structure": {
-  "sentences": 16,
+  "sentences": 18,
   "points": 0,
   "pointKind": "none",
-  "noteBlocks": 3
+  "noteBlocks": 3,
+  "quoted": 4,
+  "pointsCovered": 0
  },
- "flow": [],
- "morning": null,
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows what God promises to those who honor the sabbath: delight in him, honor, and provision."
+  },
+  {
+   "type": "quote",
+   "text": "*If we call the sabbath a delight, then shall we delight ourselves in the Lord;* he will more and more manifest himself to us as the delightful subject of our thoughts and meditations and the delightful object of our best affections. Note, The more pleasure we take in serving God the more pleasure we shall find in it.",
+   "from": 4,
+   "to": 5,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "The more we find joy in serving God, the more we will experience his presence and satisfaction."
+  },
+  {
+   "type": "quote",
+   "text": "We shall have the honour of it: *I will cause thee to ride upon the high places of the earth,* which denotes not only a great security (as that, Isa 32:16, *He shall dwell on high*), but great dignity and advancement. \"Thou shalt ride in state, shalt appear conspicuous, and the eyes of all thy neighbours shall be upon thee.\"",
+   "from": 7,
+   "to": 8,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "God lifts up those who honor him and his sabbath, giving them great dignity and security."
+  },
+  {
+   "type": "quote",
+   "text": "We shall have the profit of it: I will *feed thee with the heritage of Jacob thy father,* that is, with all the blessings of the covenant and all the precious products of Canaan (which was a type of heaven), for these were the heritage of Jacob. Observe, The heritage of believers is what they shall not only be portioned with hereafter, but fed with now, fed with the hopes of it, and not flattered, fed with the earnests and foretastes of it…",
+   "from": 12,
+   "to": 13,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "Believers are fed now with the blessings and foretastes of the covenant heritage, not merely promised it later."
+  },
+  {
+   "type": "quote",
+   "text": "In order that we may depend upon it, it is added, \"*The mouth of the Lord has spoken it;* you may take God's word for it, for he cannot lie nor deceive; what his mouth has spoken his hand will give, his hand will do, and not one iota or tittle of his good promise shall fall to the ground.\"",
+   "from": 15,
+   "to": 16,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry into your day Henry's reminder that God's promises are certain because his mouth has spoken them.",
+  "phrase": "what his mouth has spoken his hand will give"
+ },
  "trail": null,
  "leads": [
   {
@@ -77,55 +131,8 @@
  },
  "build": {
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T14:29:20.187Z",
-  "cost": 0.008098999999999999,
+  "builtAt": "2026-11-21T15:18:35.751Z",
+  "cost": 0.01085,
   "attempts": 3
- },
- "reasons": [
-  "a quote is 98 words (limit 80)"
- ],
- "rejected": {
-  "flow": [
-   {
-    "say": "Henry shows what God promises to those who honor the sabbath: delight in him, honor, and provision."
-   },
-   {
-    "quote": [
-     4,
-     4
-    ]
-   },
-   {
-    "say": "When we find joy in serving God, that joy grows deeper and more real."
-   },
-   {
-    "quote": [
-     7,
-     7
-    ]
-   },
-   {
-    "say": "God lifts us above the world's pull so we can travel toward heaven without being held back by it."
-   },
-   {
-    "quote": [
-     12,
-     13
-    ]
-   },
-   {
-    "say": "God feeds us now with the hope and foretaste of the blessings he has promised."
-   },
-   {
-    "quote": [
-     14,
-     14
-    ]
-   }
-  ],
-  "morning": {
-   "say": "Carry into today the certainty that God's promises are sure and will not fail.",
-   "phrase": "what his mouth has spoken his hand will give"
-  }
  }
 }
