@@ -98,7 +98,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:47:38.373Z",
+  "builtAt": "2026-11-21T14:28:13.360Z",
   "cost": 0.00534
  }
 }
