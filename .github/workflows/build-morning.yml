@@ -16,6 +16,14 @@ on:
         description: 'Rebuild days that are already built (true or false)'
         required: false
         default: 'false'
+      format:
+        description: 'standard (sections) or flow (flowing devotional)'
+        required: false
+        default: 'standard'
+      model:
+        description: 'Model for the flow format (blank = claude-haiku-4-5)'
+        required: false
+        default: ''
       max_cost:
         description: 'Stop after about this many dollars'
         required: false
@@ -37,12 +45,19 @@ jobs:
           IN_DAYS: ${{ inputs.days }}
           IN_FORCE: ${{ inputs.force }}
           IN_MAX: ${{ inputs.max_cost }}
+          IN_FORMAT: ${{ inputs.format }}
+          IN_MODEL: ${{ inputs.model }}
         run: |
           set -e
           ARGS="--days ${IN_DAYS:-30} --max-cost ${IN_MAX:-3}"
           if [ -n "$IN_FROM" ]; then ARGS="$ARGS --from $IN_FROM"; fi
           if [ "$IN_FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
-          node tools/build-morning-days.mjs $ARGS
+          if [ "$IN_FORMAT" = "flow" ]; then
+            if [ -n "$IN_MODEL" ]; then ARGS="$ARGS --model $IN_MODEL"; fi
+            node tools/build-morning-flow.mjs $ARGS
+          else
+            node tools/build-morning-days.mjs $ARGS
+          fi
       - name: Push a branch for review
         run: |
           git config user.name "morning-trail-bot"
