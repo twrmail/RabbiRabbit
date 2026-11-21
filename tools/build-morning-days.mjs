@@ -32,7 +32,7 @@ const NBLOCKS = +opt('blocks', 2)
 const MAX_COST = +opt('max-cost', 3)
 const DRY = opt('dry', false) === true
 const OUT = path.join(ROOT, opt('out', 'morning/days'))
-const env = { ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY || '', RESTATE_MODEL: process.env.RESTATE_MODEL || '' }
+const env = { ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY || '', RESTATE_MODEL: process.env.RESTATE_MODEL || '', RESTATE_ATTEMPTS: String(opt('attempts', 3)) } // three tries: each retry is told which rules it broke; the lab Worker keeps two
 if (!DRY && !env.ANTHROPIC_API_KEY) { console.error('No ANTHROPIC_API_KEY set. Add the repo secret, or use --dry.'); process.exit(2) }
 
 const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8'))

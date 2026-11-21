@@ -419,7 +419,7 @@ async function restateBlock(env, tid, ref, idx, ed) {
   const base = `TEACHER: ${teacher.short}\nSTUDIED VERSE: ${ref.label}: ${passageText}\nLENGTH: the block is ${bw} words. Write about ${Math.round(bw * 0.72)} words and never more than ${Math.round(bw * 0.88)}. Keep every point and every Bible reference the block gives, but say each in fewer words.\n\nBLOCK:\n${plain(block)}`
   const usage = { input: 0, output: 0 }
   let last = null, note2 = '', rejected = null
-  for (let attempt = 0; attempt < 2; attempt++) {
+  for (let attempt = 0; attempt < (+env.RESTATE_ATTEMPTS || 2); attempt++) {
     let r
     try { r = await callModel(env, model, base + (note2 ? `\n\nYOUR PREVIOUS ATTEMPT BROKE THESE RULES. Fix them, keep everything else:\n${note2}` : ''), 1200) } catch (e) { return { ok: false, reasons: ['The AI call failed: ' + String(e && e.message).slice(0, 120)], model } }
     usage.input += r.usage.input_tokens || 0; usage.output += r.usage.output_tokens || 0
