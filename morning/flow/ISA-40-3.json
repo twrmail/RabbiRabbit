@@ -1,0 +1,132 @@
+{
+ "id": "ISA-40-3",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 40,
+  "v": 3,
+  "ve": null,
+  "label": "Isaiah 40:3"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 3,
+    "text": "The voice of him that crieth in the wilderness, Prepare ye the way of the LORD, make straight in the desert a highway for our God."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 3,
+    "text": "A voice of one calling: “Prepare the way for the LORD in the wilderness; make a straight highway for our God in the desert."
+   }
+  ],
+  "web": [
+   {
+    "n": 3,
+    "text": "The voice of one who calls out, “Prepare the way of the LORD in the wilderness! Make a level highway in the desert for our God."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 3 together with verses 3-5"
+ },
+ "structure": {
+  "sentences": 18,
+  "points": 2,
+  "pointKind": "paren",
+  "noteBlocks": 1,
+  "quoted": 3,
+  "pointsCovered": 2
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows us that preparing the way of the Lord means getting our hearts ready to receive Christ and his salvation."
+  },
+  {
+   "type": "quote",
+   "text": "We must get into such a frame of spirit as will dispose us to receive Christ and his gospel: \"*Prepare you the way of the Lord;* prepare yourselves for him, and let all that be suppressed which would be an obstruction to his entrance. Make room for Christ: *Make straight a highway for him.*\" If he prepare the end for us, we ought surely to prepare the way for him.",
+   "from": 5,
+   "to": 6,
+   "point": "P1",
+   "points": [
+    "P1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "We must remove whatever blocks Christ from entering our lives, just as pioneers clear a path through the wilderness."
+  },
+  {
+   "type": "quote",
+   "text": "We must get our hearts levelled by divine grace. Those that are hindered from comfort in Christ by their dejections and despondencies are the valleys that must be exalted. Those that are hindered from comfort in Christ by a proud conceit of their own merit and worth are the mountains and hills that must be made low.",
+   "from": 12,
+   "to": 14,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "God's grace levels our hearts by lifting us out of despair and humbling our pride so we can truly hear and accept his word."
+  },
+  {
+   "type": "quote",
+   "text": "Let but the gospel of Christ have a fair hearing, and it cannot fail of acceptance. This prepares the way of the Lord; and thus God will by his grace prepare his own way in all the vessels of mercy, whose hearts he opens as he did Lydia's.",
+   "from": 16,
+   "to": 17,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the thought that God is waiting to be gracious when you make room for him in your heart.",
+  "phrase": "This is that for which he waits to be gracious"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Malachi 3:1",
+   "b": "MAL",
+   "c": 3,
+   "v": 1,
+   "votes": 108,
+   "kjv": "Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom ye seek, shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in: behold, he shall come, saith the LORD of hosts."
+  },
+  {
+   "ref": "Mark 1:2",
+   "b": "MRK",
+   "c": 1,
+   "v": 2,
+   "votes": 93,
+   "kjv": "As it is written in the prophets, Behold, I send my messenger before thy face, which shall prepare thy way before thee."
+  },
+  {
+   "ref": "John 1:23",
+   "b": "JHN",
+   "c": 1,
+   "v": 23,
+   "votes": 77,
+   "kjv": "He said, I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said the prophet Esaias."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:18.892Z",
+  "cost": 0.00319,
+  "attempts": 1
+ }
+}

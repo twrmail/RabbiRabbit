@@ -1,0 +1,122 @@
+{
+ "id": "PSA-85-10",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "PSA",
+  "c": 85,
+  "v": 10,
+  "ve": null,
+  "label": "Psalms 85:10"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 10,
+    "text": "Mercy and truth are met together; righteousness and peace have kissed each other."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 10,
+    "text": "Loving devotion and faithfulness have joined together; righteousness and peace have kissed."
+   }
+  ],
+  "web": [
+   {
+    "n": 10,
+    "text": "Mercy and truth meet together. Righteousness and peace have kissed each other."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 10 together with verses 10-11"
+ },
+ "structure": {
+  "sentences": 16,
+  "points": 3,
+  "pointKind": "paren",
+  "noteBlocks": 2
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Proverbs 3:3",
+   "b": "PRO",
+   "c": 3,
+   "v": 3,
+   "votes": 15,
+   "kjv": "Let not mercy and truth forsake thee: bind them about thy neck; write them upon the table of thine heart:"
+  },
+  {
+   "ref": "Psalms 89:14",
+   "b": "PSA",
+   "c": 89,
+   "v": 14,
+   "votes": 12,
+   "kjv": "Justice and judgment are the habitation of thy throne: mercy and truth shall go before thy face."
+  },
+  {
+   "ref": "Isaiah 32:16",
+   "b": "ISA",
+   "c": 32,
+   "v": 16,
+   "votes": 11,
+   "kjv": "Then judgment shall dwell in the wilderness, and righteousness remain in the fruitful field."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:31:08.448Z",
+  "cost": 0.008465,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 88 words (limit 80)"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how this verse describes three great meetings of God's graces: in a just government, in a people's return to God, and in Christ's work of salvation."
+   },
+   {
+    "quote": [
+     1,
+     2
+    ]
+   },
+   {
+    "say": "When rulers and people alike practice mercy, truth, righteousness, and peace together, a land flourishes instead of falling into ruin."
+   },
+   {
+    "quote": [
+     6,
+     8
+    ]
+   },
+   {
+    "say": "God promises to return mercy to those who return to him in truth and righteousness, and to give them the comfort of peace."
+   },
+   {
+    "quote": [
+     13,
+     14
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the truth that Christ brings all these graces together for sinners.",
+   "phrase": "God may have mercy upon poor sinners, and be at peace with them"
+  }
+ }
+}

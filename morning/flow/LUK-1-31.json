@@ -1,0 +1,134 @@
+{
+ "id": "LUK-1-31",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "LUK",
+  "c": 1,
+  "v": 31,
+  "ve": null,
+  "label": "Luke 1:31"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 31,
+    "text": "And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 31,
+    "text": "Behold, you will conceive and give birth to a son, and you are to give Him the name Jesus."
+   }
+  ],
+  "web": [
+   {
+    "n": 31,
+    "text": "Behold, you will conceive in your womb and give birth to a son, and shall name him ‘Jesus.’"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 31"
+ },
+ "structure": {
+  "sentences": 5,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 2,
+  "quoted": 3,
+  "pointsCovered": 0
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how Mary receives an honor that no other woman has ever known."
+  },
+  {
+   "type": "quote",
+   "text": "Though she is a *virgin,* she shall have the honour of being a *mother:* \"*Thou shalt conceive in thy womb, and bring forth a son,* and thou shalt have the naming of him; thou shalt *call his name Jesus,*\" Lu 1:31.",
+   "from": 1,
+   "to": 1,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "She will be a virgin and a mother at once, and she will name her son Jesus."
+  },
+  {
+   "type": "quote",
+   "text": "It was the sentence upon Eve, that, though she should have the honour to be the *mother of all living,* yet this mortification shall be an allay to that honour, that *her desire shall be to her husband,* and he *shall rule over her,* Ge 3:16.",
+   "from": 2,
+   "to": 2,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "Eve was promised motherhood but had to live under her husband's rule. Mary gets motherhood without that burden."
+  },
+  {
+   "type": "quote",
+   "text": "Though she lives in *poverty* and *obscurity,* yet she shall have the honour to be the mother of the Messiah; her son shall be named *Jesus—a Saviour,* such a one as the world *needs,* rather than such one as the Jews *expect.*",
+   "from": 4,
+   "to": 4,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry with you today the thought that Jesus is the Saviour the world truly needs.",
+  "phrase": "a Saviour, such a one as the world needs"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Isaiah 7:14",
+   "b": "ISA",
+   "c": 7,
+   "v": 14,
+   "votes": 30,
+   "kjv": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel."
+  },
+  {
+   "ref": "Matthew 1:21",
+   "b": "MAT",
+   "c": 1,
+   "v": 21,
+   "votes": 23,
+   "kjv": "And she shall bring forth a son, and thou shalt call his name JESUS: for he shall save his people from their sins."
+  },
+  {
+   "ref": "Matthew 1:25",
+   "b": "MAT",
+   "c": 1,
+   "v": 25,
+   "votes": 19,
+   "kjv": "And knew her not till she had brought forth her firstborn son: and he called his name JESUS."
+  }
+ ],
+ "review": {
+  "flags": [
+   {
+    "b": "B2",
+    "issue": "Overstates the commentator's point. The quote shows Eve's burden was her desire being toward her husband and his rule over her, but does not explicitly state or imply that Mary was free from this burden or that this was a contrast Henry intended to make."
+   }
+  ],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:32:35.530Z",
+  "cost": 0.00514,
+  "attempts": 2
+ },
+ "reasons": [
+  "morning.phrase is not found word for word in the note"
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "id": "ISA-11-6",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 11,
+  "v": 6,
+  "ve": null,
+  "label": "Isaiah 11:6"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 6,
+    "text": "The wolf also shall dwell with the lamb, and the leopard shall lie down with the kid; and the calf and the young lion and the fatling together; and a little child shall lead them."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 6,
+    "text": "The wolf will live with the lamb, and the leopard will lie down with the goat; the calf and young lion and fatling will be together, and a little child will lead them."
+   }
+  ],
+  "web": [
+   {
+    "n": 6,
+    "text": "The wolf will live with the lamb, and the leopard will lie down with the young goat, the calf, the young lion, and the fattened calf together; and a little child will lead them."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 6"
+ },
+ "structure": {
+  "sentences": 19,
+  "points": 2,
+  "pointKind": "paren",
+  "noteBlocks": 3
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Isaiah 65:25",
+   "b": "ISA",
+   "c": 65,
+   "v": 25,
+   "votes": 31,
+   "kjv": "The wolf and the lamb shall feed together, and the lion shall eat straw like the bullock: and dust shall be the serpent’s meat. They shall not hurt nor destroy in all my holy mountain, saith the LORD."
+  },
+  {
+   "ref": "Hosea 2:18",
+   "b": "HOS",
+   "c": 2,
+   "v": 18,
+   "votes": 19,
+   "kjv": "And in that day will I make a covenant for them with the beasts of the field, and with the fowls of heaven, and with the creeping things of the ground: and I will break the bow and the sword and the battle out of the earth, and will make them to lie down safely."
+  },
+  {
+   "ref": "Ezekiel 34:25",
+   "b": "EZK",
+   "c": 34,
+   "v": 25,
+   "votes": 15,
+   "kjv": "And I will make with them a covenant of peace, and will cause the evil beasts to cease out of the land: and they shall dwell safely in the wilderness, and sleep in the woods."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:46.902Z",
+  "cost": 0.009611,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 165 words (limit 80)",
+  "a quote is 86 words (limit 80)",
+  "a quote is 110 words (limit 80)",
+  "a quote has bad sentence numbers",
+  "morning.phrase is not found word for word in the note"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how the gospel transforms fierce people into gentle ones, fulfilling this promise of peace."
+   },
+   {
+    "quote": [
+     1,
+     3
+    ]
+   },
+   {
+    "say": "When people truly embrace Christ, their nature changes so completely that former enemies live together in love."
+   },
+   {
+    "quote": [
+     9,
+     10
+    ]
+   },
+   {
+    "say": "Beyond that change in hearts, Christ as the great Shepherd also protects his flock from all harm."
+   },
+   {
+    "quote": [
+     12,
+     14
+    ]
+   },
+   {
+    "say": "This safety means God's people lose even their fear of trouble, and a child can lead those who once refused all control."
+   },
+   {
+    "quote": [
+     16
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the truth that Christ's grace can transform the fiercest heart into a gentle one.",
+   "phrase": "the gospel changes the nature and makes those affectionate"
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "DEU-31-8",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "DEU",
+  "c": 31,
+  "v": 8,
+  "ve": null,
+  "label": "Deuteronomy 31:8"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 8,
+    "text": "And the LORD, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 8,
+    "text": "The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you. Do not be afraid or discouraged.”"
+   }
+  ],
+  "web": [
+   {
+    "n": 8,
+    "text": "The LORD himself is who goes before you. He will be with you. He will not fail you nor forsake you. Don’t be afraid. Don’t be discouraged.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 8 together with verses 7-8"
+ },
+ "structure": {
+  "sentences": 9,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 1,
+  "quoted": 2,
+  "pointsCovered": 0
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how Moses encouraged Joshua with the same promise God gave to all Israel: that God would be present and faithful."
+  },
+  {
+   "type": "quote",
+   "text": "He gives him the same assurances of the divine presence, and consequently of a glorious success, that he had given the people. God would be with him, would not forsake him, and therefore he should certainly accomplish the glorious enterprise to which he was called and commissioned: *Thou shalt cause them to inherit the land* of promise.",
+   "from": 6,
+   "to": 7,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "This assurance of God's presence means certain success in the work God calls us to do."
+  },
+  {
+   "type": "quote",
+   "text": "Note, Those shall speed well that have God with them; and therefore they ought to *be of good courage.* Through God let us do valiantly, for through him we shall do victoriously; if we resist the devil, he shall flee, and God shall *shortly tread him under our feet.*",
+   "from": 8,
+   "to": 8,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the truth that God's presence with you means you can face what lies ahead with courage.",
+  "phrase": "Those shall speed well that have God with them"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Exodus 33:14",
+   "b": "EXO",
+   "c": 33,
+   "v": 14,
+   "votes": 92,
+   "kjv": "And he said, My presence shall go with thee, and I will give thee rest."
+  },
+  {
+   "ref": "Deuteronomy 31:6",
+   "b": "DEU",
+   "c": 31,
+   "v": 6,
+   "votes": 79,
+   "kjv": "Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee."
+  },
+  {
+   "ref": "Joshua 1:9",
+   "b": "JOS",
+   "c": 1,
+   "v": 9,
+   "votes": 77,
+   "kjv": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:28:45.638Z",
+  "cost": 0.00476,
+  "attempts": 2
+ },
+ "reasons": [
+  "quotes must follow the note’s order without overlapping",
+  "a quote is 103 words (limit 80)"
+ ]
+}

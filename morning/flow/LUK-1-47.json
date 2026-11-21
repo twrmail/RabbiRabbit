@@ -1,0 +1,124 @@
+{
+ "id": "LUK-1-47",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "LUK",
+  "c": 1,
+  "v": 47,
+  "ve": null,
+  "label": "Luke 1:47"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 47,
+    "text": "And my spirit hath rejoiced in God my Saviour."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 47,
+    "text": "and my spirit rejoices in God my Savior!"
+   }
+  ],
+  "web": [
+   {
+    "n": 47,
+    "text": "My spirit has rejoiced in God my Savior,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 47"
+ },
+ "structure": {
+  "sentences": 4,
+  "points": 1,
+  "pointKind": "paren",
+  "noteBlocks": 1
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Psalms 35:9",
+   "b": "PSA",
+   "c": 35,
+   "v": 9,
+   "votes": 10,
+   "kjv": "And my soul shall be joyful in the LORD: it shall rejoice in his salvation."
+  },
+  {
+   "ref": "1 Timothy 2:3",
+   "b": "1TI",
+   "c": 2,
+   "v": 3,
+   "votes": 8,
+   "kjv": "For this is good and acceptable in the sight of God our Saviour;"
+  },
+  {
+   "ref": "Habakkuk 3:18",
+   "b": "HAB",
+   "c": 3,
+   "v": 18,
+   "votes": 8,
+   "kjv": "Yet I will rejoice in the LORD, I will joy in the God of my salvation."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:32:07.323Z",
+  "cost": 0.006482,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 145 words (limit 80)",
+  "a quote has bad sentence numbers",
+  "a quote has bad sentence numbers",
+  "names “Mary”, who is not in the block",
+  "morning.phrase must be 3 to 16 words"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how Mary rejoiced in God as her own Saviour, not just as the mother of the Messiah."
+   },
+   {
+    "quote": [
+     0,
+     1
+    ]
+   },
+   {
+    "say": "She understood that even she needed Christ as her Saviour, just like all other believers do."
+   },
+   {
+    "quote": [
+     2
+    ]
+   },
+   {
+    "say": "This spiritual joy comes from having Christ as both God and Saviour."
+   },
+   {
+    "quote": [
+     3
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the truth that having Christ as your Saviour gives you real reason to rejoice in spirit.",
+   "phrase": "Those that have Christ for their God and Saviour have a great deal of reason to rejoice"
+  }
+ }
+}

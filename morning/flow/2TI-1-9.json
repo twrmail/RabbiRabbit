@@ -1,0 +1,152 @@
+{
+ "id": "2TI-1-9",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "2TI",
+  "c": 1,
+  "v": 9,
+  "ve": null,
+  "label": "2 Timothy 1:9"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 9,
+    "text": "Who hath saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in Christ Jesus before the world began,"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 9,
+    "text": "He has saved us and called us to a holy calling, not because of our works, but by His own purpose and by the grace He granted us in Christ Jesus before time began."
+   }
+  ],
+  "web": [
+   {
+    "n": 9,
+    "text": "who saved us and called us with a holy calling, not according to our works, but according to his own purpose and grace, which was given to us in Christ Jesus before times eternal,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 9 together with verses 9-10"
+ },
+ "structure": {
+  "sentences": 23,
+  "points": 6,
+  "pointKind": "bracket",
+  "noteBlocks": 4
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Ephesians 2:8",
+   "b": "EPH",
+   "c": 2,
+   "v": 8,
+   "votes": 54,
+   "kjv": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:"
+  },
+  {
+   "ref": "Titus 3:4",
+   "b": "TIT",
+   "c": 3,
+   "v": 4,
+   "votes": 45,
+   "kjv": "But after that the kindness and love of God our Saviour toward man appeared,"
+  },
+  {
+   "ref": "Ephesians 1:3",
+   "b": "EPH",
+   "c": 1,
+   "v": 3,
+   "votes": 34,
+   "kjv": "Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ:"
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:28:33.406Z",
+  "cost": 0.010788,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 99 words (limit 80)",
+  "a quote is 114 words (limit 80)",
+  "quotes total 448 words (limit 420)",
+  "morning.phrase is not found word for word in the note"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows what God has done for us through the gospel by listing six great things."
+   },
+   {
+    "quote": [
+     4,
+     5
+    ]
+   },
+   {
+    "say": "Salvation is God's work from start to finish, not something we earn."
+   },
+   {
+    "quote": [
+     6,
+     7
+    ]
+   },
+   {
+    "say": "God calls us to holiness, and that calling changes us from the moment we answer it."
+   },
+   {
+    "quote": [
+     10,
+     12
+    ]
+   },
+   {
+    "say": "This grace was God's plan before time began, given to us through Christ alone."
+   },
+   {
+    "quote": [
+     13,
+     14
+    ]
+   },
+   {
+    "say": "Christ showed us this purpose by appearing and suffering, so we should not hesitate to suffer for it."
+   },
+   {
+    "quote": [
+     16,
+     17
+    ]
+   },
+   {
+    "say": "Through the gospel, death loses its power and becomes a doorway to peace instead of an enemy."
+   },
+   {
+    "quote": [
+     20,
+     21
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry with you today what the gospel has shown you about life beyond this world.",
+   "phrase": "life and immortality are brought to light by the gospel"
+  }
+ }
+}

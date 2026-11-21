@@ -1,0 +1,131 @@
+{
+ "id": "TIT-2-13",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "TIT",
+  "c": 2,
+  "v": 13,
+  "ve": null,
+  "label": "Titus 2:13"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 13,
+    "text": "Looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ;"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 13,
+    "text": "as we await the blessed hope and glorious appearance of our great God and Savior Jesus Christ."
+   }
+  ],
+  "web": [
+   {
+    "n": 13,
+    "text": "looking for the blessed hope and appearing of the glory of our great God and Savior, Jesus Christ,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 13"
+ },
+ "structure": {
+  "sentences": 27,
+  "points": 4,
+  "pointKind": "bracket",
+  "noteBlocks": 4
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "2 Timothy 4:8",
+   "b": "2TI",
+   "c": 4,
+   "v": 8,
+   "votes": 25,
+   "kjv": "Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing."
+  },
+  {
+   "ref": "1 Corinthians 1:7",
+   "b": "1CO",
+   "c": 1,
+   "v": 7,
+   "votes": 23,
+   "kjv": "So that ye come behind in no gift; waiting for the coming of our Lord Jesus Christ:"
+  },
+  {
+   "ref": "Matthew 16:27",
+   "b": "MAT",
+   "c": 16,
+   "v": 27,
+   "votes": 19,
+   "kjv": "For the Son of man shall come in the glory of his Father with his angels; and then he shall reward every man according to his works."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:04.322Z",
+  "cost": 0.010971,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 120 words (limit 80)"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows us that Christians share one blessed hope: Christ's glorious return will bring us to complete happiness forever."
+   },
+   {
+    "quote": [
+     7,
+     8
+    ]
+   },
+   {
+    "say": "This hope is not just a wish. It means Christ himself and the glory we will share with him, and it should shape how we live right now."
+   },
+   {
+    "quote": [
+     9,
+     11
+    ]
+   },
+   {
+    "say": "When Christ appears in glory, all his hidden power and love will shine out like the sun, and believers will finally see him and be where he is."
+   },
+   {
+    "quote": [
+     14,
+     15
+    ]
+   },
+   {
+    "say": "Our comfort rests on this: Jesus is the great God himself, with all power and mercy, so he alone can save us and bring us to glory."
+   },
+   {
+    "quote": [
+     22,
+     24
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the thought that your Saviour is the great God who will gloriously return.",
+   "phrase": "the great God and our Saviour Jesus Christ"
+  }
+ }
+}

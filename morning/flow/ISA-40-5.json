@@ -1,0 +1,151 @@
+{
+ "id": "ISA-40-5",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 40,
+  "v": 5,
+  "ve": null,
+  "label": "Isaiah 40:5"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 5,
+    "text": "And the glory of the LORD shall be revealed, and all flesh shall see it together: for the mouth of the LORD hath spoken it."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 5,
+    "text": "And the glory of the LORD will be revealed, and all humanity together will see it.” For the mouth of the LORD has spoken."
+   }
+  ],
+  "web": [
+   {
+    "n": 5,
+    "text": "The LORD’s glory shall be revealed, and all flesh shall see it together; for the mouth of the LORD has spoken it.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 5"
+ },
+ "structure": {
+  "sentences": 7,
+  "points": 2,
+  "pointKind": "paren",
+  "noteBlocks": 1,
+  "quoted": 4,
+  "pointsCovered": 2
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how God's glory gets revealed in two stages, each with its own kind of preparation and its own kind of seeing."
+  },
+  {
+   "type": "quote",
+   "text": "When the captives are prepared for deliverance Cyrus shall proclaim it, and those shall have the benefit of it, and those only, whose hearts the Lord shall stir up with courage and resolution to break through the discouragements that lay in their way, and to make nothing of the hills, and valleys, and all the rough places.",
+   "from": 2,
+   "to": 2,
+   "point": "P1",
+   "points": [
+    "P1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "First, when captives are made ready for freedom, those with courage to push through their fears will witness deliverance."
+  },
+  {
+   "type": "quote",
+   "text": "When John Baptist has for some time preached repentance, mortification, and reformation, and so made ready a people prepared for the Lord (Lu 1:17), then the Messiah himself shall be revealed in his glory, working miracles, which John did not, and by his grace, which is his glory, binding up and healing with consolations those whom John had wounded with convictions.",
+   "from": 3,
+   "to": 3,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "Second, after John prepares people through repentance, the Messiah appears in glory, healing those wounded by conviction."
+  },
+  {
+   "type": "quote",
+   "text": "All flesh shall see it together,* and not the Jews only; they shall see and admire it, see it and bid it welcome; as the return out of captivity was taken notice of by the neighbouring nations, Ps 126:2.",
+   "from": 5,
+   "to": 5,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "This glory shines on all people everywhere, not just one nation, and all will see it and welcome it together."
+  },
+  {
+   "type": "quote",
+   "text": "And it shall be the accomplishment of the word of God, not one *iota* or tittle of which shall fall to the ground: *The mouth of the Lord has spoken it,* and therefore the hand of the Lord will effect it.",
+   "from": 6,
+   "to": 6,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the certainty that God's word will accomplish what it promises.",
+  "phrase": "The mouth of the Lord has spoken it"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Habakkuk 2:14",
+   "b": "HAB",
+   "c": 2,
+   "v": 14,
+   "votes": 16,
+   "kjv": "For the earth shall be filled with the knowledge of the glory of the LORD, as the waters cover the sea."
+  },
+  {
+   "ref": "Isaiah 52:10",
+   "b": "ISA",
+   "c": 52,
+   "v": 10,
+   "votes": 12,
+   "kjv": "The LORD hath made bare his holy arm in the eyes of all the nations; and all the ends of the earth shall see the salvation of our God."
+  },
+  {
+   "ref": "Joel 2:28",
+   "b": "JOL",
+   "c": 2,
+   "v": 28,
+   "votes": 11,
+   "kjv": "And it shall come to pass afterward, that I will pour out my spirit upon all flesh; and your sons and your daughters shall prophesy, your old men shall dream dreams, your young men shall see visions:"
+  }
+ ],
+ "review": {
+  "flags": [
+   {
+    "b": "B2",
+    "issue": "Overstates the commentator's point by saying the Messiah 'appears in glory, healing those wounded by conviction.' The quote says the Messiah is revealed in his glory and heals 'with consolations those whom John had wounded with convictions'—healing is a result of grace, not the primary appearance itself."
+   }
+  ],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:22.368Z",
+  "cost": 0.00371,
+  "attempts": 1
+ }
+}

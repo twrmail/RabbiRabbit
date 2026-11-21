@@ -1,0 +1,131 @@
+{
+ "id": "MIC-5-2",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "MIC",
+  "c": 5,
+  "v": 2,
+  "ve": null,
+  "label": "Micah 5:2"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 2,
+    "text": "But thou, Bethlehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 2,
+    "text": "But you, Bethlehem Ephrathah, who are small among the clans of Judah, out of you will come forth for Me One to be ruler over Israel—One whose origins are of old, from the days of eternity."
+   }
+  ],
+  "web": [
+   {
+    "n": 2,
+    "text": "But you, Bethlehem Ephrathah, being small among the clans of Judah, out of you one will come out to me who is to be ruler in Israel; whose goings out are from of old, from ancient times."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 2"
+ },
+ "structure": {
+  "sentences": 15,
+  "points": 2,
+  "pointKind": "paren",
+  "noteBlocks": 2
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Matthew 2:6",
+   "b": "MAT",
+   "c": 2,
+   "v": 6,
+   "votes": 76,
+   "kjv": "And thou Bethlehem, in the land of Juda, art not the least among the princes of Juda: for out of thee shall come a Governor, that shall rule my people Israel."
+  },
+  {
+   "ref": "John 7:42",
+   "b": "JHN",
+   "c": 7,
+   "v": 42,
+   "votes": 39,
+   "kjv": "Hath not the scripture said, That Christ cometh of the seed of David, and out of the town of Bethlehem, where David was?"
+  },
+  {
+   "ref": "Isaiah 9:6",
+   "b": "ISA",
+   "c": 9,
+   "v": 6,
+   "votes": 16,
+   "kjv": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:32:25.412Z",
+  "cost": 0.008632,
+  "attempts": 3
+ },
+ "reasons": [
+  "quotes must follow the note’s order without overlapping"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows us two things about the Messiah that Micah foretold: where he would be born and what office he would hold."
+   },
+   {
+    "quote": [
+     7,
+     8
+    ]
+   },
+   {
+    "say": "The scribes knew from this verse that Christ would come from Bethlehem, and the Jews widely expected him there."
+   },
+   {
+    "quote": [
+     11,
+     11
+    ]
+   },
+   {
+    "say": "Though Bethlehem was small and humble, God chose it to honor his Son, not the other way around."
+   },
+   {
+    "quote": [
+     0,
+     0
+    ]
+   },
+   {
+    "say": "The Messiah's true rule is spiritual, over the hearts and souls of all who believe in him."
+   },
+   {
+    "quote": [
+     2,
+     3
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry with you today that Christ's kingdom is not of this world, but reigns in the hearts of his followers.",
+   "phrase": "My kingdom is not of this world"
+  }
+ }
+}

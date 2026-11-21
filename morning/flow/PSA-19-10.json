@@ -1,0 +1,132 @@
+{
+ "id": "PSA-19-10",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "PSA",
+  "c": 19,
+  "v": 10,
+  "ve": null,
+  "label": "Psalms 19:10"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 10,
+    "text": "More to be desired are they than gold, yea, than much fine gold: sweeter also than honey and the honeycomb."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 10,
+    "text": "They are more precious than gold, than much pure gold; they are sweeter than honey, than honey from the comb."
+   }
+  ],
+  "web": [
+   {
+    "n": 10,
+    "text": "They are more to be desired than gold, yes, than much fine gold, sweeter also than honey and the extract of the honeycomb."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 10 together with verses 10-11"
+ },
+ "structure": {
+  "sentences": 18,
+  "points": 2,
+  "pointKind": "paren",
+  "noteBlocks": 4,
+  "quoted": 3,
+  "pointsCovered": 2
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how the psalmist treasures God's word far above all earthly wealth and worldly pleasures."
+  },
+  {
+   "type": "quote",
+   "text": "It is the character of all good people that they prefer their religion and the word of God, Far before all the wealth of the world. It is *more desirable than gold,* than fine gold, *than much fine gold.* Gold is of the earth, earthly; but grace is the image of the heavenly. Gold is only for the body and the concerns of time; but grace is for the soul and the concerns of eternity.",
+   "from": 3,
+   "to": 5,
+   "point": "P1",
+   "points": [
+    "P1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "Gold serves only the body and time, but God's word serves the soul and eternity."
+  },
+  {
+   "type": "quote",
+   "text": "The word of God, received by faith, is sweet to the soul, *sweeter than honey and the honey comb.* The pleasures of sense are the delight of brutes, and therefore debase the great soul of man; the pleasures of religion are the delight of angels, and exalt the soul. The pleasures of sense are deceitful, will soon surfeit, and yet never satisfy; but those of religion are substantial and satisfying, and there is no danger of exceeding in them. 2.",
+   "from": 7,
+   "to": 8,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "The sweetness of God's word is real and lasting, unlike the empty pleasures of the senses."
+  },
+  {
+   "type": "quote",
+   "text": "There is a reward, not only after keeping, but in keeping, God's commandments, a present great reward of obedience. Religion is health and honour; it is peace and pleasure; it will make our comforts sweet and our crosses easy, life truly valuable and death itself truly desirable.",
+   "from": 13,
+   "to": 14,
+   "point": "P2",
+   "points": [
+    "P2"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the truth that obeying God's word brings a present reward that makes life truly valuable.",
+  "phrase": "In keeping them there is great reward"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Psalms 119:72",
+   "b": "PSA",
+   "c": 119,
+   "v": 72,
+   "votes": 8,
+   "kjv": "The law of thy mouth is better unto me than thousands of gold and silver."
+  },
+  {
+   "ref": "Psalms 119:103",
+   "b": "PSA",
+   "c": 119,
+   "v": 103,
+   "votes": 8,
+   "kjv": "How sweet are thy words unto my taste! yea, sweeter than honey to my mouth!"
+  },
+  {
+   "ref": "Proverbs 3:13",
+   "b": "PRO",
+   "c": 3,
+   "v": 13,
+   "votes": 7,
+   "kjv": "Happy is the man that findeth wisdom, and the man that getteth understanding."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:29:17.057Z",
+  "cost": 0.00317,
+  "attempts": 1
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "id": "ISA-35-10",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 35,
+  "v": 10,
+  "ve": null,
+  "label": "Isaiah 35:10"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 10,
+    "text": "And the ransomed of the LORD shall return, and come to Zion with songs and everlasting joy upon their heads: they shall obtain joy and gladness, and sorrow and sighing shall flee away."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 10,
+    "text": "So the redeemed of the LORD will return and enter Zion with singing, crowned with everlasting joy. Gladness and joy will overtake them, and sorrow and sighing will flee."
+   }
+  ],
+  "web": [
+   {
+    "n": 10,
+    "text": "Then the LORD’s ransomed ones will return, and come with singing to Zion; and everlasting joy will be on their heads. They will obtain gladness and joy, and sorrow and sighing will flee away.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 10"
+ },
+ "structure": {
+  "sentences": 19,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 2,
+  "quoted": 3,
+  "pointsCovered": 0
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how Isaiah's promise of return to Zion points to two kinds of joy: the comfort God gives his people now, and the endless joy waiting for them in heaven."
+  },
+  {
+   "type": "quote",
+   "text": "Here is good news for the citizens of Zion, rest to the weary: *The ransomed of the Lord,* who therefore ought to follow him wherever he goes (Re 14:4), *shall return and come to Zion,* 1. To serve and worship God in the church militant: they shall deliver themselves out of Babylon (Zec 2:7), shall *ask the way to Zion* (Jer 50:5), and shall *find the way* Isa 52:12.",
+   "from": 3,
+   "to": 4,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "The ransomed leave their captivity and come back to worship God, singing as they go because their sorrow has turned to praise."
+  },
+  {
+   "type": "quote",
+   "text": "When they shall *enter into the joy of their Lord* it shall be what the joys of this world never could be *everlasting joy,* without mixture, interruption, or period. It shall not only fill their hearts, to their own perfect and perpetual satisfaction, but it shall be *upon their heads,* as an ornament of grace and a crown of glory, as a garland worn in token of victory.",
+   "from": 13,
+   "to": 14,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "That joy in heaven will be perfect and visible, worn like a crown, nothing like the mixed and hidden joys we know on earth."
+  },
+  {
+   "type": "quote",
+   "text": "They shall then obtain the joy and gladness which they could never expect on this side heaven; *and sorrow and sighing shall flee away* for ever, as the shadows of the night before the rising sun.",
+   "from": 16,
+   "to": 16,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry with you today the thought that your present sorrows point toward the everlasting joy that waits.",
+  "phrase": "sorrow and sighing shall flee away for ever"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Isaiah 30:19",
+   "b": "ISA",
+   "c": 30,
+   "v": 19,
+   "votes": 15,
+   "kjv": "For the people shall dwell in Zion at Jerusalem: thou shalt weep no more: he will be very gracious unto thee at the voice of thy cry; when he shall hear it, he will answer thee."
+  },
+  {
+   "ref": "Revelation 21:4",
+   "b": "REV",
+   "c": 21,
+   "v": 4,
+   "votes": 15,
+   "kjv": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away."
+  },
+  {
+   "ref": "Isaiah 25:8",
+   "b": "ISA",
+   "c": 25,
+   "v": 8,
+   "votes": 12,
+   "kjv": "He will swallow up death in victory; and the Lord GOD will wipe away tears from off all faces; and the rebuke of his people shall he take away from off all the earth: for the LORD hath spoken it."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:31:26.463Z",
+  "cost": 0.00357,
+  "attempts": 1
+ }
+}

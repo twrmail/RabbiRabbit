@@ -1,0 +1,132 @@
+{
+ "id": "ISA-40-31",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 40,
+  "v": 31,
+  "ve": null,
+  "label": "Isaiah 40:31"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 31,
+    "text": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 31,
+    "text": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
+   }
+  ],
+  "web": [
+   {
+    "n": 31,
+    "text": "but those who wait for the LORD will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 31"
+ },
+ "structure": {
+  "sentences": 17,
+  "points": 2,
+  "pointKind": "bracket",
+  "noteBlocks": 1,
+  "quoted": 3,
+  "pointsCovered": 2
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how God renews the strength of those who trust him, giving them power for every kind of work and lifting their souls toward heaven."
+  },
+  {
+   "type": "quote",
+   "text": "They shall have grace sufficient for them: They *shall renew their strength* as their work is renewed, as there is new occasion; they shall be anointed, and their lamps supplied, with fresh oil. God will be their *arm every morning,* Isa 33:2. If at any time they have been foiled and weakened they shall recover themselves, and so renew their strength.",
+   "from": 4,
+   "to": 6,
+   "point": "B1",
+   "points": [
+    "B1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "As each new day brings new tasks, God supplies fresh strength to those who wait on him and rely on his grace."
+  },
+  {
+   "type": "quote",
+   "text": "Being strengthened, *First,* They shall soar upward, upward towards God: *They shall mount up with wings like eagles,* so strongly, so swiftly, so high and heaven-ward. In the strength of divine grace, their souls shall ascend above the world, and even enter into the holiest.",
+   "from": 11,
+   "to": 12,
+   "point": "B2",
+   "points": [
+    "B2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "With this divine strength, believers soar upward toward God and press forward on his path without growing weary or losing heart."
+  },
+  {
+   "type": "quote",
+   "text": "They shall walk, they shall run, the way of God's commandments, cheerfully and with alacrity (they *shall not be weary*), constantly and with perseverance (they *shall not faint*); and therefore in due season they shall reap.",
+   "from": 15,
+   "to": 15,
+   "point": "B2",
+   "points": [
+    "B2"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the promise that as your day is, so your strength will be.",
+  "phrase": "As the day so shall the strength be"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Lamentations 3:25",
+   "b": "LAM",
+   "c": 3,
+   "v": 25,
+   "votes": 385,
+   "kjv": "The LORD is good unto them that wait for him, to the soul that seeketh him."
+  },
+  {
+   "ref": "2 Corinthians 4:16",
+   "b": "2CO",
+   "c": 4,
+   "v": 16,
+   "votes": 333,
+   "kjv": "For which cause we faint not; but though our outward man perish, yet the inward man is renewed day by day."
+  },
+  {
+   "ref": "Psalms 27:13",
+   "b": "PSA",
+   "c": 27,
+   "v": 13,
+   "votes": 276,
+   "kjv": "I had fainted, unless I had believed to see the goodness of the LORD in the land of the living."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:15.313Z",
+  "cost": 0.0032,
+  "attempts": 1
+ }
+}
