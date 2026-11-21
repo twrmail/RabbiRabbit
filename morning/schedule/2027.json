@@ -1,0 +1,1831 @@
+{
+"year": 2027,
+"note": "date -> verse. Built by tools/build-morning-schedule.py.",
+"days": {
+"2027-01-01": {
+"verse": "LUK-2-21",
+"kind": "christmas",
+"label": "Christmas, day 8 of 13"
+},
+"2027-01-02": {
+"verse": "LUK-2-30",
+"kind": "christmas",
+"label": "Christmas, day 9 of 13"
+},
+"2027-01-03": {
+"verse": "LUK-2-52",
+"kind": "christmas",
+"label": "Christmas, day 10 of 13"
+},
+"2027-01-04": {
+"verse": "ISA-60-1",
+"kind": "christmas",
+"label": "Christmas, day 11 of 13"
+},
+"2027-01-05": {
+"verse": "MAT-2-2",
+"kind": "christmas",
+"label": "Christmas, day 12 of 13"
+},
+"2027-01-06": {
+"verse": "MAT-2-11",
+"kind": "christmas",
+"label": "Christmas, day 13 of 13"
+},
+"2027-01-07": {
+"verse": "1JN-5-14",
+"kind": "ordinary",
+"label": "Rotation, entry 9 of 471"
+},
+"2027-01-08": {
+"verse": "ROM-3-22",
+"kind": "ordinary",
+"label": "Rotation, entry 10 of 471"
+},
+"2027-01-09": {
+"verse": "PSA-51-16",
+"kind": "ordinary",
+"label": "Rotation, entry 11 of 471"
+},
+"2027-01-10": {
+"verse": "GEN-22-8",
+"kind": "story",
+"label": "Curated story selection, entry 12 of 471"
+},
+"2027-01-11": {
+"verse": "ISA-49-23",
+"kind": "ordinary",
+"label": "Rotation, entry 13 of 471"
+},
+"2027-01-12": {
+"verse": "EZK-36-26",
+"kind": "ordinary",
+"label": "Rotation, entry 14 of 471"
+},
+"2027-01-13": {
+"verse": "1PE-5-7",
+"kind": "ordinary",
+"label": "Rotation, entry 15 of 471"
+},
+"2027-01-14": {
+"verse": "ROM-8-31",
+"kind": "ordinary",
+"label": "Rotation, entry 16 of 471"
+},
+"2027-01-15": {
+"verse": "LUK-19-10",
+"kind": "ordinary",
+"label": "Rotation, entry 17 of 471"
+},
+"2027-01-16": {
+"verse": "DEU-4-9",
+"kind": "ordinary",
+"label": "Rotation, entry 18 of 471"
+},
+"2027-01-17": {
+"verse": "MAT-15-19",
+"kind": "ordinary",
+"label": "Rotation, entry 19 of 471"
+},
+"2027-01-18": {
+"verse": "ACT-28-26",
+"kind": "ordinary",
+"label": "Rotation, entry 20 of 471"
+},
+"2027-01-19": {
+"verse": "REV-4-11",
+"kind": "ordinary",
+"label": "Rotation, entry 21 of 471"
+},
+"2027-01-20": {
+"verse": "JER-10-23",
+"kind": "ordinary",
+"label": "Rotation, entry 22 of 471"
+},
+"2027-01-21": {
+"verse": "PHP-4-7",
+"kind": "ordinary",
+"label": "Rotation, entry 23 of 471"
+},
+"2027-01-22": {
+"verse": "1TI-2-4",
+"kind": "ordinary",
+"label": "Rotation, entry 24 of 471"
+},
+"2027-01-23": {
+"verse": "JHN-3-3",
+"kind": "ordinary",
+"label": "Rotation, entry 25 of 471"
+},
+"2027-01-24": {
+"verse": "PSA-102-13",
+"kind": "ordinary",
+"label": "Rotation, entry 26 of 471"
+},
+"2027-01-25": {
+"verse": "EPH-4-29",
+"kind": "ordinary",
+"label": "Rotation, entry 27 of 471"
+},
+"2027-01-26": {
+"verse": "1PE-2-12",
+"kind": "ordinary",
+"label": "Rotation, entry 28 of 471"
+},
+"2027-01-27": {
+"verse": "COL-3-10",
+"kind": "ordinary",
+"label": "Rotation, entry 29 of 471"
+},
+"2027-01-28": {
+"verse": "JER-31-34",
+"kind": "ordinary",
+"label": "Rotation, entry 30 of 471"
+},
+"2027-01-29": {
+"verse": "2CO-5-19",
+"kind": "ordinary",
+"label": "Rotation, entry 31 of 471"
+},
+"2027-01-30": {
+"verse": "LUK-12-31",
+"kind": "ordinary",
+"label": "Rotation, entry 32 of 471"
+},
+"2027-01-31": {
+"verse": "PSA-62-8",
+"kind": "ordinary",
+"label": "Rotation, entry 33 of 471"
+},
+"2027-02-01": {
+"verse": "HEB-10-35",
+"kind": "ordinary",
+"label": "Rotation, entry 34 of 471"
+},
+"2027-02-02": {
+"verse": "EXO-14-13-14",
+"kind": "story",
+"label": "Curated story selection, entry 35 of 471"
+},
+"2027-02-03": {
+"verse": "ISA-41-10",
+"kind": "ordinary",
+"label": "Rotation, entry 36 of 471"
+},
+"2027-02-04": {
+"verse": "MIC-4-12",
+"kind": "ordinary",
+"label": "Rotation, entry 37 of 471"
+},
+"2027-02-05": {
+"verse": "JER-32-38",
+"kind": "ordinary",
+"label": "Rotation, entry 38 of 471"
+},
+"2027-02-06": {
+"verse": "PRO-4-7",
+"kind": "ordinary",
+"label": "Rotation, entry 39 of 471"
+},
+"2027-02-07": {
+"verse": "JHN-1-4",
+"kind": "ordinary",
+"label": "Rotation, entry 40 of 471"
+},
+"2027-02-08": {
+"verse": "PSA-125-1",
+"kind": "ordinary",
+"label": "Rotation, entry 41 of 471"
+},
+"2027-02-09": {
+"verse": "LEV-26-8",
+"kind": "ordinary",
+"label": "Rotation, entry 42 of 471"
+},
+"2027-02-10": {
+"verse": "JOL-2-13",
+"kind": "lent",
+"label": "Lent, day 1 of 46"
+},
+"2027-02-11": {
+"verse": "JOL-2-12",
+"kind": "lent",
+"label": "Lent, day 2 of 46"
+},
+"2027-02-12": {
+"verse": "PSA-51-10",
+"kind": "lent",
+"label": "Lent, day 3 of 46"
+},
+"2027-02-13": {
+"verse": "PSA-51-17",
+"kind": "lent",
+"label": "Lent, day 4 of 46"
+},
+"2027-02-14": {
+"verse": "MAT-4-1",
+"kind": "lent",
+"label": "Lent, day 5 of 46"
+},
+"2027-02-15": {
+"verse": "MAT-4-4",
+"kind": "lent",
+"label": "Lent, day 6 of 46"
+},
+"2027-02-16": {
+"verse": "MAT-4-7",
+"kind": "lent",
+"label": "Lent, day 7 of 46"
+},
+"2027-02-17": {
+"verse": "MAT-4-10",
+"kind": "lent",
+"label": "Lent, day 8 of 46"
+},
+"2027-02-18": {
+"verse": "HEB-4-15",
+"kind": "lent",
+"label": "Lent, day 9 of 46"
+},
+"2027-02-19": {
+"verse": "JAS-1-12",
+"kind": "lent",
+"label": "Lent, day 10 of 46"
+},
+"2027-02-20": {
+"verse": "1CO-10-13",
+"kind": "lent",
+"label": "Lent, day 11 of 46"
+},
+"2027-02-21": {
+"verse": "GEN-15-6",
+"kind": "lent",
+"label": "Lent, day 12 of 46"
+},
+"2027-02-22": {
+"verse": "ROM-4-3",
+"kind": "lent",
+"label": "Lent, day 13 of 46"
+},
+"2027-02-23": {
+"verse": "HEB-11-1",
+"kind": "lent",
+"label": "Lent, day 14 of 46"
+},
+"2027-02-24": {
+"verse": "PRO-3-5",
+"kind": "lent",
+"label": "Lent, day 15 of 46"
+},
+"2027-02-25": {
+"verse": "MRK-8-34",
+"kind": "lent",
+"label": "Lent, day 16 of 46"
+},
+"2027-02-26": {
+"verse": "LUK-9-23",
+"kind": "lent",
+"label": "Lent, day 17 of 46"
+},
+"2027-02-27": {
+"verse": "PSA-62-1",
+"kind": "lent",
+"label": "Lent, day 18 of 46"
+},
+"2027-02-28": {
+"verse": "JHN-4-14",
+"kind": "lent",
+"label": "Lent, day 19 of 46"
+},
+"2027-03-01": {
+"verse": "JHN-4-24",
+"kind": "lent",
+"label": "Lent, day 20 of 46"
+},
+"2027-03-02": {
+"verse": "PSA-42-1",
+"kind": "lent",
+"label": "Lent, day 21 of 46"
+},
+"2027-03-03": {
+"verse": "PSA-63-1",
+"kind": "lent",
+"label": "Lent, day 22 of 46"
+},
+"2027-03-04": {
+"verse": "ISA-55-1",
+"kind": "lent",
+"label": "Lent, day 23 of 46"
+},
+"2027-03-05": {
+"verse": "MAT-5-6",
+"kind": "lent",
+"label": "Lent, day 24 of 46"
+},
+"2027-03-06": {
+"verse": "JHN-7-37",
+"kind": "lent",
+"label": "Lent, day 25 of 46"
+},
+"2027-03-07": {
+"verse": "JHN-9-25",
+"kind": "lent",
+"label": "Lent, day 26 of 46"
+},
+"2027-03-08": {
+"verse": "JHN-8-12",
+"kind": "lent",
+"label": "Lent, day 27 of 46"
+},
+"2027-03-09": {
+"verse": "PSA-27-1",
+"kind": "lent",
+"label": "Lent, day 28 of 46"
+},
+"2027-03-10": {
+"verse": "PSA-119-105",
+"kind": "lent",
+"label": "Lent, day 29 of 46"
+},
+"2027-03-11": {
+"verse": "EPH-5-8",
+"kind": "lent",
+"label": "Lent, day 30 of 46"
+},
+"2027-03-12": {
+"verse": "1JN-1-7",
+"kind": "lent",
+"label": "Lent, day 31 of 46"
+},
+"2027-03-13": {
+"verse": "PSA-139-23",
+"kind": "lent",
+"label": "Lent, day 32 of 46"
+},
+"2027-03-14": {
+"verse": "JHN-11-25",
+"kind": "lent",
+"label": "Lent, day 33 of 46"
+},
+"2027-03-15": {
+"verse": "JHN-11-35",
+"kind": "lent",
+"label": "Lent, day 34 of 46"
+},
+"2027-03-16": {
+"verse": "JHN-11-43",
+"kind": "lent",
+"label": "Lent, day 35 of 46"
+},
+"2027-03-17": {
+"verse": "JHN-12-24",
+"kind": "lent",
+"label": "Lent, day 36 of 46"
+},
+"2027-03-18": {
+"verse": "ROM-6-23",
+"kind": "lent",
+"label": "Lent, day 37 of 46"
+},
+"2027-03-19": {
+"verse": "GAL-2-20",
+"kind": "lent",
+"label": "Lent, day 38 of 46"
+},
+"2027-03-20": {
+"verse": "PHP-3-10",
+"kind": "lent",
+"label": "Lent, day 39 of 46"
+},
+"2027-03-21": {
+"verse": "ZEC-9-9",
+"kind": "lent",
+"label": "Lent, day 40 of 46"
+},
+"2027-03-22": {
+"verse": "MRK-11-17",
+"kind": "lent",
+"label": "Lent, day 41 of 46"
+},
+"2027-03-23": {
+"verse": "MRK-12-30",
+"kind": "lent",
+"label": "Lent, day 42 of 46"
+},
+"2027-03-24": {
+"verse": "ISA-53-3",
+"kind": "lent",
+"label": "Lent, day 43 of 46"
+},
+"2027-03-25": {
+"verse": "JHN-13-34",
+"kind": "lent",
+"label": "Lent, day 44 of 46"
+},
+"2027-03-26": {
+"verse": "JHN-19-30",
+"kind": "lent",
+"label": "Lent, day 45 of 46"
+},
+"2027-03-27": {
+"verse": "LUK-23-56",
+"kind": "lent",
+"label": "Lent, day 46 of 46"
+},
+"2027-03-28": {
+"verse": "MAT-28-6",
+"kind": "easter",
+"label": "Easter week, day 1 of 7"
+},
+"2027-03-29": {
+"verse": "LUK-24-5",
+"kind": "easter",
+"label": "Easter week, day 2 of 7"
+},
+"2027-03-30": {
+"verse": "JHN-20-16",
+"kind": "easter",
+"label": "Easter week, day 3 of 7"
+},
+"2027-03-31": {
+"verse": "LUK-24-32",
+"kind": "easter",
+"label": "Easter week, day 4 of 7"
+},
+"2027-04-01": {
+"verse": "JHN-20-29",
+"kind": "easter",
+"label": "Easter week, day 5 of 7"
+},
+"2027-04-02": {
+"verse": "1CO-15-20",
+"kind": "easter",
+"label": "Easter week, day 6 of 7"
+},
+"2027-04-03": {
+"verse": "1CO-15-57",
+"kind": "easter",
+"label": "Easter week, day 7 of 7"
+},
+"2027-04-04": {
+"verse": "COL-1-11",
+"kind": "ordinary",
+"label": "Rotation, entry 43 of 471"
+},
+"2027-04-05": {
+"verse": "ROM-6-4",
+"kind": "ordinary",
+"label": "Rotation, entry 44 of 471"
+},
+"2027-04-06": {
+"verse": "PHP-4-13",
+"kind": "ordinary",
+"label": "Rotation, entry 45 of 471"
+},
+"2027-04-07": {
+"verse": "2TH-3-13",
+"kind": "ordinary",
+"label": "Rotation, entry 46 of 471"
+},
+"2027-04-08": {
+"verse": "PSA-119-111",
+"kind": "ordinary",
+"label": "Rotation, entry 47 of 471"
+},
+"2027-04-09": {
+"verse": "MRK-11-24",
+"kind": "ordinary",
+"label": "Rotation, entry 48 of 471"
+},
+"2027-04-10": {
+"verse": "ISA-60-19",
+"kind": "ordinary",
+"label": "Rotation, entry 49 of 471"
+},
+"2027-04-11": {
+"verse": "EXO-19-5",
+"kind": "ordinary",
+"label": "Rotation, entry 50 of 471"
+},
+"2027-04-12": {
+"verse": "1SA-14-6",
+"kind": "ordinary",
+"label": "Rotation, entry 51 of 471"
+},
+"2027-04-13": {
+"verse": "EPH-6-13",
+"kind": "ordinary",
+"label": "Rotation, entry 52 of 471"
+},
+"2027-04-14": {
+"verse": "DEU-20-1",
+"kind": "ordinary",
+"label": "Rotation, entry 53 of 471"
+},
+"2027-04-15": {
+"verse": "MRK-16-18",
+"kind": "ordinary",
+"label": "Rotation, entry 54 of 471"
+},
+"2027-04-16": {
+"verse": "PSA-56-3",
+"kind": "ordinary",
+"label": "Rotation, entry 55 of 471"
+},
+"2027-04-17": {
+"verse": "AMO-5-21",
+"kind": "ordinary",
+"label": "Rotation, entry 56 of 471"
+},
+"2027-04-18": {
+"verse": "PRO-3-7",
+"kind": "ordinary",
+"label": "Rotation, entry 57 of 471"
+},
+"2027-04-19": {
+"verse": "1JN-3-22",
+"kind": "ordinary",
+"label": "Rotation, entry 58 of 471"
+},
+"2027-04-20": {
+"verse": "JOS-24-15",
+"kind": "story",
+"label": "Curated story selection, entry 59 of 471"
+},
+"2027-04-21": {
+"verse": "JOL-3-18",
+"kind": "ordinary",
+"label": "Rotation, entry 60 of 471"
+},
+"2027-04-22": {
+"verse": "PSA-37-7",
+"kind": "ordinary",
+"label": "Rotation, entry 61 of 471"
+},
+"2027-04-23": {
+"verse": "EZK-34-26",
+"kind": "ordinary",
+"label": "Rotation, entry 62 of 471"
+},
+"2027-04-24": {
+"verse": "JHN-15-19",
+"kind": "ordinary",
+"label": "Rotation, entry 63 of 471"
+},
+"2027-04-25": {
+"verse": "ROM-8-32",
+"kind": "ordinary",
+"label": "Rotation, entry 64 of 471"
+},
+"2027-04-26": {
+"verse": "ISA-43-1",
+"kind": "ordinary",
+"label": "Rotation, entry 65 of 471"
+},
+"2027-04-27": {
+"verse": "1JN-5-2",
+"kind": "ordinary",
+"label": "Rotation, entry 66 of 471"
+},
+"2027-04-28": {
+"verse": "JER-31-33",
+"kind": "ordinary",
+"label": "Rotation, entry 67 of 471"
+},
+"2027-04-29": {
+"verse": "2CH-15-7",
+"kind": "ordinary",
+"label": "Rotation, entry 68 of 471"
+},
+"2027-04-30": {
+"verse": "JHN-15-7",
+"kind": "ordinary",
+"label": "Rotation, entry 69 of 471"
+},
+"2027-05-01": {
+"verse": "EPH-6-10",
+"kind": "ordinary",
+"label": "Rotation, entry 70 of 471"
+},
+"2027-05-02": {
+"verse": "HEB-8-10",
+"kind": "ordinary",
+"label": "Rotation, entry 71 of 471"
+},
+"2027-05-03": {
+"verse": "JER-17-7",
+"kind": "ordinary",
+"label": "Rotation, entry 72 of 471"
+},
+"2027-05-04": {
+"verse": "PSA-32-7",
+"kind": "ordinary",
+"label": "Rotation, entry 73 of 471"
+},
+"2027-05-05": {
+"verse": "1CO-15-49",
+"kind": "ordinary",
+"label": "Rotation, entry 74 of 471"
+},
+"2027-05-06": {
+"verse": "ACT-1-9",
+"kind": "ascension",
+"label": "Ascension"
+},
+"2027-05-07": {
+"verse": "ROM-13-14",
+"kind": "ordinary",
+"label": "Rotation, entry 75 of 471"
+},
+"2027-05-08": {
+"verse": "1PE-1-25",
+"kind": "ordinary",
+"label": "Rotation, entry 76 of 471"
+},
+"2027-05-09": {
+"verse": "PRO-8-17",
+"kind": "ordinary",
+"label": "Rotation, entry 77 of 471"
+},
+"2027-05-10": {
+"verse": "REV-3-8",
+"kind": "ordinary",
+"label": "Rotation, entry 78 of 471"
+},
+"2027-05-11": {
+"verse": "PSA-37-5",
+"kind": "ordinary",
+"label": "Rotation, entry 79 of 471"
+},
+"2027-05-12": {
+"verse": "EPH-2-18",
+"kind": "ordinary",
+"label": "Rotation, entry 80 of 471"
+},
+"2027-05-13": {
+"verse": "MRK-10-29",
+"kind": "ordinary",
+"label": "Rotation, entry 81 of 471"
+},
+"2027-05-14": {
+"verse": "JDG-6-12",
+"kind": "story",
+"label": "Curated story selection, entry 82 of 471"
+},
+"2027-05-15": {
+"verse": "HEB-11-3",
+"kind": "ordinary",
+"label": "Rotation, entry 83 of 471"
+},
+"2027-05-16": {
+"verse": "ACT-2-4",
+"kind": "pentecost",
+"label": "Pentecost"
+},
+"2027-05-17": {
+"verse": "EZK-3-1",
+"kind": "ordinary",
+"label": "Rotation, entry 84 of 471"
+},
+"2027-05-18": {
+"verse": "PSA-146-3",
+"kind": "ordinary",
+"label": "Rotation, entry 85 of 471"
+},
+"2027-05-19": {
+"verse": "ROM-5-8",
+"kind": "ordinary",
+"label": "Rotation, entry 86 of 471"
+},
+"2027-05-20": {
+"verse": "2TI-2-19",
+"kind": "ordinary",
+"label": "Rotation, entry 87 of 471"
+},
+"2027-05-21": {
+"verse": "EPH-4-22",
+"kind": "ordinary",
+"label": "Rotation, entry 88 of 471"
+},
+"2027-05-22": {
+"verse": "JHN-10-27",
+"kind": "ordinary",
+"label": "Rotation, entry 89 of 471"
+},
+"2027-05-23": {
+"verse": "ISA-59-21",
+"kind": "ordinary",
+"label": "Rotation, entry 90 of 471"
+},
+"2027-05-24": {
+"verse": "PSA-25-12",
+"kind": "ordinary",
+"label": "Rotation, entry 91 of 471"
+},
+"2027-05-25": {
+"verse": "JAS-3-17",
+"kind": "ordinary",
+"label": "Rotation, entry 92 of 471"
+},
+"2027-05-26": {
+"verse": "ROM-16-20",
+"kind": "ordinary",
+"label": "Rotation, entry 93 of 471"
+},
+"2027-05-27": {
+"verse": "JHN-3-36",
+"kind": "ordinary",
+"label": "Rotation, entry 94 of 471"
+},
+"2027-05-28": {
+"verse": "ACT-2-17",
+"kind": "ordinary",
+"label": "Rotation, entry 95 of 471"
+},
+"2027-05-29": {
+"verse": "ISA-54-4",
+"kind": "ordinary",
+"label": "Rotation, entry 96 of 471"
+},
+"2027-05-30": {
+"verse": "PSA-26-4",
+"kind": "ordinary",
+"label": "Rotation, entry 97 of 471"
+},
+"2027-05-31": {
+"verse": "JER-1-5",
+"kind": "ordinary",
+"label": "Rotation, entry 98 of 471"
+},
+"2027-06-01": {
+"verse": "GAL-5-1",
+"kind": "ordinary",
+"label": "Rotation, entry 99 of 471"
+},
+"2027-06-02": {
+"verse": "ISA-40-29",
+"kind": "ordinary",
+"label": "Rotation, entry 100 of 471"
+},
+"2027-06-03": {
+"verse": "JHN-17-16",
+"kind": "ordinary",
+"label": "Rotation, entry 101 of 471"
+},
+"2027-06-04": {
+"verse": "HOS-6-6",
+"kind": "ordinary",
+"label": "Rotation, entry 102 of 471"
+},
+"2027-06-05": {
+"verse": "PSA-119-101",
+"kind": "ordinary",
+"label": "Rotation, entry 103 of 471"
+},
+"2027-06-06": {
+"verse": "1PE-1-20",
+"kind": "ordinary",
+"label": "Rotation, entry 104 of 471"
+},
+"2027-06-07": {
+"verse": "ROM-12-16",
+"kind": "ordinary",
+"label": "Rotation, entry 105 of 471"
+},
+"2027-06-08": {
+"verse": "RUT-1-16",
+"kind": "story",
+"label": "Curated story selection, entry 106 of 471"
+},
+"2027-06-09": {
+"verse": "MAT-6-25",
+"kind": "ordinary",
+"label": "Rotation, entry 107 of 471"
+},
+"2027-06-10": {
+"verse": "PRO-21-3",
+"kind": "ordinary",
+"label": "Rotation, entry 108 of 471"
+},
+"2027-06-11": {
+"verse": "HEB-13-20",
+"kind": "ordinary",
+"label": "Rotation, entry 109 of 471"
+},
+"2027-06-12": {
+"verse": "PSA-25-7",
+"kind": "ordinary",
+"label": "Rotation, entry 110 of 471"
+},
+"2027-06-13": {
+"verse": "ROM-4-21",
+"kind": "ordinary",
+"label": "Rotation, entry 111 of 471"
+},
+"2027-06-14": {
+"verse": "1CO-15-58",
+"kind": "ordinary",
+"label": "Rotation, entry 112 of 471"
+},
+"2027-06-15": {
+"verse": "PRO-13-20",
+"kind": "ordinary",
+"label": "Rotation, entry 113 of 471"
+},
+"2027-06-16": {
+"verse": "2CO-12-10",
+"kind": "ordinary",
+"label": "Rotation, entry 114 of 471"
+},
+"2027-06-17": {
+"verse": "PSA-34-9",
+"kind": "ordinary",
+"label": "Rotation, entry 115 of 471"
+},
+"2027-06-18": {
+"verse": "EXO-14-14",
+"kind": "ordinary",
+"label": "Rotation, entry 116 of 471"
+},
+"2027-06-19": {
+"verse": "TIT-3-5",
+"kind": "ordinary",
+"label": "Rotation, entry 117 of 471"
+},
+"2027-06-20": {
+"verse": "HEB-4-12",
+"kind": "ordinary",
+"label": "Rotation, entry 118 of 471"
+},
+"2027-06-21": {
+"verse": "ISA-55-10",
+"kind": "ordinary",
+"label": "Rotation, entry 119 of 471"
+},
+"2027-06-22": {
+"verse": "PSA-103-5",
+"kind": "ordinary",
+"label": "Rotation, entry 120 of 471"
+},
+"2027-06-23": {
+"verse": "2CH-32-7",
+"kind": "ordinary",
+"label": "Rotation, entry 121 of 471"
+},
+"2027-06-24": {
+"verse": "EPH-4-12",
+"kind": "ordinary",
+"label": "Rotation, entry 122 of 471"
+},
+"2027-06-25": {
+"verse": "PRO-28-26",
+"kind": "ordinary",
+"label": "Rotation, entry 123 of 471"
+},
+"2027-06-26": {
+"verse": "ISA-43-19",
+"kind": "ordinary",
+"label": "Rotation, entry 124 of 471"
+},
+"2027-06-27": {
+"verse": "PSA-91-13",
+"kind": "ordinary",
+"label": "Rotation, entry 125 of 471"
+},
+"2027-06-28": {
+"verse": "1PE-2-24",
+"kind": "ordinary",
+"label": "Rotation, entry 126 of 471"
+},
+"2027-06-29": {
+"verse": "JOS-1-9",
+"kind": "ordinary",
+"label": "Rotation, entry 127 of 471"
+},
+"2027-06-30": {
+"verse": "PRO-4-14",
+"kind": "ordinary",
+"label": "Rotation, entry 128 of 471"
+},
+"2027-07-01": {
+"verse": "ISA-12-2",
+"kind": "ordinary",
+"label": "Rotation, entry 129 of 471"
+},
+"2027-07-02": {
+"verse": "1SA-16-7",
+"kind": "story",
+"label": "Curated story selection, entry 130 of 471"
+},
+"2027-07-03": {
+"verse": "ROM-5-3",
+"kind": "ordinary",
+"label": "Rotation, entry 131 of 471"
+},
+"2027-07-04": {
+"verse": "PSA-43-3",
+"kind": "ordinary",
+"label": "Rotation, entry 132 of 471"
+},
+"2027-07-05": {
+"verse": "MIC-7-18",
+"kind": "ordinary",
+"label": "Rotation, entry 133 of 471"
+},
+"2027-07-06": {
+"verse": "2CO-5-7",
+"kind": "ordinary",
+"label": "Rotation, entry 134 of 471"
+},
+"2027-07-07": {
+"verse": "ISA-26-3",
+"kind": "ordinary",
+"label": "Rotation, entry 135 of 471"
+},
+"2027-07-08": {
+"verse": "EPH-6-6",
+"kind": "ordinary",
+"label": "Rotation, entry 136 of 471"
+},
+"2027-07-09": {
+"verse": "PSA-115-9",
+"kind": "ordinary",
+"label": "Rotation, entry 137 of 471"
+},
+"2027-07-10": {
+"verse": "JAS-4-7",
+"kind": "ordinary",
+"label": "Rotation, entry 138 of 471"
+},
+"2027-07-11": {
+"verse": "DEU-8-3",
+"kind": "ordinary",
+"label": "Rotation, entry 139 of 471"
+},
+"2027-07-12": {
+"verse": "ISA-6-9",
+"kind": "ordinary",
+"label": "Rotation, entry 140 of 471"
+},
+"2027-07-13": {
+"verse": "2CO-12-9",
+"kind": "ordinary",
+"label": "Rotation, entry 141 of 471"
+},
+"2027-07-14": {
+"verse": "ROM-11-2",
+"kind": "ordinary",
+"label": "Rotation, entry 142 of 471"
+},
+"2027-07-15": {
+"verse": "PSA-37-24",
+"kind": "ordinary",
+"label": "Rotation, entry 143 of 471"
+},
+"2027-07-16": {
+"verse": "PSA-40-5",
+"kind": "ordinary",
+"label": "Rotation, entry 144 of 471"
+},
+"2027-07-17": {
+"verse": "MRK-2-17",
+"kind": "ordinary",
+"label": "Rotation, entry 145 of 471"
+},
+"2027-07-18": {
+"verse": "1CO-2-7",
+"kind": "ordinary",
+"label": "Rotation, entry 146 of 471"
+},
+"2027-07-19": {
+"verse": "ISA-45-24",
+"kind": "ordinary",
+"label": "Rotation, entry 147 of 471"
+},
+"2027-07-20": {
+"verse": "JER-3-12",
+"kind": "ordinary",
+"label": "Rotation, entry 148 of 471"
+},
+"2027-07-21": {
+"verse": "PSA-37-3",
+"kind": "ordinary",
+"label": "Rotation, entry 149 of 471"
+},
+"2027-07-22": {
+"verse": "MRK-7-21",
+"kind": "ordinary",
+"label": "Rotation, entry 150 of 471"
+},
+"2027-07-23": {
+"verse": "EZK-34-23",
+"kind": "ordinary",
+"label": "Rotation, entry 151 of 471"
+},
+"2027-07-24": {
+"verse": "JHN-12-46",
+"kind": "ordinary",
+"label": "Rotation, entry 152 of 471"
+},
+"2027-07-25": {
+"verse": "2SA-9-7",
+"kind": "story",
+"label": "Curated story selection, entry 153 of 471"
+},
+"2027-07-26": {
+"verse": "2TH-2-16",
+"kind": "ordinary",
+"label": "Rotation, entry 154 of 471"
+},
+"2027-07-27": {
+"verse": "PSA-84-11",
+"kind": "ordinary",
+"label": "Rotation, entry 155 of 471"
+},
+"2027-07-28": {
+"verse": "REV-22-13",
+"kind": "ordinary",
+"label": "Rotation, entry 156 of 471"
+},
+"2027-07-29": {
+"verse": "DEU-7-6",
+"kind": "ordinary",
+"label": "Rotation, entry 157 of 471"
+},
+"2027-07-30": {
+"verse": "MAT-11-29",
+"kind": "ordinary",
+"label": "Rotation, entry 158 of 471"
+},
+"2027-07-31": {
+"verse": "LUK-6-45",
+"kind": "ordinary",
+"label": "Rotation, entry 159 of 471"
+},
+"2027-08-01": {
+"verse": "PSA-56-11",
+"kind": "ordinary",
+"label": "Rotation, entry 160 of 471"
+},
+"2027-08-02": {
+"verse": "REV-21-6",
+"kind": "ordinary",
+"label": "Rotation, entry 161 of 471"
+},
+"2027-08-03": {
+"verse": "GAL-5-24",
+"kind": "ordinary",
+"label": "Rotation, entry 162 of 471"
+},
+"2027-08-04": {
+"verse": "ROM-8-30",
+"kind": "ordinary",
+"label": "Rotation, entry 163 of 471"
+},
+"2027-08-05": {
+"verse": "ISA-35-6",
+"kind": "ordinary",
+"label": "Rotation, entry 164 of 471"
+},
+"2027-08-06": {
+"verse": "PSA-124-8",
+"kind": "ordinary",
+"label": "Rotation, entry 165 of 471"
+},
+"2027-08-07": {
+"verse": "PHP-2-13",
+"kind": "ordinary",
+"label": "Rotation, entry 166 of 471"
+},
+"2027-08-08": {
+"verse": "JER-29-13",
+"kind": "ordinary",
+"label": "Rotation, entry 167 of 471"
+},
+"2027-08-09": {
+"verse": "GAL-5-22",
+"kind": "ordinary",
+"label": "Rotation, entry 168 of 471"
+},
+"2027-08-10": {
+"verse": "HEB-12-15",
+"kind": "ordinary",
+"label": "Rotation, entry 169 of 471"
+},
+"2027-08-11": {
+"verse": "PSA-32-8",
+"kind": "ordinary",
+"label": "Rotation, entry 170 of 471"
+},
+"2027-08-12": {
+"verse": "REV-10-9",
+"kind": "ordinary",
+"label": "Rotation, entry 171 of 471"
+},
+"2027-08-13": {
+"verse": "JHN-3-15",
+"kind": "ordinary",
+"label": "Rotation, entry 172 of 471"
+},
+"2027-08-14": {
+"verse": "GEN-50-20",
+"kind": "ordinary",
+"label": "Rotation, entry 173 of 471"
+},
+"2027-08-15": {
+"verse": "JOL-2-26",
+"kind": "ordinary",
+"label": "Rotation, entry 174 of 471"
+},
+"2027-08-16": {
+"verse": "REV-7-17",
+"kind": "ordinary",
+"label": "Rotation, entry 175 of 471"
+},
+"2027-08-17": {
+"verse": "PSA-33-11",
+"kind": "ordinary",
+"label": "Rotation, entry 176 of 471"
+},
+"2027-08-18": {
+"verse": "1KI-18-21",
+"kind": "story",
+"label": "Curated story selection, entry 177 of 471"
+},
+"2027-08-19": {
+"verse": "PRO-17-27",
+"kind": "ordinary",
+"label": "Rotation, entry 178 of 471"
+},
+"2027-08-20": {
+"verse": "EPH-1-11",
+"kind": "ordinary",
+"label": "Rotation, entry 179 of 471"
+},
+"2027-08-21": {
+"verse": "1JN-4-9",
+"kind": "ordinary",
+"label": "Rotation, entry 180 of 471"
+},
+"2027-08-22": {
+"verse": "COL-3-16",
+"kind": "ordinary",
+"label": "Rotation, entry 181 of 471"
+},
+"2027-08-23": {
+"verse": "PSA-138-8",
+"kind": "ordinary",
+"label": "Rotation, entry 182 of 471"
+},
+"2027-08-24": {
+"verse": "1PE-5-10",
+"kind": "ordinary",
+"label": "Rotation, entry 183 of 471"
+},
+"2027-08-25": {
+"verse": "JHN-14-13",
+"kind": "ordinary",
+"label": "Rotation, entry 184 of 471"
+},
+"2027-08-26": {
+"verse": "ISA-44-25",
+"kind": "ordinary",
+"label": "Rotation, entry 185 of 471"
+},
+"2027-08-27": {
+"verse": "COL-3-12",
+"kind": "ordinary",
+"label": "Rotation, entry 186 of 471"
+},
+"2027-08-28": {
+"verse": "MAT-9-13",
+"kind": "ordinary",
+"label": "Rotation, entry 187 of 471"
+},
+"2027-08-29": {
+"verse": "PRO-22-19",
+"kind": "ordinary",
+"label": "Rotation, entry 188 of 471"
+},
+"2027-08-30": {
+"verse": "HEB-1-10",
+"kind": "ordinary",
+"label": "Rotation, entry 189 of 471"
+},
+"2027-08-31": {
+"verse": "ISA-65-24",
+"kind": "ordinary",
+"label": "Rotation, entry 190 of 471"
+},
+"2027-09-01": {
+"verse": "PSA-35-1",
+"kind": "ordinary",
+"label": "Rotation, entry 191 of 471"
+},
+"2027-09-02": {
+"verse": "JER-49-39",
+"kind": "ordinary",
+"label": "Rotation, entry 192 of 471"
+},
+"2027-09-03": {
+"verse": "1CO-13-4",
+"kind": "ordinary",
+"label": "Rotation, entry 193 of 471"
+},
+"2027-09-04": {
+"verse": "ROM-15-4",
+"kind": "ordinary",
+"label": "Rotation, entry 194 of 471"
+},
+"2027-09-05": {
+"verse": "ISA-43-18",
+"kind": "ordinary",
+"label": "Rotation, entry 195 of 471"
+},
+"2027-09-06": {
+"verse": "PSA-55-22",
+"kind": "ordinary",
+"label": "Rotation, entry 196 of 471"
+},
+"2027-09-07": {
+"verse": "MAT-12-34",
+"kind": "ordinary",
+"label": "Rotation, entry 197 of 471"
+},
+"2027-09-08": {
+"verse": "LAM-3-26",
+"kind": "ordinary",
+"label": "Rotation, entry 198 of 471"
+},
+"2027-09-09": {
+"verse": "2CO-5-15",
+"kind": "ordinary",
+"label": "Rotation, entry 199 of 471"
+},
+"2027-09-10": {
+"verse": "2KI-5-13-14",
+"kind": "story",
+"label": "Curated story selection, entry 200 of 471"
+},
+"2027-09-11": {
+"verse": "ISA-44-3",
+"kind": "ordinary",
+"label": "Rotation, entry 201 of 471"
+},
+"2027-09-12": {
+"verse": "PSA-44-4",
+"kind": "ordinary",
+"label": "Rotation, entry 202 of 471"
+},
+"2027-09-13": {
+"verse": "JHN-10-9",
+"kind": "ordinary",
+"label": "Rotation, entry 203 of 471"
+},
+"2027-09-14": {
+"verse": "1PE-1-14",
+"kind": "ordinary",
+"label": "Rotation, entry 204 of 471"
+},
+"2027-09-15": {
+"verse": "MRK-16-15",
+"kind": "ordinary",
+"label": "Rotation, entry 205 of 471"
+},
+"2027-09-16": {
+"verse": "ISA-61-9",
+"kind": "ordinary",
+"label": "Rotation, entry 206 of 471"
+},
+"2027-09-17": {
+"verse": "JOL-2-28",
+"kind": "ordinary",
+"label": "Rotation, entry 207 of 471"
+},
+"2027-09-18": {
+"verse": "JHN-15-4",
+"kind": "ordinary",
+"label": "Rotation, entry 208 of 471"
+},
+"2027-09-19": {
+"verse": "REV-21-3",
+"kind": "ordinary",
+"label": "Rotation, entry 209 of 471"
+},
+"2027-09-20": {
+"verse": "ISA-55-8",
+"kind": "ordinary",
+"label": "Rotation, entry 210 of 471"
+},
+"2027-09-21": {
+"verse": "COL-1-16",
+"kind": "ordinary",
+"label": "Rotation, entry 211 of 471"
+},
+"2027-09-22": {
+"verse": "EZK-39-29",
+"kind": "ordinary",
+"label": "Rotation, entry 212 of 471"
+},
+"2027-09-23": {
+"verse": "1JN-2-3",
+"kind": "ordinary",
+"label": "Rotation, entry 213 of 471"
+},
+"2027-09-24": {
+"verse": "JHN-10-28",
+"kind": "ordinary",
+"label": "Rotation, entry 214 of 471"
+},
+"2027-09-25": {
+"verse": "PSA-34-5",
+"kind": "ordinary",
+"label": "Rotation, entry 215 of 471"
+},
+"2027-09-26": {
+"verse": "LUK-4-8",
+"kind": "ordinary",
+"label": "Rotation, entry 216 of 471"
+},
+"2027-09-27": {
+"verse": "PRO-1-23",
+"kind": "ordinary",
+"label": "Rotation, entry 217 of 471"
+},
+"2027-09-28": {
+"verse": "DEU-10-12",
+"kind": "ordinary",
+"label": "Rotation, entry 218 of 471"
+},
+"2027-09-29": {
+"verse": "JHN-1-29",
+"kind": "ordinary",
+"label": "Rotation, entry 219 of 471"
+},
+"2027-09-30": {
+"verse": "JER-31-1",
+"kind": "ordinary",
+"label": "Rotation, entry 220 of 471"
+},
+"2027-10-01": {
+"verse": "ISA-51-12",
+"kind": "ordinary",
+"label": "Rotation, entry 221 of 471"
+},
+"2027-10-02": {
+"verse": "DEU-32-30",
+"kind": "ordinary",
+"label": "Rotation, entry 222 of 471"
+},
+"2027-10-03": {
+"verse": "PRO-3-21",
+"kind": "ordinary",
+"label": "Rotation, entry 223 of 471"
+},
+"2027-10-04": {
+"verse": "EST-4-14",
+"kind": "story",
+"label": "Curated story selection, entry 224 of 471"
+},
+"2027-10-05": {
+"verse": "EPH-1-4",
+"kind": "ordinary",
+"label": "Rotation, entry 225 of 471"
+},
+"2027-10-06": {
+"verse": "JHN-14-27",
+"kind": "ordinary",
+"label": "Rotation, entry 226 of 471"
+},
+"2027-10-07": {
+"verse": "JER-17-8",
+"kind": "ordinary",
+"label": "Rotation, entry 227 of 471"
+},
+"2027-10-08": {
+"verse": "HEB-13-15",
+"kind": "ordinary",
+"label": "Rotation, entry 228 of 471"
+},
+"2027-10-09": {
+"verse": "PRO-2-1",
+"kind": "ordinary",
+"label": "Rotation, entry 229 of 471"
+},
+"2027-10-10": {
+"verse": "MRK-4-12",
+"kind": "ordinary",
+"label": "Rotation, entry 230 of 471"
+},
+"2027-10-11": {
+"verse": "JHN-14-21",
+"kind": "ordinary",
+"label": "Rotation, entry 231 of 471"
+},
+"2027-10-12": {
+"verse": "2TI-1-9",
+"kind": "ordinary",
+"label": "Rotation, entry 232 of 471"
+},
+"2027-10-13": {
+"verse": "COL-3-3",
+"kind": "ordinary",
+"label": "Rotation, entry 233 of 471"
+},
+"2027-10-14": {
+"verse": "LEV-26-12",
+"kind": "ordinary",
+"label": "Rotation, entry 234 of 471"
+},
+"2027-10-15": {
+"verse": "PRO-22-5",
+"kind": "ordinary",
+"label": "Rotation, entry 235 of 471"
+},
+"2027-10-16": {
+"verse": "ISA-29-13",
+"kind": "ordinary",
+"label": "Rotation, entry 236 of 471"
+},
+"2027-10-17": {
+"verse": "JHN-10-14",
+"kind": "ordinary",
+"label": "Rotation, entry 237 of 471"
+},
+"2027-10-18": {
+"verse": "EPH-3-16",
+"kind": "ordinary",
+"label": "Rotation, entry 238 of 471"
+},
+"2027-10-19": {
+"verse": "ROM-5-10",
+"kind": "ordinary",
+"label": "Rotation, entry 239 of 471"
+},
+"2027-10-20": {
+"verse": "PSA-25-3",
+"kind": "ordinary",
+"label": "Rotation, entry 240 of 471"
+},
+"2027-10-21": {
+"verse": "ISA-46-10",
+"kind": "ordinary",
+"label": "Rotation, entry 241 of 471"
+},
+"2027-10-22": {
+"verse": "MAT-23-12",
+"kind": "ordinary",
+"label": "Rotation, entry 242 of 471"
+},
+"2027-10-23": {
+"verse": "JER-7-22",
+"kind": "ordinary",
+"label": "Rotation, entry 243 of 471"
+},
+"2027-10-24": {
+"verse": "ACT-4-12",
+"kind": "ordinary",
+"label": "Rotation, entry 244 of 471"
+},
+"2027-10-25": {
+"verse": "HEB-6-10",
+"kind": "ordinary",
+"label": "Rotation, entry 245 of 471"
+},
+"2027-10-26": {
+"verse": "ROM-8-31",
+"kind": "ordinary",
+"label": "Rotation, entry 246 of 471"
+},
+"2027-10-27": {
+"verse": "NEH-8-10",
+"kind": "story",
+"label": "Curated story selection, entry 247 of 471"
+},
+"2027-10-28": {
+"verse": "2CH-20-17",
+"kind": "ordinary",
+"label": "Rotation, entry 248 of 471"
+},
+"2027-10-29": {
+"verse": "1JN-1-1",
+"kind": "ordinary",
+"label": "Rotation, entry 249 of 471"
+},
+"2027-10-30": {
+"verse": "ISA-1-11",
+"kind": "ordinary",
+"label": "Rotation, entry 250 of 471"
+},
+"2027-10-31": {
+"verse": "EPH-3-20",
+"kind": "ordinary",
+"label": "Rotation, entry 251 of 471"
+},
+"2027-11-01": {
+"verse": "PHP-2-16",
+"kind": "ordinary",
+"label": "Rotation, entry 252 of 471"
+},
+"2027-11-02": {
+"verse": "PSA-29-11",
+"kind": "ordinary",
+"label": "Rotation, entry 253 of 471"
+},
+"2027-11-03": {
+"verse": "1JN-4-18",
+"kind": "ordinary",
+"label": "Rotation, entry 254 of 471"
+},
+"2027-11-04": {
+"verse": "JER-1-19",
+"kind": "ordinary",
+"label": "Rotation, entry 255 of 471"
+},
+"2027-11-05": {
+"verse": "ROM-14-17",
+"kind": "ordinary",
+"label": "Rotation, entry 256 of 471"
+},
+"2027-11-06": {
+"verse": "2PE-2-9",
+"kind": "ordinary",
+"label": "Rotation, entry 257 of 471"
+},
+"2027-11-07": {
+"verse": "COL-3-1",
+"kind": "ordinary",
+"label": "Rotation, entry 258 of 471"
+},
+"2027-11-08": {
+"verse": "ISA-1-18",
+"kind": "ordinary",
+"label": "Rotation, entry 259 of 471"
+},
+"2027-11-09": {
+"verse": "2TI-4-7",
+"kind": "ordinary",
+"label": "Rotation, entry 260 of 471"
+},
+"2027-11-10": {
+"verse": "ROM-10-9",
+"kind": "ordinary",
+"label": "Rotation, entry 261 of 471"
+},
+"2027-11-11": {
+"verse": "JER-30-3",
+"kind": "ordinary",
+"label": "Rotation, entry 262 of 471"
+},
+"2027-11-12": {
+"verse": "COL-3-17",
+"kind": "ordinary",
+"label": "Rotation, entry 263 of 471"
+},
+"2027-11-13": {
+"verse": "LUK-12-31",
+"kind": "ordinary",
+"label": "Rotation, entry 264 of 471"
+},
+"2027-11-14": {
+"verse": "ACT-10-45",
+"kind": "ordinary",
+"label": "Rotation, entry 265 of 471"
+},
+"2027-11-15": {
+"verse": "2CO-5-17",
+"kind": "ordinary",
+"label": "Rotation, entry 266 of 471"
+},
+"2027-11-16": {
+"verse": "PSA-27-5",
+"kind": "ordinary",
+"label": "Rotation, entry 267 of 471"
+},
+"2027-11-17": {
+"verse": "ISA-41-10",
+"kind": "ordinary",
+"label": "Rotation, entry 268 of 471"
+},
+"2027-11-18": {
+"verse": "JER-31-31",
+"kind": "ordinary",
+"label": "Rotation, entry 269 of 471"
+},
+"2027-11-19": {
+"verse": "MRK-12-33",
+"kind": "ordinary",
+"label": "Rotation, entry 270 of 471"
+},
+"2027-11-20": {
+"verse": "JOB-19-25",
+"kind": "story",
+"label": "Curated story selection, entry 271 of 471"
+},
+"2027-11-21": {
+"verse": "MIC-4-12",
+"kind": "ordinary",
+"label": "Rotation, entry 272 of 471"
+},
+"2027-11-22": {
+"verse": "ISA-44-22",
+"kind": "ordinary",
+"label": "Rotation, entry 273 of 471"
+},
+"2027-11-23": {
+"verse": "PSA-21-11",
+"kind": "ordinary",
+"label": "Rotation, entry 274 of 471"
+},
+"2027-11-24": {
+"verse": "LEV-26-8",
+"kind": "ordinary",
+"label": "Rotation, entry 275 of 471"
+},
+"2027-11-25": {
+"verse": "JHN-10-11",
+"kind": "ordinary",
+"label": "Rotation, entry 276 of 471"
+},
+"2027-11-26": {
+"verse": "EXO-29-45",
+"kind": "ordinary",
+"label": "Rotation, entry 277 of 471"
+},
+"2027-11-27": {
+"verse": "COL-1-11",
+"kind": "ordinary",
+"label": "Rotation, entry 278 of 471"
+},
+"2027-11-28": {
+"verse": "ISA-64-4",
+"kind": "advent",
+"label": "Advent, day 1 of 27"
+},
+"2027-11-29": {
+"verse": "ROM-13-11",
+"kind": "advent",
+"label": "Advent, day 2 of 27"
+},
+"2027-11-30": {
+"verse": "MRK-13-35",
+"kind": "advent",
+"label": "Advent, day 3 of 27"
+},
+"2027-12-01": {
+"verse": "LUK-21-28",
+"kind": "advent",
+"label": "Advent, day 4 of 27"
+},
+"2027-12-02": {
+"verse": "TIT-2-13",
+"kind": "advent",
+"label": "Advent, day 5 of 27"
+},
+"2027-12-03": {
+"verse": "ISA-40-31",
+"kind": "advent",
+"label": "Advent, day 6 of 27"
+},
+"2027-12-04": {
+"verse": "ISA-40-3",
+"kind": "advent",
+"label": "Advent, day 7 of 27"
+},
+"2027-12-05": {
+"verse": "ISA-40-5",
+"kind": "advent",
+"label": "Advent, day 8 of 27"
+},
+"2027-12-06": {
+"verse": "MAL-3-1",
+"kind": "advent",
+"label": "Advent, day 9 of 27"
+},
+"2027-12-07": {
+"verse": "ISA-11-1",
+"kind": "advent",
+"label": "Advent, day 10 of 27"
+},
+"2027-12-08": {
+"verse": "ISA-11-6",
+"kind": "advent",
+"label": "Advent, day 11 of 27"
+},
+"2027-12-09": {
+"verse": "MAT-3-3",
+"kind": "advent",
+"label": "Advent, day 12 of 27"
+},
+"2027-12-10": {
+"verse": "PSA-85-10",
+"kind": "advent",
+"label": "Advent, day 13 of 27"
+},
+"2027-12-11": {
+"verse": "ISA-35-1",
+"kind": "advent",
+"label": "Advent, day 14 of 27"
+},
+"2027-12-12": {
+"verse": "ISA-35-10",
+"kind": "advent",
+"label": "Advent, day 15 of 27"
+},
+"2027-12-13": {
+"verse": "ZEP-3-17",
+"kind": "advent",
+"label": "Advent, day 16 of 27"
+},
+"2027-12-14": {
+"verse": "PSA-126-3",
+"kind": "advent",
+"label": "Advent, day 17 of 27"
+},
+"2027-12-15": {
+"verse": "PHP-4-4",
+"kind": "advent",
+"label": "Advent, day 18 of 27"
+},
+"2027-12-16": {
+"verse": "ISA-61-1",
+"kind": "advent",
+"label": "Advent, day 19 of 27"
+},
+"2027-12-17": {
+"verse": "LUK-1-47",
+"kind": "advent",
+"label": "Advent, day 20 of 27"
+},
+"2027-12-18": {
+"verse": "ISA-7-14",
+"kind": "advent",
+"label": "Advent, day 21 of 27"
+},
+"2027-12-19": {
+"verse": "MIC-5-2",
+"kind": "advent",
+"label": "Advent, day 22 of 27"
+},
+"2027-12-20": {
+"verse": "LUK-1-31",
+"kind": "advent",
+"label": "Advent, day 23 of 27"
+},
+"2027-12-21": {
+"verse": "LUK-1-38",
+"kind": "advent",
+"label": "Advent, day 24 of 27"
+},
+"2027-12-22": {
+"verse": "MAT-1-21",
+"kind": "advent",
+"label": "Advent, day 25 of 27"
+},
+"2027-12-23": {
+"verse": "LUK-1-78",
+"kind": "advent",
+"label": "Advent, day 26 of 27"
+},
+"2027-12-24": {
+"verse": "ISA-9-2",
+"kind": "advent",
+"label": "Advent, day 27 of 27"
+},
+"2027-12-25": {
+"verse": "LUK-2-11",
+"kind": "christmas",
+"label": "Christmas, day 1 of 13"
+},
+"2027-12-26": {
+"verse": "ISA-9-6",
+"kind": "christmas",
+"label": "Christmas, day 2 of 13"
+},
+"2027-12-27": {
+"verse": "JHN-1-14",
+"kind": "christmas",
+"label": "Christmas, day 3 of 13"
+},
+"2027-12-28": {
+"verse": "LUK-2-10",
+"kind": "christmas",
+"label": "Christmas, day 4 of 13"
+},
+"2027-12-29": {
+"verse": "LUK-2-14",
+"kind": "christmas",
+"label": "Christmas, day 5 of 13"
+},
+"2027-12-30": {
+"verse": "LUK-2-20",
+"kind": "christmas",
+"label": "Christmas, day 6 of 13"
+},
+"2027-12-31": {
+"verse": "GAL-4-4",
+"kind": "christmas",
+"label": "Christmas, day 7 of 13"
+}
+}
+}

@@ -1,0 +1,211 @@
+{
+"year": 2026,
+"note": "date -> verse. Built by tools/build-morning-schedule.py.",
+"days": {
+"2026-11-21": {
+"verse": "2TI-1-9",
+"kind": "ordinary",
+"label": "Rotation, entry 1 of 471"
+},
+"2026-11-22": {
+"verse": "DEU-31-8",
+"kind": "ordinary",
+"label": "Rotation, entry 2 of 471"
+},
+"2026-11-23": {
+"verse": "1JN-2-15",
+"kind": "ordinary",
+"label": "Rotation, entry 3 of 471"
+},
+"2026-11-24": {
+"verse": "REV-19-13",
+"kind": "ordinary",
+"label": "Rotation, entry 4 of 471"
+},
+"2026-11-25": {
+"verse": "EPH-3-16",
+"kind": "ordinary",
+"label": "Rotation, entry 5 of 471"
+},
+"2026-11-26": {
+"verse": "PSA-19-10",
+"kind": "ordinary",
+"label": "Rotation, entry 6 of 471"
+},
+"2026-11-27": {
+"verse": "ISA-58-14",
+"kind": "ordinary",
+"label": "Rotation, entry 7 of 471"
+},
+"2026-11-28": {
+"verse": "DEU-6-7",
+"kind": "ordinary",
+"label": "Rotation, entry 8 of 471"
+},
+"2026-11-29": {
+"verse": "ROM-13-11",
+"kind": "advent",
+"label": "Advent, day 1 of 26"
+},
+"2026-11-30": {
+"verse": "MRK-13-35",
+"kind": "advent",
+"label": "Advent, day 2 of 26"
+},
+"2026-12-01": {
+"verse": "LUK-21-28",
+"kind": "advent",
+"label": "Advent, day 3 of 26"
+},
+"2026-12-02": {
+"verse": "TIT-2-13",
+"kind": "advent",
+"label": "Advent, day 4 of 26"
+},
+"2026-12-03": {
+"verse": "ISA-40-31",
+"kind": "advent",
+"label": "Advent, day 5 of 26"
+},
+"2026-12-04": {
+"verse": "ISA-40-3",
+"kind": "advent",
+"label": "Advent, day 6 of 26"
+},
+"2026-12-05": {
+"verse": "ISA-40-5",
+"kind": "advent",
+"label": "Advent, day 7 of 26"
+},
+"2026-12-06": {
+"verse": "MAL-3-1",
+"kind": "advent",
+"label": "Advent, day 8 of 26"
+},
+"2026-12-07": {
+"verse": "ISA-11-1",
+"kind": "advent",
+"label": "Advent, day 9 of 26"
+},
+"2026-12-08": {
+"verse": "ISA-11-6",
+"kind": "advent",
+"label": "Advent, day 10 of 26"
+},
+"2026-12-09": {
+"verse": "MAT-3-3",
+"kind": "advent",
+"label": "Advent, day 11 of 26"
+},
+"2026-12-10": {
+"verse": "PSA-85-10",
+"kind": "advent",
+"label": "Advent, day 12 of 26"
+},
+"2026-12-11": {
+"verse": "ISA-35-1",
+"kind": "advent",
+"label": "Advent, day 13 of 26"
+},
+"2026-12-12": {
+"verse": "ISA-35-10",
+"kind": "advent",
+"label": "Advent, day 14 of 26"
+},
+"2026-12-13": {
+"verse": "ZEP-3-17",
+"kind": "advent",
+"label": "Advent, day 15 of 26"
+},
+"2026-12-14": {
+"verse": "PSA-126-3",
+"kind": "advent",
+"label": "Advent, day 16 of 26"
+},
+"2026-12-15": {
+"verse": "PHP-4-4",
+"kind": "advent",
+"label": "Advent, day 17 of 26"
+},
+"2026-12-16": {
+"verse": "ISA-61-1",
+"kind": "advent",
+"label": "Advent, day 18 of 26"
+},
+"2026-12-17": {
+"verse": "LUK-1-47",
+"kind": "advent",
+"label": "Advent, day 19 of 26"
+},
+"2026-12-18": {
+"verse": "ISA-7-14",
+"kind": "advent",
+"label": "Advent, day 20 of 26"
+},
+"2026-12-19": {
+"verse": "MIC-5-2",
+"kind": "advent",
+"label": "Advent, day 21 of 26"
+},
+"2026-12-20": {
+"verse": "LUK-1-31",
+"kind": "advent",
+"label": "Advent, day 22 of 26"
+},
+"2026-12-21": {
+"verse": "LUK-1-38",
+"kind": "advent",
+"label": "Advent, day 23 of 26"
+},
+"2026-12-22": {
+"verse": "MAT-1-21",
+"kind": "advent",
+"label": "Advent, day 24 of 26"
+},
+"2026-12-23": {
+"verse": "LUK-1-78",
+"kind": "advent",
+"label": "Advent, day 25 of 26"
+},
+"2026-12-24": {
+"verse": "ISA-9-2",
+"kind": "advent",
+"label": "Advent, day 26 of 26"
+},
+"2026-12-25": {
+"verse": "LUK-2-11",
+"kind": "christmas",
+"label": "Christmas, day 1 of 13"
+},
+"2026-12-26": {
+"verse": "ISA-9-6",
+"kind": "christmas",
+"label": "Christmas, day 2 of 13"
+},
+"2026-12-27": {
+"verse": "JHN-1-14",
+"kind": "christmas",
+"label": "Christmas, day 3 of 13"
+},
+"2026-12-28": {
+"verse": "LUK-2-10",
+"kind": "christmas",
+"label": "Christmas, day 4 of 13"
+},
+"2026-12-29": {
+"verse": "LUK-2-14",
+"kind": "christmas",
+"label": "Christmas, day 5 of 13"
+},
+"2026-12-30": {
+"verse": "LUK-2-20",
+"kind": "christmas",
+"label": "Christmas, day 6 of 13"
+},
+"2026-12-31": {
+"verse": "GAL-4-4",
+"kind": "christmas",
+"label": "Christmas, day 7 of 13"
+}
+}
+}
