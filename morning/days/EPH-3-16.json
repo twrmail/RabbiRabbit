@@ -1,0 +1,87 @@
+{
+ "id": "EPH-3-16",
+ "ref": {
+  "b": "EPH",
+  "c": 3,
+  "v": 16,
+  "ve": null,
+  "label": "Ephesians 3:16"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 16,
+    "text": "That he would grant you, according to the riches of his glory, to be strengthened with might by his Spirit in the inner man;"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 16,
+    "text": "I ask that out of the riches of His glory He may strengthen you with power through His Spirit in your inner being,"
+   }
+  ],
+  "web": [
+   {
+    "n": 16,
+    "text": "that he would grant you, according to the riches of his glory, that you may be strengthened with power through his Spirit in the inner person,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 16"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "1. Spiritual strength for the work and duty to which they were called, and in which they were employed: *That he would grant you, according to the riches of his grace, to be strengthened,* etc. *The inner man* is the heart or soul. To be *strengthened with might* is to be mightily strengthened, much more than they were at present; to be endued with a high degree of grace, and spiritual abilities for discharging duty, resisting temptations, enduring persecutions, etc. And the apostle prays that this may be *according to the riches of his glory,* or according to his glorious riches—answerable to that great abundance of grace, mercy, and power, which resides in God, and is his glory: and this by his Spirit, who is the immediate worker of grace in the souls of God's people. Observe from these things, That strength from the Spirit of God in the inner man is the best and most desirable strength, strength in the soul, the strength of faith and other graces, strength to serve God and to do our duty, and to persevere in our Christian course with vigour and with cheerfulness. And let us further observe that *as the work of grace is first begun so it is continued and carried on, by the blessed Spirit of God.* 2. The indwelling of Christ in their hearts, Eph 3:17. Christ is said to dwell in his people, as he is always present with them by his gracious influences and operations. Observe, It is a desirable thing to have Christ dwell in our hearts; and if the law of Christ be written there, and the love of Christ be shed abroad there, then Christ dwells there. Christ is an inhabitant in the soul of every good Christian. Where his spirit dwells, there he swells; and he dwells in the heart by faith, by means of the continual exercise of faith upon him. Faith opens the door of the soul, to receive Christ; faith admits him, and submits to him. By faith we are united to Christ, and have an interest in him.",
+   "ok": true,
+   "metrics": {
+    "words": 292,
+    "sourceWords": 349,
+    "ratio": 0.84,
+    "ground": 0.89,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "1. Spiritual strength for the work and duty to which they were called. Henry says the inner man means the heart or soul. To be strengthened with might means to be mightily strengthened, far more than they were then. It means being given a high degree of grace and spiritual abilities for doing their duty, resisting temptations, and enduring persecutions. The apostle prays this will happen according to the riches of God's glory—matching that great abundance of grace, mercy, and power that lives in God and is his glory. This comes through his Spirit, who works grace directly in the souls of God's people. Henry points out that strength from God's Spirit in the inner man is the best strength we can have. It is strength in the soul, the strength of faith and other graces, strength to serve God and do our duty, and to keep going in our Christian life with vigor and cheerfulness. The work of grace is begun by the Spirit and is also continued and carried on by him.\n\n2. The indwelling of Christ in their hearts (Eph 3:17). Christ dwells in his people through his gracious influences and operations, always present with them. Henry says it is desirable to have Christ dwell in our hearts. If the law of Christ is written there and the love of Christ is poured out there, then Christ dwells there. Christ lives in the soul of every good Christian. Where his spirit dwells, there he lives. He dwells in the heart by faith, through the continual exercise of faith on him. Faith opens the door of the soul to receive Christ, admits him, and submits to him. By faith we are united to Christ and have an interest in him.",
+   "retried": true
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Colossians 1:11",
+   "b": "COL",
+   "c": 1,
+   "v": 11,
+   "votes": 75,
+   "kjv": "Strengthened with all might, according to his glorious power, unto all patience and longsuffering with joyfulness;"
+  },
+  {
+   "ref": "Philippians 4:13",
+   "b": "PHP",
+   "c": 4,
+   "v": 13,
+   "votes": 59,
+   "kjv": "I can do all things through Christ which strengtheneth me."
+  },
+  {
+   "ref": "Isaiah 40:29",
+   "b": "ISA",
+   "c": 40,
+   "v": 29,
+   "votes": 51,
+   "kjv": "He giveth power to the faint; and to them that have no might he increaseth strength."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:27:48.142Z",
+  "cost": 0.00654
+ }
+}

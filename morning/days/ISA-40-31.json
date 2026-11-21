@@ -1,0 +1,86 @@
+{
+ "id": "ISA-40-31",
+ "ref": {
+  "b": "ISA",
+  "c": 40,
+  "v": 31,
+  "ve": null,
+  "label": "Isaiah 40:31"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 31,
+    "text": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 31,
+    "text": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
+   }
+  ],
+  "web": [
+   {
+    "n": 31,
+    "text": "but those who wait for the LORD will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 31"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "He will help the willing, will help those who, in a humble dependence upon him, help themselves, and will do well for those who do their best, Isa 40:30,31. Those who trust to their own sufficiency, and are so confident of it that they neither exert themselves to the utmost nor seek unto God for his grace, are *the youth* and *the young men,* who are strong, but are apt to think themselves stronger than they are. And they *shall faint and be weary,* yea, they *shall utterly fail* in their services, in their conflicts, and under their burdens; they shall soon be made to see the folly of trusting to themselves. *But those that wait on the Lord,* who make conscience of their duty to him, and by faith rely upon him and commit themselves to his guidance, shall find that God will not fail them. [1.] They shall have grace sufficient for them: They *shall renew their strength* as their work is renewed, as there is new occasion; they shall be anointed, and their lamps supplied, with fresh oil. God will be their *arm every morning,* Isa 33:2. If at any time they have been foiled and weakened they shall recover themselves, and so renew their strength. Heb. *They shall change their strength,* as their work is changed—doing work, suffering work; they shall have strength to labour, strength to wrestle, strength to resist, strength to bear. As the day so shall the strength be. [2.] They shall use this grace for the best purposes. Being strengthened, *First,* They shall soar upward, upward towards God: *They shall mount up with wings like eagles,* so strongly, so swiftly, so high and heaven-ward. In the strength of divine grace, their souls shall ascend above the world, and even enter into the holiest. Pious and devout affections are the eagles' wings on which gracious souls mount up, Ps 25:1. *Secondly,* They shall press forward, forward towards heaven. They shall walk, they shall run, the way of God's commandments, cheerfully and with alacrity (they *shall not be weary*), constantly and with perseverance (they *shall not faint*); and therefore in due season they shall reap. Let Jacob and Israel therefore, in their greatest distresses, continue waiting upon God, and not despair of timely and effectual relief and succour from him.",
+   "ok": true,
+   "metrics": {
+    "words": 281,
+    "sourceWords": 386,
+    "ratio": 0.73,
+    "ground": 0.68,
+    "refsKept": 2,
+    "refsInBlock": 3
+   },
+   "restated": "Henry says God helps those who humbly depend on him and do their best. Those who trust only in themselves and do not work hard or ask God for help are like young men who are strong but overconfident. They will grow tired and weary and fail in their work, their struggles, and their burdens. They will learn the foolishness of trusting themselves. But those who wait on the Lord, who take their duty to him seriously and trust him by faith, will find that God does not abandon them.\n\n1. They will have enough grace for what they face. As their work changes, their strength will renew. God will be their strength every morning (Isa 33:2). If they have been defeated and weakened, they will recover and renew their strength. They will have strength to work, strength to struggle, strength to resist, and strength to endure. Their strength will match what each day requires.\n\n2. They will use this grace for the best purposes. First, they will rise upward toward God. They will mount up with wings like eagles, strongly, swiftly, and high toward heaven. In divine grace, their souls will rise above the world and enter into the holiest place. Godly feelings are like eagles' wings that lift faithful souls upward (Ps 25:1). Second, they will move forward toward heaven. They will walk and run in God's commandments cheerfully and eagerly, without growing weary, and steadily without fainting. Because of this, in time they will receive what they have worked for.\n\nHenry urges Jacob and Israel, even in their worst troubles, to keep waiting on God and not lose hope. God will bring them help and relief in time."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Lamentations 3:25",
+   "b": "LAM",
+   "c": 3,
+   "v": 25,
+   "votes": 385,
+   "kjv": "The LORD is good unto them that wait for him, to the soul that seeketh him."
+  },
+  {
+   "ref": "2 Corinthians 4:16",
+   "b": "2CO",
+   "c": 4,
+   "v": 16,
+   "votes": 333,
+   "kjv": "For which cause we faint not; but though our outward man perish, yet the inward man is renewed day by day."
+  },
+  {
+   "ref": "Psalms 27:13",
+   "b": "PSA",
+   "c": 27,
+   "v": 13,
+   "votes": 276,
+   "kjv": "I had fainted, unless I had believed to see the goodness of the LORD in the land of the living."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:39.952Z",
+  "cost": 0.00331
+ }
+}

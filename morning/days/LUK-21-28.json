@@ -1,0 +1,104 @@
+{
+ "id": "LUK-21-28",
+ "ref": {
+  "b": "LUK",
+  "c": 21,
+  "v": 28,
+  "ve": null,
+  "label": "Luke 21:28"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 28,
+    "text": "And when these things begin to come to pass, then look up, and lift up your heads; for your redemption draweth nigh."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 28,
+    "text": "When these things begin to happen, stand up and lift up your heads, because your redemption is drawing near.”"
+   }
+  ],
+  "web": [
+   {
+    "n": 28,
+    "text": "But when these things begin to happen, look up and lift up your heads, because your redemption is near.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 28"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "VII. He encourages all the faithful disciples in reference to the terrors of that day (Lu 21:28): \"*When these things begin to come to pass,* when Jerusalem is besieged, and every thing is concurring to the destruction of the Jews, *then* do you look *up,* when others are looking down, look heavenward, in faith, hope, and prayer, and *lift up your heads* with cheerfulness and confidence, *for your redemption draws night.*\" 1. When Christ came to destroy the Jews, he came to redeem the Christians that were persecuted and oppressed by them; *then had the churches rest.* 2. When he comes to judge the world at the last day, he will *redeem* all that are his, from all their grievances. And the foresight of that day is as pleasant to all good Christians as it is terrible to the wicked and ungodly. Their death itself is so; when they see that day approaching, they can *lift up their heads with joy,* knowing that *their redemption draws nigh,* their removal to their Redeemer.",
+   "ok": false,
+   "metrics": {
+    "words": 148,
+    "sourceWords": 172,
+    "ratio": 0.86,
+    "ground": 0.86,
+    "refsKept": 0,
+    "refsInBlock": 1
+   },
+   "reasons": [
+    "quotes Scripture from the block without quotation marks (“2 when he comes to judge the world…”)"
+   ],
+   "rejected": "Henry encourages faithful disciples about the terrors of that day. When Jerusalem is besieged and everything points to the Jews' destruction, believers should look up while others look down. Look heavenward in faith, hope, and prayer, and lift your heads with cheerfulness and confidence, because your redemption draws near.\n\nHenry makes two points:\n\n1. When Christ came to destroy the Jews, he came to redeem the Christians they had persecuted and oppressed. Then the churches found rest.\n\n2. When he comes to judge the world at the last day, he will redeem all who are his from all their troubles. Good Christians find the thought of that day as pleasant as it is terrible to the wicked. Even their own death is this way. When they see that day approaching, they can lift up their heads with joy, knowing their redemption draws near, their removal to their Redeemer."
+  },
+  {
+   "i": 1,
+   "original": "VIII. Here is one word of prediction that looks further than the destruction of the Jewish nation, which is not easily understood; we have it in Lu 21:24: *Jerusalem shall be trodden down of the Gentiles, till the times of the Gentiles be fulfilled.* 1. Some understand it of what is past; so Dr. Hammond. The Gentiles, who have conquered Jerusalem, shall keep possession of it, and it shall be purely Gentile, till the times of the Gentiles be fulfilled, till a great part of the Gentile world shall have become Christian, and then after Jerusalem shall have been rebuilt by Adrian the emperor, with an exclusion of all the Jews from it, many of the Jews shall turn Christians, shall join with the Gentile Christians, to set up a church in Jerusalem, which shall flourish there for a long time. 2. Others understand it of what is yet to come; so Dr. Whitby. Jerusalem shall be possessed by the Gentiles, of one sort or other, for the most part, till the time come when the nations that yet remain infidels shall embrace the Christian faith, when the kingdoms of this world shall become Christ's kingdoms, and then all the Jews shall be converted. Jerusalem shall be inhabited by them, and neither they nor their city any longer trodden down by the Gentiles.",
+   "ok": true,
+   "metrics": {
+    "words": 187,
+    "sourceWords": 223,
+    "ratio": 0.84,
+    "ground": 0.76,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Henry looks at a prediction in Luke 21:24 that goes beyond the destruction of Jerusalem: the Gentiles will trample Jerusalem until the times of the Gentiles are fulfilled.\n\n1. Some, like Dr. Hammond, understand this as something that has already happened. The Gentiles who conquered Jerusalem will keep it and make it purely Gentile until the times of the Gentiles are fulfilled. This means until a large part of the Gentile world becomes Christian. After Jerusalem is rebuilt by the emperor Adrian, with all Jews excluded from it, many Jews will turn Christian and join with Gentile Christians to build a church in Jerusalem that will thrive there for a long time.\n\n2. Others, like Dr. Whitby, understand this as something still to come. Jerusalem will be held by Gentiles of various kinds for the most part until the time when the remaining nations that are not yet Christian embrace the faith. When the kingdoms of this world become Christ's kingdoms, all the Jews will be converted. Jerusalem will be their home, and neither the Jews nor their city will be trampled down by the Gentiles anymore.",
+   "retried": true
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Romans 8:23",
+   "b": "ROM",
+   "c": 8,
+   "v": 23,
+   "votes": 8,
+   "kjv": "And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body."
+  },
+  {
+   "ref": "Isaiah 60:1",
+   "b": "ISA",
+   "c": 60,
+   "v": 1,
+   "votes": 6,
+   "kjv": "Arise, shine; for thy light is come, and the glory of the LORD is risen upon thee."
+  },
+  {
+   "ref": "Ephesians 4:30",
+   "b": "EPH",
+   "c": 4,
+   "v": 30,
+   "votes": 5,
+   "kjv": "And grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:16.910Z",
+  "cost": 0.00906
+ }
+}

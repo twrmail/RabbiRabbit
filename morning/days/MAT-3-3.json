@@ -1,0 +1,105 @@
+{
+ "id": "MAT-3-3",
+ "ref": {
+  "b": "MAT",
+  "c": 3,
+  "v": 3,
+  "ve": null,
+  "label": "Matthew 3:3"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 3,
+    "text": "For this is he that was spoken of by the prophet Esaias, saying, The voice of one crying in the wilderness, Prepare ye the way of the Lord, make his paths straight."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 3,
+    "text": "This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’”"
+   }
+  ],
+  "web": [
+   {
+    "n": 3,
+    "text": "For this is he who was spoken of by Isaiah the prophet, saying, “The voice of one crying in the wilderness, make the way of the Lord ready! Make his paths straight!”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 3"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "IV. The *prophecy* that was fulfilled in him, Mt 3:3. This is he that was spoken of in the beginning of that part of the prophecy of Esaias, which is mostly evangelical, and which points at gospel-times and gospel-grace; see Isa 40:3,4. John is here spoken of,",
+   "ok": false,
+   "metrics": {
+    "words": 47,
+    "sourceWords": 47,
+    "ratio": 1,
+    "ground": 0.81,
+    "refsKept": 2,
+    "refsInBlock": 2
+   },
+   "reasons": [
+    "names “Isaiah”, who is not in the block",
+    "does not say whose view this is (Henry)",
+    "not shorter than the original (47 words against 47)"
+   ],
+   "rejected": "The prophecy about him was fulfilled in Matthew 3:3. This is the one spoken of at the start of that part of Isaiah's prophecy that is mostly about the gospel, pointing to gospel times and gospel grace. See Isaiah 40:3,4. John is the one spoken of here."
+  },
+  {
+   "i": 1,
+   "original": "1. As the *voice of one crying in the wilderness.* John owned it himself (Joh 1:23); *I am the voice,* and that is all, God is the Speaker, who makes known his mind by John, as a man does by his voice. The word of God must be received as such (1Th 2:13); what else is Paul, and what is Apollos, but the voice! John is called the *voice,* *phone boontos*—*the voice of one crying* aloud, which is startling and awakening. Christ is called *the Word,* which, being distinct and articulate, is more instructive. John as the *voice,* roused men, and then Christ, as the *Word,* taught them; as we find, Re 14:2. The voice of many waters, and of a great thunder, made way for the melodious voice of *harpers* and the *new song,* Mt 3:3. Some observe that, as Samson's mother must drink no *strong drink,* yet he was designed to be a *strong man;* so John Baptist's father was struck dumb, and yet he was designed to be the *voice of one crying.* When the crier's voice is begotten of a dumb father, it shows the *excellency of the power to be of God, and not of man.*",
+   "ok": true,
+   "metrics": {
+    "words": 165,
+    "sourceWords": 201,
+    "ratio": 0.82,
+    "ground": 0.58,
+    "refsKept": 1,
+    "refsInBlock": 4
+   },
+   "restated": "Henry explains that John the Baptist understood himself as simply a voice. God is the real Speaker, using John like a man uses his voice to make his thoughts known. People must receive God's word as God's word, not as something from Paul or Apollos—they are just voices too. John is called the voice, a loud cry that startles and wakes people up. Christ, by contrast, is called the Word, which is clear and detailed, so it teaches more fully. John's voice roused people, then Christ's Word taught them, as we see in Revelation 14:2, where a loud voice makes way for the beautiful sound of harpers and a new song.\n\nHenry also notes something interesting: Samson's mother had to avoid strong drink, yet Samson became a strong man. Similarly, John's father was struck dumb, yet John was meant to be the voice crying out. When a loud voice comes from a silent father, it shows the power comes from God, not from human ability."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Isaiah 40:3",
+   "b": "ISA",
+   "c": 40,
+   "v": 3,
+   "votes": 49,
+   "kjv": "The voice of him that crieth in the wilderness, Prepare ye the way of the LORD, make straight in the desert a highway for our God."
+  },
+  {
+   "ref": "Malachi 3:1",
+   "b": "MAL",
+   "c": 3,
+   "v": 1,
+   "votes": 23,
+   "kjv": "Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom ye seek, shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in: behold, he shall come, saith the LORD of hosts."
+  },
+  {
+   "ref": "John 1:23",
+   "b": "JHN",
+   "c": 1,
+   "v": 23,
+   "votes": 18,
+   "kjv": "He said, I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said the prophet Esaias."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:11.819Z",
+  "cost": 0.00499
+ }
+}

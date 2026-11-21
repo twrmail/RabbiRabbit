@@ -1,0 +1,103 @@
+{
+ "id": "ZEP-3-17",
+ "ref": {
+  "b": "ZEP",
+  "c": 3,
+  "v": 17,
+  "ve": null,
+  "label": "Zephaniah 3:17"
+ },
+ "status": "partial",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 17,
+    "text": "The LORD thy God in the midst of thee is mighty; he will save, he will rejoice over thee with joy; he will rest in his love, he will joy over thee with singing."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 17,
+    "text": "The LORD your God is among you; He is mighty to save. He will rejoice over you with gladness; He will quiet you with His love; He will rejoice over you with singing.”"
+   }
+  ],
+  "web": [
+   {
+    "n": 17,
+    "text": "The LORD, your God, is among you, a mighty one who will save. He will rejoice over you with joy. He will calm you in his love. He will rejoice over you with singing."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 17"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "4. \"He has engaged his power for thy succour: *He will save. He will be Jesus,* will answer the name, for he will save his people from their sins.\"",
+   "ok": true,
+   "metrics": {
+    "words": 28,
+    "sourceWords": 29,
+    "ratio": 0.97,
+    "ground": 0.7,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "restated": "Henry says God has used his power to help you. He will save. He will be Jesus, answering that name, because he saves his people from their sins."
+  },
+  {
+   "i": 1,
+   "original": "III. God will take delight in them, and in doing them good. The expressions of this are very lively and affecting (Zep 3:17): *He will rejoice over thee with joy,* will not only be well pleased with thee, upon thy repentance and reformation, and take thee into favour, but will take a complacency in thee, as the bridegroom does in his bride, or the bride in her ornaments, Isa 62:3-5. The conversion of sinners and the consolation of saints are the joy of angels, for they are the joy of God him-self. The church should be the *joy of the whole earth* (Ps 48:2), for it is the joy of the whole heaven. He will *rest in his love,* will be *silent in his love,* so the word is. \"I will not rebuke thee as I have done, for thy sins; I will acquiesce in thee, and in my relation to thee.\" I know not where there is the like expression of Christ's love to his church, unless in that song of songs, So 4:9, *Thou hast ravished my heart, my sister, my spouse, with one of thy eyes.* O the condescensions of divine grace! The great God not only loves his saints, but he loves to love them, is pleased that he has pitched upon these objects of his love. He *will joy over them with singing.* He that is grieved for the sin of sinners rejoices in the graces and services of the saints, and is ready to express that joy by singing over them. *The Lord takes plea-sure in those that fear him,* and in them Jesus Christ will shortly be glorified and admired.",
+   "ok": false,
+   "metrics": {
+    "words": 236,
+    "sourceWords": 277,
+    "ratio": 0.85,
+    "ground": 0.67,
+    "refsKept": 2,
+    "refsInBlock": 3
+   },
+   "reasons": [
+    "contains quotation marks (the teacher’s own words must only appear in the original block)"
+   ],
+   "rejected": "Henry says God will take delight in his people and do them good. The language here is vivid and moving. God will rejoice over them with joy. He will not only be pleased with them after they turn from sin and take them back into favor, but will find deep satisfaction in them, the way a bridegroom finds satisfaction in his bride, or a bride in her ornaments (Isa 62:3-5). When sinners turn to God and when his people find comfort, the angels rejoice because God himself rejoices. The church should be the joy of the whole earth (Ps 48:2), since it is the joy of heaven itself.\n\nGod will rest in his love, or be silent in his love. This means he will say, \"I will not rebuke you for your sins anymore. I will accept you and our relationship.\" Henry finds no other expression of Christ's love to his church quite like this one. The great God not only loves his saints but loves to love them. He is pleased that he has chosen these people as objects of his love.\n\nGod will joy over them with singing. The one who grieves over the sin of sinners rejoices in the goodness and service of the saints and expresses that joy by singing over them. The Lord takes pleasure in those who fear him, and in them Jesus Christ will soon be glorified and admired."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Psalms 149:4",
+   "b": "PSA",
+   "c": 149,
+   "v": 4,
+   "votes": 99,
+   "kjv": "For the LORD taketh pleasure in his people: he will beautify the meek with salvation."
+  },
+  {
+   "ref": "Psalms 147:11",
+   "b": "PSA",
+   "c": 147,
+   "v": 11,
+   "votes": 88,
+   "kjv": "The LORD taketh pleasure in them that fear him, in those that hope in his mercy."
+  },
+  {
+   "ref": "Hebrews 7:25",
+   "b": "HEB",
+   "c": 7,
+   "v": 25,
+   "votes": 69,
+   "kjv": "Wherefore he is able also to save them to the uttermost that come unto God by him, seeing he ever liveth to make intercession for them."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:34.606Z",
+  "cost": 0.0069
+ }
+}

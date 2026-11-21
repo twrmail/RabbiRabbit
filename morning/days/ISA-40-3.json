@@ -1,0 +1,86 @@
+{
+ "id": "ISA-40-3",
+ "ref": {
+  "b": "ISA",
+  "c": 40,
+  "v": 3,
+  "ve": null,
+  "label": "Isaiah 40:3"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 3,
+    "text": "The voice of him that crieth in the wilderness, Prepare ye the way of the LORD, make straight in the desert a highway for our God."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 3,
+    "text": "A voice of one calling: “Prepare the way for the LORD in the wilderness; make a straight highway for our God in the desert."
+   }
+  ],
+  "web": [
+   {
+    "n": 3,
+    "text": "The voice of one who calls out, “Prepare the way of the LORD in the wilderness! Make a level highway in the desert for our God."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 3 together with verses 3-5"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "1. The alarm is given; let all take notice of it at their peril; God is coming in a way of mercy, and we must prepare for him, Isa 40:3-5. If we apply it to their captivity, it may be taken as a promise that, whatever difficulties lie in their way, when they return they shall be removed. This voice in the wilderness (divine power going along with it) sets pioneers on work to level the roads. But it may be taken as a call to duty, and it is the same duty that we are called to, in preparation for Christ's entrance into our souls. (1.) We must get into such a frame of spirit as will dispose us to receive Christ and his gospel: \"*Prepare you the way of the Lord;* prepare yourselves for him, and let all that be suppressed which would be an obstruction to his entrance. Make room for Christ: *Make straight a highway for him.*\" If he prepare the end for us, we ought surely to prepare the way for him. Prepare for the Saviour; *lift up your heads, O you gates!* Ps 24:7,9. Prepare for the salvation, the great salvation, and other minor deliverances. Let us get to be fit for them, and then God will work them out. Let us not stand in our own light, nor put a bar in our own door, but find, or make, a highway for him, even in that which was desert ground. This is that for which he waits to be gracious. (2.) We must get our hearts levelled by divine grace. Those that are hindered from comfort in Christ by their dejections and despondencies are the valleys that must be exalted. Those that are hindered from comfort in Christ by a proud conceit of their own merit and worth are the mountains and hills that must be made low. Those that have entertained prejudices against the word and ways of God, that are untractable, and disposed to thwart and contradict even that which is plain and easy because it agrees not with their corrupt inclinations and secular interests, are the crooked that must be made straight and the rough places that must be made plain. Let but the gospel of Christ have a fair hearing, and it cannot fail of acceptance. This prepares the way of the Lord; and thus God will by his grace prepare his own way in all the vessels of mercy, whose hearts he opens as he did Lydia's.",
+   "ok": true,
+   "metrics": {
+    "words": 347,
+    "sourceWords": 419,
+    "ratio": 0.83,
+    "ground": 0.69,
+    "refsKept": 0,
+    "refsInBlock": 2
+   },
+   "restated": "A warning goes out that everyone must hear. God is coming with mercy, and we must get ready for him. If we look at this in terms of the captivity, it is a promise that whatever obstacles block the way home will be cleared away when they return. The voice in the wilderness, with divine power behind it, puts workers to clearing the roads. But Henry also reads this as a call to duty, the same duty we face in preparing for Christ to enter our hearts.\n\n1. We must put ourselves in the right frame of mind to receive Christ and his gospel. Prepare the way of the Lord means prepare yourselves for him and remove anything that would block his entrance. Make room for Christ. If he prepares the end for us, we ought to prepare the way for him. Prepare for the Saviour and lift up your heads, O gates. Prepare for salvation, the great salvation, and the smaller deliverances too. Get yourself fit for them, and then God will bring them about. Do not stand in your own light or bar your own door. Find or make a highway for him, even in desert ground. This is what he waits for before he shows grace.\n\n2. We must let divine grace level our hearts. Those held back from comfort in Christ by sadness and despair are the valleys that must be lifted up. Those held back by pride in their own worth are the mountains and hills that must be brought low. Those who have set themselves against God's word and ways, who are stubborn and ready to argue against what is plain and easy because it does not match their corrupt desires and worldly interests, are the crooked paths that must be straightened and the rough places that must be smoothed. Let the gospel of Christ get a fair hearing, and it will surely be accepted. This prepares the way of the Lord. God will prepare his own way in all the vessels of mercy, opening their hearts as he opened Lydia's."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Malachi 3:1",
+   "b": "MAL",
+   "c": 3,
+   "v": 1,
+   "votes": 108,
+   "kjv": "Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom ye seek, shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in: behold, he shall come, saith the LORD of hosts."
+  },
+  {
+   "ref": "Mark 1:2",
+   "b": "MRK",
+   "c": 1,
+   "v": 2,
+   "votes": 93,
+   "kjv": "As it is written in the prophets, Behold, I send my messenger before thy face, which shall prepare thy way before thee."
+  },
+  {
+   "ref": "John 1:23",
+   "b": "JHN",
+   "c": 1,
+   "v": 23,
+   "votes": 77,
+   "kjv": "He said, I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said the prophet Esaias."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:44.213Z",
+  "cost": 0.00352
+ }
+}

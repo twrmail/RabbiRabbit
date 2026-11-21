@@ -1,0 +1,100 @@
+{
+ "id": "ISA-35-10",
+ "ref": {
+  "b": "ISA",
+  "c": 35,
+  "v": 10,
+  "ve": null,
+  "label": "Isaiah 35:10"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 10,
+    "text": "And the ransomed of the LORD shall return, and come to Zion with songs and everlasting joy upon their heads: they shall obtain joy and gladness, and sorrow and sighing shall flee away."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 10,
+    "text": "So the redeemed of the LORD will return and enter Zion with singing, crowned with everlasting joy. Gladness and joy will overtake them, and sorrow and sighing will flee."
+   }
+  ],
+  "web": [
+   {
+    "n": 10,
+    "text": "Then the LORD’s ransomed ones will return, and come with singing to Zion; and everlasting joy will be on their heads. They will obtain gladness and joy, and sorrow and sighing will flee away.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 10"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "IV. The end of this way shall be everlasting joy, Isa 35:10. This precious promise of peace now will end shortly in endless joys and rest for the soul. Here is good news for the citizens of Zion, rest to the weary: *The ransomed of the Lord,* who therefore ought to follow him wherever he goes (Re 14:4), *shall return and come to Zion,* 1. To serve and worship God in the church militant: they shall deliver themselves out of Babylon (Zec 2:7), shall *ask the way to Zion* (Jer 50:5), and shall *find the way* Isa 52:12. God will open to them a door of escape out of their captivity, and it shall be an effectual door, though there be many adversaries. They shall join themselves to the gospel church, that *Mount Zion,* that *city of the living God,* Heb 12:22. They shall come with songs of joy and praise for their deliverance out of Babylon, where they wept upon every *remembrance of Zion,* Ps 137:1. Those that by faith are made citizens of the gospel Zion may *go on their way rejoicing* (Ac 8:39); they shall sing in the ways of the Lord, and be still praising him. They rejoice in Christ Jesus, and the sorrows and signs of their convictions are made to flee away by the power of divine consolations. Those that mourn are blessed, for they shall be comforted. 2.",
+   "ok": true,
+   "metrics": {
+    "words": 209,
+    "sourceWords": 235,
+    "ratio": 0.89,
+    "ground": 0.83,
+    "refsKept": 7,
+    "refsInBlock": 8
+   },
+   "restated": "The end of this way is everlasting joy. Henry says this precious promise of peace now will soon lead to endless joys and rest for the soul. Good news comes for the people of Zion, rest for the weary.\n\nThe ransomed of the Lord, who should follow him wherever he goes (Re 14:4), shall return and come to Zion.\n\n1. To serve and worship God in the church on earth: they shall escape from Babylon (Zec 2:7), shall ask the way to Zion (Jer 50:5), and shall find it (Isa 52:12). God will open a door of escape from their captivity, and it will work, even though many enemies stand against them. They shall join the gospel church, that Mount Zion, that city of the living God (Heb 12:22). They shall come with songs of joy and praise for their freedom from Babylon, where they once wept when they thought of Zion (Ps 137:1). Those made citizens of gospel Zion by faith may go their way rejoicing (Ac 8:39); they shall sing in the ways of the Lord and keep praising him. They rejoice in Christ Jesus, and the sorrows of their convictions flee away through divine comfort. Those that mourn are blessed, for they shall be comforted.\n\n2."
+  },
+  {
+   "i": 1,
+   "original": "To see and enjoy God in the church triumphant; those that walk in *the way of holiness,* under guidance of their Redeemer, shall come to Zion at last, to the heavenly Zion, shall come in a body, shall all be presented together, *faultless, at the coming of Christ's glory with exceeding joy* (Jude 1:24, Re 7:17); they shall come with songs. When God's people returned out of Babylon to Zion they came *weeping* (Jer 50:4); but they shall come to heaven singing a new song, which no man can learn, Re 14:3. When they shall *enter into the joy of their Lord* it shall be what the joys of this world never could be *everlasting joy,* without mixture, interruption, or period. It shall not only fill their hearts, to their own perfect and perpetual satisfaction, but it shall be *upon their heads,* as an ornament of grace and a crown of glory, as a garland worn in token of victory. Their joy shall be visible, and no longer a secret thing, as it is here in this world; it shall be proclaimed, to the glory of God and their mutual encouragement. They shall then obtain the joy and gladness which they could never expect on this side heaven; *and sorrow and sighing shall flee away* for ever, as the shadows of the night before the rising sun. Thus these prophecies, which relate to the Assyrian invasion, conclude, for the support of the people of God under that calamity, and to direct their joy, in their deliverance from it, to something higher.\n\nOur joyful hopes and prospects of eternal life should swallow up both all the sorrows and all the joys of this present time.",
+   "ok": true,
+   "metrics": {
+    "words": 230,
+    "sourceWords": 284,
+    "ratio": 0.81,
+    "ground": 0.91,
+    "refsKept": 4,
+    "refsInBlock": 4
+   },
+   "restated": "To see and enjoy God in the church triumphant, those who walk in holiness under their Redeemer's guidance will come to Zion at last, to the heavenly Zion. They will come together as one body, presented faultless at Christ's coming with great joy (Jude 1:24, Re 7:17). They will come with songs. When God's people returned from Babylon to Zion they came weeping (Jer 50:4), but they will come to heaven singing a new song that no one can learn (Re 14:3). When they enter into the joy of their Lord, it will be what earthly joys never could be: everlasting joy, without mixture, interruption, or end. It will fill their hearts with perfect and lasting satisfaction, and it will be upon their heads like an ornament of grace and a crown of glory, like a garland worn to show victory. Their joy will be visible and no longer hidden as it is in this world. It will be proclaimed to God's glory and their mutual encouragement. They will then obtain the joy and gladness they could never expect on this side of heaven. Sorrow and sighing will flee away forever, like the shadows of night before the rising sun. Henry notes that these prophecies about the Assyrian invasion conclude with this promise to support God's people under that calamity and to direct their joy in deliverance toward something higher."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Isaiah 30:19",
+   "b": "ISA",
+   "c": 30,
+   "v": 19,
+   "votes": 15,
+   "kjv": "For the people shall dwell in Zion at Jerusalem: thou shalt weep no more: he will be very gracious unto thee at the voice of thy cry; when he shall hear it, he will answer thee."
+  },
+  {
+   "ref": "Revelation 21:4",
+   "b": "REV",
+   "c": 21,
+   "v": 4,
+   "votes": 15,
+   "kjv": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away."
+  },
+  {
+   "ref": "Isaiah 25:8",
+   "b": "ISA",
+   "c": 25,
+   "v": 8,
+   "votes": 12,
+   "kjv": "He will swallow up death in victory; and the Lord GOD will wipe away tears from off all faces; and the rebuke of his people shall he take away from off all the earth: for the LORD hath spoken it."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:28.599Z",
+  "cost": 0.00572
+ }
+}

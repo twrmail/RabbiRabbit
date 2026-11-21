@@ -1,0 +1,100 @@
+{
+ "id": "MIC-5-2",
+ "ref": {
+  "b": "MIC",
+  "c": 5,
+  "v": 2,
+  "ve": null,
+  "label": "Micah 5:2"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 2,
+    "text": "But thou, Bethlehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 2,
+    "text": "But you, Bethlehem Ephrathah, who are small among the clans of Judah, out of you will come forth for Me One to be ruler over Israel—One whose origins are of old, from the days of eternity."
+   }
+  ],
+  "web": [
+   {
+    "n": 2,
+    "text": "But you, Bethlehem Ephrathah, being small among the clans of Judah, out of you one will come out to me who is to be ruler in Israel; whose goings out are from of old, from ancient times."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 2"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "(2.) His office as Mediator; he was to be *ruler in Israel,* king of his church; he was to *reign over the house of Jacob for ever,* Lu 1:32,33. The Jews object that our Lord Jesus could not be the Messiah, for he was so far from being ruler in Israel that Israel ruled over him, and put him to death, and would not have him to reign over them; but he answered that himself when he said, *My kingdom is not of this world,* Joh 18:36. And it is a spiritual Israel that he reigns over, the children of promise, all the followers of believing Abraham and praying Jacob. In the hearts of these he reigns by his Spirit and grace, and in the society of these by his word and ordinances. And was not he *ruler in Israel* whom winds and seas obeyed, to whom legions of devils were forced to submit, and who commanded away diseases from the sick and called the dead out of their graves? None but he whose *goings forth were from of old, from everlasting,* was fit to be *ruler in Israel,* to be head of the church, and *head over all things to the church.*\n\n2. What is here foretold concerning him.",
+   "ok": true,
+   "metrics": {
+    "words": 174,
+    "sourceWords": 210,
+    "ratio": 0.83,
+    "ground": 0.86,
+    "refsKept": 2,
+    "refsInBlock": 2
+   },
+   "restated": "Henry explains that the verse describes his office as Mediator. He was to be ruler in Israel and king of his church, reigning over the house of Jacob forever (Lu 1:32,33). The Jews objected that Jesus could not be the Messiah because Israel ruled over him instead, put him to death, and refused to let him reign. But Jesus answered this when he said his kingdom is not of this world (Joh 18:36). He reigns over a spiritual Israel—the children of promise, all who follow believing Abraham and praying Jacob. In their hearts he reigns through his Spirit and grace, and in their community through his word and ordinances. Henry points out that Jesus showed himself ruler in Israel: winds and seas obeyed him, legions of devils had to submit to him, he drove away diseases from the sick and raised the dead. Only someone whose goings forth were from of old, from everlasting, could be fit to be ruler in Israel, head of the church, and head over all things to the church."
+  },
+  {
+   "i": 1,
+   "original": "(1.) That Bethlehem should be the place of his nativity, Mic 5:2. This was the scripture which the scribes went upon when with the greatest assurance they told Herod *where Christ should be born* (Mt 2:6), and hence it was universally known among the Jews that *Christ should come out of the town of Bethlehem where David was,* Joh 7:42. *Beth-lehem* signifies *the house of bread,* the fittest place for him to be born in who is *the bread of life.* And, because it was the city of David, by a special providence it was ordered that he should be born there who was to be the *Son of David,* and his heir and successor for ever. It is called *Bethlehem-Ephratah,* both names of the same city, as appears Ge 35:19. It was *little among the thousands of Judah,* not considerable either for the number of the inhabitants or the figure they made; it had nothing in it worthy to have this honour put upon it; but God in that, as in other instances, chose to *exalt those of low degree,* Lu 1:52. Christ would give honour to the place of his birth, and not derive honour from it: *Though thou be little,* yet this shall make thee great, and, as St. Matthew reads it, Thou *art not the least among the princes of Judah,* but upon this account art really honourable above any of them. A relation to Christ will magnify those that are little in the world.",
+   "ok": true,
+   "metrics": {
+    "words": 192,
+    "sourceWords": 249,
+    "ratio": 0.77,
+    "ground": 0.67,
+    "refsKept": 4,
+    "refsInBlock": 5
+   },
+   "restated": "Henry points out that Bethlehem would be where Christ was born. The scribes used this verse to tell Herod with confidence where Christ should come (Mt 2:6), and the Jews widely knew that Christ would come from Bethlehem, the city of David (Joh 7:42). Bethlehem means the house of bread, the right place for him to be born since he is the bread of life. Because it was David's city, God arranged for him to be born there—the one who would be David's son and heir forever. The city is called Bethlehem-Ephratah, both names for the same place (Ge 35:19). It was small and unimportant among Judah's towns, with nothing that would seem to deserve this honor. But God chose to lift up those of low degree (Lu 1:52). Christ would give honor to his birthplace rather than take honor from it. Though the town was little, this would make it great. Matthew reads it as saying the town is not the least among Judah's princes, but truly more honorable than any of them because of its connection to Christ. A tie to Christ makes even small things great in the world."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Matthew 2:6",
+   "b": "MAT",
+   "c": 2,
+   "v": 6,
+   "votes": 76,
+   "kjv": "And thou Bethlehem, in the land of Juda, art not the least among the princes of Juda: for out of thee shall come a Governor, that shall rule my people Israel."
+  },
+  {
+   "ref": "John 7:42",
+   "b": "JHN",
+   "c": 7,
+   "v": 42,
+   "votes": 39,
+   "kjv": "Hath not the scripture said, That Christ cometh of the seed of David, and out of the town of Bethlehem, where David was?"
+  },
+  {
+   "ref": "Isaiah 9:6",
+   "b": "ISA",
+   "c": 9,
+   "v": 6,
+   "votes": 16,
+   "kjv": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:30:05.259Z",
+  "cost": 0.00497
+ }
+}

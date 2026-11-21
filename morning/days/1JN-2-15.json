@@ -1,0 +1,100 @@
+{
+ "id": "1JN-2-15",
+ "ref": {
+  "b": "1JN",
+  "c": 2,
+  "v": 15,
+  "ve": null,
+  "label": "1 John 2:15"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 15,
+    "text": "Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 15,
+    "text": "Do not love the world or anything in the world. If anyone loves the world, the love of the Father is not in him."
+   }
+  ],
+  "web": [
+   {
+    "n": 15,
+    "text": "Don’t love the world or the things that are in the world. If anyone loves the world, the Father’s love isn’t in him."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 15"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "II. We have the dehortation or dissuasion thus prefaced and introduced, a caution fundamental to vital practical religion: \"*Love not the world, neither the things that are in the world,* 1Jo 2:15. Be crucified to the world, be mortified to the things, to the affairs and enticements, of it.\" The several degrees of Christians should unite in this, in being dead to the world. Were they thus united, they would soon unite upon other accounts: their love should be reserved for God; throw it not away upon the world. Now here we see the reasons of this dissuasion and caution. They are several, and had need to be so; it is hard to dispute or dissuade disciples themselves from the love of the world. These reasons are taken,",
+   "ok": true,
+   "metrics": {
+    "words": 99,
+    "sourceWords": 128,
+    "ratio": 0.77,
+    "ground": 0.41,
+    "refsKept": 0,
+    "refsInBlock": 1
+   },
+   "restated": "Henry introduces a basic warning for anyone serious about faith: do not love the world or the things in it. Be dead to the world and its affairs and attractions. All Christians, no matter where they are in their faith, should agree on this. If they did, they would find unity in other ways too. Keep your love for God; do not waste it on the world. Henry points out that this warning needs strong reasons behind it, because it is hard to talk believers out of loving the world. The reasons for this caution come from several sources."
+  },
+  {
+   "i": 1,
+   "original": "1. From the inconsistency of this love with the love of God: *If any man love the world, the love of the Father is not in him,* 1Jo 2:15. The heart of man is narrow, and cannot contain both loves. The world draws down the heart from God; and so the more the love of the world prevails the more the love of God dwindles and decays.",
+   "ok": true,
+   "metrics": {
+    "words": 49,
+    "sourceWords": 67,
+    "ratio": 0.73,
+    "ground": 0.5,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Henry says the love of the world and the love of God cannot exist together in one heart. A person's heart is too small to hold both. When love for the world grows stronger, love for God grows weaker. The world pulls the heart away from God (1Jo 2:15)."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "James 4:4",
+   "b": "JAS",
+   "c": 4,
+   "v": 4,
+   "votes": 145,
+   "kjv": "Ye adulterers and adulteresses, know ye not that the friendship of the world is enmity with God? whosoever therefore will be a friend of the world is the enemy of God."
+  },
+  {
+   "ref": "Romans 12:2",
+   "b": "ROM",
+   "c": 12,
+   "v": 2,
+   "votes": 124,
+   "kjv": "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God."
+  },
+  {
+   "ref": "Matthew 6:24",
+   "b": "MAT",
+   "c": 6,
+   "v": 24,
+   "votes": 103,
+   "kjv": "No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:27:41.406Z",
+  "cost": 0.00301
+ }
+}

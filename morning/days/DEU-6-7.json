@@ -1,0 +1,86 @@
+{
+ "id": "DEU-6-7",
+ "ref": {
+  "b": "DEU",
+  "c": 6,
+  "v": 7,
+  "ve": null,
+  "label": "Deuteronomy 6:7"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 7,
+    "text": "And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 7,
+    "text": "And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up."
+   }
+  ],
+  "web": [
+   {
+    "n": 7,
+    "text": "and you shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise up."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 7"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "2. The religious education of children (De 6:7): \"*Thou shalt teach them diligently to thy children;* and by communicating thy knowledge thou wilt increase it.\" Those that love the Lord God themselves should do what they can to engage the affections of their children to him, and so to preserve the entail of religion in their families from being cut off. *Thou shalt whet them diligently upon thy children,* so some read it; frequently repeat these things to them, try all ways of instilling them into their minds, and making them pierce into their hearts; as, in whetting a knife, it is turned first on this side, then on that. \"Be careful and exact in teaching thy children; and aim, as by whetting, to sharpen them, and put an edge upon them. Teach them to thy children, not only those of thy own body\" (say the Jews) \"but all those that are anyway under thy care and tuition.\" Bishop Patrick well observes here that Moses thought his law so very plain and easy that every father might be able to instruct his sons in it and every mother her daughters. Thus that good thing which is committed to us we must carefully transmit to those that come after us, that it may be perpetuated. 3. Pious discourse. \"Thou shalt talk of these things, with due reverence and seriousness, for the benefit not only of thy children, but of thy other domestics, thy friends and companions, as thou sittest in thy house at work, or at meat, or at rest, or to receive visits, and when thou walkest by the way for diversion, or for conversation, of in journeys, when at night thou art retiring from thy family to lie down for sleep, and when in the morning thou hast risen up and returnest to thy family again. Take all occasions to discourse with those about thee of divine things; not of unrevealed mysteries, or matters of doubtful disputation, but of the plain truths and laws of God, and the things that belong to our peace.\" So far is it from being reckoned a diminution to the honour of sacred things to make them subject of our familiar discourse that they are recommended to us to be talked of; for the more conversant we are with them the more we shall admire them and be affected with them, and may thereby be instrumental to communicate divine light and heat.",
+   "ok": true,
+   "metrics": {
+    "words": 302,
+    "sourceWords": 408,
+    "ratio": 0.74,
+    "ground": 0.72,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "2. The religious education of children (De 6:7): Parents who love God should work to draw their children's affections toward him and keep religion alive in their families. Henry says to teach them diligently means to repeat these things to them frequently and try every way to get them into their minds and hearts, like sharpening a knife by turning it back and forth. Be careful and exact in teaching your children, aiming to sharpen them and give them an edge. The Jews note that you should teach not only your own children but all those under your care and instruction. Bishop Patrick observes that Moses thought his law so plain and easy that every father could instruct his sons and every mother her daughters. Whatever good thing is given to us we must carefully pass on to those who come after us so it will last.\n\n3. Pious discourse. Talk about these things with proper reverence and seriousness for the benefit of your children and your other household members, friends and companions. Do this when you sit in your house at work or meals or rest, when you walk by the way for diversion or on journeys, when at night you retire to sleep, and when in the morning you rise and return to your family. Take every chance to discuss divine things with those around you, not hidden mysteries or doubtful matters, but the plain truths and laws of God and things that belong to our peace. It is no dishonor to sacred things to make them the subject of everyday conversation. In fact, they are meant to be talked of. The more familiar we become with them, the more we will admire them and be moved by them, and we may help spread divine light and warmth to others."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Deuteronomy 11:19",
+   "b": "DEU",
+   "c": 11,
+   "v": 19,
+   "votes": 36,
+   "kjv": "And ye shall teach them your children, speaking of them when thou sittest in thine house, and when thou walkest by the way, when thou liest down, and when thou risest up."
+  },
+  {
+   "ref": "Ephesians 6:4",
+   "b": "EPH",
+   "c": 6,
+   "v": 4,
+   "votes": 29,
+   "kjv": "And, ye fathers, provoke not your children to wrath: but bring them up in the nurture and admonition of the Lord."
+  },
+  {
+   "ref": "Psalms 78:4",
+   "b": "PSA",
+   "c": 78,
+   "v": 4,
+   "votes": 19,
+   "kjv": "We will not hide them from their children, shewing to the generation to come the praises of the LORD, and his strength, and his wonderful works that he hath done."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:05.207Z",
+  "cost": 0.00327
+ }
+}

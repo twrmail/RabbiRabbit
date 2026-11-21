@@ -1,0 +1,103 @@
+{
+ "id": "ISA-58-14",
+ "ref": {
+  "b": "ISA",
+  "c": 58,
+  "v": 14,
+  "ve": null,
+  "label": "Isaiah 58:14"
+ },
+ "status": "partial",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 14,
+    "text": "Then shalt thou delight thyself in the LORD; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 14,
+    "text": "then you will delight yourself in the LORD, and I will make you ride on the heights of the land and feed you with the heritage of your father Jacob.” For the mouth of the LORD has spoken."
+   }
+  ],
+  "web": [
+   {
+    "n": 14,
+    "text": "then you will delight yourself in the LORD, and I will make you to ride on the high places of the earth, and I will feed you with the heritage of Jacob your father;” for the LORD’s mouth has spoken it."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 14"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "II. What the reward is of the sabbath—sanctification, Isa 58:14. If we thus *remember the sabbath day to keep it holy,*\n\n1. We shall have the comfort of it; the work will be its own wages. *If we call the sabbath a delight, then shall we delight ourselves in the Lord;* he will more and more manifest himself to us as the delightful subject of our thoughts and meditations and the delightful object of our best affections. Note, The more pleasure we take in serving God the more pleasure we shall find in it. If we go about duty with cheerfulness, we shall go from it with satisfaction and shall have reason to say, \"It is good to be here, good to draw near to God.\"",
+   "ok": true,
+   "metrics": {
+    "words": 102,
+    "sourceWords": 126,
+    "ratio": 0.81,
+    "ground": 0.78,
+    "refsKept": 0,
+    "refsInBlock": 1
+   },
+   "restated": "The reward for keeping the sabbath holy is spiritual growth. Henry says if we treat the sabbath as a delight, then we will delight ourselves in the Lord. God will show himself to us more and more as the delightful subject of our thoughts and meditations and the delightful object of our best affections. Henry notes that the more pleasure we take in serving God, the more pleasure we will find in it. If we approach our duty with cheerfulness, we will leave it with satisfaction and can truly say it is good to be here, good to draw near to God."
+  },
+  {
+   "i": 1,
+   "original": "2. We shall have the honour of it: *I will cause thee to ride upon the high places of the earth,* which denotes not only a great security (as that, Isa 32:16, *He shall dwell on high*), but great dignity and advancement. \"Thou shalt ride in state, shalt appear conspicuous, and the eyes of all thy neighbours shall be upon thee.\" It was said of Israel, when God led them triumphantly out of Egypt, that *he made them to ride on the high places of the earth,* De 32:12,13. Those that honour God and his sabbath he will thus honour. If God by his grace enable us to live above the world, and so to manage it as not only not to be hindered by it, but to be furthered and carried on by it in our journey towards heaven, then he makes us *to ride on the high places of the earth.*",
+   "ok": false,
+   "metrics": {
+    "words": 136,
+    "sourceWords": 153,
+    "ratio": 0.89,
+    "ground": 0.85,
+    "refsKept": 2,
+    "refsInBlock": 2
+   },
+   "reasons": [
+    "quotes Scripture from the block without quotation marks (“to ride on the high places of the…”)"
+   ],
+   "rejected": "We shall have the honour of it. Henry says God will cause us to ride upon the high places of the earth. This means not only great safety, as in Isaiah 32:16 where he shall dwell on high, but also great dignity and advancement. We shall ride in state, appear conspicuous, and all our neighbours will have their eyes on us. When God led Israel triumphantly out of Egypt, Henry notes, he made them ride on the high places of the earth (Deuteronomy 32:12,13). Those who honour God and his sabbath receive this honour from him. Henry explains that when God's grace enables us to live above the world and manage it so it helps rather than hinders us on our journey to heaven, then he makes us ride on the high places of the earth."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Deuteronomy 32:13",
+   "b": "DEU",
+   "c": 32,
+   "v": 13,
+   "votes": 18,
+   "kjv": "He made him ride on the high places of the earth, that he might eat the increase of the fields; and he made him to suck honey out of the rock, and oil out of the flinty rock;"
+  },
+  {
+   "ref": "Job 22:26",
+   "b": "JOB",
+   "c": 22,
+   "v": 26,
+   "votes": 16,
+   "kjv": "For then shalt thou have thy delight in the Almighty, and shalt lift up thy face unto God."
+  },
+  {
+   "ref": "Isaiah 1:19",
+   "b": "ISA",
+   "c": 1,
+   "v": 19,
+   "votes": 13,
+   "kjv": "If ye be willing and obedient, ye shall eat the good of the land:"
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:27:59.475Z",
+  "cost": 0.00574
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "id": "ISA-11-1",
+ "ref": {
+  "b": "ISA",
+  "c": 11,
+  "v": 1,
+  "ve": null,
+  "label": "Isaiah 11:1"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 1,
+    "text": "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots:"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 1,
+    "text": "Then a shoot will spring up from the stump of Jesse, and a Branch from his roots will bear fruit."
+   }
+  ],
+  "web": [
+   {
+    "n": 1,
+    "text": "A shoot will come out of the stock of Jesse, and a branch out of his roots will bear fruit."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 1"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "(3.) He comes forth out of the *stem,* or *stump,* of Jesse. When the royal family, that had been as a cedar, was cut down, and only the stump of it left, almost levelled with the ground and lost in the grass of the field (Da 4:15), yet it shall sprout again (Job 14:7); nay, it *shall grow out of his roots,* which are quite buried in the earth, and, like the roots of flowers in the winter, have no stem appearing above ground. The house of David was reduced and brought very low at the time of Christ's birth, witness the obscurity and poverty of Joseph and Mary. The Messiah was thus to begin his estate of humiliation, for submitting to which he should be highly exalted, and would thus give early notice that his kingdom was not of this world. The Chaldee paraphrase reads this, *There shall come forth a King from the sons of Jesse, and the Messiah* (or Christ) *shall be anointed out of his sons' sons.*",
+   "ok": true,
+   "metrics": {
+    "words": 140,
+    "sourceWords": 171,
+    "ratio": 0.82,
+    "ground": 0.67,
+    "refsKept": 0,
+    "refsInBlock": 2
+   },
+   "restated": "The Messiah comes from the stump of Jesse's family line. When the royal house, once strong as a cedar, was cut down and left as only a stump nearly level with the ground, it would still sprout again. It would grow from roots buried deep in the earth, like flower roots in winter with no stem showing above ground. By the time Christ was born, David's house had fallen into obscurity and poverty, as seen in Joseph and Mary's humble circumstances. Henry sees this as fitting for the Messiah's time of humiliation. By starting this way, he would show that his kingdom does not belong to this world. He would later be highly exalted because of his submission. The Chaldee paraphrase says a King would come from Jesse's descendants, and the Messiah would be anointed from among his sons' sons."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Jeremiah 23:5",
+   "b": "JER",
+   "c": 23,
+   "v": 5,
+   "votes": 37,
+   "kjv": "Behold, the days come, saith the LORD, that I will raise unto David a righteous Branch, and a King shall reign and prosper, and shall execute judgment and justice in the earth."
+  },
+  {
+   "ref": "Revelation 22:16",
+   "b": "REV",
+   "c": 22,
+   "v": 16,
+   "votes": 34,
+   "kjv": "I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star."
+  },
+  {
+   "ref": "Zechariah 6:12",
+   "b": "ZEC",
+   "c": 6,
+   "v": 12,
+   "votes": 28,
+   "kjv": "And speak unto him, saying, Thus speaketh the LORD of hosts, saying, Behold the man whose name is The BRANCH; and he shall grow up out of his place, and he shall build the temple of the LORD:"
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:57.332Z",
+  "cost": 0.00207
+ }
+}

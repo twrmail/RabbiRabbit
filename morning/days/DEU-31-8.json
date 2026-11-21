@@ -1,0 +1,86 @@
+{
+ "id": "DEU-31-8",
+ "ref": {
+  "b": "DEU",
+  "c": 31,
+  "v": 8,
+  "ve": null,
+  "label": "Deuteronomy 31:8"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 8,
+    "text": "And the LORD, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 8,
+    "text": "The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you. Do not be afraid or discouraged.”"
+   }
+  ],
+  "web": [
+   {
+    "n": 8,
+    "text": "The LORD himself is who goes before you. He will be with you. He will not fail you nor forsake you. Don’t be afraid. Don’t be discouraged.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 8 together with verses 7-8"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "II. He encourages Joshua, De 31:7,8. Observe, 1. Though Joshua was an experienced general, and a man of approved gallantry and resolution, who had already signalized himself in many brave actions, yet Moses saw cause to bid him *be of good courage,* now that he was entering upon a new scene of action; and Joshua was far from taking it as an affront, or as a tacit questioning of his courage, to be thus charged, as sometimes we find proud and peevish spirits invidiously taking exhortations and admonitions for reproaches and reflections. Joshua himself is very well pleased to be admonished by Moses to be strong and of good courage. 2. He gives him this charge *in the sight of all Israel,* that they might be the more observant of him whom they saw thus solemnly inaugurated, and that he might set himself the more to be an example of courage to the people who were witnesses to this charge here given to him as well as to themselves. 3. He gives him the same assurances of the divine presence, and consequently of a glorious success, that he had given the people. God would be with him, would not forsake him, and therefore he should certainly accomplish the glorious enterprise to which he was called and commissioned: *Thou shalt cause them to inherit the land* of promise. Note, Those shall speed well that have God with them; and therefore they ought to *be of good courage.* Through God let us do valiantly, for through him we shall do victoriously; if we resist the devil, he shall flee, and God shall *shortly tread him under our feet.*",
+   "ok": true,
+   "metrics": {
+    "words": 213,
+    "sourceWords": 276,
+    "ratio": 0.77,
+    "ground": 0.49,
+    "refsKept": 0,
+    "refsInBlock": 1
+   },
+   "restated": "Henry notes how Moses encourages Joshua as he takes on his new role. First, even though Joshua was an experienced military leader who had already proven himself in battle, Moses still told him to be courageous. Joshua did not take this as an insult or doubt in his abilities. He was glad to receive Moses's words of strength and encouragement, unlike some proud people who treat advice as criticism.\n\nSecond, Moses gave this charge in front of all Israel. This way the people would pay closer attention to Joshua, whom they saw being formally put in charge. It also showed Joshua needed to set an example of courage for the people watching him receive this command.\n\nThird, Moses gave Joshua the same promises about God's presence that he had given the people. God would be with Joshua and would not abandon him. Because of this, Joshua would certainly succeed in his mission to help the people take the land God promised them.\n\nHenry points out that those who have God with them will do well, so they should be brave. He says we should act boldly through God, because through him we will win. When we stand against the devil, he will run away, and God will soon crush him under our feet."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Exodus 33:14",
+   "b": "EXO",
+   "c": 33,
+   "v": 14,
+   "votes": 92,
+   "kjv": "And he said, My presence shall go with thee, and I will give thee rest."
+  },
+  {
+   "ref": "Deuteronomy 31:6",
+   "b": "DEU",
+   "c": 31,
+   "v": 6,
+   "votes": 79,
+   "kjv": "Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee."
+  },
+  {
+   "ref": "Joshua 1:9",
+   "b": "JOS",
+   "c": 1,
+   "v": 9,
+   "votes": 77,
+   "kjv": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:27:38.163Z",
+  "cost": 0.00254
+ }
+}
