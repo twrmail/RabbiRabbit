@@ -1,0 +1,122 @@
+{
+ "id": "DEU-6-7",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "DEU",
+  "c": 6,
+  "v": 7,
+  "ve": null,
+  "label": "Deuteronomy 6:7"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 7,
+    "text": "And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 7,
+    "text": "And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up."
+   }
+  ],
+  "web": [
+   {
+    "n": 7,
+    "text": "and you shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise up."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 7"
+ },
+ "structure": {
+  "sentences": 12,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 1
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Deuteronomy 11:19",
+   "b": "DEU",
+   "c": 11,
+   "v": 19,
+   "votes": 36,
+   "kjv": "And ye shall teach them your children, speaking of them when thou sittest in thine house, and when thou walkest by the way, when thou liest down, and when thou risest up."
+  },
+  {
+   "ref": "Ephesians 6:4",
+   "b": "EPH",
+   "c": 6,
+   "v": 4,
+   "votes": 29,
+   "kjv": "And, ye fathers, provoke not your children to wrath: but bring them up in the nurture and admonition of the Lord."
+  },
+  {
+   "ref": "Psalms 78:4",
+   "b": "PSA",
+   "c": 78,
+   "v": 4,
+   "votes": 19,
+   "kjv": "We will not hide them from their children, shewing to the generation to come the praises of the LORD, and his strength, and his wonderful works that he hath done."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:29:29.507Z",
+  "cost": 0.007618999999999999,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 128 words (limit 80)"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how this verse calls parents to teach God's word to their children constantly, in every moment of daily life."
+   },
+   {
+    "quote": [
+     1,
+     1
+    ]
+   },
+   {
+    "say": "Teaching children God's word is not a burden but a way to strengthen your own faith as you share it."
+   },
+   {
+    "quote": [
+     3,
+     3
+    ]
+   },
+   {
+    "say": "Parents should look for every chance to speak about God's truths naturally, whether at home, on the road, or at bedtime."
+   },
+   {
+    "quote": [
+     9,
+     10
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today one moment to speak naturally with someone about what matters most to God.",
+   "phrase": "Take all occasions to discourse with those about thee of divine things"
+  }
+ }
+}

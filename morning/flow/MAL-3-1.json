@@ -1,0 +1,132 @@
+{
+ "id": "MAL-3-1",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "MAL",
+  "c": 3,
+  "v": 1,
+  "ve": null,
+  "label": "Malachi 3:1"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 1,
+    "text": "Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom ye seek, shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in: behold, he shall come, saith the LORD of hosts."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 1,
+    "text": "“Behold, I will send My messenger, who will prepare the way before Me. Then the Lord whom you seek will suddenly come to His temple—the Messenger of the covenant, in whom you delight—see, He is coming,” says the LORD of Hosts."
+   }
+  ],
+  "web": [
+   {
+    "n": 1,
+    "text": "“Behold, I send my messenger, and he will prepare the way before me! The Lord, whom you seek, will suddenly come to his temple. Behold, the messenger of the covenant, whom you desire, is coming!” says the LORD of Armies."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 1"
+ },
+ "structure": {
+  "sentences": 40,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 6
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Malachi 4:5",
+   "b": "MAL",
+   "c": 4,
+   "v": 5,
+   "votes": 20,
+   "kjv": "Behold, I will send you Elijah the prophet before the coming of the great and dreadful day of the LORD:"
+  },
+  {
+   "ref": "Luke 1:76",
+   "b": "LUK",
+   "c": 1,
+   "v": 76,
+   "votes": 18,
+   "kjv": "And thou, child, shalt be called the prophet of the Highest: for thou shalt go before the face of the Lord to prepare his ways;"
+  },
+  {
+   "ref": "Mark 1:2",
+   "b": "MRK",
+   "c": 1,
+   "v": 2,
+   "votes": 15,
+   "kjv": "As it is written in the prophets, Behold, I send my messenger before thy face, which shall prepare thy way before thee."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:27.110Z",
+  "cost": 0.013392999999999999,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 96 words (limit 80)",
+  "a quote is 85 words (limit 80)"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how this verse announces two arrivals: first John the Baptist preparing the way, then Jesus himself coming to his temple."
+   },
+   {
+    "quote": [
+     1,
+     1
+    ]
+   },
+   {
+    "say": "The messenger's job was to call people to repentance and make them ready to receive the Messiah and his kingdom."
+   },
+   {
+    "quote": [
+     5,
+     5
+    ]
+   },
+   {
+    "say": "Jesus is the Lord of all, the messenger of God's covenant sent to bring peace between God and mankind."
+   },
+   {
+    "quote": [
+     13,
+     14
+    ]
+   },
+   {
+    "say": "He will come suddenly, when many do not expect him, and he will come to his temple in Jerusalem."
+   },
+   {
+    "quote": [
+     25,
+     26
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry with you today the certainty that Christ came as promised, and meet him now in his temple.",
+   "phrase": "he shall come, saith the Lord of hosts"
+  }
+ }
+}

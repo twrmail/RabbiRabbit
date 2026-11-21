@@ -1,0 +1,122 @@
+{
+ "id": "ISA-11-1",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 11,
+  "v": 1,
+  "ve": null,
+  "label": "Isaiah 11:1"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 1,
+    "text": "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots:"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 1,
+    "text": "Then a shoot will spring up from the stump of Jesse, and a Branch from his roots will bear fruit."
+   }
+  ],
+  "web": [
+   {
+    "n": 1,
+    "text": "A shoot will come out of the stock of Jesse, and a branch out of his roots will bear fruit."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 1"
+ },
+ "structure": {
+  "sentences": 5,
+  "points": 1,
+  "pointKind": "paren",
+  "noteBlocks": 1
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Jeremiah 23:5",
+   "b": "JER",
+   "c": 23,
+   "v": 5,
+   "votes": 37,
+   "kjv": "Behold, the days come, saith the LORD, that I will raise unto David a righteous Branch, and a King shall reign and prosper, and shall execute judgment and justice in the earth."
+  },
+  {
+   "ref": "Revelation 22:16",
+   "b": "REV",
+   "c": 22,
+   "v": 16,
+   "votes": 34,
+   "kjv": "I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star."
+  },
+  {
+   "ref": "Zechariah 6:12",
+   "b": "ZEC",
+   "c": 6,
+   "v": 12,
+   "votes": 28,
+   "kjv": "And speak unto him, saying, Thus speaketh the LORD of hosts, saying, Behold the man whose name is The BRANCH; and he shall grow up out of his place, and he shall build the temple of the LORD:"
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:30:39.445Z",
+  "cost": 0.006024,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 83 words (limit 80)"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how the Messiah comes from Jesse's line when it has been cut down to almost nothing."
+   },
+   {
+    "quote": [
+     0,
+     1
+    ]
+   },
+   {
+    "say": "Even though the royal family fell into poverty and obscurity, it would grow again from its buried roots."
+   },
+   {
+    "quote": [
+     2,
+     3
+    ]
+   },
+   {
+    "say": "This humble beginning showed that Christ's kingdom was not earthly power but something far greater."
+   },
+   {
+    "quote": [
+     4,
+     4
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry with you today the truth that God's greatest work often begins in the deepest humility.",
+   "phrase": "it shall sprout again"
+  }
+ }
+}

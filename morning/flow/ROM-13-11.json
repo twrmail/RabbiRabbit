@@ -1,0 +1,135 @@
+{
+ "id": "ROM-13-11",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ROM",
+  "c": 13,
+  "v": 11,
+  "ve": null,
+  "label": "Romans 13:11"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 11,
+    "text": "And that, knowing the time, that now it is high time to awake out of sleep: for now is our salvation nearer than when we believed."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 11,
+    "text": "And do this, understanding the occasion. The hour has come for you to wake up from your slumber, for our salvation is nearer now than when we first believed."
+   }
+  ],
+  "web": [
+   {
+    "n": 11,
+    "text": "Do this, knowing the time, that it is already time for you to awaken out of sleep, for salvation is now nearer to us than when we first believed."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 11"
+ },
+ "structure": {
+  "sentences": 26,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 3,
+  "quoted": 3,
+  "pointsCovered": 0
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows us four things a Christian must do each day, starting with when to wake up. He teaches that now is the time to stop sleeping spiritually."
+  },
+  {
+   "type": "quote",
+   "text": "When to awake: *Now it is high time to awake* (Ro 13:11), to awake out of the sleep of sin (for a sinful condition is a sleeping condition), out of the sleep of carnal security, sloth and negligence, out of the sleep of spiritual death, and out of the sleep of spiritual deadness; both the wise and foolish virgins slumbered and slept, Mt 25:5.",
+   "from": 4,
+   "to": 4,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "Henry explains that we live in gospel time, when God's light shines on us and much work waits. We cannot afford to sleep while enemies surround us."
+  },
+  {
+   "type": "quote",
+   "text": "It is gospel time, it is the accepted time, it is working time; it is a time when more is expected than was in the times of that ignorance which God winked at, when people sat in darkness. It is high time to awake; for the sun has been up a great while, and shines in our faces.",
+   "from": 10,
+   "to": 11,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "He reminds us that our salvation draws closer every day than it was when we first believed. This nearness should make us move faster in our faith."
+  },
+  {
+   "type": "quote",
+   "text": "\"The salvation we are upon the brink of: *Now is our salvation nearer than when we believed*—than when we first believed, and so took upon us the profession of Christianity. The eternal happiness we chose for our portion is now nearer to us than it was when we became Christians.",
+   "from": 20,
+   "to": 21,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Carry Henry's call with you: the time is now, and your salvation is nearer than ever.",
+  "phrase": "Now it is high time to awake"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "1 Thessalonians 5:5",
+   "b": "1TH",
+   "c": 5,
+   "v": 5,
+   "votes": 48,
+   "kjv": "Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness."
+  },
+  {
+   "ref": "1 Peter 4:7",
+   "b": "1PE",
+   "c": 4,
+   "v": 7,
+   "votes": 43,
+   "kjv": "But the end of all things is at hand: be ye therefore sober, and watch unto prayer."
+  },
+  {
+   "ref": "Ephesians 5:14",
+   "b": "EPH",
+   "c": 5,
+   "v": 14,
+   "votes": 37,
+   "kjv": "Wherefore he saith, Awake thou that sleepest, and arise from the dead, and Christ shall give thee light."
+  }
+ ],
+ "review": {
+  "flags": [
+   {
+    "b": "B0",
+    "issue": "Claims Henry shows 'four things a Christian must do each day' but only one thing (when to wake up) is evident in the provided quotes"
+   }
+  ],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:29:39.197Z",
+  "cost": 0.00969,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is longer than 3 sentences",
+  "a quote is 89 words (limit 80)"
+ ]
+}

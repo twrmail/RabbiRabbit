@@ -1,0 +1,132 @@
+{
+ "id": "EPH-3-16",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "EPH",
+  "c": 3,
+  "v": 16,
+  "ve": null,
+  "label": "Ephesians 3:16"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 16,
+    "text": "That he would grant you, according to the riches of his glory, to be strengthened with might by his Spirit in the inner man;"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 16,
+    "text": "I ask that out of the riches of His glory He may strengthen you with power through His Spirit in your inner being,"
+   }
+  ],
+  "web": [
+   {
+    "n": 16,
+    "text": "that he would grant you, according to the riches of his glory, that you may be strengthened with power through his Spirit in the inner person,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 16"
+ },
+ "structure": {
+  "sentences": 14,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 1
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Colossians 1:11",
+   "b": "COL",
+   "c": 1,
+   "v": 11,
+   "votes": 75,
+   "kjv": "Strengthened with all might, according to his glorious power, unto all patience and longsuffering with joyfulness;"
+  },
+  {
+   "ref": "Philippians 4:13",
+   "b": "PHP",
+   "c": 4,
+   "v": 13,
+   "votes": 59,
+   "kjv": "I can do all things through Christ which strengtheneth me."
+  },
+  {
+   "ref": "Isaiah 40:29",
+   "b": "ISA",
+   "c": 40,
+   "v": 29,
+   "votes": 51,
+   "kjv": "He giveth power to the faint; and to them that have no might he increaseth strength."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:29:07.574Z",
+  "cost": 0.007594,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 110 words (limit 80)",
+  "names “Paul”, who is not in the block"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows Paul praying that believers receive spiritual strength from God's Spirit working deep in their souls."
+   },
+   {
+    "quote": [
+     1,
+     3
+    ]
+   },
+   {
+    "say": "This inner strength means being mightily strengthened to serve God, resist temptation, and endure hardship."
+   },
+   {
+    "quote": [
+     4,
+     5
+    ]
+   },
+   {
+    "say": "God gives this strength according to his glorious riches, pouring out his abundant grace and power through his Spirit."
+   },
+   {
+    "quote": [
+     6,
+     6
+    ]
+   },
+   {
+    "say": "The Spirit begins this work of grace in us and keeps carrying it forward throughout our Christian life."
+   },
+   {
+    "quote": [
+     11,
+     13
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Ask God today to strengthen your inner self through his Spirit, so you can serve him with vigor and joy.",
+   "phrase": "strength from the Spirit of God in the inner man"
+  }
+ }
+}

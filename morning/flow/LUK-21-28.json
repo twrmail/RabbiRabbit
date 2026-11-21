@@ -1,0 +1,122 @@
+{
+ "id": "LUK-21-28",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "LUK",
+  "c": 21,
+  "v": 28,
+  "ve": null,
+  "label": "Luke 21:28"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 28,
+    "text": "And when these things begin to come to pass, then look up, and lift up your heads; for your redemption draweth nigh."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 28,
+    "text": "When these things begin to happen, stand up and lift up your heads, because your redemption is drawing near.”"
+   }
+  ],
+  "web": [
+   {
+    "n": 28,
+    "text": "But when these things begin to happen, look up and lift up your heads, because your redemption is near.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 28"
+ },
+ "structure": {
+  "sentences": 15,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 2
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Romans 8:23",
+   "b": "ROM",
+   "c": 8,
+   "v": 23,
+   "votes": 8,
+   "kjv": "And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body."
+  },
+  {
+   "ref": "Isaiah 60:1",
+   "b": "ISA",
+   "c": 60,
+   "v": 1,
+   "votes": 6,
+   "kjv": "Arise, shine; for thy light is come, and the glory of the LORD is risen upon thee."
+  },
+  {
+   "ref": "Ephesians 4:30",
+   "b": "EPH",
+   "c": 4,
+   "v": 30,
+   "votes": 5,
+   "kjv": "And grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:29:55.383Z",
+  "cost": 0.007464,
+  "attempts": 3
+ },
+ "reasons": [
+  "morning.phrase is not found word for word in the note"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how Jesus tells his followers to stay hopeful when troubles come. Even as the world falls apart around them, they should look up in faith."
+   },
+   {
+    "quote": [
+     1,
+     1
+    ]
+   },
+   {
+    "say": "When Jesus came to save Christians from persecution, the churches found peace. When he comes again at the end, he will free all his people from every hardship."
+   },
+   {
+    "quote": [
+     2,
+     3
+    ]
+   },
+   {
+    "say": "Good Christians find joy in that coming day, not fear. They can hold their heads high because they know their rescue is near."
+   },
+   {
+    "quote": [
+     5,
+     5
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the courage to look up in faith, knowing your redemption draws near.",
+   "phrase": "lift up your heads with joy"
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "id": "ISA-58-14",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ISA",
+  "c": 58,
+  "v": 14,
+  "ve": null,
+  "label": "Isaiah 58:14"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 14,
+    "text": "Then shalt thou delight thyself in the LORD; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 14,
+    "text": "then you will delight yourself in the LORD, and I will make you ride on the heights of the land and feed you with the heritage of your father Jacob.” For the mouth of the LORD has spoken."
+   }
+  ],
+  "web": [
+   {
+    "n": 14,
+    "text": "then you will delight yourself in the LORD, and I will make you to ride on the high places of the earth, and I will feed you with the heritage of Jacob your father;” for the LORD’s mouth has spoken it."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 14"
+ },
+ "structure": {
+  "sentences": 16,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 3
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Deuteronomy 32:13",
+   "b": "DEU",
+   "c": 32,
+   "v": 13,
+   "votes": 18,
+   "kjv": "He made him ride on the high places of the earth, that he might eat the increase of the fields; and he made him to suck honey out of the rock, and oil out of the flinty rock;"
+  },
+  {
+   "ref": "Job 22:26",
+   "b": "JOB",
+   "c": 22,
+   "v": 26,
+   "votes": 16,
+   "kjv": "For then shalt thou have thy delight in the Almighty, and shalt lift up thy face unto God."
+  },
+  {
+   "ref": "Isaiah 1:19",
+   "b": "ISA",
+   "c": 1,
+   "v": 19,
+   "votes": 13,
+   "kjv": "If ye be willing and obedient, ye shall eat the good of the land:"
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:29:20.187Z",
+  "cost": 0.008098999999999999,
+  "attempts": 3
+ },
+ "reasons": [
+  "a quote is 98 words (limit 80)"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows what God promises to those who honor the sabbath: delight in him, honor, and provision."
+   },
+   {
+    "quote": [
+     4,
+     4
+    ]
+   },
+   {
+    "say": "When we find joy in serving God, that joy grows deeper and more real."
+   },
+   {
+    "quote": [
+     7,
+     7
+    ]
+   },
+   {
+    "say": "God lifts us above the world's pull so we can travel toward heaven without being held back by it."
+   },
+   {
+    "quote": [
+     12,
+     13
+    ]
+   },
+   {
+    "say": "God feeds us now with the hope and foretaste of the blessings he has promised."
+   },
+   {
+    "quote": [
+     14,
+     14
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry into today the certainty that God's promises are sure and will not fail.",
+   "phrase": "what his mouth has spoken his hand will give"
+  }
+ }
+}

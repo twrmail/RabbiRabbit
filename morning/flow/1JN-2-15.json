@@ -1,0 +1,117 @@
+{
+ "id": "1JN-2-15",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "1JN",
+  "c": 2,
+  "v": 15,
+  "ve": null,
+  "label": "1 John 2:15"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 15,
+    "text": "Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 15,
+    "text": "Do not love the world or anything in the world. If anyone loves the world, the love of the Father is not in him."
+   }
+  ],
+  "web": [
+   {
+    "n": 15,
+    "text": "Don’t love the world or the things that are in the world. If anyone loves the world, the Father’s love isn’t in him."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 15"
+ },
+ "structure": {
+  "sentences": 11,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 2,
+  "quoted": 2,
+  "pointsCovered": 0
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows us that John calls us to stop loving the world and its things, because our hearts cannot hold both that love and God's love at once."
+  },
+  {
+   "type": "quote",
+   "text": "We have the dehortation or dissuasion thus prefaced and introduced, a caution fundamental to vital practical religion: \"*Love not the world, neither the things that are in the world,* 1Jo 2:15. Be crucified to the world, be mortified to the things, to the affairs and enticements, of it.\"",
+   "from": 1,
+   "to": 2,
+   "point": null,
+   "points": []
+  },
+  {
+   "type": "say",
+   "text": "When we cling to worldly things, our love for God grows weaker. The world pulls our hearts away from him."
+  },
+  {
+   "type": "quote",
+   "text": "From the inconsistency of this love with the love of God: *If any man love the world, the love of the Father is not in him,* 1Jo 2:15. The heart of man is narrow, and cannot contain both loves. The world draws down the heart from God; and so the more the love of the world prevails the more the love of God dwindles and decays.",
+   "from": 8,
+   "to": 10,
+   "point": null,
+   "points": []
+  }
+ ],
+ "morning": {
+  "say": "Ask yourself today: what am I holding onto that might be pulling my heart away from God?",
+  "phrase": "The heart of man is narrow, and cannot contain both loves"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "James 4:4",
+   "b": "JAS",
+   "c": 4,
+   "v": 4,
+   "votes": 145,
+   "kjv": "Ye adulterers and adulteresses, know ye not that the friendship of the world is enmity with God? whosoever therefore will be a friend of the world is the enemy of God."
+  },
+  {
+   "ref": "Romans 12:2",
+   "b": "ROM",
+   "c": 12,
+   "v": 2,
+   "votes": 124,
+   "kjv": "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God."
+  },
+  {
+   "ref": "Matthew 6:24",
+   "b": "MAT",
+   "c": 6,
+   "v": 24,
+   "votes": 103,
+   "kjv": "No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:28:51.512Z",
+  "cost": 0.0067,
+  "attempts": 3
+ },
+ "reasons": [
+  "must end with a quote"
+ ]
+}

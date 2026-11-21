@@ -1,0 +1,131 @@
+{
+ "id": "ZEP-3-17",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "ZEP",
+  "c": 3,
+  "v": 17,
+  "ve": null,
+  "label": "Zephaniah 3:17"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 17,
+    "text": "The LORD thy God in the midst of thee is mighty; he will save, he will rejoice over thee with joy; he will rest in his love, he will joy over thee with singing."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 17,
+    "text": "The LORD your God is among you; He is mighty to save. He will rejoice over you with gladness; He will quiet you with His love; He will rejoice over you with singing.”"
+   }
+  ],
+  "web": [
+   {
+    "n": 17,
+    "text": "The LORD, your God, is among you, a mighty one who will save. He will rejoice over you with joy. He will calm you in his love. He will rejoice over you with singing."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 17"
+ },
+ "structure": {
+  "sentences": 14,
+  "points": 0,
+  "pointKind": "none",
+  "noteBlocks": 2
+ },
+ "flow": [],
+ "morning": null,
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Psalms 149:4",
+   "b": "PSA",
+   "c": 149,
+   "v": 4,
+   "votes": 99,
+   "kjv": "For the LORD taketh pleasure in his people: he will beautify the meek with salvation."
+  },
+  {
+   "ref": "Psalms 147:11",
+   "b": "PSA",
+   "c": 147,
+   "v": 11,
+   "votes": 88,
+   "kjv": "The LORD taketh pleasure in them that fear him, in those that hope in his mercy."
+  },
+  {
+   "ref": "Hebrews 7:25",
+   "b": "HEB",
+   "c": 7,
+   "v": 25,
+   "votes": 69,
+   "kjv": "Wherefore he is able also to save them to the uttermost that come unto God by him, seeing he ever liveth to make intercession for them."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:31:30.261Z",
+  "cost": 0.00763,
+  "attempts": 3
+ },
+ "reasons": [
+  "morning.phrase is not found word for word in the note"
+ ],
+ "rejected": {
+  "flow": [
+   {
+    "say": "Henry shows how God's power and delight work together in this verse. God saves his people and then rejoices over them with overwhelming joy."
+   },
+   {
+    "quote": [
+     1,
+     2
+    ]
+   },
+   {
+    "say": "God does not just save us once. He takes ongoing pleasure in us, like a bridegroom delights in his bride."
+   },
+   {
+    "quote": [
+     5,
+     5
+    ]
+   },
+   {
+    "say": "This joy is so deep that God rests in his love for us, silent and satisfied, no longer rebuking but fully accepting us."
+   },
+   {
+    "quote": [
+     8,
+     9
+    ]
+   },
+   {
+    "say": "God's love runs so deep that he expresses it by singing over his people. His joy in them is complete and vocal."
+   },
+   {
+    "quote": [
+     12,
+     12
+    ]
+   }
+  ],
+  "morning": {
+   "say": "Carry with you today the picture of God resting in his love for you, pleased and singing.",
+   "phrase": "he will rest in his love, he will joy over thee with singing"
+  }
+ }
+}

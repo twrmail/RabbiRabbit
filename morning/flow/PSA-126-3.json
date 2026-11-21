@@ -1,0 +1,135 @@
+{
+ "id": "PSA-126-3",
+ "format": "flow",
+ "flowVersion": "f1",
+ "ref": {
+  "b": "PSA",
+  "c": 126,
+  "v": 3,
+  "ve": null,
+  "label": "Psalms 126:3"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 3,
+    "text": "The LORD hath done great things for us; whereof we are glad."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 3,
+    "text": "The LORD has done great things for us; we are filled with joy."
+   }
+  ],
+  "web": [
+   {
+    "n": 3,
+    "text": "The LORD has done great things for us, and we are glad."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 3"
+ },
+ "structure": {
+  "sentences": 10,
+  "points": 3,
+  "pointKind": "bracket",
+  "noteBlocks": 1,
+  "quoted": 3,
+  "pointsCovered": 3
+ },
+ "flow": [
+  {
+   "type": "say",
+   "text": "Henry shows how God's people speak differently about what God does than outsiders do. They speak as those who benefit and belong."
+  },
+  {
+   "type": "quote",
+   "text": "Observe here, God's appearances for his people are to be looked upon as great things.",
+   "from": 7,
+   "to": 7,
+   "point": "B1",
+   "points": [
+    "B1"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "God himself is the one who makes these great things happen for his church."
+  },
+  {
+   "type": "quote",
+   "text": "God is to be eyed as the author of all the great things done for the church.",
+   "from": 8,
+   "to": 8,
+   "point": "B2",
+   "points": [
+    "B2"
+   ]
+  },
+  {
+   "type": "say",
+   "text": "When we see God's work as done for us, we can truly rejoice in it the way his people do."
+  },
+  {
+   "type": "quote",
+   "text": "It is good to observe how the church's deliverances are for us, that we may rejoice in them.",
+   "from": 9,
+   "to": 9,
+   "point": "B3",
+   "points": [
+    "B3"
+   ]
+  }
+ ],
+ "morning": {
+  "say": "Carry into today the thought that God's deliverances are for you to rejoice in.",
+  "phrase": "God's appearances for his people are to be looked upon as great things"
+ },
+ "trail": null,
+ "leads": [
+  {
+   "ref": "Luke 1:49",
+   "b": "LUK",
+   "c": 1,
+   "v": 49,
+   "votes": 17,
+   "kjv": "For he that is mighty hath done to me great things; and holy is his name."
+  },
+  {
+   "ref": "Isaiah 51:9",
+   "b": "ISA",
+   "c": 51,
+   "v": 9,
+   "votes": 9,
+   "kjv": "Awake, awake, put on strength, O arm of the LORD; awake, as in the ancient days, in the generations of old. Art thou not it that hath cut Rahab, and wounded the dragon?"
+  },
+  {
+   "ref": "Isaiah 66:14",
+   "b": "ISA",
+   "c": 66,
+   "v": 14,
+   "votes": 9,
+   "kjv": "And when ye see this, your heart shall rejoice, and your bones shall flourish like an herb: and the hand of the LORD shall be known toward his servants, and his indignation toward his enemies."
+  }
+ ],
+ "review": {
+  "flags": [],
+  "status": "unreviewed"
+ },
+ "build": {
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T14:31:40.057Z",
+  "cost": 0.00489,
+  "attempts": 2
+ },
+ "reasons": [
+  "must end with a quote"
+ ]
+}
