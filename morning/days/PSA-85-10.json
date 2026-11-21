@@ -1,0 +1,100 @@
+{
+ "id": "PSA-85-10",
+ "ref": {
+  "b": "PSA",
+  "c": 85,
+  "v": 10,
+  "ve": null,
+  "label": "Psalms 85:10"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 10,
+    "text": "Mercy and truth are met together; righteousness and peace have kissed each other."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 10,
+    "text": "Loving devotion and faithfulness have joined together; righteousness and peace have kissed."
+   }
+  ],
+  "web": [
+   {
+    "n": 10,
+    "text": "Mercy and truth meet together. Righteousness and peace have kissed each other."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 10 together with verses 10-11"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "3. Graces meeting, and happily embracing (Ps 85:10,11): *Mercy and truth, righteousness and peace, kiss each other.* This may be understood, (1.) Of the reformation of the people and of the government, in the administration of which all those graces should be conspicuous and commanding. The rulers and ruled shall all be merciful and true, righteous and peaceable. When there is no truth nor mercy all goes to ruin (Ho 4:1, Isa 59:14,15); but when these meet in the management of all affairs, when these give aim, when these give law, when there is such plenty of truth that it sprouts up like the grass of the earth, and of righteousness that it is showered down like rain from heaven, then things go well. When in every congress mercy and truth meet, in every embrace righteousness and peace kiss, and common honesty is indeed common, then glory dwells in a land, as the sin of reigning dishonesty is a reproach to any people. (2.) Of the return of God's favour, and the continuance of it, thereupon. When a people return to God and adhere to him in a way of duty he will return to them and abide with them in a way of mercy. So some understand this, man's truth and God's mercy, man's righteousness and God's peace, meet together. If God find us true to him, to one another, to ourselves, we shall find him merciful. If we make conscience of righteousness, we shall have the comfort of peace.",
+   "ok": true,
+   "metrics": {
+    "words": 216,
+    "sourceWords": 251,
+    "ratio": 0.86,
+    "ground": 0.61,
+    "refsKept": 3,
+    "refsInBlock": 3
+   },
+   "restated": "Henry sees Psalm 85:10,11 as describing graces that meet and embrace each other: mercy and truth, righteousness and peace, kissing one another.\n\nHe understands this in two ways.\n\n1. It speaks of a people and government reformed, where all these graces show up clearly and take charge. Rulers and people alike will be merciful, truthful, righteous, and peaceful. When truth and mercy disappear, everything falls apart (Ho 4:1, Isa 59:14,15). But when these graces guide how things are run, when truth springs up like grass and righteousness falls like rain from heaven, things go well. When mercy and truth meet in every gathering and righteousness and peace kiss in every agreement, and honesty becomes truly common, then glory lives in that land. By contrast, dishonesty that rules is a shame to any people.\n\n2. It speaks of God's favor returning to a people and staying with them. When people turn back to God and stay faithful to him, he turns back to them and stays with them in mercy. Some read it this way: man's truth meets God's mercy, and man's righteousness meets God's peace. If God finds us true to him, to each other, and to ourselves, we will find him merciful. If we care about doing right, we will have the comfort of peace."
+  },
+  {
+   "i": 1,
+   "original": "If *truth spring out of the earth,* that is (as Dr. Hammond expounds it), out of the hearts of men, the proper soil for it to grow in, righteousness (that is, God's mercy) shall look down from heaven, as the sun does upon the world when it sheds its influences on the productions of the earth and cherishes them. (3.) Of the harmony of the divine attributes in the Messiah's undertaking. In him who is both our salvation and our glory *mercy and truth have met together;* God's mercy and truth, and his *righteousness and peace, have kissed each other;* that is, the great affair of our salvation is so well contrived, so well concerted, that God may have mercy upon poor sinners, and be at peace with them, without any wrong to his truth and righteousness. He is true to the threatening, and just in his government, and yet pardons sinners and takes them into covenant with himself. Christ, as Mediator, brings heaven and earth together again, which sin had set at variance; through him *truth springs out of the earth,* that truth which God *desires in the inward part,* and then *righteousness looks down from heaven;* for God is *just, and the justifier of those who believe in Jesus.* Or it may denote that in the kingdom of the Messiah these graces shall flourish and prevail and have a universal command.",
+   "ok": true,
+   "metrics": {
+    "words": 188,
+    "sourceWords": 233,
+    "ratio": 0.81,
+    "ground": 0.59,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "restated": "Henry sees this verse as showing how God's qualities work together in Christ's work of saving us. When truth springs up from human hearts—the right place for it to grow—God's righteousness looks down from heaven like the sun shining on the earth and helping things grow. In Christ, who is both our salvation and our glory, mercy and truth meet together. God's mercy and truth, and his righteousness and peace, embrace each other. The whole plan of our salvation is arranged so perfectly that God can show mercy to sinners and make peace with them without going against his truth and righteousness. Christ stays true to his warnings, he rules justly, and yet he forgives sinners and brings them into his covenant. As Mediator, Christ brings heaven and earth back together after sin had torn them apart. Through him, truth grows from the earth—the kind of truth God wants deep in our hearts—and then righteousness looks down from heaven. God is just, and he makes right those who believe in Jesus. Or this may mean that in Christ's kingdom these qualities will flourish everywhere and have complete power."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Proverbs 3:3",
+   "b": "PRO",
+   "c": 3,
+   "v": 3,
+   "votes": 15,
+   "kjv": "Let not mercy and truth forsake thee: bind them about thy neck; write them upon the table of thine heart:"
+  },
+  {
+   "ref": "Psalms 89:14",
+   "b": "PSA",
+   "c": 89,
+   "v": 14,
+   "votes": 12,
+   "kjv": "Justice and judgment are the habitation of thy throne: mercy and truth shall go before thy face."
+  },
+  {
+   "ref": "Isaiah 32:16",
+   "b": "ISA",
+   "c": 32,
+   "v": 16,
+   "votes": 11,
+   "kjv": "Then judgment shall dwell in the wilderness, and righteousness remain in the fruitful field."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:16.757Z",
+  "cost": 0.00513
+ }
+}

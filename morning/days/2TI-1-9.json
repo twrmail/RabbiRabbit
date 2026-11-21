@@ -1,0 +1,101 @@
+{
+ "id": "2TI-1-9",
+ "ref": {
+  "b": "2TI",
+  "c": 1,
+  "v": 9,
+  "ve": null,
+  "label": "2 Timothy 1:9"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 9,
+    "text": "Who hath saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in Christ Jesus before the world began,"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 9,
+    "text": "He has saved us and called us to a holy calling, not because of our works, but by His own purpose and by the grace He granted us in Christ Jesus before time began."
+   }
+  ],
+  "web": [
+   {
+    "n": 9,
+    "text": "who saved us and called us with a holy calling, not according to our works, but according to his own purpose and grace, which was given to us in Christ Jesus before times eternal,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 9 together with verses 9-10"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "2. Mentioning God and the gospel, he takes notice what great things God has done for us by the gospel, 2Ti 1:9,10. To encourage him to suffer, he urges two considerations:—",
+   "ok": true,
+   "metrics": {
+    "words": 29,
+    "sourceWords": 31,
+    "ratio": 0.94,
+    "ground": 0.8,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "When Henry mentions God and the gospel, he notes the great things God has done for us through the gospel (2Ti 1:9,10). To encourage suffering, he offers two considerations.",
+   "retried": true
+  },
+  {
+   "i": 1,
+   "original": "(1.) The nature of that gospel which he was called to suffer for, and the glorious and gracious designs and purposes of it. It is usual with Paul, when he mentions Christ, and the gospel of Christ, to digress from his subject, and enlarge upon them; so full was he of that which is all our salvation, and ought to be all our desire. Observe, [1.] The gospel aims at our salvation: *He has saved us,* and we must not think much to suffer for that which we hope to be saved by. He has begun to save us, and will complete it in due time; for God calls those things that are not (that are not yet completed) as though they were (Ro 4:17); therefore he says, who *has* saved us. [2.] It is designed for our sanctification: *And called us with a holy calling,* called us to holiness. Christianity is a calling, a holy calling; it is the calling wherewith we are called, the calling to which we are called, to labour in it. Observe, All who shall be saved hereafter are sanctified now. Wherever the call of the gospel is an effectual call, it is found to be a holy call, making those holy who are effectually called. [3.] The origin of it is the free grace and eternal purpose of God in Christ Jesus. If we had merited it, it had been hard to suffer for it; but our salvation by it is of free grace, and not according to our works, and therefore we must not think much to suffer for it.",
+   "ok": true,
+   "metrics": {
+    "words": 193,
+    "sourceWords": 267,
+    "ratio": 0.72,
+    "ground": 0.7,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Henry notes that Paul often stops to talk about Christ and the gospel when he mentions them, because they hold his whole heart and should hold ours. He points out three things about the gospel:\n\n1. The gospel aims at our salvation. God has saved us, so we should not mind suffering for what we hope to be saved by. He has started to save us and will finish it in time. God calls things that are not yet completed as though they were already done (Ro 4:17), which is why Paul says God has saved us.\n\n2. The gospel is meant for our sanctification. God called us with a holy calling, calling us to holiness. Christianity is a calling, a holy calling. All who will be saved later are made holy now. Wherever the gospel's call truly works, it makes those who hear it holy.\n\n3. The gospel comes from God's free grace and his eternal purpose in Christ Jesus. If we had earned it, it would be hard to suffer for it. But our salvation comes from free grace, not from our works, so we should not mind suffering for it."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Ephesians 2:8",
+   "b": "EPH",
+   "c": 2,
+   "v": 8,
+   "votes": 54,
+   "kjv": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:"
+  },
+  {
+   "ref": "Titus 3:4",
+   "b": "TIT",
+   "c": 3,
+   "v": 4,
+   "votes": 45,
+   "kjv": "But after that the kindness and love of God our Saviour toward man appeared,"
+  },
+  {
+   "ref": "Ephesians 1:3",
+   "b": "EPH",
+   "c": 1,
+   "v": 3,
+   "votes": 34,
+   "kjv": "Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ:"
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:27:33.514Z",
+  "cost": 0.00481
+ }
+}

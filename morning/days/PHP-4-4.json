@@ -1,0 +1,90 @@
+{
+ "id": "PHP-4-4",
+ "ref": {
+  "b": "PHP",
+  "c": 4,
+  "v": 4,
+  "ve": null,
+  "label": "Philippians 4:4"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 4,
+    "text": "Rejoice in the Lord alway: and again I say, Rejoice."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 4,
+    "text": "Rejoice in the Lord always. I will say it again: Rejoice!"
+   }
+  ],
+  "web": [
+   {
+    "n": 4,
+    "text": "Rejoice in the Lord always! Again I will say, “Rejoice!”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 4"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "III. He exhorts to holy joy and delight in God: *Rejoice in the Lord always, and again I say, Rejoice,* Php 4:4. All our joy must terminate in God; and our thoughts of God must be delightful thoughts. *Delight thyself in the Lord* (Ps 37:4), *in the multitude of our thoughts within us* (grievous and afflicting thoughts) *his comforts delight our souls* (Ps 94:19), and our *meditation of him is sweet,* Ps 104:34. Observe, It is our duty and privilege to rejoice in God, and to rejoice in him always; at all times, in all conditions; even when we suffer for him, or are afflicted by him. We must not think the worse of him or of his ways for the hardships we meet with in his service. There is enough in God to furnish us with matter of joy in the worst circumstance on earth. He had said it before (Php 3:1): *Finally, my brethren, rejoice in the Lord.* Here he says it again, *Rejoice in the Lord always; and again I say Rejoice.* Joy in God is a duty of great consequence in the Christian life; and Christians need to be again and again called to it. If good men have not a continual feast, it is their own fault.",
+   "ok": false,
+   "metrics": {
+    "words": 190,
+    "sourceWords": 212,
+    "ratio": 0.9,
+    "ground": 0.57,
+    "refsKept": 0,
+    "refsInBlock": 5
+   },
+   "reasons": [
+    "names “Paul”, who is not in the block",
+    "quotes Scripture from the block without quotation marks (“rejoice in the lord always and again i…”)"
+   ],
+   "rejected": "Henry says Paul calls us to find holy joy and delight in God. All our joy must end in God, and our thoughts about him must be joyful ones. When we delight ourselves in the Lord, even when we have many troubling and painful thoughts, his comfort brings joy to our souls, and thinking about him is sweet.\n\nHenry points out that rejoicing in God is both our duty and our privilege. We must do it always, in every time and condition. Even when we suffer for him or are troubled by him, we should not think badly of him or his ways because of the hardships we face in serving him. God gives us enough reason for joy even in the worst earthly circumstances.\n\nHenry notes that this command appears twice. Earlier Paul said to rejoice in the Lord, and here he repeats it: rejoice in the Lord always, and again I say rejoice. Joy in God matters greatly in the Christian life, and believers need to hear this call over and over. If good people do not live in continual joy, Henry says, it is their own fault."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "1 Thessalonians 5:16",
+   "b": "1TH",
+   "c": 5,
+   "v": 16,
+   "votes": 111,
+   "kjv": "Rejoice evermore."
+  },
+  {
+   "ref": "Romans 12:12",
+   "b": "ROM",
+   "c": 12,
+   "v": 12,
+   "votes": 104,
+   "kjv": "Rejoicing in hope; patient in tribulation; continuing instant in prayer;"
+  },
+  {
+   "ref": "James 1:2",
+   "b": "JAS",
+   "c": 1,
+   "v": 2,
+   "votes": 63,
+   "kjv": "My brethren, count it all joy when ye fall into divers temptations;"
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:45.813Z",
+  "cost": 0.00476
+ }
+}

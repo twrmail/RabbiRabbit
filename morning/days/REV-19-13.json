@@ -1,0 +1,90 @@
+{
+ "id": "REV-19-13",
+ "ref": {
+  "b": "REV",
+  "c": 19,
+  "v": 13,
+  "ve": null,
+  "label": "Revelation 19:13"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 13,
+    "text": "And he was clothed with a vesture dipped in blood: and his name is called The Word of God."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 13,
+    "text": "He is dressed in a robe dipped in blood, and His name is The Word of God."
+   }
+  ],
+  "web": [
+   {
+    "n": 13,
+    "text": "He is clothed in a garment sprinkled with blood. His name is called “The Word of God.”"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 13"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "3. His attributes: he is *faithful and true* to his covenant and promise, he is righteous in all his judicial and military proceedings, he has a penetrating insight into all the strength and stratagems of his enemies, he has a large and extensive dominion, many crowns, for he is *King of kings, and Lord of lords.* 4. His armour; and that is *a vesture dipped in blood,* either his own blood, by which he purchased this mediatorial power, or the blood of his enemies, over whom he has always prevailed. 5. His name: *The Word of God,* a name that none fully knows but himself, only this we know, that this *Word was God manifest in the flesh;* but his perfections are incomprehensible by any creature.",
+   "ok": false,
+   "metrics": {
+    "words": 133,
+    "sourceWords": 126,
+    "ratio": 1.06,
+    "ground": 0.9,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "reasons": [
+    "quotes Scripture from the block without quotation marks (“to his covenant and promise he is righteous…”)",
+    "not shorter than the original (133 words against 126)"
+   ],
+   "rejected": "Henry describes three things about this figure:\n\n3. His attributes: he is faithful and true to his covenant and promise. He is righteous in all his judicial and military proceedings. He has a penetrating insight into all the strength and stratagems of his enemies. He has a large and extensive dominion, many crowns, for he is King of kings and Lord of lords.\n\n4. His armor is a vesture dipped in blood. This is either his own blood, by which he purchased this mediatorial power, or the blood of his enemies, over whom he has always prevailed.\n\n5. His name is The Word of God, a name that none fully knows but himself. We know only that this Word was God manifest in the flesh, but his perfections are incomprehensible by any creature."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "John 1:1",
+   "b": "JHN",
+   "c": 1,
+   "v": 1,
+   "votes": 52,
+   "kjv": "In the beginning was the Word, and the Word was with God, and the Word was God."
+  },
+  {
+   "ref": "Isaiah 63:1",
+   "b": "ISA",
+   "c": 63,
+   "v": 1,
+   "votes": 18,
+   "kjv": "Who is this that cometh from Edom, with dyed garments from Bozrah? this that is glorious in his apparel, travelling in the greatness of his strength? I that speak in righteousness, mighty to save."
+  },
+  {
+   "ref": "John 1:14",
+   "b": "JHN",
+   "c": 1,
+   "v": 14,
+   "votes": 17,
+   "kjv": "And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:27:44.507Z",
+  "cost": 0.00388
+ }
+}

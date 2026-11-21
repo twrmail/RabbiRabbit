@@ -1,0 +1,86 @@
+{
+ "id": "MRK-13-35",
+ "ref": {
+  "b": "MRK",
+  "c": 13,
+  "v": 35,
+  "ve": null,
+  "label": "Mark 13:35"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 35,
+    "text": "Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning:"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 35,
+    "text": "Therefore keep watch, because you do not know when the master of the house will return—whether in the evening, at midnight, when the rooster crows, or in the morning."
+   }
+  ],
+  "web": [
+   {
+    "n": 35,
+    "text": "Watch therefore, for you don’t know when the lord of the house is coming—whether at evening, or at midnight, or when the rooster crows, or in the morning;"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "within",
+  "label": "Henry treats verse 35 together with verses 35-37"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "2. We ought to be always upon our watch, in expectation of his return, Mk 13:35-37. (1.) Our Lord *will come,* and will come as the *Master of the house,* to take account of his servants, of their work, and of the improvement they have made. (2.) We know not *when he will come;* and he has very wisely kept us at uncertainty, that we might all be always ready. We know not *when he will come,* just at what precise time; the *Master of the house* perhaps will come *at even,* at nine at night; or it may be *at midnight,* or a *cock-crowing,* at three in the morning, or perhaps not until six. This is applicable to his coming to us in particular, at our death, as well as to the general judgment. Our present life is a *night,* a dark night, compared with the other life; we know not in which watch of the night our Master will come, whether in the days of youth, or middle age, or old age; but, as soon as we are born, we begin to die, and therefore, as soon as we are capable of expecting any thing, we must expect death. (3.) Our great care must be, that, whenever our Lord comes, he do not *find us sleeping,* secure in ourselves, off our guard, indulging ourselves in ease and sloth, mindless of our work and duty, and thoughtless of our Lord's coming; *ready* to say, He will not come, and *unready* to meet him. (4.) His coming will indeed be *coming suddenly;* it will be a great *surprise* and *terror* to those that are careless, and asleep, it will come upon them as a thief in the night.",
+   "ok": true,
+   "metrics": {
+    "words": 223,
+    "sourceWords": 288,
+    "ratio": 0.77,
+    "ground": 0.73,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Henry says we must always watch for the Lord's return, as Mark 13:35-37 shows. First, the Lord will come as the Master of the house to check on his servants, their work, and what they have accomplished. Second, we do not know when he will come, and the Lord has wisely kept this hidden so we stay ready at all times. We cannot know the exact moment. The Master might come at nine in the evening, or midnight, or three in the morning, or six. This applies both to his coming to us at our death and to the final judgment. Our life now is like a dark night compared to the life to come. We do not know in which part of the night our Master will arrive, whether in our youth, middle years, or old age. But since we begin to die as soon as we are born, we must expect death as soon as we are able to think about it. Third, we must make sure that whenever the Lord comes, he does not find us asleep and careless, neglecting our work and duty, thinking he will not come, and unprepared to meet him. Fourth, his coming will be sudden. It will shock and terrify those who are careless and sleeping, coming on them like a thief in the night."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Matthew 24:42",
+   "b": "MAT",
+   "c": 24,
+   "v": 42,
+   "votes": 10,
+   "kjv": "Watch therefore: for ye know not what hour your Lord doth come."
+  },
+  {
+   "ref": "Mark 13:33",
+   "b": "MRK",
+   "c": 13,
+   "v": 33,
+   "votes": 10,
+   "kjv": "Take ye heed, watch and pray: for ye know not when the time is."
+  },
+  {
+   "ref": "Matthew 24:44",
+   "b": "MAT",
+   "c": 24,
+   "v": 44,
+   "votes": 8,
+   "kjv": "Therefore be ye also ready: for in such an hour as ye think not the Son of man cometh."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:13.652Z",
+  "cost": 0.00266
+ }
+}

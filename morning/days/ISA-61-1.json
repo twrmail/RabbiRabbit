@@ -1,0 +1,100 @@
+{
+ "id": "ISA-61-1",
+ "ref": {
+  "b": "ISA",
+  "c": 61,
+  "v": 1,
+  "ve": null,
+  "label": "Isaiah 61:1"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 1,
+    "text": "The Spirit of the Lord GOD is upon me; because the LORD hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound;"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 1,
+    "text": "The Spirit of the Lord GOD is on Me, because the LORD has anointed Me to preach good news to the poor. He has sent Me to bind up the brokenhearted, to proclaim liberty to the captives and freedom to the prisoners,"
+   }
+  ],
+  "web": [
+   {
+    "n": 1,
+    "text": "The Lord GOD’s Spirit is on me, because the LORD has anointed me to preach good news to the humble. He has sent me to bind up the broken hearted, to proclaim liberty to the captives and release to those who are bound,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 1"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "I. How he was fitted and qualified for this work: *The Spirit of the Lord God is upon me,* Isa 61:1. The prophets had the Spirit of God moving them at times, both instructing them what to say and exciting them to say it. Christ had the Spirit always resting on him without measure; but to the same intent that the prophets had, as a Spirit of counsel and a Spirit of courage, Isa 11:1-3. When he entered upon the execution of his prophetical office the Spirit, as a dove, *descended upon him,* Mt 3:16. This Spirit which was upon him he communicated to those whom he sent to proclaim the same glad tidings, saying to them, when he gave them their commission, *Receive you the Holy Ghost,* thereby ratifying it.",
+   "ok": true,
+   "metrics": {
+    "words": 108,
+    "sourceWords": 131,
+    "ratio": 0.82,
+    "ground": 0.68,
+    "refsKept": 0,
+    "refsInBlock": 3
+   },
+   "restated": "Henry explains how Christ was prepared for this work. The Spirit of the Lord God rested on him. The prophets received God's Spirit at times to teach them what to say and push them to say it. But Christ had the Spirit always on him without measure, serving the same purpose as it did for the prophets—as a Spirit of wisdom and courage. When Christ began his work as a prophet, the Spirit came down on him like a dove. He then gave this same Spirit to those he sent out to share the good news, telling them to receive the Holy Ghost and so confirming their mission."
+  },
+  {
+   "i": 1,
+   "original": "II. How he was appointed and ordained to it: *The Spirit of God is upon me, because the Lord God has anointed me.* What service God called him to he furnished him for; *therefore* he gave him his Spirit, because he had by a sacred and solemn unction set him apart to this great office, as kings and priests were of old destined to their offices by anointing. Hence the Redeemer was called the *Messiah,* the *Christ,* because he was *anointed with the oil of gladness above his fellows. He has sent me;* our Lord Jesus did not go unsent; he had a commission from him that is the fountain of power; *the Father sent him* and *gave him commandment.* This is a great satisfaction to us, that, whatever Christ said, he had a warrant from heaven for; his doctrine was not his, but his that sent him.\n\nIII. What the work was to which he was appointed and ordained.",
+   "ok": true,
+   "metrics": {
+    "words": 136,
+    "sourceWords": 160,
+    "ratio": 0.85,
+    "ground": 0.78,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "restated": "Henry explains how the Messiah was appointed to his work. The Spirit of God rests on him because the Lord has anointed him. God gave him his Spirit to equip him for the service he was called to do. By this sacred anointing, God set him apart for this great office, just as kings and priests were once set apart by anointing. The Redeemer was called the Messiah, the Christ, because he was anointed with the oil of gladness above his fellows. Jesus did not go on his own; he was sent by the Father, who is the source of all power, and received his commandment from him. This gives us confidence that whatever Christ taught, he had authority from heaven for it. His teaching came not from himself, but from the one who sent him."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Luke 4:18",
+   "b": "LUK",
+   "c": 4,
+   "v": 18,
+   "votes": 300,
+   "kjv": "The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised,"
+  },
+  {
+   "ref": "Luke 7:22",
+   "b": "LUK",
+   "c": 7,
+   "v": 22,
+   "votes": 163,
+   "kjv": "Then Jesus answering said unto them, Go your way, and tell John what things ye have seen and heard; how that the blind see, the lame walk, the lepers are cleansed, the deaf hear, the dead are raised, to the poor the gospel is preached."
+  },
+  {
+   "ref": "Isaiah 42:7",
+   "b": "ISA",
+   "c": 42,
+   "v": 7,
+   "votes": 151,
+   "kjv": "To open the blind eyes, to bring out the prisoners from the prison, and them that sit in darkness out of the prison house."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:51.675Z",
+  "cost": 0.0038
+ }
+}

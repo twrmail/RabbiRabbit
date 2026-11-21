@@ -1,0 +1,100 @@
+{
+ "id": "ROM-13-11",
+ "ref": {
+  "b": "ROM",
+  "c": 13,
+  "v": 11,
+  "ve": null,
+  "label": "Romans 13:11"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 11,
+    "text": "And that, knowing the time, that now it is high time to awake out of sleep: for now is our salvation nearer than when we believed."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 11,
+    "text": "And do this, understanding the occasion. The hour has come for you to wake up from your slumber, for our salvation is nearer now than when we first believed."
+   }
+  ],
+  "web": [
+   {
+    "n": 11,
+    "text": "Do this, knowing the time, that it is already time for you to awaken out of sleep, for salvation is now nearer to us than when we first believed."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 11"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "We are here taught a lesson of sobriety and godliness in ourselves. Our main care must be to look to ourselves. Four things we are here taught, as a Christian's directory for his day's work: when to awake, how to dress ourselves, how to walk, and what provision to make.",
+   "ok": true,
+   "metrics": {
+    "words": 38,
+    "sourceWords": 50,
+    "ratio": 0.76,
+    "ground": 0.46,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "restated": "Henry teaches us to be serious and godly. We must focus on watching ourselves. He gives four things a Christian should do each day: when to wake up, how to dress, how to walk, and what to prepare."
+  },
+  {
+   "i": 1,
+   "original": "I. When to awake: *Now it is high time to awake* (Ro 13:11), to awake out of the sleep of sin (for a sinful condition is a sleeping condition), out of the sleep of carnal security, sloth and negligence, out of the sleep of spiritual death, and out of the sleep of spiritual deadness; both the wise and foolish virgins slumbered and slept, Mt 25:5. We have need to be often excited and stirred up to awake. The word of command to all Christ's disciples is, *Watch. \"Awake*—be concerned about your souls and your eternal interest; take heed of sin, be ready to, and serious in, that which is good, and live in a constant expectation of the coming of our Lord. Considering,\" 1. \"The time we are cast into: *Knowing the time.* Consider what time of day it is with us, and you will see it is high time to awake. It is gospel time, it is the accepted time, it is working time; it is a time when more is expected than was in the times of that ignorance which God winked at, when people sat in darkness. It is high time to awake; for the sun has been up a great while, and shines in our faces. Have we this light to sleep in? See 1Th 5:5,6. It is high time to awake; for others are awake and up about us. Know the time to be a busy time; we have a great deal of work to do, and our Master is calling us to it again and again. Know the time to be a perilous time. We are in the midst of enemies and snares.",
+   "ok": true,
+   "metrics": {
+    "words": 190,
+    "sourceWords": 279,
+    "ratio": 0.68,
+    "ground": 0.58,
+    "refsKept": 2,
+    "refsInBlock": 3
+   },
+   "restated": "Henry says now is the time to wake up. We need to wake from the sleep of sin, from careless comfort and laziness, from spiritual death and numbness. Both the wise and foolish virgins slept, as Matthew 25:5 shows. Christ's command to all his followers is to watch and stay alert.\n\nHenry urges us to wake up and care about our souls and what will happen forever. We should guard against sin, be serious about doing good, and always expect the Lord to come back.\n\nHenry points to the time we live in as the reason to wake now:\n\n1. It is gospel time, the accepted time, the time for work. More is expected of us than in the old days when people sat in darkness and God overlooked their ignorance. The sun has been up a long time and shines in our faces. How can we sleep in this light? See 1 Thessalonians 5:5,6.\n\n2. Others around us are awake and busy. We have much work to do, and our Master keeps calling us to it.\n\n3. It is a dangerous time. We are surrounded by enemies and traps."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "1 Thessalonians 5:5",
+   "b": "1TH",
+   "c": 5,
+   "v": 5,
+   "votes": 48,
+   "kjv": "Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness."
+  },
+  {
+   "ref": "1 Peter 4:7",
+   "b": "1PE",
+   "c": 4,
+   "v": 7,
+   "votes": 43,
+   "kjv": "But the end of all things is at hand: be ye therefore sober, and watch unto prayer."
+  },
+  {
+   "ref": "Ephesians 5:14",
+   "b": "EPH",
+   "c": 5,
+   "v": 14,
+   "votes": 37,
+   "kjv": "Wherefore he saith, Awake thou that sleepest, and arise from the dead, and Christ shall give thee light."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:09.325Z",
+  "cost": 0.00379
+ }
+}

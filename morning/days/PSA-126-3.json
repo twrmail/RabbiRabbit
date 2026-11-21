@@ -1,0 +1,86 @@
+{
+ "id": "PSA-126-3",
+ "ref": {
+  "b": "PSA",
+  "c": 126,
+  "v": 3,
+  "ve": null,
+  "label": "Psalms 126:3"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 3,
+    "text": "The LORD hath done great things for us; whereof we are glad."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 3,
+    "text": "The LORD has done great things for us; we are filled with joy."
+   }
+  ],
+  "web": [
+   {
+    "n": 3,
+    "text": "The LORD has done great things for us, and we are glad."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 3"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "4. The acknowledgments which they themselves made of it, Ps 126:3. The heathen were but spectators, and spoke of it only as matter of news; they had no part nor lot in the matter; but the people of God spoke of it as sharers in it, (1.) With application: \"He has *done great things for us,* things that we are interested in and have advantage by.\" Thus it is comfortable speaking of the redemption Christ has wrought out as wrought out for us. *Who loved me, and gave himself for me.* (2.) With affection: \"*Whereof we are glad.* The heathen are amazed at it, and some of them angry, but we are glad.\" While Israel went a whoring from their God joy was forbidden them (Ho 9:1); but now that the iniquity of Jacob was purged by the captivity, and their sin taken away, now God makes them to rejoice. It is the repenting reforming people that are, and shall be, the rejoicing people. Observe here, [1.] God's appearances for his people are to be looked upon as great things. [2.] God is to be eyed as the author of all the great things done for the church. [3.] It is good to observe how the church's deliverances are for us, that we may rejoice in them.",
+   "ok": true,
+   "metrics": {
+    "words": 201,
+    "sourceWords": 217,
+    "ratio": 0.93,
+    "ground": 0.72,
+    "refsKept": 0,
+    "refsInBlock": 2
+   },
+   "restated": "The people of God themselves spoke about what God had done, and they spoke as those who shared in it. The heathen were only watching and reporting it as news, with no real stake in the matter. But God's people spoke differently.\n\nFirst, they spoke with personal application. They said God had done great things for us, things we benefit from and have a stake in. This is how we should speak of Christ's redemption as something done for us. Second, they spoke with real feeling. They said we are glad about it. The heathen might be amazed or even angry, but God's people rejoiced. When Israel turned away from God, joy was taken from them. But now that their sin had been purged through captivity and taken away, God made them rejoice. The people who repent and reform are the ones who rejoice, and will keep rejoicing.\n\nHenry points out three things to notice here:\n\n1. God's actions for his people should be seen as great things.\n2. God is the one who does all the great things for the church.\n3. It is good to see how the church's deliverances are for us, so we can rejoice in them."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Luke 1:49",
+   "b": "LUK",
+   "c": 1,
+   "v": 49,
+   "votes": 17,
+   "kjv": "For he that is mighty hath done to me great things; and holy is his name."
+  },
+  {
+   "ref": "Isaiah 51:9",
+   "b": "ISA",
+   "c": 51,
+   "v": 9,
+   "votes": 9,
+   "kjv": "Awake, awake, put on strength, O arm of the LORD; awake, as in the ancient days, in the generations of old. Art thou not it that hath cut Rahab, and wounded the dragon?"
+  },
+  {
+   "ref": "Isaiah 66:14",
+   "b": "ISA",
+   "c": 66,
+   "v": 14,
+   "votes": 9,
+   "kjv": "And when ye see this, your heart shall rejoice, and your bones shall flourish like an herb: and the hand of the LORD shall be known toward his servants, and his indignation toward his enemies."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:42.452Z",
+  "cost": 0.0025
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "LUK-1-47",
+ "ref": {
+  "b": "LUK",
+  "c": 1,
+  "v": 47,
+  "ve": null,
+  "label": "Luke 1:47"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 47,
+    "text": "And my spirit hath rejoiced in God my Saviour."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 47,
+    "text": "and my spirit rejoices in God my Savior!"
+   }
+  ],
+  "web": [
+   {
+    "n": 47,
+    "text": "My spirit has rejoiced in God my Savior,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 47"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "(2.) With great complacency in him as *her Saviour: My spirit rejoiceth in God my Saviour.* This seems to have reference to the Messiah, whom she was to be the mother of. She calls him *God her Saviour;* for the angel had told her that he should be the *Son of the Highest,* and that his name should be *Jesus, a Saviour;* this she fastened upon, with application to herself: *He is God my Saviour.* Even the mother of our Lord had need of an interest in him as her Saviour, and would have been undone without it: and she glories more in that happiness which she had in common with all believers than in being his mother, which was an honour peculiar to herself, and this agrees with the preference Christ have to obedient believers above his mother and brethren; see Mt 12:50, Lu 11:27,28. Note, Those that have Christ for their God and Saviour have a great deal of reason to rejoice, to *rejoice in spirit,* that is rejoicing as Christ did (Lu 10:21), with spiritual joy.\n\n2. Here are just causes assigned for this joy and praise.",
+   "ok": true,
+   "metrics": {
+    "words": 156,
+    "sourceWords": 190,
+    "ratio": 0.82,
+    "ground": 0.67,
+    "refsKept": 3,
+    "refsInBlock": 3
+   },
+   "restated": "Mary's great joy comes from seeing God as her Saviour. This points to the Messiah she would be the mother of. She calls him God her Saviour because the angel told her he would be the Son of the Highest, and his name would be Jesus, a Saviour. She took this promise for herself: He is God my Saviour. Even the mother of our Lord needed him as her Saviour and would have been lost without that. Henry notes she takes more pride in the happiness she shares with all believers than in being his mother alone, which was her special honor. This matches what Christ said about preferring obedient believers above his mother and brethren (Mt 12:50, Lu 11:27,28). Those who have Christ as their God and Saviour have real reason to rejoice in spirit, the kind of spiritual joy Christ himself had (Lu 10:21).\n\n2. There are solid reasons for this joy and praise.",
+   "retried": true
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Psalms 35:9",
+   "b": "PSA",
+   "c": 35,
+   "v": 9,
+   "votes": 10,
+   "kjv": "And my soul shall be joyful in the LORD: it shall rejoice in his salvation."
+  },
+  {
+   "ref": "1 Timothy 2:3",
+   "b": "1TI",
+   "c": 2,
+   "v": 3,
+   "votes": 8,
+   "kjv": "For this is good and acceptable in the sight of God our Saviour;"
+  },
+  {
+   "ref": "Habakkuk 3:18",
+   "b": "HAB",
+   "c": 3,
+   "v": 18,
+   "votes": 8,
+   "kjv": "Yet I will rejoice in the LORD, I will joy in the God of my salvation."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:55.807Z",
+  "cost": 0.00443
+ }
+}

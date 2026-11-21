@@ -1,0 +1,100 @@
+{
+ "id": "MAL-3-1",
+ "ref": {
+  "b": "MAL",
+  "c": 3,
+  "v": 1,
+  "ve": null,
+  "label": "Malachi 3:1"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 1,
+    "text": "Behold, I will send my messenger, and he shall prepare the way before me: and the LORD, whom ye seek, shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in: behold, he shall come, saith the LORD of hosts."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 1,
+    "text": "“Behold, I will send My messenger, who will prepare the way before Me. Then the Lord whom you seek will suddenly come to His temple—the Messenger of the covenant, in whom you delight—see, He is coming,” says the LORD of Hosts."
+   }
+  ],
+  "web": [
+   {
+    "n": 1,
+    "text": "“Behold, I send my messenger, and he will prepare the way before me! The Lord, whom you seek, will suddenly come to his temple. Behold, the messenger of the covenant, whom you desire, is coming!” says the LORD of Armies."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 1"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "I. A prophecy of the appearing of his forerunner John the Baptist, which the prophet Isaiah had foretold (Isa 40:3), as the *preparing* of the *way of the Lord,* to which this seems to have a reference, for the words of the latter prophets confirmed those of the former: *Behold, I will send my messenger,* or *I do send him,* or *I am sending* him. \"I am determined to send him; he will now shortly come, and will not come unsent, though to a careless generation he comes unsent for.\" Observe, 1. He is *God's messenger;* that is his office; he is *Malachi* (so the word is), the same with the name of this prophet; he is *my angel,* my *ambassador.* John Baptist had his commission *from heaven, and not of men.* All held John Baptist for a prophet, for he was God's messenger, as the prophets were, and came on the same errand to the world that they were sent upon—to call men to repentance and reformation. 2. He is Christ's harbinger: He *shall prepare the way before me,* by calling men to those duties which qualify them to receive the comforts of the Messiah and his coming, and by taking them off from a confidence in their relation to Abraham *as their father* (which, they thought, would serve their turn without a saviour), and by giving notice that the Messiah was now at hand, and so raising men's expectations of him, and making them readily to go into the measures he would take for the setting up of his kingdom in the world.",
+   "ok": true,
+   "metrics": {
+    "words": 230,
+    "sourceWords": 265,
+    "ratio": 0.87,
+    "ground": 0.71,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "This is a prophecy about John the Baptist, the forerunner of Christ. The prophet Isaiah had already foretold this (Isa 40:3) as the preparing of the way of the Lord, and Malachi's words confirm what Isaiah said. When God says I will send my messenger, he means he is determined to send him soon. John will come sent from heaven, even though a careless generation may not recognize it.\n\nHenry points out two things about this messenger:\n\n1. He is God's messenger—that is his office. His name means messenger or angel, and he is God's ambassador. John the Baptist received his commission from heaven, not from men. Everyone recognized John as a prophet because he was God's messenger, just like the earlier prophets. He came on the same errand they did: to call people to turn from their sins and change their ways.\n\n2. He is Christ's forerunner. He will prepare the way before Christ by calling people to the duties that make them ready to receive the Messiah's comfort and his coming. He will turn them away from trusting in their connection to Abraham as their father, which they thought would be enough without a savior. He will announce that the Messiah is near and stir up people's hope for him, making them willing to accept what the Messiah would do to set up his kingdom in the world."
+  },
+  {
+   "i": 1,
+   "original": "Note, God observes a method in his work, and, before he comes, takes care to have his way prepared. This is like the giving of a sign. The church was told, long before, that the Messiah would come; and here it is added that, a little before he appears, there shall be a signal given; a great prophet shall arise, that shall give notice of his approach, and call to the everlasting gates and doors to *lift up their heads* and give him admission. The accomplishment of this is a proof that *Jesus is the Christ,* is he that *should come,* and we are to *look for no other;* for there was such a messenger sent before him, who *made ready a people prepared for the Lord,* Lu 1:17. The Jewish writers run into gross absurdities to evade the conviction of this evidence; some of them say that this messenger is the *angel of death,* who shall take the wicked out of this life, to be sent into hell torments; others of them say that it is Messiah the son of Joseph, who shall appear before Messiah the son of David; others, this prophet himself; others, an angel from heaven: such mistakes do those run into that will not receive the truth.",
+   "ok": true,
+   "metrics": {
+    "words": 174,
+    "sourceWords": 212,
+    "ratio": 0.82,
+    "ground": 0.74,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "God works in an orderly way. Before he comes, he makes sure his path is prepared. This is like giving a sign ahead of time. The church had long been told that the Messiah would come. Here God adds that just before he appears, there will be a signal: a great prophet will arise to announce his coming and call on the gates to open for him. That this happened proves Jesus is the Christ, the one who was to come, and we need look for no other. A messenger was sent before him who made ready a people prepared for the Lord (Lu 1:17). Henry notes that Jewish writers twist themselves into absurd explanations to avoid this evidence. Some say the messenger is the angel of death, sent to take the wicked into hell. Others say it is Messiah the son of Joseph, who comes before Messiah the son of David. Still others say it is the prophet himself, or an angel from heaven. These mistakes come from refusing to accept the truth."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Malachi 4:5",
+   "b": "MAL",
+   "c": 4,
+   "v": 5,
+   "votes": 20,
+   "kjv": "Behold, I will send you Elijah the prophet before the coming of the great and dreadful day of the LORD:"
+  },
+  {
+   "ref": "Luke 1:76",
+   "b": "LUK",
+   "c": 1,
+   "v": 76,
+   "votes": 18,
+   "kjv": "And thou, child, shalt be called the prophet of the Highest: for thou shalt go before the face of the Lord to prepare his ways;"
+  },
+  {
+   "ref": "Mark 1:2",
+   "b": "MRK",
+   "c": 1,
+   "v": 2,
+   "votes": 15,
+   "kjv": "As it is written in the prophets, Behold, I send my messenger before thy face, which shall prepare thy way before thee."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:51.229Z",
+  "cost": 0.00506
+ }
+}

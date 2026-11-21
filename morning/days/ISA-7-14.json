@@ -1,0 +1,100 @@
+{
+ "id": "ISA-7-14",
+ "ref": {
+  "b": "ISA",
+  "c": 7,
+  "v": 14,
+  "ve": null,
+  "label": "Isaiah 7:14"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 14,
+    "text": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 14,
+    "text": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and give birth to a son, and will call Him Immanuel."
+   }
+  ],
+  "web": [
+   {
+    "n": 14,
+    "text": "Therefore the Lord himself will give you a sign. Behold, the virgin will conceive, and bear a son, and shall call his name Immanuel."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 14"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "IV. The prophet, in God's name, gives them a sign: \"You will not ask a sign, but the unbelief of man shall not make the promise of God of no effect: *The Lord himself shall give you a sign* (Isa 7:14), a double sign.\"",
+   "ok": true,
+   "metrics": {
+    "words": 40,
+    "sourceWords": 44,
+    "ratio": 0.91,
+    "ground": 0.73,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Henry says the prophet speaks for God and gives them a sign. Even though they won't ask for one, human unbelief won't cancel God's promise. The Lord himself will give a sign (Isa 7:14), and it is a double sign."
+  },
+  {
+   "i": 1,
+   "original": "1. \"A sign in general of his good-will to Israel and to the house of David. You may conclude it that he has mercy in store for you, and that you are not forsaken of your God, how great soever your present distress and danger are; for of your nation, of your family, the Messiah is to be born, and you cannot be destroyed while that blessing is in you, which shall be introduced,\" (1.) \"In a glorious manner; for, whereas you have been often told that he should be born among you, I am now further to tell you that he shall be born of a virgin, which will signify both the divine power and the divine purity with which he shall be brought into the world,—that he shall be a extraordinary person, for he shall not be born by ordinary generation,—and that he shall be a holy thing, not stained with the common pollutions of the human nature, therefore incontestably fit to have the throne of his father David given him.\" Now this, though it was to be accomplished above 500 years after, was a most encouraging sign to the house of David (and to them, under that title, this prophecy is directed, Isa 7:13) and an assurance that God would not cast them off. Ephraim did indeed envy Judah (Isa 11:13) and sought the ruin of that kingdom, but could not prevail; for the sceptre should never depart from Judah till the coming of Shiloh, Ge 49:10. Those whom God designs for the great salvation may take that for a sign to them that they shall not be swallowed up by any trouble they meet with in the way.",
+   "ok": true,
+   "metrics": {
+    "words": 224,
+    "sourceWords": 282,
+    "ratio": 0.79,
+    "ground": 0.62,
+    "refsKept": 2,
+    "refsInBlock": 3
+   },
+   "restated": "Henry says this sign shows God's goodwill toward Israel and the house of David. It means God has mercy waiting for you and has not abandoned you, no matter how bad things look now. The Messiah will come from your nation and your family, so you cannot be destroyed while that blessing remains in you.\n\nThis blessing will arrive in a glorious way. Henry points out that you have heard the Messiah would be born among you, but now comes something more: he will be born of a virgin. This shows both God's power and God's purity in bringing him into the world. He will be an extraordinary person, not born through ordinary means. He will be holy, unstained by the common flaws of human nature, and therefore completely fit to sit on the throne of his father David.\n\nThough this would not happen for over 500 years, Henry says it was deeply encouraging to the house of David (and the prophecy is directed to them, Isa 7:13). It assured them God would not cast them off. Ephraim envied Judah and tried to destroy that kingdom, but could not succeed. The scepter would never leave Judah until Shiloh came (Ge 49:10). Those whom God plans to save greatly can take this as a sign that no trouble on the way will swallow them up."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Matthew 1:23",
+   "b": "MAT",
+   "c": 1,
+   "v": 23,
+   "votes": 148,
+   "kjv": "Behold, a virgin shall be with child, and shall bring forth a son, and they shall call his name Emmanuel, which being interpreted is, God with us."
+  },
+  {
+   "ref": "Isaiah 9:6",
+   "b": "ISA",
+   "c": 9,
+   "v": 6,
+   "votes": 81,
+   "kjv": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace."
+  },
+  {
+   "ref": "Luke 1:31",
+   "b": "LUK",
+   "c": 1,
+   "v": 31,
+   "votes": 51,
+   "kjv": "And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:30:00.619Z",
+  "cost": 0.00405
+ }
+}

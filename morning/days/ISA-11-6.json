@@ -1,0 +1,101 @@
+{
+ "id": "ISA-11-6",
+ "ref": {
+  "b": "ISA",
+  "c": 11,
+  "v": 6,
+  "ve": null,
+  "label": "Isaiah 11:6"
+ },
+ "status": "ok",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 6,
+    "text": "The wolf also shall dwell with the lamb, and the leopard shall lie down with the kid; and the calf and the young lion and the fatling together; and a little child shall lead them."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 6,
+    "text": "The wolf will live with the lamb, and the leopard will lie down with the goat; the calf and young lion and fatling will be together, and a little child will lead them."
+   }
+  ],
+  "web": [
+   {
+    "n": 6,
+    "text": "The wolf will live with the lamb, and the leopard will lie down with the young goat, the calf, the young lion, and the fattened calf together; and a little child will lead them."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 6"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "1. Unity or concord, which is intimated in these figurative promises, that even *the wolf shall dwell* peaceably *with the lamb;* men of the most fierce and furious dispositions, who used to bite and devour all about them, shall have their temper so strangely altered by the efficacy of the gospel and grace of Christ that they shall live in love even with the weakest and such as formerly they would have made an easy prey of. So far shall the sheep be from hurting one another, as sometimes they have done (Eze 34:20,21), that even the wolves shall agree with them. Christ, who is our peace, came to slay all enmities and to settle lasting friendships among his followers, particularly between Jews and Gentiles: when multitudes of both, being converted to the faith of Christ, united in one sheep-fold, then the wolf and the lamb dwelt together; the wolf did not so much as threaten the lamb, nor was the lamb afraid of the wolf. *The leopard shall* not only not tear the kid, but shall *lie down with her:* even *their young ones shall lie down together,* and shall be trained up in a blessed amity, in order to the perpetuating of it. *The lion* shall cease to be ravenous and *shall eat straw like the ox,* as some think all the beasts of prey did before the fall. *The asp* and *the cockatrice* shall cease to be venomous, so that parents shall let their children *play* with them and *put their hands* among them. A generation of vipers shall become a seed of saints, and the old complaint of *homo homini lupus—man is a wolf to man,* shall be at an end. Those that inhabit the holy mountain shall live as amicably as the creatures did that were with Noah in the ark, and it shall be a means of their preservation, for *they shall not hurt nor destroy* one another as they have done. Now, (1.) This is fulfilled in the wonderful effect of the gospel upon the minds of those that sincerely embrace it; it changes the nature, and makes those that trampled on the meek of the earth, not only meek like them, but affectionate towards them. When Paul, who had persecuted the saints, joined himself to them, then the *wolf dwelt with the lamb.* (2.) Some are willing to hope it shall yet have a further accomplishment in the latter days, when *swords shall be beaten into ploughshares.*",
+   "ok": true,
+   "metrics": {
+    "words": 332,
+    "sourceWords": 415,
+    "ratio": 0.8,
+    "ground": 0.64,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Henry says this passage uses animal pictures to show peace and unity. Fierce and violent people, who used to hurt everyone around them, will have their nature so completely changed by the gospel and Christ's grace that they will live in love even with the weakest people. They used to prey on them, but that will end. Sheep will stop hurting each other as they sometimes have (Eze 34:20,21), and even wolves will live at peace with them. Christ is our peace. He came to end all fighting and create lasting friendship among his followers, especially between Jews and Gentiles. When many from both groups turned to Christ and joined together in one flock, the wolf and lamb lived together. The wolf did not threaten the lamb, and the lamb was not afraid.\n\nThe leopard will not only stop tearing the kid but will lie down with her. Even their young will lie down together and grow up in blessed friendship that will last. The lion will stop being wild and eat straw like the ox, as some think all wild animals did before the fall. The snake and viper will lose their poison, so parents will let their children play with them. A generation of vipers will become a seed of saints. The old saying that man is a wolf to man will end. Those on the holy mountain will live as peacefully as the creatures did with Noah in the ark. They will not hurt or destroy each other as they have done before.\n\nHenry points out two things:\n\n1. This is already happening through the wonderful power of the gospel on those who truly accept it. It changes people's nature and makes those who once trampled the humble become humble and loving toward them. When Paul, who had hunted down believers, joined them, then the wolf dwelt with the lamb.\n\n2. Some hope it will happen even more fully in the future, when swords will be turned into plowshares.",
+   "retried": true
+  },
+  {
+   "i": 1,
+   "original": "2. Safety or security. Christ, the great Shepherd, shall take such care of the flock that those who would hurt them shall not; they shall not only not destroy one another, but no enemy from without shall be permitted to give them any molestation. The property of troubles, and of death itself, shall be so altered that they shall not do any real hurt to, much less shall they be the destruction of, any that *have their conversation in the holy mountain,* 1Pe 3:13. *Who,* or what, *can harm us, if we be followers of him that is good?* God's people shall be delivered, not only from evil, but from the fear of it. Even *the sucking child* shall without any terror *play upon the hole of the asp;* blessed Paul does so when he says, *Who shall separate us from the love of Christ?* and, *O death! where is thy sting?*",
+   "ok": true,
+   "metrics": {
+    "words": 122,
+    "sourceWords": 152,
+    "ratio": 0.8,
+    "ground": 0.64,
+    "refsKept": 1,
+    "refsInBlock": 1
+   },
+   "restated": "Christ the great Shepherd will protect his flock so carefully that those who would hurt them cannot. They will not destroy each other, and no outside enemy will be allowed to bother them. Troubles and even death itself will lose their power to truly harm anyone who lives on God's holy mountain (1Pe 3:13). If we follow the one who is good, what can really hurt us? God's people will be saved not just from evil but from fear of it. Even a small child will play safely at the hole of a snake without terror. Henry points to Paul's words: Who can separate us from Christ's love? and Death, where is your sting? These show the security God gives his people."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Isaiah 65:25",
+   "b": "ISA",
+   "c": 65,
+   "v": 25,
+   "votes": 31,
+   "kjv": "The wolf and the lamb shall feed together, and the lion shall eat straw like the bullock: and dust shall be the serpent’s meat. They shall not hurt nor destroy in all my holy mountain, saith the LORD."
+  },
+  {
+   "ref": "Hosea 2:18",
+   "b": "HOS",
+   "c": 2,
+   "v": 18,
+   "votes": 19,
+   "kjv": "And in that day will I make a covenant for them with the beasts of the field, and with the fowls of heaven, and with the creeping things of the ground: and I will break the bow and the sword and the battle out of the earth, and will make them to lie down safely."
+  },
+  {
+   "ref": "Ezekiel 34:25",
+   "b": "EZK",
+   "c": 34,
+   "v": 25,
+   "votes": 15,
+   "kjv": "And I will make with them a covenant of peace, and will cause the evil beasts to cease out of the land: and they shall dwell safely in the wilderness, and sleep in the woods."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:59.770Z",
+  "cost": 0.00906
+ }
+}

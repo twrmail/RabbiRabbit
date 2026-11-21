@@ -1,0 +1,104 @@
+{
+ "id": "TIT-2-13",
+ "ref": {
+  "b": "TIT",
+  "c": 2,
+  "v": 13,
+  "ve": null,
+  "label": "Titus 2:13"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 13,
+    "text": "Looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ;"
+   }
+  ],
+  "bsb": [
+   {
+    "n": 13,
+    "text": "as we await the blessed hope and glorious appearance of our great God and Savior Jesus Christ."
+   }
+  ],
+  "web": [
+   {
+    "n": 13,
+    "text": "looking for the blessed hope and appearing of the glory of our great God and Savior, Jesus Christ,"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 13"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "(3.) To look for the glories of another world, to which a sober, righteous, and godly life in this is preparative: *Looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ.* Hope, by a metonymy, is put for the thing hoped for, namely, heaven and the felicities thereof, called emphatically *that hope,* because it is the great thing we look and long and wait for; and a *blessed hope,* because, when attained, we shall be completely happy for ever. *And the glorious appearing of the great God and our Saviour Jesus Christ.* This denotes both the time of the accomplishing of our hope and the sureness and greatness of it: it will be at the second appearing of Christ, when he shall come *in his own glory, and in his Father's, and of the holy angels,* Lu 9:26. His own glory which he had before the world was; and his Father's, being *the express image of his person,* and as God-man, his delegated ruler and Judge; and of the holy angels, as his ministers and glorious attendants. His first coming was in meanness, to satisfy justice and purchase happiness; his second will be in majesty, to bestow and instate his people in it. *Christ was once offered to bear the sins of many; and unto those that look for him will he appear the second time, without sin, unto salvation,* Heb 9:28.",
+   "ok": false,
+   "metrics": {
+    "words": 236,
+    "sourceWords": 240,
+    "ratio": 0.98,
+    "ground": 0.89,
+    "refsKept": 2,
+    "refsInBlock": 2
+   },
+   "reasons": [
+    "not shorter than the original (236 words against 240)"
+   ],
+   "rejected": "Christians should look for the glories of another world. A sober, righteous, and godly life in this world prepares us for that. Henry explains that hope here means the thing we hope for—heaven and its blessings. It is called that hope because it is the great thing we look for and wait for, and a blessed hope because when we reach it, we will be completely happy forever.\n\nThe glorious appearing of the great God and our Saviour Jesus Christ shows both when our hope will be fulfilled and how sure and great it is. This will happen at Christ's second coming, when he will come in his own glory, in his Father's glory, and in the glory of the holy angels as his ministers and attendants (Lu 9:26). His own glory is what he had before the world was made. His Father's glory comes because Christ is the express image of his person and as God-man is his delegated ruler and Judge. The holy angels will be his glorious attendants.\n\nHenry points out that Christ's first coming was in humility, to satisfy justice and purchase happiness for us. His second coming will be in majesty, to give his people that happiness and place them in it. Christ was once offered to bear the sins of many, and to those who look for him he will appear the second time without sin, unto salvation (Heb 9:28)."
+  },
+  {
+   "i": 1,
+   "original": "*The great God and our Saviour* (or *even our Saviour*) *Jesus Christ;* for they are not two subjects, but one only, as appears by the single article, *tou megalou Theou kai Soteros,* not *kai tou Soteros,* and so is *kai* rendered 1Co 15:24, *When he shall have delivered up the kingdom to God, even the Father;* *to Theo kai Patri.* Christ then is the *great God,* not figuratively, as magistrates and others are sometimes called gods, or as appearing and acting in the name of God, but properly and absolutely, *the true God* (1Jo 5:20), *the mighty God* (Isa 9:6), *who, being in the form of God, thought it not robbery to be equal with God,* Php 2:6. In his second coming he will reward his servants, and bring them to glory with him. Observe, [1.] There is a common and blessed hope for all true Christians in the other world. If in this life only they had hope in Christ, they were of all men the most miserable, 1Co 15:19. By hope is meant the thing hoped for, namely, Christ himself, who is called *our hope* (1Ti 1:1), and blessedness in and through him, even riches of glory (Eph 1:18), hence fitly termed here *that blessed hope.* [2.] The design of the gospel is to stir up all to a good life by this blessed hope. *Gird up the loins of your mind, be sober, and hope to the end for the grace that is to be brought unto you at the revelation of Jesus Christ,* 1Pe 1:13.",
+   "ok": true,
+   "metrics": {
+    "words": 208,
+    "sourceWords": 259,
+    "ratio": 0.8,
+    "ground": 0.68,
+    "refsKept": 3,
+    "refsInBlock": 8
+   },
+   "restated": "The great God and our Saviour Jesus Christ are not two separate subjects but one, as shown by the grammar. Christ is truly and fully the great God, not just figuratively as magistrates are sometimes called gods, and not merely as someone acting in God's name. He is the true God, the mighty God, who existed in the form of God and did not think it wrong to be equal with God (Php 2:6).\n\nWhen Christ comes a second time, he will reward his servants and bring them to glory with him. Henry makes two observations:\n\n1. All true Christians share a common and blessed hope for the world to come. If their hope in Christ were only for this life, they would be the most miserable of all people (1Co 15:19). By hope Henry means the thing hoped for itself, which is Christ, called our hope, and the blessedness found in him, the riches of glory. This is why it is rightly called that blessed hope.\n\n2. The gospel's purpose is to move everyone toward a good life through this blessed hope. The Scripture says to prepare your minds, stay clear-headed, and hope completely for the grace coming to you when Jesus Christ is revealed (1Pe 1:13).",
+   "retried": true
+  }
+ ],
+ "leads": [
+  {
+   "ref": "2 Timothy 4:8",
+   "b": "2TI",
+   "c": 4,
+   "v": 8,
+   "votes": 25,
+   "kjv": "Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing."
+  },
+  {
+   "ref": "1 Corinthians 1:7",
+   "b": "1CO",
+   "c": 1,
+   "v": 7,
+   "votes": 23,
+   "kjv": "So that ye come behind in no gift; waiting for the coming of our Lord Jesus Christ:"
+  },
+  {
+   "ref": "Matthew 16:27",
+   "b": "MAT",
+   "c": 16,
+   "v": 27,
+   "votes": 19,
+   "kjv": "For the Son of man shall come in the glory of his Father with his angels; and then he shall reward every man according to his works."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:28:26.758Z",
+  "cost": 0.01085
+ }
+}

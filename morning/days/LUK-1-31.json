@@ -1,0 +1,104 @@
+{
+ "id": "LUK-1-31",
+ "ref": {
+  "b": "LUK",
+  "c": 1,
+  "v": 31,
+  "ve": null,
+  "label": "Luke 1:31"
+ },
+ "status": "partial",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 31,
+    "text": "And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 31,
+    "text": "Behold, you will conceive and give birth to a son, and you are to give Him the name Jesus."
+   }
+  ],
+  "web": [
+   {
+    "n": 31,
+    "text": "Behold, you will conceive in your womb and give birth to a son, and shall name him ‘Jesus.’"
+   }
+  ]
+ },
+ "teacher": {
+  "id": "henry",
+  "name": "Matthew Henry",
+  "how": "own",
+  "label": "Henry’s note on verse 31"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "1. Though she is a *virgin,* she shall have the honour of being a *mother:* \"*Thou shalt conceive in thy womb, and bring forth a son,* and thou shalt have the naming of him; thou shalt *call his name Jesus,*\" Lu 1:31. It was the sentence upon Eve, that, though she should have the honour to be the *mother of all living,* yet this mortification shall be an allay to that honour, that *her desire shall be to her husband,* and he *shall rule over her,* Ge 3:16. But Mary has the honour without the allay.",
+   "ok": true,
+   "metrics": {
+    "words": 78,
+    "sourceWords": 96,
+    "ratio": 0.81,
+    "ground": 0.62,
+    "refsKept": 0,
+    "refsInBlock": 2
+   },
+   "restated": "Though Mary is a virgin, she will have the honor of being a mother. She will conceive and bring forth a son, and she herself will name him Jesus. Henry points out that Eve was told she would be the mother of all living, but that honor came with a mortification: her desire would be toward her husband, and he would rule over her. Mary, however, receives the honor of motherhood without this painful condition attached to it."
+  },
+  {
+   "i": 1,
+   "original": "2. Though she lives in *poverty* and *obscurity,* yet she shall have the honour to be the mother of the Messiah; her son shall be named *Jesus—a Saviour,* such a one as the world *needs,* rather than such one as the Jews *expect.*",
+   "ok": false,
+   "metrics": {
+    "words": 43,
+    "sourceWords": 43,
+    "ratio": 1,
+    "ground": 0.76,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "reasons": [
+    "names “Mary”, who is not in the block",
+    "not shorter than the original (43 words against 43)"
+   ],
+   "rejected": "Though Mary lives in poverty and obscurity, Henry points out she will have the great honor of being the mother of the Messiah. Her son will be named Jesus—a Saviour the world truly needs, not the kind of saviour the Jews were expecting."
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Isaiah 7:14",
+   "b": "ISA",
+   "c": 7,
+   "v": 14,
+   "votes": 30,
+   "kjv": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel."
+  },
+  {
+   "ref": "Matthew 1:21",
+   "b": "MAT",
+   "c": 1,
+   "v": 21,
+   "votes": 23,
+   "kjv": "And she shall bring forth a son, and thou shalt call his name JESUS: for he shall save his people from their sins."
+  },
+  {
+   "ref": "Matthew 1:25",
+   "b": "MAT",
+   "c": 1,
+   "v": 25,
+   "votes": 19,
+   "kjv": "And knew her not till she had brought forth her firstborn son: and he called his name JESUS."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:30:10.975Z",
+  "cost": 0.00406
+ }
+}

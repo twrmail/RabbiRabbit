@@ -1,0 +1,104 @@
+{
+ "id": "ISA-35-1",
+ "ref": {
+  "b": "ISA",
+  "c": 35,
+  "v": 1,
+  "ve": null,
+  "label": "Isaiah 35:1"
+ },
+ "status": "failed",
+ "scripture": {
+  "kjv": [
+   {
+    "n": 1,
+    "text": "The wilderness and the solitary place shall be glad for them; and the desert shall rejoice, and blossom as the rose."
+   }
+  ],
+  "bsb": [
+   {
+    "n": 1,
+    "text": "The wilderness and the dry land will be glad; the desert will rejoice and blossom like a rose."
+   }
+  ],
+  "web": [
+   {
+    "n": 1,
+    "text": "The wilderness and the dry land will be glad. The desert will rejoice and blossom like a rose."
+   }
+  ]
+ },
+ "teacher": {
+  "id": "gill",
+  "name": "John Gill",
+  "how": "own",
+  "label": "Gill’s note on verse 1"
+ },
+ "blocks": [
+  {
+   "i": 0,
+   "original": "The wilderness, and the solitary place, shall be glad for them,.... Either for the wild beasts, satyrs, owls, and vultures, that shall inhabit Edom or Rome, and because it shall be an habitation for them: or they shall be glad for them, the Edomites, and for the destruction of them; that is, as the Targum paraphrases it,\n\n\"they that dwell in the wilderness, in the dry land, shall rejoice;''",
+   "ok": false,
+   "metrics": {
+    "words": 66,
+    "sourceWords": 69,
+    "ratio": 0.96,
+    "ground": 0.71,
+    "refsKept": 0,
+    "refsInBlock": 0
+   },
+   "reasons": [
+    "not shorter than the original (66 words against 69)"
+   ],
+   "rejected": "Gill says the wilderness and solitary place will be glad for them. This means either the wild beasts, satyrs, owls, and vultures that will live in Edom or Rome will be glad because it becomes their home. Or it means people will be glad for the Edomites and their destruction. The Targum puts it this way: those living in the wilderness and dry land will rejoice."
+  },
+  {
+   "i": 1,
+   "original": "the church, in the wilderness, being obliged to fly there from the persecution of antichrist, and thereby become desolate as a wilderness; and so called, in allusion to the Israelites in the wilderness, Acts 7:38 shall now rejoice at the ruin of Rome, and the antichristian states; by which means it shall come into a more flourishing condition; see Revelation 12:14,\n\nand the desert shall rejoice, and blossom as the rose; or \"as the lily\", as the Septuagint, Vulgate Latin, and Arabic versions; and so the Targum,\n\n\"as the lilies:''",
+   "ok": true,
+   "metrics": {
+    "words": 59,
+    "sourceWords": 90,
+    "ratio": 0.66,
+    "ground": 0.72,
+    "refsKept": 2,
+    "refsInBlock": 2
+   },
+   "restated": "The church, forced to flee into the wilderness to escape persecution from antichrist, becomes desolate like the Israelites in the wilderness (Acts 7:38). Gill says it will now rejoice when Rome and the antichristian states are destroyed, entering a more flourishing condition (Revelation 12:14). The desert will blossom as the rose, or as the lily according to some versions.",
+   "retried": true
+  }
+ ],
+ "leads": [
+  {
+   "ref": "Ezekiel 36:35",
+   "b": "EZK",
+   "c": 36,
+   "v": 35,
+   "votes": 17,
+   "kjv": "And they shall say, This land that was desolate is become like the garden of Eden; and the waste and desolate and ruined cities are become fenced, and are inhabited."
+  },
+  {
+   "ref": "Isaiah 51:3",
+   "b": "ISA",
+   "c": 51,
+   "v": 3,
+   "votes": 17,
+   "kjv": "For the LORD shall comfort Zion: he will comfort all her waste places; and he will make her wilderness like Eden, and her desert like the garden of the LORD; joy and gladness shall be found therein, thanksgiving, and the voice of melody."
+  },
+  {
+   "ref": "Isaiah 55:12",
+   "b": "ISA",
+   "c": 55,
+   "v": 12,
+   "votes": 13,
+   "kjv": "For ye shall go out with joy, and be led forth with peace: the mountains and the hills shall break forth before you into singing, and all the trees of the field shall clap their hands."
+  }
+ ],
+ "build": {
+  "promptVersion": "p2",
+  "workerVersion": "rabbitlab-6.0",
+  "model": "claude-haiku-4-5",
+  "builtAt": "2026-11-21T12:29:23.277Z",
+  "cost": 0.00607
+ }
+}
