@@ -76,40 +76,61 @@ function parseNote(text) {
   let t = String(text).replace(/\s*\n\s*/g, ' ').replace(/\s+/g, ' ').trim()
   t = t.replace(/\[(\d+)\.\]/g, ' ⟦B$1⟧ ').replace(/\((\d+)\.\)/g, ' ⟦P$1⟧ ').replace(/\s+/g, ' ').trim()
   const raw = t.split(/(?<=[.!?]["”’')\]]?)\s+(?=[A-Z⟦*(“"\[])/)
-  const parts = []
+  let parts = []
   for (const p of raw) {
     const prev = parts[parts.length - 1]
     if (prev && /\b[A-Z][a-z]{0,2}\.$/.test(prev) && /^[\d a-z]/.test(p)) parts[parts.length - 1] = prev + ' ' + p
     else parts.push(p)
   }
+  // Henry's sentences often run 100+ words. Split long ones at his own semicolons and colons so a quote can be a shorter piece.
+  const plainWc = x => x.replace(/⟦[BP]\d+⟧/g, '').replace(/\*/g, '').trim().split(/\s+/).filter(Boolean).length
+  const pieces = []
+  for (const p of parts) {
+    if (plainWc(p) <= 40) { pieces.push({ t: p, cont: false }); continue }
+    const segs = p.split(/(?<=[;:])\s+/)
+    let cur = '', first = true
+    for (const sg of segs) {
+      if (cur && plainWc(cur) >= 14) { pieces.push({ t: cur, cont: !first }); first = false; cur = sg } else cur = cur ? cur + ' ' + sg : sg
+    }
+    if (cur) { if (plainWc(cur) < 8 && pieces.length && !first) pieces[pieces.length - 1].t += ' ' + cur; else pieces.push({ t: cur, cont: !first }) }
+  }
   let curB = null, curP = null
-  const sents = parts.map((p, i) => {
+  const sents = pieces.map((pc, i) => {
+    const p = pc.t
     const marks = [...p.matchAll(/⟦([BP])(\d+)⟧/g)].map(m => m[1] + m[2])
     const startB = curB, startP = curP
     for (const m of marks) { if (m[0] === 'B') curB = +m.slice(1); else { curP = +m.slice(1); curB = null } }
-    const text = p.replace(/⟦[BP]\d+⟧/g, '').replace(/\s+/g, ' ').trim()
+    let text = p.replace(/⟦[BP]\d+⟧/g, '').replace(/\s+/g, ' ').trim()
+    const open = /[;:]$/.test(text)
     const bs = new Set(); if (startB) bs.add(startB); for (const m of marks) if (m[0] === 'B') bs.add(+m.slice(1)); if (curB) bs.add(curB)
     const ps = new Set(); if (startP) ps.add(startP); for (const m of marks) if (m[0] === 'P') ps.add(+m.slice(1)); if (curP) ps.add(curP)
-    return { i, text, B: [...bs], P: [...ps], marks }
+    return { i, text, cont: pc.cont, open, B: [...bs], P: [...ps], marks }
   }).filter(s => s.text)
   sents.forEach((s, i) => { s.i = i })
   const bAll = [...new Set([...t.matchAll(/⟦B(\d+)⟧/g)].map(m => +m[1]))].sort((a, z) => a - z)
   const pAll = [...new Set([...t.matchAll(/⟦P(\d+)⟧/g)].map(m => +m[1]))].sort((a, z) => a - z)
   return { sents, bAll, pAll }
 }
+// what the reader sees for a quote: the teacher's exact words, with an honest ellipsis where we start or stop mid-sentence
+function quoteText(ss) {
+  let tx = ss.map(x => x.text).join(' ')
+  if (ss[0].cont) tx = '… ' + tx
+  if (ss[ss.length - 1].open) tx = tx.replace(/[;:]$/, '…')
+  return tx
+}
 const wc = s => String(s).replace(/\*/g, '').trim().split(/\s+/).filter(Boolean).length
 const pointLabel = s => s.B.length ? 'B' + s.B[s.B.length - 1] : (s.P.length ? 'P' + s.P[s.P.length - 1] : null)
 
 // ───────────── prompts ─────────────
 const FLOW_SYSTEM = `You weave a short devotional out of ONE old commentator's note on a Bible verse. The commentator leads; you only connect. A program prints the commentator's words by sentence number, so you never retype them.
-You receive the verse, the commentator's name, his note split into numbered sentences (S0, S1, ...) with the point each belongs to, and the points that must be covered.
+You receive the verse, the commentator's name, his note split into numbered pieces (S0, S1, ...), each a sentence or part of a long one with the point each belongs to, and the points that must be covered.
 Reply with JSON only: {"flow":[{"say":"..."},{"quote":[a,b]},{"say":"..."},{"quote":[a,b]}, ...],"morning":{"say":"...","phrase":"..."}}
 RULES (a program checks every one; anything that breaks a rule is thrown away):
-- "flow" starts with one "say" that tells the reader, in plain words, what the commentator does with this verse. Then it alternates quote, say, quote, say, and it ends with a quote. Never two says in a row, never two quotes in a row.
-- A "quote" prints sentences a through b (inclusive) of the note, by the numbers given. Quotes must follow the note's own order and must not overlap. A quote is at most 3 sentences and 80 words. Quote at least one sentence from every point you are told to cover. Choose the sentence that states the point most plainly.
-- A "say" is 1 or 2 short plain sentences, under 40 words. It only restates or connects what the commentator says in the quotes around it, or what the verse says. It adds NO history, background, names, numbers, Bible references, word meanings, opinions, application or teaching of your own, and never says the commentator is right or wrong. The first say names the commentator (use the name given). Use no other teacher's name. No quotation marks, no markdown, no Greek or Hebrew. Plain English, about 8th to 10th grade.
+- "flow" starts with one "say" that tells the reader, in plain words, what the commentator does with this verse. Then it alternates quote, say, quote, say. Never two says in a row. It ends with a quote, or with a say that you do not need (it will be dropped).
+- A "quote" prints pieces a through b (inclusive) of the note, by the numbers given. Quotes must follow the note's own order and must not overlap. A quote is at most 4 pieces and 110 words; shorter is better. Quote at least one piece from every point you are told to cover. Choose the piece that states the point most plainly.
+- A "say" is 1 or 2 short plain sentences, under 40 words. It only restates or connects what the commentator says in the quotes around it, or what the verse says. It adds NO history, background, names, numbers, Bible references, word meanings, opinions, application or teaching of your own, and never says the commentator is right or wrong. The first say names the commentator (use the name given). Do not name the author or speaker of the verse unless the note itself names him. A reviewer will check every say against the quotes: do not claim more than they show (how many things, a contrast, a time frame, a result). A reviewer will check every say against the quotes: do not claim more than they show (how many things, a contrast, a time frame, a result). Use no other teacher's name. No quotation marks, no markdown, no Greek or Hebrew. Plain English, about 8th to 10th grade.
 - You may state a count (for example six points) only if it equals the number of points listed for you.
-- "morning" closes the devotional. "say" is one sentence, under 25 words, inviting the reader to carry one thing from the note into today, using only what the note says. "phrase" is the exact words (3 to 16 words) you want the reader to keep, copied letter for letter from one sentence of the note.`
+- "morning" closes the devotional. "say" is one sentence, under 25 words, inviting the reader to carry one thing from the note into today, using only what the note says. "phrase" is the exact words (3 to 16 words) you want the reader to keep, copied from one piece of the note: choose the heart of his point, a complete thought that stands on its own.`
 const REVIEW_SYSTEM = `You check connecting sentences in a devotional built from an old commentator's note. You get the verse, the quoted passages in order, and the connecting sentences (numbered B0, B1, ...). Flag a connecting sentence ONLY if it states or implies something the quotes and the verse do not say, shifts the commentator's meaning, overstates or understates his point, or gives a count that does not match. Do not flag style. Reply with JSON only: {"flags":[{"b":"B2","issue":"one short sentence"}]} and {"flags":[]} if there are none.`
 
 async function ask(system, user, max) {
@@ -129,12 +150,15 @@ function validate(obj, parsed, ctx) {
   const problems = []
   const { sents, bAll, pAll } = parsed
   if (!obj || !Array.isArray(obj.flow) || !obj.morning) return { problems: ['not the JSON shape asked for'] }
+  obj.flow = obj.flow.filter(it => it && typeof it === 'object')
+  // harmless slips are repaired by code: a say left at the end is dropped, two says in a row are joined
+  while (obj.flow.length && 'say' in obj.flow[obj.flow.length - 1]) obj.flow.pop()
+  for (let k = obj.flow.length - 1; k > 0; k--) if ('say' in obj.flow[k] && 'say' in obj.flow[k - 1]) { obj.flow[k - 1].say = String(obj.flow[k - 1].say) + ' ' + String(obj.flow[k].say); obj.flow.splice(k, 1) }
   const flow = obj.flow
   if (flow.length < 3) problems.push('too short: needs at least a say, a quote and a say or quote')
   flow.forEach((it, k) => { const keys = Object.keys(it || {}); if (keys.length !== 1 || !['say', 'quote'].includes(keys[0])) problems.push(`item ${k + 1} must be exactly one of say or quote`) })
   if (flow[0] && !('say' in flow[0])) problems.push('must begin with a say')
   if (flow.length && !('quote' in flow[flow.length - 1])) problems.push('must end with a quote')
-  for (let k = 1; k < flow.length; k++) if (flow[k] && flow[k - 1] && Object.keys(flow[k])[0] === Object.keys(flow[k - 1])[0]) { problems.push('says and quotes must alternate'); break }
   // quotes
   let last = -1, total = 0; const covered = new Set(), quotes = []
   for (const it of flow) if (it && it.quote) {
@@ -142,13 +166,13 @@ function validate(obj, parsed, ctx) {
     if (!Array.isArray(q) || q.length !== 2 || !Number.isInteger(q[0]) || !Number.isInteger(q[1]) || q[0] < 0 || q[1] < q[0] || q[1] >= sents.length) { problems.push('a quote has bad sentence numbers'); continue }
     if (q[0] <= last) problems.push('quotes must follow the note’s order without overlapping')
     last = q[1]
-    if (q[1] - q[0] > 2) problems.push('a quote is longer than 3 sentences')
+    if (q[1] - q[0] > 3) problems.push('a quote is longer than 4 pieces')
     const w = wc(sents.slice(q[0], q[1] + 1).map(s => s.text).join(' ')); total += w
-    if (w > 80) problems.push(`a quote is ${w} words (limit 80)`)
+    if (w > 110) problems.push(`a quote is ${w} words (limit 110)`)
     for (let i = q[0]; i <= q[1]; i++) { sents[i].B.forEach(b => covered.add('B' + b)); sents[i].P.forEach(p => covered.add('P' + p)) }
     quotes.push(q)
   }
-  if (total > 420) problems.push(`quotes total ${total} words (limit 420)`)
+  if (total > 520) problems.push(`quotes total ${total} words (limit 520)`)
   const need = bAll.length ? bAll.map(n => 'B' + n) : (pAll.length ? pAll.map(n => 'P' + n) : [])
   const missing = need.filter(n => !covered.has(n))
   if (missing.length) problems.push('does not quote these required points: ' + missing.map(m => m.slice(1)).join(', '))
@@ -171,14 +195,31 @@ function validate(obj, parsed, ctx) {
   }
   // the closing phrase must be in the note, letter for letter
   let phrase = null
-  const ph = String((obj.morning && obj.morning.phrase) || '').replace(/^[\s"“”‘’']+|[\s"“”‘’'.,;:!?]+$/g, '')
-  if (wc(ph) < 3 || wc(ph) > 16) problems.push('morning.phrase must be 3 to 16 words')
+  const ph = String((obj.morning && obj.morning.phrase) || '')
+  const tok = x => String(x).toLowerCase().replace(/[^a-z0-9]+/g, '')
+  const pt = ph.split(/\s+/).map(tok).filter(Boolean)
+  if (pt.length < 3 || pt.length > 16) problems.push('morning.phrase must be 3 to 16 words')
   else {
-    const at = ctx.noteFlat.toLowerCase().indexOf(ph.toLowerCase())
+    const words = [...ctx.noteFlat.matchAll(/\S+/g)].map(m => ({ t: tok(m[0]), a: m.index, z: m.index + m[0].length })).filter(w => w.t)
+    let at = -1
+    for (let i = 0; i + pt.length <= words.length && at < 0; i++) { let ok = true; for (let k = 0; k < pt.length; k++) if (words[i + k].t !== pt[k]) { ok = false; break } if (ok) at = i }
     if (at < 0) problems.push('morning.phrase is not found word for word in the note')
-    else phrase = ctx.noteFlat.slice(at, at + ph.length)
+    else phrase = ctx.noteFlat.slice(words[at].a, words[at + pt.length - 1].z).replace(/^[\s"“”‘’']+|[\s"“”‘’'.,;:!?]+$/g, '')
   }
   return { problems, quotes, phrase, says, ms, total }
+}
+
+
+// advisory review: a separate call reads the connecting words against the quotes
+async function reviewIt(obj, result, parsed, day, ref, verseText) {
+  try {
+    const quotes = obj.flow.map(it => it.quote ? { type: 'quote', text: quoteText(parsed.sents.slice(it.quote[0], it.quote[1] + 1)) } : { type: 'say', text: String(it.say) })
+    const says = quotes.filter(f => f.type === 'say').map(f => f.text).concat(String(obj.morning.say))
+    const body = [`VERSE: ${ref.label}: ${verseText}`, 'FLOW IN ORDER:', ...quotes.map(f => f.type === 'quote' ? `QUOTE: ${f.text}` : `SAY: ${f.text}`), `MORNING: ${obj.morning.say} [${result.phrase}]`, 'CONNECTING SENTENCES:', ...says.map((t, k) => `B${k}: ${t}`)].join('\n')
+    const rv = await ask(REVIEW_SYSTEM, body, 700); day.build.cost += rv.cost; spent += rv.cost
+    const j = parseJson(rv.text)
+    return { flags: j && Array.isArray(j.flags) ? j.flags.slice(0, 6) : [], error: j ? null : 'review reply was not JSON' }
+  } catch (e) { return { flags: [], error: String(e.message).slice(0, 100) } }
 }
 
 // ───────────── one day ─────────────
@@ -200,21 +241,29 @@ async function buildDay(id) {
   const user = [`TEACHER: ${teacher.short}`, `VERSE: ${ref.label}: ${verseText}`,
     need.length ? `POINTS TO COVER: ${need.join(', ')} (${need.length} numbered points in the note; B = the commentator's [n.] points, P = his (n.) points)` : 'POINTS TO COVER: none numbered; quote at least 2 passages that carry his main thought',
     'NOTE (S number | point | sentence):', ...parsed.sents.map(s => `S${s.i}|${pointLabel(s) || '-'}|${s.text}`)].join('\n')
-  let feedback = '', result = null, obj = null
+  let feedback = '', best = null, lastObj = null
   for (let a = 0; a < ATTEMPTS; a++) {
     day.build.attempts = a + 1
-    const r = await ask(FLOW_SYSTEM, user + (feedback ? `\n\nYOUR PREVIOUS ATTEMPT BROKE THESE RULES. Fix them and keep everything else:\n${feedback}` : ''), 1800)
+    const r = await ask(FLOW_SYSTEM, user + (feedback ? `\n\nYOUR PREVIOUS ATTEMPT HAD THESE PROBLEMS. Fix them and keep everything else:\n${feedback}` : ''), 2000)
     day.build.cost += r.cost; spent += r.cost
-    obj = parseJson(r.text); result = validate(obj, parsed, ctx)
-    if (!result.problems.length) break
-    feedback = result.problems.map(p => '- ' + p).join('\n'); day.reasons = result.problems
+    const obj = parseJson(r.text); lastObj = obj
+    const result = validate(obj, parsed, ctx)
+    if (result.problems.length) { feedback = result.problems.map(p => '- ' + p).join('\n'); day.reasons = result.problems; continue }
+    const rv = await reviewIt(obj, result, parsed, day, ref, verseText)
+    const cand = { obj, result, flags: rv.flags, error: rv.error }
+    if (!best || cand.flags.length < best.flags.length) best = cand
+    if (!cand.flags.length) break
+    feedback = 'A reviewer read your connecting sentences against the quotes and flagged these as saying more than the quotes show. Rewrite or shorten those sentences (or drop the claim); you may also choose different quotes:\n' + cand.flags.map(f => `- ${f.b}: ${f.issue}`).join('\n')
   }
-  if (result.problems.length) { day.rejected = obj; day.reasons = result.problems; return day }
+  if (!best) { day.rejected = lastObj; return day }
+  delete day.reasons
+  const obj = best.obj, result = best.result
+  day.review.flags = best.flags; if (best.error) day.review.error = best.error
   // assemble: code prints every quotation
   let qi = 0
   for (const it of obj.flow) {
     if (it.say) day.flow.push({ type: 'say', text: String(it.say).trim() })
-    else { const [a, z] = it.quote; const ss = parsed.sents.slice(a, z + 1); day.flow.push({ type: 'quote', text: ss.map(s => s.text).join(' '), from: a, to: z, point: pointLabel(ss[0]), points: [...new Set(ss.map(pointLabel).filter(Boolean))] }); qi++ }
+    else { const [a, z] = it.quote; const ss = parsed.sents.slice(a, z + 1); day.flow.push({ type: 'quote', text: quoteText(ss), from: a, to: z, point: pointLabel(ss[0]), points: [...new Set(ss.map(pointLabel).filter(Boolean))] }); qi++ }
   }
   day.morning = { say: String(obj.morning.say).trim(), phrase: result.phrase }
   day.structure.quoted = qi; day.structure.pointsCovered = need.length
@@ -228,14 +277,6 @@ async function buildDay(id) {
       day.trail = { ref: `${W.BOOK_NAME[ref.b]} ${ref.c}:${nv}${hi2 && +hi2 > nv ? '-' + hi2 : ''}`, text: p2.sents[0] ? p2.sents[0].text : '', note: `${teacher.name}’s next thought` }
     }
   }
-  // advisory review: a separate call reads the connecting words against the quotes
-  try {
-    const bl = day.flow.filter(f => f.type === 'say').map((f, k) => `B${k}: ${f.text}`).concat(`B${day.flow.filter(f => f.type === 'say').length}: ${day.morning.say}`)
-    const body = [`VERSE: ${ref.label}: ${verseText}`, 'FLOW IN ORDER:', ...day.flow.map(f => f.type === 'quote' ? `QUOTE: ${f.text}` : `SAY: ${f.text}`), `MORNING: ${day.morning.say} [${day.morning.phrase}]`, 'CONNECTING SENTENCES:', ...bl].join('\n')
-    const rv = await ask(REVIEW_SYSTEM, body, 700); day.build.cost += rv.cost; spent += rv.cost
-    const j = parseJson(rv.text); day.review.flags = j && Array.isArray(j.flags) ? j.flags.slice(0, 6) : []
-    if (!j) day.review.error = 'review reply was not JSON'
-  } catch (e) { day.review.error = String(e.message).slice(0, 100) }
   day.build.cost = +day.build.cost.toFixed(5)
   day.status = 'ok'
   return day
@@ -256,12 +297,12 @@ fs.mkdirSync(OUT, { recursive: true })
 let spent = 0; const report = []
 for (const id of ids) {
   const file = path.join(OUT, id + '.json')
-  if (!FORCE && fs.existsSync(file) && readJson(file).status === 'ok' && readJson(file).flowVersion === FLOW_VERSION) { report.push({ id, status: 'skipped (already built)' }); continue }
+  if (!FORCE && fs.existsSync(file) && (() => { const j = readJson(file); return j.status === 'ok' && j.flowVersion === FLOW_VERSION && !((j.review && j.review.flags) || []).length })()) { report.push({ id, status: 'skipped (already built)' }); continue }
   if (spent >= MAX_COST) { report.push({ id, status: 'not run (cost cap reached)' }); continue }
   let day
   try { day = await buildDay(id) } catch (e) { day = { id, status: 'failed', reasons: ['error: ' + String(e.message).slice(0, 140)] } }
   fs.writeFileSync(file, JSON.stringify(day, null, 1))
-  const row = { id, ref: day.ref && day.ref.label, teacher: day.teacher && day.teacher.id, status: day.status, points: day.structure ? `${day.structure.pointsCovered ?? '-'}/${day.structure.points}` : '', flags: day.review ? day.review.flags.length : '', cost: day.build && day.build.cost, why: (day.reasons || []).slice(0, 2).join('; ') }
+  const row = { id, ref: day.ref && day.ref.label, teacher: day.teacher && day.teacher.id, status: day.status, points: day.structure ? `${day.structure.pointsCovered ?? '-'}/${day.structure.points}` : '', flags: day.review ? day.review.flags.length : '', cost: day.build && day.build.cost, why: day.status === 'ok' ? ((day.review.flags || []).length ? 'built, but flagged: ' + day.review.flags.map(f => f.issue).join(' | ').slice(0, 160) : '') : (day.reasons || []).slice(0, 2).join('; ') }
   report.push(row); console.log(row)
 }
 const tally = report.reduce((a, r) => { const k = r.status.split(' (')[0]; a[k] = (a[k] || 0) + 1; return a }, {})
