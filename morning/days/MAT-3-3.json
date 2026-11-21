@@ -40,19 +40,17 @@
    "original": "IV. The *prophecy* that was fulfilled in him, Mt 3:3. This is he that was spoken of in the beginning of that part of the prophecy of Esaias, which is mostly evangelical, and which points at gospel-times and gospel-grace; see Isa 40:3,4. John is here spoken of,",
    "ok": false,
    "metrics": {
-    "words": 47,
+    "words": 31,
     "sourceWords": 47,
-    "ratio": 1,
-    "ground": 0.81,
+    "ratio": 0.66,
+    "ground": 0.82,
     "refsKept": 2,
     "refsInBlock": 2
    },
    "reasons": [
-    "names “Isaiah”, who is not in the block",
-    "does not say whose view this is (Henry)",
-    "not shorter than the original (47 words against 47)"
+    "names “Isaiah”, who is not in the block"
    ],
-   "rejected": "The prophecy about him was fulfilled in Matthew 3:3. This is the one spoken of at the start of that part of Isaiah's prophecy that is mostly about the gospel, pointing to gospel times and gospel grace. See Isaiah 40:3,4. John is the one spoken of here."
+   "rejected": "Henry points out that Matthew 3:3 shows the prophecy fulfilled in John. This is the beginning of Isaiah's prophecy that is mostly about the gospel and gospel times. See Isaiah 40:3,4."
   },
   {
    "i": 1,
@@ -99,7 +97,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:29:11.819Z",
-  "cost": 0.00499
+  "builtAt": "2026-11-21T12:47:05.335Z",
+  "cost": 0.0063
  }
 }

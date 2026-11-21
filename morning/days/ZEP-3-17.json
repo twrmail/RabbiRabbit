@@ -54,17 +54,18 @@
    "original": "III. God will take delight in them, and in doing them good. The expressions of this are very lively and affecting (Zep 3:17): *He will rejoice over thee with joy,* will not only be well pleased with thee, upon thy repentance and reformation, and take thee into favour, but will take a complacency in thee, as the bridegroom does in his bride, or the bride in her ornaments, Isa 62:3-5. The conversion of sinners and the consolation of saints are the joy of angels, for they are the joy of God him-self. The church should be the *joy of the whole earth* (Ps 48:2), for it is the joy of the whole heaven. He will *rest in his love,* will be *silent in his love,* so the word is. \"I will not rebuke thee as I have done, for thy sins; I will acquiesce in thee, and in my relation to thee.\" I know not where there is the like expression of Christ's love to his church, unless in that song of songs, So 4:9, *Thou hast ravished my heart, my sister, my spouse, with one of thy eyes.* O the condescensions of divine grace! The great God not only loves his saints, but he loves to love them, is pleased that he has pitched upon these objects of his love. He *will joy over them with singing.* He that is grieved for the sin of sinners rejoices in the graces and services of the saints, and is ready to express that joy by singing over them. *The Lord takes plea-sure in those that fear him,* and in them Jesus Christ will shortly be glorified and admired.",
    "ok": false,
    "metrics": {
-    "words": 236,
+    "words": 267,
     "sourceWords": 277,
-    "ratio": 0.85,
-    "ground": 0.67,
+    "ratio": 0.96,
+    "ground": 0.76,
     "refsKept": 2,
     "refsInBlock": 3
    },
    "reasons": [
-    "contains quotation marks (the teacher’s own words must only appear in the original block)"
+    "reference So 4:9 is not a recognised Bible reference",
+    "not shorter than the original (267 words against 277)"
    ],
-   "rejected": "Henry says God will take delight in his people and do them good. The language here is vivid and moving. God will rejoice over them with joy. He will not only be pleased with them after they turn from sin and take them back into favor, but will find deep satisfaction in them, the way a bridegroom finds satisfaction in his bride, or a bride in her ornaments (Isa 62:3-5). When sinners turn to God and when his people find comfort, the angels rejoice because God himself rejoices. The church should be the joy of the whole earth (Ps 48:2), since it is the joy of heaven itself.\n\nGod will rest in his love, or be silent in his love. This means he will say, \"I will not rebuke you for your sins anymore. I will accept you and our relationship.\" Henry finds no other expression of Christ's love to his church quite like this one. The great God not only loves his saints but loves to love them. He is pleased that he has chosen these people as objects of his love.\n\nGod will joy over them with singing. The one who grieves over the sin of sinners rejoices in the goodness and service of the saints and expresses that joy by singing over them. The Lord takes pleasure in those who fear him, and in them Jesus Christ will soon be glorified and admired."
+   "rejected": "III. God will take delight in them, and in doing them good. Henry finds the expressions of this very lively and affecting. God will rejoice over them with joy. He will not only be pleased with them after they repent and change, and take them into favor, but will take a deep satisfaction in them, the way a bridegroom does in his bride, or a bride in her ornaments (Isa 62:3-5). The turning around of sinners and the comfort of saints bring joy to angels, because they bring joy to God himself. The church should be the joy of the whole earth (Ps 48:2), for it is the joy of all heaven.\n\nGod will rest in his love, will be silent in his love. He will not rebuke them anymore for their sins. He will accept them and his relationship with them. Henry says he knows no other expression of Christ's love to his church like the one in the Song of Songs where the beloved says the lover has captured his heart with just one of her eyes (So 4:9). What amazing acts of divine grace! The great God not only loves his saints, but loves to love them, and is pleased he has chosen these as the objects of his love.\n\nHe will joy over them with singing. The one who grieves over the sin of sinners rejoices in the grace and service of the saints, and will express that joy by singing over them. The Lord takes pleasure in those who fear him, and in them Jesus Christ will soon be glorified and admired."
   }
  ],
  "leads": [
@@ -97,7 +98,7 @@
   "promptVersion": "p2",
   "workerVersion": "rabbitlab-6.0",
   "model": "claude-haiku-4-5",
-  "builtAt": "2026-11-21T12:29:34.606Z",
-  "cost": 0.0069
+  "builtAt": "2026-11-21T12:47:18.137Z",
+  "cost": 0.0099
  }
 }
