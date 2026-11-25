@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Calvin, JFB, Gill and Fathers parsers for the pool builder (brief v1.1 sections 4-6, 8).
 Each returns (coverage, notes, pieces, findings) like henry_parser.build().
-No model calls. Network only in fathers_fetch (raw.githubusercontent.com, read-only)."""
+No model calls. No network: the Fathers read a pinned local copy of the HCF repo (HCF_LOCAL)."""
 import json, re, os, sys, hashlib, urllib.request, urllib.parse, concurrent.futures as cf
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import henry_parser as H
@@ -16,22 +16,28 @@ from adapter_verse import barnes, tyndale
 from adapter_scofield import scofield
 
 # ============================ Fathers =======================================
-HCF = 'https://raw.githubusercontent.com/HistoricalChristianFaith/Commentaries-Database/master/'
-def hcf_get(dirn, fname, cache):
-    loc = os.environ.get('HCF_LOCAL')  # pinned local checkout of the HCF repo (no network)
-    if loc:
-        lp = os.path.join(loc, dirn, fname)
-        return open(lp, 'rb').read() if os.path.exists(lp) else None
-    key = f'{dirn}/{fname}'
-    cp = os.path.join(cache, hashlib.sha1(key.encode()).hexdigest())
-    if os.path.exists(cp):
-        b = open(cp, 'rb').read(); return None if b == b'__404__' else b
-    u = HCF + urllib.parse.quote(dirn) + '/' + urllib.parse.quote(fname)
-    try: b = urllib.request.urlopen(u, timeout=30).read()
-    except urllib.error.HTTPError as e:
-        if e.code == 404: open(cp, 'wb').write(b'__404__'); return None
-        raise
-    open(cp, 'wb').write(b); return b
+HCF_PIN = 'a88dc031b9a1'  # Commentaries-Database commit every Fathers check was made against
+_PIN_OK = []
+def hcf_pin_check(loc):
+    """The HCF copy must be the pinned commit: a git checkout whose HEAD starts with HCF_PIN, or a copy holding a file `.pinned-commit` with it.
+    There is no network fallback: a build that cannot prove its HCF copy is the pinned one stops."""
+    if _PIN_OK: return
+    head = None
+    pc = os.path.join(loc, '.pinned-commit')
+    if os.path.exists(pc): head = open(pc).read().strip()
+    elif os.path.exists(os.path.join(loc, '.git')):
+        import subprocess
+        head = subprocess.run(['git', '-C', loc, 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
+    if not head or not head.startswith(HCF_PIN):
+        raise SystemExit(f'HCF copy at {loc} is not proven to be the pinned commit {HCF_PIN} (found {head!r}). Put the pinned commit in {pc} or use a git checkout of it.')
+    _PIN_OK.append(1)
+
+def hcf_get(dirn, fname, cache=None):
+    loc = os.environ.get('HCF_LOCAL')  # pinned local copy of the HCF repo. No network fallback.
+    if not loc: raise SystemExit('Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback.')
+    hcf_pin_check(loc)
+    lp = os.path.join(loc, dirn, fname)
+    return open(lp, 'rb').read() if os.path.exists(lp) else None
 
 def candidate_names(book, ch, lo, hi, nverses, nextch=True):
     B = HCF_BOOK[book]; names = []
@@ -65,9 +71,17 @@ def fathers_corrected(q):
     shift = lambda off: off + sum(len(c['new']) - len(c['old']) for c in cors if c['off'] < off)
     return ''.join(out), rec, shift
 
-def fathers(lib, book, ch, lo, hi, abbr=None, cache='/tmp/hcf-cache', nverses=None):
+PUBLIC_CHECK_STATUSES = ('exact', 'editors-marks', 'typo', 'gap')
+def fathers_public_ok(chk):
+    """A Fathers excerpt may be public (tier B) only with a registry record that (1) matches the excerpt's text hash, (2) has a status showing the words
+    match a full text, and (3) names a full text whose rights statement is Public Domain. Anything else is withheld (tier U), never defaulted to B."""
+    if not chk: return False, 'no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text'
+    if chk.get('status') not in PUBLIC_CHECK_STATUSES: return False, f'source check status is {chk.get("status")!r}, not a word match against a full text'
+    if (chk.get('against') or {}).get('ccel_rights') != 'Public Domain': return False, 'the full text it was checked against does not state Public Domain rights'
+    return True, ''
+
+def fathers(lib, book, ch, lo, hi, abbr=None, cache=None, nverses=None):
     import tomllib
-    os.makedirs(cache, exist_ok=True)
     findings, cov, notes, pieces, srcs = [], {v: dict(state=None, by_father={}) for v in range(lo, hi + 1)}, [], [], {}
     web = json.load(open(f'{lib}/bible/WEB/{book}.json')); nverses = nverses or len(
         [c for c in web['chapters'] if c['chapter'] == ch][0]['verses'])
@@ -106,17 +120,20 @@ def fathers(lib, book, ch, lo, hi, abbr=None, cache='/tmp/hcf-cache', nverses=No
                 if (b - a) > 0 and a != b:
                     pass
                 direct_aq = (fkey == 'aquinas' and not cat)
+                fok, fwhy = fathers_public_ok(chk)
                 # tier U: translation unidentified or not the public-domain edition (fathers-translation-table, Tom nov24: 'tier u is fine')
                 unk = bool(re.match(r'(LETTER|SERMONS|Sermon \d|Exposition of Certain Propositions|CATENA$)', title))
+                if inside and not unk and not direct_aq and not fok: findings.append(dict(kind='fathers-withheld', msg=f'{dirn}/{name} entry {i} "{title}": withheld (fail closed): {fwhy}'))
                 def mk(k, t, x, y, prev, nid=nid, name=name, dirn=dirn, fkey=fkey, title=title, a=a, b=b, i=i, e=e):
                     p = make_piece(f'{fkey[:3].upper()}{ch}.{a}{"-" + str(b) if b != a else ""}.{i}.{k:02d}', nid, f'hcf:{fkey}', container, dirn, fkey, compiler,
                                    title, 'Historical Christian Faith Commentaries-Database (see provenance)', f'{abbr or book} {ch}:{a}' + (f'-{b}' if b != a else ''),
-                                   [a, b], a, t, f'{dirn}/{name} [entry {i}]', x, y, ('C' if direct_aq else ('U' if unk else 'B')), prev, book, ch, lo, hi)
+                                   [a, b], a, t, f'{dirn}/{name} [entry {i}]', x, y, ('C' if direct_aq else ('U' if (unk or not fok) else 'B')), prev, book, ch, lo, hi)
                     if unk: p['public_build'] = False; p['flags'].append('Tier U: translation not identified as public domain (see fathers-translation-table); withheld from public builds')
+                    if not unk and not direct_aq and not fok: p['public_build'] = False; p['flags'].append('Withheld from public builds (fail closed): ' + fwhy)
                     if direct_aq: p['public_build'] = False; p['flags'].append('Aquinas direct commentary: modern translation, rights unconfirmed; withheld from public builds (Tom nov22: allow B, hold C)')
                     p['source_url'] = e.get('source_url'); p['source_text_sha256'] = sha(q0.encode()); p['container_title'] = title
                     if chk:
-                        p['source_check'] = dict(status=chk['status'], against=chk['against'].get('volume'), homily=chk.get('homily'))
+                        p['source_check'] = dict(status=chk['status'], against=(chk.get('against') or {}).get('volume'), homily=chk.get('homily'))
                         fixed = [c for c in chk.get('corrections', []) if x <= shift(c['off']) and shift(c['off']) + len(c['new']) <= y]
                         if fixed: p['corrected'] = True; p['flags'].append('one-word correction applied from the CCEL text: ' + '; '.join(f'"{c["old"]}" to "{c["new"]}"' for c in fixed) + ' (recorded in pool/fathers-source-checks.json)')
                         for g in chk.get('gaps', []):

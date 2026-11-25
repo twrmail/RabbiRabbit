@@ -8,7 +8,9 @@ Three full 64-character SHA-256 fingerprints, never truncated:
   frame:  hash over the printed frame (frame_v1, defined below)
 A study is servable only when an APPROVED record exists whose three fingerprints match the frame as stored, recomputed from the data now.
 A status field alone is not sufficient."""
-import hashlib, json
+import hashlib, json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import validator as V
 FRAME_VERSION = 'frame_v1'
 
 def canon(obj):
@@ -54,14 +56,21 @@ def pointers_from_report(report, lo, hi):
                 out.setdefault(v, set()).add(c['pointer'])
     return {k: sorted(s) for k, s in out.items()}
 
+def validation_of(plan, pool, gaps, request, build):
+    return V.validate(plan, pool, request, gaps, build, request.get('budget', V.DEFAULT_BUDGET))
+
 def fingerprints(plan, pool, gaps, request, report):
+    if report.get('source_problems') or not report.get('source_fingerprint_sha256'):
+        raise ValueError('no source fingerprint: some source failed to load (' + '; '.join(report.get('source_problems') or ['fingerprint missing']) + ')')
     fr = build_frame(plan, pool, gaps, request, pointers_from_report(report, request['lo'], request['hi']))
     return dict(source=report['source_fingerprint_sha256'], pieces=pieces_fp(plan, pool), frame=frame_fp(fr)), fr
 
 def make_record(plan, pool, gaps, request, report, build='public', note=''):
     """A record is created PENDING. Only a human reviewer approves it (approve())."""
+    vr = validation_of(plan, pool, gaps, request, build)
+    if not vr['ok']: raise ValueError('the validator rejects this plan, so no approval record is made: ' + '; '.join(f"{r['rule']} {r['msg']}" for r in vr['rejections'][:5]))
     fps, fr = fingerprints(plan, pool, gaps, request, report)
-    return dict(approver=None, timestamp=None, status='pending', fingerprints=fps, frame_version=FRAME_VERSION, build=build,
+    return dict(approver=None, timestamp=None, status='pending', fingerprints=fps, frame_version=FRAME_VERSION, build=build, validator=dict(passed=True, build=build),
                 accepted_gaps=[], gaps_at_creation=[dict(verse=g['verse'], reason=g['reason']) for g in gaps], note=note), fr
 
 def approve(record, approver, timestamp, accepted_gap_verses=()):
@@ -75,7 +84,11 @@ def is_servable(record, plan, pool, gaps, request, report):
     why = []
     if record.get('status') != 'approved' or not record.get('approver') or not record.get('timestamp'): why.append('no approval by a named reviewer')
     if record.get('frame_version') != FRAME_VERSION: why.append('frame version differs')
-    fps, _ = fingerprints(plan, pool, gaps, request, report)
+    vr = validation_of(plan, pool, gaps, request, record.get('build', 'public'))
+    if not vr['ok']: return False, why + ['the validator rejects this plan now: ' + ', '.join(vr['stats']['rules_failed'])]
+    try: fps, _ = fingerprints(plan, pool, gaps, request, report)
+    except (ValueError, KeyError) as e: return False, why + [str(e)]
+    if not (record.get('validator') or {}).get('passed'): why.append('the record has no passing validator result')
     for k in ('source', 'pieces', 'frame'):
         if record.get('fingerprints', {}).get(k) != fps[k]: why.append(f'{k} fingerprint does not match')
     accepted = {g['verse'] for g in record.get('accepted_gaps', [])}

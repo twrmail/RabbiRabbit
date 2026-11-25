@@ -1,5 +1,5 @@
 {
- "schemaVersion": 1,
+ "schemaVersion": 2,
  "built": "2026-11-25",
  "note": "Chrysostom and Augustine excerpts (HCF, pinned) checked against CCEL NPNF1 full text. Key = sha256 of the HCF entry quote.",
  "summary": {
@@ -21,7 +21,9 @@
     "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "1babc88d74c1fb67c0d34c3d35a93560c71c80d1fcd39e032d165475210d0117",
+   "hcf_commit": "a88dc031b9a1"
   },
   "fbd9007b444c96fcdb1998d6c748100b4ba409af558553140422cc6ad69dc29a": {
    "file": "John Chrysostom/Ephesians 1_17.toml",
@@ -47,7 +49,9 @@
      "skipped_words": 65,
      "skipped_preview": "Ver And made Him to sit at His right hand in the ..."
     }
-   ]
+   ],
+   "quote_sha256": "fbd9007b444c96fcdb1998d6c748100b4ba409af558553140422cc6ad69dc29a",
+   "hcf_commit": "a88dc031b9a1"
   },
   "a711fd15585c34809560403c1107961d4c122a9017bc8b6a5434cd062bd884f7": {
    "file": "John Chrysostom/Ephesians 1_18.toml",
@@ -66,7 +70,9 @@
      "skipped_words": 291,
      "skipped_preview": "But what is clear that through His power we have believed that ..."
     }
-   ]
+   ],
+   "quote_sha256": "a711fd15585c34809560403c1107961d4c122a9017bc8b6a5434cd062bd884f7",
+   "hcf_commit": "a88dc031b9a1"
   },
   "d08434eaba9c9135a5487e89361d14169c3ec07346fbb7d5e39c17e8ae95110a": {
    "file": "John Chrysostom/Ephesians 1_19.toml",
@@ -85,7 +91,9 @@
     "thess iv",
     "cor xv",
     "matt xxiii"
-   ]
+   ],
+   "quote_sha256": "d08434eaba9c9135a5487e89361d14169c3ec07346fbb7d5e39c17e8ae95110a",
+   "hcf_commit": "a88dc031b9a1"
   },
   "9da7beb051fde8d8b8356e02c2ba4ef781bb6442f15de2614d38260c964e7755": {
    "file": "John Chrysostom/Ephesians 1_20.toml",
@@ -97,7 +105,9 @@
     "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "9da7beb051fde8d8b8356e02c2ba4ef781bb6442f15de2614d38260c964e7755",
+   "hcf_commit": "a88dc031b9a1"
   },
   "b1a4ef68cade262314099bd4c2cf5a543c7acd81c714f6f6bb71cfeea132833d": {
    "file": "John Chrysostom/Ephesians 1_21.toml",
@@ -116,7 +126,9 @@
      "skipped_words": 24,
      "skipped_preview": "If all mankind are to be counted as spittle and were counted ..."
     }
-   ]
+   ],
+   "quote_sha256": "b1a4ef68cade262314099bd4c2cf5a543c7acd81c714f6f6bb71cfeea132833d",
+   "hcf_commit": "a88dc031b9a1"
   },
   "432951cc3aff43a0d816114ece434a97c3ed8ed89fe97196b40e6a50f85d572f": {
    "file": "John Chrysostom/Ephesians 1_22.toml",
@@ -128,7 +140,9 @@
     "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "432951cc3aff43a0d816114ece434a97c3ed8ed89fe97196b40e6a50f85d572f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "e08636682b4fae769214fb8ce97d4c8e018fc79f4ff6ece996d2fe75cc8dbc4e": {
    "file": "John Chrysostom/Ephesians 1_23.toml",
@@ -156,7 +170,9 @@
      "old": "shall",
      "new": "shalt"
     }
-   ]
+   ],
+   "quote_sha256": "e08636682b4fae769214fb8ce97d4c8e018fc79f4ff6ece996d2fe75cc8dbc4e",
+   "hcf_commit": "a88dc031b9a1"
   },
   "46d0d8a86e99715d0bc4a17ccf2ca7be2c89d2de613699b5370194213d780454": {
    "file": "John Chrysostom/Matthew 25_31.toml",
@@ -168,7 +184,9 @@
     "homily_heading": "HOMILY LXXIX.",
     "rights": "not stated by the source"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "46d0d8a86e99715d0bc4a17ccf2ca7be2c89d2de613699b5370194213d780454",
+   "hcf_commit": "a88dc031b9a1"
   },
   "b6cca4c915fb7f2d1f1a14558360e7989768dc2259eed3ed3518e6e953729ebd": {
    "file": "John Chrysostom/Matthew 25_32-33.toml",
@@ -180,7 +198,9 @@
     "homily_heading": "HOMILY LXXIX.",
     "rights": "not stated by the source"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "b6cca4c915fb7f2d1f1a14558360e7989768dc2259eed3ed3518e6e953729ebd",
+   "hcf_commit": "a88dc031b9a1"
   },
   "3802ccb8e718664dfb9c501d149bfd48bb2eeec03801b47921164c74273336cd": {
    "file": "John Chrysostom/Matthew 25_34-40.toml",
@@ -202,7 +222,9 @@
      "skipped_words": 111,
      "skipped_preview": "this comparison is sometimes made in the case of an equal as ..."
     }
-   ]
+   ],
+   "quote_sha256": "3802ccb8e718664dfb9c501d149bfd48bb2eeec03801b47921164c74273336cd",
+   "hcf_commit": "a88dc031b9a1"
   },
   "011942fce5b87bdee2136e2429d0aabd08ddeebd7bdf83b9b760fc8ba686b029": {
    "file": "John Chrysostom/Matthew 25_34.toml",
@@ -214,7 +236,9 @@
     "homily_heading": "HOMILY LXXIX.",
     "rights": "not stated by the source"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "011942fce5b87bdee2136e2429d0aabd08ddeebd7bdf83b9b760fc8ba686b029",
+   "hcf_commit": "a88dc031b9a1"
   },
   "895f363f8e0aea36b49554349084649572c6183100e1647e030b7b6a10a1c675": {
    "file": "John Chrysostom/Matthew 25_35.toml",
@@ -226,7 +250,9 @@
     "homily_heading": "HOMILY LXXIX.",
     "rights": "not stated by the source"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "895f363f8e0aea36b49554349084649572c6183100e1647e030b7b6a10a1c675",
+   "hcf_commit": "a88dc031b9a1"
   },
   "7246a845bfa60f70832cf16e74beb14d514febc4e66a9995c441e5048a751265": {
    "file": "John Chrysostom/Matthew 25_41.toml",
@@ -238,7 +264,9 @@
     "homily_heading": "HOMILY LXXIX.",
     "rights": "not stated by the source"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "7246a845bfa60f70832cf16e74beb14d514febc4e66a9995c441e5048a751265",
+   "hcf_commit": "a88dc031b9a1"
   },
   "7560edb0ef99fe3712fecb50bc3851ed4a0435562d4c0d844a400e114d2a6cec": {
    "file": "John Chrysostom/Matthew 25_42-43.toml",
@@ -260,7 +288,9 @@
      "ccel": "",
      "hcf": "for i was an hungered and ye gave me no meat for though he that came to thee had been thine enemy were not his sufferings enough to have overcome and subdued even the merciless hunger and cold and bon"
     }
-   ]
+   ],
+   "quote_sha256": "7560edb0ef99fe3712fecb50bc3851ed4a0435562d4c0d844a400e114d2a6cec",
+   "hcf_commit": "a88dc031b9a1"
   },
   "fbe8c11adddf41d73db7603bf2373cf2289eed2e04d9ed0010cb261407d6a90f": {
    "file": "John Chrysostom/Matthew 25_42.toml",
@@ -272,7 +302,9 @@
     "homily_heading": "Homily LXXXI. Matt. XXVI. 17, 18 . “Now the first day of the",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "fbe8c11adddf41d73db7603bf2373cf2289eed2e04d9ed0010cb261407d6a90f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "7f265f5a51d9d6ce1c77bf5a508436144e37634e6cc0367c23d73c34b835d5b6": {
    "file": "John Chrysostom/Matthew 25_45.toml",
@@ -284,7 +316,9 @@
     "homily_heading": "Homily LXXXVIII. Matt. XXVII. 45-48 . “Now from the sixth ho",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "7f265f5a51d9d6ce1c77bf5a508436144e37634e6cc0367c23d73c34b835d5b6",
+   "hcf_commit": "a88dc031b9a1"
   },
   "f039227bd3cde7baf5c7db9f429153d07fa3492a2c6237693ae442700909c2ec": {
    "file": "John Chrysostom/Matthew 25_45.toml",
@@ -303,7 +337,9 @@
      "skipped_words": 930,
      "skipped_preview": "Then in order that thou mayest see in another way also the ..."
     }
-   ]
+   ],
+   "quote_sha256": "f039227bd3cde7baf5c7db9f429153d07fa3492a2c6237693ae442700909c2ec",
+   "hcf_commit": "a88dc031b9a1"
   },
   "d1f84bb8ca2c5c2f73fd3b175733e7b7fe9d70f61cb2c350e1dd4c0388bdd5fd": {
    "file": "John Chrysostom/Matthew 25_45.toml",
@@ -315,7 +351,9 @@
     "homily_heading": "Homily L. Matt. XIV. 23, 24 . “And when He had sent the mult",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "d1f84bb8ca2c5c2f73fd3b175733e7b7fe9d70f61cb2c350e1dd4c0388bdd5fd",
+   "hcf_commit": "a88dc031b9a1"
   },
   "de9ddd2fd090a2ddab9423f7445b6dad6b31361497339ff382f21320777e6d93": {
    "file": "John Chrysostom/Romans 13_11.toml",
@@ -330,7 +368,9 @@
    "status": "editors-marks",
    "editors_marks": [
     "mss and cat"
-   ]
+   ],
+   "quote_sha256": "de9ddd2fd090a2ddab9423f7445b6dad6b31361497339ff382f21320777e6d93",
+   "hcf_commit": "a88dc031b9a1"
   },
   "916e67b99bb18a5ec1d27eeeda1d1bc558415182c182523ce951c88037315ac1": {
    "file": "John Chrysostom/Romans 13_12.toml",
@@ -345,7 +385,9 @@
    "status": "editors-marks",
    "editors_marks": [
     "a v honestly in this sense"
-   ]
+   ],
+   "quote_sha256": "916e67b99bb18a5ec1d27eeeda1d1bc558415182c182523ce951c88037315ac1",
+   "hcf_commit": "a88dc031b9a1"
   },
   "757508c2699c766510156c20bf33c4f0f00057b08cb044d7d70d644ba210b45c": {
    "file": "John Chrysostom/Romans 13_13.toml",
@@ -357,7 +399,9 @@
     "homily_heading": "Homily XXIV. Rom. XIII. 11 “And that, knowing the time, that",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "757508c2699c766510156c20bf33c4f0f00057b08cb044d7d70d644ba210b45c",
+   "hcf_commit": "a88dc031b9a1"
   },
   "e7a9aa373071d44548dbfb98ed57fc163dde0ab8782570e187a24f75a4f3ec32": {
    "file": "John Chrysostom/Romans 13_14.toml",
@@ -374,7 +418,9 @@
     "al punct",
     "Ib. written out in HCF as eph",
     "Ib. written out in HCF as john xv"
-   ]
+   ],
+   "quote_sha256": "e7a9aa373071d44548dbfb98ed57fc163dde0ab8782570e187a24f75a4f3ec32",
+   "hcf_commit": "a88dc031b9a1"
   },
   "e2db47e239f43eafce0c08ab6397e4d459c220c32bd7b2637ea883ad4594529a": {
    "file": "Augustine of Hippo/1 John 2_15-16.toml",
@@ -386,7 +432,9 @@
     "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "e2db47e239f43eafce0c08ab6397e4d459c220c32bd7b2637ea883ad4594529a",
+   "hcf_commit": "a88dc031b9a1"
   },
   "3397c46dd291e2eebfc4f4d292b34f274ce95fab4c40ca1f7ca049e654a52582": {
    "file": "Augustine of Hippo/1 John 2_15.toml",
@@ -405,7 +453,9 @@
      "old": "shall",
      "new": "shalt"
     }
-   ]
+   ],
+   "quote_sha256": "3397c46dd291e2eebfc4f4d292b34f274ce95fab4c40ca1f7ca049e654a52582",
+   "hcf_commit": "a88dc031b9a1"
   },
   "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98": {
    "file": "Augustine of Hippo/1 John 2_15.toml",
@@ -417,7 +467,9 @@
     "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98",
+   "hcf_commit": "a88dc031b9a1"
   },
   "722d7d891237b85333bb7947e317a616070d7f1e6079e4a021b1ba041f6cad49": {
    "file": "Augustine of Hippo/Mark 13_32.toml",
@@ -441,7 +493,9 @@
      "skipped_words": 181,
      "skipped_preview": "For He was certainly going to tell this same thing to His ..."
     }
-   ]
+   ],
+   "quote_sha256": "722d7d891237b85333bb7947e317a616070d7f1e6079e4a021b1ba041f6cad49",
+   "hcf_commit": "a88dc031b9a1"
   },
   "4994551703eae09aa3774ffa229881f91e0b13dea9f83ae2b10f1b9e897c6e7f": {
    "file": "Augustine of Hippo/Mark 13_32.toml",
@@ -449,7 +503,9 @@
    "source": "Augustine of Hippo/Letters.html",
    "homily": "Augustine of Hippo/Letters.html",
    "status": "unchecked",
-   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands",
+   "quote_sha256": "4994551703eae09aa3774ffa229881f91e0b13dea9f83ae2b10f1b9e897c6e7f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "f740d31f448528af7e78181bcfc0e16f24bc7f69896f4c8cd6061c09f56abb66": {
    "file": "Augustine of Hippo/Mark 13_32.toml",
@@ -461,7 +517,9 @@
     "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "f740d31f448528af7e78181bcfc0e16f24bc7f69896f4c8cd6061c09f56abb66",
+   "hcf_commit": "a88dc031b9a1"
   },
   "9c2becb42faeb2355ac084da4845cef7724d3d202eadfb79cd87460c3f58d449": {
    "file": "Augustine of Hippo/Mark 13_32.toml",
@@ -473,7 +531,9 @@
     "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "9c2becb42faeb2355ac084da4845cef7724d3d202eadfb79cd87460c3f58d449",
+   "hcf_commit": "a88dc031b9a1"
   },
   "5a4afb0f77a55edf02e29d4396c409225d14557f380b83fe2ebab5c8c5514f3f": {
    "file": "Augustine of Hippo/Mark 13_32.toml",
@@ -485,7 +545,9 @@
     "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "5a4afb0f77a55edf02e29d4396c409225d14557f380b83fe2ebab5c8c5514f3f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "7abf306f88593179eb855f00f2c0a43ce8d72a438faa82f52ee944ac255f146a": {
    "file": "Augustine of Hippo/Mark 13_33.toml",
@@ -493,7 +555,9 @@
    "source": "Augustine of Hippo/Letters.html",
    "homily": "Augustine of Hippo/Letters.html",
    "status": "unchecked",
-   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands",
+   "quote_sha256": "7abf306f88593179eb855f00f2c0a43ce8d72a438faa82f52ee944ac255f146a",
+   "hcf_commit": "a88dc031b9a1"
   },
   "4501b1eb51e578913ce96d094a3ca04527c6328e00f5d2180376eeecfbd654e5": {
    "file": "Augustine of Hippo/Mark 13_37.toml",
@@ -501,7 +565,9 @@
    "source": "Augustine of Hippo/Sermons/Sermon 18.html",
    "homily": "Augustine of Hippo/Sermons/Sermon 18.html",
    "status": "unchecked",
-   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld"
+   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld",
+   "quote_sha256": "4501b1eb51e578913ce96d094a3ca04527c6328e00f5d2180376eeecfbd654e5",
+   "hcf_commit": "a88dc031b9a1"
   },
   "4e8b177fc62b6ef9face13f1742be5cd216a2b48414c04daf8cefcb0a93c6c2c": {
    "file": "Augustine of Hippo/Mark 13_37.toml",
@@ -509,7 +575,9 @@
    "source": "Augustine of Hippo/Letters.html",
    "homily": "Augustine of Hippo/Letters.html",
    "status": "unchecked",
-   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands",
+   "quote_sha256": "4e8b177fc62b6ef9face13f1742be5cd216a2b48414c04daf8cefcb0a93c6c2c",
+   "hcf_commit": "a88dc031b9a1"
   },
   "fa8f768b57cea41614ef7812a7f36d69ab51cce814d14c92ff427c71045cd125": {
    "file": "Augustine of Hippo/Mark 13_37.toml",
@@ -521,7 +589,9 @@
     "volume": "CCEL catena2: Catena Aurea, Gospel of Mark (Aquinas; CCEL file lists William Whiston as translator, probably a metadata slip)",
     "ccel_file_sha256": "69c8f2d198186de50e444c6a618dd3de24d3b89e8af879042b06c5a46c89168f",
     "ccel_rights": "not stated in the file"
-   }
+   },
+   "quote_sha256": "fa8f768b57cea41614ef7812a7f36d69ab51cce814d14c92ff427c71045cd125",
+   "hcf_commit": "a88dc031b9a1"
   },
   "5efb4bf6791817fdfcd5e4538e1a7c10c05e3f088e4462abb810ed9ff40d132f": {
    "file": "Augustine of Hippo/Matthew 25_31.toml",
@@ -533,7 +603,9 @@
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
     "ccel_rights": "not stated in the file"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "5efb4bf6791817fdfcd5e4538e1a7c10c05e3f088e4462abb810ed9ff40d132f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "dff518a226a77b3bec027c0203cdd3a72fee2efc53927e70b196c39449bd7276": {
    "file": "Augustine of Hippo/Matthew 25_31.toml",
@@ -549,7 +621,9 @@
    "editors_marks": [
     "citation tag in the HCF text that the PDF prints in the margin",
     "dæmons / daemons spelling"
-   ]
+   ],
+   "quote_sha256": "dff518a226a77b3bec027c0203cdd3a72fee2efc53927e70b196c39449bd7276",
+   "hcf_commit": "a88dc031b9a1"
   },
   "22c70302d19694d627e5dec4fe856be923ab7984ccd21ac8c6b7c2d06a1908b6": {
    "file": "Augustine of Hippo/Matthew 25_31.toml",
@@ -561,7 +635,9 @@
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
     "ccel_rights": "not stated in the file"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "22c70302d19694d627e5dec4fe856be923ab7984ccd21ac8c6b7c2d06a1908b6",
+   "hcf_commit": "a88dc031b9a1"
   },
   "6c5dbe9011cd1cfcba1834eaf10e30d2c935e8332510c10d7c6a9e07be9dc1b7": {
    "file": "Augustine of Hippo/Matthew 25_31.toml",
@@ -577,7 +653,9 @@
    "editors_marks": [
     "citation tag in the HCF text that the PDF prints in the margin",
     "dæmons / daemons spelling"
-   ]
+   ],
+   "quote_sha256": "6c5dbe9011cd1cfcba1834eaf10e30d2c935e8332510c10d7c6a9e07be9dc1b7",
+   "hcf_commit": "a88dc031b9a1"
   },
   "fd95d0f9142fea73b31363eaebfaa0b120eaf189267ad59d4b696d10b8e2b8d8": {
    "file": "Augustine of Hippo/Matthew 25_32.toml",
@@ -593,7 +671,9 @@
    "editors_marks": [
     "citation tag in the HCF text that the PDF prints in the margin",
     "dæmons / daemons spelling"
-   ]
+   ],
+   "quote_sha256": "fd95d0f9142fea73b31363eaebfaa0b120eaf189267ad59d4b696d10b8e2b8d8",
+   "hcf_commit": "a88dc031b9a1"
   },
   "61a25975c34e7b73ba84c1fe7315ec0af04d17f6ef51238d036f4e4664282f43": {
    "file": "Augustine of Hippo/Matthew 25_34-46.toml",
@@ -605,7 +685,9 @@
     "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "61a25975c34e7b73ba84c1fe7315ec0af04d17f6ef51238d036f4e4664282f43",
+   "hcf_commit": "a88dc031b9a1"
   },
   "556ff0bd6d4a0cf7483cb47fe8aa57612490f79a11bccf8add2f3d624643656f": {
    "file": "Augustine of Hippo/Matthew 25_34.toml",
@@ -621,7 +703,9 @@
    "editors_marks": [
     "citation tag in the HCF text that the PDF prints in the margin",
     "dæmons / daemons spelling"
-   ]
+   ],
+   "quote_sha256": "556ff0bd6d4a0cf7483cb47fe8aa57612490f79a11bccf8add2f3d624643656f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "01d4a570f00e7d47d72d35b96a2a4520880b86901cb7bb24b537067effcde837": {
    "file": "Augustine of Hippo/Matthew 25_34.toml",
@@ -633,7 +717,9 @@
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
     "ccel_rights": "not stated in the file"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "01d4a570f00e7d47d72d35b96a2a4520880b86901cb7bb24b537067effcde837",
+   "hcf_commit": "a88dc031b9a1"
   },
   "31c15563c4a470a54acf30cc6c16e53ed56b4cff80800c13154fcf591a59ebe6": {
    "file": "Augustine of Hippo/Matthew 25_34.toml",
@@ -645,7 +731,9 @@
     "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
     "ccel_rights": "Public Domain"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "31c15563c4a470a54acf30cc6c16e53ed56b4cff80800c13154fcf591a59ebe6",
+   "hcf_commit": "a88dc031b9a1"
   },
   "ee1d37d5cc2295ce33f517680468b689999bacd1ac9b918162e2051f54ac9b2f": {
    "file": "Augustine of Hippo/Matthew 25_41.toml",
@@ -661,7 +749,9 @@
    "editors_marks": [
     "citation tag in the HCF text that the PDF prints in the margin",
     "dæmons / daemons spelling"
-   ]
+   ],
+   "quote_sha256": "ee1d37d5cc2295ce33f517680468b689999bacd1ac9b918162e2051f54ac9b2f",
+   "hcf_commit": "a88dc031b9a1"
   },
   "764a9e54936087cf64ed1958d8cb1a9a66dcd7392414308c2a90c3869fffc1c2": {
    "file": "Augustine of Hippo/Matthew 25_46.toml",
@@ -747,7 +837,9 @@
       "hcf": "gal"
      }
     ]
-   }
+   },
+   "quote_sha256": "764a9e54936087cf64ed1958d8cb1a9a66dcd7392414308c2a90c3869fffc1c2",
+   "hcf_commit": "a88dc031b9a1"
   },
   "8c188c89764ebafb9a897614559b49ed7ed72644c43b993521438c8985a54a48": {
    "file": "Augustine of Hippo/Romans 13_11.toml",
@@ -755,7 +847,9 @@
    "source": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
    "homily": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
    "status": "unchecked",
-   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld"
+   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld",
+   "quote_sha256": "8c188c89764ebafb9a897614559b49ed7ed72644c43b993521438c8985a54a48",
+   "hcf_commit": "a88dc031b9a1"
   },
   "bc4eb1b59f531b9cd5a36ed8d39403c4488771b3a2256fbdecfd78c268d16fa6": {
    "file": "Augustine of Hippo/Romans 13_12.toml",
@@ -763,7 +857,9 @@
    "source": "Augustine of Hippo/Letters.html",
    "homily": "Augustine of Hippo/Letters.html",
    "status": "unchecked",
-   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands",
+   "quote_sha256": "bc4eb1b59f531b9cd5a36ed8d39403c4488771b3a2256fbdecfd78c268d16fa6",
+   "hcf_commit": "a88dc031b9a1"
   },
   "065d6614a430c90ac3e4f242df86ea950d7a4a8ccf5f545d7b61d9659b48c33d": {
    "file": "Augustine of Hippo/Romans 13_14.toml",
@@ -771,7 +867,9 @@
    "source": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
    "homily": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
    "status": "unchecked",
-   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld"
+   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld",
+   "quote_sha256": "065d6614a430c90ac3e4f242df86ea950d7a4a8ccf5f545d7b61d9659b48c33d",
+   "hcf_commit": "a88dc031b9a1"
   },
   "87349264103b0765e5d35dea7a9d9fa1cb127cf36e8764e42275db467c7e1c45": {
    "file": "John Chrysostom/Matthew 25_40.toml",
@@ -783,7 +881,9 @@
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
     "ccel_rights": "not stated in the file"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "87349264103b0765e5d35dea7a9d9fa1cb127cf36e8764e42275db467c7e1c45",
+   "hcf_commit": "a88dc031b9a1"
   },
   "7c4878b5e3395f91b7009149b522da3e8d1ee21e6c5a9d88a24b76a4c326b8ec": {
    "file": "John Chrysostom/Matthew 25_44.toml",
@@ -795,7 +895,17 @@
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
     "ccel_rights": "not stated in the file"
    },
-   "status": "exact"
+   "status": "exact",
+   "quote_sha256": "7c4878b5e3395f91b7009149b522da3e8d1ee21e6c5a9d88a24b76a4c326b8ec",
+   "hcf_commit": "a88dc031b9a1"
   }
+ },
+ "statusMeaning": {
+  "exact": "word sequence matches a full text (case, punctuation and digits ignored); not a character-for-character claim",
+  "editors-marks": "same, apart from marks added by editors or compilers (citation tags, bracketed words)",
+  "typo": "same, apart from one recorded one-word correction applied before cutting",
+  "gap": "same, but the excerpt skips text with no mark; pieces spanning the skip are excluded (V14)",
+  "other": "differences a person must read; withheld",
+  "unchecked": "no full text available; withheld"
  }
 }
