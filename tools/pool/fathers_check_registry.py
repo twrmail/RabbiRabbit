@@ -70,6 +70,12 @@ def check(q, hom):
     if typos: r['corrections'] = typos
     if other: r['other'] = other
     return r
+HCF_PIN = 'a88dc031b9a1'
+def put(res, key, rec):
+    """Add a registry record. The key is the sha256 of the HCF quote. Two different source entries with the same quote text would share a key: stop, do not overwrite."""
+    old = res.get(key)
+    if old and (old.get('file'), old.get('entry')) != (rec.get('file'), rec.get('entry')): raise SystemExit(f'registry key collision: {old.get("file")} #{old.get("entry")} and {rec.get("file")} #{rec.get("entry")} have the same quote')
+    rec['quote_sha256'] = key; rec['hcf_commit'] = HCF_PIN; res[key] = rec
 res = {}
 for f in sorted(glob.glob(f'{hcf}/John Chrysostom/*.toml')):
     for i, e in enumerate(tomllib.load(open(f, 'rb')).get('commentary', []), 1):
@@ -85,7 +91,7 @@ for f in sorted(glob.glob(f'{hcf}/John Chrysostom/*.toml')):
         rec = dict(file=f'John Chrysostom/{os.path.basename(f)}', entry=i, homily=f'{work} {n}', against=dict(volume=V.title if V else None, ccel_file_sha256=V.sha if V else None, homily_heading=head, ccel_rights=V.rights if V else None))
         if dco: rec['against'] = dict(volume='Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)', source_text_sha256=sha(hom.encode()), homily_heading=head, rights='not stated by the source')
         rec.update(check(q, hom) if hom else dict(status='unchecked', note='homily not found in the CCEL file'))
-        res[key] = rec
+        put(res, key, rec)
 summary = {}
 for r in res.values(): summary[r['status']] = summary.get(r['status'], 0) + 1
 json.dump(dict(schemaVersion=1, built=datetime.date.today().isoformat(), note='Chrysostom excerpts (HCF, pinned) checked against CCEL NPNF1 full text. Key = sha256 of the HCF entry quote.', summary=summary, entries=res), open(out, 'w'), indent=1, ensure_ascii=False)

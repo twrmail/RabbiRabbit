@@ -20,7 +20,7 @@ for f in sorted(glob.glob(f'{rep}/diagnostic-*.json')):
             elif name in ('barnes', 'tyndale'): src = chap({'barnes': 'Barnes-NT', 'tyndale': 'Tyndale'}[name], book, ch)['verses'][str(p['note_span'][0])]
             else:
                 dirn, rest = p['source_file'].split('/', 1); fn = rest.split(' [entry ')[0]; i = int(rest.split('[entry ')[1].rstrip(']'))
-                raw = P.hcf_get(dirn, fn, '/tmp/hcf-cache'); src = P.fathers_corrected(tomllib.loads(raw.decode())['commentary'][i - 1]['quote'])[0]
+                raw = P.hcf_get(dirn, fn); src = P.fathers_corrected(tomllib.loads(raw.decode())['commentary'][i - 1]['quote'])[0]
             if src[p['start']:p['end']] != p['text']: bad += 1; print('MISMATCH', f, p['id'])
             if max(map(ord, p['text'])) >= 0x10000: bmp += 1
 print(f'verified {tot} pieces, mismatches {bad}, pieces with non-BMP characters {bmp}')

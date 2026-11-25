@@ -59,7 +59,7 @@ def run(lib, key, cfg):
         except SystemExit as e:
             hashes, cov, notes, pieces, findings = {}, {v: dict(state='extraction failure', detail=str(e)) for v in range(cfg['lo'], cfg['hi'] + 1)}, [], [], [dict(kind='fatal', msg=str(e))]
         except (FileNotFoundError, IndexError, KeyError) as e:
-            hashes, cov, notes, pieces, findings = {}, {v: dict(state='not applicable', detail=f'{type(e).__name__}: {e}') for v in range(cfg['lo'], cfg['hi'] + 1)}, [], [], [dict(kind='not-applicable', msg=f'{name}: {type(e).__name__}: {e}')]
+            hashes, cov, notes, pieces, findings = {}, {v: dict(state='extraction failure', detail=f'{type(e).__name__}: {e}') for v in range(cfg['lo'], cfg['hi'] + 1)}, [], [], [dict(kind='fatal', msg=f'{name}: {type(e).__name__}: {e} (a missing file or malformed index is an extraction failure, not "not applicable")')]
         entry = dict(hashes=hashes, coverage={str(k): v for k, v in cov.items()}, notes=notes, pieces=pieces, findings=findings)
         if name == 'calvin':
             alt = calvin_alt(lib, cfg['book'], cfg['ch'], cfg['lo'], cfg['hi'], cfg['abbr'], cov)
@@ -90,7 +90,8 @@ def run(lib, key, cfg):
         h = s['hashes']
         if 'files_sha256' in h: pairs += [(k, v) for k, v in h['files_sha256'].items()]
         else: pairs.append((h.get('file_sha256'), h.get('text_sha256')))
-    res['source_fingerprint_sha256'] = sha(json.dumps(sorted([[str(a), str(b)] for a, b in pairs]), sort_keys=True, separators=(',', ':'), ensure_ascii=False))
+    res['source_problems'] = [f'{n}: {f["msg"]}' for n, s in res['sources'].items() for f in s['findings'] if f['kind'] == 'fatal']
+    res['source_fingerprint_sha256'] = None if res['source_problems'] else sha(json.dumps(sorted([[str(a), str(b)] for a, b in pairs]), sort_keys=True, separators=(',', ':'), ensure_ascii=False))
     # verbatim recheck is done in verify.py against fresh slices
     res['parallels'] = {}
     for par in PARALLELS.get(key, []):

@@ -17,7 +17,7 @@ tabs='';panes=''
 for i,n in enumerate(names):
     d=json.load(open(f'{R}/diagnostic-{n}.json')); v=json.load(open(f'{VAL}/validator-{n}.json')); s=summ[n]; sm=d['summary']
     h=f'<h2>{e(d["passage"])}</h2><p class="priv">PRIVATE DIAGNOSTIC: shows withheld-tier (C/U/W) pieces in counts. Not for public build.</p>'
-    h+=f'<p>Pool: <b>{sm["pieces"]}</b> pieces, <b>{sm["chars"]:,}</b> chars. Source fingerprint <code>{e(d["source_fingerprint_sha256"])}</code></p>'
+    h+=f'<p>Pool: <b>{sm["pieces"]}</b> pieces, <b>{sm["chars"]:,}</b> chars. Source fingerprint <code>{e(d["source_fingerprint_sha256"] or "NONE: a source failed to load")}</code></p>'
     h+='<h3>Coverage per source per verse</h3>'
     verses=sorted({int(k) for src in d['matrix'].values() for k in src})
     h+=tbl(['source']+[str(x) for x in verses],[[e(sn)]+[e(d['matrix'][sn].get(str(x),'')) for x in verses] for sn in d['matrix']])

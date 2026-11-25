@@ -19,6 +19,12 @@ SPANS = [  # (url fragment, volume, start, end, label)
  ('PSALMS/Psalm 8.html', v8, 247019, 284316, 'Psalm 8'),
  ('PSALMS/Psalm 10.html', v8, 327063, 352452, 'Psalm 10 (NPNF Psalm X)'),
  ('PSALMS/Psalm 37.html', v8, 760773, 850965, 'Psalm 37 (NPNF Psalm XXXVII)')]
+HCF_PIN = 'a88dc031b9a1'
+def put(res, key, rec):
+    """Add a registry record. The key is the sha256 of the HCF quote. Two different source entries with the same quote text would share a key: stop, do not overwrite."""
+    old = res.get(key)
+    if old and (old.get('file'), old.get('entry')) != (rec.get('file'), rec.get('entry')): raise SystemExit(f'registry key collision: {old.get("file")} #{old.get("entry")} and {rec.get("file")} #{rec.get("entry")} have the same quote')
+    rec['quote_sha256'] = key; rec['hcf_commit'] = HCF_PIN; res[key] = rec
 d = json.load(open(reg)); res = d['entries']
 raw = {}; fsha = {}
 for p in (v3, v7, v8):
@@ -37,7 +43,7 @@ for f in sorted(glob.glob(f'{hcf}/Augustine of Hippo/*.toml')):
                     'Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands' if u.endswith('Letters.html') else
                     'no public-domain full text found to check against (looks like a modern translation); stays withheld')
             rec.update(homily=u, status='unchecked', note=note)
-        res[sha(q.encode())] = rec
+        put(res, sha(q.encode()), rec)
 summary = {}
 for r in res.values(): summary[r['status']] = summary.get(r['status'], 0) + 1
 d['summary'] = summary; d['note'] = 'Chrysostom and Augustine excerpts (HCF, pinned) checked against CCEL NPNF1 full text. Key = sha256 of the HCF entry quote.'
