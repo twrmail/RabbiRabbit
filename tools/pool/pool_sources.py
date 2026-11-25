@@ -71,13 +71,15 @@ def fathers_corrected(q):
     shift = lambda off: off + sum(len(c['new']) - len(c['old']) for c in cors if c['off'] < off)
     return ''.join(out), rec, shift
 
+# `against.rights_status` (or the older `against.ccel_rights`) must be exactly 'Public Domain'; `against.rights_basis` says why.
 PUBLIC_CHECK_STATUSES = ('exact', 'editors-marks', 'typo', 'gap')
 def fathers_public_ok(chk):
     """A Fathers excerpt may be public (tier B) only with a registry record that (1) matches the excerpt's text hash, (2) has a status showing the words
     match a full text, and (3) names a full text whose rights statement is Public Domain. Anything else is withheld (tier U), never defaulted to B."""
     if not chk: return False, 'no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text'
     if chk.get('status') not in PUBLIC_CHECK_STATUSES: return False, f'source check status is {chk.get("status")!r}, not a word match against a full text'
-    if (chk.get('against') or {}).get('ccel_rights') != 'Public Domain': return False, 'the full text it was checked against does not state Public Domain rights'
+    ag = chk.get('against') or {}
+    if (ag.get('rights_status') or ag.get('ccel_rights')) != 'Public Domain': return False, 'the full text it was checked against does not state Public Domain rights'
     return True, ''
 
 def fathers(lib, book, ch, lo, hi, abbr=None, cache=None, nverses=None):
