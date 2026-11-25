@@ -1,0 +1,801 @@
+{
+ "schemaVersion": 1,
+ "built": "2026-11-25",
+ "note": "Chrysostom and Augustine excerpts (HCF, pinned) checked against CCEL NPNF1 full text. Key = sha256 of the HCF entry quote.",
+ "summary": {
+  "exact": 25,
+  "gap": 6,
+  "editors-marks": 9,
+  "typo": 2,
+  "other": 2,
+  "unchecked": 7
+ },
+ "entries": {
+  "1babc88d74c1fb67c0d34c3d35a93560c71c80d1fcd39e032d165475210d0117": {
+   "file": "John Chrysostom/Ephesians 1_15-16.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "fbd9007b444c96fcdb1998d6c748100b4ba409af558553140422cc6ad69dc29a": {
+   "file": "John Chrysostom/Ephesians 1_17.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "gap",
+   "editors_marks": [
+    "cor i",
+    "cor i",
+    "ps xviii",
+    "cf acts vii",
+    "cor ii"
+   ],
+   "gaps": [
+    {
+     "off": 988,
+     "skipped_words": 65,
+     "skipped_preview": "Ver And made Him to sit at His right hand in the ..."
+    }
+   ]
+  },
+  "a711fd15585c34809560403c1107961d4c122a9017bc8b6a5434cd062bd884f7": {
+   "file": "John Chrysostom/Ephesians 1_18.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "gap",
+   "gaps": [
+    {
+     "off": 878,
+     "skipped_words": 291,
+     "skipped_preview": "But what is clear that through His power we have believed that ..."
+    }
+   ]
+  },
+  "d08434eaba9c9135a5487e89361d14169c3ec07346fbb7d5e39c17e8ae95110a": {
+   "file": "John Chrysostom/Ephesians 1_19.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "john xi",
+    "acts ix",
+    "thess iv",
+    "cor xv",
+    "matt xxiii"
+   ]
+  },
+  "9da7beb051fde8d8b8356e02c2ba4ef781bb6442f15de2614d38260c964e7755": {
+   "file": "John Chrysostom/Ephesians 1_20.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "b1a4ef68cade262314099bd4c2cf5a543c7acd81c714f6f6bb71cfeea132833d": {
+   "file": "John Chrysostom/Ephesians 1_21.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "gap",
+   "gaps": [
+    {
+     "off": 1108,
+     "skipped_words": 24,
+     "skipped_preview": "If all mankind are to be counted as spittle and were counted ..."
+    }
+   ]
+  },
+  "432951cc3aff43a0d816114ece434a97c3ed8ed89fe97196b40e6a50f85d572f": {
+   "file": "John Chrysostom/Ephesians 1_22.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "e08636682b4fae769214fb8ce97d4c8e018fc79f4ff6ece996d2fe75cc8dbc4e": {
+   "file": "John Chrysostom/Ephesians 1_23.toml",
+   "entry": 1,
+   "homily": "On Ephesians 3",
+   "against": {
+    "volume": "NPNF1-13. Saint Chrysostom: Homilies on Galatians, Ephesians, Philippians, Colossians, Thessalonians, Timothy, Titus, and Philemon",
+    "ccel_file_sha256": "d62c7c82b262c738739090ffaf5473aa5a76dbadf62ebee0dccac8c4a7db4762",
+    "homily_heading": "Homily III. Chapter I. Verses 15–20 “For this cause I also, ",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "typo",
+   "editors_marks": [
+    "heb ii",
+    "pet ii"
+   ],
+   "corrections": [
+    {
+     "off": 1296,
+     "old": "he",
+     "new": "the"
+    },
+    {
+     "off": 4436,
+     "old": "shall",
+     "new": "shalt"
+    }
+   ]
+  },
+  "46d0d8a86e99715d0bc4a17ccf2ca7be2c89d2de613699b5370194213d780454": {
+   "file": "John Chrysostom/Matthew 25_31.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "exact"
+  },
+  "b6cca4c915fb7f2d1f1a14558360e7989768dc2259eed3ed3518e6e953729ebd": {
+   "file": "John Chrysostom/Matthew 25_32-33.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "exact"
+  },
+  "3802ccb8e718664dfb9c501d149bfd48bb2eeec03801b47921164c74273336cd": {
+   "file": "John Chrysostom/Matthew 25_34-40.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "gap",
+   "editors_marks": [
+    "c"
+   ],
+   "gaps": [
+    {
+     "off": 646,
+     "skipped_words": 111,
+     "skipped_preview": "this comparison is sometimes made in the case of an equal as ..."
+    }
+   ]
+  },
+  "011942fce5b87bdee2136e2429d0aabd08ddeebd7bdf83b9b760fc8ba686b029": {
+   "file": "John Chrysostom/Matthew 25_34.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "exact"
+  },
+  "895f363f8e0aea36b49554349084649572c6183100e1647e030b7b6a10a1c675": {
+   "file": "John Chrysostom/Matthew 25_35.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "exact"
+  },
+  "7246a845bfa60f70832cf16e74beb14d514febc4e66a9995c441e5048a751265": {
+   "file": "John Chrysostom/Matthew 25_41.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "exact"
+  },
+  "7560edb0ef99fe3712fecb50bc3851ed4a0435562d4c0d844a400e114d2a6cec": {
+   "file": "John Chrysostom/Matthew 25_42-43.toml",
+   "entry": 1,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "other",
+   "editors_marks": [
+    "c"
+   ],
+   "other": [
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "for i was an hungered and ye gave me no meat for though he that came to thee had been thine enemy were not his sufferings enough to have overcome and subdued even the merciless hunger and cold and bon"
+    }
+   ]
+  },
+  "fbe8c11adddf41d73db7603bf2373cf2289eed2e04d9ed0010cb261407d6a90f": {
+   "file": "John Chrysostom/Matthew 25_42.toml",
+   "entry": 1,
+   "homily": "On Matthew 81",
+   "against": {
+    "volume": "NPNF1-10. St. Chrysostom: Homilies on the Gospel of Saint Matthew",
+    "ccel_file_sha256": "e110c98b1f444147bf7baf79e46e56ae6c6a1f0b2983e6fc52f2356fac7f858f",
+    "homily_heading": "Homily LXXXI. Matt. XXVI. 17, 18 . “Now the first day of the",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "7f265f5a51d9d6ce1c77bf5a508436144e37634e6cc0367c23d73c34b835d5b6": {
+   "file": "John Chrysostom/Matthew 25_45.toml",
+   "entry": 1,
+   "homily": "On Matthew 88",
+   "against": {
+    "volume": "NPNF1-10. St. Chrysostom: Homilies on the Gospel of Saint Matthew",
+    "ccel_file_sha256": "e110c98b1f444147bf7baf79e46e56ae6c6a1f0b2983e6fc52f2356fac7f858f",
+    "homily_heading": "Homily LXXXVIII. Matt. XXVII. 45-48 . “Now from the sixth ho",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "f039227bd3cde7baf5c7db9f429153d07fa3492a2c6237693ae442700909c2ec": {
+   "file": "John Chrysostom/Matthew 25_45.toml",
+   "entry": 2,
+   "homily": "On Matthew 79",
+   "against": {
+    "volume": "Documenta Catholica Omnia, Homilies on the Gospel of Matthew (EN), PDF; translator not named; NOT CCEL (Homily 79 is not in CCEL NPNF1-10)",
+    "source_text_sha256": "f7f21bc53c642ae641995acc37adb12e6ce616caff2875cbb066cd7c77edcaaa",
+    "homily_heading": "HOMILY LXXIX.",
+    "rights": "not stated by the source"
+   },
+   "status": "gap",
+   "gaps": [
+    {
+     "off": 829,
+     "skipped_words": 930,
+     "skipped_preview": "Then in order that thou mayest see in another way also the ..."
+    }
+   ]
+  },
+  "d1f84bb8ca2c5c2f73fd3b175733e7b7fe9d70f61cb2c350e1dd4c0388bdd5fd": {
+   "file": "John Chrysostom/Matthew 25_45.toml",
+   "entry": 3,
+   "homily": "On Matthew 50",
+   "against": {
+    "volume": "NPNF1-10. St. Chrysostom: Homilies on the Gospel of Saint Matthew",
+    "ccel_file_sha256": "e110c98b1f444147bf7baf79e46e56ae6c6a1f0b2983e6fc52f2356fac7f858f",
+    "homily_heading": "Homily L. Matt. XIV. 23, 24 . “And when He had sent the mult",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "de9ddd2fd090a2ddab9423f7445b6dad6b31361497339ff382f21320777e6d93": {
+   "file": "John Chrysostom/Romans 13_11.toml",
+   "entry": 1,
+   "homily": "On Romans 24",
+   "against": {
+    "volume": "NPNF1-11. Saint Chrysostom: Homilies on the Acts of the Apostles and the Epistle to the Romans",
+    "ccel_file_sha256": "46072a7fefb80b4b7ea68544b46c13fc1785bd29d99834fd2f867f8aa5e14f08",
+    "homily_heading": "Homily XXIV. Rom. XIII. 11 “And that, knowing the time, that",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "mss and cat"
+   ]
+  },
+  "916e67b99bb18a5ec1d27eeeda1d1bc558415182c182523ce951c88037315ac1": {
+   "file": "John Chrysostom/Romans 13_12.toml",
+   "entry": 1,
+   "homily": "On Romans 24",
+   "against": {
+    "volume": "NPNF1-11. Saint Chrysostom: Homilies on the Acts of the Apostles and the Epistle to the Romans",
+    "ccel_file_sha256": "46072a7fefb80b4b7ea68544b46c13fc1785bd29d99834fd2f867f8aa5e14f08",
+    "homily_heading": "Homily XXIV. Rom. XIII. 11 “And that, knowing the time, that",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "a v honestly in this sense"
+   ]
+  },
+  "757508c2699c766510156c20bf33c4f0f00057b08cb044d7d70d644ba210b45c": {
+   "file": "John Chrysostom/Romans 13_13.toml",
+   "entry": 1,
+   "homily": "On Romans 24",
+   "against": {
+    "volume": "NPNF1-11. Saint Chrysostom: Homilies on the Acts of the Apostles and the Epistle to the Romans",
+    "ccel_file_sha256": "46072a7fefb80b4b7ea68544b46c13fc1785bd29d99834fd2f867f8aa5e14f08",
+    "homily_heading": "Homily XXIV. Rom. XIII. 11 “And that, knowing the time, that",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "e7a9aa373071d44548dbfb98ed57fc163dde0ab8782570e187a24f75a4f3ec32": {
+   "file": "John Chrysostom/Romans 13_14.toml",
+   "entry": 1,
+   "homily": "On Romans 24",
+   "against": {
+    "volume": "NPNF1-11. Saint Chrysostom: Homilies on the Acts of the Apostles and the Epistle to the Romans",
+    "ccel_file_sha256": "46072a7fefb80b4b7ea68544b46c13fc1785bd29d99834fd2f867f8aa5e14f08",
+    "homily_heading": "Homily XXIV. Rom. XIII. 11 “And that, knowing the time, that",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "al punct",
+    "Ib. written out in HCF as eph",
+    "Ib. written out in HCF as john xv"
+   ]
+  },
+  "e2db47e239f43eafce0c08ab6397e4d459c220c32bd7b2637ea883ad4594529a": {
+   "file": "Augustine of Hippo/1 John 2_15-16.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/ON THE PSALMS/Psalm 8.html",
+   "homily": "Psalm 8",
+   "against": {
+    "volume": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+    "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "3397c46dd291e2eebfc4f4d292b34f274ce95fab4c40ca1f7ca049e654a52582": {
+   "file": "Augustine of Hippo/1 John 2_15.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Ten Homilies on the First Epistle of John/Homily 2.html",
+   "homily": "Homily 2 on 1 John",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "typo",
+   "corrections": [
+    {
+     "off": 424,
+     "old": "shall",
+     "new": "shalt"
+    }
+   ]
+  },
+  "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98": {
+   "file": "Augustine of Hippo/1 John 2_15.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/Ten Homilies on the First Epistle of John/Homily 2.html",
+   "homily": "Homily 2 on 1 John",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "722d7d891237b85333bb7947e317a616070d7f1e6079e4a021b1ba041f6cad49": {
+   "file": "Augustine of Hippo/Mark 13_32.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/On The Trinity/Book 1.html",
+   "homily": "On the Trinity 1",
+   "against": {
+    "volume": "NPNF1-03. St. Augustin: On the Holy Trinity (tr. Arthur West Haddan)",
+    "ccel_file_sha256": "410f240f8105bb6097316a54a867fa5a4ae02c0d3d03606aefc2df71f5bfc455",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "gap",
+   "gaps": [
+    {
+     "off": 217,
+     "skipped_words": 63,
+     "skipped_preview": "Chapter In What Manner the Son is Said Not to Know the ..."
+    },
+    {
+     "off": 656,
+     "skipped_words": 181,
+     "skipped_preview": "For He was certainly going to tell this same thing to His ..."
+    }
+   ]
+  },
+  "4994551703eae09aa3774ffa229881f91e0b13dea9f83ae2b10f1b9e897c6e7f": {
+   "file": "Augustine of Hippo/Mark 13_32.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/Letters.html",
+   "homily": "Augustine of Hippo/Letters.html",
+   "status": "unchecked",
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+  },
+  "f740d31f448528af7e78181bcfc0e16f24bc7f69896f4c8cd6061c09f56abb66": {
+   "file": "Augustine of Hippo/Mark 13_32.toml",
+   "entry": 3,
+   "source": "Augustine of Hippo/ON THE PSALMS/Psalm 6.html",
+   "homily": "Psalm 6",
+   "against": {
+    "volume": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+    "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "9c2becb42faeb2355ac084da4845cef7724d3d202eadfb79cd87460c3f58d449": {
+   "file": "Augustine of Hippo/Mark 13_32.toml",
+   "entry": 4,
+   "source": "Augustine of Hippo/ON THE PSALMS/Psalm 10.html",
+   "homily": "Psalm 10 (NPNF Psalm X)",
+   "against": {
+    "volume": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+    "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "5a4afb0f77a55edf02e29d4396c409225d14557f380b83fe2ebab5c8c5514f3f": {
+   "file": "Augustine of Hippo/Mark 13_32.toml",
+   "entry": 5,
+   "source": "Augustine of Hippo/ON THE PSALMS/Psalm 37.html",
+   "homily": "Psalm 37 (NPNF Psalm XXXVII)",
+   "against": {
+    "volume": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+    "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "7abf306f88593179eb855f00f2c0a43ce8d72a438faa82f52ee944ac255f146a": {
+   "file": "Augustine of Hippo/Mark 13_33.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Letters.html",
+   "homily": "Augustine of Hippo/Letters.html",
+   "status": "unchecked",
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+  },
+  "4501b1eb51e578913ce96d094a3ca04527c6328e00f5d2180376eeecfbd654e5": {
+   "file": "Augustine of Hippo/Mark 13_37.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Sermons/Sermon 18.html",
+   "homily": "Augustine of Hippo/Sermons/Sermon 18.html",
+   "status": "unchecked",
+   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld"
+  },
+  "4e8b177fc62b6ef9face13f1742be5cd216a2b48414c04daf8cefcb0a93c6c2c": {
+   "file": "Augustine of Hippo/Mark 13_37.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/Letters.html",
+   "homily": "Augustine of Hippo/Letters.html",
+   "status": "unchecked",
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+  },
+  "fa8f768b57cea41614ef7812a7f36d69ab51cce814d14c92ff427c71045cd125": {
+   "file": "Augustine of Hippo/Mark 13_37.toml",
+   "entry": 3,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Mark/Chapter 13.html",
+   "homily": "Catena Aurea, Mark 13",
+   "status": "exact",
+   "against": {
+    "volume": "CCEL catena2: Catena Aurea, Gospel of Mark (Aquinas; CCEL file lists William Whiston as translator, probably a metadata slip)",
+    "ccel_file_sha256": "69c8f2d198186de50e444c6a618dd3de24d3b89e8af879042b06c5a46c89168f",
+    "ccel_rights": "not stated in the file"
+   }
+  },
+  "5efb4bf6791817fdfcd5e4538e1a7c10c05e3f088e4462abb810ed9ff40d132f": {
+   "file": "Augustine of Hippo/Matthew 25_31.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "exact"
+  },
+  "dff518a226a77b3bec027c0203cdd3a72fee2efc53927e70b196c39449bd7276": {
+   "file": "Augustine of Hippo/Matthew 25_31.toml",
+   "entry": 2,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "citation tag in the HCF text that the PDF prints in the margin",
+    "dæmons / daemons spelling"
+   ]
+  },
+  "22c70302d19694d627e5dec4fe856be923ab7984ccd21ac8c6b7c2d06a1908b6": {
+   "file": "Augustine of Hippo/Matthew 25_31.toml",
+   "entry": 3,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "exact"
+  },
+  "6c5dbe9011cd1cfcba1834eaf10e30d2c935e8332510c10d7c6a9e07be9dc1b7": {
+   "file": "Augustine of Hippo/Matthew 25_31.toml",
+   "entry": 4,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "citation tag in the HCF text that the PDF prints in the margin",
+    "dæmons / daemons spelling"
+   ]
+  },
+  "fd95d0f9142fea73b31363eaebfaa0b120eaf189267ad59d4b696d10b8e2b8d8": {
+   "file": "Augustine of Hippo/Matthew 25_32.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "citation tag in the HCF text that the PDF prints in the margin",
+    "dæmons / daemons spelling"
+   ]
+  },
+  "61a25975c34e7b73ba84c1fe7315ec0af04d17f6ef51238d036f4e4664282f43": {
+   "file": "Augustine of Hippo/Matthew 25_34-46.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/ON THE PSALMS/Psalm 37.html",
+   "homily": "Psalm 37 (NPNF Psalm XXXVII)",
+   "against": {
+    "volume": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+    "ccel_file_sha256": "87b60e90917e69f03c75955517fc996a0e6d22dc9862365b45c308e70e5bf784",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "556ff0bd6d4a0cf7483cb47fe8aa57612490f79a11bccf8add2f3d624643656f": {
+   "file": "Augustine of Hippo/Matthew 25_34.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "citation tag in the HCF text that the PDF prints in the margin",
+    "dæmons / daemons spelling"
+   ]
+  },
+  "01d4a570f00e7d47d72d35b96a2a4520880b86901cb7bb24b537067effcde837": {
+   "file": "Augustine of Hippo/Matthew 25_34.toml",
+   "entry": 2,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "exact"
+  },
+  "31c15563c4a470a54acf30cc6c16e53ed56b4cff80800c13154fcf591a59ebe6": {
+   "file": "Augustine of Hippo/Matthew 25_34.toml",
+   "entry": 3,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 68.html",
+   "homily": "Tractate 68 on John",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact"
+  },
+  "ee1d37d5cc2295ce33f517680468b689999bacd1ac9b918162e2051f54ac9b2f": {
+   "file": "Augustine of Hippo/Matthew 25_41.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "citation tag in the HCF text that the PDF prints in the margin",
+    "dæmons / daemons spelling"
+   ]
+  },
+  "764a9e54936087cf64ed1958d8cb1a9a66dcd7392414308c2a90c3869fffc1c2": {
+   "file": "Augustine of Hippo/Matthew 25_46.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "other",
+   "note": "needs a person: HCF entry joins separate Catena paragraphs (other authors between them are skipped) and a few word differences; no automatic corrections applied",
+   "candidate_differences": {
+    "gaps": [
+     {
+      "off": 874,
+      "skipped_words": 15,
+      "skipped_preview": "And these shall go away into everlasting punishment but the righteous into ..."
+     }
+    ],
+    "corrections": [
+     {
+      "off": 1708,
+      "old": "Exod",
+      "new": "Ex"
+     },
+     {
+      "off": 6929,
+      "old": "he",
+      "new": "be"
+     },
+     {
+      "off": 6952,
+      "old": "he",
+      "new": "be"
+     },
+     {
+      "off": 7102,
+      "old": "Ecclus",
+      "new": "Eccl"
+     },
+     {
+      "off": 7500,
+      "old": "hew",
+      "new": "shew"
+     }
+    ],
+    "other": [
+     {
+      "tag": "insert",
+      "ccel": "",
+      "hcf": "de civ dei xx"
+     },
+     {
+      "tag": "delete",
+      "ccel": "ch",
+      "hcf": ""
+     },
+     {
+      "tag": "delete",
+      "ccel": "aug",
+      "hcf": ""
+     },
+     {
+      "tag": "delete",
+      "ccel": "ch",
+      "hcf": ""
+     },
+     {
+      "tag": "delete",
+      "ccel": "ch",
+      "hcf": ""
+     },
+     {
+      "tag": "delete",
+      "ccel": "ch",
+      "hcf": ""
+     },
+     {
+      "tag": "insert",
+      "ccel": "",
+      "hcf": "gal"
+     }
+    ]
+   }
+  },
+  "8c188c89764ebafb9a897614559b49ed7ed72644c43b993521438c8985a54a48": {
+   "file": "Augustine of Hippo/Romans 13_11.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
+   "homily": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
+   "status": "unchecked",
+   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld"
+  },
+  "bc4eb1b59f531b9cd5a36ed8d39403c4488771b3a2256fbdecfd78c268d16fa6": {
+   "file": "Augustine of Hippo/Romans 13_12.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Letters.html",
+   "homily": "Augustine of Hippo/Letters.html",
+   "status": "unchecked",
+   "note": "Letters: checked earlier against the Writings Database, not an NPNF volume; tier U stands"
+  },
+  "065d6614a430c90ac3e4f242df86ea950d7a4a8ccf5f545d7b61d9659b48c33d": {
+   "file": "Augustine of Hippo/Romans 13_14.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
+   "homily": "Augustine of Hippo/Exposition of Certain Propositions from the Epistle to the Romans.html",
+   "status": "unchecked",
+   "note": "no public-domain full text found to check against (looks like a modern translation); stays withheld"
+  },
+  "87349264103b0765e5d35dea7a9d9fa1cb127cf36e8764e42275db467c7e1c45": {
+   "file": "John Chrysostom/Matthew 25_40.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "exact"
+  },
+  "7c4878b5e3395f91b7009149b522da3e8d1ee21e6c5a9d88a24b76a4c326b8ec": {
+   "file": "John Chrysostom/Matthew 25_44.toml",
+   "entry": 1,
+   "source": "Thomas Aquinas/Catena Aurea/Commentary on Matthew/Chapter 25.html",
+   "homily": "Catena Aurea, Matthew 25",
+   "against": {
+    "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
+    "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
+    "ccel_rights": "not stated in the file"
+   },
+   "status": "exact"
+  }
+ }
+}
