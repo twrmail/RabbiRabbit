@@ -276,7 +276,7 @@
           "url": "https://ccel.org/ccel/wesley/notes",
           "editionClaim": "none recorded",
           "status": "measured",
-          "agreement": "125 word disagreements to adjudicate",
+          "agreement": "157 word disagreements found and ruled on Nov 25: 29 fixed to CCEL (PR #98), 48 keep ours (CCEL error or dropped text), 76 spelling only (kept), 4 need the printed page",
           "comment": "first version of Wesley's Notes on the Bible in ThML",
           "basis": "CCEL header (ThML XML staged by Tom, branch ccel-sources-nov2)"
         }
