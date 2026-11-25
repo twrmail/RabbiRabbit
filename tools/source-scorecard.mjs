@@ -179,6 +179,21 @@ function applyRecordedFixes(srcId, code, obj) {
           return sha(t) === e.afterSha256 ? { ...ch, commentary: t } : ch
         }) }
       }
+    } else if (r.op === 'replace-words-keyed') {
+      // written separately: applies each recorded edit only if the old text is found at its place, and accepts the chapter only if its sha256 equals the recorded "after" hash
+      const pf = path.resolve(libDir, '..', r.patchFile)
+      if (exists(pf)) {
+        const patch = readJSON(pf), sha = x => crypto.createHash('sha256').update(x, 'utf8').digest('hex')
+        const chs = { ...(o.chapters || {}) }
+        for (const e of patch.chapters.filter(x => x.book === code)) {
+          let t = chs[e.chapter]
+          if (typeof t !== 'string' || sha(t) !== e.beforeSha256) continue
+          let ok = true
+          for (const x of [...e.edits].sort((a, b) => b.off - a.off)) { if (t.slice(x.off, x.off + x.old.length) !== x.old) { ok = false; break } t = t.slice(0, x.off) + x.new + t.slice(x.off + x.old.length) }
+          if (ok && sha(t) === e.afterSha256) chs[e.chapter] = t
+        }
+        o = { ...o, chapters: chs }
+      }
     } else if (r.op === 'split-notes') {
       // written separately: cuts each recorded marker and footnote list out of the chapter (a list only if the notes file rebuilds it exactly), and
       // takes out a chapter only if the notes file holds it word for word; a chapter is accepted only if its sha256 equals the recorded "after" hash

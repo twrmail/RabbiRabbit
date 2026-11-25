@@ -1,0 +1,356 @@
+{
+ "schemaVersion": 1,
+ "note": "Wording repairs in our Wesley, changed to CCEL's reading where ours is the damaged one (a letter wrong, a lost apostrophe, a stray word). off = place in the text before the change; old must be found there. The chapter sha256 before and after is recorded.",
+ "chapters": [
+  {
+   "book": "1TI",
+   "chapter": "6",
+   "beforeSha256": "f64cd786bd5b533ef7726163952d6f78cb64dbd1db1983d378b733c73543c2a6",
+   "afterSha256": "ddfe19ba28a04a961667e6226c1ccb36438e20df164fc9705912beee67775b47",
+   "edits": [
+    {
+     "off": 1675,
+     "old": "Doatinglyy",
+     "new": "Doatingly",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "ACT",
+   "chapter": "14",
+   "beforeSha256": "0cea800fe4fced69c4b302c0d6765dc8313cb462717f4bfc0507584eeb184902",
+   "afterSha256": "ed75479deb010457746edfc53e137937401dbc6406fb8a3a0762717051c16ea6",
+   "edits": [
+    {
+     "off": 1197,
+     "old": "the in",
+     "new": "them",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "ACT",
+   "chapter": "3",
+   "beforeSha256": "a5377f17c8e31dfcc2858ee5bfb10cce34391381c9e6d493c02d53e954bfdfb8",
+   "afterSha256": "e3127f55c04e1baf901d0e58f04362492767fdaeb4a6943b549ba1c65f989bfa",
+   "edits": [
+    {
+     "off": 3953,
+     "old": "bear",
+     "new": "hear",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "ACT",
+   "chapter": "5",
+   "beforeSha256": "9a553d13f1f39fc6ff1b2be1f705249405bccbd37e8645e87f58613846fc8b36",
+   "afterSha256": "b4980823f79e24d8e890807380d126a725853b8c237780fa41e5c1ce115ba609",
+   "edits": [
+    {
+     "off": 3047,
+     "old": "wits'",
+     "new": "wit's",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "ACT",
+   "chapter": "6",
+   "beforeSha256": "0ceac67d89e2e5a3e972e0f2434211108003a19736f8c61538f502d79ad8d7dd",
+   "afterSha256": "015e0029b33c27c746acd727fdbe622c6e4da633851096be68e12eb902f02a7e",
+   "edits": [
+    {
+     "off": 463,
+     "old": "in ",
+     "new": "",
+     "kind": "stray word"
+    }
+   ]
+  },
+  {
+   "book": "JHN",
+   "chapter": "5",
+   "beforeSha256": "a5b7af03368b665e21931ede167d1002431f8488d7f99e5cab581ea5c4c918e0",
+   "afterSha256": "dbd616e7fda2c1293697f3a4f945c2e22c705bfba73e4352a03fe2aaa5acbc8a",
+   "edits": [
+    {
+     "off": 5424,
+     "old": "in",
+     "new": "is",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "LUK",
+   "chapter": "24",
+   "beforeSha256": "a91f1c07e4d057c39e37cec5e10df95d3b24ddb676292ba655e6bfcb8c686e81",
+   "afterSha256": "b3fc21d4a17662ab5221823ef0503fdfff1c0feba39eb788b9e469fba33b5ab7",
+   "edits": [
+    {
+     "off": 1402,
+     "old": "ho",
+     "new": "he",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "LUK",
+   "chapter": "6",
+   "beforeSha256": "3d8ff4ba369547cd6bf9ec77146ec5f8c5f70187637f1025d731bc8ab9acca46",
+   "afterSha256": "6098454f218f470179d430446d6d550023a8ab06667473f66ce079c843bd8cee",
+   "edits": [
+    {
+     "off": 1763,
+     "old": "al]",
+     "new": "all",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "LUK",
+   "chapter": "7",
+   "beforeSha256": "e29764d777459843cd8f7e696efdce77dc91ff28fffd03166c31918f8086b9e0",
+   "afterSha256": "2d596020918a2102cc6e5f0a77469883a89f24cfff4fbb91e94d9a3626ca5b62",
+   "edits": [
+    {
+     "off": 2426,
+     "old": "am",
+     "new": "an",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "LUK",
+   "chapter": "8",
+   "beforeSha256": "94a008f6f03e1356fd6da1bdbd41038aab36516d30abb49e9fbf3d3711fd98af",
+   "afterSha256": "73f9ae0fc7e327a60a5157f5d8f460deecfb7f76a254c529adcd125164e38806",
+   "edits": [
+    {
+     "off": 322,
+     "old": "ho",
+     "new": "he",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "12",
+   "beforeSha256": "1dbb2fbb3a05926f0836bbd379a5bbc4bc124dd38e407ed26756ad6aede120bb",
+   "afterSha256": "90a2ba0773e4c06cd35dbc4a9011981ef5924f329ae2e006f8cd54d15a619c21",
+   "edits": [
+    {
+     "off": 3432,
+     "old": "thin",
+     "new": "this",
+     "kind": "typo"
+    },
+    {
+     "off": 3717,
+     "old": "Judg.",
+     "new": "Judge",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "16",
+   "beforeSha256": "3198b046a5c7f427ca426bb1799880c5fd93990c7c87cb47700388f92046c233",
+   "afterSha256": "3b3736a3b2ffce2ea09fc39ddecaa8fcdb45231d39e60767f05bbe4c3454e4d0",
+   "edits": [
+    {
+     "off": 3322,
+     "old": "tb",
+     "new": "to",
+     "kind": "typo"
+    },
+    {
+     "off": 3620,
+     "old": "snore",
+     "new": "more",
+     "kind": "typo"
+    },
+    {
+     "off": 8338,
+     "old": "tho",
+     "new": "the",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "17",
+   "beforeSha256": "7db436fc9460d8b061eb01990115439f6316a9bdea5345aaa761f4a2c72c4573",
+   "afterSha256": "8ecf1a7e5e7a03f83aeec6c370d77506a6bd50e1369a7f57d36bf7c2496cb873",
+   "edits": [
+    {
+     "off": 4477,
+     "old": "bat",
+     "new": "but",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "19",
+   "beforeSha256": "469970369f458396e7ac324e0ab4bbce8217bba396b449882635191813fb4745",
+   "afterSha256": "f976d7e8ccb1b3fc203708a82bb802efd64f318700d104d25e14c99f67ac368f",
+   "edits": [
+    {
+     "off": 3967,
+     "old": "ali",
+     "new": "an",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "3",
+   "beforeSha256": "35c43b5a513a8d3a3c9d8e1d2345bd8b57b2b0181bbd73f2014b696b3c38eee2",
+   "afterSha256": "c88e2d2f12eeb504c28c5a9020e1c5c2d0a55f6e5df09e2e4356c4646c3233f2",
+   "edits": [
+    {
+     "off": 1913,
+     "old": "camels'",
+     "new": "camel's",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "5",
+   "beforeSha256": "b76d49d5e26c3b01354a1f4675c251768d2f0f41a96dc631b046fbe3cb8d2d47",
+   "afterSha256": "b9ef78072912b94cedb2e5834c0d12b5b476d7aebc76238f299ef3e945ce8292",
+   "edits": [
+    {
+     "off": 13503,
+     "old": "Roman",
+     "new": "Romans",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MAT",
+   "chapter": "6",
+   "beforeSha256": "07da656d0e6ba7ca166a6d8b6264f511349da634c0bf59f1c2bb4a0c2de49b75",
+   "afterSha256": "a86ca597f552b6cf2c606114eb56aeb93d183fb7a1e950c0e02acaeffa0631e9",
+   "edits": [
+    {
+     "off": 4821,
+     "old": "he",
+     "new": "be",
+     "kind": "typo"
+    },
+    {
+     "off": 9363,
+     "old": "not",
+     "new": "no",
+     "kind": "typo"
+    },
+    {
+     "off": 11908,
+     "old": "he",
+     "new": "be",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "MRK",
+   "chapter": "11",
+   "beforeSha256": "5f758ec75e6c0403140bdc9471318f24645112616b45169e5413a053ee3c3173",
+   "afterSha256": "a5a2981207cc61406a02814d3c05a576c58bfd229f485ee4d7dcb56dd3979635",
+   "edits": [
+    {
+     "off": 1028,
+     "old": "hollowing",
+     "new": "following",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "REV",
+   "chapter": "1",
+   "beforeSha256": "157486d3bbaaebbeb0c582ae54d84ad14564de10c215a25477041b8720dad49c",
+   "afterSha256": "9637b5d51845fc0fe541ae143776176259b8b9b5879d3e4c65d99031b42c8ebc",
+   "edits": [
+    {
+     "off": 3190,
+     "old": "hook",
+     "new": "book",
+     "kind": "typo"
+    },
+    {
+     "off": 23883,
+     "old": "aa&",
+     "new": "and",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "REV",
+   "chapter": "13",
+   "beforeSha256": "5d8df8fed3b06dac68376474cbc5a74bce0f417bf9d4d6d2b435e44aec6c3136",
+   "afterSha256": "0bed122e961763b82e117b6b0d2be82ddf0ab7b8dca5cd440f2e8a7f70e0ec1a",
+   "edits": [
+    {
+     "off": 19619,
+     "old": "Daneil",
+     "new": "Daniel",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "REV",
+   "chapter": "18",
+   "beforeSha256": "d970956b92c8e6f55b0431cfbec1f3679643668283f0c875bbf5e5348a5b9411",
+   "afterSha256": "3725c42fb0d7a5ac8628d611cbbed40c3b3d099bbcafb8e51b52000f7b837352",
+   "edits": [
+    {
+     "off": 7234,
+     "old": "whereever",
+     "new": "wherever",
+     "kind": "typo"
+    }
+   ]
+  },
+  {
+   "book": "REV",
+   "chapter": "6",
+   "beforeSha256": "2270aa1b56eec590662fec199d2658001af223f41b456e71470f2bb274caf9e6",
+   "afterSha256": "b34a9e25f298c83a610c7104d66fb197d54a48bb5b4a8a107d96b2530033275f",
+   "edits": [
+    {
+     "off": 7632,
+     "old": "he",
+     "new": "be",
+     "kind": "typo"
+    },
+    {
+     "off": 11906,
+     "old": "Rom",
+     "new": "Rome",
+     "kind": "typo"
+    }
+   ]
+  }
+ ]
+}

@@ -1819,6 +1819,27 @@
         "chap.\nchap. ": 1
       },
       "reason": "The abbreviation \"chap.\" is printed twice in a row in three cross-references (1 Chronicles 2 and 1 Chronicles 13, \"chap. chap. viii, 1\" and \"chap. chap. xiv, 8\"; 1 Kings 11, \"chap.\\nchap. x, 29\", where the repeat falls across a line break). A doubled word from the digital copy, not Wesley's meaning. One \"chap.\" is removed in each place; the reference numbers are untouched."
+    },
+    {
+      "id": "wesley-word-fixes",
+      "source": "wesley",
+      "folder": "library/commentary/Wesley",
+      "files": [
+        "1TI",
+        "ACT",
+        "JHN",
+        "LUK",
+        "MAT",
+        "MRK",
+        "REV"
+      ],
+      "op": "replace-words-keyed",
+      "patchFile": "library/patches/wesley-word-fixes.json",
+      "expectedCount": {
+        "words fixed": 29,
+        "chapters changed": 22
+      },
+      "reason": "Comparing our Wesley with CCEL's copy word by word (157 differences outside word joins) found 29 places where ours is the damaged one: a letter wrong or lost (\"tb\" for \"to\", \"snore\" for \"more\", \"hook\" for \"book\", \"he\" for \"be\"), a broken word (\"Daneil\", \"whereever\", \"doatinglyy\", \"Rom\" for \"Rome\"), a lost apostrophe (\"camels'\" and \"wits'\" for \"camel's\" and \"wit's\"), \"take not thought\" for the KJV's \"take no thought\", and one stray word (\"their in other tongue\"). Each is recorded with its place, the old text and the new text, and each chapter's sha256 before and after. Left alone on purpose: 76 spelling-only differences (ours keeps Wesley's own spelling), 45 places where CCEL is the damaged one or ours agrees with the KJV or Wesley's usage elsewhere, the three \"chap.\" differences (the rule wesley-doubled-chap removed those doubled words on purpose), and 4 that need the printed page. The full ruling for every difference is in claude/wesley-word-rulings-nov25.md in the project."
     }
   ],
   "openIssues": [
