@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+"""Fingerprints, printed frame and approval record (brief section 8). No model calls.
+
+Serialization for hashed objects: canonical JSON, UTF-8, keys sorted, no insignificant whitespace, LF line endings, no Unicode normalization.
+Three full 64-character SHA-256 fingerprints, never truncated:
+  source: hash over the sorted list of (file_sha256, text_sha256) for every source file used  (computed by run_diagnostic.py, read from the report)
+  pieces: hash over the ordered selected pieces (id, source offsets, text)
+  frame:  hash over the printed frame (frame_v1, defined below)
+A study is servable only when an APPROVED record exists whose three fingerprints match the frame as stored, recomputed from the data now.
+A status field alone is not sufficient."""
+import hashlib, json
+FRAME_VERSION = 'frame_v1'
+
+def canon(obj):
+    return json.dumps(obj, sort_keys=True, separators=(',', ':'), ensure_ascii=False).encode('utf-8')
+
+def sha(obj): return hashlib.sha256(canon(obj)).hexdigest()
+
+def ordered_pieces(plan, pool):
+    by = {p['id']: p for p in pool}
+    return [by[i['id']] for v in sorted(plan['verses'], key=int) for i in plan['verses'][v] if i['id'] in by]
+
+def pieces_fp(plan, pool):
+    return sha([dict(id=p['id'], source_file=p['source_file'], start=p['start'], end=p['end'], text=p['text']) for p in ordered_pieces(plan, pool)])
+
+def label(p):
+    """Teacher name as code renders it: the original author, never the compiler."""
+    return dict(teacher=p['original_author'], compiler=p.get('compiler') or None, container=p.get('container_id') or None, work=p.get('work_title') or None)
+
+def build_frame(plan, pool, gaps, request, pointers=None):
+    """The printed frame: exactly what the reader will be shown around the weave. Text is the pieces' exact text; names come from piece fields;
+    gap lines come from gap records; pointer lines (e.g. 'Calvin treats 11-14 together') come from coverage and are passed in."""
+    by = {p['id']: p for p in pool}; verses = {}
+    gap_by = {g['verse']: g for g in gaps}
+    for v in range(request['lo'], request['hi'] + 1):
+        items = []
+        for it in plan['verses'].get(str(v), []):
+            p = by[it['id']]
+            items.append(dict(id=p['id'], role=it['role'], reference=p['reference'], text=p['text'], **label(p)))
+        g = gap_by.get(v)
+        verses[str(v)] = dict(items=items,
+                              gap_line=(f'Not enough commentary in this pool for {request["scope"].rsplit(" ", 1)[0]} {v} ({g["reason"]}).' if g else None),
+                              pointers=sorted((pointers or {}).get(str(v), [])))
+    return dict(frame_version=FRAME_VERSION, scope=request['scope'], edition=request['edition'], verses=verses)
+
+def frame_fp(frame): return sha(frame)
+
+def pointers_from_report(report, lo, hi):
+    """Pointer lines for notes present but excluded by range policy, per verse, from the diagnostic coverage."""
+    out = {}
+    for src, e in report['sources'].items():
+        for v, c in e['coverage'].items():
+            if c.get('state') == 'present but excluded by range policy' and c.get('pointer') and lo <= int(v) <= hi:
+                out.setdefault(v, set()).add(c['pointer'])
+    return {k: sorted(s) for k, s in out.items()}
+
+def fingerprints(plan, pool, gaps, request, report):
+    fr = build_frame(plan, pool, gaps, request, pointers_from_report(report, request['lo'], request['hi']))
+    return dict(source=report['source_fingerprint_sha256'], pieces=pieces_fp(plan, pool), frame=frame_fp(fr)), fr
+
+def make_record(plan, pool, gaps, request, report, build='public', note=''):
+    """A record is created PENDING. Only a human reviewer approves it (approve())."""
+    fps, fr = fingerprints(plan, pool, gaps, request, report)
+    return dict(approver=None, timestamp=None, status='pending', fingerprints=fps, frame_version=FRAME_VERSION, build=build,
+                accepted_gaps=[], gaps_at_creation=[dict(verse=g['verse'], reason=g['reason']) for g in gaps], note=note), fr
+
+def approve(record, approver, timestamp, accepted_gap_verses=()):
+    """Human action. Returns a new record; never called by the builder or sorter."""
+    r = json.loads(json.dumps(record)); r.update(approver=approver, timestamp=timestamp, status='approved')
+    r['accepted_gaps'] = [dict(g, accepted_by=approver) for g in record['gaps_at_creation'] if g['verse'] in set(accepted_gap_verses)]
+    return r
+
+def is_servable(record, plan, pool, gaps, request, report):
+    """Recompute all three fingerprints from the data as it is now and compare with the record."""
+    why = []
+    if record.get('status') != 'approved' or not record.get('approver') or not record.get('timestamp'): why.append('no approval by a named reviewer')
+    if record.get('frame_version') != FRAME_VERSION: why.append('frame version differs')
+    fps, _ = fingerprints(plan, pool, gaps, request, report)
+    for k in ('source', 'pieces', 'frame'):
+        if record.get('fingerprints', {}).get(k) != fps[k]: why.append(f'{k} fingerprint does not match')
+    accepted = {g['verse'] for g in record.get('accepted_gaps', [])}
+    for g in gaps:
+        if g['verse'] not in accepted: why.append(f'gap at verse {g["verse"]} ({g["reason"]}) not accepted by a reviewer')
+    return not why, why
