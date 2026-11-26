@@ -35,7 +35,7 @@ Checks (no model calls, no network):
 ## John 3:16-21 studies
 - `studies_jhn.py`: the four study plans (piece ids and roles), the modern-language summaries (`SAY`), Study D's headings (`HEAD`) and Rabbit's own text (focus, take, questions, closings). Written by Claude standing in for the sorter and weaver; no model call.
 - `build_studies_jhn.py REPORT OUT`: validates each plan (public build), checks every summary and heading (no quotation marks, and no number or capitalized name that is not in its own passage), writes PENDING approval records, runs the 13 tamper tests per study, renders the page, and confirms every teacher passage appears on it unchanged.
-- `render_study.py REPORT PLAN OUT`: the older one-plan renderer (Nov 22 trial).
+- `render_study.py REPORT PLAN OUT`: the older one-plan renderer from the Nov 22 trial; it expects a plan for all of 3:16-21, so it does not render studies A-D.
 - `public_pool.py FULL PUBLIC`: copies a diagnostic report without its tier C/U pieces and fails if any withheld text remains. `pool/studies/jhn3-16-21/` holds that public copy plus the plans, results, records and page. Building from the public copy gives the same fingerprints and the same page as the full report.
 
 Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21`
