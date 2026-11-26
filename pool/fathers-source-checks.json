@@ -3,12 +3,13 @@
  "built": "2026-11-25",
  "note": "Chrysostom and Augustine excerpts (HCF, pinned) checked against CCEL NPNF1 full text. Key = sha256 of the HCF entry quote.",
  "summary": {
-  "exact": 25,
+  "exact": 43,
   "gap": 6,
-  "editors-marks": 9,
+  "editors-marks": 14,
   "typo": 3,
   "recut": 1,
-  "unchecked": 7
+  "unchecked": 7,
+  "other": 1
  },
  "entries": {
   "1babc88d74c1fb67c0d34c3d35a93560c71c80d1fcd39e032d165475210d0117": {
@@ -947,6 +948,495 @@
    },
    "status": "exact",
    "quote_sha256": "7c4878b5e3395f91b7009149b522da3e8d1ee21e6c5a9d88a24b76a4c326b8ec",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "2a1f09c2f063efd1318f7173770bdddfe73bc32040549114339dde1045e6c9d1": {
+   "file": "John Chrysostom/John 3_12.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 27.html",
+   "homily": "Homily 27 on John (NPNF Homily XXVII, John 3.12,13)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "2a1f09c2f063efd1318f7173770bdddfe73bc32040549114339dde1045e6c9d1",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "fb765552347a3010a7998577be9669af6a43f3936825cf73709108bd8ce73889": {
+   "file": "John Chrysostom/John 3_13.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 27.html",
+   "homily": "Homily 27 on John (NPNF Homily XXVII, John 3.12,13)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "fb765552347a3010a7998577be9669af6a43f3936825cf73709108bd8ce73889",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "e0d65e7a77d62842654ea64d696e2a25c1393be63e44bd669ee4ef07b47a8cae": {
+   "file": "John Chrysostom/John 3_14.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 27.html",
+   "homily": "Homily 27 on John (NPNF Homily XXVII, John 3.12,13)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "e0d65e7a77d62842654ea64d696e2a25c1393be63e44bd669ee4ef07b47a8cae",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "8e0ed2189e76a9b695b895b78385e52e997c809f3f99377c7303de11175b7b9f": {
+   "file": "John Chrysostom/John 3_15.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 27.html",
+   "homily": "Homily 27 on John (NPNF Homily XXVII, John 3.12,13)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "pet ii",
+    "col ii",
+    "acts xxviii"
+   ],
+   "quote_sha256": "8e0ed2189e76a9b695b895b78385e52e997c809f3f99377c7303de11175b7b9f",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "c620e14d716445a9350517eaae767290276d39bf6ab664d414d9cf9a9141d3cb": {
+   "file": "John Chrysostom/John 3_16.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 27.html",
+   "homily": "Homily 27 on John (NPNF Homily XXVII, John 3.12,13)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "rom v"
+   ],
+   "quote_sha256": "c620e14d716445a9350517eaae767290276d39bf6ab664d414d9cf9a9141d3cb",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "f76d1b063a42491648c526e6d7220d8ca1bab41e1fb6125ba1e820f74b4a5eee": {
+   "file": "John Chrysostom/John 3_17-18.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "c iii",
+    "matt xxv",
+    "rom iii"
+   ],
+   "quote_sha256": "f76d1b063a42491648c526e6d7220d8ca1bab41e1fb6125ba1e820f74b4a5eee",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "52d0ad7917aeb4768e19a2e6ff2bb3215dd24dda6897a72159cdcdb6aca91ce9": {
+   "file": "John Chrysostom/John 3_17-18.toml",
+   "entry": 2,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "gen ii lxx"
+   ],
+   "quote_sha256": "52d0ad7917aeb4768e19a2e6ff2bb3215dd24dda6897a72159cdcdb6aca91ce9",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "5a0b1d125e0ba3be2c7d7e9c6487c82c57fd8b6f62aa3b4ee44d77dbe2a7f9f6": {
+   "file": "John Chrysostom/John 3_17-18.toml",
+   "entry": 3,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "5a0b1d125e0ba3be2c7d7e9c6487c82c57fd8b6f62aa3b4ee44d77dbe2a7f9f6",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "5f94cf79949bb0d08ac724378789a59f50e0c10814b0967b98ae51fb88f55793": {
+   "file": "John Chrysostom/John 3_18.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "editors-marks",
+   "editors_marks": [
+    "tit i"
+   ],
+   "quote_sha256": "5f94cf79949bb0d08ac724378789a59f50e0c10814b0967b98ae51fb88f55793",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "70802541c1b2d82282563db9a1cea28beeacd7f555d1b836829aaed714e9ca47": {
+   "file": "John Chrysostom/John 3_19.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "70802541c1b2d82282563db9a1cea28beeacd7f555d1b836829aaed714e9ca47",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "bacc0785a816312068b8560a0c88bd1f44e8295c6fd89cea625e06d495c2de4b": {
+   "file": "John Chrysostom/John 3_19.toml",
+   "entry": 2,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "bacc0785a816312068b8560a0c88bd1f44e8295c6fd89cea625e06d495c2de4b",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "e55165a542c7418ac34e85e354edbcd215b1cb828fa1bfe23fc9476808e4c131": {
+   "file": "John Chrysostom/John 3_20.toml",
+   "entry": 1,
+   "source": "John Chrysostom/Homilies/On John/Homily 28.html",
+   "homily": "Homily 28 on John (NPNF Homily XXVIII, John 3.17)",
+   "against": {
+    "volume": "NPNF1-14. Saint Chrysostom: Homilies on the Gospel of St. John and the Epistle to the Hebrews",
+    "ccel_file_sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "e55165a542c7418ac34e85e354edbcd215b1cb828fa1bfe23fc9476808e4c131",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "53a388c9eacd1d964cc4be9f2bc6ee2e02bc381fe1f1266cc5e2b15666a42e00": {
+   "file": "Augustine of Hippo/John 3_12.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "53a388c9eacd1d964cc4be9f2bc6ee2e02bc381fe1f1266cc5e2b15666a42e00",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "a8018c3c38cf31775f10c4d37196053f9db0eb55d06c36c51b12e463b87f1d82": {
+   "file": "Augustine of Hippo/John 3_13.toml",
+   "entry": 5,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "a8018c3c38cf31775f10c4d37196053f9db0eb55d06c36c51b12e463b87f1d82",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "977f1cff40accd9777e60f815de201a100c4b245f56b6ad21f019e8f93fa9044": {
+   "file": "Augustine of Hippo/John 3_14-15.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "977f1cff40accd9777e60f815de201a100c4b245f56b6ad21f019e8f93fa9044",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "bffec83f99f7eec3b1ee009877d11f8d0d1f39297412fbc81ebeb4e28a90eb42": {
+   "file": "Augustine of Hippo/John 3_17-18.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "bffec83f99f7eec3b1ee009877d11f8d0d1f39297412fbc81ebeb4e28a90eb42",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "9f776d49872bec2e02b7135fa10c36522e37f2ee2a32bd0bb8ddef996fea81fa": {
+   "file": "Augustine of Hippo/John 3_19-21.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "9f776d49872bec2e02b7135fa10c36522e37f2ee2a32bd0bb8ddef996fea81fa",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "1450aeb4a80f3eaeee31f90ebe9acfb0e1eb5d4644af11723c6570efa8094d82": {
+   "file": "Augustine of Hippo/John 3_20.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/Confessions/Book 10.html",
+   "homily": "Confessions Book X",
+   "against": {
+    "volume": "NPNF1-01. The Confessions and Letters of St. Augustin (tr. J. G. Pilkington)",
+    "ccel_file_sha256": "5a251ba0e3ef934821f3998ba1e3ab52ea40dae02ced15fbd36bb111fd81afc0",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "other",
+   "corrections": [
+    {
+     "off": 188,
+     "old": "truth",
+     "new": "her"
+    },
+    {
+     "off": 199,
+     "old": "it",
+     "new": "she"
+    },
+    {
+     "off": 210,
+     "old": "itself",
+     "new": "herself"
+    },
+    {
+     "off": 226,
+     "old": "it",
+     "new": "her"
+    },
+    {
+     "off": 234,
+     "old": "it",
+     "new": "she"
+    },
+    {
+     "off": 525,
+     "old": "desires",
+     "new": "desire"
+    },
+    {
+     "off": 554,
+     "old": "still",
+     "new": "wishes"
+    },
+    {
+     "off": 564,
+     "old": "wanting",
+     "new": "that"
+    },
+    {
+     "off": 581,
+     "old": "to",
+     "new": "should"
+    }
+   ],
+   "other": [
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "people love truth when it shines on them and hate it when it"
+    },
+    {
+     "tag": "replace",
+     "ccel": "and wish",
+     "hcf": "but definitely want"
+    },
+    {
+     "tag": "replace",
+     "ccel": "deceive",
+     "hcf": "practice the art of deception"
+    },
+    {
+     "tag": "replace",
+     "ccel": "on that account",
+     "hcf": "because of this truth"
+    },
+    {
+     "tag": "delete",
+     "ccel": "she so",
+     "hcf": ""
+    },
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "in such a way"
+    },
+    {
+     "tag": "replace",
+     "ccel": "her she both discovers",
+     "hcf": "it are not only discovered by it"
+    },
+    {
+     "tag": "replace",
+     "ccel": "and discovers not herself unto",
+     "hcf": "but also without revealing itself to"
+    },
+    {
+     "tag": "replace",
+     "ccel": "thus thus truly thus doth",
+     "hcf": "this is the way"
+    },
+    {
+     "tag": "replace",
+     "ccel": "but",
+     "hcf": "instead it receives quite"
+    },
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "not only"
+    },
+    {
+     "tag": "delete",
+     "ccel": "rendered unto",
+     "hcf": ""
+    },
+    {
+     "tag": "delete",
+     "ccel": "that itself is",
+     "hcf": ""
+    },
+    {
+     "tag": "replace",
+     "ccel": "thus",
+     "hcf": "it is as"
+    },
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "as that"
+    },
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "still ultimately"
+    },
+    {
+     "tag": "insert",
+     "ccel": "",
+     "hcf": "it looks forward to the day when without any further trouble intervening it will rejoice in that one truth by whom everything else is true"
+    }
+   ],
+   "quote_sha256": "1450aeb4a80f3eaeee31f90ebe9acfb0e1eb5d4644af11723c6570efa8094d82",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "10a3e99c3a16e6c8c7afe2b931639a1a2036dfad6aa92685aa07e03a8804e642": {
+   "file": "Augustine of Hippo/John 3_4.toml",
+   "entry": 4,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "10a3e99c3a16e6c8c7afe2b931639a1a2036dfad6aa92685aa07e03a8804e642",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "b514371cc148054ce3a5f4b9bce6422e3474c4714d05c25770aaca03b9b4b081": {
+   "file": "Augustine of Hippo/John 3_4.toml",
+   "entry": 5,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "b514371cc148054ce3a5f4b9bce6422e3474c4714d05c25770aaca03b9b4b081",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "220cd58ff3445754c50aaa5ac9fc442323152332f9df594b776a9fc19ea9f09b": {
+   "file": "Augustine of Hippo/John 3_5.toml",
+   "entry": 3,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "220cd58ff3445754c50aaa5ac9fc442323152332f9df594b776a9fc19ea9f09b",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "3d2532b60fee0743830806f4efff9be3cdd199907f479a4d54931adcc69de810": {
+   "file": "Augustine of Hippo/John 3_6.toml",
+   "entry": 2,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "3d2532b60fee0743830806f4efff9be3cdd199907f479a4d54931adcc69de810",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "21e1650a8f1f8311d8b2ecc5a6498bbc3dafeee634324d69d330c6be3bd8e7f8": {
+   "file": "Augustine of Hippo/John 3_7-8.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "21e1650a8f1f8311d8b2ecc5a6498bbc3dafeee634324d69d330c6be3bd8e7f8",
+   "hcf_commit": "a88dc031b9a1"
+  },
+  "85678080efad5166fe39bafaa3068f0f6ca6fe27d725c4a101ce5ae87f415a37": {
+   "file": "Augustine of Hippo/John 3_9-10.toml",
+   "entry": 1,
+   "source": "Augustine of Hippo/TRACTATES ON JOHN/Tractate 12.html",
+   "homily": "Tractate 12 on John (NPNF Tractate XII, John 3.6-21)",
+   "against": {
+    "volume": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+    "ccel_file_sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+    "ccel_rights": "Public Domain"
+   },
+   "status": "exact",
+   "quote_sha256": "85678080efad5166fe39bafaa3068f0f6ca6fe27d725c4a101ce5ae87f415a37",
    "hcf_commit": "a88dc031b9a1"
   }
  },

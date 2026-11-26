@@ -43,7 +43,7 @@ vols = {'On Matthew': Vol(XM, 'npnf110'),
         'On Ephesians': Vol(XE, 'npnf113', lo=start_of(XE, 'Homilies on Ephesians'), hi=start_of(XE, 'The Homilies of St. John Chrysostom on Philippians'))}
 let = lambda t: re.sub(r'[^a-z]', '', t.lower())
 TOK = re.compile(r"[a-zA-Z]+(?:['’][a-zA-Z]+)?")
-REFWORDS = set('c and mss cat al punct a v ib cf cor ps acts john matt thess heb pet rom eph gal col tim titus phil gen ex lev num deut isa jer ezek dan hos joel amos luke mark rev lxx i ii iii iv v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii xxviii honestly in this sense'.split())
+REFWORDS = set('c and mss cat al punct a v ib cf cor ps acts john matt thess heb pet rom eph gal col tim tit titus phil gen ex lev num deut isa jer ezek dan hos joel amos luke mark rev lxx i ii iii iv v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii xxviii honestly in this sense'.split())
 def check(q, hom):
     if let(q) in let(hom): return dict(status='exact')
     ht = [(m.group(0), m.start(), m.end()) for m in TOK.finditer(hom)]; qt = [(m.group(0), m.start(), m.end()) for m in TOK.finditer(q)]
