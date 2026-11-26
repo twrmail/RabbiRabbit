@@ -65,9 +65,12 @@
       "id": "JHN.3.16-21",
       "book": "JHN", "chapter": 3, "start": 16, "end": 21,
       "title": "God so loved the world",
-      "movements": [],
-      "evidence": "The unit the three John studies were built on (Nov 24: A 3:16-18, B 3:18-21, C 3:16-18). No approval is recorded for the unit itself.",
-      "status": "proposed", "approved_by": null, "approved_on": null, "approval_note": "awaiting Tom"
+      "movements": [
+        {"start": 16, "end": 18, "label": "Sent to save, not to condemn"},
+        {"start": 19, "end": 21, "label": "Light and darkness: why some hide"}
+      ],
+      "evidence": "The unit the three John studies were built on (Nov 24: A 3:16-18, B 3:18-21, C 3:16-18). Calvin's sections 16 / 17 / 18 / 19-21 support the break at 19; Calvin's 14-15 and Henry's verse notes end before 16. JFB's 17-21 note crosses the movement line and shows under 16-18 with its full label; his 14-16 note begins before the unit (range policy applies).",
+      "status": "approved", "approved_by": "Tom Robinson", "approved_on": "2026-11-26", "approval_note": "rabbit 18"
     }
   ]
 }
