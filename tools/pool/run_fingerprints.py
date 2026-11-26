@@ -28,7 +28,7 @@ def tamper_tests(plan, pool, gaps, req, rep):
     t('a role changed (frame changes)', plan2=pl)
     pl = copy.deepcopy(plan); vk = next(k for k, l in pl['verses'].items() if len(l) > 1); pl['verses'][vk][0], pl['verses'][vk][1] = pl['verses'][vk][1], pl['verses'][vk][0]
     t('two pieces swapped in order', plan2=pl)
-    pl = copy.deepcopy(plan); vk = next(k for k, l in pl['verses'].items() if len(l) > 2); pl['verses'][vk].pop()
+    pl = copy.deepcopy(plan); vk = next((k for k, l in pl['verses'].items() if len(l) > 2), None) or next(k for k, l in pl['verses'].items() if len(l) > 1); pl['verses'][vk].pop()  # a plan with two per verse: the removal also trips V11, still a block
     t('a piece removed', plan2=pl)
     r2 = copy.deepcopy(rep); r2['source_fingerprint_sha256'] = '0' * 64
     t('a source file hash changed', rep2=r2)
