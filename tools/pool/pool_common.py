@@ -4,18 +4,30 @@ import json, re, os, sys, hashlib, urllib.request, urllib.parse, concurrent.futu
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import henry_parser as H
 
-BOOKNAMES = {
-    '1JN': ('1Jo', ['1Jo', '1 John', '1John', 'John']),
-    'ROM': ('Ro', ['Ro', 'Rom', 'Romans']),
-    'MRK': ('Mr', ['Mr', 'Mk', 'Mark']),
-    'EPH': ('Eph', ['Eph', 'Ephesians']),
-    'MAT': ('Mt', ['Mt', 'Mat', 'Matt', 'Matthew']),
-    'JHN': ('Joh', ['Joh', 'John']),
-}
-HCF_BOOK = {'1JN': '1 John', 'ROM': 'Romans', 'MRK': 'Mark', 'EPH': 'Ephesians', 'MAT': 'Matthew', 'JHN': 'John'}
-GEN_REF = re.compile(r'\b((?:[1-3]\s?)?[A-Z][a-z]{1,9}\.?)\s+(\d{1,3}):(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?')
+from books import BOOKNAMES, HCF_BOOK  # all 66 books; see books.py
+GEN_REF = re.compile(r'\b((?:[1-3]\s?)?[A-Z][a-z]{1,13}\.?)\s+(\d{1,3}):(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?')
 FATHERS = [('Augustine of Hippo', 'augustine', 'Augustine of Hippo'), ('John Chrysostom', 'chrysostom', 'John Chrysostom'),
            ('Thomas Aquinas', 'aquinas', 'Thomas Aquinas'), ('Cyril of Alexandria', 'cyril', 'Cyril of Alexandria')]
+
+def chapter_guard(folder, sid, dict_keyed=False):
+    """Decorator for an adapter. If the source has no file for the book, or the file has no entry for the chapter, answer the way every other
+    absence is answered: every requested verse 'source absence' with the reason, no pieces, no crash. (Known gaps this covers: Calvin stops at
+    Ezekiel 20 and Jeremiah 51, Wesley has no 2 Samuel 24, Tyndale has no Exodus 36, Barnes is New Testament only.)"""
+    import functools
+    def deco(fn):
+        @functools.wraps(fn)
+        def wrapped(lib, book, ch, lo, hi, abbr=None, *a, **k):
+            fp = f'{lib}/commentary/{folder}/{book}.json'
+            why = None
+            if not os.path.exists(fp): why = f'{sid} has no file for this book'
+            else:
+                d = json.load(open(fp))['chapters']
+                if not ((str(ch) in d) if dict_keyed else any(c['chapter'] == ch for c in d)): why = f'{sid} has no entry for chapter {ch} in its file (the work does not reach it, or a recorded gap)'
+            if why:
+                return ({}, {v: dict(state='source absence', detail=why) for v in range(lo, hi + 1)}, [], [], [dict(kind='absence', msg=why)])
+            return fn(lib, book, ch, lo, hi, abbr, *a, **k)
+        return wrapped
+    return deco
 
 def sha(b): return hashlib.sha256(b).hexdigest()
 
@@ -51,18 +63,7 @@ def make_piece(pid, nid, src, container, author, tkey, compiler, work, edition, 
                 markup_valid=t.count('*') % 2 == 0, boundary_suspect=suspect,
                 contains_cross_refs=[r['raw'] for r in rs], flags=fl)
 
-def repair_spans(text, a, b, spans):
-    """If a cut falls inside a parenthesis or an asterisk pair that closes later in the same note, drop that cut (merge the two neighbouring
-    pieces) and re-check. Pieces stay exact slices of the source; they only get longer. Returns (spans, problems_left, cuts_dropped)."""
-    spans = list(spans); dropped = 0
-    for _ in range(40):
-        probs = H.tiling_check(text, a, b, spans)
-        cuts = [int(m.group(1)) for p in probs for m in [re.search(r'at cut (\d+)', p)] if m]
-        if not cuts or len(probs) != len(cuts): return spans, probs, dropped
-        c = cuts[0]; i = [k for k, (x, y) in enumerate(spans) if y == c]
-        if not i or i[0] + 1 >= len(spans): return spans, probs, dropped
-        i = i[0]; spans[i:i + 2] = [(spans[i][0], spans[i + 1][1])]; dropped += 1
-    return spans, H.tiling_check(text, a, b, spans), dropped
+repair_spans = H.repair_spans  # lives in henry_parser so Henry, Calvin, Gill and the rest share it
 
 def cut_note(text, a, b, mkpiece):
     spans = H.make_spans(text, a, b)

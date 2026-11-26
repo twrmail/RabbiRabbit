@@ -6,10 +6,15 @@ Usage: python3 -I henry_parser.py LIBRARY_DIR BOOK CHAPTER LO HI [OUT.json]
 Offsets: zero-based, end-exclusive, code points of the decoded UTF-8 chapter text.
 No model calls. No network. Reads library files only.
 """
-import json, re, sys, hashlib
+import json, re, sys, hashlib, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import books as _B
 
 ABBR = {'Ro','Joh','Ge','Ec','Mal','St','Mr','Dr','vs','ver','cf','Mt','Lu','Isa','Ps','Heb','Eph','Col','Re','Rev','Ac','Jer','Eze','Da','Ex','Le','Nu','De','Jos','Jud','Ru','Sa','Ki','Ch','Ne','Es','Job','Pr','So','Ho','Joe','Am','Ob','Jon','Mic','Na','Hab','Zep','Hag','Zec','Mk','Ga','Php','Th','Ti','Tit','Phm','Jas','Pe','Jude','Co','Cor','Matt','Mark','Luke','John','Rom','Gen','Deut','Num','Lev','1Jo','1Co','2Co','1Pe','2Pe','1Th','2Th','1Ti','2Ti','2Jo','3Jo','Mt','Lk','Jn','Eph'}
-REF_RE = re.compile(r'\b(1Jo|2Jo|3Jo|Joh|Ro|Mt|Mr|Lu|Ac|Ge|Ex|Le|Nu|De|Ps|Isa|Jer|Eze|Da|Eph|Col|Heb|Jas|1Pe|2Pe|1Co|2Co|Ga|Php|1Th|2Th|1Ti|2Ti|Re|Mal|Pr|Ec|Job|Zec|Hos?|Joe|Am|Mic)\s*(\d+):(\d+)(?:[-,]\s*(\d+))?')
+_OLD_REF = '1Jo|2Jo|3Jo|Joh|Ro|Mt|Mr|Lu|Ac|Ge|Ex|Le|Nu|De|Ps|Isa|Jer|Eze|Da|Eph|Col|Heb|Jas|1Pe|2Pe|1Co|2Co|Ga|Php|1Th|2Th|1Ti|2Ti|Re|Mal|Pr|Ec|Job|Zec|Hos?|Joe|Am|Mic'.split('|')
+_ALL_REF = sorted({*_OLD_REF, *_B.HENRY_ABBR.values(), 'Mk', 'Jude'}, key=lambda x: (-len(x), x))
+REF_RE = re.compile(r'\b(' + '|'.join(_ALL_REF) + r')\s*(\d+):(\d+)(?:[-,]\s*(\d+))?')
+ABBR = ABBR | set(_B.HENRY_ABBR.values())
 OUTLINE_RE = re.compile(r'(?m)^\s*(?:\(?\d+\.\)?|[IVX]+\.|[a-z]\))\s')
 
 def sha(b): return hashlib.sha256(b).hexdigest()
@@ -112,6 +117,19 @@ def tiling_check(text, a, b, spans):
         if paren_open(pre) > 0 and ')' in post: problems.append(f'split parenthesis at cut {y}')
     return problems
 
+def repair_spans(text, a, b, spans):
+    """If a cut falls inside a parenthesis or an asterisk pair that closes later in the same note, drop that cut (merge the two neighbouring
+    pieces) and re-check. Pieces stay exact slices of the source; they only get longer. Returns (spans, problems_left, cuts_dropped)."""
+    spans = list(spans); dropped = 0
+    for _ in range(40):
+        probs = tiling_check(text, a, b, spans)
+        cuts = [int(m.group(1)) for p in probs for m in [re.search(r'at cut (\d+)', p)] if m]
+        if not cuts or len(probs) != len(cuts): return spans, probs, dropped
+        c = cuts[0]; i = [k for k, (x, y) in enumerate(spans) if y == c]
+        if not i or i[0] + 1 >= len(spans): return spans, probs, dropped
+        i = i[0]; spans[i:i + 2] = [(spans[i][0], spans[i + 1][1])]; dropped += 1
+    return spans, tiling_check(text, a, b, spans), dropped
+
 PRON_RE = re.compile(r'^(?:\*?\[?\(?\d?\.?\)?\]?\s*)?(This|That|These|Those|He|She|It|They|Thus|Hence|Therefore|And|But|For|So|Now|Then|Such|Here|Hereby|Wherefore)\b')
 LEAD_OUTLINE_RE = re.compile(r'^\s*(?:\(?\d+\.\)?|[IVX]+\.|[a-z]\))\s')
 
@@ -191,7 +209,7 @@ def build(lib, book, ch, lo, hi, abbr):
             coverage[v] = dict(state=coverage[seen[nid]]['state'], note_id=nid, detail=f'same note as verse {seen[nid]} (together {nlo}-{nhi})', index=e); continue
         seen[nid] = v
         spans = make_spans(text, a, b)
-        probs = tiling_check(text, a, b, spans)
+        spans, probs, dropped = repair_spans(text, a, b, spans)   # a cut inside a parenthesis or emphasis pair is dropped (pieces merge), as for the other commentaries
         mine = markers_in(text[a:b]); first = marker_at(text[a:b])
         nxt = idx['verses'].get(str(nhi + 1)); nm = marker_at(text[nxt['at']:nxt['end']]) if nxt and nxt['relation'] == 'own' else None
         last_same = [n for k, n in mine if nm and k == nm[1]]
@@ -223,6 +241,7 @@ def build(lib, book, ch, lo, hi, abbr):
             fl = []
             if not standalone and prev_id is None: fl.append('non-standalone but first piece of note (back-reference to text outside the note)')
             if outside and not suspect: fl.append('cites same-chapter verses outside the request (ordinary cross-reference)')
+            if dropped: fl.append(f'{dropped} cut(s) removed so no parenthesis or emphasis pair is split')
             pieces.append(dict(id=pid, note_id=nid, source_id='mhc', container_id='mhc', original_author='Matthew Henry',
                 teacher_key='matthew-henry', compiler=None, work_title="Matthew Henry's Commentary on the Whole Bible",
                 edition='lyteword/mhenry-complete (CC0); printed edition not identified', reference=f'{abbr} {ch}:{nlo}' + (f'-{nhi}' if nhi != nlo else ''),

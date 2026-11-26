@@ -82,10 +82,15 @@ def segment(t):
     flush()
     return out, cites
 
+@chapter_guard('Gill', 'gill')
 def gill(lib, book, ch, lo, hi, abbr=None):
     fp = f'{lib}/commentary/Gill/{book}.json'; raw = open(fp, 'rb').read(); d = json.loads(raw)
     cc = [c for c in d['chapters'] if c['chapter'] == ch][0]['verses']
     tier = tier_of(lib, 'gill'); findings, cov, notes, pieces = [], {}, [], []
+    if not cc:   # a chapter that holds only Gill's chapter introduction (stored as `overview`), e.g. 1 Chronicles 11, 14, 17, 18, 19; 2 Chronicles 3, 5, 9
+        ov = len([c for c in d['chapters'] if c['chapter'] == ch][0].get('overview') or '')
+        why = f'Gill has no verse notes in this chapter (a chapter introduction of {ov} characters is stored apart; not cut into pieces here)'
+        return dict(file_sha256=sha(raw), text_sha256=None), {v: dict(state='source absence', detail=why) for v in range(lo, hi + 1)}, [], [], [dict(kind='absence', msg=why)]
     findings.append(dict(kind='convention', msg=f'Gill: {len(cc)} verse entries in chapter; offsets are into each verse string; max code point U+{max(map(ord, "".join(cc.values()))):04X}'))
     for v in range(lo, hi + 1):
         t = cc.get(str(v))
