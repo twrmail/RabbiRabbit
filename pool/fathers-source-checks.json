@@ -6,8 +6,8 @@
   "exact": 25,
   "gap": 6,
   "editors-marks": 9,
-  "typo": 2,
-  "other": 2,
+  "typo": 3,
+  "other": 1,
   "unchecked": 7
  },
  "entries": {
@@ -304,7 +304,15 @@
     }
    ],
    "quote_sha256": "7560edb0ef99fe3712fecb50bc3851ed4a0435562d4c0d844a400e114d2a6cec",
-   "hcf_commit": "a88dc031b9a1"
+   "hcf_commit": "a88dc031b9a1",
+   "note": "Two separate pieces of Homily 79 joined with no mark; the second piece comes from earlier in the sermon than the first. Withheld.",
+   "human_review": {
+    "reviewer": "Tom Robinson",
+    "date": "2026-11-26",
+    "decisions": [
+     "withhold the whole entry (choice A); it can return if someone cuts it correctly"
+    ]
+   }
   },
   "fbe8c11adddf41d73db7603bf2373cf2289eed2e04d9ed0010cb261407d6a90f": {
    "file": "John Chrysostom/Matthew 25_42.toml",
@@ -821,85 +829,39 @@
     "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
     "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
     "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
-    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text."
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
-   "status": "other",
-   "note": "needs a person: HCF entry joins separate Catena paragraphs (other authors between them are skipped) and a few word differences; no automatic corrections applied",
-   "candidate_differences": {
-    "gaps": [
-     {
-      "off": 874,
-      "skipped_words": 15,
-      "skipped_preview": "And these shall go away into everlasting punishment but the righteous into ..."
-     }
-    ],
-    "corrections": [
-     {
-      "off": 1708,
-      "old": "Exod",
-      "new": "Ex"
-     },
-     {
-      "off": 6929,
-      "old": "he",
-      "new": "be"
-     },
-     {
-      "off": 6952,
-      "old": "he",
-      "new": "be"
-     },
-     {
-      "off": 7102,
-      "old": "Ecclus",
-      "new": "Eccl"
-     },
-     {
-      "off": 7500,
-      "old": "hew",
-      "new": "shew"
-     }
-    ],
-    "other": [
-     {
-      "tag": "insert",
-      "ccel": "",
-      "hcf": "de civ dei xx"
-     },
-     {
-      "tag": "delete",
-      "ccel": "ch",
-      "hcf": ""
-     },
-     {
-      "tag": "delete",
-      "ccel": "aug",
-      "hcf": ""
-     },
-     {
-      "tag": "delete",
-      "ccel": "ch",
-      "hcf": ""
-     },
-     {
-      "tag": "delete",
-      "ccel": "ch",
-      "hcf": ""
-     },
-     {
-      "tag": "delete",
-      "ccel": "ch",
-      "hcf": ""
-     },
-     {
-      "tag": "insert",
-      "ccel": "",
-      "hcf": "gal"
-     }
-    ]
-   },
+   "status": "typo",
    "quote_sha256": "764a9e54936087cf64ed1958d8cb1a9a66dcd7392414308c2a90c3869fffc1c2",
-   "hcf_commit": "a88dc031b9a1"
+   "hcf_commit": "a88dc031b9a1",
+   "corrections": [
+    {
+     "off": 7500,
+     "old": "hew",
+     "new": "shew",
+     "why": "dropped letter: CCEL has \"shew\"; \"hew us how mighty are alms\" makes no sense"
+    }
+   ],
+   "gaps": [
+    {
+     "off": 874,
+     "skipped_words": 15,
+     "skipped_preview": "And these shall go away into everlasting punishment but the righteous into ..."
+    }
+   ],
+   "editors_marks": [
+    "citation tags written in modern form by the database, e.g. \"(Exod. 3:14.)\" for CCEL's shorter forms"
+   ],
+   "human_review": {
+    "reviewer": "Tom Robinson",
+    "date": "2026-11-26",
+    "decisions": [
+     "\"he does / he has\": our copy is right, CCEL's \"be\" is the typing error; keep",
+     "\"hew\" to \"shew\": apply",
+     "citation tag forms (Exod., Ecclus.): keep ours"
+    ]
+   }
   },
   "8c188c89764ebafb9a897614559b49ed7ed72644c43b993521438c8985a54a48": {
    "file": "Augustine of Hippo/Romans 13_11.toml",
