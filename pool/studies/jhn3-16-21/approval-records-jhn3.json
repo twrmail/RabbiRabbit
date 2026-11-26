@@ -1,31 +1,12 @@
 {
- "A": {
-  "approver": null,
-  "timestamp": null,
-  "status": "pending",
-  "fingerprints": {
-   "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
-   "pieces": "d98de6fa009eb15097e10ddaa9a31a9bdd50c7f35fc50451bafad9f3bf94f43a",
-   "frame": "decfbfc5e0dccf4c19d5c12337d6b30de73f414cff2d52998846f07a9f3da9d0"
-  },
-  "frame_version": "frame_v2",
-  "build": "public",
-  "validator": {
-   "passed": true,
-   "build": "public"
-  },
-  "accepted_gaps": [],
-  "gaps_at_creation": [],
-  "note": "John 3:16-18 study A, Sent to Save"
- },
  "B": {
   "approver": null,
   "timestamp": null,
   "status": "pending",
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
-   "pieces": "f6b89bc2dd7ee31da603c22961867cf4bde8fdc6ca9ba4eb1920320506a06ed9",
-   "frame": "84cfecd82874dc4219d4a73184ac9c5e0069ed29e5b9847ffcd3458a2163dff4"
+   "pieces": "aed6e049a9dcd9c7a66b109699c9496de8673227d5bb480364f8ed93de8265cc",
+   "frame": "8af840edbbfe8be1c00217d55300c2abd511851643e7ce9a900e7a675e38978a"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -35,7 +16,7 @@
   },
   "accepted_gaps": [],
   "gaps_at_creation": [],
-  "note": "John 3:18-21 study B, Light and Hiding"
+  "note": "John 3:19-21 study B, Light and Hiding"
  },
  "C": {
   "approver": null,
@@ -43,8 +24,8 @@
   "status": "pending",
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
-   "pieces": "f849e904b41c9b390f6f16f6ccb34f6d24381ffecff13d0c0259c38f0de9a773",
-   "frame": "2e60926be85c01ee1941f123747d8eca86afd2ce22ac7b2d5e84c66112110427"
+   "pieces": "e30923e9c81a4dc26ee709740bb7ed0aaa56d05792c31a81f213b269acc60a3f",
+   "frame": "a32b0b7139d9e333dbbcb5f2bc1cfe54ff87ef911ca2616f45d3c90c3c6501e9"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -63,7 +44,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "3a5b1cb364ceb47bb4c21f30849ac70887ca3abc82b853c9aecced6a6e8a9ffb",
-   "frame": "0aaed97f3abb3aae335f9b558b797986a4917f76bae532408ed677fbfbd10503"
+   "frame": "d1c2cf62e67fc2fb731dd4a38c41cae59deff729213cc63d62d96ec340bfdfae"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -74,5 +55,24 @@
   "accepted_gaps": [],
   "gaps_at_creation": [],
   "note": "John 3:16-18 study D, The Love That Gives"
+ },
+ "E": {
+  "approver": null,
+  "timestamp": null,
+  "status": "pending",
+  "fingerprints": {
+   "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+   "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+   "frame": "b04251970c506bd551b0e323f19bdd78ff9ddcbeb35f1e8fd132f611f8df262b"
+  },
+  "frame_version": "frame_v2",
+  "build": "public",
+  "validator": {
+   "passed": true,
+   "build": "public"
+  },
+  "accepted_gaps": [],
+  "gaps_at_creation": [],
+  "note": "John 3:16-18 study E, The Love That Gives (four passages)"
  }
 }

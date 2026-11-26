@@ -33,7 +33,7 @@ def main(report):
     fails, counts = [], dict(coverage_fields=0, sentinels=0)
     def check(cond, msg):
         if not cond: fails.append(msg)
-    for st in S.STUDIES:
+    for st in B.live():
         k = st['key']; plan, req = B.plan_and_request(st, req0); gaps = V.make_gaps(pool, req, cov, 'public')
         v = V.validate(plan, pool, req, gaps, 'public', V.DEFAULT_BUDGET); pc = B.page_content(st, P, WV, v['stats'])
         rec, fr = F.make_record(plan, pool, gaps, req, rep, 'public', 'test', page=pc)
@@ -75,7 +75,7 @@ def main(report):
         ok, why = F.is_servable(appr, plan, pool, gaps, req, rep); check(not ok and 'frame version differs' in why, f'{k}: v2 record served without a page')
         # 6. tamper tests under v2
         _, tests = RF.tamper_tests(plan, pool, gaps, req, rep, pc); check(all(c['pass_'] for c in tests), f'{k}: tamper tests failed')
-    print(f"frame_v2 tests: 4 studies, {counts['coverage_fields']} fields changed one at a time, {counts['sentinels']} sentinels, "
+    print(f"frame_v2 tests: {len(B.live())} studies, {counts['coverage_fields']} fields changed one at a time, {counts['sentinels']} sentinels, "
           f"{'all pass' if not fails else str(len(fails)) + ' FAIL'}")
     for f in fails[:20]: print('FAIL', f)
     return len(fails)
