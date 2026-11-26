@@ -35,8 +35,10 @@ def verse_keyed(lib, folder, sid, prefix, author, tkey, work, book, ch, lo, hi, 
         cov[v] = dict(state='confirmed', note_id=nid); pieces += ps
     return dict(file_sha256=sha(raw), text_sha256=None), cov, notes, pieces, findings
 
+@chapter_guard('Barnes-NT', 'barnes-nt')
 def barnes(lib, book, ch, lo, hi, abbr=None):
     return verse_keyed(lib, 'Barnes-NT', 'barnes-nt', 'BAR', 'Albert Barnes', 'barnes', "Notes on the New Testament", book, ch, lo, hi, abbr)
 
+@chapter_guard('Tyndale', 'tyndale')
 def tyndale(lib, book, ch, lo, hi, abbr=None):
     return verse_keyed(lib, 'Tyndale', 'tyndale', 'TYN', 'Tyndale House Publishers', 'tyndale', 'Tyndale Open Study Notes', book, ch, lo, hi, abbr)

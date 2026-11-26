@@ -5,6 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pool_common import *
 from pool_common import sha, tier_of, make_piece, cut_note
 
+@chapter_guard('JFB', 'jfb')
 def jfb(lib, book, ch, lo, hi, abbr=None):
     fp = f'{lib}/commentary/JFB/{book}.json'; raw = open(fp, 'rb').read(); d = json.loads(raw)
     text = [c for c in d['chapters'] if c['chapter'] == ch][0]['commentary']

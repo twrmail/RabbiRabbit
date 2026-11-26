@@ -1,0 +1,90 @@
+{
+ "henry": {
+  "chapters": 1189,
+  "chapters_ran": 1189,
+  "chapters_with_pieces": 1189,
+  "pieces": 79114,
+  "chars": 36309196,
+  "verses_with_pieces": 24561,
+  "verse_states": {
+   "confirmed": 30705,
+   "source absence": 3,
+   "undetermined": 395
+  }
+ },
+ "calvin": {
+  "chapters": 1189,
+  "chapters_ran": 847,
+  "chapters_with_pieces": 815,
+  "pieces": 81479,
+  "chars": 38521675,
+  "verses_with_pieces": 19745,
+  "verse_states": {
+   "confirmed": 19739,
+   "index absence": 29,
+   "present but excluded by range policy": 12,
+   "source absence": 2208
+  }
+ },
+ "jfb": {
+  "chapters": 1189,
+  "chapters_ran": 1189,
+  "chapters_with_pieces": 1177,
+  "pieces": 27437,
+  "chars": 10168999,
+  "verses_with_pieces": 23061,
+  "verse_states": {
+   "confirmed": 23061,
+   "present but excluded by range policy": 4,
+   "source absence": 8038
+  }
+ },
+ "gill": {
+  "chapters": 1189,
+  "chapters_ran": 1189,
+  "chapters_with_pieces": 1181,
+  "pieces": 109764,
+  "chars": 45234534,
+  "verses_with_pieces": 29697,
+  "verse_states": {
+   "confirmed": 29697,
+   "source absence": 1406
+  }
+ },
+ "wesley": {
+  "chapters": 1189,
+  "chapters_ran": 1189,
+  "chapters_with_pieces": 1180,
+  "pieces": 20461,
+  "chars": 5199761,
+  "verses_with_pieces": 17867,
+  "verse_states": {
+   "confirmed": 17867,
+   "source absence": 13236
+  }
+ },
+ "barnes": {
+  "chapters": 1189,
+  "chapters_ran": 260,
+  "chapters_with_pieces": 260,
+  "pieces": 36036,
+  "chars": 14295224,
+  "verses_with_pieces": 7100,
+  "verse_states": {
+   "confirmed": 7100,
+   "source absence": 858
+  }
+ },
+ "tyndale": {
+  "chapters": 1189,
+  "chapters_ran": 1189,
+  "chapters_with_pieces": 1188,
+  "pieces": 17065,
+  "chars": 4354628,
+  "verses_with_pieces": 15172,
+  "verse_states": {
+   "confirmed": 15172,
+   "source absence": 15931
+  }
+ }
+}

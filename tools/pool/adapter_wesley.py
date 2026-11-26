@@ -22,7 +22,8 @@ def choose_markers(text, kjv):
     cands = []
     for m in MARK.finditer(text):
         l = int(m.group(1)); h = int(m.group(2) or l)
-        if h < l or h - l > 3: h = l
+        if l > len(kjv): continue   # a number past the chapter's last verse (e.g. Job 39 prints '33.' for verse 30) is not a verse marker
+        if h < l or h - l > 3 or h > len(kjv): h = l
         line = text[m.end():m.end() + 160]
         head = line.split(' - ')[0] if ' - ' in line else ''
         hw = set(WORD.findall(head.lower())); vw = set(WORD.findall(kjv.get(str(l), '').lower()))
@@ -38,12 +39,15 @@ def choose_markers(text, kjv):
     while i != -1: path.append(cands[i]); i = prev[i]
     path.reverse(); return path, len(cands)
 
+@chapter_guard('Wesley', 'wesley', dict_keyed=True)
 def wesley(lib, book, ch, lo, hi, abbr=None):
     fp = f'{lib}/commentary/Wesley/{book}.json'; raw = open(fp, 'rb').read(); d = json.loads(raw)
     text = d['chapters'][str(ch)]; kjv = kjv_chapter(lib, book, ch)
     tier = tier_of(lib, 'wesley'); findings, cov, notes, pieces = [], {}, [], []
     marks, ncand = choose_markers(text, kjv)
     hits = sum(1 for l, h, s, sc in marks if sc >= 2)
+    over = sorted({int(m.group(1)) for m in MARK.finditer(text) if int(m.group(1)) > len(kjv)})
+    if over: findings.append(dict(kind='marker-beyond-chapter', msg=f'numbered line(s) {over} are past the last verse ({len(kjv)}) of the KJV chapter; not treated as verse markers, so their text stays inside the note before them (likely a misnumbering in the source).'))
     findings.append(dict(kind='convention', msg=f'Wesley chapter {len(text)} chars; {ncand} numbered line starts, {len(marks)} chosen as verse markers ({hits} confirmed by a catchword in the KJV verse): {[(l if l == h else f"{l}-{h}") for l, h, _, _ in marks]}; max code point U+{max(map(ord, text)):04X}'))
     if marks and text[:marks[0][2]].strip(): findings.append(dict(kind='chapter-outline', msg=f'{len(text[:marks[0][2]].strip())} characters before the first verse marker (Wesley\'s chapter outline); not a verse note, not in the pool.'))
     unconf = [f'{l}' for l, h, s, sc in marks if sc < 2 and lo <= l <= hi]

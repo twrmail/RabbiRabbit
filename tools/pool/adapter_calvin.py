@@ -7,6 +7,7 @@ from pool_common import *
 from pool_common import sha, tier_of, refs_in, make_piece, cut_note
 
 HEADBLOCK = re.compile(r'(?:(?:[A-Z]{4,}\s\d+:\d+(?:-\d+)?[;,]?\s+)+)?(?:(?:1 John|Romans|Matthew|Mark|Luke|John|Ephesians)\s\d+:\d+(?:-\d+)?\s+){1,3}\d+\s?\.\s')
+@chapter_guard('Calvin', 'calvin')
 def calvin(lib, book, ch, lo, hi, abbr=None):
     fp = f'{lib}/commentary/Calvin/{book}.json'; raw = open(fp, 'rb').read(); d = json.loads(raw)
     text = [c for c in d['chapters'] if c['chapter'] == ch][0]['commentary']
