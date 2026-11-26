@@ -13,6 +13,9 @@ WORK_OT = 'Explanatory Notes upon the Old Testament'
 NT_BOOKS = set('MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV'.split())
 MARK = re.compile(r'(?m)^(\d{1,3})(?:\s*[-,–]\s*(\d{1,3}))?\.\s')
 WORD = re.compile(r"[a-z']{3,}")
+STOP = set('those these the and for that with this they them their thee thou thy his her him which what who whom shall will was were are not but all from unto upon have hath had been said into out there then than when where also even our your you its she one any may might can let did does'.split())
+WRAPPED = re.compile(r"(?:\bver\.|\bchap\.|\b[ivxlc]+,|\d,)[ \t]*\n\Z", re.I)   # the line just before (no blank line) ends mid-citation, so the number may continue it
+OUTLINE_WRAP = re.compile(r"\b(?:ver|chap)\.[ \t]*\n\Z", re.I)   # 'ver.' or 'chap.' then a line break: always the rest of a reference
 
 def kjv_chapter(lib, book, ch):
     d = json.load(open(f'{lib}/bible/KJV/{book}.json'))
@@ -23,6 +26,9 @@ def choose_markers(text, kjv):
     for m in MARK.finditer(text):
         l = int(m.group(1)); h = int(m.group(2) or l)
         if l > len(kjv): continue   # a number past the chapter's last verse (e.g. Job 39 prints '33.' for verse 30) is not a verse marker
+        if WRAPPED.search(text[max(0, m.start() - 16):m.start()]):   # a citation or 'ver.' that wrapped onto a new line (Exodus 27 'Zech. iv,\n11, 12.'; Isaiah 37 'ver.\n8-13.')
+            near = set(WORD.findall(text[m.end():m.end() + 160].lower())) - STOP   # kept only if the words that follow share a content word with the verse (Hebrews 1 'Psalm cii, 25,\n12. As a mantle - ... changed')
+            if OUTLINE_WRAP.search(text[max(0, m.start() - 16):m.start()]) or not near & (set(WORD.findall(kjv.get(str(l), '').lower())) - STOP): continue
         if h < l or h - l > 3 or h > len(kjv): h = l
         line = text[m.end():m.end() + 160]
         head = line.split(' - ')[0] if ' - ' in line else ''

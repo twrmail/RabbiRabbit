@@ -54,13 +54,13 @@
  "wesley": {
   "chapters": 1189,
   "chapters_ran": 1189,
-  "chapters_with_pieces": 1180,
-  "pieces": 20461,
-  "chars": 5199761,
-  "verses_with_pieces": 17867,
+  "chapters_with_pieces": 1179,
+  "pieces": 20451,
+  "chars": 5199376,
+  "verses_with_pieces": 17854,
   "verse_states": {
-   "confirmed": 17867,
-   "source absence": 13236
+   "confirmed": 17854,
+   "source absence": 13249
   }
  },
  "barnes": {

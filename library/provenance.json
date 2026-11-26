@@ -1380,7 +1380,7 @@
       "obligations": [],
       "openQuestions": [
         "Which module version we extracted (not recorded in our files).",
-        "Where the expansion from 72 to 5,319 topics came from, and whether it is the same work.",
+        "Where the expansion from 72 to 5,319 topics came from, and whether it is the same work.", "Lead (rabbit 18, Nov 26 2026, not settled): the size matches the standard public-domain digital Nave's. StudyLight's copy has 5,324 entries; the 1990s public-domain e-text (naves.doc, $$topic_number format, 50 topics per file) and CrossWire's module (v1.1, public-domain) are the common ancestors. Our file entered the repo by web upload (data/, Jun-Jul 2026) with no source recorded; a topic-by-topic compare with one of those copies would settle whether it is the same work.",
         "Whether the 'Bible Foundation 2000' electronic-text line restricts anything beyond the module's 'Public Domain -- Copy Freely.'"
       ],
       "rightsDeclarations": [
@@ -1709,7 +1709,7 @@
       "openQuestions": [
         "Whether the neuu dataset's CC BY 4.0 reaches the raw CCEL file held in its repository (it is described as its own parsed data); credit to CCEL and the dataset is worth giving either way.",
         "Whether the 2000-era Online Bible source text carries any restriction of its own; the CCEL header says Public Domain.",
-        "Six character bios in library/people/characters.json are not found inside any entry (listed in library/dictionary/Easton/_index.json); corrections not yet made.",
+        "Settled (rabbit 18, Nov 26 2026): all 1,292 character bios in library/people/characters.json sit inside an Easton entry, checked by whitespace-normalised substring against all 3,964 entries; library/dictionary/Easton/_index.json lists none outside (characterBiosNotFoundInAnyEntry is empty). The earlier six were resolved by #51.",
         "ClearBible's licence page (Nov 26, secondhand) says STEPBible's TBESH Meaning field is withheld because it is based on Online Bible material that requires permission. Our Easton file's CCEL header gives DC.Source: Online Bible and DC.Rights: Public Domain; is the Online Bible source text for Easton restricted in the same way? Needs a primary-source read."
       ],
       "acquisition": {
