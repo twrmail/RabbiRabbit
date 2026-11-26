@@ -23,7 +23,7 @@ jobs:
           if git ls-files | grep -E '__pycache__|\.pyc$'; then echo "Compiled Python files are tracked (listed above). Remove them."; exit 1; fi
       - name: Unit table is well formed (spans, movements tile, named approvals)
         run: python3 -B tools/pool/check_units.py library pool/units.json
-      - name: Adapter regression tests (17)
+      - name: Adapter regression tests (20)
         run: python3 -B tools/pool/run_adapter_tests.py library
       - name: Whole-Bible sweep equals the baseline (31,103 verses, seven adapters)
         run: python3 -B tools/pool/run_allbooks.py library sweep-out --baseline pool/allbooks-baseline.json
