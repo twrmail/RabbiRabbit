@@ -81,10 +81,10 @@ HEAD = {
 }
 STUDIES.append(dict(key='D', shape='short', scope=(16,18), title='The Love That Gives',
   focus="What does God's gift of his Son tell us about the heart of God?",
-  take="This take is the short shape: six passages, two for each verse, from five teachers who agree on the main line. God gives the Son to a world that has no claim on him (3:16); the Son comes to heal, not to condemn (3:17); the one who believes is not condemned (3:18).",
+  take="This take is the short shape: six passages, two for each verse. The passages chosen here converge on the main line: God gives the Son to rescue (3:16), Christ comes to save rather than condemn (3:17), and the one who believes is not condemned (3:18).",
   sections=[
    dict(verse=16, q=None, ids=[('MHC3.16.05','meaning'),('CHR3.16.1.01','meaning')]),
    dict(verse=17, q=None, ids=[('AUG3.17-18.1.01','meaning'),('CAL3.17.02','word')]),
    dict(verse=18, q=None, ids=[('MHC3.18.01','doctrine'),('JFB3.18.01','word')])],
   question="Christ came to heal, not to condemn. What does believing in him look like for you this week?",
-  closing="Rabbit's closing reflection: These teachers agree that the Son was given to rescue, and that the one who believes is not condemned. The gift is already offered; believing is how it is received."))
+  closing="Rabbit's closing reflection: The passages in this study point the same way: the Son was given to rescue, and the one who believes is not condemned. The gift is already offered; believing is how it is received."))
