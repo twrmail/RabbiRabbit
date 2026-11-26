@@ -1,0 +1,73 @@
+{
+  "about": "RabbiRabbit study units. A user's passage snaps outward to the whole unit that contains it, and the study says so. Movements are reading guides inside a unit, not cut lines: a commentary piece is never cut, and a piece whose span crosses a movement line is shown under the movement where it starts, keeping its full span label (for example 'Calvin on 1:15-19'). Only a named human approves a unit. Checked by tools/pool/check_units.py.",
+  "rule_source": "Tom, Nov 23 2026: RabbiRabbit keeps its own units; stories are not cut unnaturally; the weave bridges misfits and labels them honestly.",
+  "units": [
+    {
+      "id": "MAT.25.31-46",
+      "book": "MAT", "chapter": 25, "start": 31, "end": 46,
+      "title": "The judgment of the nations",
+      "movements": [
+        {"start": 31, "end": 31, "label": "The Judge enthroned"},
+        {"start": 32, "end": 33, "label": "Gathering and separation"},
+        {"start": 34, "end": 40, "label": "Sentence on the righteous: invitation, grounds, their question, Christ's answer"},
+        {"start": 41, "end": 45, "label": "Sentence on the wicked: sentence, reason, objection, reply"},
+        {"start": 46, "end": 46, "label": "The sentence carried out"}
+      ],
+      "evidence": "All seven commentaries break at 25:31 (talents parable ends at 30). Henry's outline I, II, III ... 'Lastly'; Calvin's sections 31 / 32-33 / 34 / 35-36 / 37-39 / 40 / 41-43 / 44. Calvin has no text for 45-46.",
+      "status": "approved", "approved_by": "Tom Robinson", "approved_on": "2026-11-26", "approval_note": "rabbit 18"
+    },
+    {
+      "id": "EPH.1.15-23",
+      "book": "EPH", "chapter": 1, "start": 15, "end": 23,
+      "title": "Paul's thanksgiving and prayer",
+      "movements": [
+        {"start": 15, "end": 17, "label": "Thanks, and the prayer for knowledge"},
+        {"start": 18, "end": 19, "label": "What to know: hope, inheritance, power"},
+        {"start": 20, "end": 23, "label": "That power shown in Christ's resurrection and rule"}
+      ],
+      "evidence": "Verse 14 closes the blessing of 1:3-14. Calvin's sections 15-19 and 20-23; inside them his notes are verse by verse (15., 16., ... 19.), so his text falls into the three movements without a cut. His only range-labelled piece before 20 is his note on verse 15 (span 15-19), shown under movement 15-17. Henry's 1:16 note is a 23-character fragment.",
+      "status": "approved", "approved_by": "Tom Robinson", "approved_on": "2026-11-26", "approval_note": "rabbit 18: three movements chosen over Calvin's two"
+    },
+    {
+      "id": "ROM.13.11-14",
+      "book": "ROM", "chapter": 13, "start": 11, "end": 14,
+      "title": "The night is far spent",
+      "movements": [
+        {"start": 11, "end": 11, "label": "Time to awake"},
+        {"start": 12, "end": 14, "label": "Put off darkness, put on Christ"}
+      ],
+      "evidence": "Calvin's heading group 11-14; Henry in part.",
+      "status": "approved", "approved_by": "Tom Robinson", "approved_on": "2026-11-24", "approval_note": "recorded in claude/unit-list-draft-nov23.md as confirmed by Tom"
+    },
+    {
+      "id": "1JN.2.15-17",
+      "book": "1JN", "chapter": 2, "start": 15, "end": 17,
+      "title": "Do not love the world",
+      "movements": [
+        {"start": 15, "end": 15, "label": "The command and its first reason"},
+        {"start": 16, "end": 17, "label": "What is in the world, and its passing"}
+      ],
+      "evidence": "Calvin's heading group 15-17; Henry's II.",
+      "status": "approved", "approved_by": "Tom Robinson", "approved_on": "2026-11-24", "approval_note": "Tom: 'one unit'"
+    },
+    {
+      "id": "MRK.13.32-37",
+      "book": "MRK", "chapter": 13, "start": 32, "end": 37,
+      "title": "Watch",
+      "movements": [
+        {"start": 32, "end": 34, "label": "Nobody knows the hour; the man away from home"},
+        {"start": 35, "end": 37, "label": "Watch: the master may come at any hour"}
+      ],
+      "evidence": "Tom's reading; Henry groups 35-36. The Matthew 24:42 parallel stays report-only.",
+      "status": "approved", "approved_by": "Tom Robinson", "approved_on": "2026-11-24", "approval_note": "recorded in claude/unit-list-draft-nov23.md as confirmed by Tom, breaks 32-34 and 35-37"
+    },
+    {
+      "id": "JHN.3.16-21",
+      "book": "JHN", "chapter": 3, "start": 16, "end": 21,
+      "title": "God so loved the world",
+      "movements": [],
+      "evidence": "The unit the three John studies were built on (Nov 24: A 3:16-18, B 3:18-21, C 3:16-18). No approval is recorded for the unit itself.",
+      "status": "proposed", "approved_by": null, "approved_on": null, "approval_note": "awaiting Tom"
+    }
+  ]
+}

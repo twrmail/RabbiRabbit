@@ -1,0 +1,36 @@
+# Pool builder check: every commentary adapter on all 66 books, compared with the recorded baseline.
+# Runs on any change to the library, the pool tools or the baseline. No model calls, no network beyond checkout. Read-only.
+# The Fathers sweep is not here: it needs the 129 MB pinned HCF copy, which is not kept in this repo.
+name: Pool sweep
+on:
+  push:
+    paths: ['library/**', 'tools/pool/**', 'pool/allbooks-baseline.json', 'pool/units.json', '.github/workflows/pool-sweep.yml']
+  pull_request:
+    paths: ['library/**', 'tools/pool/**', 'pool/allbooks-baseline.json', 'pool/units.json', '.github/workflows/pool-sweep.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: No compiled Python files are tracked
+        run: |
+          if git ls-files | grep -E '__pycache__|\.pyc$'; then echo "Compiled Python files are tracked (listed above). Remove them."; exit 1; fi
+      - name: Unit table is well formed (spans, movements tile, named approvals)
+        run: python3 -B tools/pool/check_units.py library pool/units.json
+      - name: Adapter regression tests (17)
+        run: python3 -B tools/pool/run_adapter_tests.py library
+      - name: Whole-Bible sweep equals the baseline (31,103 verses, seven adapters)
+        run: python3 -B tools/pool/run_allbooks.py library sweep-out --baseline pool/allbooks-baseline.json
+      - name: Sweep table on the run page
+        if: always()
+        run: test -f sweep-out/allbooks.md && cat sweep-out/allbooks.md >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Keep the sweep result with the run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: pool-sweep, path: 'sweep-out/' }
