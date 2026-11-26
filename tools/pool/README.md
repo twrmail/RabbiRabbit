@@ -5,9 +5,9 @@ Scripts that cut library sources into study "pool pieces", check them, and valid
 ## Fathers source checks
 `pool/fathers-source-checks.json` records each Fathers excerpt in the pinned HCF copy (commit a88dc031b9a1) against a full text of the same work. Key = sha256 of the HCF entry quote. Statuses (what each means is also in the registry's `statusMeaning`): `exact` (word sequence matches a full text; case, punctuation and digits are ignored, so this is not a character-for-character claim), `typo` (one-word correction recorded and applied before cutting), `gap` (the excerpt skips text; pieces that span the skip are excluded, rule V14), `editors-marks`, `recut` (the database prints stretches of the homily out of order; the record lists them in homily order, with the skipped text as a gap, and the build serves them that way; Matthew 25:42-43 only so far), `other` (needs a person), `unchecked`.
 
-Current counts: 25 exact, 9 editors-marks, 6 gap, 3 typo, 1 recut, 1 other, 7 unchecked (51 entries).
+Current counts: 43 exact, 14 editors-marks, 6 gap, 3 typo, 1 recut, 1 other, 7 unchecked (75 entries). `editors-marks` means the word sequence matches once editorial reference marks are set aside; it is not character-for-character identity with the CCEL text. The piece shown is always the stored HCF text.
 
-Sources used: CCEL NPNF1 volumes 3, 7, 8, 10, 11, 13 (public domain); the Documenta Catholica Omnia PDF for Chrysostom on Matthew, Homily 79 (the Prevost translation, Oxford 1843-1851, as reprinted in NPNF1-10, which the CCEL file lacks for this homily); the CCEL PDF and XML of the Catena Aurea on Matthew and Mark (the CCEL files state no rights and list William Whiston as translator; the Matthew text was compared with the Oxford 1841-45 edition scan from the Internet Archive and found to be that translation, so it is recorded as public domain by age; the Mark entry has not been compared and stays withheld). The source files are not in the repo. The registry stores the sha256 of each.
+Sources used: CCEL NPNF1 volumes 1, 3, 7, 8, 10, 11, 13, 14 (public domain); the Documenta Catholica Omnia PDF for Chrysostom on Matthew, Homily 79 (the Prevost translation, Oxford 1843-1851, as reprinted in NPNF1-10, which the CCEL file lacks for this homily); the CCEL PDF and XML of the Catena Aurea on Matthew and Mark (the CCEL files state no rights and list William Whiston as translator; the Matthew text was compared with the Oxford 1841-45 edition scan from the Internet Archive and found to be that translation, so it is recorded as public domain by age; the Mark entry has not been compared and stays withheld). The source files are not in the repo. The registry stores the sha256 of each.
 
 Rebuild (needs the source files and `HCF_LOCAL` pointing at the pinned HCF copy):
 - Chrysostom: `python3 tools/pool/fathers_check_registry.py HCF_DIR pool/fathers-source-checks.json MATTHEW_XML ROMANS_XML EPHESIANS_XML [DCO_TXT]`
@@ -32,8 +32,21 @@ Checks (no model calls, no network):
 - `run_adapter_tests.py LIBRARY`: the book table, the known gaps, the two fixes above.
 - `run_fathers_sweep.py LIBRARY OUT`: the same for the Fathers, using a full copy of the HCF database at the pinned commit (`HCF_LOCAL`, about 129 MB for the four authors; not kept in this repo). Result: 21,304 of the 21,527 files in the four authors' folders are reached; the rest are Deuterocanon (Sirach, Wisdom, Tobit, Maccabees and similar) or spans that cross a chapter boundary. 87,944 pieces, 0 tiling problems, 0 mismatches; 143 are public and 87,801 are withheld, because only entries with a recorded Public Domain source check are public.
 
-## Not included
-The John study scripts (`studies_jhn.py`, `build_studies_jhn.py`, `render_study.py`) have local paths and stay out until they are tidied.
+## John 3:16-21 studies
+- `studies_jhn.py`: the four study plans (piece ids and roles), the modern-language summaries (`SAY`), Study D's headings (`HEAD`) and Rabbit's own text (focus, take, questions, closings). Written by Claude standing in for the sorter and weaver; no model call.
+- `build_studies_jhn.py REPORT OUT`: validates each plan (public build), checks every summary and heading (no quotation marks, and no number or capitalized name that is not in its own passage), writes PENDING approval records, runs the 13 tamper tests per study, renders the page, and confirms every teacher passage appears on it unchanged.
+- `render_study.py REPORT PLAN OUT`: the older one-plan renderer from the Nov 22 trial; it expects a plan for all of 3:16-21, so it does not render studies A-D.
+- `public_pool.py FULL PUBLIC`: copies a diagnostic report without its tier C/U pieces and fails if any withheld text remains. `pool/studies/jhn3-16-21/` holds that public copy plus the plans, results, records and page. Building from the public copy gives the same fingerprints and the same page as the full report.
+
+Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21`
+
+## Known limits (confirmed after an outside review, Nov 26)
+- **The approval frame does not cover the AI or Rabbit text.** `frame_v1` hashes the picked pieces, their roles, labels, references, gap and pointer lines. It does not hash the summaries, Study D's headings, or Rabbit's own questions and reflections, so those could change without breaking an approval. Planned fix: `frame_v2` (see the weave design).
+- **The summary check is narrow.** It catches added quotes, numbers and names. It cannot tell whether a summary is faithful in meaning; that stays a human review.
+- **`markup_valid` only checks that asterisks pair up.** V9's "invalid markup" means no more than that.
+- **Offsets are character offsets into the decoded source text** each adapter reads (a verse-note string for Gill, a quote for the Fathers, a chapter string for Wesley), not byte offsets into the raw files. `verify.py` re-slices each piece from that text.
+- **Fathers comparisons cannot be rerun from a clone.** The CCEL files are not kept here; the registry records each file's sha256 and the result. `fathers_registry_verify.py` checks the HCF side only.
+- **Wesley verse assignment is a heuristic.** A piece that re-slices exactly can still sit under the wrong verse; the tests cover known cases only.
 
 ## Check
 `python3 tools/pool/run_validator.py REPORTS_DIR OUT_DIR` runs the validator on diagnostics and 25 synthetic cases.

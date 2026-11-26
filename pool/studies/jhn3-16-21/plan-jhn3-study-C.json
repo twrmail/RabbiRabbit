@@ -1,0 +1,60 @@
+{
+ "scope": "John 3:16-18",
+ "edition": "WEB",
+ "verses": {
+  "16": [
+   {
+    "id": "MHC3.16.06",
+    "role": "doctrine"
+   },
+   {
+    "id": "GIL3.16.01",
+    "role": "tension"
+   },
+   {
+    "id": "CAL3.16.08",
+    "role": "meaning"
+   },
+   {
+    "id": "CAL3.16.09",
+    "role": "doctrine"
+   },
+   {
+    "id": "CAL3.16.10",
+    "role": "doctrine"
+   },
+   {
+    "id": "CAL3.16.11",
+    "role": "doctrine"
+   }
+  ],
+  "17": [
+   {
+    "id": "CAL3.17.02",
+    "role": "word"
+   },
+   {
+    "id": "GIL3.17.03",
+    "role": "tension"
+   },
+   {
+    "id": "AUG3.17-18.1.01",
+    "role": "meaning"
+   }
+  ],
+  "18": [
+   {
+    "id": "GIL3.18.02",
+    "role": "doctrine"
+   },
+   {
+    "id": "CAL3.18.02",
+    "role": "word"
+   },
+   {
+    "id": "JFB3.18.01",
+    "role": "word"
+   }
+  ]
+ }
+}

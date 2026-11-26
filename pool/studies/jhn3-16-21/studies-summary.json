@@ -1,0 +1,103 @@
+{
+ "A": {
+  "title": "Sent to Save",
+  "ok": true,
+  "stats": {
+   "picked": 11,
+   "chars": 5317,
+   "budget": 12000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [],
+  "summary_check_failures": [],
+  "teachers": 5,
+  "tamper_tests": "13/13"
+ },
+ "B": {
+  "title": "Light and Hiding",
+  "ok": true,
+  "stats": {
+   "picked": 15,
+   "chars": 5289,
+   "budget": 12000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [],
+  "summary_check_failures": [],
+  "teachers": 6,
+  "tamper_tests": "13/13"
+ },
+ "C": {
+  "title": "Who Is the World?",
+  "ok": true,
+  "stats": {
+   "picked": 12,
+   "chars": 5592,
+   "budget": 12000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [
+   [
+    "dependent pair",
+    16,
+    "CAL3.16.09 is picked with its predecessor CAL3.16.08; read the two together"
+   ],
+   [
+    "dependent pair",
+    16,
+    "CAL3.16.10 is picked with its predecessor CAL3.16.09; read the two together"
+   ],
+   [
+    "dependent pair",
+    16,
+    "CAL3.16.11 is picked with its predecessor CAL3.16.10; read the two together"
+   ],
+   [
+    "concentration",
+    null,
+    "teacher_key 'john-calvin' supplies 50% of picked characters"
+   ]
+  ],
+  "summary_check_failures": [],
+  "teachers": 5,
+  "tamper_tests": "13/13"
+ },
+ "D": {
+  "title": "The Love That Gives",
+  "ok": true,
+  "stats": {
+   "picked": 6,
+   "chars": 2833,
+   "budget": 12000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [
+   [
+    "fewer teachers than offered",
+    16,
+    "verse 16: 2 teacher_key(s) picked, 7 offered by the pool (warning below 3)"
+   ],
+   [
+    "fewer teachers than offered",
+    17,
+    "verse 17: 2 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "fewer teachers than offered",
+    18,
+    "verse 18: 2 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ]
+  ],
+  "summary_check_failures": [],
+  "teachers": 5,
+  "tamper_tests": "13/13"
+ }
+}
