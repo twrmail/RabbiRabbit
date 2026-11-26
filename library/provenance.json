@@ -674,7 +674,8 @@
       ],
       "openQuestions": [
         "Licence version (the pages read do not state one; Tom reports 4.0).",
-        "Confirm the Worker shows the OpenBible credit."
+        "Confirm the Worker shows the OpenBible credit.",
+        "Licence version: ClearBible's licence page (clearbible.ai/licenses, read Nov 26, secondhand) states CC BY 4.0 for the OpenBible.info cross-references, which agrees with Tom's recollection of 4.0; still to be read from OpenBible's own page."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -1319,7 +1320,8 @@
       "obligations": [],
       "openQuestions": [
         "Read the licence statement of CrossWire's Strong's-tagged KJV OSIS file (the KJV text itself: see the kjv entry; the Strong's numbers: see strongs-hebrew and strongs-greek).",
-        "Which OSIS file and version the build used."
+        "Which OSIS file and version the build used.",
+        "Read the licence file of the CrossWire KJV-with-Strong's module itself. ClearBible's licence page (clearbible.ai/licenses, read Nov 26, a third-party summary) lists that module's distribution licence as GPL and says the KJV base text remains under Crown rights in the UK; not yet confirmed from CrossWire's own files."
       ],
       "acquisition": {
         "evidenceClass": "chat-history",
@@ -1707,7 +1709,8 @@
       "openQuestions": [
         "Whether the neuu dataset's CC BY 4.0 reaches the raw CCEL file held in its repository (it is described as its own parsed data); credit to CCEL and the dataset is worth giving either way.",
         "Whether the 2000-era Online Bible source text carries any restriction of its own; the CCEL header says Public Domain.",
-        "Six character bios in library/people/characters.json are not found inside any entry (listed in library/dictionary/Easton/_index.json); corrections not yet made."
+        "Six character bios in library/people/characters.json are not found inside any entry (listed in library/dictionary/Easton/_index.json); corrections not yet made.",
+        "ClearBible's licence page (Nov 26, secondhand) says STEPBible's TBESH Meaning field is withheld because it is based on Online Bible material that requires permission. Our Easton file's CCEL header gives DC.Source: Online Bible and DC.Rights: Public Domain; is the Online Bible source text for Easton restricted in the same way? Needs a primary-source read."
       ],
       "acquisition": {
         "evidenceClass": "measured",
