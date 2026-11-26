@@ -62,8 +62,20 @@ def page_content(st, P, WV, stats):
                 stats_line=f"Teachers in this study: {', '.join(S.TEACH[t] for t in teachers)}. {len(ids)} passages, "
                            f"{stats['chars']:,} characters of the 12,000 allowed; validator passed.")
 
+def movements():
+    u = json.load(open(os.path.join(REPO, 'pool', 'units.json'))); us = u['units'] if isinstance(u, dict) and 'units' in u else u
+    return [[m['start'], m['end']] for m in next(x for x in us if x['id'] == 'JHN.3.16-21')['movements']]
+
+def live(): return [st for st in S.STUDIES if not st.get('retired')]
+
+# W11 (weave design revisions, Nov 26): AI and Rabbit text claims only what the cited passages say, never what teachers or a tradition
+# hold in general. This catches the checkable phrasing; the rest is human review.
+W11 = re.compile(r"\bagree|\ball (?:the |these )?(?:teachers|commentators|fathers)\b|\bthe church (?:has )?always\b|\btradition (?:holds|teaches)\b", re.I)
+def summary_cap(P, pid): return max(150, len(P[pid]['text']) // 2)
+
 def plan_and_request(st, req0):
     lo, hi = st['scope']; req = copy.deepcopy(req0); req['lo'] = lo; req['hi'] = hi
+    if st.get('shape'): req['shape'] = st['shape']; req['movements'] = movements()
     req['scope'] = f"John 3:{lo}-{hi}" if lo != hi else f"John 3:{lo}"
     plan = {"scope": req['scope'], "edition": "WEB", "verses": {str(sec['verse']): [{"id": i, "role": r} for i, r in sec['ids']] for sec in st['sections']}}
     return plan, req
@@ -72,17 +84,23 @@ def main(report, out):
     rep, pool, cov, req0 = RV.load(report); os.makedirs(out, exist_ok=True); P = {p['id']: p for p in pool}
     web = json.load(open(os.path.join(REPO, 'library', 'bible', 'WEB', 'JHN.json'))); WV = [c for c in web['chapters'] if c['chapter'] == 3][0]['verses']
     results, records, bodies, bad = {}, {}, [], 0
-    for st in S.STUDIES:
+    for st in live():
         plan, req = plan_and_request(st, req0)
         gaps = V.make_gaps(pool, req, cov, 'public'); v = V.validate(plan, pool, req, gaps, 'public', V.DEFAULT_BUDGET)
         ids = [i for sec in st['sections'] for i, _ in sec['ids']]
         sb = [(i, check_say(P, i, S.SAY[i])) for i in ids]
         if st.get('shape') == 'short': sb += [(i + ' heading', check_say(P, i, S.HEAD[i])) for i in ids]
+        sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
+        own = [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
+        sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids] for m in [W11.search(t)] if m]
         sb = [x for x in sb if x[1]]
         json.dump(plan, open(f"{out}/plan-jhn3-study-{st['key']}.json", 'w'), indent=1)
         r = dict(title=st['title'], ok=v['ok'], stats=v['stats'], rejections=v['rejections'],
                  warnings=[(w['kind'], w.get('verse'), w['msg'][:120]) for w in v['warnings']], summary_check_failures=sb, frame_version=None, tamper_tests=None)
+        if sb: bad += 1
         if v['ok']:
+            ai = sum(len(S.SAY[i]) for i in ids) + (sum(len(S.HEAD[i]) for i in ids) if st.get('shape') == 'short' else 0)
+            r['ai_share'] = f"{100 * ai // (ai + v['stats']['chars'] + sum(len(t) for t in own))}%"
             pc = page_content(st, P, WV, v['stats'])
             rec, fr = F.make_record(plan, pool, gaps, req, rep, 'public', f"John 3:{req['lo']}-{req['hi']} study {st['key']}, {st['title']}", page=pc)
             _, tests = RF.tamper_tests(plan, pool, gaps, req, rep, pc)
@@ -93,13 +111,13 @@ def main(report, out):
             if miss: bad += 1; r['verbatim_missing'] = miss
         else: bad += 1
         results[st['key']] = r
-        print(st['key'], st['title'], 'validator', v['ok'], v['stats'].get('picked'), v['stats'].get('chars'), '| summary check', sb or 'ok', '| frame', r['frame_version'], '| tamper', r['tamper_tests'])
+        print(st['key'], st.get('shape', 'full'), st['title'], 'validator', v['ok'], v['rejections'][:2] if not v['ok'] else '', v['stats'].get('picked'), v['stats'].get('chars'), '| AI', r.get('ai_share'), '| checks', sb or 'ok', '| frame', r['frame_version'], '| tamper', r['tamper_tests'])
     json.dump(results, open(f'{out}/studies-summary.json', 'w'), indent=1, default=str)
     json.dump(records, open(f'{out}/approval-records-jhn3.json', 'w'), indent=1)
     nav = ' '.join(f'<a href="#s{st["key"]}">{st["key"]}. {html.escape(st["title"])}</a>' for st, _ in bodies)
     open(f'{out}/studies-jhn3-16-21.html', 'w').write(
         f'<!doctype html><meta charset=utf-8><title>John 3:16-21: review bundle</title><style>{SR.CSS}nav a{{font:15px system-ui;margin-right:1rem}}</style>'
-        f'<h1>John 3:16-21: four studies (review bundle)</h1><p class=own>Each study below is its own page (study-jhn3-A.html and so on), rendered from its '
+        f'<h1>John 3:16-21: studies (review bundle)</h1><p class=own>Each study below is its own page (study-jhn3-A.html and so on), rendered from its '
         f'frame alone; an approval covers that page. This bundle only puts them side by side.</p><nav>{nav}</nav>\n' + '\n'.join(b for _, b in bodies))
     return bad
 

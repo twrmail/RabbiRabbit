@@ -175,6 +175,23 @@ def synthetic():
     r = V.validate(dict(scope=req['scope'], edition='WEB', verses={'1': [dict(id='a1', role='overview')], '2': [dict(id='a2', role='overview'), dict(id='b2', role='meaning')]}),
                    [P('a1', 'a', 1), P('a2', 'a', 2), P('b2', 'b', 2)], req, gaps=gaps, build='public')
     res.append(dict(case='thin verse with gap record accepted', expected='accept', got=[x['rule'] for x in r['rejections']] or 'accepted', pass_=r['ok'] and gaps and gaps[0]['reason'] == 'thin'))
+    # V15-V18 study shapes (Nov 26): a 3-verse scope, one movement 1-3 split as [1,2],[3,3] for V17
+    sp = [P('h1', 'h', 1), P('c1', 'c', 1), P('ab', 'a', 2, covers_verses=[2, 3], subject_span=[2, 3], note_span=[2, 3]), P('h3', 'h', 3), P('k1', 'k', 1), P('m1', 'm', 1),
+          P('n2', 'n', 2), P('big', 'b', 1, text='x' * 2900)]
+    rq3 = dict(scope='Test 1:1-3', edition='WEB', lo=1, hi=3)
+    pl = lambda d: dict(scope='Test 1:1-3', edition='WEB', verses={k: [dict(id=i, role=r) for i, r in v] for k, v in d.items()})
+    four = {'1': [('h1', 'meaning'), ('c1', 'doctrine')], '2': [('ab', 'meaning')], '3': [('h3', 'doctrine')]}
+    shaped = [('short: 4 pieces, verse 3 covered by a 2-3 note, passes', four, 'short', None, None),
+              ('short: no role repeats needed (V18)', {**four, '1': [('h1', 'meaning'), ('c1', 'meaning')]}, 'short', None, 'V18'),
+              ('short: too many pieces (V15)', {**four, '1': four['1'] + [('k1', 'overview'), ('m1', 'word')], '2': [('ab', 'meaning'), ('n2', 'word')]}, 'short', None, 'V15'),
+              ('short: too many characters (V15)', {**four, '1': [('big', 'meaning'), ('c1', 'doctrine')]}, 'short', None, 'V15'),
+              ('short: a verse not covered (V16)', {'1': [('h1', 'meaning'), ('c1', 'doctrine'), ('k1', 'overview')], '2': [('n2', 'word')]}, 'short', None, 'V16'),
+              ('short: one teacher in a movement (V17)', four, 'short', [[1, 2], [3, 3]], 'V17'),
+              ('disagreement: role repeats allowed', {**four, '1': [('h1', 'meaning'), ('c1', 'meaning')]}, 'disagreement', None, None),
+              ('unknown shape (V15)', four, 'long', None, 'V15')]
+    for name, d, shape, moves, exp in shaped:
+        r = V.validate(pl(d), sp, dict(rq3, shape=shape, movements=moves), build='public'); got = sorted({x['rule'] for x in r['rejections']})
+        res.append(dict(case=name, expected=exp or 'accept', got=got or 'accepted', pass_=(exp is None and r['ok']) or (exp is not None and exp in got)))
     return res
 
 def md(name, request, good, vres, results, gaps, bud):

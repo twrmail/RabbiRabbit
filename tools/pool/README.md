@@ -33,6 +33,20 @@ Checks (no model calls, no network):
 - `run_fathers_sweep.py LIBRARY OUT`: the same for the Fathers, using a full copy of the HCF database at the pinned commit (`HCF_LOCAL`, about 129 MB for the four authors; not kept in this repo). Result: 21,304 of the 21,527 files in the four authors' folders are reached; the rest are Deuterocanon (Sirach, Wisdom, Tobit, Maccabees and similar) or spans that cross a chapter boundary. 87,944 pieces, 0 tiling problems, 0 mismatches; 143 are public and 87,801 are withheld, because only entries with a recorded Public Domain source check are public.
 
 ## John 3:16-21 studies
+**Study shapes (Tom, Nov 26).** A study is short and sequenced; the "more on this verse" drawer (the full pool) is not a study.
+- `short`: 4-6 pieces, at most 3,000 characters of teacher text. No role repeats within a verse (V18).
+- `disagreement`: 4-10 pieces.
+- Both shapes replace the minimum of two pieces per verse with two rules: every verse is covered by some picked piece's `covers_verses` (V16), and each unit movement has at least two teachers (V17). V15 is the size cap.
+- Summaries are at most half their passage's length (floor 150 characters).
+- **W11:** AI and Rabbit text may not claim what teachers or a tradition hold in general. Phrases like "agree", "all the teachers" and "the church has always" are rejected; the rest is human review.
+- **Current set:**
+  - B: short, 3:19-21, 6 pieces.
+  - C: disagreement, 3:16-18, 10 pieces.
+  - D: short, 3:16-18, 6 pieces.
+  - E: short, 3:16-18, 4 pieces.
+  - A and the old 15-piece B are retired (kept in `studies_jhn.py`, marked `retired`).
+- AI share of printed text is 25-29%.
+
 - `studies_jhn.py`: the four study plans (piece ids and roles), the modern-language summaries (`SAY`), Study D's headings (`HEAD`) and Rabbit's own text (focus, take, questions, closings). Written by Claude standing in for the sorter and weaver; no model call.
 - `build_studies_jhn.py REPORT OUT`: validates each plan (public build), screens every summary and heading (see the next section for what that screen does and does not catch), writes PENDING approval records, runs the 13 tamper tests per study, renders the page, and confirms every teacher passage appears on it unchanged.
 - `study_render.py`: renders one study page from its frame_v2 object only (renderer id `study_html_v1`). Each `study-jhn3-<K>.html` is the page an approval covers; `page-jhn3-study-<K>.json` keeps the page content so a record can be checked later; `studies-jhn3-16-21.html` is a review bundle.
@@ -51,7 +65,7 @@ Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagno
 - **Wesley verse assignment is a heuristic.** A piece that re-slices exactly can still sit under the wrong verse; the tests cover known cases only.
 
 ## Check
-`python3 tools/pool/run_validator.py REPORTS_DIR OUT_DIR` runs the validator on diagnostics and 25 synthetic cases.
+`python3 tools/pool/run_validator.py REPORTS_DIR OUT_DIR` runs the validator on diagnostics and 33 synthetic cases (8 of them for the study shapes, V15-V18).
 
 ## Fail-closed rules (Nov 25, after an outside review)
 - **Pinned HCF, no network.** The Fathers read only a local copy of the HCF repo (`HCF_LOCAL`). The copy must be the pinned commit: a git checkout at it, or a file `.pinned-commit` holding it. Otherwise the build stops. There is no fetch from `master`.

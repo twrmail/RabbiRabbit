@@ -44,14 +44,14 @@ SAY = {
 SAY['AUG3.17-18.1.01'] = "Augustine says that, as far as it is up to the physician, Christ came to heal the sick, and a patient who will not follow the physician's orders destroys himself. Christ is called the Saviour of the world because he came to save the world, not to judge it; the one who refuses to be saved by him is judged by himself."
 SAY['AUG3.19-21.2.05'] = "Augustine says we begin to do the truth when we stop soothing and flattering ourselves and stop calling ourselves righteous while we are not. Coming to the light means letting our works be shown for what they are. Even the displeasure we feel at our own sin is God's doing: it would not trouble us unless God shone into us and his truth showed it to us."
 STUDIES = [
- dict(key='A', scope=(16,18), title='Sent to Save', focus='Did Jesus come to judge the world, or to rescue it?',
+ dict(key='A', retired='Nov 26: replaced by D/E (same verses, short shape); A was drawer content arranged as a study', scope=(16,18), title='Sent to Save', focus='Did Jesus come to judge the world, or to rescue it?',
   take="This take follows the mission: God's love gives the Son (3:16), the Son's purpose is rescue, not condemnation (3:17), and the believer is not condemned (3:18).",
   sections=[
    dict(verse=16, q="How far does God's love go, and why does it surprise us?", ids=[('JFB3.16.01','overview'),('MHC3.16.05','meaning'),('CHR3.16.1.01','meaning'),('CAL3.16.04','doctrine')]),
    dict(verse=17, q="Did the Son come to judge or to save?", ids=[('MHC3.17.01','meaning'),('AUG3.17-18.1.01','meaning'),('CAL3.17.02','word'),('CHR3.17-18.1.01','doctrine')]),
    dict(verse=18, q="What happens to the person who believes?", ids=[('MHC3.18.01','doctrine'),('JFB3.18.01','word'),('CHR3.18.1.01','application')])],
   closing="Rabbit's question to carry: If the one with the power to judge came to save, what does that change for you today?"),
- dict(key='B', scope=(18,21), title='Light and Hiding', focus='Why do people run from the light, and what does it look like to come to it?',
+ dict(key='B-old', retired='Nov 26: rebuilt as short study B on 3:19-21 (the unit movement Light and darkness)', scope=(18,21), title='Light and Hiding', focus='Why do people run from the light, and what does it look like to come to it?',
   take="This take follows the heart: condemnation is not Christ's aim, yet people choose the dark (3:18-20), and the one who does truth walks toward the light (3:21).",
   sections=[
    dict(verse=18, q="Condemned already: what does that mean?", ids=[('CAL3.18.03','word'),('JFB3.18.01','word'),('MHC3.18.03','warning')]),
@@ -59,12 +59,12 @@ STUDIES = [
    dict(verse=20, q="What does the light expose, and why does that feel threatening?", ids=[('MHC3.20.06','meaning'),('CAL3.20.01','meaning'),('GIL3.20.02','word'),('JFB3.20.01','word')]),
    dict(verse=21, q="What does coming to the light look like?", ids=[('JFB3.21.01','meaning'),('MHC3.21.02','doctrine'),('CAL3.21.03','word'),('AUG3.19-21.2.05','application')])],
   closing="Rabbit's question to carry: What is one thing you tend to keep in the dark, and what would it mean to bring it to the light?"),
- dict(key='C', scope=(16,18), title='Who Is the World?', focus="How wide is God's love, and how do the teachers read 'the world' and 'whoever believes'?",
+ dict(key='C', shape='disagreement', scope=(16,18), title='Who Is the World?', focus="How wide is God's love, and how do the teachers read 'the world' and 'whoever believes'?",
   take="This take lets the teachers disagree in the open: Henry and Calvin read the offer as going out to all; Gill reads 'the world' as the elect among every nation. Augustine and Calvin keep the human side in view.",
   sections=[
    dict(verse=16, q="Who is 'the world' in 3:16?", ids=[('MHC3.16.06','doctrine'),('GIL3.16.01','tension'),('CAL3.16.08','meaning'),('CAL3.16.09','doctrine'),('CAL3.16.10','doctrine'),('CAL3.16.11','doctrine')]),
-   dict(verse=17, q="Saved: everyone, or those who believe?", ids=[('CAL3.17.02','word'),('GIL3.17.03','tension'),('AUG3.17-18.1.01','meaning')]),
-   dict(verse=18, q="Who is safe, and who is not?", ids=[('GIL3.18.02','doctrine'),('CAL3.18.02','word'),('JFB3.18.01','word')])],
+   dict(verse=17, q="Saved: everyone, or those who believe?", ids=[('GIL3.17.03','tension'),('AUG3.17-18.1.01','meaning')]),
+   dict(verse=18, q="Who is safe, and who is not?", ids=[('GIL3.18.02','doctrine'),('CAL3.18.02','word')])],
   closing="Rabbit's question to carry: Whatever you decide about the width of God's love, what does the invitation to whoever believes ask of you?"),
 ]
 
@@ -83,8 +83,61 @@ STUDIES.append(dict(key='D', shape='short', scope=(16,18), title='The Love That 
   focus="What does God's gift of his Son tell us about the heart of God?",
   take="This take is the short shape: six passages, two for each verse. The passages chosen here converge on the main line: God gives the Son to rescue (3:16), Christ comes to save rather than condemn (3:17), and the one who believes is not condemned (3:18).",
   sections=[
-   dict(verse=16, q=None, ids=[('MHC3.16.05','meaning'),('CHR3.16.1.01','meaning')]),
+   dict(verse=16, q=None, ids=[('MHC3.16.05','meaning'),('CHR3.16.1.01','doctrine')]),
    dict(verse=17, q=None, ids=[('AUG3.17-18.1.01','meaning'),('CAL3.17.02','word')]),
    dict(verse=18, q=None, ids=[('MHC3.18.01','doctrine'),('JFB3.18.01','word')])],
   question="Christ came to heal, not to condemn. What does believing in him look like for you this week?",
   closing="Rabbit's closing reflection: The passages in this study point the same way: the Son was given to rescue, and the one who believes is not condemned. The gift is already offered; believing is how it is received."))
+
+# Nov 26 (Tom: yes to all): study shapes, summary length cap, B rebuilt short, E added.
+# Every summary is at most half its passage's length (floor 150 characters), checked by build_studies_jhn.py.
+SAY.update({
+'MHC3.16.05': "Matthew Henry marvels that the holy God would love so wicked a world with good will. Against the idea that the Messiah came only for one nation, he says Christ came in love to the whole world, Gentiles as well as Jews.",
+'CHR3.16.1.01': "Chrysostom hears Jesus saying: do not be shocked that I must be lifted up to save you. The Father loved you enough to give his Son for slaves, ungrateful ones, something a person would hardly do even for a friend.",
+'AUG3.17-18.1.01': "Augustine pictures Christ as a physician who came to heal the sick. He came to save the world, not to judge it; whoever refuses the physician's orders destroys himself and is judged by himself.",
+'CAL3.17.02': "John Calvin says the word world is repeated so that no one on the road of faith feels shut out. Christ came not to condemn, since we were already ruined.",
+'MHC3.18.01': "Matthew Henry says a believer, though a great sinner who stands convicted, is not condemned. This is more than a delay: judgment is stopped, and he is acquitted and discharged.",
+'JFB3.18.01': "Jamieson, Fausset and Brown say the believer passes at once from death to life, while the unbeliever stays condemned by refusing God's one way out.",
+'MHC3.16.06': "Matthew Henry says that though many perish, giving the Son was love to the whole world, since life is offered to all, like a pardon proclaimed to a rebel province.",
+'GIL3.16.01': "John Gill says world here does not mean every person. God's special love shown in giving his Son is not for all, since whoever receives the Son receives all things with him, which is not true of everyone.",
+'CAL3.16.08': "John Calvin says only-begotten is emphatic: because people find it hard to believe God loves them, God shows it by not sparing his own Son. To keep doubting after this, he says, insults Christ.",
+'CAL3.16.09': "Calvin adds that the more God values his only Son, the more precious our salvation was to him, since the Son died to ransom us. Christ is Son by nature and shares that honor with us by adoption.",
+'CAL3.16.10': "Calvin calls this high praise of faith: it frees us from everlasting destruction. The word whosoever invites everyone to life and leaves unbelievers without excuse.",
+'CAL3.16.11': "Calvin says nothing in the world deserves God's favor, yet he shows himself reconciled to the whole world by inviting all to faith. Life is promised to all who believe, but faith is not common to all.",
+'GIL3.17.03': "Gill reads the world that is saved as the elect whom God chose to save, including his chosen people among the Gentiles, which is why all the ends of the earth are called to look to him.",
+'GIL3.18.02': "Gill says the believer, Jew or Gentile, is in Christ and free from condemnation. The sentence of death on all in Adam was carried out on Christ in his people's place, so whoever believes has passed from death to life and will never be condemned.",
+'CAL3.18.02': "Calvin says is not condemned means believers are safe from the fear of condemnation. The unbeliever is condemned already because there is no other remedy: life lies only in faith, so rejecting it leaves only death.",
+'CAL3.19.02': "John Calvin says no one should blame Christ for his condemnation. Unbelief shows a bad conscience: people's own wickedness keeps them from coming to Christ.",
+'MHC3.19.04': "Matthew Henry says people love darkness because their deeds are evil. They are in love with their sickness and slavery, and hate the light because it robs them of their good opinion of themselves.",
+'GIL3.20.02': "John Gill says the one who does evil avoids the light so his deeds are not exposed, shamed and blamed, and so that he is not told to give them up.",
+'MHC3.20.06': "Matthew Henry says Christ is hated because sin is loved; staying away from the light shows a hidden hatred of saving knowledge.",
+'JFB3.21.01': "Jamieson, Fausset and Brown say the one who does truth wants only what can bear the light, so he comes to it and is shown to be God's work.",
+'AUG3.19-21.2.05': "Augustine says doing the truth begins when we stop flattering ourselves and calling ourselves righteous. Even our displeasure at our sin comes from God shining his truth into us.",
+})
+HEAD.update({
+'CAL3.19.02': "Do not blame Christ for the darkness",
+'MHC3.19.04': "In love with the sickness",
+'GIL3.20.02': "Afraid of being exposed",
+'MHC3.20.06': "Christ hated because sin is loved",
+'JFB3.21.01': "A life that can bear the light",
+'AUG3.19-21.2.05': "Doing the truth starts with honesty",
+})
+STUDIES.append(dict(key='B', shape='short', scope=(19,21), title='Light and Hiding',
+  focus='Why do people run from the light, and what does it look like to come to it?',
+  take="This take follows the heart. The passages chosen here trace why people choose the dark (3:19), what they fear in the light (3:20), and what coming to it looks like (3:21).",
+  sections=[
+   dict(verse=19, q=None, ids=[('CAL3.19.02','meaning'),('MHC3.19.04','warning')]),
+   dict(verse=20, q=None, ids=[('GIL3.20.02','word'),('MHC3.20.06','meaning')]),
+   dict(verse=21, q=None, ids=[('JFB3.21.01','meaning'),('AUG3.19-21.2.05','application')])],
+  question="What is one thing you tend to keep in the dark, and what would it mean to bring it to the light?",
+  closing="Rabbit's closing reflection: In these passages, coming to the light does not start with being clean. It starts with no longer hiding."))
+STUDIES.append(dict(key='E', shape='short', scope=(16,18), title='The Love That Gives (four passages)',
+  focus="What does God's gift of his Son tell us about the heart of God?",
+  take="This take is the shortest shape: four passages, with Augustine's note covering both 3:17 and 3:18. The passages chosen here converge on the main line: God gives the Son to rescue (3:16), Christ comes to heal rather than condemn (3:17), and the one who believes is not condemned (3:18).",
+  sections=[
+   dict(verse=16, q=None, ids=[('MHC3.16.05','meaning'),('CHR3.16.1.01','doctrine')]),
+   dict(verse=17, q=None, ids=[('AUG3.17-18.1.01','meaning')]),
+   dict(verse=18, q=None, ids=[('MHC3.18.01','doctrine')])],
+  question="Christ came to heal, not to condemn. What does believing in him look like for you this week?",
+  closing="Rabbit's closing reflection: The passages in this study point the same way: the Son was given to rescue, and the one who believes is not condemned. The gift is already offered; believing is how it is received."))
+STUDIES[:] = sorted(STUDIES, key=lambda st: st['key'])

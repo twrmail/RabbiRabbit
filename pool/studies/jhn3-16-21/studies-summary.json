@@ -1,42 +1,43 @@
 {
- "A": {
-  "title": "Sent to Save",
-  "ok": true,
-  "stats": {
-   "picked": 11,
-   "chars": 5317,
-   "budget": 12000,
-   "build": "public",
-   "rules_failed": []
-  },
-  "rejections": [],
-  "warnings": [],
-  "summary_check_failures": [],
-  "frame_version": "frame_v2",
-  "tamper_tests": "13/13"
- },
  "B": {
   "title": "Light and Hiding",
   "ok": true,
   "stats": {
-   "picked": 15,
-   "chars": 5289,
+   "picked": 6,
+   "chars": 2159,
    "budget": 12000,
    "build": "public",
    "rules_failed": []
   },
   "rejections": [],
-  "warnings": [],
+  "warnings": [
+   [
+    "fewer teachers than offered",
+    19,
+    "verse 19: 2 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "fewer teachers than offered",
+    20,
+    "verse 20: 2 teacher_key(s) picked, 7 offered by the pool (warning below 3)"
+   ],
+   [
+    "fewer teachers than offered",
+    21,
+    "verse 21: 2 teacher_key(s) picked, 7 offered by the pool (warning below 3)"
+   ]
+  ],
   "summary_check_failures": [],
   "frame_version": "frame_v2",
-  "tamper_tests": "13/13"
+  "tamper_tests": "13/13",
+  "ai_share": "29%"
  },
  "C": {
   "title": "Who Is the World?",
   "ok": true,
   "stats": {
-   "picked": 12,
-   "chars": 5592,
+   "picked": 10,
+   "chars": 4949,
    "budget": 12000,
    "build": "public",
    "rules_failed": []
@@ -59,14 +60,20 @@
     "CAL3.16.11 is picked with its predecessor CAL3.16.10; read the two together"
    ],
    [
-    "concentration",
-    null,
-    "teacher_key 'john-calvin' supplies 50% of picked characters"
+    "fewer teachers than offered",
+    17,
+    "verse 17: 2 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "fewer teachers than offered",
+    18,
+    "verse 18: 2 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
    ]
   ],
   "summary_check_failures": [],
   "frame_version": "frame_v2",
-  "tamper_tests": "13/13"
+  "tamper_tests": "13/13",
+  "ai_share": "26%"
  },
  "D": {
   "title": "The Love That Gives",
@@ -98,6 +105,55 @@
   ],
   "summary_check_failures": [],
   "frame_version": "frame_v2",
-  "tamper_tests": "13/13"
+  "tamper_tests": "13/13",
+  "ai_share": "27%"
+ },
+ "E": {
+  "title": "The Love That Gives (four passages)",
+  "ok": true,
+  "stats": {
+   "picked": 4,
+   "chars": 2190,
+   "budget": 12000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [
+   [
+    "fewer teachers than offered",
+    16,
+    "verse 16: 2 teacher_key(s) picked, 7 offered by the pool (warning below 3)"
+   ],
+   [
+    "one teacher",
+    17,
+    "verse 17 is served by one teacher_key (augustine)"
+   ],
+   [
+    "fewer teachers than offered",
+    17,
+    "verse 17: 1 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "one teacher",
+    18,
+    "verse 18 is served by one teacher_key (matthew-henry)"
+   ],
+   [
+    "fewer teachers than offered",
+    18,
+    "verse 18: 1 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "concentration",
+    null,
+    "teacher_key 'matthew-henry' supplies 50% of picked characters"
+   ]
+  ],
+  "summary_check_failures": [],
+  "frame_version": "frame_v2",
+  "tamper_tests": "13/13",
+  "ai_share": "25%"
  }
 }

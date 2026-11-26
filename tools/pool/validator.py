@@ -11,6 +11,12 @@ Fathers tier B allowed in public builds, Aquinas direct commentaries (tier C) wi
 ROLES is the fixed list from mockup316-18-sources/core.js (the John 3:16-18 trial page)."""
 ROLES = ('overview', 'meaning', 'word', 'doctrine', 'tension', 'context', 'application', 'warning')   # from mockup316-18-sources/core.js
 MIN_PER_VERSE, MAX_PER_VERSE, TEACHER_CAP, DEFAULT_BUDGET = 2, 9, 4, 12000
+# Study shapes (Tom, Nov 26). A request may carry shape='short' or 'disagreement' and the unit's movements ([[lo, hi], ...]).
+# Shaped studies replace the per-verse minimum (V6, V11 minimum) with coverage rules:
+#   V15 size cap; V16 every verse in scope is covered by some picked piece's covers_verses; V17 each movement has pieces from at least
+#   two teachers; V18 (short only) no role repeats within a verse. The "more on this verse" drawer is not a study and is not validated here.
+SHAPES = {'short': dict(min_pieces=4, max_pieces=6, max_chars=3000, no_role_repeat=True),
+          'disagreement': dict(min_pieces=4, max_pieces=10, max_chars=None, no_role_repeat=False)}
 TEACHER_WARN_MIN = 3   # 'fewer teachers than offered' warns only when fewer than 3 teacher_keys are picked and the pool offers at least that many (Tom, Nov 22)
 PUBLIC_OK = ('A', 'B')
 GAP_REASON_ORDER = ['withheld', 'extraction failure', 'present but excluded by range policy', 'index absence', 'undetermined', 'source absence']
@@ -57,6 +63,8 @@ def validate(plan, pool, request, gaps=None, build='private', budget=DEFAULT_BUD
     gaps = make_gaps(pool, request, None, build) if gaps is None else gaps
     gap_v = {g['verse'] for g in gaps}
     by_id = {p['id']: p for p in pool}
+    shape = request.get('shape')
+    if shape and shape not in SHAPES: R('V15', f'unknown study shape {shape!r}'); shape = None
 
     # V0 exact schema ---------------------------------------------------------------------------------------------
     if not isinstance(plan, dict):
@@ -112,10 +120,10 @@ def validate(plan, pool, request, gaps=None, build='private', budget=DEFAULT_BUD
     for v in scope:
         ids = [i for i, _ in picks.get(v, [])]; k = len(ids)
         avail = [p for p in pool if v in covers(p) and usable(p, build)]
-        required = min(MIN_PER_VERSE, len(avail))
+        required = 0 if shape else min(MIN_PER_VERSE, len(avail))
         if k < required: R('V6', f'verse {v} has {k} piece(s) picked but {len(avail)} usable piece(s) are in the pool (minimum {MIN_PER_VERSE}) and no gap record covers the shortfall', v)
         if k > MAX_PER_VERSE: R('V11', f'verse {v} has {k} pieces (maximum {MAX_PER_VERSE})', v)
-        if k < MIN_PER_VERSE and v not in gap_v: R('V11', f'verse {v} has {k} piece(s) (minimum {MIN_PER_VERSE}) and no gap record applies', v)
+        if not shape and k < MIN_PER_VERSE and v not in gap_v: R('V11', f'verse {v} has {k} piece(s) (minimum {MIN_PER_VERSE}) and no gap record applies', v)
         tk = {}
         for i in ids:
             if i in by_id: tk.setdefault(by_id[i]['teacher_key'], []).append(i)
@@ -140,6 +148,22 @@ def validate(plan, pool, request, gaps=None, build='private', budget=DEFAULT_BUD
     if total > budget: R('V8', f'picked text is {total} characters; budget is {budget}')
     for t, c in chars.items():
         if total and c * 2 > total: W('concentration', f'teacher_key {t!r} supplies {100 * c // total}% of picked characters')
+    # V15-V18 study shapes ---------------------------------------------------------------------------------------
+    if shape:
+        sp = SHAPES[shape]; n = len(order)
+        if n < sp['min_pieces'] or n > sp['max_pieces']: R('V15', f'a {shape} study has {sp["min_pieces"]}-{sp["max_pieces"]} pieces; this plan has {n}')
+        if sp['max_chars'] and total > sp['max_chars']: R('V15', f'a {shape} study has at most {sp["max_chars"]} characters of teacher text; this plan has {total}')
+        touched = {c for i in order if i in by_id for c in covers(by_id[i])}
+        for v in scope:
+            if v not in touched: R('V16', f'verse {v} is not covered by any picked piece', v)
+        moves = [m for m in (request.get('movements') or [[lo, hi]]) if m[1] >= lo and m[0] <= hi]
+        for a, b in moves:
+            tks = {by_id[i]['teacher_key'] for v in range(max(a, lo), min(b, hi) + 1) for i, _ in picks.get(v, []) if i in by_id}
+            if len(tks) < 2: R('V17', f'movement {a}-{b} has pieces from {len(tks)} teacher(s); at least 2 are needed')
+        if sp['no_role_repeat']:
+            for v in scope:
+                roles = [r for _, r in picks.get(v, [])]
+                for r in sorted({r for r in roles if roles.count(r) > 1}): R('V18', f'verse {v}: role {r!r} is used {roles.count(r)} times; a short study gives each piece under a verse its own job', v)
     # gap records that were not accepted are a reviewer matter ----------------------------------------------------
     for g in gaps:
         if not g.get('accepted_by'): W('gap not yet accepted', f'verse {g["verse"]}: {g["reason"]}: {g["explanation"]}', g['verse'])
