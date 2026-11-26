@@ -1709,7 +1709,7 @@
       "openQuestions": [
         "Whether the neuu dataset's CC BY 4.0 reaches the raw CCEL file held in its repository (it is described as its own parsed data); credit to CCEL and the dataset is worth giving either way.",
         "Whether the 2000-era Online Bible source text carries any restriction of its own; the CCEL header says Public Domain.",
-        "Six character bios in library/people/characters.json are not found inside any entry (listed in library/dictionary/Easton/_index.json); corrections not yet made.",
+        "Settled (rabbit 18, Nov 26 2026): all 1,292 character bios in library/people/characters.json sit inside an Easton entry, checked by whitespace-normalised substring against all 3,964 entries; library/dictionary/Easton/_index.json lists none outside (characterBiosNotFoundInAnyEntry is empty). The earlier six were resolved by #51.",
         "ClearBible's licence page (Nov 26, secondhand) says STEPBible's TBESH Meaning field is withheld because it is based on Online Bible material that requires permission. Our Easton file's CCEL header gives DC.Source: Online Bible and DC.Rights: Public Domain; is the Online Bible source text for Easton restricted in the same way? Needs a primary-source read."
       ],
       "acquisition": {
