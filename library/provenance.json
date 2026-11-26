@@ -1380,7 +1380,7 @@
       "obligations": [],
       "openQuestions": [
         "Which module version we extracted (not recorded in our files).",
-        "Where the expansion from 72 to 5,319 topics came from, and whether it is the same work.",
+        "Where the expansion from 72 to 5,319 topics came from, and whether it is the same work.", "Lead (rabbit 18, Nov 26 2026, not settled): the size matches the standard public-domain digital Nave's. StudyLight's copy has 5,324 entries; the 1990s public-domain e-text (naves.doc, $$topic_number format, 50 topics per file) and CrossWire's module (v1.1, public-domain) are the common ancestors. Our file entered the repo by web upload (data/, Jun-Jul 2026) with no source recorded; a topic-by-topic compare with one of those copies would settle whether it is the same work.",
         "Whether the 'Bible Foundation 2000' electronic-text line restricts anything beyond the module's 'Public Domain -- Copy Freely.'"
       ],
       "rightsDeclarations": [
