@@ -617,7 +617,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "exact",
    "quote_sha256": "5efb4bf6791817fdfcd5e4538e1a7c10c05e3f088e4462abb810ed9ff40d132f",
@@ -631,7 +636,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "editors-marks",
    "editors_marks": [
@@ -649,7 +659,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "exact",
    "quote_sha256": "22c70302d19694d627e5dec4fe856be923ab7984ccd21ac8c6b7c2d06a1908b6",
@@ -663,7 +678,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "editors-marks",
    "editors_marks": [
@@ -681,7 +701,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "editors-marks",
    "editors_marks": [
@@ -713,7 +738,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "editors-marks",
    "editors_marks": [
@@ -731,7 +761,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "exact",
    "quote_sha256": "01d4a570f00e7d47d72d35b96a2a4520880b86901cb7bb24b537067effcde837",
@@ -759,7 +794,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "editors-marks",
    "editors_marks": [
@@ -777,7 +817,11 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text."
    },
    "status": "other",
    "note": "needs a person: HCF entry joins separate Catena paragraphs (other authors between them are skipped) and a few word differences; no automatic corrections applied",
@@ -895,7 +939,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "exact",
    "quote_sha256": "87349264103b0765e5d35dea7a9d9fa1cb127cf36e8764e42275db467c7e1c45",
@@ -909,7 +958,12 @@
    "against": {
     "volume": "CCEL PDF: Catena Aurea, Gospel of Matthew (Aquinas; file lists William Whiston as translator). Text taken from the PDF, not the XML",
     "ccel_file_sha256": "6d154faa6bf5928adb242542ea5fcf86e580ee7b34f183e5082e808fc97b4671",
-    "ccel_rights": "not stated in the file"
+    "ccel_rights": "not stated in the file",
+    "edition": "Catena Aurea, Oxford: J. H. Parker, 1841-1845 (Newman, editor and preface); later printings to 1874",
+    "translator_per_catalogue": "Mark Pattison (HathiTrust record 008412369); the CCEL file lists William Whiston, probably a metadata slip. Not confirmed from a title page",
+    "second_witness": "Internet Archive scan of Volume 1, part 3 (item p3catenaaureacomm01thom), OCR text",
+    "rights_basis": "Published 1841-1845 (Oxford); the CCEL Matthew text was compared word for word with the Oxford scan for chapter 25: 12,482 words (CCEL PDF) against 12,711 (scan), 94.7% in step, and the remaining differences are OCR errors, margin citations printed differently, and the placement of editors' notes; no difference in the translation's wording found. The scan's OCR is too noisy to check the HCF excerpts word for word, so the HCF check above stands on the CCEL text.",
+    "rights_status": "Public Domain"
    },
    "status": "exact",
    "quote_sha256": "7c4878b5e3395f91b7009149b522da3e8d1ee21e6c5a9d88a24b76a4c326b8ec",
