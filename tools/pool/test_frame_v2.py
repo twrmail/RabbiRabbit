@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """frame_v2 tests: an approval must cover every word on the study page. usage: test_frame_v2.py REPORT_JSON
-Uses the four John 3:16-21 studies. Each test approves a COPY of a record under the name 'TEST'; nothing here approves a real study.
+Uses the live John 3:16-21 studies, narrative ones included. Each test approves a COPY of a record under the name 'TEST'; nothing here approves a real study.
  1. coverage: change any one string in the page content (summaries, headings, Rabbit's text, Scripture, labels, credits, note),
     or any one picked piece's text, and the approved record must refuse to serve. Generated over every field, not hand-picked.
  2. nothing outside the frame: every word visible on the rendered page occurs in the frame.
@@ -59,8 +59,13 @@ def main(report):
         check(all(SR.md(P[x['id']]['text']) in html1 for vv in plan['verses'].values() for x in vv), f'{k}: a teacher passage is not exact on the page')
         # 4. sentinels
         first = plan['verses'][min(plan['verses'], key=int)][0]['id']
-        spots = [('summaries', first), ('study', 'take'), ('study', 'closing'), ('study', 'focus'), ('credits',), ('note',), ('labels', 'ai_summary'), ('scripture', str(st['scope'][0]))]
-        if st.get('shape') == 'short': spots += [('headings', first), ('study', 'question')]
+        spots = [('study', 'take'), ('study', 'closing'), ('study', 'focus'), ('credits',), ('note',), ('scripture', str(st['scope'][0]))]
+        if st.get('weave'):   # narrative: every bridge, and the bridge label
+            segs = pc['weave']['movements'][0]['segments']
+            spots += [('weave', 'movements', 0, 'segments', j, 'text') for j, sg in enumerate(segs) if sg['kind'] == 'bridge'] + [('labels', 'ai_bridge'), ('study', 'question')]
+        else: spots += [('summaries', first), ('labels', 'ai_summary')]
+        if st.get('weave'): pass
+        elif st.get('shape') == 'short': spots += [('headings', first), ('study', 'question')]
         else: spots += [('verse_questions', str(st['sections'][0]['verse']))]
         for spot in spots:
             pc2 = copy.deepcopy(pc); cur = pc2

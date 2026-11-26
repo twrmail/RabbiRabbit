@@ -8,7 +8,7 @@ record can be checked later), approval-records-jhn3.json, studies-summary.json, 
 four study pages; not itself served). No model calls."""
 import json, html, re, sys, os, copy
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import validator as V, run_validator as RV, fingerprints as F, studies_jhn as S, run_fingerprints as RF, study_render as SR
+import validator as V, run_validator as RV, fingerprints as F, studies_jhn as S, run_fingerprints as RF, study_render as SR, weave as WE
 REPO = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 
 ALLOW = set('Matthew Henry John Calvin Gill Jamieson Fausset Brown Augustine Chrysostom Cyril God Christ Jesus Son Lord Savior Rabbit Gentiles Gentile Jews Jew Messiah'.split())
@@ -34,24 +34,39 @@ LABELS = dict(
     roles={'overview': 'Overview', 'meaning': 'What it means', 'word': 'The word', 'doctrine': 'The teaching', 'tension': 'Where teachers differ',
            'context': 'Background', 'application': 'Living it', 'warning': 'A warning'},
     teacher_names=S.TEACH)
+LABELS_NARRATIVE = dict(LABELS, ai_bridge='Bridge by AI', ellipsis='…', whole_passage='Read the whole passage from {teacher}')
 NOTE = ("Private pipeline test. Built only from the John 3:16-21 teacher pieces and validated against its own scope. For every teacher "
         "passage, the modern-language summary was written by the AI stand-in (Claude; no model call) from that one passage and names the "
         "teacher. A mechanical screen rejects quotation marks, numbers not in the passage and some unexpected capitalized words; it is not a "
         "complete check for added names or for faithful meaning. The teacher's own words sit underneath, word for word. Focus, take, "
         "questions and closing are Rabbit's own and labeled so. Scripture text: WEB. Everything on this page is covered by its approval record (frame_v2).")
 
-def credits(P, ids):
+NOTE_NARRATIVE = ("Private pipeline test: a narrative trial of Study E's plan. Scripture (WEB) and the teachers' words are printed by code, "
+    "exactly as stored; where only some sentences are shown, a visible ellipsis marks what is left out and the whole passage is one tap "
+    "away. The short bridges between them were written by the AI stand-in (Claude; no model call) and are labeled. A mechanical check "
+    "requires each bridge's words to come from the passages it cites or the Scripture, and rejects quotation marks and claims about what "
+    "teachers hold in general; it is not a check of faithful meaning. Focus, take, question and closing are Rabbit's own.")
+
+def credits(P, ids, narrative=False):
     seen = {}
     for i in ids: p = P[i]; seen.setdefault((p['teacher_key'], p['work_title']), p['rights'])
     parts = [f'{S.TEACH[k]}, {w} (rights tier {t}' + ('; public domain by age' if t in 'AB' else '') +
              ('; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)' if k in ('augustine', 'chrysostom', 'cyril') else '') + ')'
              for (k, w), t in sorted(seen.items())]
+    if narrative: return 'Credits. ' + '; '.join(parts) + ". Teacher text is shown as stored. The bridges are the AI's, labeled on the page; the question and closing are Rabbit's own."
     return ('Credits. ' + '; '.join(parts) + ". Teacher text is shown as stored. The modern-language summaries" +
             (" and headings" if any(i in S.HEAD for i in ids) else '') + " are the AI's, labeled on the page; questions and reflections are Rabbit's own.")
 
 def page_content(st, P, WV, stats):
     ids = [i for sec in st['sections'] for i, _ in sec['ids']]; lo, hi = st['scope']
     teachers = sorted({P[i]['teacher_key'] for i in ids})
+    if st.get('weave'):
+        return dict(renderer=SR.NARRATIVE, weave=st['weave'],
+                    study=dict(key=st['key'], title=st['title'], shape=st.get('shape', 'full'), place='John 3', focus=st['focus'], take=st['take'],
+                               question=st.get('question'), closing=st['closing'].split(': ', 1)[1]),
+                    scripture={str(v): WV[str(v)] for v in range(lo, hi + 1)}, verse_questions={}, summaries={}, headings={},
+                    labels=LABELS_NARRATIVE, note=NOTE_NARRATIVE, credits=credits(P, ids, narrative=True),
+                    stats_line=f"Teachers in this study: {', '.join(S.TEACH[t] for t in teachers)}. {len(ids)} passages; validator and weave checks passed.")
     return dict(renderer=SR.RENDERER,
                 study=dict(key=st['key'], title=st['title'], shape=st.get('shape', 'full'), place='John 3', focus=st['focus'], take=st['take'],
                            question=st.get('question'), closing=st['closing'].split(': ', 1)[1]),
@@ -88,19 +103,27 @@ def main(report, out):
         plan, req = plan_and_request(st, req0)
         gaps = V.make_gaps(pool, req, cov, 'public'); v = V.validate(plan, pool, req, gaps, 'public', V.DEFAULT_BUDGET)
         ids = [i for sec in st['sections'] for i, _ in sec['ids']]
-        sb = [(i, check_say(P, i, S.SAY[i])) for i in ids]
-        if st.get('shape') == 'short': sb += [(i + ' heading', check_say(P, i, S.HEAD[i])) for i in ids]
-        sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
+        sb = [] if st.get('weave') else [(i, check_say(P, i, S.SAY[i])) for i in ids]
+        if st.get('weave'):
+            wf = WE.validate(st['weave'], plan, pool, req, WV, S.TEACH, F.pieces_fp(plan, pool))
+            sb += [(rule, [msg]) for rule, msg in wf]
+        elif st.get('shape') == 'short': sb += [(i + ' heading', check_say(P, i, S.HEAD[i])) for i in ids]
+        if not st.get('weave'): sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
         own = [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
-        sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids] for m in [W11.search(t)] if m]
+        sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + ([] if st.get('weave') else [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids]) for m in [W11.search(t)] if m]
         sb = [x for x in sb if x[1]]
         json.dump(plan, open(f"{out}/plan-jhn3-study-{st['key']}.json", 'w'), indent=1)
         r = dict(title=st['title'], ok=v['ok'], stats=v['stats'], rejections=v['rejections'],
                  warnings=[(w['kind'], w.get('verse'), w['msg'][:120]) for w in v['warnings']], summary_check_failures=sb, frame_version=None, tamper_tests=None)
         if sb: bad += 1
         if v['ok']:
-            ai = sum(len(S.SAY[i]) for i in ids) + (sum(len(S.HEAD[i]) for i in ids) if st.get('shape') == 'short' else 0)
-            r['ai_share'] = f"{100 * ai // (ai + v['stats']['chars'] + sum(len(t) for t in own))}%"
+            if st.get('weave'):
+                rw = WE.resolve(st['weave'], P, WV); segs = [x for m in rw['movements'] for x in m['segments']]
+                ai = sum(len(x['text']) for x in segs if x['kind'] == 'bridge'); tch = sum(len(p['text']) for x in segs if x['kind'] == 'quote' for p in x['parts'])
+                r['ai_share'] = f"{100 * ai // (ai + tch + sum(len(t) for t in own))}%"; r['teacher_chars_printed'] = tch
+            else:
+                ai = sum(len(S.SAY[i]) for i in ids) + (sum(len(S.HEAD[i]) for i in ids) if st.get('shape') == 'short' else 0)
+                r['ai_share'] = f"{100 * ai // (ai + v['stats']['chars'] + sum(len(t) for t in own))}%"
             pc = page_content(st, P, WV, v['stats'])
             rec, fr = F.make_record(plan, pool, gaps, req, rep, 'public', f"John 3:{req['lo']}-{req['hi']} study {st['key']}, {st['title']}", page=pc)
             _, tests = RF.tamper_tests(plan, pool, gaps, req, rep, pc)
@@ -116,7 +139,7 @@ def main(report, out):
     json.dump(records, open(f'{out}/approval-records-jhn3.json', 'w'), indent=1)
     nav = ' '.join(f'<a href="#s{st["key"]}">{st["key"]}. {html.escape(st["title"])}</a>' for st, _ in bodies)
     open(f'{out}/studies-jhn3-16-21.html', 'w').write(
-        f'<!doctype html><meta charset=utf-8><title>John 3:16-21: review bundle</title><style>{SR.CSS}nav a{{font:15px system-ui;margin-right:1rem}}</style>'
+        f'<!doctype html><meta charset=utf-8><title>John 3:16-21: review bundle</title><style>{SR.NCSS}nav a{{font:15px system-ui;margin-right:1rem}}</style>'
         f'<h1>John 3:16-21: studies (review bundle)</h1><p class=own>Each study below is its own page (study-jhn3-A.html and so on), rendered from its '
         f'frame alone; an approval covers that page. This bundle only puts them side by side.</p><nav>{nav}</nav>\n' + '\n'.join(b for _, b in bodies))
     return bad

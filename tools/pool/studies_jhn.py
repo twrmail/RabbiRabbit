@@ -140,4 +140,26 @@ STUDIES.append(dict(key='E', shape='short', scope=(16,18), title='The Love That 
    dict(verse=18, q=None, ids=[('MHC3.18.01','doctrine')])],
   question="Christ came to heal, not to condemn. What does believing in him look like for you this week?",
   closing="Rabbit's closing reflection: The passages in this study point the same way: the Son was given to rescue, and the one who believes is not condemned. The gift is already offered; believing is how it is received."))
+
+# Narrative trial (Nov 26): Study E's approved plan, woven. Scripture and teacher text are printed by code; the bridges are the AI
+# stand-in's (Claude, no model call) and are labeled on the page. EW quotes each passage whole; EX quotes selected whole sentences
+# (rules E1-E6, weave design revisions) with the whole passage one tap away. plan_fp pins the weave to E's plan (W1).
+E_PLAN_FP = 'd15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212'
+def _weave(sel):
+    q = lambda pid: dict(kind='quote', piece=pid, sentences=sel.get(pid))
+    b = lambda t, *ev: dict(kind='bridge', text=t, evidence=list(ev))
+    return dict(schema='weave_v1', plan_fp=E_PLAN_FP, questions=[], takeaways=[], movements=[dict(span=[16, 18], segments=[
+        dict(kind='scripture', verse=16),
+        b("Matthew Henry begins with wonder: the holy God loves a wicked world.", 'MHC3.16.05'), q('MHC3.16.05'),
+        b("Chrysostom measures that love by what the Father gave: his Son, for ungrateful slaves.", 'CHR3.16.1.01'), q('CHR3.16.1.01'),
+        dict(kind='scripture', verse=17),
+        b("The next verse says why the Son was sent. Augustine pictures a physician who has come to heal the sick.", 'AUG3.17-18.1.01'), q('AUG3.17-18.1.01'),
+        dict(kind='scripture', verse=18),
+        b("Matthew Henry turns to the one who believes: he is not condemned, and that is more than a reprieve.", 'MHC3.18.01'), q('MHC3.18.01')])])
+_E = next(st for st in STUDIES if st['key'] == 'E')
+for _k, _t, _sel in (('EW', 'The Love That Gives (narrative, whole passages)', {}),
+                     ('EX', 'The Love That Gives (narrative, selected sentences)',
+                      {'MHC3.16.05': [0, 1], 'CHR3.16.1.01': [0, 1], 'AUG3.17-18.1.01': [0, 1, 3], 'MHC3.18.01': [0, 2]})):
+    STUDIES.append(dict(_E, key=_k, title=_t, weave=_weave(_sel),
+        take="This is Study E's plan told as one story. Scripture and the teachers' words are printed exactly; the short bridges between them are the AI's and are marked."))
 STUDIES[:] = sorted(STUDIES, key=lambda st: st['key'])

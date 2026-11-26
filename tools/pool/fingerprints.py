@@ -61,8 +61,12 @@ def build_frame_v2(plan, pool, gaps, request, page, pointers=None):
             it.update(teacher_key=p.get('teacher_key'), covers_verses=p.get('covers_verses'), citations=p.get('citations') or None,
                       jewish_source=bool(p.get('jewish_source')), heading=(page.get('headings') or {}).get(it['id']),
                       summary=(page.get('summaries') or {}).get(it['id']))
-    return dict(frame_version=FRAME_V2, renderer=page['renderer'], scope=base['scope'], edition=base['edition'], study=page['study'],
-                verses=base['verses'], labels=page['labels'], stats_line=page.get('stats_line'), credits=page['credits'], note=page['note'])
+    fr = dict(frame_version=FRAME_V2, renderer=page['renderer'], scope=base['scope'], edition=base['edition'], study=page['study'],
+              verses=base['verses'], labels=page['labels'], stats_line=page.get('stats_line'), credits=page['credits'], note=page['note'])
+    if page.get('weave'):   # narrative study: excerpt text and offsets recomputed from the pool as it is now, never taken from the page
+        import weave as W
+        fr['weave'] = W.resolve(page['weave'], by, page['scripture'])
+    return fr
 
 def frame_fp(frame): return sha(frame)
 

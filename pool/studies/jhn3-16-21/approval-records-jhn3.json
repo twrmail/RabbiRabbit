@@ -74,5 +74,43 @@
   "accepted_gaps": [],
   "gaps_at_creation": [],
   "note": "John 3:16-18 study E, The Love That Gives (four passages)"
+ },
+ "EW": {
+  "approver": null,
+  "timestamp": null,
+  "status": "pending",
+  "fingerprints": {
+   "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+   "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+   "frame": "a7bc3c787f4bd822570d2e42d89d8fb84b0b3ce8d857f3e2935d49bc5f66a145"
+  },
+  "frame_version": "frame_v2",
+  "build": "public",
+  "validator": {
+   "passed": true,
+   "build": "public"
+  },
+  "accepted_gaps": [],
+  "gaps_at_creation": [],
+  "note": "John 3:16-18 study EW, The Love That Gives (narrative, whole passages)"
+ },
+ "EX": {
+  "approver": null,
+  "timestamp": null,
+  "status": "pending",
+  "fingerprints": {
+   "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+   "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+   "frame": "c8e1b51786d1ca05ad9625778077fd06e84c9012e0cb2d8b07b6e66da44c9831"
+  },
+  "frame_version": "frame_v2",
+  "build": "public",
+  "validator": {
+   "passed": true,
+   "build": "public"
+  },
+  "accepted_gaps": [],
+  "gaps_at_creation": [],
+  "note": "John 3:16-18 study EX, The Love That Gives (narrative, selected sentences)"
  }
 }
