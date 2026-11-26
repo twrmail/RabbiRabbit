@@ -69,10 +69,19 @@ def fathers_corrected(q):
         out += [q[last:c['off']], c['new']]; last = c['off'] + len(c['old'])
     out.append(q[last:])
     shift = lambda off: off + sum(len(c['new']) - len(c['old']) for c in cors if c['off'] < off)
-    return ''.join(out), rec, shift
+    text = ''.join(out)
+    rc = (rec or {}).get('recut')
+    if rc:
+        # Re-cut: the database excerpt has stretches of the homily out of order. The record names the stretches (offsets in the ORIGINAL quote) in the
+        # order they stand in the homily; they are joined by a blank line and the skipped text between them is recorded as a gap (offsets in the re-cut text).
+        if cors: raise SystemExit('fathers recut: a record may not have both corrections and a recut')
+        for s0 in rc:
+            if not (0 <= s0['start'] < s0['end'] <= len(q)) or not q[s0['start']:s0['end']].strip(): raise SystemExit(f'fathers recut: bad stretch {s0}')
+        text = '\n\n'.join(q[s0['start']:s0['end']].strip() for s0 in rc); shift = lambda off: off
+    return text, rec, shift
 
 # `against.rights_status` (or the older `against.ccel_rights`) must be exactly 'Public Domain'; `against.rights_basis` says why.
-PUBLIC_CHECK_STATUSES = ('exact', 'editors-marks', 'typo', 'gap')
+PUBLIC_CHECK_STATUSES = ('exact', 'editors-marks', 'typo', 'gap', 'recut')
 def fathers_public_ok(chk):
     """A Fathers excerpt may be public (tier B) only with a registry record that (1) matches the excerpt's text hash, (2) has a status showing the words
     match a full text, and (3) names a full text whose rights statement is Public Domain. Anything else is withheld (tier U), never defaulted to B."""
