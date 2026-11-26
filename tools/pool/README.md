@@ -56,6 +56,16 @@ Checks (no model calls, no network):
 
 Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21`
 
+## Study index (the catalog a serving Worker will read)
+`pool/studies/index.json`, written by `study_index.py build`. For each unit it lists every study:
+- key, title, shape, scope;
+- status (`approved` only with a named approver and timestamp, otherwise `pending`);
+- frame version and renderer;
+- fingerprints;
+- each file's path and sha256.
+
+Each study folder holds `study-set.json` naming its unit and public pool. `study_index.py check` (in the GitHub check) fails if the index is stale, if a listed file changed, or if any study marked approved is not servable now. Only approved studies may ever be served; nothing here approves.
+
 ## Known limits (confirmed after an outside review, Nov 26)
 - **Fixed by frame_v2 (Nov 26).** `frame_v1` did not hash the summaries, headings or Rabbit's own text. The John studies now use `frame_v2`: the page content goes into the frame, `study_render.py` renders the page from the frame alone, and `test_frame_v2.py` (in the GitHub check) proves that changing any one of 286 fields, or a sentinel word in any kind of field, breaks an approval, and that no word on the page sits outside the frame. `frame_v1` stays for the older diagnostic tools.
 - **The summary check is a mechanical screen.** `check_say()` rejects quotation marks, numbers not found in the source passage, and some unexpected capitalized words. It skips the first word of each sentence and allows a fixed list of names (teachers, God, Christ and the like), so it is not a complete check for added names, and it cannot tell whether a summary is faithful in meaning. That stays a human review.
