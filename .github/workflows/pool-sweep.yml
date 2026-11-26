@@ -31,6 +31,8 @@ jobs:
         run: |
           python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json /tmp/jhn-rebuild
           for f in /tmp/jhn-rebuild/*; do cmp "$f" "pool/studies/jhn3-16-21/$(basename "$f")"; done
+      - name: Study index equals a fresh build; every approved study is servable
+        run: python3 -B tools/pool/study_index.py check
       - name: Whole-Bible sweep equals the baseline (31,103 verses, seven adapters)
         run: python3 -B tools/pool/run_allbooks.py library sweep-out --baseline pool/allbooks-baseline.json
       - name: Sweep table on the run page
