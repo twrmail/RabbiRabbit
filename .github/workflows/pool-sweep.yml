@@ -4,9 +4,9 @@
 name: Pool sweep
 on:
   push:
-    paths: ['library/**', 'tools/pool/**', 'pool/allbooks-baseline.json', 'pool/units.json', '.github/workflows/pool-sweep.yml']
+    paths: ['library/**', 'tools/pool/**', 'pool/allbooks-baseline.json', 'pool/units.json', 'pool/studies/**', '.github/workflows/pool-sweep.yml']
   pull_request:
-    paths: ['library/**', 'tools/pool/**', 'pool/allbooks-baseline.json', 'pool/units.json', '.github/workflows/pool-sweep.yml']
+    paths: ['library/**', 'tools/pool/**', 'pool/allbooks-baseline.json', 'pool/units.json', 'pool/studies/**', '.github/workflows/pool-sweep.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -25,6 +25,12 @@ jobs:
         run: python3 -B tools/pool/check_units.py library pool/units.json
       - name: Adapter regression tests (20)
         run: python3 -B tools/pool/run_adapter_tests.py library
+      - name: frame_v2 tests (an approval covers every word on a study page)
+        run: python3 -B tools/pool/test_frame_v2.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json
+      - name: John studies rebuild equals the committed pages and records
+        run: |
+          python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json /tmp/jhn-rebuild
+          for f in /tmp/jhn-rebuild/*; do cmp "$f" "pool/studies/jhn3-16-21/$(basename "$f")"; done
       - name: Whole-Bible sweep equals the baseline (31,103 verses, seven adapters)
         run: python3 -B tools/pool/run_allbooks.py library sweep-out --baseline pool/allbooks-baseline.json
       - name: Sweep table on the run page

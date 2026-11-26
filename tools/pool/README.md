@@ -35,13 +35,15 @@ Checks (no model calls, no network):
 ## John 3:16-21 studies
 - `studies_jhn.py`: the four study plans (piece ids and roles), the modern-language summaries (`SAY`), Study D's headings (`HEAD`) and Rabbit's own text (focus, take, questions, closings). Written by Claude standing in for the sorter and weaver; no model call.
 - `build_studies_jhn.py REPORT OUT`: validates each plan (public build), screens every summary and heading (see the next section for what that screen does and does not catch), writes PENDING approval records, runs the 13 tamper tests per study, renders the page, and confirms every teacher passage appears on it unchanged.
+- `study_render.py`: renders one study page from its frame_v2 object only (renderer id `study_html_v1`). Each `study-jhn3-<K>.html` is the page an approval covers; `page-jhn3-study-<K>.json` keeps the page content so a record can be checked later; `studies-jhn3-16-21.html` is a review bundle.
+- `test_frame_v2.py REPORT`: the frame_v2 tests (see `FRAME_V2_PROPOSAL.md`).
 - `render_study.py REPORT PLAN OUT`: the older one-plan renderer from the Nov 22 trial; it expects a plan for all of 3:16-21, so it does not render studies A-D.
 - `public_pool.py FULL PUBLIC`: copies a diagnostic report without its tier C/U pieces and fails if any withheld text remains. `pool/studies/jhn3-16-21/` holds that public copy plus the plans, results, records and page. Building from the public copy gives the same fingerprints and the same page as the full report.
 
 Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21`
 
 ## Known limits (confirmed after an outside review, Nov 26)
-- **The approval frame does not cover the AI or Rabbit text.** `frame_v1` hashes the picked pieces, their roles, labels, references, gap and pointer lines. It does not hash the summaries, Study D's headings, or Rabbit's own questions and reflections, so those could change without breaking an approval. Planned fix: `frame_v2` (see the weave design).
+- **Fixed by frame_v2 (Nov 26).** `frame_v1` did not hash the summaries, headings or Rabbit's own text. The John studies now use `frame_v2`: the page content goes into the frame, `study_render.py` renders the page from the frame alone, and `test_frame_v2.py` (in the GitHub check) proves that changing any one of 286 fields, or a sentinel word in any kind of field, breaks an approval, and that no word on the page sits outside the frame. `frame_v1` stays for the older diagnostic tools.
 - **The summary check is a mechanical screen.** `check_say()` rejects quotation marks, numbers not found in the source passage, and some unexpected capitalized words. It skips the first word of each sentence and allows a fixed list of names (teachers, God, Christ and the like), so it is not a complete check for added names, and it cannot tell whether a summary is faithful in meaning. That stays a human review.
 - **`markup_valid` only checks that asterisks pair up.** V9's "invalid markup" means no more than that.
 - **Offsets are character offsets into the decoded source text** each adapter reads (a verse-note string for Gill, a quote for the Fathers, a chapter string for Wesley), not byte offsets into the raw files. `verify.py` re-slices each piece from that text.

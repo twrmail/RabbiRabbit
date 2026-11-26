@@ -12,7 +12,7 @@
   "rejections": [],
   "warnings": [],
   "summary_check_failures": [],
-  "teachers": 5,
+  "frame_version": "frame_v2",
   "tamper_tests": "13/13"
  },
  "B": {
@@ -28,7 +28,7 @@
   "rejections": [],
   "warnings": [],
   "summary_check_failures": [],
-  "teachers": 6,
+  "frame_version": "frame_v2",
   "tamper_tests": "13/13"
  },
  "C": {
@@ -65,7 +65,7 @@
    ]
   ],
   "summary_check_failures": [],
-  "teachers": 5,
+  "frame_version": "frame_v2",
   "tamper_tests": "13/13"
  },
  "D": {
@@ -97,7 +97,7 @@
    ]
   ],
   "summary_check_failures": [],
-  "teachers": 5,
+  "frame_version": "frame_v2",
   "tamper_tests": "13/13"
  }
 }
