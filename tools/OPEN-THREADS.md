@@ -58,6 +58,7 @@ Idea (Tom, Nov 7, back burner): a comprehensive modernised public-domain comment
 | JFB: 97 word differences vs CCEL | Awaiting adjudication | Tom or a reader | jfb-ccel-word-differences |
 | Wesley: 125 disagreements vs CCEL; 2 Samuel 24 absent; 2 John under chapter 5 | Awaiting adjudication | Tom or a reader | wesley-ccel-comparison |
 | Henry: 75 restored quotation blocks have a CCEL witness; the rest does not | Open | Witness for the rest | henry-blocks-report |
+| Word-level depth (not started) | Natural public-domain add-ons per ClearBible's licence page (Nov 26, secondhand): Dodson and Abbott-Smith (Greek), Brown-Driver-Briggs (Hebrew; the OpenScriptures edition's structure and index files are CC BY 4.0). Keyed by word, not Strong's number. Parked by Tom (Nov 18) until what we hold is tightened | Tom's go-ahead; read each work's own source and licence first | clearbible.ai/licenses |
 | Replacements for the retired Clarke, Vincent, Meyer, old Barnes OT | Retired, never served | Candidate list, licence and edition checks; downloads need files attached by Tom | repo-roadmap |
 | Wesley chapter-level fallback; footer wording for Henry ("Concise" label was corrected in v37) and Wesley | Held | Tom's decision with the Worker switch | status notes |
 | Guardian "publication completeness" column | UNKNOWN for most sources | Outside evidence per source | guardian-runner |
