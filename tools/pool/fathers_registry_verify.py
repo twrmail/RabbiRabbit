@@ -21,6 +21,15 @@ for k, r in d.items():
     if r.get('hcf_commit') != P.HCF_PIN: bad.append(f'{r["file"]} #{r["entry"]}: hcf_commit field missing or not the pin')
     if (r['file'], r['entry']) in seen: bad.append(f'{r["file"]} #{r["entry"]}: two records for one entry')
     seen[(r['file'], r['entry'])] = k
+    if r.get('recut') or r.get('status') == 'recut':
+        if r.get('status') != 'recut' or not r.get('recut'): bad.append(f'{r["file"]} #{r["entry"]}: status and recut stretches must go together')
+        elif r.get('corrections'): bad.append(f'{r["file"]} #{r["entry"]}: a recut record may not also have corrections')
+        else:
+            try:
+                rt = P.fathers_corrected(q)[0]
+                if any(not (0 <= g['off'] <= len(rt)) for g in r.get('gaps', [])): bad.append(f'{r["file"]} #{r["entry"]}: a gap offset lies outside the re-cut text')
+                if sorted(r['recut'], key=lambda z: z['start']) == r['recut']: bad.append(f'{r["file"]} #{r["entry"]}: recut stretches are already in database order; nothing to re-cut')
+            except SystemExit as e: bad.append(f'{r["file"]} #{r["entry"]}: {e}')
 missing = []
 for author in sorted({r['file'].split('/')[0] for r in d.values()}):
     for f in sorted(glob.glob(os.path.join(hcf, author, '*.toml'))):

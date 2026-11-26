@@ -1863,6 +1863,13 @@
       "location": "2SA 24",
       "description": "No notes for 2 Samuel 24, although Wesley's own introduction mentions it.",
       "notFixedBecause": "Absent from both our copy and CCEL's copy. Needs a third source."
+    },
+    {
+      "id": "hcf-chrysostom-hom79-mat25-42-43-order",
+      "source": "hcf-fathers",
+      "location": "Historical Christian Faith Commentaries-Database, John Chrysostom/Matthew 25_42-43.toml, entry 1 (Homily 79); pinned commit a88dc031b9a1",
+      "description": "The database prints two stretches of Chrysostom's Homily 79 in reverse order with nothing marking the join. In the homily, \"But mark them, how they are destitute...\" to \"...a threat was set against it.\" (243 words) comes first; \"For I was an hungered, and ye gave me no meat.\" to \"...worthy of defense?\" (113 words) comes about 902 words later. Every word of both stretches matches the NPNF1-10 text (Prevost translation). Re-cut recorded in pool/fathers-source-checks.json (status recut, with the gap) and applied at pool-build time by tools/pool/pool_sources.py; the HCF file itself is not edited.",
+      "notFixedBecause": "the database is not part of library/ and cannot be changed here; this is not a mechanical rule with an expectedCount, so it sits in openIssues and in the pool registry, where the build applies it and the verifier checks it. Tom reviewed and approved the re-cut on Nov 26. If the upstream database is corrected, remove the recut record."
     }
   ]
 }
