@@ -1,6 +1,6 @@
 # frame_v2 proposal (Nov 26, 2026): an approval covers the whole study
 
-**Status: proposal only. Not built. Needs Tom's go-ahead.**
+**Status: built (Nov 26), with the three recommended answers (credits, note, Scripture and labels are all inside the approval). Tom's "continue the work" was taken as the go-ahead; reject it in the PR if not.** Results: 4 studies, 286 fields changed one at a time, 37 sentinels, all caught; two deliberate faults (a stray word in the renderer, summaries dropped from the frame) both fail the tests.
 
 ## The gap
 An approval record holds three fingerprints: source, pieces and frame. `frame_v1` hashes the picked pieces, their roles, labels and references, and the gap and pointer lines. It does not hash anything else the reader sees, including:

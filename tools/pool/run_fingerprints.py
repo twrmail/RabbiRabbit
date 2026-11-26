@@ -7,14 +7,14 @@ import json, os, sys, glob, copy
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import validator as V, fingerprints as F, run_validator as RV
 
-def tamper_tests(plan, pool, gaps, req, rep):
-    rec, _ = F.make_record(plan, pool, gaps, req, rep)
-    ok0, why0 = F.is_servable(rec, plan, pool, gaps, req, rep)
+def tamper_tests(plan, pool, gaps, req, rep, page=None):
+    rec, _ = F.make_record(plan, pool, gaps, req, rep, page=page)
+    ok0, why0 = F.is_servable(rec, plan, pool, gaps, req, rep, page)
     appr = F.approve(rec, 'TEST', '2000-01-01T00:00:00Z', [g['verse'] for g in gaps])
-    ok1, _ = F.is_servable(appr, plan, pool, gaps, req, rep)
+    ok1, _ = F.is_servable(appr, plan, pool, gaps, req, rep, page)
     out = [dict(case='pending record is not servable', expected=False, got=ok0), dict(case='approved record, nothing changed, is servable', expected=True, got=ok1)]
     def t(name, plan2=None, pool2=None, rep2=None, rec2=None, gaps2=None):
-        ok, why = F.is_servable(rec2 or appr, plan2 or plan, pool2 or pool, gaps if gaps2 is None else gaps2, req, rep2 or rep)
+        ok, why = F.is_servable(rec2 or appr, plan2 or plan, pool2 or pool, gaps if gaps2 is None else gaps2, req, rep2 or rep, page)
         out.append(dict(case=name, expected=False, got=ok, why=why[:2]))
     p2 = copy.deepcopy(pool); first = F.ordered_pieces(plan, pool)[0]['id']
     for p in p2:
