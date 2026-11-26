@@ -1,0 +1,153 @@
+{
+ "renderer": "study_narrative_v1",
+ "weave": {
+  "schema": "weave_v1",
+  "plan_fp": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+  "questions": [],
+  "takeaways": [],
+  "movements": [
+   {
+    "span": [
+     16,
+     18
+    ],
+    "segments": [
+     {
+      "kind": "scripture",
+      "verse": 16
+     },
+     {
+      "kind": "bridge",
+      "text": "Matthew Henry begins with wonder: the holy God loves a wicked world.",
+      "evidence": [
+       "MHC3.16.05"
+      ]
+     },
+     {
+      "kind": "quote",
+      "piece": "MHC3.16.05",
+      "sentences": [
+       0,
+       1
+      ]
+     },
+     {
+      "kind": "bridge",
+      "text": "Chrysostom measures that love by what the Father gave: his Son, for ungrateful slaves.",
+      "evidence": [
+       "CHR3.16.1.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "piece": "CHR3.16.1.01",
+      "sentences": [
+       0,
+       1
+      ]
+     },
+     {
+      "kind": "scripture",
+      "verse": 17
+     },
+     {
+      "kind": "bridge",
+      "text": "The next verse says why the Son was sent. Augustine pictures a physician who has come to heal the sick.",
+      "evidence": [
+       "AUG3.17-18.1.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "piece": "AUG3.17-18.1.01",
+      "sentences": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "kind": "scripture",
+      "verse": 18
+     },
+     {
+      "kind": "bridge",
+      "text": "Matthew Henry turns to the one who believes: he is not condemned, and that is more than a reprieve.",
+      "evidence": [
+       "MHC3.18.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "piece": "MHC3.18.01",
+      "sentences": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "study": {
+  "key": "EX",
+  "title": "The Love That Gives (narrative, selected sentences)",
+  "shape": "short",
+  "place": "John 3",
+  "focus": "What does God's gift of his Son tell us about the heart of God?",
+  "take": "This is Study E's plan told as one story. Scripture and the teachers' words are printed exactly; the short bridges between them are the AI's and are marked.",
+  "question": "Christ came to heal, not to condemn. What does believing in him look like for you this week?",
+  "closing": "The passages in this study point the same way: the Son was given to rescue, and the one who believes is not condemned. The gift is already offered; believing is how it is received."
+ },
+ "scripture": {
+  "16": "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life.",
+  "17": "For God didn’t send his Son into the world to judge the world, but that the world should be saved through him.",
+  "18": "He who believes in him is not judged. He who doesn’t believe has been judged already, because he has not believed in the name of the only born Son of God."
+ },
+ "verse_questions": {},
+ "summaries": {},
+ "headings": {},
+ "labels": {
+  "page_title": "Rabbit study {key}: {title} ({scope})",
+  "study_heading": "Study {key}: {title}",
+  "verse_heading": "{place}:{verse}",
+  "focus": "Rabbit's own focus:",
+  "take": "Rabbit's own take:",
+  "verse_question": "Rabbit's question:",
+  "study_question": "Rabbit's question for this study:",
+  "closing": "Rabbit's take-away:",
+  "closing_short": "Rabbit's closing reflection:",
+  "ai_heading": "Heading by AI",
+  "ai_summary": "Modern language, by AI",
+  "own_words": "{teacher} in his own words",
+  "covers": "(this note covers {first}-{last})",
+  "gill_footnote": "Gill's footnote for this quotation:",
+  "ibid": "{raw} (the same work: {work})",
+  "jewish_source": "A later Jewish writing that Gill cites; not a statement of what people believed in Jesus's day.",
+  "roles": {
+   "overview": "Overview",
+   "meaning": "What it means",
+   "word": "The word",
+   "doctrine": "The teaching",
+   "tension": "Where teachers differ",
+   "context": "Background",
+   "application": "Living it",
+   "warning": "A warning"
+  },
+  "teacher_names": {
+   "matthew-henry": "Matthew Henry",
+   "john-calvin": "John Calvin",
+   "john-gill": "John Gill",
+   "jamieson-fausset-brown": "Jamieson, Fausset & Brown",
+   "augustine": "Augustine",
+   "chrysostom": "John Chrysostom",
+   "cyril": "Cyril of Alexandria"
+  },
+  "ai_bridge": "Bridge by AI",
+  "ellipsis": "…",
+  "whole_passage": "Read the whole passage from {teacher}"
+ },
+ "note": "Private pipeline test: a narrative trial of Study E's plan. Scripture (WEB) and the teachers' words are printed by code, exactly as stored; where only some sentences are shown, a visible ellipsis marks what is left out and the whole passage is one tap away. The short bridges between them were written by the AI stand-in (Claude; no model call) and are labeled. A mechanical check requires each bridge's words to come from the passages it cites or the Scripture, and rejects quotation marks and claims about what teachers hold in general; it is not a check of faithful meaning. Focus, take, question and closing are Rabbit's own.",
+ "credits": "Credits. Augustine, Tractates on John 12 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); John Chrysostom, Homily on the Gospel of John 27 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); Matthew Henry, Matthew Henry's Commentary on the Whole Bible (rights tier A; public domain by age). Teacher text is shown as stored. The bridges are the AI's, labeled on the page; the question and closing are Rabbit's own.",
+ "stats_line": "Teachers in this study: Augustine, John Chrysostom, Matthew Henry. 4 passages; validator and weave checks passed."
+}

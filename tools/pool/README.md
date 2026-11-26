@@ -45,9 +45,17 @@ Checks (no model calls, no network):
   - D: short, 3:16-18, 6 pieces.
   - E: short, 3:16-18, 4 pieces.
   - A and the old 15-piece B are retired (kept in `studies_jhn.py`, marked `retired`).
-- AI share of printed text is 25-29%.
+  - EW and EX: narrative trials of E's plan (see below).
+- AI share of printed text is 25-29% for B-E, 11% for EW and 16% for EX.
 
-- `studies_jhn.py`: the four study plans (piece ids and roles), the modern-language summaries (`SAY`), Study D's headings (`HEAD`) and Rabbit's own text (focus, take, questions, closings). Written by Claude standing in for the sorter and weaver; no model call.
+**Narrative studies (trial, Nov 26).** EW and EX tell Study E's plan as one story: Scripture, a short AI bridge, a teacher quote, in order.
+- `weave.py`: the weave format (`weave_v1`) and its checks. A weave names pieces and sentence numbers; it never carries teacher or Scripture text. `resolve()` rebuilds the printed text and offsets from the pool every time, and `build_frame_v2` puts that resolved weave into the frame, so an approval covers it.
+- Checks: W1-W12 and E1, E4, E5 (listed at the top of `weave.py`). W12 requires every content word of a bridge to come from the pieces it cites or the scope's Scripture, apart from a fixed list of linking words. Like the summary screen, it is mechanical and cannot judge faithful meaning.
+- EW quotes each passage whole. EX quotes selected whole sentences (Tom, Nov 26): a visible "…" marks each cut (E2), the whole passage is one tap away (E3), and a sentence that opens with "but", "yet", "so" and the like brings the sentence before it (E5).
+- `study_render.py` renders these with renderer `study_narrative_v1`. Studies B-E are unchanged byte for byte.
+- `test_weave.py REPORT` (in the GitHub check): EW and EX pass, and 21 weaves built to break one rule each are caught, plus E4 and the E2/E3 renderer checks.
+
+- `studies_jhn.py`: the study plans (piece ids and roles), the modern-language summaries (`SAY`), Study D's headings (`HEAD`) and Rabbit's own text (focus, take, questions, closings). Written by Claude standing in for the sorter and weaver; no model call.
 - `build_studies_jhn.py REPORT OUT`: validates each plan (public build), screens every summary and heading (see the next section for what that screen does and does not catch), writes PENDING approval records, runs the 13 tamper tests per study, renders the page, and confirms every teacher passage appears on it unchanged.
 - `study_render.py`: renders one study page from its frame_v2 object only (renderer id `study_html_v1`). Each `study-jhn3-<K>.html` is the page an approval covers; `page-jhn3-study-<K>.json` keeps the page content so a record can be checked later; `studies-jhn3-16-21.html` is a review bundle.
 - `test_frame_v2.py REPORT`: the frame_v2 tests (see `FRAME_V2_PROPOSAL.md`).
@@ -67,7 +75,7 @@ Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagno
 Each study folder holds `study-set.json` naming its unit and public pool. `study_index.py check` (in the GitHub check) fails if the index is stale, if a listed file changed, or if any study marked approved is not servable now. Only approved studies may ever be served; nothing here approves.
 
 ## Known limits (confirmed after an outside review, Nov 26)
-- **Fixed by frame_v2 (Nov 26).** `frame_v1` did not hash the summaries, headings or Rabbit's own text. The John studies now use `frame_v2`: the page content goes into the frame, `study_render.py` renders the page from the frame alone, and `test_frame_v2.py` (in the GitHub check) proves that changing any one of 286 fields, or a sentinel word in any kind of field, breaks an approval, and that no word on the page sits outside the frame. `frame_v1` stays for the older diagnostic tools.
+- **Fixed by frame_v2 (Nov 26).** `frame_v1` did not hash the summaries, headings or Rabbit's own text. The John studies now use `frame_v2`: the page content goes into the frame, `study_render.py` renders the page from the frame alone, and `test_frame_v2.py` (in the GitHub check) proves that changing any one of the page's fields (410 across the six live studies), or a sentinel word in any kind of field, breaks an approval, and that no word on the page sits outside the frame. `frame_v1` stays for the older diagnostic tools.
 - **The summary check is a mechanical screen.** `check_say()` rejects quotation marks, numbers not found in the source passage, and some unexpected capitalized words. It skips the first word of each sentence and allows a fixed list of names (teachers, God, Christ and the like), so it is not a complete check for added names, and it cannot tell whether a summary is faithful in meaning. That stays a human review.
 - **`markup_valid` only checks that asterisks pair up.** V9's "invalid markup" means no more than that.
 - **Offsets are character offsets into the decoded source text** each adapter reads (a verse-note string for Gill, a quote for the Fathers, a chapter string for Wesley), not byte offsets into the raw files. `verify.py` re-slices each piece from that text.

@@ -145,10 +145,80 @@
        "sha256": "a64e3b7b13bd543944901f1bfe0362e146a222a6bc6b9df6cd35967d4daa4e08"
       }
      }
+    },
+    {
+     "key": "EW",
+     "title": "The Love That Gives (narrative, whole passages)",
+     "shape": "short",
+     "scope": "John 3:16-18",
+     "verses": [
+      16,
+      18
+     ],
+     "status": "pending",
+     "approver": null,
+     "approved_at": null,
+     "frame_version": "frame_v2",
+     "renderer": "study_narrative_v1",
+     "fingerprints": {
+      "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+      "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+      "frame": "a7bc3c787f4bd822570d2e42d89d8fb84b0b3ce8d857f3e2935d49bc5f66a145"
+     },
+     "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
+     "files": {
+      "plan": {
+       "path": "pool/studies/jhn3-16-21/plan-jhn3-study-EW.json",
+       "sha256": "d1cd6c4d15d992c4a3a0597d0394dc8d6e711ad804dac810fecc8c2489759239"
+      },
+      "page_content": {
+       "path": "pool/studies/jhn3-16-21/page-jhn3-study-EW.json",
+       "sha256": "9ae7acf18bacb4f88ef6e7f67bf78306c967b0665bb9c5f3efee3256744fb5fd"
+      },
+      "page_html": {
+       "path": "pool/studies/jhn3-16-21/study-jhn3-EW.html",
+       "sha256": "1acf09f6cb737d06bcc1456bd9b67ae0252b89cff28cf3d48a9fae7bf5734d0f"
+      }
+     }
+    },
+    {
+     "key": "EX",
+     "title": "The Love That Gives (narrative, selected sentences)",
+     "shape": "short",
+     "scope": "John 3:16-18",
+     "verses": [
+      16,
+      18
+     ],
+     "status": "pending",
+     "approver": null,
+     "approved_at": null,
+     "frame_version": "frame_v2",
+     "renderer": "study_narrative_v1",
+     "fingerprints": {
+      "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+      "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+      "frame": "c8e1b51786d1ca05ad9625778077fd06e84c9012e0cb2d8b07b6e66da44c9831"
+     },
+     "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
+     "files": {
+      "plan": {
+       "path": "pool/studies/jhn3-16-21/plan-jhn3-study-EX.json",
+       "sha256": "d1cd6c4d15d992c4a3a0597d0394dc8d6e711ad804dac810fecc8c2489759239"
+      },
+      "page_content": {
+       "path": "pool/studies/jhn3-16-21/page-jhn3-study-EX.json",
+       "sha256": "7c8506be7211a657f9c474c5b244066ca81a9efa12bf5904ae585c5814cb00d4"
+      },
+      "page_html": {
+       "path": "pool/studies/jhn3-16-21/study-jhn3-EX.html",
+       "sha256": "15da576df068a1eb4ddc143af90609f960d4c3f578f8011771ea89342f661db8"
+      }
+     }
     }
    ],
    "approved": 0,
-   "pending": 4
+   "pending": 6
   }
  }
 }
