@@ -134,10 +134,11 @@
   "road_line": "Returning by way of {ref}:",
   "hill_heading": "🐇 What's Over the Hill",
   "prompt": "💬",
+  "rabbit_note": "Rabbit's note:",
   "road_votes": "(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)",
   "hill_votes": "(chosen by code: one hop on from {road}, {votes} votes)"
  },
- "note": "Private pipeline test: the full study, written by an AI model (claude-sonnet-5-5) from Study E's four passages, inside the rails. Scripture (WEB) and every teacher's words are printed by code, exactly as stored. Code chose the Rabbi Road and Over the Hill passages from the OpenBible.info cross references; the model only wrote around them. Every AI sentence names its evidence and passed the mechanical checks (no added names, numbers, references, quotation marks or claims about what teachers hold in general; bridges use only words from their evidence). Those checks cannot judge faithful meaning: that is your review. Labeled AI text is the model's.",
- "credits": "Credits. Augustine, Tractates on John 12 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); John Chrysostom, Homily on the Gospel of John 27 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); Matthew Henry, Matthew Henry's Commentary on the Whole Bible (rights tier A; public domain by age). Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Teacher text is shown as stored; every other word is the AI model's, labeled on the page.",
+ "note": "Scripture and public-domain commentary, with a narrative written by AI.",
+ "credits": "Credits. Augustine, Tractates on John 12 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); John Chrysostom, Homily on the Gospel of John 27 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); Matthew Henry, Matthew Henry's Commentary on the Whole Bible (rights tier A; public domain by age). Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Scripture and teacher text are shown exactly as stored; the narrative around them is written by AI.",
  "stats_line": "Teachers in this study: Augustine, John Chrysostom, Matthew Henry. 4 passages on John 3:16-18, 2 on Romans 5:8; validator and full-study checks passed."
 }

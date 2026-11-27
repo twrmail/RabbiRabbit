@@ -168,8 +168,34 @@ for _k, _t, _sel in (('EW', 'The Love That Gives (narrative, whole passages)', {
 import os as _os, json as _json
 import re as _re
 _FULL = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..', 'pool', 'studies', 'jhn3-16-21', 'full')
+FIELDS = {'title': ('title',), 'opening': ('opening', 'text'), 'rabbi_road': ('rabbi_road', 'text'), 'prompt': ('rabbi_road', 'prompt'),
+          'over_the_hill': ('over_the_hill', 'text')}
+def apply_corrections(d, c):
+    """Rabbit's review corrections (full/<K>-corrections.json): exact replacements in named AI fields, each old text found exactly once,
+    plus Rabbit's notes placed after a verse. The model's own text stays in the file; the page shows the corrected text, marked."""
+    import copy as _c
+    st = _c.deepcopy(d['study']); marked = []
+    def slot(field):
+        if field in FIELDS:
+            o = st
+            for k in FIELDS[field][:-1]: o = o[k]
+            return o, FIELDS[field][-1]
+        m = _re.fullmatch(r'(bridge|summary|heading):(\w[\w.-]*)', field)   # bridge:16, summary:MHC3.16.05, heading:MHC3.16.05
+        if m and m.group(1) == 'bridge':
+            return next(b for b in st['body'] if str(b['verse']) == m.group(2))['bridge'], 'text'
+        if m: return next(p for b in st['body'] for p in b['pieces'] if p['piece'] == m.group(2)), m.group(1)
+        raise ValueError(f'correction names an unknown field {field!r}')
+    for ed in c.get('edits') or []:
+        o, k = slot(ed['field'])
+        if o[k].count(ed['old']) != 1: raise ValueError(f"correction to {ed['field']}: {ed['old']!r} must occur exactly once")
+        o[k] = o[k].replace(ed['old'], ed['new']); marked.append(ed['field'])
+    out = dict(d, study=st, model_study=d['study'], corrections=dict(by=c['by'], date=c['date'], fields=sorted(set(marked)),
+               notes=[dict(after_verse=n['after_verse'], text=n['text']) for n in c.get('notes') or []]))
+    return out
+
 def full_study(key, path):
-    d = _json.load(open(path))
+    d = _json.load(open(path)); cp = path[:-5] + '-corrections.json'
+    if _os.path.exists(cp): d = apply_corrections(d, _json.load(open(cp)))
     return dict(_E, key=key, title=d['study']['title'], full=d, take='', closing="Rabbit's closing reflection: ")
 # every passed run's study: full/EF.json, full/EF2.json, ... (run logs are full/run-*.json)
 for _f in sorted(_os.listdir(_FULL)) if _os.path.isdir(_FULL) else []:

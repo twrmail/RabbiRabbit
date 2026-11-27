@@ -36,12 +36,9 @@ LABELS = dict(
     teacher_names=S.TEACH)
 LABELS_FULL = dict(LABELS, page_title='Rabbit study {key}: {title} ({scope})', study_heading='Study {key}: {title}', ai_text='Written by AI',
     opening='Opening', road_heading='🕍 Rabbi Road', road_line='Returning by way of {ref}:', hill_heading="🐇 What's Over the Hill", prompt='💬',
+    rabbit_note="Rabbit's note:",
     road_votes='(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)', hill_votes='(chosen by code: one hop on from {road}, {votes} votes)')
-NOTE_FULL = ("Private pipeline test: the full study, written by an AI model ({model}) from Study E's four passages, inside the rails. Scripture (WEB) "
-    "and every teacher's words are printed by code, exactly as stored. Code chose the Rabbi Road and Over the Hill passages from the OpenBible.info "
-    "cross references; the model only wrote around them. Every AI sentence names its evidence and passed the mechanical checks (no added names, numbers, "
-    "references, quotation marks or claims about what teachers hold in general; bridges use only words from their evidence). Those checks cannot judge "
-    "faithful meaning: that is your review. Labeled AI text is the model's.")
+NOTE_FULL = "Scripture and public-domain commentary, with a narrative written by AI."
 LABELS_NARRATIVE = dict(LABELS, ai_bridge='Bridge by AI', ellipsis='…', whole_passage='Read the whole passage from {teacher}')
 NOTE = ("Private pipeline test. Built only from the John 3:16-21 teacher pieces and validated against its own scope. For every teacher "
         "passage, the modern-language summary was written by the AI stand-in (Claude; no model call) from that one passage and names the "
@@ -74,9 +71,11 @@ def full_content(st, P, WV, ids, teachers):
     cred = ('Credits. ' + '; '.join(f'{S.TEACH[k]}, {w} (rights tier {t}' + ('; public domain by age' if t in 'AB' else '') +
             ('; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)' if k in ('augustine', 'chrysostom', 'cyril') else '') + ')'
             for (k, w), t in sorted(seen.items())) +
-            '. Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Teacher text is shown as stored; every other word is the AI model\'s, labeled on the page.')
+            '. Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Scripture and teacher text are shown exactly as stored; the narrative around them is written by AI.')
     nm = sorted({S.TEACH[t] for t in teachers} | {c['teacher'] for c in q})
+    cor = d.get('corrections')
     return dict(renderer=SR.FULL, full=dict(model=d['model'], built=d['built'], title=Fs['title'], opening=Fs['opening'],
+                **(dict(corrections=dict(by=cor['by'], date=cor['date'], fields=cor['fields'], notes={str(n['after_verse']): n['text'] for n in cor['notes']})) if cor else {}),
                 bridges={str(b['verse']): b['bridge'] for b in Fs['body'] if b.get('bridge')},
                 road=dict(ref=M['road']['ref'], votes=str(M['road']['votes']), scripture=M['road']['scripture'], text=Fs['rabbi_road']['text'],
                           evidence=Fs['rabbi_road']['evidence'], prompt=Fs['rabbi_road']['prompt'],
@@ -85,7 +84,7 @@ def full_content(st, P, WV, ids, teachers):
                 study=dict(key=st['key'], title=Fs['title'], shape='full', place='John 3'),
                 scripture={str(v): WV[str(v)] for v in range(lo, hi + 1)}, verse_questions={},
                 summaries={p['piece']: p['summary'] for b in Fs['body'] for p in b['pieces']}, headings={p['piece']: p['heading'] for b in Fs['body'] for p in b['pieces']},
-                labels=LABELS_FULL, note=NOTE_FULL.format(model=d['model']), credits=cred,
+                labels=LABELS_FULL, note=NOTE_FULL, credits=cred,
                 stats_line=f"Teachers in this study: {', '.join(nm)}. {len(ids)} passages on John 3:{lo}-{hi}, {len(q)} on {M['road']['ref']}; validator and full-study checks passed.")
 
 def page_content(st, P, WV, stats):
@@ -143,7 +142,7 @@ def main(report, out):
             sb += [(rule, [msg]) for rule, msg in wf]
         elif st.get('shape') == 'short': sb += [(i + ' heading', check_say(P, i, S.HEAD[i])) for i in ids]
         if not (st.get('weave') or st.get('full')): sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
-        own = [] if st.get('full') else [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
+        own = ([n['text'] for n in st['full']['corrections']['notes']] if st.get('full', {}).get('corrections') else []) if st.get('full') else [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
         sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + ([] if st.get('weave') or st.get('full') else [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids]) for m in [W11.search(t)] if m]
         sb = [x for x in sb if x[1]]
         json.dump(plan, open(f"{out}/plan-jhn3-study-{st['key']}.json", 'w'), indent=1)

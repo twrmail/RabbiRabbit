@@ -52,6 +52,16 @@ def main():
         if rule in STRICT_ONLY and why != 'adds a number':   # invented numbers stay caught in both profiles
             if rule in gotf and not (rule == 'W10'): fails.append(f'free: {rule} should no longer apply ({why})')
         elif rule not in gotf and not (rule == 'F3' and 'opening' in why): fails.append(f'free: {rule} not caught ({why}); got {sorted(gotf) or "nothing"}')
+    # Rabbit's corrections: applied exactly, the model's text kept, and an edit that does not match exactly once is refused
+    import studies_jhn as SJ
+    d = dict(schema='study_full_v1', model='m', built='b', study=copy.deepcopy(base))
+    c = dict(by='Rabbit', date='d', edits=[dict(field='opening', old='Here we slow down', new='Here we pause')], notes=[dict(after_verse=16, text='A note.')])
+    out = SJ.apply_corrections(d, c)
+    if not out['study']['opening']['text'].startswith('Here we pause') or out['model_study']['opening']['text'] != base['opening']['text'] or out['corrections']['fields'] != ['opening']:
+        fails.append('corrections not applied as recorded')
+    for bad in (dict(field='opening', old='not in the text', new='x'), dict(field='nowhere', old='a', new='b')):
+        try: SJ.apply_corrections(d, dict(c, edits=[bad])); fails.append(f'bad correction accepted: {bad}')
+        except (ValueError, StopIteration): pass
     if FS.parse('not json') is not None or FS.parse('Here: {"a": 1}') != {'a': 1}: fails.append('reply parsing')
     print(f'full-study tests: stand-in checked under both profiles, destinations checked, {len(cases)} bad studies x 2 profiles, ' + ('all pass' if not fails else f'{len(fails)} FAIL'))
     for f in fails: print('FAIL', f)

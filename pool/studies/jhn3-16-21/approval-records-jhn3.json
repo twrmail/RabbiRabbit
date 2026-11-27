@@ -82,7 +82,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "89e196c14096c872bc8fc2b06d932a51e35c47f02c1b7f07a641f3efb1d5c47e"
+   "frame": "50218d5e693d74cf57e2ac8176c1c785456f4e5f4ff7999c9ca2aa8106cca86e"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -101,7 +101,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "6a482d58b2e97792fb0767bc706e260ea2e6c31c3ec5c47bd4ad6d5756192ffa"
+   "frame": "f4e03270f406d289eb49678bec53a9033a500303de51d05ac6967b4b72ace08b"
   },
   "frame_version": "frame_v2",
   "build": "public",

@@ -64,6 +64,7 @@ def main(report):
             spots += [('full', 'opening', 'text'), ('full', 'bridges', str(st['scope'][0]), 'text'), ('summaries', first), ('headings', first),
                       ('full', 'road', 'text'), ('full', 'road', 'prompt'), ('full', 'road', 'scripture'), ('full', 'road', 'quotes', 0, 'text'),
                       ('full', 'hill', 'text'), ('full', 'hill', 'scripture'), ('labels', 'road_heading'), ('study', 'title')]
+            if pc['full'].get('corrections'): spots += [('full', 'corrections', 'notes', k) for k in pc['full']['corrections']['notes']]
         else: spots += [('study', 'take'), ('study', 'closing'), ('study', 'focus')]
         if st.get('full'): pass
         elif st.get('weave'):   # narrative: every bridge, and the bridge label
