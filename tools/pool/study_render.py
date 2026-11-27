@@ -87,8 +87,46 @@ def full(fr):
     H.append(f'<div class=credits>{e(fr["credits"])}</div></section>')
     return '\n'.join(H)
 
+THEMED = 'study_themed_v1'
+TCSS = FCSS + '''.qt{margin:.4rem 0 1rem;padding:.6rem 1rem;border-left:3px solid #8a6d3b;background:#fbf8f1;font-size:16px}.qt .who{margin-bottom:.25rem}.gap{color:#888}
+.vref{font:600 13px system-ui;color:#5a4520;display:block;margin-bottom:.2rem}.src{font:14px system-ui;color:#444}.src li{margin:.15rem 0}h3.sec{font-size:1.2rem;margin-top:2rem}'''
+
+def themed(fr):
+    """Themed study (renderer 'study_themed_v1'): opening, sections by idea (heading, the section's Scripture, then narrative and
+    quotations in order), Rabbi Road, Over the Hill, sources. Quotations are whole sentences, exactly as stored, with a visible ellipsis
+    where the passage goes on and the whole passage one tap away (taken from the frame's piece text, not from the excerpt)."""
+    L, st, X = fr['labels'], fr['study'], fr['full']
+    by = {it['id']: it for vd in fr['verses'].values() for it in vd['items']}; ell = f'<span class=gap>{e(L["ellipsis"])}</span>'
+    ai = lambda t: f'<div class=aitext>{e(t)}</div>'
+    H = [f'<section id="s{e(st["key"])}"><h2>{e(L["study_heading"].format(key=st["key"], title=st["title"]))}</h2>',
+         f'<p class=note>{e(fr["note"])}</p>', ai(X['opening']['text'])]
+    for sec in X['sections']:
+        H.append(f'<h3 class=sec>{e(sec["heading"])}</h3>')
+        for v in sec['verses']:
+            H.append(f'<div class=v><span class=vref>{e(L["scripture_ref"].format(place=st["place"], verse=v))}</span>{e(fr["verses"][v]["scripture_text"])}</div>')
+        for it in sec['flow']:
+            if it['kind'] == 'text': H.append(ai(it['text'])); continue
+            txt = (ell + ' ' if it['lead'] == 'yes' else '') + md(it['text']) + (' ' + ell if it['tail'] == 'yes' else '')
+            x = f'<div class=qt><div class=who>{e(it["teacher"])} <span>&middot; {e(it["work"] or "")}</span></div>{txt}'
+            if it['lead'] == 'yes' or it['tail'] == 'yes':
+                x += f'<details><summary>{e(L["whole_passage"].format(teacher=it["teacher"]))}</summary><div class=words>{md(by[it["id"]]["text"])}</div></details>'
+            H.append(x + '</div>')
+    r = X['road']
+    H.append(f'<h2 class=road>{e(L["road_heading"])}</h2><p class=ref>{e(L["road_line"].format(ref=r["ref"]))}</p>'
+             f'<div class=v>{e(r["scripture"])}</div><p class=why>{e(L["road_votes"].format(votes=r["votes"]))}</p>' + ai(r['text']))
+    for q in r['quotes']:
+        H.append(f'<div class=qt><div class=who>{e(q["teacher"])} <span>&middot; {e(q["work"] or "")} &middot; {e(r["ref"])}</span></div>{md(q["text"])}</div>')
+    H.append(f'<p class=q>{e(L["prompt"])} {e(r["prompt"])}</p>')
+    h = X['hill']
+    H.append(f'<h2 class=road>{e(L["hill_heading"])}</h2><p class=ref>{e(h["ref"])}</p><div class=v>{e(h["scripture"])}</div>'
+             f'<p class=why>{e(L["hill_votes"].format(road=r["ref"], votes=h["votes"]))}</p>' + ai(h['text']))
+    H.append(f'<h3>{e(L["sources_heading"])}</h3><ul class=src>' + ''.join(f'<li>{e(x)}</li>' for x in X['sources']) + '</ul>')
+    H.append(f'<div class=credits>{e(fr["credits"])}</div></section>')
+    return '\n'.join(H)
+
 def body(fr):
     """The study section: what an approval covers."""
+    if fr.get('renderer') == THEMED and fr.get('full'): return themed(fr)
     if fr.get('renderer') == FULL and fr.get('full'): return full(fr)
     if fr.get('renderer') == NARRATIVE and fr.get('weave'): return narrative(fr)
     if fr.get('renderer') != RENDERER: raise ValueError(f"frame names renderer {fr.get('renderer')!r}, this is {RENDERER!r}")
@@ -122,7 +160,7 @@ def body(fr):
 def page(fr):
     """A whole page for one study."""
     t = fr['labels']['page_title'].format(key=fr['study']['key'], title=fr['study']['title'], scope=fr['scope'])
-    css = NCSS if fr.get('renderer') == NARRATIVE else FCSS if fr.get('renderer') == FULL else CSS
+    css = NCSS if fr.get('renderer') == NARRATIVE else FCSS if fr.get('renderer') == FULL else TCSS if fr.get('renderer') == THEMED else CSS
     return f'<!doctype html><meta charset=utf-8><title>{e(t)}</title><style>{css}</style>\n{body(fr)}\n'
 
 def review_page(fr, critic):

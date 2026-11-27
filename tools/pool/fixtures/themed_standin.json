@@ -1,0 +1,23 @@
+{"schema": "study_themed_v1", "model": "stand-in (written by hand by Claude; no model call)", "built": "2026-11-27T00:00:00Z", "profile": "free",
+ "study": {
+  "title": "Loved, Sent, Believed",
+  "opening": {"text": "Some verses are so familiar that we stop hearing them. These three verses tell us what God felt, what God did, and what it means for anyone who believes. Read them slowly, with four old teachers beside you.", "evidence": ["JHN.3.16", "JHN.3.17", "JHN.3.18"]},
+  "sections": [
+   {"heading": "A Love That Gives", "verses": [16], "flow": [
+     {"text": "The passage begins with love, and Matthew Henry will not let us hurry past it. He wants us to stop and wonder.", "evidence": ["JHN.3.16", "MHC3.16.05"]},
+     {"quote": "MHC3.16.05", "from": 0, "to": 1},
+     {"text": "Albert Barnes asks what kind of love this is. God does not approve of sin, but he still wants good for sinners.", "evidence": ["BAR3.16.01"]},
+     {"quote": "BAR3.16.01", "from": 2, "to": 4},
+     {"text": "And Calvin reminds us that nothing in us earned it.", "evidence": ["CAL3.16.04"]},
+     {"quote": "CAL3.16.04", "from": 0, "to": 1}]},
+   {"heading": "Sent to Heal", "verses": [17], "flow": [
+     {"text": "If God sent his Son, why did he send him? These verses tell us: not to judge, but to save. Augustine pictures a doctor at the bedside.", "evidence": ["JHN.3.17", "AUG3.17-18.1.01"]},
+     {"quote": "AUG3.17-18.1.01", "from": 0, "to": 3},
+     {"text": "Matthew Henry hears the question every guilty heart asks when heaven comes near: is it peace?", "evidence": ["MHC3.17.02"]},
+     {"quote": "MHC3.17.02", "from": 0, "to": 3}]},
+   {"heading": "Believing and Not Believing", "verses": [18], "flow": [
+     {"text": "The last verse draws the line. Jamieson, Fausset and Brown put the two sides plainly.", "evidence": ["JHN.3.18", "JFB3.18.01"]},
+     {"quote": "JFB3.18.01", "from": 0, "to": 0},
+     {"text": "So the door is open, and the gift is already given. Believing is how we walk through.", "evidence": ["JHN.3.16", "JHN.3.18"]}]}],
+  "rabbi_road": {"text": "Romans 5:8 makes the same point from another side: God showed his love while we were still sinners. Henry marks how great that love is. Coming back to John 3:16, we see that the world God loved was not a good world waiting to be rewarded.", "evidence": ["ROM.5.8", "JHN.3.16", "MHC5.8.03"], "quote": ["MHC5.8.03"], "prompt": "Where do you still feel you have to earn God's love?"},
+  "over_the_hill": {"text": "Over the hill, John 15:13 shows what this love looks like when someone lays down his life for his friends. It is worth the walk.", "evidence": ["JHN.15.13", "ROM.5.8"]}}}

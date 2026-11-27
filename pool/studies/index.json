@@ -23,7 +23,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "aed6e049a9dcd9c7a66b109699c9496de8673227d5bb480364f8ed93de8265cc",
-      "frame": "8af840edbbfe8be1c00217d55300c2abd511851643e7ce9a900e7a675e38978a"
+      "frame": "ecfa4492c64034f23d8e0903a0ffb5bb7ef50289efc7a5fd96549e461a62d6ad"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -33,7 +33,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-B.json",
-       "sha256": "d8439971a9200d5c84f46912ea6f27f7f3ac69d48c6f2bc36c36ff5e8404fdc2"
+       "sha256": "69a7a0fa5cb9158d5c3cf45d36c5f28c7e50a24b1e6c5b3bcf58edfb86575986"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-B.html",
@@ -58,7 +58,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "e30923e9c81a4dc26ee709740bb7ed0aaa56d05792c31a81f213b269acc60a3f",
-      "frame": "a32b0b7139d9e333dbbcb5f2bc1cfe54ff87ef911ca2616f45d3c90c3c6501e9"
+      "frame": "7690066c333eb684e89003aedb03743c83155d3da4fe6eb8ccd73e1d350410d4"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -68,7 +68,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-C.json",
-       "sha256": "591b86f2897a103922edba7a94527a438f88748be50cc60de9809b188cd3f30b"
+       "sha256": "67376288b0ccbca0a9adff9f7fe4fe8c2507f06ec1fb296b3734c41dc5f85997"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-C.html",
@@ -93,7 +93,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "3a5b1cb364ceb47bb4c21f30849ac70887ca3abc82b853c9aecced6a6e8a9ffb",
-      "frame": "d1c2cf62e67fc2fb731dd4a38c41cae59deff729213cc63d62d96ec340bfdfae"
+      "frame": "d81d3cea3d24e499ce44687e17e8351aed587fa76413e6754bde6bbe3039499a"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -103,7 +103,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-D.json",
-       "sha256": "8b479d946ae4441edbfd488071cd1cc2c3b98c4cd5837a2c0326cf5e7201b33f"
+       "sha256": "b5c3662448c305bf7e9d8dd0d1a750c20ecafedb787d30c93961548d337ea4ed"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-D.html",
@@ -128,7 +128,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-      "frame": "b04251970c506bd551b0e323f19bdd78ff9ddcbeb35f1e8fd132f611f8df262b"
+      "frame": "149dfdadc4138ebcffe68b4b6fa2103065ef0965001d8e1e7b2c54d7b8b0d310"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -138,7 +138,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-E.json",
-       "sha256": "269c2150a99f6dd0c5593bbd5b2b895d3a57c9a0a863c6601f5c74c42b06a145"
+       "sha256": "12b72dbda124cf241b84503a10a59f7c210988d76a25a6814fa5f08cf005758d"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-E.html",
@@ -163,7 +163,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-      "frame": "50218d5e693d74cf57e2ac8176c1c785456f4e5f4ff7999c9ca2aa8106cca86e"
+      "frame": "0599e837789604dac3dd7e76973dc7dec429e952b77e59cab981f69b126260aa"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -173,7 +173,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-EF.json",
-       "sha256": "0f7aa9afc31c4aa29ec33e42f6f85c790ebaee7f7fd73bb1811fcbdc270d18ba"
+       "sha256": "d4d127f368f09084468142d874cc7e373f1bfe5b2ce8e40bc07962efb03b0fe3"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-EF.html",
@@ -198,7 +198,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-      "frame": "f4e03270f406d289eb49678bec53a9033a500303de51d05ac6967b4b72ace08b"
+      "frame": "060786b266627ee1ad6241d898881f4b0b12f85b20e33a1b3c1ebda5330e4169"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -208,11 +208,46 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-EF2.json",
-       "sha256": "5f5c3050df95fa8adf08779fb840cb5d965ba528f5193c9109ee2eb530e838be"
+       "sha256": "dc95f19c68aa5b2bf45937c741d03e7db6507f74e6447c8e482efdb31922eef5"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-EF2.html",
        "sha256": "0ad869ebe5fa601c818b6aaaac1c0cf3556c0a0e2f14d8c232e65b9fca6bf761"
+      }
+     }
+    },
+    {
+     "key": "ET0",
+     "title": "Loved, Sent, Believed",
+     "shape": "themed",
+     "scope": "John 3:16-18",
+     "verses": [
+      16,
+      18
+     ],
+     "status": "pending",
+     "approver": null,
+     "approved_at": null,
+     "frame_version": "frame_v2",
+     "renderer": "study_themed_v1",
+     "fingerprints": {
+      "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+      "pieces": "9b2db89f858e19b6a13652c3782383306e96a98e062b32c30eb06cba516ea657",
+      "frame": "1e60d28f74fe82ecbd9f0ac014a66fd0b8c347daaeb169bd2784e62b85e4200f"
+     },
+     "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
+     "files": {
+      "plan": {
+       "path": "pool/studies/jhn3-16-21/plan-jhn3-study-ET0.json",
+       "sha256": "4ef17cc48148fdfab0a0d713dffa86c522cba1add93aac32cff1f8ff5eb4773e"
+      },
+      "page_content": {
+       "path": "pool/studies/jhn3-16-21/page-jhn3-study-ET0.json",
+       "sha256": "14fbb25a7299b5e4bb609c2d797ce40a955b65b07f230239545e0e95d7da8691"
+      },
+      "page_html": {
+       "path": "pool/studies/jhn3-16-21/study-jhn3-ET0.html",
+       "sha256": "1b807ce6fb3d0f4853624c88a3692889348123c4e7ed6c053dbf6db2bd5ffe16"
       }
      }
     },
@@ -233,7 +268,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-      "frame": "a7bc3c787f4bd822570d2e42d89d8fb84b0b3ce8d857f3e2935d49bc5f66a145"
+      "frame": "968dac3c1524555edd73a1c13ece44901db7cce1e231236277f5985163b14180"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -243,7 +278,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-EW.json",
-       "sha256": "9ae7acf18bacb4f88ef6e7f67bf78306c967b0665bb9c5f3efee3256744fb5fd"
+       "sha256": "b4ce27e609209fd3b78153b4fd43bd0b3c011a77c4f1a8031514fc5eb053a1db"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-EW.html",
@@ -268,7 +303,7 @@
      "fingerprints": {
       "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
       "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-      "frame": "c8e1b51786d1ca05ad9625778077fd06e84c9012e0cb2d8b07b6e66da44c9831"
+      "frame": "2a64891baec9741f5d4db704c730df28b6a1ec960b26b73d84d62ac2d3395a00"
      },
      "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
      "files": {
@@ -278,7 +313,7 @@
       },
       "page_content": {
        "path": "pool/studies/jhn3-16-21/page-jhn3-study-EX.json",
-       "sha256": "7c8506be7211a657f9c474c5b244066ca81a9efa12bf5904ae585c5814cb00d4"
+       "sha256": "de1475e5b6bb573f0d1fb09ab66dc3e423b6e69c4c3fb6ff59fb3c6c1ef45601"
       },
       "page_html": {
        "path": "pool/studies/jhn3-16-21/study-jhn3-EX.html",
@@ -288,7 +323,7 @@
     }
    ],
    "approved": 0,
-   "pending": 8
+   "pending": 9
   }
  }
 }

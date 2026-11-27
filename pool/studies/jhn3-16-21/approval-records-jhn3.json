@@ -6,7 +6,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "aed6e049a9dcd9c7a66b109699c9496de8673227d5bb480364f8ed93de8265cc",
-   "frame": "8af840edbbfe8be1c00217d55300c2abd511851643e7ce9a900e7a675e38978a"
+   "frame": "ecfa4492c64034f23d8e0903a0ffb5bb7ef50289efc7a5fd96549e461a62d6ad"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -25,7 +25,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "e30923e9c81a4dc26ee709740bb7ed0aaa56d05792c31a81f213b269acc60a3f",
-   "frame": "a32b0b7139d9e333dbbcb5f2bc1cfe54ff87ef911ca2616f45d3c90c3c6501e9"
+   "frame": "7690066c333eb684e89003aedb03743c83155d3da4fe6eb8ccd73e1d350410d4"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -44,7 +44,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "3a5b1cb364ceb47bb4c21f30849ac70887ca3abc82b853c9aecced6a6e8a9ffb",
-   "frame": "d1c2cf62e67fc2fb731dd4a38c41cae59deff729213cc63d62d96ec340bfdfae"
+   "frame": "d81d3cea3d24e499ce44687e17e8351aed587fa76413e6754bde6bbe3039499a"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -63,7 +63,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "b04251970c506bd551b0e323f19bdd78ff9ddcbeb35f1e8fd132f611f8df262b"
+   "frame": "149dfdadc4138ebcffe68b4b6fa2103065ef0965001d8e1e7b2c54d7b8b0d310"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -82,7 +82,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "50218d5e693d74cf57e2ac8176c1c785456f4e5f4ff7999c9ca2aa8106cca86e"
+   "frame": "0599e837789604dac3dd7e76973dc7dec429e952b77e59cab981f69b126260aa"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -101,7 +101,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "f4e03270f406d289eb49678bec53a9033a500303de51d05ac6967b4b72ace08b"
+   "frame": "060786b266627ee1ad6241d898881f4b0b12f85b20e33a1b3c1ebda5330e4169"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -113,6 +113,25 @@
   "gaps_at_creation": [],
   "note": "John 3:16-18 study EF2, The Love That Came to Save"
  },
+ "ET0": {
+  "approver": null,
+  "timestamp": null,
+  "status": "pending",
+  "fingerprints": {
+   "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+   "pieces": "9b2db89f858e19b6a13652c3782383306e96a98e062b32c30eb06cba516ea657",
+   "frame": "1e60d28f74fe82ecbd9f0ac014a66fd0b8c347daaeb169bd2784e62b85e4200f"
+  },
+  "frame_version": "frame_v2",
+  "build": "public",
+  "validator": {
+   "passed": true,
+   "build": "public"
+  },
+  "accepted_gaps": [],
+  "gaps_at_creation": [],
+  "note": "John 3:16-18 study ET0, Loved, Sent, Believed"
+ },
  "EW": {
   "approver": null,
   "timestamp": null,
@@ -120,7 +139,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "a7bc3c787f4bd822570d2e42d89d8fb84b0b3ce8d857f3e2935d49bc5f66a145"
+   "frame": "968dac3c1524555edd73a1c13ece44901db7cce1e231236277f5985163b14180"
   },
   "frame_version": "frame_v2",
   "build": "public",
@@ -139,7 +158,7 @@
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
-   "frame": "c8e1b51786d1ca05ad9625778077fd06e84c9012e0cb2d8b07b6e66da44c9831"
+   "frame": "2a64891baec9741f5d4db704c730df28b6a1ec960b26b73d84d62ac2d3395a00"
   },
   "frame_version": "frame_v2",
   "build": "public",

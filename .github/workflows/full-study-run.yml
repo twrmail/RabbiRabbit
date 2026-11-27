@@ -1,7 +1,8 @@
 name: Full study run (one real model call)
 # Run by hand: Actions -> Full study run -> Run workflow. Makes one model call (up to the attempts given, stopping at the cost cap) to
-# write the full Rabbit study of John 3:16-18 from Study E's passages, inside the rails (tools/pool/full_study.py). If every check passes,
-# the study is added as EF, PENDING; nothing is approved or served. Either way the run log (each attempt, its problems, its cost) is
+# write a Rabbit study of John 3:16-18. layout 'themed' (default): sections by idea, the AI choosing whole sentences to quote from every
+# public passage (tools/pool/themed_study.py; keys ET, ET2, ...). layout 'verse': verse by verse from Study E's passages
+# (tools/pool/full_study.py; keys EF, EF2, ...). If every check passes, the study is added PENDING; nothing is approved or served. Either way the run log (each attempt, its problems, its cost) is
 # pushed to a new branch, full-study-<run>. Open a pull request from that branch to review it.
 on:
   workflow_dispatch:
@@ -18,12 +19,16 @@ on:
         description: 'Stop after about this many dollars'
         required: false
         default: '1'
-      key:
-        description: 'Study key for this run (EF2, EF3, ...)'
+      layout:
+        description: 'Layout: themed (sections by idea, like the live study) or verse (verse by verse)'
         required: false
-        default: 'EF2'
+        default: 'themed'
+      key:
+        description: 'Study key for this run (themed: ET, ET2, ...; verse: EF3, EF4, ...)'
+        required: false
+        default: 'ET'
       profile:
-        description: 'Rails: free (AI writes freely; critic notes for review) or strict (the first run)'
+        description: 'Verse layout only. Rails: free (AI writes freely; critic notes for review) or strict (the first run)'
         required: false
         default: 'free'
 permissions:
@@ -43,8 +48,14 @@ jobs:
           IN_MAX: ${{ inputs.max_cost }}
           IN_KEY: ${{ inputs.key }}
           IN_PROFILE: ${{ inputs.profile }}
+          IN_LAYOUT: ${{ inputs.layout }}
         run: |
-          if python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-EF2}" --profile "${IN_PROFILE:-free}"; then
+          if [ "${IN_LAYOUT:-themed}" = "verse" ]; then
+            CMD=(python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-EF3}" --profile "${IN_PROFILE:-free}")
+          else
+            CMD=(python3 -B tools/pool/themed_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-ET}")
+          fi
+          if "${CMD[@]}"; then
             echo "PASSED=1" >> "$GITHUB_ENV"
           else
             echo "The study did not pass the checks; the run log shows why." >> "$GITHUB_STEP_SUMMARY"
@@ -57,7 +68,7 @@ jobs:
           python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21
           python3 -B tools/pool/study_index.py build
           python3 -B tools/pool/test_frame_v2.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json
-          echo "Passed. Study ${IN_KEY:-EF2} is built (PENDING): pool/studies/jhn3-16-21/study-jhn3-${IN_KEY:-EF2}.html, with the critic's notes in review-jhn3-${IN_KEY:-EF2}.html" >> "$GITHUB_STEP_SUMMARY"
+          echo "Passed. Study ${IN_KEY:-ET} is built (PENDING): pool/studies/jhn3-16-21/study-jhn3-${IN_KEY:-ET}.html, with the critic's notes in review-jhn3-${IN_KEY:-ET}.html" >> "$GITHUB_STEP_SUMMARY"
       - name: Push a branch for review
         run: |
           git config user.name "full-study-bot"
@@ -66,6 +77,6 @@ jobs:
           git checkout -b "$B"
           git add pool/studies
           if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
-          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.key }}, ${{ inputs.profile }}, ${{ inputs.model }})"
+          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.layout }}, ${{ inputs.key }}, ${{ inputs.model }})"
           git push origin "$B"
           echo "Branch $B is ready. Open a pull request from it." >> "$GITHUB_STEP_SUMMARY"
