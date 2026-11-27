@@ -182,6 +182,41 @@
      }
     },
     {
+     "key": "EF2",
+     "title": "The Love That Came to Save",
+     "shape": "full",
+     "scope": "John 3:16-18",
+     "verses": [
+      16,
+      18
+     ],
+     "status": "pending",
+     "approver": null,
+     "approved_at": null,
+     "frame_version": "frame_v2",
+     "renderer": "study_full_v1",
+     "fingerprints": {
+      "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+      "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+      "frame": "6a482d58b2e97792fb0767bc706e260ea2e6c31c3ec5c47bd4ad6d5756192ffa"
+     },
+     "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
+     "files": {
+      "plan": {
+       "path": "pool/studies/jhn3-16-21/plan-jhn3-study-EF2.json",
+       "sha256": "d1cd6c4d15d992c4a3a0597d0394dc8d6e711ad804dac810fecc8c2489759239"
+      },
+      "page_content": {
+       "path": "pool/studies/jhn3-16-21/page-jhn3-study-EF2.json",
+       "sha256": "a82f36cc38b04834ff96b4e75e87f0a53656637e72a0e6cc9e2d3938a81b5ce9"
+      },
+      "page_html": {
+       "path": "pool/studies/jhn3-16-21/study-jhn3-EF2.html",
+       "sha256": "cf4cf262bc9f53849a1e8fa7267df787bf49734b38122eea785798c6c8726a86"
+      }
+     }
+    },
+    {
      "key": "EW",
      "title": "The Love That Gives (narrative, whole passages)",
      "shape": "short",
@@ -253,7 +288,7 @@
     }
    ],
    "approved": 0,
-   "pending": 7
+   "pending": 8
   }
  }
 }

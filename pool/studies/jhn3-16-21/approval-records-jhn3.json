@@ -94,6 +94,25 @@
   "gaps_at_creation": [],
   "note": "John 3:16-18 study EF, God So Loved the World: Saved, Not Judged"
  },
+ "EF2": {
+  "approver": null,
+  "timestamp": null,
+  "status": "pending",
+  "fingerprints": {
+   "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+   "pieces": "d15742de0b43d6756f2dc9d51cede7c369ca6d62c44beaf7f24d964496a75212",
+   "frame": "6a482d58b2e97792fb0767bc706e260ea2e6c31c3ec5c47bd4ad6d5756192ffa"
+  },
+  "frame_version": "frame_v2",
+  "build": "public",
+  "validator": {
+   "passed": true,
+   "build": "public"
+  },
+  "accepted_gaps": [],
+  "gaps_at_creation": [],
+  "note": "John 3:16-18 study EF2, The Love That Came to Save"
+ },
  "EW": {
   "approver": null,
   "timestamp": null,
