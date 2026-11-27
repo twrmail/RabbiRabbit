@@ -55,14 +55,13 @@ FCSS = CSS + '''.aitext{margin:.6rem 0;padding:.5rem .9rem;border-left:3px solid
 
 def full(fr):
     """Full Rabbit study (renderer 'study_full_v1'): opening, verse-by-verse body (as Study E, with bridges), Rabbi Road, What's Over the
-    Hill. Scripture and teacher words come from the frame exactly; every AI field is labeled."""
+    Hill. Scripture and teacher words come from the frame exactly; one note at the top says the narrative is AI-written; AI text sits in its own boxes."""
     L, st, T, X = fr['labels'], fr['study'], fr['labels']['teacher_names'], fr['full']
-    C = X.get('corrections') or {}; fixed = set(C.get('fields') or [])
-    tag = lambda f: e(L['ai_text']) + (' &middot; ' + e(L['corrected'].format(by=C['by'])) if f in fixed else '')
-    ai = lambda t, f=None: f'<div class=aitext><span class=ai>{tag(f)}</span>{e(t)}</div>'
+    C = X.get('corrections') or {}  # corrections are applied and kept in the record (frame 'full'); the page does not mark them
+    ai = lambda t: f'<div class=aitext>{e(t)}</div>'
     H = [f'<section id="s{e(st["key"])}"><h2>{e(L["study_heading"].format(key=st["key"], title=st["title"]))}</h2>',
-         f'<p class=note>{e(fr["note"])}</p>', f'<p class=own>{e(fr["stats_line"])}</p>',
-         f'<h3>{e(L["opening"])}</h3>', ai(X['opening']['text'], 'opening')]
+         f'<p class=note>{e(fr["note"])}</p>',
+         f'<h3>{e(L["opening"])}</h3>', ai(X['opening']['text'])]
     for v in sorted(fr['verses'], key=int):
         vd = fr['verses'][v]
         H.append(f'<h3>{e(L["verse_heading"].format(place=st["place"], verse=v))}</h3><div class=v>{e(vd["scripture_text"])}</div>')
@@ -70,21 +69,21 @@ def full(fr):
             name = T[it['teacher_key']]; cv = it['covers_verses']
             wide = ' ' + e(L['covers'].format(first=cv[0], last=cv[-1])) if len(cv) > 1 else ''
             H.append(f'<div class=t><div class=who>{e(name)} <span>&middot; {e(it["work"] or "")}{wide}</span></div>'
-                     f'<div class=head>{e(it["heading"])} <span class=ai>{tag("heading:" + it["id"] if "heading:" + it["id"] in fixed else "summary:" + it["id"])}</span></div><div class=say>{e(it["summary"])}</div>'
+                     f'<div class=head>{e(it["heading"])}</div><div class=say>{e(it["summary"])}</div>'
                      f'<details><summary>{e(L["own_words"].format(teacher=name))}</summary><div class=words>{md(it["text"])}</div></details></div>')
         n = (C.get('notes') or {}).get(v)
         if n: H.append(f'<p class=q><span class=own>{e(L["rabbit_note"])}</span> {e(n)}</p>')
         b = X['bridges'].get(v)
-        if b: H.append(ai(b['text'], f'bridge:{v}'))
+        if b: H.append(ai(b['text']))
     r = X['road']
     H.append(f'<h2 class=road>{e(L["road_heading"])}</h2><p class=ref>{e(L["road_line"].format(ref=r["ref"]))}</p>'
-             f'<div class=v>{e(r["scripture"])}</div><p class=why>{e(L["road_votes"].format(votes=r["votes"]))}</p>' + ai(r['text'], 'rabbi_road'))
+             f'<div class=v>{e(r["scripture"])}</div><p class=why>{e(L["road_votes"].format(votes=r["votes"]))}</p>' + ai(r['text']))
     for q in r['quotes']:
         H.append(f'<div class=t><div class=who>{e(q["teacher"])} <span>&middot; {e(q["work"] or "")} &middot; {e(r["ref"])}</span></div><div class=words>{md(q["text"])}</div></div>')
-    H.append(f'<p class=q>{e(L["prompt"])} {e(r["prompt"])} <span class=ai>{tag("prompt")}</span></p>')
+    H.append(f'<p class=q>{e(L["prompt"])} {e(r["prompt"])}</p>')
     h = X['hill']
     H.append(f'<h2 class=road>{e(L["hill_heading"])}</h2><p class=ref>{e(h["ref"])}</p><div class=v>{e(h["scripture"])}</div>'
-             f'<p class=why>{e(L["hill_votes"].format(road=r["ref"], votes=h["votes"]))}</p>' + ai(h['text'], 'over_the_hill'))
+             f'<p class=why>{e(L["hill_votes"].format(road=r["ref"], votes=h["votes"]))}</p>' + ai(h['text']))
     H.append(f'<div class=credits>{e(fr["credits"])}</div></section>')
     return '\n'.join(H)
 
