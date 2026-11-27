@@ -18,6 +18,14 @@ on:
         description: 'Stop after about this many dollars'
         required: false
         default: '1'
+      key:
+        description: 'Study key for this run (EF2, EF3, ...)'
+        required: false
+        default: 'EF2'
+      profile:
+        description: 'Rails: free (AI writes freely; critic notes for review) or strict (the first run)'
+        required: false
+        default: 'free'
 permissions:
   contents: write
 jobs:
@@ -33,19 +41,23 @@ jobs:
           IN_MODEL: ${{ inputs.model }}
           IN_ATTEMPTS: ${{ inputs.attempts }}
           IN_MAX: ${{ inputs.max_cost }}
+          IN_KEY: ${{ inputs.key }}
+          IN_PROFILE: ${{ inputs.profile }}
         run: |
-          if python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}"; then
+          if python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-EF2}" --profile "${IN_PROFILE:-free}"; then
             echo "PASSED=1" >> "$GITHUB_ENV"
           else
             echo "The study did not pass the checks; the run log shows why." >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Build the study page, record and index (only if it passed)
         if: env.PASSED == '1'
+        env:
+          IN_KEY: ${{ inputs.key }}
         run: |
           python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21
           python3 -B tools/pool/study_index.py build
           python3 -B tools/pool/test_frame_v2.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json
-          echo "Passed. Study EF is built (PENDING): pool/studies/jhn3-16-21/study-jhn3-EF.html" >> "$GITHUB_STEP_SUMMARY"
+          echo "Passed. Study ${IN_KEY:-EF2} is built (PENDING): pool/studies/jhn3-16-21/study-jhn3-${IN_KEY:-EF2}.html, with the critic's notes in review-jhn3-${IN_KEY:-EF2}.html" >> "$GITHUB_STEP_SUMMARY"
       - name: Push a branch for review
         run: |
           git config user.name "full-study-bot"
@@ -54,6 +66,6 @@ jobs:
           git checkout -b "$B"
           git add pool/studies
           if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
-          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.model }})"
+          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.key }}, ${{ inputs.profile }}, ${{ inputs.model }})"
           git push origin "$B"
           echo "Branch $B is ready. Open a pull request from it." >> "$GITHUB_STEP_SUMMARY"

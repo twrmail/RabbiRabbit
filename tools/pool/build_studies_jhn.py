@@ -66,7 +66,7 @@ def credits(P, ids, narrative=False):
             (" and headings" if any(i in S.HEAD for i in ids) else '') + " are the AI's, labeled on the page; questions and reflections are Rabbit's own.")
 
 def full_content(st, P, WV, ids, teachers):
-    d = st['full']; Fs = d['study']; M = FS.materials(); lo, hi = st['scope']
+    d = st['full']; Fs = d['study']; M = FS.materials(profile=d.get('profile', 'strict')); lo, hi = st['scope']
     q = [c for c in M['road']['candidates'] if c['id'] in Fs['rabbi_road']['quote']]; q.sort(key=lambda c: Fs['rabbi_road']['quote'].index(c['id']))
     seen = {}
     for i in ids: seen.setdefault((P[i]['teacher_key'], P[i]['work_title']), P[i]['rights'])
@@ -137,7 +137,7 @@ def main(report, out):
         ids = [i for sec in st['sections'] for i, _ in sec['ids']]
         sb = [] if st.get('weave') or st.get('full') else [(i, check_say(P, i, S.SAY[i])) for i in ids]
         if st.get('full'):
-            fp, fstats = FS.check(st['full']['study'], FS.materials()); sb += [(rule, [msg]) for rule, msg in fp]
+            pf = st['full'].get('profile', 'strict'); fp, fstats = FS.check(st['full']['study'], FS.materials(profile=pf), profile=pf); sb += [(rule, [msg]) for rule, msg in fp]
         elif st.get('weave'):
             wf = WE.validate(st['weave'], plan, pool, req, WV, S.TEACH, F.pieces_fp(plan, pool))
             sb += [(rule, [msg]) for rule, msg in wf]
@@ -165,6 +165,8 @@ def main(report, out):
             records[st['key']] = rec; r.update(frame_version=rec['frame_version'], tamper_tests=f"{sum(1 for c in tests if c['pass_'])}/{len(tests)}")
             json.dump(pc, open(f"{out}/page-jhn3-study-{st['key']}.json", 'w'), indent=1, ensure_ascii=False)
             open(f"{out}/study-jhn3-{st['key']}.html", 'w').write(SR.page(fr)); bodies.append((st, SR.body(fr)))
+            if st.get('full', {}).get('critic'):   # review copy for Tom: the page plus the critic's notes. Not covered by the approval, never served.
+                open(f"{out}/review-jhn3-{st['key']}.html", 'w').write(SR.review_page(fr, st['full']['critic']))
             miss = [i for i in ids if SR.md(P[i]['text']) not in SR.page(fr)]
             if miss: bad += 1; r['verbatim_missing'] = miss
         else: bad += 1

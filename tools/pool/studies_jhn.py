@@ -166,9 +166,13 @@ for _k, _t, _sel in (('EW', 'The Love That Gives (narrative, whole passages)', {
 # The full Rabbit study (Nov 27): Study E's plan written whole by a model inside the rails (full_study.py). EF exists only once a real run
 # has passed every check and its output is committed at pool/studies/jhn3-16-21/full/EF.json; it is PENDING until Tom approves it.
 import os as _os, json as _json
-_EF = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..', 'pool', 'studies', 'jhn3-16-21', 'full', 'EF.json')
+import re as _re
+_FULL = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..', 'pool', 'studies', 'jhn3-16-21', 'full')
 def full_study(key, path):
     d = _json.load(open(path))
     return dict(_E, key=key, title=d['study']['title'], full=d, take='', closing="Rabbit's closing reflection: ")
-if _os.path.exists(_EF): STUDIES.append(full_study('EF', _EF))
+# every passed run's study: full/EF.json, full/EF2.json, ... (run logs are full/run-*.json)
+for _f in sorted(_os.listdir(_FULL)) if _os.path.isdir(_FULL) else []:
+    _m = _re.fullmatch(r'(EF\d*)\.json', _f)
+    if _m: STUDIES.append(full_study(_m.group(1), _os.path.join(_FULL, _f)))
 STUDIES[:] = sorted(STUDIES, key=lambda st: st['key'])

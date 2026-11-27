@@ -88,6 +88,24 @@ Tom's ranking of the trials: E, then EW, then EX. The goal is the full study: Sc
   - One model call using the repo's `ANTHROPIC_API_KEY`, with up to 3 attempts and a $1 cap.
   - It pushes a branch `full-study-<run>` with the run log and, if the study passed, study EF (PENDING).
 
+**Free profile and critic (Tom, Nov 27).** The first run (EF) passed, but its prose was stiff: the word-counting rails made it wooden, and patching every outlier is never-ending work. `full_study.py` now has two rail profiles (`PROFILES`):
+- **`free`** (the new default):
+  - The AI writes freely in its own fields: plain images, application, warmth. It may bring in no outside learning.
+  - **Kept:**
+    - code prints Scripture and teachers;
+    - code picks the destinations;
+    - every passage is covered, in order;
+    - teacher names only where that teacher's passage is cited;
+    - references only those given;
+    - no invented numbers, quotation marks or markdown;
+    - no claims about what teachers hold in general (W11);
+    - summary caps.
+  - **Dropped:** the capitalized-word check (W7) and the bridge-word check (W12). Lengths are looser and the AI cap is 55%.
+  - Destination passages that end on the next section's outline heading are not offered (`DANGLING`). This is a selection rule; teacher text is never changed.
+- **`strict`:** the first run's rails. EF keeps them.
+- **The critic:** after a study passes, a second call reads it against its sources and returns notes (minor or serious). The notes go into the study file and a review copy, `review-jhn3-<K>.html`, for Tom. They do not reject the study, are not part of the approved page, and are never served.
+- **Run options:** the workflow takes `key` (EF2, EF3, …) and `profile`. `studies_jhn.py` loads every `full/EF*.json`.
+
 ## Study index (the catalog a serving Worker will read)
 `pool/studies/index.json`, written by `study_index.py build`. For each unit it lists every study:
 - key, title, shape, scope;
