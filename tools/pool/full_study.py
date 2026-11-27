@@ -12,7 +12,7 @@ usage:
   full_study.py check FILE                                         check a saved study_full_v1 JSON against the current pool
   full_study.py prompt                                             print the prompt that would be sent (no call)
 Writes pool/studies/jhn3-16-21/full/EF.json when a run passes, and full/run-<UTC time>.json (every attempt, its problems, its cost)."""
-import json, os, re, sys, time, urllib.request
+import json, os, re, sys, time, urllib.request, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import weave as W, destinations as D, run_validator as RV, studies_jhn as S
 
@@ -201,13 +201,24 @@ def check(F, M, teacher_names=S.TEACH):
     return R, dict(ai_chars=ai, teacher_chars=teacher, ai_share=share)
 
 # ----------------------------------------------------------------------------------------------------------------- one model call
+class ApiError(Exception): pass
+
+def _post(payload, key):
+    req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=json.dumps(payload).encode(), method='POST',
+                                 headers={'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01'})
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r: return json.load(r)
+    except urllib.error.HTTPError as e:   # keep the API's own explanation; a bare 'HTTP Error 400' tells us nothing
+        raise ApiError(f'Anthropic API {e.code}: {e.read().decode("utf-8", "replace")[:600]}')
+
 def ask(model, system, user, max_tokens=4000):
     key = os.environ.get('ANTHROPIC_API_KEY')
     if not key: raise SystemExit('ANTHROPIC_API_KEY is not set')
-    body = json.dumps(dict(model=model, max_tokens=max_tokens, temperature=0, system=system, messages=[dict(role='user', content=user)])).encode()
-    req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST',
-                                 headers={'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01'})
-    with urllib.request.urlopen(req, timeout=300) as r: j = json.load(r)
+    payload = dict(model=model, max_tokens=max_tokens, temperature=0, system=system, messages=[dict(role='user', content=user)])
+    try: j = _post(payload, key)
+    except ApiError as e:
+        if 'temperature' not in str(e): raise
+        payload.pop('temperature'); j = _post(payload, key)   # some models do not take a temperature setting
     u = j.get('usage') or {}; pin, pout = PRICE.get(model, (3, 15))
     return ''.join(c.get('text', '') for c in j.get('content') or []).strip(), ((u.get('input_tokens') or 0) * pin + (u.get('output_tokens') or 0) * pout) / 1e6, u
 
@@ -222,7 +233,10 @@ def run(model, attempts, max_cost):
     msg = user; os.makedirs(FULL, exist_ok=True)
     for n in range(attempts):
         if log['spent'] >= max_cost: log['stopped'] = f'cost cap ${max_cost}'; break
-        text, cost, usage = ask(model, SYSTEM, msg); log['spent'] += cost; F = parse(text)
+        try: text, cost, usage = ask(model, SYSTEM, msg)
+        except ApiError as e:
+            log['attempts'].append(dict(n=n + 1, error=str(e))); print(f'attempt {n + 1}: {e}'); log['stopped'] = 'API error'; break
+        log['spent'] += cost; F = parse(text)
         probs, stats = check(F, M) if F is not None else ([('F1', 'reply was not JSON')], {})
         log['attempts'].append(dict(n=n + 1, cost=round(cost, 4), usage=usage, problems=probs, stats=stats, reply=text))
         print(f'attempt {n + 1}: {len(probs)} problems, ${cost:.4f}', *[f'  {r}: {m}' for r, m in probs[:12]], sep='\n')
