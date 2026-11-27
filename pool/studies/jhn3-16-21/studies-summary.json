@@ -156,6 +156,55 @@
   "tamper_tests": "13/13",
   "ai_share": "25%"
  },
+ "EF": {
+  "title": "God So Loved the World: Saved, Not Judged",
+  "ok": true,
+  "stats": {
+   "picked": 4,
+   "chars": 2190,
+   "budget": 12000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [
+   [
+    "fewer teachers than offered",
+    16,
+    "verse 16: 2 teacher_key(s) picked, 7 offered by the pool (warning below 3)"
+   ],
+   [
+    "one teacher",
+    17,
+    "verse 17 is served by one teacher_key (augustine)"
+   ],
+   [
+    "fewer teachers than offered",
+    17,
+    "verse 17: 1 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "one teacher",
+    18,
+    "verse 18 is served by one teacher_key (matthew-henry)"
+   ],
+   [
+    "fewer teachers than offered",
+    18,
+    "verse 18: 1 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "concentration",
+    null,
+    "teacher_key 'matthew-henry' supplies 50% of picked characters"
+   ]
+  ],
+  "summary_check_failures": [],
+  "frame_version": "frame_v2",
+  "tamper_tests": "13/13",
+  "ai_share": "38%",
+  "teacher_chars_printed": 3441
+ },
  "EW": {
   "title": "The Love That Gives (narrative, whole passages)",
   "ok": true,
