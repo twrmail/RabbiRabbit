@@ -254,6 +254,35 @@
   "ai_share": "54%",
   "teacher_chars_printed": 2678
  },
+ "ET": {
+  "title": "The Gift, the Mission, and the Verdict",
+  "ok": true,
+  "stats": {
+   "picked": 7,
+   "chars": 3736,
+   "budget": 40000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [
+   [
+    "one teacher",
+    18,
+    "verse 18 is served by one teacher_key (barnes)"
+   ],
+   [
+    "fewer teachers than offered",
+    18,
+    "verse 18: 1 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ]
+  ],
+  "summary_check_failures": [],
+  "frame_version": "frame_v2",
+  "tamper_tests": "13/13",
+  "ai_share": "50%",
+  "teacher_chars_printed": 3541
+ },
  "ET0": {
   "title": "Loved, Sent, Believed",
   "ok": true,

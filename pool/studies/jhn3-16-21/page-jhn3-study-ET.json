@@ -1,0 +1,294 @@
+{
+ "renderer": "study_themed_v1",
+ "full": {
+  "model": "claude-sonnet-5-5",
+  "built": "2026-11-27T21:37:14Z",
+  "title": "The Gift, the Mission, and the Verdict",
+  "opening": {
+   "text": "Some sentences are so familiar that we stop hearing them. These three verses tell us why God sent his Son, what that gift means for anyone who trusts him, and what is at stake for anyone who turns away. If you are new to faith, think of this passage as solid ground. It holds a love that gives, a Son sent to save, and two very different ways a person can stand before God.",
+   "evidence": [
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18"
+   ]
+  },
+  "sections": [
+   {
+    "heading": "A Love That Gives",
+    "verses": [
+     "16"
+    ],
+    "flow": [
+     {
+      "kind": "text",
+      "text": "The passage opens with a small word, so: God so loved the world. These verses tell us that this love did not stay a feeling. It gave, and what it gave was his only born Son. Matthew Henry begins by asking us to stand amazed at who is loving whom.",
+      "evidence": [
+       "JHN.3.16",
+       "MHC3.16.05"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "MHC3.16.05",
+      "teacher": "Matthew Henry",
+      "work": "Matthew Henry's Commentary on the Whole Bible",
+      "text": "Behold, and wonder, that the *great God* should love such a *worthless* world! That the *holy God* should love such a *wicked* world with a love of good will, when he could not look upon it with any complacency.",
+      "lead": "no",
+      "tail": "yes"
+     },
+     {
+      "kind": "text",
+      "text": "Henry sets the great and holy God beside a worthless, wicked world and lets the contrast speak. Then John Calvin turns to the words only born and asks what they do for a heart that doubts.",
+      "evidence": [
+       "JHN.3.16",
+       "MHC3.16.05",
+       "CAL3.16.08"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "CAL3.16.08",
+      "teacher": "John Calvin",
+      "work": "Calvin commentary JHN",
+      "text": "The word only-begotten is emphatic, ( ἐμφατικὸν ) to magnify the fervor of the love of God towards us. For as men are not easily convinced that God loves them, in order to remove all doubt, he has expressly stated that we are so very dear to God that, on our account, he did not even spare his only-begotten Son. Since, therefore, God has most abundantly testified his love towards us, whoever is not satisfied with this testimony, and still remains in doubt, offers a high insult to Christ, as if he had been an ordinary man given up at random to death.",
+      "lead": "no",
+      "tail": "no"
+     },
+     {
+      "kind": "text",
+      "text": "Maybe you have wondered whether God loves people who are far from good. Albert Barnes helps by saying what kind of love this is, and he uses a picture from family life.",
+      "evidence": [
+       "JHN.3.16",
+       "BAR3.16.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "BAR3.16.01",
+      "teacher": "Albert Barnes",
+      "work": "Notes on the New Testament",
+      "text": "God hates wickedness, but he still desires the happiness of those who are sinful. He hates the sin, but loves the sinner. A parent may love his child and desire his welfare, and yet be strongly opposed to the conduct of that child. When we approve the conduct of another, this is the love of complacency; when we desire simply their happiness, this is the love of benevolence.",
+      "lead": "yes",
+      "tail": "no"
+     },
+     {
+      "kind": "text",
+      "text": "The verse ends with a promise. Whoever believes in him should not perish but have eternal life. The gift is already given, and believing is simply how we take hold of it.",
+      "evidence": [
+       "JHN.3.16"
+      ]
+     }
+    ]
+   },
+   {
+    "heading": "Sent to Save, Not to Condemn",
+    "verses": [
+     "17"
+    ],
+    "flow": [
+     {
+      "kind": "text",
+      "text": "Many of us expect that when God draws near, it will be to settle accounts. These verses tell us otherwise: God did not send his Son into the world to judge the world, but that the world be saved through him. Augustine explains this with the picture of a doctor.",
+      "evidence": [
+       "JHN.3.17",
+       "AUG3.17-18.1.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "AUG3.17-18.1.01",
+      "teacher": "Augustine",
+      "work": "Tractates on John 12",
+      "text": "\"For God sent not His Son into the world to judge the world, but that the world through Him may be saved.\" So far, then, as it lies in the physician, He is come to heal the sick. He that will not observe the orders of the physician destroys himself. He is come a Saviour to the world: why is he called the Saviour of the world, but that He is come to save the world, not to judge the world?",
+      "lead": "no",
+      "tail": "yes"
+     },
+     {
+      "kind": "text",
+      "text": "Matthew Henry shows how this sending looked. The Son came with full powers, yet he did not open with a verdict. He opened a way in.",
+      "evidence": [
+       "JHN.3.17",
+       "MHC3.17.05"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "MHC3.17.05",
+      "teacher": "Matthew Henry",
+      "work": "Matthew Henry's Commentary on the Whole Bible",
+      "text": "*If the Lord had been pleased to kill us,* he would not have sent his Son amongst us. He came with full powers indeed to *execute judgment* (Joh 5:22,27), but did not begin with a judgment of condemnation, did not proceed upon the outlawry, nor take advantage against us for the breach of the *covenant of innocency,* but put us upon a new trial before a *throne of grace.* 2. He came *that the world through him might be saved,* that a door of salvation might be opened to the world, and whoever would might enter in by it.",
+      "lead": "no",
+      "tail": "no"
+     },
+     {
+      "kind": "text",
+      "text": "If you have ever felt that God must be standing over you with arms crossed, let this verse correct the picture. The errand was salvation.",
+      "evidence": [
+       "JHN.3.17"
+      ]
+     }
+    ]
+   },
+   {
+    "heading": "Two Ways of Standing",
+    "verses": [
+     "18"
+    ],
+    "flow": [
+     {
+      "kind": "text",
+      "text": "The last verse draws a line. Whoever believes in him is not judged. Whoever does not believe has been judged already, because he has not believed in the name of the only born Son of God. Albert Barnes first tells us what it means that the believer is not condemned, and what believing looks like.",
+      "evidence": [
+       "JHN.3.18",
+       "BAR3.18.02"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "BAR3.18.02",
+      "teacher": "Albert Barnes",
+      "work": "Notes on the New Testament",
+      "text": "Is not condemned. God pardons sin, and delivers us from deserved punishment, because we believe on him. Jesus died in our stead; he suffered for us, and by his sufferings our sins are expiated, and it is consistent for God to forgive. When a sinner, therefore, believes on Jesus, he trusts in him as having died in his place, and God having accepted the offering which Christ made in our stead, as being an equivalent for our sufferings in hell, there is now no farther condemnation, Ro 8:1.",
+      "lead": "no",
+      "tail": "yes"
+     },
+     {
+      "kind": "text",
+      "text": "The second half is harder to hear. If the Son came not to judge, how can anyone be judged already? John Chrysostom takes up that very question, and his answer comes from ordinary life.",
+      "evidence": [
+       "JHN.3.18",
+       "CHR3.17-18.2.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "CHR3.17-18.2.01",
+      "teacher": "John Chrysostom",
+      "work": "Homily on the Gospel of John 28",
+      "text": "Yet if He \"came not to judge the world,\" how is \"he that believeth not judged already,\" if the time of \"judgment\" has not yet arrived? He either means this, that the very fact of disbelieving without repentance is a punishment, (for to be without the light, contains in itself a very severe punishment,) or he announces beforehand what shall be. For as the murderer, though he be not as yet condemned by the decision of the judge, is still condemned by the nature of the thing, so is it with the unbeliever.",
+      "lead": "no",
+      "tail": "no"
+     },
+     {
+      "kind": "text",
+      "text": "So the passage leaves us with two ways of standing, and the gift of the Son is offered to every person. If you have trusted him, rest in the words not judged. If you are still unsure, the same verses show a love that gave first and a door that stands open.",
+      "evidence": [
+       "JHN.3.16",
+       "JHN.3.17",
+       "JHN.3.18"
+      ]
+     }
+    ]
+   }
+  ],
+  "road": {
+   "ref": "Romans 5:8",
+   "votes": "995",
+   "scripture": "But God commends his own love toward us, in that while we were yet sinners, Christ died for us.",
+   "text": "This verse helps us see who the world in our passage really is. We might picture God giving his Son after we had tidied ourselves up. This verse says Christ died for us while we were yet sinners. The gift did not wait for us to deserve it. That makes the word so in so loved feel larger, and it explains why the Son's coming was for saving. Matthew Henry notices that the verse says God commends his love, and he compares it to a merchant showing off his goods. He also sees in the words yet sinners a promise that we were not meant to stay as we were. Read back in our passage, the love that gave the Son is a love that reached us in our sin. That is why believing is about trust and not about our own record.",
+   "evidence": [
+    "ROM.5.8",
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18",
+    "MHC5.8.04"
+   ],
+   "prompt": "If God gave his Son while you were still a sinner, what is one thing you have been trying to fix about yourself first, before you trust him?",
+   "quotes": [
+    {
+     "id": "MHC5.8.04",
+     "teacher": "Matthew Henry",
+     "work": "Matthew Henry's Commentary on the Whole Bible",
+     "text": "*Commendeth his love,* as merchants commend their goods when they would put them off. This commending of his love was in order to the shedding abroad of his love in our hearts by the Holy Ghost. He evinces his love in the most winning, affecting, endearing way imaginable. *While we were yet sinners,* implying that we were not to be always sinners, there should be a change wrought; for he died to save us, not in our sins, but from our sins; but we were yet sinners when he died for us."
+    }
+   ]
+  },
+  "hill": {
+   "ref": "John 15:13",
+   "votes": "180",
+   "scripture": "Greater love has no one than this, that someone lay down his life for his friends.",
+   "text": "Next we come to a verse about the shape of the gift itself, and what it means to lay down a life for the ones you love. Having seen the Son given, we get to ask what such love looks like when it is close to us, and what it asks of us in return.",
+   "evidence": [
+    "JHN.15.13"
+   ]
+  },
+  "sources": [
+   "Albert Barnes, Notes on the New Testament (public domain)",
+   "Augustine, Tractates on John 12 (public domain); NPNF translation, checked against the CCEL text",
+   "John Calvin, Calvin commentary JHN (public domain)",
+   "John Chrysostom, Homily on the Gospel of John 28 (public domain); NPNF translation, checked against the CCEL text",
+   "Matthew Henry, Matthew Henry's Commentary on the Whole Bible (public domain)",
+   "Scripture: World English Bible (public domain)",
+   "Cross references: OpenBible.info (CC BY)"
+  ]
+ },
+ "study": {
+  "key": "ET",
+  "title": "The Gift, the Mission, and the Verdict",
+  "shape": "themed",
+  "place": "John 3"
+ },
+ "scripture": {
+  "16": "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life.",
+  "17": "For God didn’t send his Son into the world to judge the world, but that the world should be saved through him.",
+  "18": "He who believes in him is not judged. He who doesn’t believe has been judged already, because he has not believed in the name of the only born Son of God."
+ },
+ "verse_questions": {},
+ "summaries": {},
+ "headings": {},
+ "labels": {
+  "page_title": "Rabbit study {key}: {title} ({scope})",
+  "study_heading": "Study {key}: {title}",
+  "verse_heading": "{place}:{verse}",
+  "focus": "Rabbit's own focus:",
+  "take": "Rabbit's own take:",
+  "verse_question": "Rabbit's question:",
+  "study_question": "Rabbit's question for this study:",
+  "closing": "Rabbit's take-away:",
+  "closing_short": "Rabbit's closing reflection:",
+  "ai_heading": "Heading by AI",
+  "ai_summary": "Modern language, by AI",
+  "own_words": "{teacher} in his own words",
+  "covers": "(this note covers {first}-{last})",
+  "gill_footnote": "Gill's footnote for this quotation:",
+  "ibid": "{raw} (the same work: {work})",
+  "jewish_source": "A later Jewish writing that Gill cites; not a statement of what people believed in Jesus's day.",
+  "roles": {
+   "overview": "Overview",
+   "meaning": "What it means",
+   "word": "The word",
+   "doctrine": "The teaching",
+   "tension": "Where teachers differ",
+   "context": "Background",
+   "application": "Living it",
+   "warning": "A warning"
+  },
+  "teacher_names": {
+   "matthew-henry": "Matthew Henry",
+   "john-calvin": "John Calvin",
+   "john-gill": "John Gill",
+   "jamieson-fausset-brown": "Jamieson, Fausset & Brown",
+   "augustine": "Augustine",
+   "chrysostom": "John Chrysostom",
+   "cyril": "Cyril of Alexandria",
+   "barnes": "Albert Barnes",
+   "wesley": "John Wesley"
+  },
+  "ai_text": "Written by AI",
+  "opening": "Opening",
+  "road_heading": "🕍 Rabbi Road",
+  "road_line": "Returning by way of {ref}:",
+  "hill_heading": "🐇 What's Over the Hill",
+  "prompt": "💬",
+  "rabbit_note": "Rabbit's note:",
+  "road_votes": "(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)",
+  "hill_votes": "(chosen by code: one hop on from {road}, {votes} votes)",
+  "sources_heading": "Sources consulted",
+  "ellipsis": "…",
+  "whole_passage": "Read the whole passage from {teacher}",
+  "scripture_ref": "{place}:{verse}"
+ },
+ "note": "Scripture and public-domain commentary, with a narrative written by AI.",
+ "credits": "RabbiRabbit weaves these sources together. Check every quotation against your own Bible and commentaries before teaching.",
+ "stats_line": "7 quotations from 5 teachers; validator and themed-study checks passed."
+}

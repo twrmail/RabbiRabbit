@@ -217,6 +217,41 @@
      }
     },
     {
+     "key": "ET",
+     "title": "The Gift, the Mission, and the Verdict",
+     "shape": "themed",
+     "scope": "John 3:16-18",
+     "verses": [
+      16,
+      18
+     ],
+     "status": "pending",
+     "approver": null,
+     "approved_at": null,
+     "frame_version": "frame_v2",
+     "renderer": "study_themed_v1",
+     "fingerprints": {
+      "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
+      "pieces": "28386df2658d9cf865526319f13e2358c286eae67e74a80550873b3536973b4b",
+      "frame": "9978b5d1302d406b58166a40c7b0e4170c871165fcca2ba7639b33aa2e803fbb"
+     },
+     "report": "pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json",
+     "files": {
+      "plan": {
+       "path": "pool/studies/jhn3-16-21/plan-jhn3-study-ET.json",
+       "sha256": "df04b9b1b8ad26aa07ddce43fdf24d36b92f4efc6b3145bba6f6133edd4a2192"
+      },
+      "page_content": {
+       "path": "pool/studies/jhn3-16-21/page-jhn3-study-ET.json",
+       "sha256": "1c02ffc13533c5d103c53360c12f3f788964e68ba4eb37d9815030f7709408e5"
+      },
+      "page_html": {
+       "path": "pool/studies/jhn3-16-21/study-jhn3-ET.html",
+       "sha256": "14cd2cbe12aacc3f199884d54654584b17fd2f7c01dd654853742a0131134f7e"
+      }
+     }
+    },
+    {
      "key": "ET0",
      "title": "Loved, Sent, Believed",
      "shape": "themed",
@@ -323,7 +358,7 @@
     }
    ],
    "approved": 0,
-   "pending": 9
+   "pending": 10
   }
  }
 }
