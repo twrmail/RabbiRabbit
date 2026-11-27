@@ -8,7 +8,7 @@ record can be checked later), approval-records-jhn3.json, studies-summary.json, 
 four study pages; not itself served). No model calls."""
 import json, html, re, sys, os, copy
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import validator as V, run_validator as RV, fingerprints as F, studies_jhn as S, run_fingerprints as RF, study_render as SR, weave as WE
+import validator as V, run_validator as RV, fingerprints as F, studies_jhn as S, run_fingerprints as RF, study_render as SR, weave as WE, full_study as FS
 REPO = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 
 ALLOW = set('Matthew Henry John Calvin Gill Jamieson Fausset Brown Augustine Chrysostom Cyril God Christ Jesus Son Lord Savior Rabbit Gentiles Gentile Jews Jew Messiah'.split())
@@ -34,6 +34,14 @@ LABELS = dict(
     roles={'overview': 'Overview', 'meaning': 'What it means', 'word': 'The word', 'doctrine': 'The teaching', 'tension': 'Where teachers differ',
            'context': 'Background', 'application': 'Living it', 'warning': 'A warning'},
     teacher_names=S.TEACH)
+LABELS_FULL = dict(LABELS, page_title='Rabbit study {key}: {title} ({scope})', study_heading='Study {key}: {title}', ai_text='Written by AI',
+    opening='Opening', road_heading='🕍 Rabbi Road', road_line='Returning by way of {ref}:', hill_heading="🐇 What's Over the Hill", prompt='💬',
+    road_votes='(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)', hill_votes='(chosen by code: one hop on from {road}, {votes} votes)')
+NOTE_FULL = ("Private pipeline test: the full study, written by an AI model ({model}) from Study E's four passages, inside the rails. Scripture (WEB) "
+    "and every teacher's words are printed by code, exactly as stored. Code chose the Rabbi Road and Over the Hill passages from the OpenBible.info "
+    "cross references; the model only wrote around them. Every AI sentence names its evidence and passed the mechanical checks (no added names, numbers, "
+    "references, quotation marks or claims about what teachers hold in general; bridges use only words from their evidence). Those checks cannot judge "
+    "faithful meaning: that is your review. Labeled AI text is the model's.")
 LABELS_NARRATIVE = dict(LABELS, ai_bridge='Bridge by AI', ellipsis='…', whole_passage='Read the whole passage from {teacher}')
 NOTE = ("Private pipeline test. Built only from the John 3:16-21 teacher pieces and validated against its own scope. For every teacher "
         "passage, the modern-language summary was written by the AI stand-in (Claude; no model call) from that one passage and names the "
@@ -57,9 +65,33 @@ def credits(P, ids, narrative=False):
     return ('Credits. ' + '; '.join(parts) + ". Teacher text is shown as stored. The modern-language summaries" +
             (" and headings" if any(i in S.HEAD for i in ids) else '') + " are the AI's, labeled on the page; questions and reflections are Rabbit's own.")
 
+def full_content(st, P, WV, ids, teachers):
+    d = st['full']; Fs = d['study']; M = FS.materials(); lo, hi = st['scope']
+    q = [c for c in M['road']['candidates'] if c['id'] in Fs['rabbi_road']['quote']]; q.sort(key=lambda c: Fs['rabbi_road']['quote'].index(c['id']))
+    seen = {}
+    for i in ids: seen.setdefault((P[i]['teacher_key'], P[i]['work_title']), P[i]['rights'])
+    for c in q: seen.setdefault((c['teacher_key'], c['work']), c['rights'])
+    cred = ('Credits. ' + '; '.join(f'{S.TEACH[k]}, {w} (rights tier {t}' + ('; public domain by age' if t in 'AB' else '') +
+            ('; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)' if k in ('augustine', 'chrysostom', 'cyril') else '') + ')'
+            for (k, w), t in sorted(seen.items())) +
+            '. Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Teacher text is shown as stored; every other word is the AI model\'s, labeled on the page.')
+    nm = sorted({S.TEACH[t] for t in teachers} | {c['teacher'] for c in q})
+    return dict(renderer=SR.FULL, full=dict(model=d['model'], built=d['built'], title=Fs['title'], opening=Fs['opening'],
+                bridges={str(b['verse']): b['bridge'] for b in Fs['body'] if b.get('bridge')},
+                road=dict(ref=M['road']['ref'], votes=str(M['road']['votes']), scripture=M['road']['scripture'], text=Fs['rabbi_road']['text'],
+                          evidence=Fs['rabbi_road']['evidence'], prompt=Fs['rabbi_road']['prompt'],
+                          quotes=[dict(id=c['id'], teacher=c['teacher'], work=c['work'], text=c['text']) for c in q]),
+                hill=dict(ref=M['hill']['ref'], votes=str(M['hill']['votes']), scripture=M['hill']['scripture'], text=Fs['over_the_hill']['text'], evidence=Fs['over_the_hill']['evidence'])),
+                study=dict(key=st['key'], title=Fs['title'], shape='full', place='John 3'),
+                scripture={str(v): WV[str(v)] for v in range(lo, hi + 1)}, verse_questions={},
+                summaries={p['piece']: p['summary'] for b in Fs['body'] for p in b['pieces']}, headings={p['piece']: p['heading'] for b in Fs['body'] for p in b['pieces']},
+                labels=LABELS_FULL, note=NOTE_FULL.format(model=d['model']), credits=cred,
+                stats_line=f"Teachers in this study: {', '.join(nm)}. {len(ids)} passages on John 3:{lo}-{hi}, {len(q)} on {M['road']['ref']}; validator and full-study checks passed.")
+
 def page_content(st, P, WV, stats):
     ids = [i for sec in st['sections'] for i, _ in sec['ids']]; lo, hi = st['scope']
     teachers = sorted({P[i]['teacher_key'] for i in ids})
+    if st.get('full'): return full_content(st, P, WV, ids, teachers)
     if st.get('weave'):
         return dict(renderer=SR.NARRATIVE, weave=st['weave'],
                     study=dict(key=st['key'], title=st['title'], shape=st.get('shape', 'full'), place='John 3', focus=st['focus'], take=st['take'],
@@ -103,21 +135,24 @@ def main(report, out):
         plan, req = plan_and_request(st, req0)
         gaps = V.make_gaps(pool, req, cov, 'public'); v = V.validate(plan, pool, req, gaps, 'public', V.DEFAULT_BUDGET)
         ids = [i for sec in st['sections'] for i, _ in sec['ids']]
-        sb = [] if st.get('weave') else [(i, check_say(P, i, S.SAY[i])) for i in ids]
-        if st.get('weave'):
+        sb = [] if st.get('weave') or st.get('full') else [(i, check_say(P, i, S.SAY[i])) for i in ids]
+        if st.get('full'):
+            fp, fstats = FS.check(st['full']['study'], FS.materials()); sb += [(rule, [msg]) for rule, msg in fp]
+        elif st.get('weave'):
             wf = WE.validate(st['weave'], plan, pool, req, WV, S.TEACH, F.pieces_fp(plan, pool))
             sb += [(rule, [msg]) for rule, msg in wf]
         elif st.get('shape') == 'short': sb += [(i + ' heading', check_say(P, i, S.HEAD[i])) for i in ids]
-        if not st.get('weave'): sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
-        own = [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
-        sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + ([] if st.get('weave') else [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids]) for m in [W11.search(t)] if m]
+        if not (st.get('weave') or st.get('full')): sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
+        own = [] if st.get('full') else [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
+        sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + ([] if st.get('weave') or st.get('full') else [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids]) for m in [W11.search(t)] if m]
         sb = [x for x in sb if x[1]]
         json.dump(plan, open(f"{out}/plan-jhn3-study-{st['key']}.json", 'w'), indent=1)
         r = dict(title=st['title'], ok=v['ok'], stats=v['stats'], rejections=v['rejections'],
                  warnings=[(w['kind'], w.get('verse'), w['msg'][:120]) for w in v['warnings']], summary_check_failures=sb, frame_version=None, tamper_tests=None)
         if sb: bad += 1
         if v['ok']:
-            if st.get('weave'):
+            if st.get('full'): r['ai_share'] = f"{fstats['ai_share']}%"; r['teacher_chars_printed'] = fstats['teacher_chars']
+            elif st.get('weave'):
                 rw = WE.resolve(st['weave'], P, WV); segs = [x for m in rw['movements'] for x in m['segments']]
                 ai = sum(len(x['text']) for x in segs if x['kind'] == 'bridge'); tch = sum(len(p['text']) for x in segs if x['kind'] == 'quote' for p in x['parts'])
                 r['ai_share'] = f"{100 * ai // (ai + tch + sum(len(t) for t in own))}%"; r['teacher_chars_printed'] = tch

@@ -162,4 +162,13 @@ for _k, _t, _sel in (('EW', 'The Love That Gives (narrative, whole passages)', {
                       {'MHC3.16.05': [0, 1], 'CHR3.16.1.01': [0, 1], 'AUG3.17-18.1.01': [0, 1, 3], 'MHC3.18.01': [0, 2]})):
     STUDIES.append(dict(_E, key=_k, title=_t, weave=_weave(_sel),
         take="This is Study E's plan told as one story. Scripture and the teachers' words are printed exactly; the short bridges between them are the AI's and are marked."))
+
+# The full Rabbit study (Nov 27): Study E's plan written whole by a model inside the rails (full_study.py). EF exists only once a real run
+# has passed every check and its output is committed at pool/studies/jhn3-16-21/full/EF.json; it is PENDING until Tom approves it.
+import os as _os, json as _json
+_EF = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..', 'pool', 'studies', 'jhn3-16-21', 'full', 'EF.json')
+def full_study(key, path):
+    d = _json.load(open(path))
+    return dict(_E, key=key, title=d['study']['title'], full=d, take='', closing="Rabbit's closing reflection: ")
+if _os.path.exists(_EF): STUDIES.append(full_study('EF', _EF))
 STUDIES[:] = sorted(STUDIES, key=lambda st: st['key'])

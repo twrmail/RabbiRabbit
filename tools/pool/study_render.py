@@ -49,8 +49,44 @@ def narrative(fr):
     H.append(f'<div class=credits>{e(fr["credits"])}</div></section>')
     return '\n'.join(H)
 
+FULL = 'study_full_v1'
+FCSS = CSS + '''.aitext{margin:.6rem 0;padding:.5rem .9rem;border-left:3px solid #d9c9a0;background:#fffdf7}.aitext .ai{display:block;margin-bottom:.2rem}
+.road{margin-top:2.4rem;border-top:3px solid #8a6d3b;padding-top:.6rem}.ref{font:600 15px system-ui;color:#5a4520}.why{font:12px system-ui;color:#777}'''
+
+def full(fr):
+    """Full Rabbit study (renderer 'study_full_v1'): opening, verse-by-verse body (as Study E, with bridges), Rabbi Road, What's Over the
+    Hill. Scripture and teacher words come from the frame exactly; every AI field is labeled."""
+    L, st, T, X = fr['labels'], fr['study'], fr['labels']['teacher_names'], fr['full']
+    ai = lambda t: f'<div class=aitext><span class=ai>{e(L["ai_text"])}</span>{e(t)}</div>'
+    H = [f'<section id="s{e(st["key"])}"><h2>{e(L["study_heading"].format(key=st["key"], title=st["title"]))}</h2>',
+         f'<p class=note>{e(fr["note"])}</p>', f'<p class=own>{e(fr["stats_line"])}</p>',
+         f'<h3>{e(L["opening"])}</h3>', ai(X['opening']['text'])]
+    for v in sorted(fr['verses'], key=int):
+        vd = fr['verses'][v]
+        H.append(f'<h3>{e(L["verse_heading"].format(place=st["place"], verse=v))}</h3><div class=v>{e(vd["scripture_text"])}</div>')
+        for it in vd['items']:
+            name = T[it['teacher_key']]; cv = it['covers_verses']
+            wide = ' ' + e(L['covers'].format(first=cv[0], last=cv[-1])) if len(cv) > 1 else ''
+            H.append(f'<div class=t><div class=who>{e(name)} <span>&middot; {e(it["work"] or "")}{wide}</span></div>'
+                     f'<div class=head>{e(it["heading"])} <span class=ai>{e(L["ai_text"])}</span></div><div class=say>{e(it["summary"])}</div>'
+                     f'<details><summary>{e(L["own_words"].format(teacher=name))}</summary><div class=words>{md(it["text"])}</div></details></div>')
+        b = X['bridges'].get(v)
+        if b: H.append(ai(b['text']))
+    r = X['road']
+    H.append(f'<h2 class=road>{e(L["road_heading"])}</h2><p class=ref>{e(L["road_line"].format(ref=r["ref"]))}</p>'
+             f'<div class=v>{e(r["scripture"])}</div><p class=why>{e(L["road_votes"].format(votes=r["votes"]))}</p>' + ai(r['text']))
+    for q in r['quotes']:
+        H.append(f'<div class=t><div class=who>{e(q["teacher"])} <span>&middot; {e(q["work"] or "")} &middot; {e(r["ref"])}</span></div><div class=words>{md(q["text"])}</div></div>')
+    H.append(f'<p class=q>{e(L["prompt"])} {e(r["prompt"])} <span class=ai>{e(L["ai_text"])}</span></p>')
+    h = X['hill']
+    H.append(f'<h2 class=road>{e(L["hill_heading"])}</h2><p class=ref>{e(h["ref"])}</p><div class=v>{e(h["scripture"])}</div>'
+             f'<p class=why>{e(L["hill_votes"].format(road=r["ref"], votes=h["votes"]))}</p>' + ai(h['text']))
+    H.append(f'<div class=credits>{e(fr["credits"])}</div></section>')
+    return '\n'.join(H)
+
 def body(fr):
     """The study section: what an approval covers."""
+    if fr.get('renderer') == FULL and fr.get('full'): return full(fr)
     if fr.get('renderer') == NARRATIVE and fr.get('weave'): return narrative(fr)
     if fr.get('renderer') != RENDERER: raise ValueError(f"frame names renderer {fr.get('renderer')!r}, this is {RENDERER!r}")
     L, st = fr['labels'], fr['study']; R = L['roles']; T = L['teacher_names']
@@ -83,5 +119,5 @@ def body(fr):
 def page(fr):
     """A whole page for one study."""
     t = fr['labels']['page_title'].format(key=fr['study']['key'], title=fr['study']['title'], scope=fr['scope'])
-    css = NCSS if fr.get('renderer') == NARRATIVE else CSS
+    css = NCSS if fr.get('renderer') == NARRATIVE else FCSS if fr.get('renderer') == FULL else CSS
     return f'<!doctype html><meta charset=utf-8><title>{e(t)}</title><style>{css}</style>\n{body(fr)}\n'
