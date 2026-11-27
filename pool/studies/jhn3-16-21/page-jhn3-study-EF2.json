@@ -1,0 +1,135 @@
+{
+ "renderer": "study_full_v1",
+ "full": {
+  "model": "claude-sonnet-5-5",
+  "built": "2026-11-27T14:54:06Z",
+  "title": "The Love That Came to Save",
+  "opening": {
+   "text": "Imagine hearing that someone gave up what they treasured most for people who had given them nothing back. That is the heart of these three verses. In a few short lines, Jesus tells us why God sent his Son, what the Son came to do, and what happens to the one who trusts him. These verses are not about a God hunting for reasons to condemn us. They show a God whose love moves first, and they say plainly what is at stake in how we answer. If you are new to following Jesus, this is a good place to stand and look around.",
+   "evidence": [
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18"
+   ]
+  },
+  "bridges": {
+   "16": {
+    "text": "So the love is real, and it is huge. But a gift this costly raises a question: what is it for? Is God handing over his Son to put the world on trial? The next verse answers, and the answer is gentler than many of us expect.",
+    "evidence": [
+     "JHN.3.16",
+     "JHN.3.17"
+    ]
+   },
+   "17": {
+    "text": "If Jesus came to save and not to condemn, what do we make of judgment? The next verse does not dodge the question. It sets two ways of living side by side and shows what turns on one thing: whether we believe in the Son.",
+    "evidence": [
+     "JHN.3.17",
+     "JHN.3.18"
+    ]
+   }
+  },
+  "road": {
+   "ref": "Romans 5:8",
+   "votes": "995",
+   "scripture": "But God commends his own love toward us, in that while we were yet sinners, Christ died for us.",
+   "text": "Let us take a short walk to this verse in Romans and then return. Our passage tells us that God so loved the world. Romans tells us when that love acted: while we were yet sinners. God did not wait for the world to clean itself up and then send his Son. Henry says God commends his love the way a merchant commends his goods, in the most winning and endearing way. This love also does not leave us as it found us, for Christ died to save us from our sins, not in them. Now go back to our passage. The world in the first verse is not a world of the deserving. The salvation in the second is offered to people who are still sinners. And the not condemned of the last rests on what Christ has already done, not on our record. Believing is receiving what was given while we were still far from ready.",
+   "evidence": [
+    "ROM.5.8",
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18",
+    "MHC5.8.04"
+   ],
+   "prompt": "Where do you feel you must tidy up your life before you can come close to God, and how does Christ dying for us while we were yet sinners speak to that?",
+   "quotes": [
+    {
+     "id": "MHC5.8.04",
+     "teacher": "Matthew Henry",
+     "work": "Matthew Henry's Commentary on the Whole Bible",
+     "text": "*Commendeth his love,* as merchants commend their goods when they would put them off. This commending of his love was in order to the shedding abroad of his love in our hearts by the Holy Ghost. He evinces his love in the most winning, affecting, endearing way imaginable. *While we were yet sinners,* implying that we were not to be always sinners, there should be a change wrought; for he died to save us, not in our sins, but from our sins; but we were yet sinners when he died for us."
+    }
+   ]
+  },
+  "hill": {
+   "ref": "John 15:13",
+   "votes": "180",
+   "scripture": "Greater love has no one than this, that someone lay down his life for his friends.",
+   "text": "Just over the hill, Jesus speaks again of love at its greatest: someone laying down his life for his friends. We have just seen a love that gave a Son for the world. There we will hear Jesus himself describe how far love can go, and it is worth the walk to listen.",
+   "evidence": [
+    "JHN.15.13"
+   ]
+  }
+ },
+ "study": {
+  "key": "EF2",
+  "title": "The Love That Came to Save",
+  "shape": "full",
+  "place": "John 3"
+ },
+ "scripture": {
+  "16": "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life.",
+  "17": "For God didn’t send his Son into the world to judge the world, but that the world should be saved through him.",
+  "18": "He who believes in him is not judged. He who doesn’t believe has been judged already, because he has not believed in the name of the only born Son of God."
+ },
+ "verse_questions": {},
+ "summaries": {
+  "MHC3.16.05": "Henry marvels that the great, holy God would love a worthless, wicked world. This love was not kept for one nation. Christ came in love for the whole world, outsiders as well as insiders.",
+  "CHR3.16.1.01": "Chrysostom hears Jesus saying: do not be shocked that I must be lifted up. The Father gave his Son for ungrateful slaves. Few would do that even for a friend, so every word here carries weight.",
+  "AUG3.17-18.1.01": "Augustine pictures Christ as a physician who comes to heal the sick. Whoever ignores the doctor's orders harms himself. Christ comes as Saviour, not judge. If you are not saved by him, you will be judged by yourself.",
+  "MHC3.18.01": "Henry says the believer, though a sinner who stands guilty by his own confession, is not condemned. The process is stopped. This is more than a reprieve: he is acquitted and discharged, not dealt with by strict justice for what his sins deserve."
+ },
+ "headings": {
+  "MHC3.16.05": "Wonder at a love for the worthless",
+  "CHR3.16.1.01": "A gift beyond what people would do",
+  "AUG3.17-18.1.01": "The physician who comes to heal",
+  "MHC3.18.01": "Not condemned, but acquitted"
+ },
+ "labels": {
+  "page_title": "Rabbit study {key}: {title} ({scope})",
+  "study_heading": "Study {key}: {title}",
+  "verse_heading": "{place}:{verse}",
+  "focus": "Rabbit's own focus:",
+  "take": "Rabbit's own take:",
+  "verse_question": "Rabbit's question:",
+  "study_question": "Rabbit's question for this study:",
+  "closing": "Rabbit's take-away:",
+  "closing_short": "Rabbit's closing reflection:",
+  "ai_heading": "Heading by AI",
+  "ai_summary": "Modern language, by AI",
+  "own_words": "{teacher} in his own words",
+  "covers": "(this note covers {first}-{last})",
+  "gill_footnote": "Gill's footnote for this quotation:",
+  "ibid": "{raw} (the same work: {work})",
+  "jewish_source": "A later Jewish writing that Gill cites; not a statement of what people believed in Jesus's day.",
+  "roles": {
+   "overview": "Overview",
+   "meaning": "What it means",
+   "word": "The word",
+   "doctrine": "The teaching",
+   "tension": "Where teachers differ",
+   "context": "Background",
+   "application": "Living it",
+   "warning": "A warning"
+  },
+  "teacher_names": {
+   "matthew-henry": "Matthew Henry",
+   "john-calvin": "John Calvin",
+   "john-gill": "John Gill",
+   "jamieson-fausset-brown": "Jamieson, Fausset & Brown",
+   "augustine": "Augustine",
+   "chrysostom": "John Chrysostom",
+   "cyril": "Cyril of Alexandria"
+  },
+  "ai_text": "Written by AI",
+  "opening": "Opening",
+  "road_heading": "🕍 Rabbi Road",
+  "road_line": "Returning by way of {ref}:",
+  "hill_heading": "🐇 What's Over the Hill",
+  "prompt": "💬",
+  "road_votes": "(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)",
+  "hill_votes": "(chosen by code: one hop on from {road}, {votes} votes)"
+ },
+ "note": "Private pipeline test: the full study, written by an AI model (claude-sonnet-5-5) from Study E's four passages, inside the rails. Scripture (WEB) and every teacher's words are printed by code, exactly as stored. Code chose the Rabbi Road and Over the Hill passages from the OpenBible.info cross references; the model only wrote around them. Every AI sentence names its evidence and passed the mechanical checks (no added names, numbers, references, quotation marks or claims about what teachers hold in general; bridges use only words from their evidence). Those checks cannot judge faithful meaning: that is your review. Labeled AI text is the model's.",
+ "credits": "Credits. Augustine, Tractates on John 12 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); John Chrysostom, Homily on the Gospel of John 27 (rights tier B; public domain by age; NPNF translation, checked against the CCEL text (pool/fathers-source-checks.json)); Matthew Henry, Matthew Henry's Commentary on the Whole Bible (rights tier A; public domain by age). Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Teacher text is shown as stored; every other word is the AI model's, labeled on the page.",
+ "stats_line": "Teachers in this study: Augustine, John Chrysostom, Matthew Henry. 4 passages on John 3:16-18, 1 on Romans 5:8; validator and full-study checks passed."
+}

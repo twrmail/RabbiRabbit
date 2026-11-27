@@ -1,0 +1,105 @@
+{
+ "schema": "study_full_v1",
+ "model": "claude-sonnet-5-5",
+ "built": "2026-11-27T14:54:06Z",
+ "destinations": {
+  "road": "Romans 5:8",
+  "hill": "John 15:13"
+ },
+ "profile": "free",
+ "study": {
+  "title": "The Love That Came to Save",
+  "opening": {
+   "text": "Imagine hearing that someone gave up what they treasured most for people who had given them nothing back. That is the heart of these three verses. In a few short lines, Jesus tells us why God sent his Son, what the Son came to do, and what happens to the one who trusts him. These verses are not about a God hunting for reasons to condemn us. They show a God whose love moves first, and they say plainly what is at stake in how we answer. If you are new to following Jesus, this is a good place to stand and look around.",
+   "evidence": [
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18"
+   ]
+  },
+  "body": [
+   {
+    "verse": 16,
+    "pieces": [
+     {
+      "piece": "MHC3.16.05",
+      "heading": "Wonder at a love for the worthless",
+      "summary": "Henry marvels that the great, holy God would love a worthless, wicked world. This love was not kept for one nation. Christ came in love for the whole world, outsiders as well as insiders."
+     },
+     {
+      "piece": "CHR3.16.1.01",
+      "heading": "A gift beyond what people would do",
+      "summary": "Chrysostom hears Jesus saying: do not be shocked that I must be lifted up. The Father gave his Son for ungrateful slaves. Few would do that even for a friend, so every word here carries weight."
+     }
+    ],
+    "bridge": {
+     "text": "So the love is real, and it is huge. But a gift this costly raises a question: what is it for? Is God handing over his Son to put the world on trial? The next verse answers, and the answer is gentler than many of us expect.",
+     "evidence": [
+      "JHN.3.16",
+      "JHN.3.17"
+     ]
+    }
+   },
+   {
+    "verse": 17,
+    "pieces": [
+     {
+      "piece": "AUG3.17-18.1.01",
+      "heading": "The physician who comes to heal",
+      "summary": "Augustine pictures Christ as a physician who comes to heal the sick. Whoever ignores the doctor's orders harms himself. Christ comes as Saviour, not judge. If you are not saved by him, you will be judged by yourself."
+     }
+    ],
+    "bridge": {
+     "text": "If Jesus came to save and not to condemn, what do we make of judgment? The next verse does not dodge the question. It sets two ways of living side by side and shows what turns on one thing: whether we believe in the Son.",
+     "evidence": [
+      "JHN.3.17",
+      "JHN.3.18"
+     ]
+    }
+   },
+   {
+    "verse": 18,
+    "pieces": [
+     {
+      "piece": "MHC3.18.01",
+      "heading": "Not condemned, but acquitted",
+      "summary": "Henry says the believer, though a sinner who stands guilty by his own confession, is not condemned. The process is stopped. This is more than a reprieve: he is acquitted and discharged, not dealt with by strict justice for what his sins deserve."
+     }
+    ],
+    "bridge": null
+   }
+  ],
+  "rabbi_road": {
+   "text": "Let us take a short walk to this verse in Romans and then return. Our passage tells us that God so loved the world. Romans tells us when that love acted: while we were yet sinners. God did not wait for the world to clean itself up and then send his Son. Henry says God commends his love the way a merchant commends his goods, in the most winning and endearing way. This love also does not leave us as it found us, for Christ died to save us from our sins, not in them. Now go back to our passage. The world in the first verse is not a world of the deserving. The salvation in the second is offered to people who are still sinners. And the not condemned of the last rests on what Christ has already done, not on our record. Believing is receiving what was given while we were still far from ready.",
+   "evidence": [
+    "ROM.5.8",
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18",
+    "MHC5.8.04"
+   ],
+   "quote": [
+    "MHC5.8.04"
+   ],
+   "prompt": "Where do you feel you must tidy up your life before you can come close to God, and how does Christ dying for us while we were yet sinners speak to that?"
+  },
+  "over_the_hill": {
+   "text": "Just over the hill, Jesus speaks again of love at its greatest: someone laying down his life for his friends. We have just seen a love that gave a Son for the world. There we will hear Jesus himself describe how far love can go, and it is worth the walk to listen.",
+   "evidence": [
+    "JHN.15.13"
+   ]
+  }
+ },
+ "critic": {
+  "model": "claude-sonnet-5-5",
+  "notes": [
+   {
+    "where": "body[verse 16].pieces[CHR3.16.1.01].summary",
+    "issue": "Chrysostom says a man would not do this even for a friend, and not readily even for a righteous man. The summary softens this to 'few would'. It also ties it to 'so every word here carries weight', but Chrysostom's remark about each word's significance is about Christ speaking concisely to Nicodemus, not a conclusion from the friend comparison.",
+    "severity": "minor"
+   }
+  ],
+  "ok": true,
+  "raw": null
+ }
+}
