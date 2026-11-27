@@ -1,0 +1,6 @@
+{"schema": "study_corrections_v1", "study": "EF2", "by": "Rabbit (Tom Robinson)", "date": "2026-11-27",
+ "edits": [
+  {"field": "opening", "old": "In a few short lines, Jesus tells us why", "new": "In a few short lines, these verses tell us why",
+   "why": "Who is speaking in 3:16-18 is not settled: the teachers here hear Jesus, many Bibles hear John. The AI stated one reading as fact."}],
+ "notes": [
+  {"after_verse": 16, "text": "Who is speaking here? Many Bibles end Jesus' words to Nicodemus at verse 15 and read verses 16-21 as John's reflection. Henry and Chrysostom, in this study, hear them as Jesus still speaking. Either way, it is God's word to us."}]}

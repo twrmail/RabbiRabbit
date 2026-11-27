@@ -5,12 +5,22 @@
   "built": "2026-11-27T14:54:06Z",
   "title": "The Love That Came to Save",
   "opening": {
-   "text": "Imagine hearing that someone gave up what they treasured most for people who had given them nothing back. That is the heart of these three verses. In a few short lines, Jesus tells us why God sent his Son, what the Son came to do, and what happens to the one who trusts him. These verses are not about a God hunting for reasons to condemn us. They show a God whose love moves first, and they say plainly what is at stake in how we answer. If you are new to following Jesus, this is a good place to stand and look around.",
+   "text": "Imagine hearing that someone gave up what they treasured most for people who had given them nothing back. That is the heart of these three verses. In a few short lines, these verses tell us why God sent his Son, what the Son came to do, and what happens to the one who trusts him. These verses are not about a God hunting for reasons to condemn us. They show a God whose love moves first, and they say plainly what is at stake in how we answer. If you are new to following Jesus, this is a good place to stand and look around.",
    "evidence": [
     "JHN.3.16",
     "JHN.3.17",
     "JHN.3.18"
    ]
+  },
+  "corrections": {
+   "by": "Rabbit (Tom Robinson)",
+   "date": "2026-11-27",
+   "fields": [
+    "opening"
+   ],
+   "notes": {
+    "16": "Who is speaking here? Many Bibles end Jesus' words to Nicodemus at verse 15 and read verses 16-21 as John's reflection. Henry and Chrysostom, in this study, hear them as Jesus still speaking. Either way, it is God's word to us."
+   }
   },
   "bridges": {
    "16": {
@@ -126,6 +136,8 @@
   "road_line": "Returning by way of {ref}:",
   "hill_heading": "🐇 What's Over the Hill",
   "prompt": "💬",
+  "corrected": "corrected by {by}",
+  "rabbit_note": "Rabbit's note:",
   "road_votes": "(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)",
   "hill_votes": "(chosen by code: one hop on from {road}, {votes} votes)"
  },

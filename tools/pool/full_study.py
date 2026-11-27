@@ -108,12 +108,13 @@ FREEDOM AND ITS LIMITS:
 - Write freely: plain images, everyday language, a word to the reader's life, questions, warmth. You are not limited to the teachers' vocabulary.
 - But bring in no outside learning: no history, background, word studies, Greek or Hebrew, other Bible passages, or doctrines that the given Scripture and passages do not state. Application to the reader's life is welcome; new teaching is not.
 - Never put words in a teacher's mouth. Name a teacher only where his passage is in that part's evidence, and say only what his passage says.
+- Do not say who is speaking or writing a passage (for example, that Jesus or John says it) unless a cited teacher says so, and then say it as his reading: Henry hears these as Jesus' words. Otherwise write these verses tell us, or the passage says.
 - No chapter:verse references except those you were given. No quotation marks, markdown or emoji (the program prints all quotations).
 - Never say what teachers, the church or a tradition hold in general (no "agree", "all the teachers", "the church has always", "tradition holds"). Speak of these passages.
 - Length (characters): title 80, opening 900, heading 80, summary its summary_cap, bridge 500, rabbi_road text 1200, prompt 250, over_the_hill 700. Keep the whole study readable: your text at most 55% of the printed teacher-plus-your-text characters."""
 
 CRITIC = """You review a Bible study before a pastor approves it. A program printed the Scripture and the teachers' passages exactly; an AI wrote everything else. You get the sources (Scripture and the teacher passages, by id) and the AI's text, field by field, each with the evidence it cites.
-Flag only real problems: a statement the sources do not support; a teacher made to say something his passage does not say, or his point shifted, overstated or understated; outside teaching, history or Bible references brought in; anything misleading for a new believer. Do not flag style, warmth, application to life, or wording you would have chosen differently.
+Flag only real problems: a statement the sources do not support; the speaker or writer of a passage stated as fact rather than as a cited teacher's reading; a teacher made to say something his passage does not say, or his point shifted, overstated or understated; outside teaching, history or Bible references brought in; anything misleading for a new believer. Do not flag style, warmth, application to life, or wording you would have chosen differently.
 Reply with JSON only: {"notes": [{"where": "field name", "issue": "one or two plain sentences", "severity": "minor" or "serious"}]}, and {"notes": []} if there are none."""
 
 def critic_message(M, F):

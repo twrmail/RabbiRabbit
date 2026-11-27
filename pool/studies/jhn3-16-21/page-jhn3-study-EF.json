@@ -134,6 +134,8 @@
   "road_line": "Returning by way of {ref}:",
   "hill_heading": "🐇 What's Over the Hill",
   "prompt": "💬",
+  "corrected": "corrected by {by}",
+  "rabbit_note": "Rabbit's note:",
   "road_votes": "(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)",
   "hill_votes": "(chosen by code: one hop on from {road}, {votes} votes)"
  },

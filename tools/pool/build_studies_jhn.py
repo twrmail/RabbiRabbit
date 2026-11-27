@@ -36,6 +36,7 @@ LABELS = dict(
     teacher_names=S.TEACH)
 LABELS_FULL = dict(LABELS, page_title='Rabbit study {key}: {title} ({scope})', study_heading='Study {key}: {title}', ai_text='Written by AI',
     opening='Opening', road_heading='🕍 Rabbi Road', road_line='Returning by way of {ref}:', hill_heading="🐇 What's Over the Hill", prompt='💬',
+    corrected='corrected by {by}', rabbit_note="Rabbit's note:",
     road_votes='(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)', hill_votes='(chosen by code: one hop on from {road}, {votes} votes)')
 NOTE_FULL = ("Private pipeline test: the full study, written by an AI model ({model}) from Study E's four passages, inside the rails. Scripture (WEB) "
     "and every teacher's words are printed by code, exactly as stored. Code chose the Rabbi Road and Over the Hill passages from the OpenBible.info "
@@ -76,7 +77,9 @@ def full_content(st, P, WV, ids, teachers):
             for (k, w), t in sorted(seen.items())) +
             '. Scripture: World English Bible (public domain). Cross references: OpenBible.info (CC BY). Teacher text is shown as stored; every other word is the AI model\'s, labeled on the page.')
     nm = sorted({S.TEACH[t] for t in teachers} | {c['teacher'] for c in q})
+    cor = d.get('corrections')
     return dict(renderer=SR.FULL, full=dict(model=d['model'], built=d['built'], title=Fs['title'], opening=Fs['opening'],
+                **(dict(corrections=dict(by=cor['by'], date=cor['date'], fields=cor['fields'], notes={str(n['after_verse']): n['text'] for n in cor['notes']})) if cor else {}),
                 bridges={str(b['verse']): b['bridge'] for b in Fs['body'] if b.get('bridge')},
                 road=dict(ref=M['road']['ref'], votes=str(M['road']['votes']), scripture=M['road']['scripture'], text=Fs['rabbi_road']['text'],
                           evidence=Fs['rabbi_road']['evidence'], prompt=Fs['rabbi_road']['prompt'],
@@ -143,7 +146,7 @@ def main(report, out):
             sb += [(rule, [msg]) for rule, msg in wf]
         elif st.get('shape') == 'short': sb += [(i + ' heading', check_say(P, i, S.HEAD[i])) for i in ids]
         if not (st.get('weave') or st.get('full')): sb += [(i, [f'summary {len(S.SAY[i])} characters; cap {summary_cap(P, i)} (half the passage, floor 150)']) for i in ids if len(S.SAY[i]) > summary_cap(P, i)]
-        own = [] if st.get('full') else [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
+        own = ([n['text'] for n in st['full']['corrections']['notes']] if st.get('full', {}).get('corrections') else []) if st.get('full') else [st['focus'], st['take'], st['closing'], st.get('question') or ''] + [sec['q'] or '' for sec in st['sections']]
         sb += [('W11', [f'claims beyond the cited passages: {m.group(0)!r} in {t[:60]!r}']) for t in own + ([] if st.get('weave') or st.get('full') else [S.SAY[i] for i in ids] + [S.HEAD.get(i, '') for i in ids]) for m in [W11.search(t)] if m]
         sb = [x for x in sb if x[1]]
         json.dump(plan, open(f"{out}/plan-jhn3-study-{st['key']}.json", 'w'), indent=1)
