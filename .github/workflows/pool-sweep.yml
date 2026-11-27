@@ -33,6 +33,8 @@ jobs:
         run: python3 -B tools/pool/test_full_study.py
       - name: Themed study rails
         run: python3 -B tools/pool/test_themed_study.py
+      - name: Study Worker v1 (offline; serves only approved, hash-checked pages)
+        run: node tools/study-worker/test-worker.mjs
       - name: John studies rebuild equals the committed pages and records
         run: |
           python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json /tmp/jhn-rebuild

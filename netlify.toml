@@ -2,7 +2,7 @@
   command = "npm run build"
   publish = "dist"
   functions = "netlify/functions"
-  ignore = '''git diff --name-only $CACHED_COMMIT_REF $COMMIT_REF | grep -qvE "^(.github/|tools/|library/|claude/|docs/|morning/)" && exit 1 || exit 0'''
+  ignore = '''git diff --name-only $CACHED_COMMIT_REF $COMMIT_REF | grep -qvE "^(.github/|tools/|library/|claude/|docs/|morning/|pool/|worker-archive/)" && exit 1 || exit 0'''
 
 # Icons folder — serve directly before catch-all
 [[redirects]]
