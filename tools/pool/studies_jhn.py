@@ -1,6 +1,6 @@
 # Three studies built from the John 3:16-21 pool. Teacher text = stored pieces (byte-exact). 'say' = modern-language summary written by the AI stand-in (Claude, no model call),
 # attributed by name, from that one piece only. Rabbit's own questions/headings are labeled as such on the page.
-TEACH = {'matthew-henry':'Matthew Henry','john-calvin':'John Calvin','john-gill':'John Gill','jamieson-fausset-brown':'Jamieson, Fausset & Brown','augustine':'Augustine','chrysostom':'John Chrysostom','cyril':'Cyril of Alexandria'}
+TEACH = {'matthew-henry':'Matthew Henry','john-calvin':'John Calvin','john-gill':'John Gill','jamieson-fausset-brown':'Jamieson, Fausset & Brown','augustine':'Augustine','chrysostom':'John Chrysostom','cyril':'Cyril of Alexandria','barnes':'Albert Barnes','wesley':'John Wesley'}
 SAY = {
 'JFB3.16.01':"Jamieson, Fausset and Brown ask which words of the gospel preachers and missionaries have spoken most often in every age, which have stirred millions of people, and which have brought so many to the feet of Christ. They point to these words about God's love, so simple and yet so majestic, as the ones that kindle self-giving love in cold and selfish hearts.",
 'MHC3.16.05':"Matthew Henry invites us to be amazed that the great and holy God would love a worthless and wicked world with a love of good will, even though he could take no pleasure in what the world had become. He adds that some Jews wrongly thought the Messiah came only in love for their own nation, but Christ says he came in love for the whole world, Gentiles as well as Jews.",
@@ -201,4 +201,22 @@ def full_study(key, path):
 for _f in sorted(_os.listdir(_FULL)) if _os.path.isdir(_FULL) else []:
     _m = _re.fullmatch(r'(EF\d*)\.json', _f)
     if _m: STUDIES.append(full_study(_m.group(1), _os.path.join(_FULL, _f)))
+# The themed study (Nov 27, themed_study.py): the v46 shape, by idea, with the AI choosing whole sentences to quote. full/ET.json, ET2.json, ...
+# ET0 is the hand-written stand-in (no model call) that exercises the layout and the checks.
+THEMED_SCOPE = (16, 18)
+def themed_study(key, path):
+    # The validator plan: every quoted passage, filed under the first verse it covers in scope. (Pool read here, not through
+    # themed_study.py, which imports this module.)
+    import run_validator as RV, validator as V
+    d = _json.load(open(path)); lo, hi = THEMED_SCOPE
+    _, pool, _, _ = RV.load(_os.path.join(_FULL, '..', 'diagnostic-jhn3-16-21-public.json')); P = {p['id']: p for p in pool}; by_v = {}
+    for s in d['study']['sections']:
+        for it in s['flow']:
+            if 'quote' in it and it['quote'] in P:
+                by_v.setdefault(min(c for c in V.covers(P[it['quote']]) if lo <= c <= hi), []).append((it['quote'], 'meaning'))
+    return dict(key=key, shape='themed', scope=THEMED_SCOPE, title=d['study']['title'], themed=d,
+                sections=[dict(verse=v, q=None, ids=by_v[v]) for v in sorted(by_v)], focus='', take='', closing="Rabbit's closing reflection: ")
+for _f in sorted(_os.listdir(_FULL)) if _os.path.isdir(_FULL) else []:
+    _m = _re.fullmatch(r'(ET\d*)\.json', _f)
+    if _m: STUDIES.append(themed_study(_m.group(1), _os.path.join(_FULL, _f)))
 STUDIES[:] = sorted(STUDIES, key=lambda st: st['key'])

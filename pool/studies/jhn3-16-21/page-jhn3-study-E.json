@@ -62,7 +62,9 @@
    "jamieson-fausset-brown": "Jamieson, Fausset & Brown",
    "augustine": "Augustine",
    "chrysostom": "John Chrysostom",
-   "cyril": "Cyril of Alexandria"
+   "cyril": "Cyril of Alexandria",
+   "barnes": "Albert Barnes",
+   "wesley": "John Wesley"
   }
  },
  "note": "Private pipeline test. Built only from the John 3:16-21 teacher pieces and validated against its own scope. For every teacher passage, the modern-language summary was written by the AI stand-in (Claude; no model call) from that one passage and names the teacher. A mechanical screen rejects quotation marks, numbers not in the passage and some unexpected capitalized words; it is not a complete check for added names or for faithful meaning. The teacher's own words sit underneath, word for word. Focus, take, questions and closing are Rabbit's own and labeled so. Scripture text: WEB. Everything on this page is covered by its approval record (frame_v2).",

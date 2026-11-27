@@ -1,0 +1,257 @@
+{
+ "renderer": "study_themed_v1",
+ "full": {
+  "model": "stand-in (written by hand by Claude; no model call)",
+  "built": "2026-11-27T00:00:00Z",
+  "title": "Loved, Sent, Believed",
+  "opening": {
+   "text": "Some verses are so familiar that we stop hearing them. These three verses tell us what God felt, what God did, and what it means for anyone who believes. Read them slowly, with four old teachers beside you.",
+   "evidence": [
+    "JHN.3.16",
+    "JHN.3.17",
+    "JHN.3.18"
+   ]
+  },
+  "sections": [
+   {
+    "heading": "A Love That Gives",
+    "verses": [
+     "16"
+    ],
+    "flow": [
+     {
+      "kind": "text",
+      "text": "The passage begins with love, and Matthew Henry will not let us hurry past it. He wants us to stop and wonder.",
+      "evidence": [
+       "JHN.3.16",
+       "MHC3.16.05"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "MHC3.16.05",
+      "teacher": "Matthew Henry",
+      "work": "Matthew Henry's Commentary on the Whole Bible",
+      "text": "Behold, and wonder, that the *great God* should love such a *worthless* world! That the *holy God* should love such a *wicked* world with a love of good will, when he could not look upon it with any complacency.",
+      "lead": "no",
+      "tail": "yes"
+     },
+     {
+      "kind": "text",
+      "text": "Albert Barnes asks what kind of love this is. God does not approve of sin, but he still wants good for sinners.",
+      "evidence": [
+       "BAR3.16.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "BAR3.16.01",
+      "teacher": "Albert Barnes",
+      "work": "Notes on the New Testament",
+      "text": "This does not mean that God approved the conduct of men, but that he had benevolent feelings toward them, or was earnestly desirous of their happiness. God hates wickedness, but he still desires the happiness of those who are sinful. He hates the sin, but loves the sinner.",
+      "lead": "yes",
+      "tail": "yes"
+     },
+     {
+      "kind": "text",
+      "text": "And Calvin reminds us that nothing in us earned it.",
+      "evidence": [
+       "CAL3.16.04"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "CAL3.16.04",
+      "teacher": "John Calvin",
+      "work": "Calvin commentary JHN",
+      "text": "Nor does he say that God was moved to deliver us, because he perceived in us something that was worthy of so excellent a blessing, but ascribes the glory of our deliverance entirely to his love. And this is still more clear from what follows; for he adds, that God gave his Son to men, that they may not perish.",
+      "lead": "no",
+      "tail": "yes"
+     }
+    ]
+   },
+   {
+    "heading": "Sent to Heal",
+    "verses": [
+     "17"
+    ],
+    "flow": [
+     {
+      "kind": "text",
+      "text": "If God sent his Son, why did he send him? These verses tell us: not to judge, but to save. Augustine pictures a doctor at the bedside.",
+      "evidence": [
+       "JHN.3.17",
+       "AUG3.17-18.1.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "AUG3.17-18.1.01",
+      "teacher": "Augustine",
+      "work": "Tractates on John 12",
+      "text": "\"For God sent not His Son into the world to judge the world, but that the world through Him may be saved.\" So far, then, as it lies in the physician, He is come to heal the sick. He that will not observe the orders of the physician destroys himself. He is come a Saviour to the world: why is he called the Saviour of the world, but that He is come to save the world, not to judge the world?",
+      "lead": "no",
+      "tail": "yes"
+     },
+     {
+      "kind": "text",
+      "text": "Matthew Henry hears the question every guilty heart asks when heaven comes near: is it peace?",
+      "evidence": [
+       "MHC3.17.02"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "MHC3.17.02",
+      "teacher": "Matthew Henry",
+      "work": "Matthew Henry's Commentary on the Whole Bible",
+      "text": "Ever since man sinned, he has dreaded the approach and appearance of any special messenger from heaven, as being conscious of guilt and looking for judgment: *We shall surely die, for we have seen God.* If therefore the Son of God himself come, we are concerned to enquire on what errand he comes: *Is it peace?* Or, as they asked Samuel trembling, *Comest thou peaceably?* And this scripture returns the answer, *Peaceably.*",
+      "lead": "no",
+      "tail": "no"
+     }
+    ]
+   },
+   {
+    "heading": "Believing and Not Believing",
+    "verses": [
+     "18"
+    ],
+    "flow": [
+     {
+      "kind": "text",
+      "text": "The last verse draws the line. Jamieson, Fausset and Brown put the two sides plainly.",
+      "evidence": [
+       "JHN.3.18",
+       "JFB3.18.01"
+      ]
+     },
+     {
+      "kind": "quote",
+      "id": "JFB3.18.01",
+      "teacher": "Jamieson, Fausset & Brown",
+      "work": "Commentary Critical and Explanatory on the Whole Bible",
+      "text": "18. is not condemned—Having, immediately on his believing, \"passed from death unto life\" (Joh 5:24).\ncondemned already—Rejecting the one way of deliverance from that \"condemnation\" which God gave His Son to remove, and so wilfully remaining condemned.",
+      "lead": "no",
+      "tail": "no"
+     },
+     {
+      "kind": "text",
+      "text": "So the door is open, and the gift is already given. Believing is how we walk through.",
+      "evidence": [
+       "JHN.3.16",
+       "JHN.3.18"
+      ]
+     }
+    ]
+   }
+  ],
+  "road": {
+   "ref": "Romans 5:8",
+   "votes": "995",
+   "scripture": "But God commends his own love toward us, in that while we were yet sinners, Christ died for us.",
+   "text": "Romans 5:8 makes the same point from another side: God showed his love while we were still sinners. Henry marks how great that love is. Coming back to John 3:16, we see that the world God loved was not a good world waiting to be rewarded.",
+   "evidence": [
+    "ROM.5.8",
+    "JHN.3.16",
+    "MHC5.8.03"
+   ],
+   "prompt": "Where do you still feel you have to earn God's love?",
+   "quotes": [
+    {
+     "id": "MHC5.8.03",
+     "teacher": "Matthew Henry",
+     "work": "Matthew Henry's Commentary on the Whole Bible",
+     "text": "Some think he alludes to a common distinction the Jews had of their people into *ndyqym*—*righteous,* *hsdym*—*merciful* (compare Isa 17:1), and *rssym*—*wicked.* Now herein *God commended his love,* not only proved or evidenced his love (he might have done that at a cheaper rate), but magnified it and made it illustrious. This circumstance did greatly magnify and advance his love, not only put it past dispute, but rendered it the object of the greatest wonder and admiration: \"Now my creatures shall see that I love them, I will give them such an instance of it as shall be without parallel.\""
+    }
+   ]
+  },
+  "hill": {
+   "ref": "John 15:13",
+   "votes": "180",
+   "scripture": "Greater love has no one than this, that someone lay down his life for his friends.",
+   "text": "Over the hill, John 15:13 shows what this love looks like when someone lays down his life for his friends. It is worth the walk.",
+   "evidence": [
+    "JHN.15.13",
+    "ROM.5.8"
+   ]
+  },
+  "sources": [
+   "Albert Barnes, Notes on the New Testament (public domain)",
+   "Augustine, Tractates on John 12 (public domain); NPNF translation, checked against the CCEL text",
+   "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (public domain)",
+   "John Calvin, Calvin commentary JHN (public domain)",
+   "Matthew Henry, Matthew Henry's Commentary on the Whole Bible (public domain)",
+   "Scripture: World English Bible (public domain)",
+   "Cross references: OpenBible.info (CC BY)"
+  ]
+ },
+ "study": {
+  "key": "ET0",
+  "title": "Loved, Sent, Believed",
+  "shape": "themed",
+  "place": "John 3"
+ },
+ "scripture": {
+  "16": "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life.",
+  "17": "For God didn’t send his Son into the world to judge the world, but that the world should be saved through him.",
+  "18": "He who believes in him is not judged. He who doesn’t believe has been judged already, because he has not believed in the name of the only born Son of God."
+ },
+ "verse_questions": {},
+ "summaries": {},
+ "headings": {},
+ "labels": {
+  "page_title": "Rabbit study {key}: {title} ({scope})",
+  "study_heading": "Study {key}: {title}",
+  "verse_heading": "{place}:{verse}",
+  "focus": "Rabbit's own focus:",
+  "take": "Rabbit's own take:",
+  "verse_question": "Rabbit's question:",
+  "study_question": "Rabbit's question for this study:",
+  "closing": "Rabbit's take-away:",
+  "closing_short": "Rabbit's closing reflection:",
+  "ai_heading": "Heading by AI",
+  "ai_summary": "Modern language, by AI",
+  "own_words": "{teacher} in his own words",
+  "covers": "(this note covers {first}-{last})",
+  "gill_footnote": "Gill's footnote for this quotation:",
+  "ibid": "{raw} (the same work: {work})",
+  "jewish_source": "A later Jewish writing that Gill cites; not a statement of what people believed in Jesus's day.",
+  "roles": {
+   "overview": "Overview",
+   "meaning": "What it means",
+   "word": "The word",
+   "doctrine": "The teaching",
+   "tension": "Where teachers differ",
+   "context": "Background",
+   "application": "Living it",
+   "warning": "A warning"
+  },
+  "teacher_names": {
+   "matthew-henry": "Matthew Henry",
+   "john-calvin": "John Calvin",
+   "john-gill": "John Gill",
+   "jamieson-fausset-brown": "Jamieson, Fausset & Brown",
+   "augustine": "Augustine",
+   "chrysostom": "John Chrysostom",
+   "cyril": "Cyril of Alexandria",
+   "barnes": "Albert Barnes",
+   "wesley": "John Wesley"
+  },
+  "ai_text": "Written by AI",
+  "opening": "Opening",
+  "road_heading": "🕍 Rabbi Road",
+  "road_line": "Returning by way of {ref}:",
+  "hill_heading": "🐇 What's Over the Hill",
+  "prompt": "💬",
+  "rabbit_note": "Rabbit's note:",
+  "road_votes": "(chosen by code: the top cross-reference for this passage at OpenBible.info, {votes} votes)",
+  "hill_votes": "(chosen by code: one hop on from {road}, {votes} votes)",
+  "sources_heading": "Sources consulted",
+  "ellipsis": "…",
+  "whole_passage": "Read the whole passage from {teacher}",
+  "scripture_ref": "{place}:{verse}"
+ },
+ "note": "Scripture and public-domain commentary, with a narrative written by AI.",
+ "credits": "RabbiRabbit weaves these sources together. Check every quotation against your own Bible and commentaries before teaching.",
+ "stats_line": "6 quotations from 5 teachers; validator and themed-study checks passed."
+}

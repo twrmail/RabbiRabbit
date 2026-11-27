@@ -106,6 +106,24 @@ Tom's ranking of the trials: E, then EW, then EX. The goal is the full study: Sc
 - **The critic:** after a study passes, a second call reads it against its sources and returns notes (minor or serious). The notes go into the study file and a review copy, `review-jhn3-<K>.html`, for Tom. They do not reject the study, are not part of the approved page, and are never served.
 - **Run options:** the workflow takes `key` (EF2, EF3, …) and `profile`. `studies_jhn.py` loads every `full/EF*.json`.
 
+## Themed Rabbit study (Nov 27)
+
+The shape of the live v46 study, built the safe way (`themed_study.py`, renderer `study_themed_v1`, keys ET, ET2, ...). The model groups
+John 3:16-18 into themed sections, writes the narrative, and chooses which teachers to quote and which of their sentences, from every
+usable public passage on the verses (54 passages, 8 teachers), not a hand-picked plan. A quotation is `{piece, from, to}` sentence
+numbers; code prints those whole sentences exactly, with a visible ellipsis where the passage goes on and the whole passage one tap away.
+Code also prints each section's Scripture, the Rabbi Road and Over the Hill destinations (destinations.py) and the Sources consulted list.
+The page carries one note at the top: Scripture and public-domain commentary, with a narrative written by AI.
+
+Rails (`check`): T1 a quotation follows narrative that names its teacher and cites it; T2 every verse in exactly one section, in order,
+two to five sections; T3 every section with verses quotes, and only passages on its verses; T4 real passages and sentence numbers, no
+passage twice; T5 at most 6 sentences / 1,300 characters per quotation, 7,000 in all; T6 at least four teachers, none more than twice,
+at most 12 quotations; T7 no quotation starts on a sentence that leans on the one before; plus the free-profile rails of the full study
+(names only with evidence, no references or numbers not given, no quotation marks in AI text, no claims about teachers in general, AI share
+at most 60%). The critic reads the study with the quotations filled in. The validator shape `themed` files each quoted passage under its
+first verse. ET0 is the hand-written stand-in (no model call). Run: Actions -> Full study run -> layout themed, key ET.
+Tests: `test_themed_study.py` (stand-in passes; 24 studies built to break one rule are each caught).
+
 ## Study index (the catalog a serving Worker will read)
 `pool/studies/index.json`, written by `study_index.py build`. For each unit it lists every study:
 - key, title, shape, scope;

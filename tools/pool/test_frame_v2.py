@@ -65,13 +65,18 @@ def main(report):
                       ('full', 'road', 'text'), ('full', 'road', 'prompt'), ('full', 'road', 'scripture'), ('full', 'road', 'quotes', 0, 'text'),
                       ('full', 'hill', 'text'), ('full', 'hill', 'scripture'), ('labels', 'road_heading'), ('study', 'title')]
             if pc['full'].get('corrections'): spots += [('full', 'corrections', 'notes', k) for k in pc['full']['corrections']['notes']]
+        elif st.get('themed'):   # themed study: opening, a heading, a narrative text, a quotation excerpt, the destinations, the sources list
+            sec = pc['full']['sections'][0]; jt = next(j for j, x in enumerate(sec['flow']) if x['kind'] == 'text'); jq = next(j for j, x in enumerate(sec['flow']) if x['kind'] == 'quote')
+            spots += [('full', 'opening', 'text'), ('full', 'sections', 0, 'heading'), ('full', 'sections', 0, 'flow', jt, 'text'), ('full', 'sections', 0, 'flow', jq, 'text'),
+                      ('full', 'road', 'text'), ('full', 'road', 'prompt'), ('full', 'road', 'quotes', 0, 'text'), ('full', 'hill', 'text'), ('full', 'hill', 'scripture'),
+                      ('full', 'sources', 0), ('labels', 'sources_heading'), ('study', 'title')]
         else: spots += [('study', 'take'), ('study', 'closing'), ('study', 'focus')]
-        if st.get('full'): pass
+        if st.get('full') or st.get('themed'): pass
         elif st.get('weave'):   # narrative: every bridge, and the bridge label
             segs = pc['weave']['movements'][0]['segments']
             spots += [('weave', 'movements', 0, 'segments', j, 'text') for j, sg in enumerate(segs) if sg['kind'] == 'bridge'] + [('labels', 'ai_bridge'), ('study', 'question')]
         else: spots += [('summaries', first), ('labels', 'ai_summary')]
-        if st.get('weave') or st.get('full'): pass
+        if st.get('weave') or st.get('full') or st.get('themed'): pass
         elif st.get('shape') == 'short': spots += [('headings', first), ('study', 'question')]
         else: spots += [('verse_questions', str(st['sections'][0]['verse']))]
         for spot in spots:

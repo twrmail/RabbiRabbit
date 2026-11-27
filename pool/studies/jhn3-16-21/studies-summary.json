@@ -254,6 +254,40 @@
   "ai_share": "54%",
   "teacher_chars_printed": 2678
  },
+ "ET0": {
+  "title": "Loved, Sent, Believed",
+  "ok": true,
+  "stats": {
+   "picked": 6,
+   "chars": 2650,
+   "budget": 40000,
+   "build": "public",
+   "rules_failed": []
+  },
+  "rejections": [],
+  "warnings": [
+   [
+    "fewer teachers than offered",
+    17,
+    "verse 17: 2 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ],
+   [
+    "one teacher",
+    18,
+    "verse 18 is served by one teacher_key (jamieson-fausset-brown)"
+   ],
+   [
+    "fewer teachers than offered",
+    18,
+    "verse 18: 1 teacher_key(s) picked, 8 offered by the pool (warning below 3)"
+   ]
+  ],
+  "summary_check_failures": [],
+  "frame_version": "frame_v2",
+  "tamper_tests": "13/13",
+  "ai_share": "35%",
+  "teacher_chars_printed": 2458
+ },
  "EW": {
   "title": "The Love That Gives (narrative, whole passages)",
   "ok": true,

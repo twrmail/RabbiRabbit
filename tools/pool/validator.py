@@ -16,7 +16,10 @@ MIN_PER_VERSE, MAX_PER_VERSE, TEACHER_CAP, DEFAULT_BUDGET = 2, 9, 4, 12000
 #   V15 size cap; V16 every verse in scope is covered by some picked piece's covers_verses; V17 each movement has pieces from at least
 #   two teachers; V18 (short only) no role repeats within a verse. The "more on this verse" drawer is not a study and is not validated here.
 SHAPES = {'short': dict(min_pieces=4, max_pieces=6, max_chars=3000, no_role_repeat=True),
-          'disagreement': dict(min_pieces=4, max_pieces=10, max_chars=None, no_role_repeat=False)}
+          'disagreement': dict(min_pieces=4, max_pieces=10, max_chars=None, no_role_repeat=False),
+          # themed (Nov 27): the AI-written themed study quotes whole sentences from up to 12 passages; how much teacher text is printed
+          # is limited by themed_study.py (T5), so the plan's whole-passage characters are not capped here (its request carries a wider budget).
+          'themed': dict(min_pieces=4, max_pieces=12, max_chars=None, no_role_repeat=False)}
 TEACHER_WARN_MIN = 3   # 'fewer teachers than offered' warns only when fewer than 3 teacher_keys are picked and the pool offers at least that many (Tom, Nov 22)
 PUBLIC_OK = ('A', 'B')
 GAP_REASON_ORDER = ['withheld', 'extraction failure', 'present but excluded by range policy', 'index absence', 'undetermined', 'source absence']
