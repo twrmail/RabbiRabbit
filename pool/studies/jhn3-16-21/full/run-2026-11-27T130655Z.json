@@ -1,0 +1,92 @@
+{
+ "schema": "full_study_run_v1",
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-27T13:06:55Z",
+ "destinations": {
+  "road": "Romans 5:8",
+  "hill": "John 15:13"
+ },
+ "attempts": [
+  {
+   "n": 1,
+   "cost": 0.0562,
+   "usage": {
+    "input_tokens": 3892,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2966,
+    "output_tokens_details": {
+     "thinking_tokens": 1893
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "problems": [
+    [
+     "W7",
+     "opening: capitalized word \"God's\" not in evidence"
+    ],
+    [
+     "W7",
+     "CHR3.16.1.01 summary: capitalized word 'People' not in evidence"
+    ],
+    [
+     "W12",
+     "bridge after verse 16: words not in its evidence: ['tells']"
+    ],
+    [
+     "W7",
+     "AUG3.17-18.1.01 summary: capitalized word 'Whoever' not in evidence"
+    ],
+    [
+     "W12",
+     "bridge after verse 17: words not in its evidence: ['came', 'speaks']"
+    ],
+    [
+     "W7",
+     "over_the_hill: capitalized word 'Romans' not in evidence"
+    ]
+   ],
+   "stats": {
+    "ai_chars": 2134,
+    "teacher_chars": 3441,
+    "ai_share": 38
+   },
+   "reply": "{\"title\":\"God So Loved the World: Saved, Not Judged\",\"opening\":{\"text\":\"These verses tell us why God sent his Son and what happens when we believe in him. They begin with God's love, move to his purpose to save, and end with a plain word about believing. Let us walk through them slowly.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]},\"body\":[{\"verse\":16,\"pieces\":[{\"piece\":\"MHC3.16.05\",\"heading\":\"A holy God loves a worthless world\",\"summary\":\"Matthew Henry is amazed that the great and holy God would love a world so unworthy. He adds that Christ came in love for the whole world, not for a single nation.\"},{\"piece\":\"CHR3.16.1.01\",\"heading\":\"Given for ungrateful slaves\",\"summary\":\"Chrysostom says the Father was pleased to give his Son for people like ungrateful slaves. People hardly do that even for a friend. He notes that each word here carries much meaning.\"}],\"bridge\":{\"text\":\"God gave his Son so that the world would be saved. The next verse tells us why God sent his Son into the world.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\"]}},{\"verse\":17,\"pieces\":[{\"piece\":\"AUG3.17-18.1.01\",\"heading\":\"Christ comes as a physician\",\"summary\":\"Augustine pictures Christ as a physician who comes to heal the sick. Whoever ignores the physician's orders destroys himself. Christ came to save, so if you are not saved by him, you are judged of yourself.\"}],\"bridge\":{\"text\":\"He came that the world should be saved through him. The next verse speaks of he who believes in him and he who does not.\",\"evidence\":[\"JHN.3.17\",\"JHN.3.18\"]}},{\"verse\":18,\"pieces\":[{\"piece\":\"MHC3.18.01\",\"heading\":\"Believers are not condemned\",\"summary\":\"Henry sees great happiness here. Even a great sinner who stands guilty is not condemned when he believes. The case is stopped and he is acquitted, which is more than a delay of punishment. He is not dealt with by strict justice for his sins.\"}],\"bridge\":null}],\"rabbi_road\":{\"text\":\"A straight reading of John might leave us picturing a world that simply needed rescuing. This verse shows that Christ died for us while we were yet sinners, so the love in John reached us before we ever changed. Matthew Henry says God shows his love in the most winning way, and that we were enemies when Christ died for us. That helps us hear the words not judged in John as mercy given to people who had no claim on it.\",\"evidence\":[\"ROM.5.8\",\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\",\"MHC5.8.04\",\"MHC5.8.05\"],\"quote\":[\"MHC5.8.04\",\"MHC5.8.05\"],\"prompt\":\"How does it change your view of God's love to know Christ died for us while we were still sinners?\"},\"over_the_hill\":{\"text\":\"Next we turn to a saying about the greatest love, that someone lay down his life for his friends. Romans showed us Christ dying for us while we were yet sinners. Come and see how both of these words about love fit together.\",\"evidence\":[\"JHN.15.13\",\"ROM.5.8\"]}}"
+  },
+  {
+   "n": 2,
+   "cost": 0.0625,
+   "usage": {
+    "input_tokens": 5177,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3133,
+    "output_tokens_details": {
+     "thinking_tokens": 2034
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "problems": [],
+   "stats": {
+    "ai_chars": 2183,
+    "teacher_chars": 3441,
+    "ai_share": 38
+   },
+   "reply": "{\"title\":\"God So Loved the World: Saved, Not Judged\",\"opening\":{\"text\":\"These verses tell us why God sent his Son and what happens when we believe in him. They begin with love, move to a purpose to save, and end with a plain word about believing. Let us walk through them slowly.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]},\"body\":[{\"verse\":16,\"pieces\":[{\"piece\":\"MHC3.16.05\",\"heading\":\"A holy God loves a worthless world\",\"summary\":\"Matthew Henry is amazed that the great and holy God would love such a worthless, wicked world. He adds that Christ came in love to the whole world, Gentiles as well as Jews, not to one nation only.\"},{\"piece\":\"CHR3.16.1.01\",\"heading\":\"Given for ungrateful slaves\",\"summary\":\"Chrysostom says the Father was pleased to give his Son for slaves, and ungrateful ones at that. A man would hardly do this even for a friend. He adds that Christ speaks briefly here, yet each word carries much meaning.\"}],\"bridge\":{\"text\":\"God gave his Son, that whoever believes in him should have eternal life. Next, God did not send his Son to judge the world.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\"]}},{\"verse\":17,\"pieces\":[{\"piece\":\"AUG3.17-18.1.01\",\"heading\":\"Christ comes as a physician\",\"summary\":\"Augustine pictures Christ as a physician who comes to heal the sick. He that will not observe the physician's orders destroys himself. Christ came to save, not to judge. If you are not saved by him, you are judged by yourself.\"}],\"bridge\":{\"text\":\"God sent his Son that the world should be saved through him. Next, he who believes in him is not judged.\",\"evidence\":[\"JHN.3.17\",\"JHN.3.18\"]}},{\"verse\":18,\"pieces\":[{\"piece\":\"MHC3.18.01\",\"heading\":\"Believers are not condemned\",\"summary\":\"Henry sees great happiness here. Even a great sinner who stands guilty is not condemned when he believes. The case is stopped and he is acquitted, which is more than a delay of punishment. He is not dealt with by strict justice for his sins.\"}],\"bridge\":null}],\"rabbi_road\":{\"text\":\"A straight reading of John might leave us picturing a world that simply needed rescuing. This verse shows that Christ died for us while we were yet sinners, so the love in John reached us before we ever changed. Matthew Henry says God shows his love in the most winning way, and that we were enemies when Christ died for us. That helps us hear the words not judged in John as mercy given to people who had no claim on it.\",\"evidence\":[\"ROM.5.8\",\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\",\"MHC5.8.04\",\"MHC5.8.05\"],\"quote\":[\"MHC5.8.04\",\"MHC5.8.05\"],\"prompt\":\"How does it change your view of God's love to know Christ died for us while we were still sinners?\"},\"over_the_hill\":{\"text\":\"Next we turn to a saying about greater love, that someone lay down his life for his friends. Christ died for us while we were yet sinners. Come and see how these words about love fit together.\",\"evidence\":[\"JHN.15.13\",\"ROM.5.8\"]}}"
+  }
+ ],
+ "spent": 0.1187,
+ "result": "passed"
+}
