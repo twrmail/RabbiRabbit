@@ -1,0 +1,19 @@
+{"schema": "study_full_v1", "model": "stand-in (Claude, written by hand; no model call)", "built": "2026-11-27T00:00:00Z",
+ "destinations": {"road": "Romans 5:8", "hill": "John 15:13"},
+ "study": {
+  "title": "The Love That Gives",
+  "opening": {"text": "Here we slow down and read John 3:16 with the two verses that follow: God so loved the world that he gave his Son, he sent him to save and not to judge, and whoever believes in him is not judged.", "evidence": ["JHN.3.16", "JHN.3.17", "JHN.3.18"]},
+  "body": [
+   {"verse": 16, "pieces": [
+     {"piece": "MHC3.16.05", "heading": "Wonder at a love this large", "summary": "Matthew Henry asks us to stop and wonder: the holy God loves a wicked world. And this love is not for one nation only. Christ came in love to the whole world, Gentiles as well as Jews."},
+     {"piece": "CHR3.16.1.01", "heading": "Given for ungrateful slaves", "summary": "Chrysostom measures this love by the gift. The Father gave his Son for slaves, and ungrateful ones. A man would hardly die even for a friend or a righteous man."}],
+    "bridge": {"text": "The next verse says why the Father sent the Son into the world.", "evidence": ["JHN.3.16", "JHN.3.17"]}},
+   {"verse": 17, "pieces": [
+     {"piece": "AUG3.17-18.1.01", "heading": "The physician who came to heal", "summary": "Augustine pictures Christ as a physician. He came to heal the sick, not to judge them. The one who will not follow the physician's orders destroys himself."}],
+    "bridge": {"text": "The Son came to save the world, so what of the one who believes in him?", "evidence": ["JHN.3.17", "JHN.3.18", "AUG3.17-18.1.01"]}},
+   {"verse": 18, "pieces": [
+     {"piece": "MHC3.18.01", "heading": "Not condemned: more than a reprieve", "summary": "Matthew Henry says the believer is not condemned. A sinner, even a great one, who believes is not just let off for now. He is acquitted and set free, not dealt with as his sins deserve."}],
+    "bridge": null}],
+  "rabbi_road": {"text": "Romans 5:8 says the same love another way. God shows his love in this: Christ died for us while we were still sinners. John 3:16 tells us God gave his Son; Romans 5:8 tells us when, before we had done anything to deserve it. Matthew Henry says God commends his love the way a merchant commends his goods, setting it out for us to see and take.", "evidence": ["ROM.5.8", "JHN.3.16", "MHC5.8.04"], "quote": ["MHC5.8.04"], "prompt": "God showed his love while we were still sinners. How does that change the way you come to him today?"},
+  "over_the_hill": {"text": "One hop further, Jesus himself tells us what the greatest love looks like: someone lays down his life for his friends. The love of John 3:16 does not stay far off. It calls us his friends.", "evidence": ["JHN.15.13", "ROM.5.8"]}
+ }}

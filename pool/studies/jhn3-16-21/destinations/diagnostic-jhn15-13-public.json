@@ -1,0 +1,1077 @@
+{
+ "passage": "John 15:13",
+ "book": "JHN",
+ "chapter": 15,
+ "scope": [
+  13,
+  13
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "388e42c086c47eff588bf3a172f1492465a322d8ce5bd097e301ba5ea4744b9a",
+    "text_sha256": "b8665d201b3774b49fddfb79c07302b275825e93e7434dd78ff8cd06e17b572d",
+    "index_file_sha256": "999832861fe909e22a73da01119f036e887804d137c49e57788ea3cde17f21d4"
+   },
+   "coverage": {
+    "13": {
+     "state": "confirmed",
+     "index": {
+      "at": 21285,
+      "end": 23125,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.15.13"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.15.13",
+     "opens_mid_outline": false,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 13,
+     "note_span": [
+      13,
+      13
+     ],
+     "start": 21285,
+     "end": 23125,
+     "chars": 1840,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 4,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC15.13.01",
+     "note_id": "MHC.15.13",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "(1.) Christ loved his disciples, for he laid down his life for them (Joh 15:13): *Greater* proof of *love hath no man* to show *than this,* to *lay down his life for his friend.* And this is the love wherewith *Christ hath loved us,* he is our *antipsychos*—*bail for us,* body for body, life for life, though he knew our insolvency, and foresaw how much the engagement would cost him. Observe here, [1.] The extent of the love of the children of men to one another.",
+     "outline_label": "(1.)",
+     "marker_span": [
+      21285,
+      21289
+     ],
+     "source_file": "library/commentary/MHC/JHN.json",
+     "start": 21285,
+     "end": 21751,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Joh 15:13"
+     ],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "MHC15.13.02",
+     "note_id": "MHC.15.13",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "The highest proof of it is laying down one's life for a friend, to save his life, and perhaps there have been some such heroic achievements of love, more than *plucking out one's own eyes,* Ga 4:15. If *all that a man has he will give for his life,* he that gives this for his friend gives all, and can give no more; this may sometimes be our duty, 1Jo 3:16. Paul was ambitious of the honour (Php 2:17); and *for a good man some will even dare to die,* Ro 5:7.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/MHC/JHN.json",
+     "start": 21752,
+     "end": 22212,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ga 4:15",
+      "1Jo 3:16",
+      "Php 2:17",
+      "Ro 5:7"
+     ],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "MHC15.13.03",
+     "note_id": "MHC.15.13",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "It is love in the highest degree, which is *strong as death.* [2.] The excellency of the love of Christ beyond all other love. He has not only equaled, but exceeded, the most illustrious lovers. Others have laid down their lives, content that they should be taken from them; but Christ gave up his, was not merely passive, but made it his own act and deed. The life which others have laid down has been but of equal value with the life for which it was laid down, and perhaps less valuable; but Christ is infinitely more worth than ten thousand of us.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/MHC/JHN.json",
+     "start": 22213,
+     "end": 22764,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC15.13.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "MHC15.13.04",
+     "note_id": "MHC.15.13",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "Others have thus laid down their lives for their friends, but Christ laid down his for us *when we were enemies,* Ro 5:8,10. *Plusquam ferrea aut lapidea corda esse oportet, quæ non emolliet tam incomparabilis divini amoris suavitas—Those hearts must be harder than iron or stone which are not softened by such incomparable sweetness of divine love.*—Calvin.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/MHC/JHN.json",
+     "start": 22765,
+     "end": 23123,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 5:8,10"
+     ],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 66646 vs index 66646; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "902c1f76140c9a46b0345a515df75e5784e99366f53dc6b1389f328564f053df",
+    "text_sha256": "e12ef03f45cf8e17d2ae1d8da86eaf37177260f960465263f015debf88343c9f",
+    "index_file_sha256": "773f6e6bed69852873c34cff6b99e9cacf58b290f0455db7c702e10084cb74e1"
+   },
+   "coverage": {
+    "13": {
+     "state": "confirmed",
+     "note_id": "CAL.15.13"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.15.13",
+     "verse": 13,
+     "note_span": [
+      13,
+      13
+     ],
+     "start": 21035,
+     "end": 22719,
+     "chars": 1684,
+     "pieces": 4,
+     "tiling_problems": [],
+     "head": "13. Greater love hath no one t",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL15.13.01",
+     "note_id": "CAL.15.13",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JHN",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "13. Greater love hath no one than this. Christ sometimes proclaims the greatness of his love to us, that he may more fully confirm our confidence in our salvation; but now he proceeds further, in order to inflame us, by his example, to love the brethren. Yet he joins both together; for he means that we should taste by faith how inestimably delightful his goodness is, and next he allures us, in this way, to cultivate brotherly love.",
+     "outline_label": "13.",
+     "marker_span": [
+      21035,
+      21038
+     ],
+     "source_file": "library/commentary/Calvin/JHN.json",
+     "start": 21035,
+     "end": 21470,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "CAL15.13.02",
+     "note_id": "CAL.15.13",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JHN",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "Thus Paul writes: Walk in love, as Christ also hath loved us, and hath given himself for us an offering and sacrifice to God of a sweet-smelling savor, ( Ephesians 5:2 .) God might have redeemed us by a single word, or by a mere act of his will, if he had not thought it better to do otherwise for our own benefit, that, by not sparing his own well-beloved Son, he might testify in his person how much he cares for our salvation.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Calvin/JHN.json",
+     "start": 21471,
+     "end": 21900,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL15.13.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ephesians 5:2"
+     ],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "CAL15.13.03",
+     "note_id": "CAL.15.13",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JHN",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "But now our hearts, if they are not softened by the inestimable sweetness of Divine love, must be harder than stone or iron. But a question is put. How did Christ die for friends, since we were enemies, before he reconciled us, ( Romans 5:10 ;) for, by expiating our sins through the sacrifice of his death, he destroyed the enmity that was between God and us?",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Calvin/JHN.json",
+     "start": 21901,
+     "end": 22261,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL15.13.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Romans 5:10"
+     ],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "CAL15.13.04",
+     "note_id": "CAL.15.13",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JHN",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "The answer to this question will be found under the third chapter, where we said that, in reference to us, there is a state of variance between us and God, till our sins are blotted out by the death of Christ; but that the cause of this grace, which has been manifested in Christ, was the In this way, too, Christ laid down his life for those who were strangers, but whom, even while they were strangers, he loved, otherwise he would not have died for them.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Calvin/JHN.json",
+     "start": 22262,
+     "end": 22719,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 56130; sections 27; max code point U+201D"
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "0 scripture_header pieces excluded: []"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "f942ef13796bf0201e21ce654a6e9a53acc04995eac9a7b38c097f6edb8a09fa",
+    "text_sha256": "86d46fa3c4c6176514f0e96a95b7d6e0755ecb15869d8c7ab03a8c5bd4a756c7"
+   },
+   "coverage": {
+    "13": {
+     "state": "confirmed",
+     "note_id": "JFB.15.13"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.15.13",
+     "verse": 13,
+     "note_span": [
+      13,
+      13
+     ],
+     "start": 3236,
+     "end": 3535,
+     "chars": 299,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB15.13.01",
+     "note_id": "JFB.15.13",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "13. Greater love hath no man than this, that a man lay down his life for his friends—The emphasis lies not on \"friends,\" but on \"laying down his life\" for them; that is, \"One can show no greater regard for those dear to him than to give his life for them, and this is the love ye shall find in Me.\"",
+     "outline_label": "13.",
+     "marker_span": [
+      3236,
+      3239
+     ],
+     "source_file": "library/commentary/JFB/JHN.json",
+     "start": 3236,
+     "end": 3534,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 5685 chars; 20 verse markers: ['1-8', 2, 3, 4, 5, 6, 7, 8, '9-11', 10, '12-16', 13, 14, 15, 16, '17-21', '22-25', 24, 25, 27]; max code point U+2026"
+    },
+    {
+     "kind": "range-note",
+     "msg": "JFB range note 12-16 (61 chars) overlaps the request but is not wholly inside; excluded (D1). Separate notes exist for [13, 14, 15, 16]."
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "58c7a19ba839d1d3c1d56ea6d444865b2ea9dc56047f83d8ea7aca2a257d0fe1",
+    "text_sha256": null
+   },
+   "coverage": {
+    "13": {
+     "state": "confirmed",
+     "note_id": "GILL.15.13"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.15.13",
+     "verse": 13,
+     "note_span": [
+      13,
+      13
+     ],
+     "start": 0,
+     "end": 2577,
+     "chars": 2577,
+     "pieces": 2,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL15.13.01",
+     "note_id": "GILL.15.13",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "Greater love hath no man than this,.... By these words our Lord shows, how far love to another should extend, even to the laying down of our lives for the brethren; which is the highest instance of love among men;",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Gill/JHN.json",
+     "start": 0,
+     "end": 213,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "bcacd383f8be6fe5021a6e0ecb325ce3334c1e63ab8ecb2234f0f3b41562e8e4",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "GIL15.13.02",
+     "note_id": "GILL.15.13",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "that a man lay down his life for his friends; and in which believers, should not come short of them; and also his great love to his people, and explains what he had just said, \"as I have loved you\", John 13:34; which in a little time would be seen, by his laying down his life for them: for he not only came down from heaven, and laid aside his glory and royal majesty, but he laid down his life; not his gold and silver, and the riches of this world, which were all his, but his life; than which, nothing is dearer to a man, is himself, his all: and besides, Christ's life was not a common one, it was not the life of an innocent person only, or the life of a mere man, but of a man in union with the Son of God; it was the Lord of glory and Prince of life, who was crucified, and slain; a life that was entirely at his own dispose; it had never been forfeited by sin, nor could it have been forced away from him by men or devils; it was laid down of and by himself, freely and voluntarily; and that \"for\", in the room, and instead of his people, as a ransom for them; he being their surety and substitute, and standing in their legal place and stead, he took their sins upon him, bore the curse of the law, sustained his Father's wrath, and all the punishment due to sin; and so suffered death, the death of the cross; the just, in the room and stead of the unjust; the persons for whom be laid down his life, are described as \"his friends\"; not that they were originally so; being enemies and enmity itself to God, when he laid down his life for them, and reconciled them; they were not such as had carried themselves friendly, or had shown any love and affection to him, but all the reverse: but they are so called, because he had chosen them for his friends; he had pitched upon them, and resolved to make them so; and by dying for them, reconciled them who were enemies; and in consequence of this, by his Spirit and grace, of enemies makes them friends; so that his love in dying for his people, is greater than any instance of love among men: he laid down his life for his enemies, without any sinister selfish views, and that freely and voluntarily; whereas among men, when one man has laid down his life for others, either they have been very deserving, or he has been forced to it, or it has been done with the view of popular applause and vain glory.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Gill/JHN.json",
+     "start": 215,
+     "end": 2577,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "John 13:34"
+     ],
+     "flags": [],
+     "source_text_sha256": "bcacd383f8be6fe5021a6e0ecb325ce3334c1e63ab8ecb2234f0f3b41562e8e4",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      13
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 27 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "a8c627ea79448f37908309a78ddac108fe87f001983f937df1f396e95d514b8c",
+    "text_sha256": "cbc6817706eacdd26ac163e8a0653f08d3540e0ed8198251e0e50311f6f7ff29"
+   },
+   "coverage": {
+    "13": {
+     "state": "confirmed",
+     "note_id": "WES.15.13"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.15.13",
+     "verse": 13,
+     "note_span": [
+      13,
+      13
+     ],
+     "start": 1912,
+     "end": 1976,
+     "chars": 64,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES15.13.01",
+     "note_id": "WES.15.13",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "13. Greater love - To his friends. He here speaks of them only.",
+     "outline_label": "13.",
+     "marker_span": [
+      1912,
+      1915
+     ],
+     "source_file": "library/commentary/Wesley/JHN.json",
+     "start": 1912,
+     "end": 1975,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      13
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 4072 chars; 23 numbered line starts, 23 chosen as verse markers (22 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 25, 26]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "08a357e44b592ac3c5ea3dd7010fbc68bc7ffe0ad7f635f7cf0a27044fe1c8cc",
+    "text_sha256": null
+   },
+   "coverage": {
+    "13": {
+     "state": "confirmed",
+     "note_id": "BAR.15.13"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.15.13",
+     "verse": 13,
+     "note_span": [
+      13,
+      13
+     ],
+     "start": 0,
+     "end": 1004,
+     "chars": 1004,
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR15.13.01",
+     "note_id": "BAR.15.13",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "Verse 13. Greater love hath, &c. No higher expression of love could be given. Life is the most valuable object we possess; and when a man is willing to lay that down for his friends or his country, it shows the utmost extent of love. Even this love for friends has been rarely witnessed. A very few cases--like that of Damon and Pythias--have occurred where a man was willing to save the life of his friend by giving his own.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Barnes-NT/JHN.json",
+     "start": 0,
+     "end": 425,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "efa80d5ca256f8a4dfedf0343ad820b2892d9daa5dfcfe0425b64a367736e8c2",
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "BAR15.13.02",
+     "note_id": "BAR.15.13",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "It greatly enhances the love of Christ, that while the instances of those who have been willing to die for friends have been so rare, he was willing to die for enemies--bitter foes, who rejected his reign, persecuted him, reviled him, scorned him, and sought his life, 1 Jo 4:10; Re 5:6,10.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Barnes-NT/JHN.json",
+     "start": 426,
+     "end": 716,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR15.13.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1 Jo 4:10",
+      "Re 5:6"
+     ],
+     "flags": [],
+     "source_text_sha256": "efa80d5ca256f8a4dfedf0343ad820b2892d9daa5dfcfe0425b64a367736e8c2",
+     "covers_verses": [
+      13
+     ]
+    },
+    {
+     "id": "BAR15.13.03",
+     "note_id": "BAR.15.13",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Joh 15:13",
+     "note_span": [
+      13,
+      13
+     ],
+     "subject_span": [
+      13,
+      13
+     ],
+     "anchor_verse": 13,
+     "text": "It also shows us the extent of his love that he gave himself up, not to common sufferings, but to the most bitter, painful, and protracted sorrows, not for himself, not for friends, but for a thoughtless and unbelieving world.\n\n\"O Lamb of God, was ever pain,\n\nWas ever LOVE like thine!\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Barnes-NT/JHN.json",
+     "start": 718,
+     "end": 1004,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR15.13.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "efa80d5ca256f8a4dfedf0343ad820b2892d9daa5dfcfe0425b64a367736e8c2",
+     "covers_verses": [
+      13
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 23 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007A"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "20ce939b276cb7aa436f4dc3e57fa46be0fb6d678311b2eebeb089f1ba356737",
+    "text_sha256": null
+   },
+   "coverage": {
+    "13": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 13"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 16 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "58d84e1227f91699a94acc9aafe8324711700aab7a9c67ede05fdb0ee99ab451",
+    "text_sha256": "1943cda3b3b17686e23fec2a91a6df241f54c4337ed1b7b818bfec83984f5162"
+   },
+   "coverage": {
+    "13": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 15: 1609 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {},
+   "coverage": {
+    "13": {
+     "state": "extraction failure",
+     "detail": "Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fatal",
+     "msg": "Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 66646 vs index 66646; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 56130; sections 27; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "0 scripture_header pieces excluded: []"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 5685 chars; 20 verse markers: ['1-8', 2, 3, 4, 5, 6, 7, 8, '9-11', 10, '12-16', 13, 14, 15, 16, '17-21', '22-25', 24, 25, 27]; max code point U+2026"
+  },
+  {
+   "source": "jfb",
+   "kind": "range-note",
+   "msg": "JFB range note 12-16 (61 chars) overlaps the request but is not wholly inside; excluded (D1). Separate notes exist for [13, 14, 15, 16]."
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 27 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 4072 chars; 23 numbered line starts, 23 chosen as verse markers (22 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 25, 26]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 23 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007A"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 16 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 15: 1609 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fatal",
+   "msg": "Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "13": "confirmed"
+  },
+  "calvin": {
+   "13": "confirmed"
+  },
+  "jfb": {
+   "13": "confirmed"
+  },
+  "gill": {
+   "13": "confirmed"
+  },
+  "wesley": {
+   "13": "confirmed"
+  },
+  "barnes": {
+   "13": "confirmed"
+  },
+  "tyndale": {
+   "13": "source absence"
+  },
+  "scofield": {
+   "13": "index absence"
+  },
+  "fathers": {
+   "13": "extraction failure"
+  }
+ },
+ "summary": {
+  "pieces": 15,
+  "chars": 7453,
+  "pieces_by_source": {
+   "mhc": 4,
+   "calvin": 4,
+   "jfb": 1,
+   "gill": 2,
+   "wesley": 1,
+   "barnes-nt": 3
+  },
+  "chars_by_source": {
+   "mhc": 1835,
+   "calvin": 1681,
+   "jfb": 298,
+   "gill": 2575,
+   "wesley": 63,
+   "barnes-nt": 1001
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 4,
+   "john-calvin": 4,
+   "jamieson-fausset-brown": 1,
+   "john-gill": 2,
+   "wesley": 1,
+   "barnes": 3
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 1835,
+   "john-calvin": 1681,
+   "jamieson-fausset-brown": 298,
+   "john-gill": 2575,
+   "wesley": 63,
+   "barnes": 1001
+  },
+  "per_anchor_verse": {
+   "13": {
+    "pieces": 15,
+    "chars": 7453,
+    "teacher_keys": [
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "13": {
+    "pieces": 15,
+    "chars": 7453,
+    "notes": 6,
+    "teacher_keys": [
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 12,
+   "B": 3
+  },
+  "non_standalone": 5,
+  "boundary_suspect": [],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": []
+ },
+ "source_problems": [
+  "fathers: Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+ ],
+ "source_fingerprint_sha256": null,
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 0
+ }
+}

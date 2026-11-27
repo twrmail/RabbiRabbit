@@ -64,6 +64,30 @@ Checks (no model calls, no network):
 
 Rebuild: `python3 tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21`
 
+## Full Rabbit study (Nov 27)
+Tom's ranking of the trials: E, then EW, then EX. The goal is the full study: Scripture as the foundation, the teachers as the bones, and the AI bringing the flesh and life, written whole by a model inside the rails.
+- **Structure** (as in the live study, with no separate Rabbit Trail): Opening, then the study body, then Rabbi Road, then What's Over the Hill.
+  - The study body is Study E's passages verse by verse: Scripture, an AI heading and summary over each teacher's whole passage, and a bridge to the next verse.
+- **`destinations.py`** picks Rabbi Road and Over the Hill by code from the OpenBible cross references (CC BY), never by the model.
+  - Rabbi Road is the top-voted cross-reference from the study verses, outside the unit.
+  - Over the Hill is the top hop on from Rabbi Road's verse: outside the unit, not Rabbi Road's verse, and not in Rabbi Road's chapter.
+  - For John 3:16-18 these are Romans 5:8 (995 votes) and John 15:13 (180 votes). Their public pools are in `pool/studies/jhn3-16-21/destinations/`, built with `run_diagnostic.py` and `public_pool.py`.
+- **`full_study.py`** has three modes:
+  - `prompt` prints the prompt;
+  - `check FILE` runs the rails;
+  - `run` makes the model call. It retries with the problems listed, stops at a cost cap, and writes `full/EF.json` only if every check passes, plus `full/run-*.json` either way.
+- **Rails:**
+  - every AI field names its evidence, from the passages and Scripture allowed for that field;
+  - W2, W3, W5-W12 as in `weave.py`; W7 now also catches a name at the start of a sentence;
+  - length limits, and summary caps as before;
+  - Rabbi Road quotes one or two offered passages whole;
+  - **W10 for the full study is 45%**, not 35%. The structure has more AI fields: the stand-in comes to 39%.
+- **Page:** the renderer is `study_full_v1`, and the frame carries the full study (`full` key), so an approval covers every word.
+  - `test_full_study.py` (in the check): the hand-written stand-in (`fixtures/full_standin.json`) passes, and 21 studies built to break one rule each are caught.
+- **The run:** `.github/workflows/full-study-run.yml`, started from the Actions tab.
+  - One model call using the repo's `ANTHROPIC_API_KEY`, with up to 3 attempts and a $1 cap.
+  - It pushes a branch `full-study-<run>` with the run log and, if the study passed, study EF (PENDING).
+
 ## Study index (the catalog a serving Worker will read)
 `pool/studies/index.json`, written by `study_index.py build`. For each unit it lists every study:
 - key, title, shape, scope;

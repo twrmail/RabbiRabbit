@@ -16,6 +16,9 @@ PASSAGES = {
     'jhn3-16-18': dict(label='John 3:16-18', book='JHN', ch=3, lo=16, hi=18, abbr='Joh'),
     'jhn3-16-21': dict(label='John 3:16-21', book='JHN', ch=3, lo=16, hi=21, abbr='Joh'),
     'mat25-31-46': dict(label='Matthew 25:31-46', book='MAT', ch=25, lo=31, hi=46, abbr='Mt'),
+    # destinations of the John 3:16-18 full study (Nov 27): Rabbi Road and What's Over the Hill, chosen by full_study.py from OpenBible xref
+    'rom5-8': dict(label='Romans 5:8', book='ROM', ch=5, lo=8, hi=8, abbr='Ro'),
+    'jhn15-13': dict(label='John 15:13', book='JHN', ch=15, lo=13, hi=13, abbr='Joh'),
 }
 PARALLELS = {'mrk13-35': [dict(label='Matthew 24:42 (parallel of Mark 13:35, report only, never in the Mark pool)', book='MAT', ch=24, lo=42, hi=42, abbr='Mt')]}
 

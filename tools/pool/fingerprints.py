@@ -66,6 +66,7 @@ def build_frame_v2(plan, pool, gaps, request, page, pointers=None):
     if page.get('weave'):   # narrative study: excerpt text and offsets recomputed from the pool as it is now, never taken from the page
         import weave as W
         fr['weave'] = W.resolve(page['weave'], by, page['scripture'])
+    if page.get('full'): fr['full'] = page['full']   # full study: AI text, destinations and their teacher text (rebuilt from the pool by the builder)
     return fr
 
 def frame_fp(frame): return sha(frame)

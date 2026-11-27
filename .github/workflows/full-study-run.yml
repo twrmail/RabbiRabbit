@@ -1,0 +1,59 @@
+name: Full study run (one real model call)
+# Run by hand: Actions -> Full study run -> Run workflow. Makes one model call (up to the attempts given, stopping at the cost cap) to
+# write the full Rabbit study of John 3:16-18 from Study E's passages, inside the rails (tools/pool/full_study.py). If every check passes,
+# the study is added as EF, PENDING; nothing is approved or served. Either way the run log (each attempt, its problems, its cost) is
+# pushed to a new branch, full-study-<run>. Open a pull request from that branch to review it.
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: 'Model'
+        required: false
+        default: 'claude-sonnet-5-5'
+      attempts:
+        description: 'Attempts (each failed attempt is sent back with its problems)'
+        required: false
+        default: '3'
+      max_cost:
+        description: 'Stop after about this many dollars'
+        required: false
+        default: '1'
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Write the study (model call) and check it
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IN_MODEL: ${{ inputs.model }}
+          IN_ATTEMPTS: ${{ inputs.attempts }}
+          IN_MAX: ${{ inputs.max_cost }}
+        run: |
+          if python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}"; then
+            echo "PASSED=1" >> "$GITHUB_ENV"
+          else
+            echo "The study did not pass the checks; the run log shows why." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Build the study page, record and index (only if it passed)
+        if: env.PASSED == '1'
+        run: |
+          python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21
+          python3 -B tools/pool/study_index.py build
+          python3 -B tools/pool/test_frame_v2.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json
+          echo "Passed. Study EF is built (PENDING): pool/studies/jhn3-16-21/study-jhn3-EF.html" >> "$GITHUB_STEP_SUMMARY"
+      - name: Push a branch for review
+        run: |
+          git config user.name "full-study-bot"
+          git config user.email "full-study-bot@users.noreply.github.com"
+          B="full-study-${{ github.run_id }}"
+          git checkout -b "$B"
+          git add pool/studies
+          if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
+          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.model }})"
+          git push origin "$B"
+          echo "Branch $B is ready. Open a pull request from it." >> "$GITHUB_STEP_SUMMARY"

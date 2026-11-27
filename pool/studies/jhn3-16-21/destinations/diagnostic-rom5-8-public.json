@@ -1,0 +1,962 @@
+{
+ "passage": "Romans 5:8",
+ "book": "ROM",
+ "chapter": 5,
+ "scope": [
+  8,
+  8
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "a014e1771b101e270776112be94bc445fc55cc337ea94d062a80ba6110a97217",
+    "text_sha256": "4743025611d18ed8e2d81c2d682a21b1bba39e0291fda68daeed6fb594917878",
+    "index_file_sha256": "e653e157a833d2e653f38486460047f2755c2809787681eb39fd7cb905df2549"
+   },
+   "coverage": {
+    "8": {
+     "state": "confirmed",
+     "index": {
+      "at": 14410,
+      "end": 17350,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.5.8"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.5.8",
+     "opens_mid_outline": true,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 8,
+     "note_span": [
+      8,
+      8
+     ],
+     "start": 14410,
+     "end": 17350,
+     "chars": 2940,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 5,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC5.8.01",
+     "note_id": "MHC.5.8",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "(2.) It may be, one might perhaps be persuaded *to die for a good man,* that is, a useful man, who is more than barely a righteous man. Many that are good themselves yet do but little good to others; but those that are useful commonly get themselves well beloved, and meet with some that in a case of necessity would venture to be their *antipsychoi*—*would engage life for life,* would be their bail, body for body. Paul was, in this sense, a very good man, one that was very useful, and he met with some that for his life laid down their own necks, Ro 16:4.",
+     "outline_label": "(2.)",
+     "marker_span": [
+      14410,
+      14414
+     ],
+     "source_file": "library/commentary/MHC/ROM.json",
+     "start": 14410,
+     "end": 14969,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 16:4"
+     ],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "MHC5.8.02",
+     "note_id": "MHC.5.8",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "And yet observe how he qualifies this: it is but some that would do so, and it is a daring act if they do it, it must be some bold venturing soul; and, after all, it is but a *peradventure.* (3.) *But Christ died for sinners* (Ro 5:8), neither righteous nor good; not only such as were useless, but such as were guilty and obnoxious; not only such as there would be no loss of should they perish, but such whose destruction would greatly redound to the glory of God's justice, being malefactors and criminals that ought to die.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/MHC/ROM.json",
+     "start": 14970,
+     "end": 15497,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC5.8.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 5:8"
+     ],
+     "flags": [],
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "MHC5.8.03",
+     "note_id": "MHC.5.8",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "Some think he alludes to a common distinction the Jews had of their people into *ndyqym*—*righteous,* *hsdym*—*merciful* (compare Isa 17:1), and *rssym*—*wicked.* Now herein *God commended his love,* not only proved or evidenced his love (he might have done that at a cheaper rate), but magnified it and made it illustrious. This circumstance did greatly magnify and advance his love, not only put it past dispute, but rendered it the object of the greatest wonder and admiration: \"Now my creatures shall see that I love them, I will give them such an instance of it as shall be without parallel.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/MHC/ROM.json",
+     "start": 15498,
+     "end": 16095,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isa 17:1"
+     ],
+     "flags": [],
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "MHC5.8.04",
+     "note_id": "MHC.5.8",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "*Commendeth his love,* as merchants commend their goods when they would put them off. This commending of his love was in order to the shedding abroad of his love in our hearts by the Holy Ghost. He evinces his love in the most winning, affecting, endearing way imaginable. *While we were yet sinners,* implying that we were not to be always sinners, there should be a change wrought; for he died to save us, not in our sins, but from our sins; but we were yet sinners when he died for us.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/MHC/ROM.json",
+     "start": 16096,
+     "end": 16584,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "MHC5.8.05",
+     "note_id": "MHC.5.8",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "(4.) Nay, which is more, *we were enemies* (Ro 5:10), not only malefactors, but traitors and rebels, in arms against the government; the worst kind of malefactors and of all malefactors the most obnoxious. The carnal mind is not only an enemy to God, but enmity itself, Ro 8:7, Col 1:21. This enmity is a mutual enmity, God loathing the sinner, and the sinner loathing God, Zec 11:8. And that for such as these Christ should die is such a mystery, such a paradox, such an unprecedented instance of love, that it may well be our business to eternity to adore and wonder at it. This is a commendation of love indeed. Justly might he who had thus loved us make it one of the laws of his kingdom that we should love our enemies.\n\nII. The precious fruits of his death.",
+     "outline_label": "(4.)",
+     "marker_span": [
+      16585,
+      16589
+     ],
+     "source_file": "library/commentary/MHC/ROM.json",
+     "start": 16585,
+     "end": 17348,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [
+      "Ro 5:10",
+      "Ro 8:7",
+      "Col 1:21",
+      "Zec 11:8"
+     ],
+     "flags": [],
+     "covers_verses": [
+      8
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 37238 vs index 37238; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "e8e975992c5b4a49b071fc761f415c043d3d8f863ca6c00c561429d8904b2561",
+    "text_sha256": "a49c5de7a9cf66d91910dec7ce0d424bc28e25d05039c95e5622d03d873d0540",
+    "index_file_sha256": "c591d83f87afca0c5693b493f2456f8e080561c89fbfd1eb24a6260a9e8d334c"
+   },
+   "coverage": {
+    "8": {
+     "state": "present but excluded by range policy",
+     "note_span": [
+      8,
+      9
+     ],
+     "section": {
+      "start": 16086,
+      "end": 18032,
+      "head": "8. But God confirms, etc. The "
+     },
+     "pointer": "Calvin treats 8-9 together",
+     "alternative_reading": null
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 48241; sections 20; max code point U+201D"
+    },
+    {
+     "kind": "range-note",
+     "verse": 8,
+     "msg": "Calvin section 8 indexed span 8-9 (1946 chars): excluded by strict whole-note rule (D1). No separate sections for the rest of the span."
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "0 scripture_header pieces excluded: []"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "dc01c47d5219f3d3f10de7bafe1d70ae5bd54e690342a4bb52c4c88a84d4d921",
+    "text_sha256": "b4b63f8da1d2efbaf6599ec8b31a53d76f1e31f0aca4c3905b4a0705c1ff1038"
+   },
+   "coverage": {
+    "8": {
+     "state": "confirmed",
+     "note_id": "JFB.5.8"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.5.8",
+     "verse": 8,
+     "note_span": [
+      8,
+      8
+     ],
+     "start": 6814,
+     "end": 7325,
+     "chars": 511,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB5.8.01",
+     "note_id": "JFB.5.8",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "8. But God commendeth—\"setteth off,\" \"displayeth\"—in glorious contrast with all that men will do for each other.\nhis love toward us, in that, while we were yet sinners—that is, in a state not of positive \"goodness,\" nor even of negative \"righteousness,\" but on the contrary, \"sinners,\" a state which His soul hateth.\nChrist died for us—Now comes the overpowering inference, emphatically redoubled.\n9, 10. Much more then, being—\"having been\"\nnow justified by his blood, we shall be saved from wrath through him.",
+     "outline_label": "8.",
+     "marker_span": [
+      6814,
+      6816
+     ],
+     "source_file": "library/commentary/JFB/ROM.json",
+     "start": 6814,
+     "end": 7324,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      8
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 35191 chars; 17 verse markers: [1, 2, 4, 5, '6-8', 7, 8, 10, 11, 12, 14, 15, 16, 17, 18, 19, 21]; max code point U+2026"
+    },
+    {
+     "kind": "range-note",
+     "msg": "JFB range note 6-8 (703 chars) overlaps the request but is not wholly inside; excluded (D1). Separate notes exist for [7, 8]."
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "97b1bf304035af868f153d67820dcf0f4b2f3c062b248d0eaf601f97196b7ae5",
+    "text_sha256": null
+   },
+   "coverage": {
+    "8": {
+     "state": "confirmed",
+     "note_id": "GILL.5.8"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.5.8",
+     "verse": 8,
+     "note_span": [
+      8,
+      8
+     ],
+     "start": 0,
+     "end": 1719,
+     "chars": 1719,
+     "pieces": 3,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL5.8.01",
+     "note_id": "GILL.5.8",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "But God commendeth his love towards us,.... That is, he hath manifested it, which was before hid in his heart; he has given clear evidence of it, a full proof and demonstration of it; he has so confirmed it by this instance, that there is no room nor reason to doubt of it; he has illustrated and set it off with the greater lustre by this circumstance of it,\n\nin that while we were yet sinners Christ died for us.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Gill/ROM.json",
+     "start": 0,
+     "end": 414,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "4d01af302e24cd5baedfe7601f18989246b84ca26cc8f4c88641a7ed8294327a",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "GIL5.8.02",
+     "note_id": "GILL.5.8",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "God's elect were sinners in Adam, in whom they were naturally and federally, as all mankind were; hence polluted and guilty; and so they are in their own persons whilst unregenerate: they are dead in sin, and live in it, commit it, are slaves unto it, and are under the power and dominion of it; and many of them are the chief and vilest of sinners; and such they were considered when Christ died for them: but are not God's people sinners after conversion? yes; but sin has not the dominion over them; their life is not a course of sinning, as before; and besides, they are openly justified and pardoned, as well as renewed, and sanctified, and live in newness of life; so that their characters now are taken, not from their worse, but better part.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Gill/ROM.json",
+     "start": 415,
+     "end": 1164,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "4d01af302e24cd5baedfe7601f18989246b84ca26cc8f4c88641a7ed8294327a",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "GIL5.8.03",
+     "note_id": "GILL.5.8",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "And that before conversion is particularly mentioned here, to illustrate the love of God to them, notwithstanding this their character and condition; and to show that the love of God to them was very early; it anteceded their conversion; it was before the death of Christ for them; yea, it was from everlasting: and also to express the freeness of it, and to make it appear, that it did not arise from any loveliness in them; or from any love in them to him; nor from any works of righteousness done by them, but from his own sovereign will and pleasure.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Gill/ROM.json",
+     "start": 1165,
+     "end": 1719,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL5.8.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "4d01af302e24cd5baedfe7601f18989246b84ca26cc8f4c88641a7ed8294327a",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      8
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 21 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "483382b026762e9f6694ead45a8bc7fe3a582bb10091781daf703b8e5ea99373",
+    "text_sha256": "7d5a221a4a888d33782067ff8b6fcde1fc69447a21cf7b0592db21f09c903906"
+   },
+   "coverage": {
+    "8": {
+     "state": "confirmed",
+     "note_id": "WES.5.8"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.5.8",
+     "verse": 8,
+     "note_span": [
+      8,
+      8
+     ],
+     "start": 2172,
+     "end": 2399,
+     "chars": 227,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES5.8.01",
+     "note_id": "WES.5.8",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "8. But God recommendeth - A most elegant expression. Those are wont to be recommended to\nus, who were before either unknown to, or alienated from, us. While we were sinners - So far from\nbeing good, that we were not even just.",
+     "outline_label": "8.",
+     "marker_span": [
+      2172,
+      2174
+     ],
+     "source_file": "library/commentary/Wesley/ROM.json",
+     "start": 2172,
+     "end": 2398,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      8
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 8640 chars; 25 numbered line starts, 21 chosen as verse markers (19 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "8c68c45b8c23fb0aac21cf9187da872fd9291c1b3491a93d96598c49e7b21602",
+    "text_sha256": null
+   },
+   "coverage": {
+    "8": {
+     "state": "confirmed",
+     "note_id": "BAR.5.8"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.5.8",
+     "verse": 8,
+     "note_span": [
+      8,
+      8
+     ],
+     "start": 0,
+     "end": 496,
+     "chars": 496,
+     "pieces": 2,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR5.8.01",
+     "note_id": "BAR.5.8",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "Verse 8. But God commendeth, etc. God has exhibited or showed his love in this unusual and remarkable manner.\n\nHis love. His kind feeling; his beneficence; his willingness to submit to sacrifice to do good to others.\n\nWhile we were yet sinners. And of course his enemies. In this, his love surpasses all that has ever been manifested among men.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Barnes-NT/ROM.json",
+     "start": 0,
+     "end": 344,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "ea8bea4546cc3308455f38d765dc6f2c5c55eeec07bda22b973ffca1bd2ea52e",
+     "covers_verses": [
+      8
+     ]
+    },
+    {
+     "id": "BAR5.8.02",
+     "note_id": "BAR.5.8",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 5:8",
+     "note_span": [
+      8,
+      8
+     ],
+     "subject_span": [
+      8,
+      8
+     ],
+     "anchor_verse": 8,
+     "text": "Christ died for us. In our stead; to save us from death, he took our place; and, by dying himself on the cross, saved us from dying eternally in hell.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "library/commentary/Barnes-NT/ROM.json",
+     "start": 346,
+     "end": 496,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "ea8bea4546cc3308455f38d765dc6f2c5c55eeec07bda22b973ffca1bd2ea52e",
+     "covers_verses": [
+      8
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 21 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007A"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "d5a3adef8cad727d0647dbbf873822400bec7826928ecc1800a383205a35eaf7",
+    "text_sha256": null
+   },
+   "coverage": {
+    "8": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 8"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 13 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "7a29892604f1bfff2f5bb21f1f23e492aec630aeb93918e8f6c8fc37be9c1204",
+    "text_sha256": "f87adfa5c0efe14582abac763ef98e208b95c3f3e3962e443fea95747d92458a"
+   },
+   "coverage": {
+    "8": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 5: 1700 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {},
+   "coverage": {
+    "8": {
+     "state": "extraction failure",
+     "detail": "Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fatal",
+     "msg": "Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 37238 vs index 37238; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 48241; sections 20; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "range-note",
+   "verse": 8,
+   "msg": "Calvin section 8 indexed span 8-9 (1946 chars): excluded by strict whole-note rule (D1). No separate sections for the rest of the span."
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "0 scripture_header pieces excluded: []"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 35191 chars; 17 verse markers: [1, 2, 4, 5, '6-8', 7, 8, 10, 11, 12, 14, 15, 16, 17, 18, 19, 21]; max code point U+2026"
+  },
+  {
+   "source": "jfb",
+   "kind": "range-note",
+   "msg": "JFB range note 6-8 (703 chars) overlaps the request but is not wholly inside; excluded (D1). Separate notes exist for [7, 8]."
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 21 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 8640 chars; 25 numbered line starts, 21 chosen as verse markers (19 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 21 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007A"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 13 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 5: 1700 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fatal",
+   "msg": "Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "8": "confirmed"
+  },
+  "calvin": {
+   "8": "present but excluded by range policy"
+  },
+  "jfb": {
+   "8": "confirmed"
+  },
+  "gill": {
+   "8": "confirmed"
+  },
+  "wesley": {
+   "8": "confirmed"
+  },
+  "barnes": {
+   "8": "confirmed"
+  },
+  "tyndale": {
+   "8": "source absence"
+  },
+  "scofield": {
+   "8": "index absence"
+  },
+  "fathers": {
+   "8": "extraction failure"
+  }
+ },
+ "summary": {
+  "pieces": 12,
+  "chars": 5881,
+  "pieces_by_source": {
+   "mhc": 5,
+   "jfb": 1,
+   "gill": 3,
+   "wesley": 1,
+   "barnes-nt": 2
+  },
+  "chars_by_source": {
+   "mhc": 2934,
+   "jfb": 510,
+   "gill": 1717,
+   "wesley": 226,
+   "barnes-nt": 494
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 5,
+   "jamieson-fausset-brown": 1,
+   "john-gill": 3,
+   "wesley": 1,
+   "barnes": 2
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 2934,
+   "jamieson-fausset-brown": 510,
+   "john-gill": 1717,
+   "wesley": 226,
+   "barnes": 494
+  },
+  "per_anchor_verse": {
+   "8": {
+    "pieces": 12,
+    "chars": 5881,
+    "teacher_keys": [
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "8": {
+    "pieces": 12,
+    "chars": 5881,
+    "notes": 5,
+    "teacher_keys": [
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 10,
+   "B": 2
+  },
+  "non_standalone": 6,
+  "boundary_suspect": [
+   "MHC5.8.05"
+  ],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": [
+   "MHC.5.8:opens_mid_outline"
+  ]
+ },
+ "source_problems": [
+  "fathers: Fathers need HCF_LOCAL (path to the pinned Commentaries-Database copy). There is no network fallback."
+ ],
+ "source_fingerprint_sha256": null,
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 0
+ }
+}

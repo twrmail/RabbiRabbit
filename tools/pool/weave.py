@@ -50,8 +50,11 @@ reads read calls call puts put starts start ends end story line opens open close
 gives give brings bring lets let way thing things kind part'''.split())
 ALLOW = set('God Christ Jesus Son Lord Father Spirit John'.split())
 
+IRREG = dict(sent='send', came='come', gave='give', given='give', went='go', gone='go', said='say', made='make', took='take', taken='take',
+             saw='see', seen='see', knew='know', known='know', told='tell', brought='bring', thought='think', found='find', loved='love',
+             died='die', dies='die', laid='lay', lain='lay', spoke='speak', spoken='speak', wrote='write', written='write', chose='choose', chosen='choose')
 def stem(w):
-    w = w.lower()
+    w = w.lower(); w = IRREG.get(w, w)
     for suf in ('ings', 'ing', 'eth', 'est', 'ed', 'es', 's', 'e', 'ly'):
         if w.endswith(suf) and len(w) - len(suf) >= 3: return w[:-len(suf)]
     return w

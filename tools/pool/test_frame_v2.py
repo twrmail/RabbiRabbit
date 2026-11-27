@@ -59,12 +59,18 @@ def main(report):
         check(all(SR.md(P[x['id']]['text']) in html1 for vv in plan['verses'].values() for x in vv), f'{k}: a teacher passage is not exact on the page')
         # 4. sentinels
         first = plan['verses'][min(plan['verses'], key=int)][0]['id']
-        spots = [('study', 'take'), ('study', 'closing'), ('study', 'focus'), ('credits',), ('note',), ('scripture', str(st['scope'][0]))]
-        if st.get('weave'):   # narrative: every bridge, and the bridge label
+        spots = [('credits',), ('note',), ('scripture', str(st['scope'][0]))]
+        if st.get('full'):   # full study: every AI field, the destinations' Scripture and teacher text, a label
+            spots += [('full', 'opening', 'text'), ('full', 'bridges', str(st['scope'][0]), 'text'), ('summaries', first), ('headings', first),
+                      ('full', 'road', 'text'), ('full', 'road', 'prompt'), ('full', 'road', 'scripture'), ('full', 'road', 'quotes', 0, 'text'),
+                      ('full', 'hill', 'text'), ('full', 'hill', 'scripture'), ('labels', 'road_heading'), ('study', 'title')]
+        else: spots += [('study', 'take'), ('study', 'closing'), ('study', 'focus')]
+        if st.get('full'): pass
+        elif st.get('weave'):   # narrative: every bridge, and the bridge label
             segs = pc['weave']['movements'][0]['segments']
             spots += [('weave', 'movements', 0, 'segments', j, 'text') for j, sg in enumerate(segs) if sg['kind'] == 'bridge'] + [('labels', 'ai_bridge'), ('study', 'question')]
         else: spots += [('summaries', first), ('labels', 'ai_summary')]
-        if st.get('weave'): pass
+        if st.get('weave') or st.get('full'): pass
         elif st.get('shape') == 'short': spots += [('headings', first), ('study', 'question')]
         else: spots += [('verse_questions', str(st['sections'][0]['verse']))]
         for spot in spots:
