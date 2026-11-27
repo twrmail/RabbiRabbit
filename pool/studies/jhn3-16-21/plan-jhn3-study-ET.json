@@ -1,0 +1,40 @@
+{
+ "scope": "John 3:16-18",
+ "edition": "WEB",
+ "verses": {
+  "16": [
+   {
+    "id": "MHC3.16.05",
+    "role": "meaning"
+   },
+   {
+    "id": "CAL3.16.08",
+    "role": "meaning"
+   },
+   {
+    "id": "BAR3.16.01",
+    "role": "meaning"
+   }
+  ],
+  "17": [
+   {
+    "id": "AUG3.17-18.1.01",
+    "role": "meaning"
+   },
+   {
+    "id": "MHC3.17.05",
+    "role": "meaning"
+   },
+   {
+    "id": "CHR3.17-18.2.01",
+    "role": "meaning"
+   }
+  ],
+  "18": [
+   {
+    "id": "BAR3.18.02",
+    "role": "meaning"
+   }
+  ]
+ }
+}

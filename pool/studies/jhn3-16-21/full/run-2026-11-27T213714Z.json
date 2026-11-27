@@ -1,0 +1,147 @@
+{
+ "schema": "themed_study_run_v1",
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-27T21:37:14Z",
+ "destinations": {
+  "road": "Romans 5:8",
+  "hill": "John 15:13"
+ },
+ "key": "ET",
+ "attempts": [
+  {
+   "n": 1,
+   "cost": 0.1208,
+   "usage": {
+    "input_tokens": 17056,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4643,
+    "output_tokens_details": {
+     "thinking_tokens": 2806
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "problems": [
+    [
+     "W5",
+     "section 1 item 3: names Henry without his passage in evidence"
+    ],
+    [
+     "T7",
+     "section 1 item 4: the quotation starts mid-thought ('For as men are not easily convinced that' leans on the sentence before)"
+    ],
+    [
+     "T7",
+     "section 2 item 2: the quotation starts mid-thought ('So far, then, as it lies in the physicia' leans on the sentence before)"
+    ],
+    [
+     "W7",
+     "rabbi_road: number 3 not in evidence"
+    ],
+    [
+     "W2",
+     "over_the_hill: evidence ['JHN.3.16'] not allowed here"
+    ]
+   ],
+   "stats": {
+    "ai_chars": 3639,
+    "teacher_chars": 3228,
+    "ai_share": 52,
+    "teachers": 5,
+    "quotations": 7
+   },
+   "reply": "{\"title\":\"The Gift, the Mission, and the Verdict\",\"opening\":{\"text\":\"Some sentences are so familiar that we stop hearing them. These three verses tell us why God sent his Son, what that gift means for anyone who trusts him, and what is at stake for anyone who turns away. If you are new to faith, think of this passage as solid ground. It holds a love that gives, a Son sent to save, and two very different ways a person can stand before God.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]},\"sections\":[{\"heading\":\"A Love That Gives\",\"verses\":[16],\"flow\":[{\"text\":\"The passage opens with a small word, so: God so loved the world. These verses tell us that this love did not stay a feeling. It gave, and what it gave was his only born Son. Matthew Henry begins by asking us to stand amazed at who is loving whom.\",\"evidence\":[\"JHN.3.16\",\"MHC3.16.05\"]},{\"quote\":\"MHC3.16.05\",\"from\":0,\"to\":1},{\"text\":\"Henry sets the great and holy God beside a worthless, wicked world and lets the contrast speak. Then John Calvin asks why the Son is called only born, and what that does for a heart that doubts.\",\"evidence\":[\"JHN.3.16\",\"CAL3.16.08\"]},{\"quote\":\"CAL3.16.08\",\"from\":1,\"to\":2},{\"text\":\"Maybe you have wondered whether God loves you in particular, or only keeps a general goodwill toward people. Albert Barnes helps by saying what kind of love this is, and he uses a picture from family life.\",\"evidence\":[\"JHN.3.16\",\"BAR3.16.01\"]},{\"quote\":\"BAR3.16.01\",\"from\":2,\"to\":4},{\"text\":\"The verse ends with a promise. Whoever believes in him should not perish but have eternal life. The gift is already given, and believing is simply how we take hold of it.\",\"evidence\":[\"JHN.3.16\"]}]},{\"heading\":\"Sent to Save, Not to Condemn\",\"verses\":[17],\"flow\":[{\"text\":\"Many of us expect that when God draws near, it will be to settle accounts. These verses tell us otherwise: God did not send his Son into the world to judge the world, but that the world be saved through him. Augustine explains this with the picture of a doctor.\",\"evidence\":[\"JHN.3.17\",\"AUG3.17-18.1.01\"]},{\"quote\":\"AUG3.17-18.1.01\",\"from\":1,\"to\":3},{\"text\":\"Matthew Henry shows how this sending looked. The Son came with full powers, yet he did not open with a verdict. He opened a way in.\",\"evidence\":[\"JHN.3.17\",\"MHC3.17.05\"]},{\"quote\":\"MHC3.17.05\",\"from\":0,\"to\":2},{\"text\":\"If you have ever felt that God must be standing over you with arms crossed, let this verse correct the picture. The errand was salvation.\",\"evidence\":[\"JHN.3.17\"]}]},{\"heading\":\"Two Ways of Standing\",\"verses\":[18],\"flow\":[{\"text\":\"The last verse draws a line. Whoever believes in him is not judged. Whoever does not believe has been judged already, because he has not believed in the name of the only born Son of God. Albert Barnes first tells us what it means that the believer is not condemned, and what believing looks like.\",\"evidence\":[\"JHN.3.18\",\"BAR3.18.02\"]},{\"quote\":\"BAR3.18.02\",\"from\":0,\"to\":3},{\"text\":\"The second half is harder to hear. If the Son came not to judge, how can anyone be judged already? John Chrysostom takes up that very question, and his answer comes from ordinary life.\",\"evidence\":[\"JHN.3.18\",\"CHR3.17-18.2.01\"]},{\"quote\":\"CHR3.17-18.2.01\",\"from\":0,\"to\":2},{\"text\":\"So the passage leaves us with two ways of standing, and the gift of the Son is offered to every person. If you have trusted him, rest in the words not judged. If you are still unsure, the same verses show a love that gave first and a door that stands open.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]}]}],\"rabbi_road\":{\"text\":\"Romans 5:8 helps us see who this world of John 3 really is. We might picture God giving his Son after we had tidied ourselves up. This verse says Christ died for us while we were yet sinners. The gift did not wait for us to deserve it. That makes the word so in so loved feel larger, and it explains why the Son's coming was for saving. Matthew Henry notices that the verse says God commends his love, and he compares it to a merchant showing off his goods. He also sees in the words yet sinners a promise that we were not meant to stay as we were. Read back in John, the love that gave the Son is a love that reached us in our sin. That is why believing is about trust and not about our own record.\",\"evidence\":[\"ROM.5.8\",\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\",\"MHC5.8.04\"],\"quote\":[\"MHC5.8.04\"],\"prompt\":\"If God gave his Son while you were still a sinner, what is one thing you have been trying to fix about yourself first, before you trust him?\"},\"over_the_hill\":{\"text\":\"Next we come to a verse about the shape of the gift itself, and what it means to lay down a life for the ones you love. Having seen the Son given, we get to ask what such love looks like when it is close to us, and what it asks of us in return.\",\"evidence\":[\"JHN.15.13\",\"JHN.3.16\"]}}"
+  },
+  {
+   "n": 2,
+   "cost": 0.1077,
+   "usage": {
+    "input_tokens": 19099,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3359,
+    "output_tokens_details": {
+     "thinking_tokens": 1527
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "problems": [
+    [
+     "T7",
+     "section 1 item 6: the quotation starts mid-thought ('For God so loved.' leans on the sentence before)"
+    ]
+   ],
+   "stats": {
+    "ai_chars": 3644,
+    "teacher_chars": 3566,
+    "ai_share": 50,
+    "teachers": 5,
+    "quotations": 7
+   },
+   "reply": "{\"title\":\"The Gift, the Mission, and the Verdict\",\"opening\":{\"text\":\"Some sentences are so familiar that we stop hearing them. These three verses tell us why God sent his Son, what that gift means for anyone who trusts him, and what is at stake for anyone who turns away. If you are new to faith, think of this passage as solid ground. It holds a love that gives, a Son sent to save, and two very different ways a person can stand before God.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]},\"sections\":[{\"heading\":\"A Love That Gives\",\"verses\":[16],\"flow\":[{\"text\":\"The passage opens with a small word, so: God so loved the world. These verses tell us that this love did not stay a feeling. It gave, and what it gave was his only born Son. Matthew Henry begins by asking us to stand amazed at who is loving whom.\",\"evidence\":[\"JHN.3.16\",\"MHC3.16.05\"]},{\"quote\":\"MHC3.16.05\",\"from\":0,\"to\":1},{\"text\":\"Henry sets the great and holy God beside a worthless, wicked world and lets the contrast speak. Then John Calvin turns to the words only born and asks what they do for a heart that doubts.\",\"evidence\":[\"JHN.3.16\",\"MHC3.16.05\",\"CAL3.16.08\"]},{\"quote\":\"CAL3.16.08\",\"from\":0,\"to\":2},{\"text\":\"Maybe you have wondered whether God loves you in particular, or only keeps a general goodwill toward people. Albert Barnes helps by saying what kind of love this is, and he uses a picture from family life.\",\"evidence\":[\"JHN.3.16\",\"BAR3.16.01\"]},{\"quote\":\"BAR3.16.01\",\"from\":1,\"to\":5},{\"text\":\"The verse ends with a promise. Whoever believes in him should not perish but have eternal life. The gift is already given, and believing is simply how we take hold of it.\",\"evidence\":[\"JHN.3.16\"]}]},{\"heading\":\"Sent to Save, Not to Condemn\",\"verses\":[17],\"flow\":[{\"text\":\"Many of us expect that when God draws near, it will be to settle accounts. These verses tell us otherwise: God did not send his Son into the world to judge the world, but that the world be saved through him. Augustine explains this with the picture of a doctor.\",\"evidence\":[\"JHN.3.17\",\"AUG3.17-18.1.01\"]},{\"quote\":\"AUG3.17-18.1.01\",\"from\":0,\"to\":3},{\"text\":\"Matthew Henry shows how this sending looked. The Son came with full powers, yet he did not open with a verdict. He opened a way in.\",\"evidence\":[\"JHN.3.17\",\"MHC3.17.05\"]},{\"quote\":\"MHC3.17.05\",\"from\":0,\"to\":2},{\"text\":\"If you have ever felt that God must be standing over you with arms crossed, let this verse correct the picture. The errand was salvation.\",\"evidence\":[\"JHN.3.17\"]}]},{\"heading\":\"Two Ways of Standing\",\"verses\":[18],\"flow\":[{\"text\":\"The last verse draws a line. Whoever believes in him is not judged. Whoever does not believe has been judged already, because he has not believed in the name of the only born Son of God. Albert Barnes first tells us what it means that the believer is not condemned, and what believing looks like.\",\"evidence\":[\"JHN.3.18\",\"BAR3.18.02\"]},{\"quote\":\"BAR3.18.02\",\"from\":0,\"to\":3},{\"text\":\"The second half is harder to hear. If the Son came not to judge, how can anyone be judged already? John Chrysostom takes up that very question, and his answer comes from ordinary life.\",\"evidence\":[\"JHN.3.18\",\"CHR3.17-18.2.01\"]},{\"quote\":\"CHR3.17-18.2.01\",\"from\":0,\"to\":2},{\"text\":\"So the passage leaves us with two ways of standing, and the gift of the Son is offered to every person. If you have trusted him, rest in the words not judged. If you are still unsure, the same verses show a love that gave first and a door that stands open.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]}]}],\"rabbi_road\":{\"text\":\"This verse helps us see who the world in our passage really is. We might picture God giving his Son after we had tidied ourselves up. This verse says Christ died for us while we were yet sinners. The gift did not wait for us to deserve it. That makes the word so in so loved feel larger, and it explains why the Son's coming was for saving. Matthew Henry notices that the verse says God commends his love, and he compares it to a merchant showing off his goods. He also sees in the words yet sinners a promise that we were not meant to stay as we were. Read back in our passage, the love that gave the Son is a love that reached us in our sin. That is why believing is about trust and not about our own record.\",\"evidence\":[\"ROM.5.8\",\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\",\"MHC5.8.04\"],\"quote\":[\"MHC5.8.04\"],\"prompt\":\"If God gave his Son while you were still a sinner, what is one thing you have been trying to fix about yourself first, before you trust him?\"},\"over_the_hill\":{\"text\":\"Next we come to a verse about the shape of the gift itself, and what it means to lay down a life for the ones you love. Having seen the Son given, we get to ask what such love looks like when it is close to us, and what it asks of us in return.\",\"evidence\":[\"JHN.15.13\"]}}"
+  },
+  {
+   "n": 3,
+   "cost": 0.0967,
+   "usage": {
+    "input_tokens": 18962,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2656,
+    "output_tokens_details": {
+     "thinking_tokens": 837
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "problems": [],
+   "stats": {
+    "ai_chars": 3607,
+    "teacher_chars": 3541,
+    "ai_share": 50,
+    "teachers": 5,
+    "quotations": 7
+   },
+   "reply": "{\"title\":\"The Gift, the Mission, and the Verdict\",\"opening\":{\"text\":\"Some sentences are so familiar that we stop hearing them. These three verses tell us why God sent his Son, what that gift means for anyone who trusts him, and what is at stake for anyone who turns away. If you are new to faith, think of this passage as solid ground. It holds a love that gives, a Son sent to save, and two very different ways a person can stand before God.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]},\"sections\":[{\"heading\":\"A Love That Gives\",\"verses\":[16],\"flow\":[{\"text\":\"The passage opens with a small word, so: God so loved the world. These verses tell us that this love did not stay a feeling. It gave, and what it gave was his only born Son. Matthew Henry begins by asking us to stand amazed at who is loving whom.\",\"evidence\":[\"JHN.3.16\",\"MHC3.16.05\"]},{\"quote\":\"MHC3.16.05\",\"from\":0,\"to\":1},{\"text\":\"Henry sets the great and holy God beside a worthless, wicked world and lets the contrast speak. Then John Calvin turns to the words only born and asks what they do for a heart that doubts.\",\"evidence\":[\"JHN.3.16\",\"MHC3.16.05\",\"CAL3.16.08\"]},{\"quote\":\"CAL3.16.08\",\"from\":0,\"to\":2},{\"text\":\"Maybe you have wondered whether God loves people who are far from good. Albert Barnes helps by saying what kind of love this is, and he uses a picture from family life.\",\"evidence\":[\"JHN.3.16\",\"BAR3.16.01\"]},{\"quote\":\"BAR3.16.01\",\"from\":3,\"to\":6},{\"text\":\"The verse ends with a promise. Whoever believes in him should not perish but have eternal life. The gift is already given, and believing is simply how we take hold of it.\",\"evidence\":[\"JHN.3.16\"]}]},{\"heading\":\"Sent to Save, Not to Condemn\",\"verses\":[17],\"flow\":[{\"text\":\"Many of us expect that when God draws near, it will be to settle accounts. These verses tell us otherwise: God did not send his Son into the world to judge the world, but that the world be saved through him. Augustine explains this with the picture of a doctor.\",\"evidence\":[\"JHN.3.17\",\"AUG3.17-18.1.01\"]},{\"quote\":\"AUG3.17-18.1.01\",\"from\":0,\"to\":3},{\"text\":\"Matthew Henry shows how this sending looked. The Son came with full powers, yet he did not open with a verdict. He opened a way in.\",\"evidence\":[\"JHN.3.17\",\"MHC3.17.05\"]},{\"quote\":\"MHC3.17.05\",\"from\":0,\"to\":2},{\"text\":\"If you have ever felt that God must be standing over you with arms crossed, let this verse correct the picture. The errand was salvation.\",\"evidence\":[\"JHN.3.17\"]}]},{\"heading\":\"Two Ways of Standing\",\"verses\":[18],\"flow\":[{\"text\":\"The last verse draws a line. Whoever believes in him is not judged. Whoever does not believe has been judged already, because he has not believed in the name of the only born Son of God. Albert Barnes first tells us what it means that the believer is not condemned, and what believing looks like.\",\"evidence\":[\"JHN.3.18\",\"BAR3.18.02\"]},{\"quote\":\"BAR3.18.02\",\"from\":0,\"to\":3},{\"text\":\"The second half is harder to hear. If the Son came not to judge, how can anyone be judged already? John Chrysostom takes up that very question, and his answer comes from ordinary life.\",\"evidence\":[\"JHN.3.18\",\"CHR3.17-18.2.01\"]},{\"quote\":\"CHR3.17-18.2.01\",\"from\":0,\"to\":2},{\"text\":\"So the passage leaves us with two ways of standing, and the gift of the Son is offered to every person. If you have trusted him, rest in the words not judged. If you are still unsure, the same verses show a love that gave first and a door that stands open.\",\"evidence\":[\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\"]}]}],\"rabbi_road\":{\"text\":\"This verse helps us see who the world in our passage really is. We might picture God giving his Son after we had tidied ourselves up. This verse says Christ died for us while we were yet sinners. The gift did not wait for us to deserve it. That makes the word so in so loved feel larger, and it explains why the Son's coming was for saving. Matthew Henry notices that the verse says God commends his love, and he compares it to a merchant showing off his goods. He also sees in the words yet sinners a promise that we were not meant to stay as we were. Read back in our passage, the love that gave the Son is a love that reached us in our sin. That is why believing is about trust and not about our own record.\",\"evidence\":[\"ROM.5.8\",\"JHN.3.16\",\"JHN.3.17\",\"JHN.3.18\",\"MHC5.8.04\"],\"quote\":[\"MHC5.8.04\"],\"prompt\":\"If God gave his Son while you were still a sinner, what is one thing you have been trying to fix about yourself first, before you trust him?\"},\"over_the_hill\":{\"text\":\"Next we come to a verse about the shape of the gift itself, and what it means to lay down a life for the ones you love. Having seen the Son given, we get to ask what such love looks like when it is close to us, and what it asks of us in return.\",\"evidence\":[\"JHN.15.13\"]}}"
+  }
+ ],
+ "spent": 0.3621,
+ "result": "passed",
+ "critic": {
+  "cost": 0.0369,
+  "usage": {
+   "input_tokens": 6279,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1203,
+   "output_tokens_details": {
+    "thinking_tokens": 1194
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "notes": []
+ }
+}
