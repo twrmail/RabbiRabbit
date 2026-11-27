@@ -11,7 +11,8 @@ usage:
   full_study.py run [--model M] [--attempts 3] [--max-cost 1]      one real model call (needs ANTHROPIC_API_KEY; Tom's go-ahead)
   full_study.py check FILE                                         check a saved study_full_v1 JSON against the current pool
   full_study.py prompt                                             print the prompt that would be sent (no call)
-Writes pool/studies/jhn3-16-21/full/EF.json when a run passes, and full/run-<UTC time>.json (every attempt, its problems, its cost)."""
+  run options: --key EF2 (the study's key) --profile free|strict (which rails; see PROFILES)
+Writes pool/studies/jhn3-16-21/full/<key>.json when a run passes (with the critic's notes for review), and full/run-<UTC time>.json (every attempt, its problems, its cost)."""
 import json, os, re, sys, time, urllib.request, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import weave as W, destinations as D, run_validator as RV, studies_jhn as S
@@ -20,8 +21,14 @@ REPO = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 SDIR = os.path.join(REPO, 'pool', 'studies', 'jhn3-16-21'); FULL = os.path.join(SDIR, 'full')
 SCHEMA = 'study_full_v1'
 BOOK = dict(JHN='John', ROM='Romans')
-LIMITS = dict(title=70, opening=450, heading=70, bridge=300, road=700, prompt=180, hill=450)
-AI_SHARE = 45   # percent of printed teacher-plus-AI characters (Tom, Nov 27: a full study where AI brings the flesh; was 35% for bridges-only weaves)
+# Two rail profiles. 'strict' is the first run's (EF). 'free' (Tom, Nov 27): the AI writes freely in its own fields; the rails that guard
+# what matters stay (code prints Scripture and teachers, code picks destinations, names only with evidence, references only those given,
+# no quotation marks, no claims about teachers in general, every passage covered); the word-counting rails that made the prose stiff
+# (W7 capitalized words, W12 bridge words, tight lengths) are dropped, and meaning is judged by a critic call plus Tom's review.
+PROFILES = dict(
+    strict=dict(limits=dict(title=70, opening=450, heading=70, bridge=300, road=700, prompt=180, hill=450), ai_share=45, w7=True, w12=True, skip_dangling=False),
+    free=dict(limits=dict(title=80, opening=900, heading=80, bridge=500, road=1200, prompt=250, hill=700), ai_share=55, w7=False, w12=False, skip_dangling=True))
+LIMITS = PROFILES['strict']['limits']; AI_SHARE = PROFILES['strict']['ai_share']
 ROAD_TEACHERS = ('matthew-henry', 'john-gill')
 PRICE = {'claude-haiku-4-5': (1, 5)}   # dollars per million tokens (input, output); others are estimated at (3, 15)
 
@@ -31,7 +38,9 @@ def slug(d): return f"{d['book'].lower()}{d['chapter']}-{d['verse']}"
 def label(d): return f"{BOOK.get(d['book'], d['book'])} {d['chapter']}:{d['verse']}"
 def tok(d): return f"{d['book']}.{d['chapter']}.{d['verse']}"
 
-def materials(st=None, report=None):
+DANGLING = re.compile(r'\n\s*[IVXLC]+\.\s[^\n]*$')   # a passage that ends on the next section's outline heading (e.g. 'II. The precious fruits of his death.')
+
+def materials(st=None, report=None, profile='free'):
     """Everything the model is given and the page prints, rebuilt from the repo each time."""
     st = st or next(s for s in S.STUDIES if s['key'] == 'E'); report = report or os.path.join(SDIR, 'diagnostic-jhn3-16-21-public.json')
     _, pool, _, _ = RV.load(report); P = {p['id']: p for p in pool}; lo, hi = st['scope']; J3 = wv('JHN', 3)
@@ -41,7 +50,8 @@ def materials(st=None, report=None):
         if not os.path.exists(f): raise SystemExit(f'{part} destination {label(d)} has no committed pool ({f}); build it with run_diagnostic.py and public_pool.py')
         _, dp, _, _ = RV.load(f)
         cands = [dict(id=p['id'], teacher_key=p['teacher_key'], teacher=S.TEACH.get(p['teacher_key'], p['teacher_key']), work=p.get('work_title'),
-                      rights=p['rights'], text=p['text']) for p in dp if part == 'road' and p['teacher_key'] in ROAD_TEACHERS and p['standalone'] and p['rights'] in 'AB']
+                      rights=p['rights'], text=p['text']) for p in dp if part == 'road' and p['teacher_key'] in ROAD_TEACHERS and p['standalone'] and p['rights'] in 'AB'
+                 and not (PROFILES[profile]['skip_dangling'] and DANGLING.search(p['text']))]
         dest[part] = dict(ref=label(d), token=tok(d), votes=d['votes'], scripture=wv(d['book'], d['chapter'])[str(d['verse'])], candidates=cands)
     body = []
     for sec in st['sections']:
@@ -78,6 +88,40 @@ RULES (a program checks every one; a study that breaks a rule is thrown away):
 - Length limits (characters): title 70, opening 450, heading 70, summary its summary_cap, bridge 300, rabbi_road text 700, prompt 180, over_the_hill 450. Your text must be at most 45% of the printed teacher-plus-your-text characters, so be brief.
 - Plain English, warm and direct, about 8th to 10th grade, for a new believer."""
 
+SYSTEM_FREE = """You write a Bible study for RabbiRabbit, for a new believer. Scripture is the foundation, the old teachers are the bones, and you bring the flesh and life. A program prints the Scripture and every teacher's words exactly, so you never retype them. You write the parts around them, in your own warm, clear words: help the reader see what the Scripture says, hear what each teacher is saying, and feel why it matters for their life today.
+
+Reply with JSON only, in exactly this shape:
+{"title": "...",
+ "opening": {"text": "...", "evidence": [ids]},
+ "body": [{"verse": 16, "pieces": [{"piece": "ID", "heading": "...", "summary": "..."}], "bridge": {"text": "...", "evidence": [ids]}}, ...],
+ "rabbi_road": {"text": "...", "evidence": [ids], "quote": ["ID"], "prompt": "..."},
+ "over_the_hill": {"text": "...", "evidence": [ids]}}
+Evidence ids are teacher passage ids (like MHC3.16.05) or Scripture tokens (like JHN.3.16, ROM.5.8): list what each part draws on.
+
+THE STUDY (the program prints it in this order):
+1. title, then opening: draw the reader in. A short paragraph that makes them want to read these verses, and says plainly what the passage is about.
+2. body: one entry per verse, in the order given, with every teacher passage listed for that verse, in the order given. For each passage: a heading (a few words naming what he says) and a summary: his point in plain modern language, at most the summary_cap characters given. Each verse except the last has a bridge that carries the reader on to the next verse: let it breathe, connect the thought, and turn the reader toward what comes next. The last verse's bridge is null.
+3. rabbi_road: the program prints Returning by way of the destination reference, and its Scripture. Take the reader there and show what that verse reveals about the study passage that a straight reading would miss, then bring them back to the study passage enriched. Draw on the destination Scripture, the study Scripture, and one or two of the destination teacher passages offered (list their ids in "quote"; the program prints them whole). "prompt" is one discussion question for the reader's own life.
+4. over_the_hill: the program prints the next destination reference and its Scripture. A short, inviting look ahead: what is waiting just over the hill, and why it is worth the walk.
+
+FREEDOM AND ITS LIMITS:
+- Write freely: plain images, everyday language, a word to the reader's life, questions, warmth. You are not limited to the teachers' vocabulary.
+- But bring in no outside learning: no history, background, word studies, Greek or Hebrew, other Bible passages, or doctrines that the given Scripture and passages do not state. Application to the reader's life is welcome; new teaching is not.
+- Never put words in a teacher's mouth. Name a teacher only where his passage is in that part's evidence, and say only what his passage says.
+- No chapter:verse references except those you were given. No quotation marks, markdown or emoji (the program prints all quotations).
+- Never say what teachers, the church or a tradition hold in general (no "agree", "all the teachers", "the church has always", "tradition holds"). Speak of these passages.
+- Length (characters): title 80, opening 900, heading 80, summary its summary_cap, bridge 500, rabbi_road text 1200, prompt 250, over_the_hill 700. Keep the whole study readable: your text at most 55% of the printed teacher-plus-your-text characters."""
+
+CRITIC = """You review a Bible study before a pastor approves it. A program printed the Scripture and the teachers' passages exactly; an AI wrote everything else. You get the sources (Scripture and the teacher passages, by id) and the AI's text, field by field, each with the evidence it cites.
+Flag only real problems: a statement the sources do not support; a teacher made to say something his passage does not say, or his point shifted, overstated or understated; outside teaching, history or Bible references brought in; anything misleading for a new believer. Do not flag style, warmth, application to life, or wording you would have chosen differently.
+Reply with JSON only: {"notes": [{"where": "field name", "issue": "one or two plain sentences", "severity": "minor" or "serious"}]}, and {"notes": []} if there are none."""
+
+def critic_message(M, F):
+    src = dict(scripture={b['token']: b['scripture'] for b in M['body']} | {M['road']['token']: M['road']['scripture'], M['hill']['token']: M['hill']['scripture']},
+               passages={p['id']: dict(teacher=p['teacher'], text=p['text']) for b in M['body'] for p in b['pieces']} |
+                        {c['id']: dict(teacher=c['teacher'], text=c['text']) for c in M['road']['candidates']})
+    return 'SOURCES\n' + json.dumps(src, indent=1, ensure_ascii=False) + '\n\nSTUDY WRITTEN BY AI\n' + json.dumps(F, indent=1, ensure_ascii=False)
+
 def user_message(M):
     show = dict(study_scripture=dict(ref=M['scope']['ref'], verses=[dict(token=b['token'], text=b['scripture']) for b in M['body']]),
                 body=[dict(verse=b['verse'], token=b['token'], pieces=[dict(id=p['id'], teacher=p['teacher'], covers_verses=p['covers'],
@@ -99,7 +143,7 @@ def _names(teacher_names):
             if w not in ('John', 'Matthew'): sur.setdefault(w, set()).add(k)
     return sur, parts
 
-def check_text(where, text, ev_text, ev_keys, refs_ok, limit, bridge=False, teacher_names=S.TEACH, title=False):
+def check_text(where, text, ev_text, ev_keys, refs_ok, limit, bridge=False, teacher_names=S.TEACH, title=False, w7=True):
     """title=True: a title or heading, where any word may be capitalized; each capital is then judged like a sentence start."""
     R = []; sur, parts = _names(teacher_names)
     if not isinstance(text, str) or not text.strip(): return [('F1', f'{where}: empty')]
@@ -112,7 +156,7 @@ def check_text(where, text, ev_text, ev_keys, refs_ok, limit, bridge=False, teac
     pw = {w.lower() for w in W.words(ev_text)}; stems = {W.stem(w) for w in pw}
     for n in re.findall(r'\d+', t2):
         if n not in ev_text: R.append(('W7', f'{where}: number {n} not in evidence'))
-    for m in re.finditer(r"[A-Za-z]+(?:'[a-z]+)?", t2):
+    for m in (re.finditer(r"[A-Za-z]+(?:'[a-z]+)?", t2) if w7 else ()):
         w = m.group(0)
         if not w[0].isupper() or w in W.ALLOW or w in parts or w in ('Holy', 'Ghost', 'Rabbit', 'Rabbi', 'Road') or w.lower() in pw: continue
         lw = w.lower(); start = title or not t2[:m.start()].strip() or re.search(r'[.!?:]\s*$', t2[:m.start()])
@@ -130,9 +174,9 @@ def check_text(where, text, ev_text, ev_keys, refs_ok, limit, bridge=False, teac
         if extra: R.append(('W12', f'{where}: words not in its evidence: {extra}'))
     return R
 
-def check(F, M, teacher_names=S.TEACH):
+def check(F, M, teacher_names=S.TEACH, profile='free'):
     """The rails for a full study. Returns (problems, stats). Empty problems means it may be used (still PENDING Tom's approval)."""
-    R = []
+    R = []; PR = PROFILES[profile]; LIMITS = PR['limits']; w7 = PR['w7']
     if not isinstance(F, dict): return [('F1', 'not a JSON object')], {}
     for k in ('title', 'opening', 'body', 'rabbi_road', 'over_the_hill'):
         if k not in F: R.append(('F1', f'missing {k}'))
@@ -152,10 +196,10 @@ def check(F, M, teacher_names=S.TEACH):
         return ' '.join(texts[x] for x in ok), {keys[x] for x in ok if x in keys}
     def txt(where, s, e, allowed, refs, limit, bridge=False):
         nonlocal ai
-        et, ek = ev(where, e, allowed); R.extend(check_text(where, s, et, ek, refs, limit, bridge, teacher_names)); ai += len(s) if isinstance(s, str) else 0
+        et, ek = ev(where, e, allowed); R.extend(check_text(where, s, et, ek, refs, limit, bridge and PR['w12'], teacher_names, w7=w7)); ai += len(s) if isinstance(s, str) else 0
     allscope = set(scope_tok) | set(pieces)
     # title and opening
-    R.extend(check_text('title', F['title'], ' '.join(scope_tok.values()) + ' ' + ' '.join(p['text'] for p in pieces.values()), set(), scope_refs, LIMITS['title'], teacher_names=teacher_names, title=True))
+    R.extend(check_text('title', F['title'], ' '.join(scope_tok.values()) + ' ' + ' '.join(p['text'] for p in pieces.values()), set(), scope_refs, LIMITS['title'], teacher_names=teacher_names, title=True, w7=w7))
     ai += len(F['title']) if isinstance(F['title'], str) else 0
     o = F['opening'] if isinstance(F['opening'], dict) else {}
     txt('opening', o.get('text'), o.get('evidence'), allscope, scope_refs, LIMITS['opening'])
@@ -169,8 +213,8 @@ def check(F, M, teacher_names=S.TEACH):
             pid = p.get('piece')
             if pid not in pieces: continue
             allowed = {pid, mb['token']}
-            R.extend(check_text(f'{pid} heading', p.get('heading'), texts[pid] + ' ' + mb['scripture'], {keys[pid]}, scope_refs, LIMITS['heading'], teacher_names=teacher_names, title=True))
-            R.extend(check_text(f'{pid} summary', p.get('summary'), texts[pid] + ' ' + mb['scripture'], {keys[pid]}, scope_refs, pieces[pid]['summary_cap'], teacher_names=teacher_names))
+            R.extend(check_text(f'{pid} heading', p.get('heading'), texts[pid] + ' ' + mb['scripture'], {keys[pid]}, scope_refs, LIMITS['heading'], teacher_names=teacher_names, title=True, w7=w7))
+            R.extend(check_text(f'{pid} summary', p.get('summary'), texts[pid] + ' ' + mb['scripture'], {keys[pid]}, scope_refs, pieces[pid]['summary_cap'], teacher_names=teacher_names, w7=w7))
             ai += len(p.get('heading') or '') + len(p.get('summary') or '')
         last = mb is M['body'][-1]
         br = fb.get('bridge')
@@ -189,7 +233,7 @@ def check(F, M, teacher_names=S.TEACH):
     road_allowed = set(scope_tok) | {M['road']['token']} | set(cands)
     road_refs = scope_refs + [M['road']['ref']]
     txt('rabbi_road', rr.get('text'), rr.get('evidence'), road_allowed, road_refs, LIMITS['road'])
-    R.extend(check_text('rabbi_road prompt', rr.get('prompt'), ' '.join(texts[x] for x in road_allowed), {keys[x] for x in road_allowed if x in keys}, road_refs, LIMITS['prompt'], teacher_names=teacher_names))
+    R.extend(check_text('rabbi_road prompt', rr.get('prompt'), ' '.join(texts[x] for x in road_allowed), {keys[x] for x in road_allowed if x in keys}, road_refs, LIMITS['prompt'], teacher_names=teacher_names, w7=w7))
     ai += len(rr.get('prompt') or '')
     # Over the Hill
     oh = F['over_the_hill'] if isinstance(F['over_the_hill'], dict) else {}
@@ -197,7 +241,7 @@ def check(F, M, teacher_names=S.TEACH):
     # budget
     teacher = sum(len(p['text']) for p in pieces.values()) + sum(len(cands[x]['text']) for x in q if x in cands)
     share = 100 * ai // max(1, ai + teacher)
-    if share > AI_SHARE: R.append(('W10', f'AI text is {share}% of teacher-plus-AI characters (max {AI_SHARE}%)'))
+    if share > PR['ai_share']: R.append(('W10', f"AI text is {share}% of teacher-plus-AI characters (max {PR['ai_share']}%)"))
     return R, dict(ai_chars=ai, teacher_chars=teacher, ai_share=share)
 
 # ----------------------------------------------------------------------------------------------------------------- one model call
@@ -227,22 +271,29 @@ def parse(s):
     try: return json.loads(m.group(0)) if m else None
     except json.JSONDecodeError: return None
 
-def run(model, attempts, max_cost):
-    M = materials(); user = user_message(M); log = dict(schema='full_study_run_v1', model=model, started=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
-                                                        destinations=dict(road=M['road']['ref'], hill=M['hill']['ref']), attempts=[], spent=0.0, result='failed')
+def run(model, attempts, max_cost, key='EF2', profile='free'):
+    M = materials(profile=profile); user = user_message(M); system = SYSTEM_FREE if profile == 'free' else SYSTEM; log = dict(schema='full_study_run_v1', model=model, started=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+                                                        destinations=dict(road=M['road']['ref'], hill=M['hill']['ref']), key=key, profile=profile, attempts=[], spent=0.0, result='failed')
     msg = user; os.makedirs(FULL, exist_ok=True)
     for n in range(attempts):
         if log['spent'] >= max_cost: log['stopped'] = f'cost cap ${max_cost}'; break
-        try: text, cost, usage = ask(model, SYSTEM, msg)
+        try: text, cost, usage = ask(model, system, msg)
         except ApiError as e:
             log['attempts'].append(dict(n=n + 1, error=str(e))); print(f'attempt {n + 1}: {e}'); log['stopped'] = 'API error'; break
         log['spent'] += cost; F = parse(text)
-        probs, stats = check(F, M) if F is not None else ([('F1', 'reply was not JSON')], {})
+        probs, stats = check(F, M, profile=profile) if F is not None else ([('F1', 'reply was not JSON')], {})
         log['attempts'].append(dict(n=n + 1, cost=round(cost, 4), usage=usage, problems=probs, stats=stats, reply=text))
         print(f'attempt {n + 1}: {len(probs)} problems, ${cost:.4f}', *[f'  {r}: {m}' for r, m in probs[:12]], sep='\n')
         if not probs:
-            out = dict(schema=SCHEMA, model=model, built=log['started'], destinations=log['destinations'], study=F)
-            json.dump(out, open(os.path.join(FULL, 'EF.json'), 'w'), indent=1, ensure_ascii=False); log['result'] = 'passed'; break
+            out = dict(schema=SCHEMA, model=model, built=log['started'], destinations=log['destinations'], profile=profile, study=F)
+            try:   # the critic: a second call that reads the study against its sources; its notes go to Tom's review, they do not reject
+                ctext, ccost, cu = ask(model, CRITIC, critic_message(M, F)); log['spent'] += ccost; cj = parse(ctext)
+                notes = cj.get('notes') if isinstance(cj, dict) and isinstance(cj.get('notes'), list) else None
+                out['critic'] = dict(model=model, notes=notes if notes is not None else [], ok=notes is not None, raw=None if notes is not None else ctext)
+                log['critic'] = dict(cost=round(ccost, 4), usage=cu, notes=out['critic']['notes'])
+                print(f'critic: {len(out["critic"]["notes"])} notes, ${ccost:.4f}', *[f"  [{n.get('severity')}] {n.get('where')}: {n.get('issue')}" for n in out['critic']['notes']], sep='\n')
+            except ApiError as e: out['critic'] = dict(model=model, notes=[], ok=False, raw=str(e)); log['critic'] = dict(error=str(e))
+            json.dump(out, open(os.path.join(FULL, f'{key}.json'), 'w'), indent=1, ensure_ascii=False); log['result'] = 'passed'; break
         msg = (user + '\n\nYour previous reply broke these rules. Write the whole study again, fixing them:\n' +
                '\n'.join(f'- {r}: {m}' for r, m in probs[:40]) + '\n\nPrevious reply:\n' + text)
     log['spent'] = round(log['spent'], 4)
@@ -252,7 +303,8 @@ def run(model, attempts, max_cost):
 
 if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k, d: a[a.index(k) + 1] if k in a else d
-    if not a or a[0] == 'prompt': print(SYSTEM, '\n\n', user_message(materials()))
+    if not a or a[0] == 'prompt': pf = opt('--profile', 'free'); print(SYSTEM_FREE if pf == 'free' else SYSTEM, '\n\n', user_message(materials(profile=pf)))
     elif a[0] == 'check':
-        p, s = check(json.load(open(a[1]))['study'], materials()); print(s); [print(' ', r, m) for r, m in p]; sys.exit(1 if p else 0)
-    elif a[0] == 'run': sys.exit(0 if run(opt('--model', 'claude-sonnet-5-5'), int(opt('--attempts', 3)), float(opt('--max-cost', 1))) else 1)
+        d = json.load(open(a[1])); pf = d.get('profile', 'strict'); p, s = check(d['study'], materials(profile=pf), profile=pf)
+        print(pf, s); [print(' ', r, m) for r, m in p]; sys.exit(1 if p else 0)
+    elif a[0] == 'run': sys.exit(0 if run(opt('--model', 'claude-sonnet-5-5'), int(opt('--attempts', 3)), float(opt('--max-cost', 1)), opt('--key', 'EF2'), opt('--profile', 'free')) else 1)

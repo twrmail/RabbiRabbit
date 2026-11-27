@@ -121,3 +121,12 @@ def page(fr):
     t = fr['labels']['page_title'].format(key=fr['study']['key'], title=fr['study']['title'], scope=fr['scope'])
     css = NCSS if fr.get('renderer') == NARRATIVE else FCSS if fr.get('renderer') == FULL else CSS
     return f'<!doctype html><meta charset=utf-8><title>{e(t)}</title><style>{css}</style>\n{body(fr)}\n'
+
+def review_page(fr, critic):
+    """For Tom's review only: the study page with the critic's notes on top. Not part of the frame, never served."""
+    notes = critic.get('notes') or []
+    rows = ''.join(f'<li><b>{e(str(n.get("severity", "")))}</b> &middot; {e(str(n.get("where", "")))}: {e(str(n.get("issue", "")))}</li>' for n in notes)
+    head = (f'<div class=note style="background:#eef4ff;border-color:#9bb5e0"><b>Review copy.</b> The critic ({e(critic.get("model", ""))}) read this study '
+            f'against its sources. Its notes are for your review; they did not reject the study. ' +
+            (f'<ul>{rows}</ul>' if rows else ('No notes.' if critic.get('ok') else 'The critic did not return usable notes: ' + e(str(critic.get('raw') or '')[:300]))) + '</div>')
+    return page(fr).replace('<section', head + '\n<section', 1)

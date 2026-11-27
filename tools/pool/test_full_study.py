@@ -6,9 +6,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import full_study as FS, destinations as D
 
 def main():
-    M = FS.materials(); base = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fixtures', 'full_standin.json')))['study']
-    fails = []; p, st = FS.check(base, M)
-    if p: fails.append(f'stand-in should pass: {p}')
+    M = FS.materials(profile='strict'); MF = FS.materials(profile='free'); base = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fixtures', 'full_standin.json')))['study']
+    fails = []; p, st = FS.check(base, M, profile='strict')
+    if p: fails.append(f'stand-in should pass (strict): {p}')
+    p, st = FS.check(base, MF, profile='free')
+    if p: fails.append(f'stand-in should pass (free): {p}')
+    if 'MHC5.8.05' in [c['id'] for c in MF['road']['candidates']]: fails.append('free profile still offers a passage ending on an outline heading (MHC5.8.05)')
     d = D.choose('JHN', 3, 16, 18, 16, 21)
     if (FS.label(d['road']), FS.label(d['hill'])) != ('Romans 5:8', 'John 15:13'): fails.append(f'destinations changed: {d}')
     if d['hill']['book'] == 'JHN' and d['hill']['chapter'] == 3 and 16 <= d['hill']['verse'] <= 21: fails.append('Over the Hill loops back to the study unit')
@@ -41,11 +44,16 @@ def main():
          + [f['rabbi_road'].__setitem__('text', f['rabbi_road']['text'] + ' ' + f['rabbi_road']['text'][:300])]
          + [f['over_the_hill'].__setitem__('text', f['over_the_hill']['text'] + ' ' + f['over_the_hill']['text'][:200])]
          + [f['opening'].__setitem__('text', f['opening']['text'] + ' ' + f['opening']['text'][:180])])
+    STRICT_ONLY = {'W7', 'W12', 'W10'}   # word-counting rails dropped in the free profile (Tom, Nov 27)
     for rule, why, f in cases:
-        got = {r for r, _ in FS.check(f, M)[0]}
-        if rule not in got: fails.append(f'{rule} not caught ({why}); got {sorted(got) or "nothing"}')
+        got = {r for r, _ in FS.check(f, M, profile='strict')[0]}
+        if rule not in got: fails.append(f'strict: {rule} not caught ({why}); got {sorted(got) or "nothing"}')
+        gotf = {r for r, _ in FS.check(f, MF, profile='free')[0]}
+        if rule in STRICT_ONLY and why != 'adds a number':   # invented numbers stay caught in both profiles
+            if rule in gotf and not (rule == 'W10'): fails.append(f'free: {rule} should no longer apply ({why})')
+        elif rule not in gotf and not (rule == 'F3' and 'opening' in why): fails.append(f'free: {rule} not caught ({why}); got {sorted(gotf) or "nothing"}')
     if FS.parse('not json') is not None or FS.parse('Here: {"a": 1}') != {'a': 1}: fails.append('reply parsing')
-    print(f'full-study tests: stand-in checked, destinations checked, {len(cases)} bad studies, ' + ('all pass' if not fails else f'{len(fails)} FAIL'))
+    print(f'full-study tests: stand-in checked under both profiles, destinations checked, {len(cases)} bad studies x 2 profiles, ' + ('all pass' if not fails else f'{len(fails)} FAIL'))
     for f in fails: print('FAIL', f)
     return len(fails)
 
