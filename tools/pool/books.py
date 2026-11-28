@@ -49,3 +49,7 @@ def variants(c): return list(dict.fromkeys([_T[c][1]] + _T[c][2]))
 _FIRST = {'1JN': ('1Jo', ['1Jo', '1 John', '1John', 'John']), 'ROM': ('Ro', ['Ro', 'Rom', 'Romans']), 'MRK': ('Mr', ['Mr', 'Mk', 'Mark']),
           'EPH': ('Eph', ['Eph', 'Ephesians']), 'MAT': ('Mt', ['Mt', 'Mat', 'Matt', 'Matthew']), 'JHN': ('Joh', ['Joh', 'John'])}
 BOOKNAMES = {c: _FIRST.get(c) or (_T[c][1], variants(c)) for c in ORDER}
+
+# Display names for study pages (Nov 28): the English name above, and a chapter:verse reference built from it.
+def name(code): return HCF_BOOK.get(code, code)
+def ref(book, ch, lo, hi=None): return f'{name(book)} {ch}:{lo}' + (f'-{hi}' if hi and hi != lo else '')

@@ -1,0 +1,1776 @@
+{
+ "passage": "Romans 8:7",
+ "book": "ROM",
+ "chapter": 8,
+ "scope": [
+  7,
+  7
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "a014e1771b101e270776112be94bc445fc55cc337ea94d062a80ba6110a97217",
+    "text_sha256": "a8703451dc2589d3848044ace124c4b2eeed01f9487c5167c0503376e03400cf",
+    "index_file_sha256": "e653e157a833d2e653f38486460047f2755c2809787681eb39fd7cb905df2549"
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "index": {
+      "at": 12453,
+      "end": 13742,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.8.7"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.8.7",
+     "opens_mid_outline": false,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 12453,
+     "end": 13742,
+     "chars": 1289,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC8.7.01",
+     "note_id": "MHC.8.7",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "[2.] It is enmity to God (Ro 8:7), and this is worse than the former. The former speaks the carnal sinner a dead man, which is bad; but this speaks him a devil of a man. It is not only an enemy, but enmity itself. It is not only the alienation of the soul from God, but the opposition of the soul against God; it rebels against his authority, thwarts his design, opposes his interest, spits in his face, spurns at his bowels.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/ROM.json",
+     "start": 12453,
+     "end": 12878,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 8:7"
+     ],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "MHC8.7.02",
+     "note_id": "MHC.8.7",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Can there be a greater enmity? An enemy may be reconciled, but enmity cannot. How should this humble us for and warn us against, carnal-mindedness! Shall we harbour and indulge that which is enmity to God our creator, owner, ruler, and benefactor? To prove this, he urges that *it is not subject to the law of God, neither indeed can be.* The holiness of the law of God, and the unholiness of the carnal mind, are as irreconcilable as light and darkness.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/ROM.json",
+     "start": 12879,
+     "end": 13333,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "MHC8.7.03",
+     "note_id": "MHC.8.7",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "The carnal man may, by the power of divine grace, be made subject to the law of God, but the *carnal mind* never can; this must be broken and expelled. See how wretchedly the corrupt will of man is enslaved to sin; as far as the carnal mind prevails, there is no inclination to the law of God; therefore wherever there is a change wrought it is by the power of God's grace, not by the freedom of man's will.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/ROM.json",
+     "start": 13334,
+     "end": 13741,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 80510 vs index 80510; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "e8e975992c5b4a49b071fc761f415c043d3d8f863ca6c00c561429d8904b2561",
+    "text_sha256": "8377a3cf12f756dbb3b56c2aaf5521313e5f5a1ff9e9be55f3bddf204af3f809",
+    "index_file_sha256": "c591d83f87afca0c5693b493f2456f8e080561c89fbfd1eb24a6260a9e8d334c"
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "note_id": "CAL.8.7"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.8.7",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 19132,
+     "end": 22327,
+     "chars": 3195,
+     "pieces": 7,
+     "tiling_problems": [],
+     "head": "7. Because the minding of the ",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL8.7.01",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "7. Because the minding of the flesh, etc. He subjoins a proof of what he had stated, — that nothing proceeds from the efforts of our flesh but death, because it contends as an enemy against the will of God. Now the will of God is the rule of righteousness; it hence follows, that whatever is unjust is contrary to it; and what is unjust at the same time brings death. But while God is adverse, and is offended, in vain does any one expect life; for his wrath must be necessarily followed by death, which is the avenging of his wrath.",
+     "outline_label": "7.",
+     "marker_span": [
+      19132,
+      19134
+     ],
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 19132,
+     "end": 19665,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "CAL8.7.02",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "But let us observe here, that the will of man is in all things opposed to the divine will; for, as much as what is crooked differs from what is straight, so much must be the difference between us and God. For to the law of God , etc. This is an explanation of the former sentence; and it shows how all the thinkings ( meditationes ) of the flesh carry on war against the will of God; for his will cannot be assailed but where he has revealed it.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 19666,
+     "end": 20111,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL8.7.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "CAL8.7.03",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "In the law God shows what pleases him: hence they who wish really to find out how far they agree with God must test all their purposes and practices by this rule. For though nothing is done in this world, except by the secret governing providence of God; yet to say, under this pretext, that nothing is done but what he approves, ( nihil nisi eo approbante fieri ,) is intolerable blasphemy; and on this subject some fanatics are wrangling at this day.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 20112,
+     "end": 20564,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "CAL8.7.04",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "The law has set the difference between right and wrong plainly and distinctly before our eyes, and to seek it in a deep labyrinth, what sottishness is it! The Lord has indeed, as I have said, his hidden counsel, by which he regulates all things as he pleases; but as it is incomprehensible to us, let us know that we are to refrain from too curious an investigation of it. Let this in the mean time remain as a fixed principle, — that nothing pleases him but righteousness, and also, that no right estimate can be made of our works but by the law, in which he has faithfully testified what he approves and disapproves.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 20565,
+     "end": 21183,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "CAL8.7.05",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Nor can be . Behold the power of free-will! which the Sophists cannot carry high enough. Doubtless, Paul affirms here, in express words, what they openly detest, — that it is impossible for us to render our powers subject to the law. They boast that the heart can turn to either side, provide it be aided by the influence of the Spirit, and that a free choice of good or evil is in our power, when the Spirit only brings help; but it is ours to choose or refuse.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 21184,
+     "end": 21646,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "CAL8.7.06",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "They also imagine some good emotions, by which we become of ourselves prepared. Paul, on the contrary, declares, that the heart is full of hardness and indomitable contumacy, so that it is never moved naturally to undertake the yoke of God; nor does he speak of this or of that faculty, but speaking indefinitely, he throws into one bundle all the emotions which arise within us. Far, then, from a Christian heart be this heathen philosophy respecting the liberty of the will.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 21647,
+     "end": 22123,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL8.7.05"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "CAL8.7.07",
+     "note_id": "CAL.8.7",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ROM",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Let every one acknowledge himself to be the servant of sin, as he is in reality, that he may be made free, being set at liberty by the grace of Christ: to glory in any other liberty is the highest folly.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ROM.json",
+     "start": 22124,
+     "end": 22327,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 101764; sections 39; max code point U+201D"
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "0 scripture_header pieces excluded: []"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "dc01c47d5219f3d3f10de7bafe1d70ae5bd54e690342a4bb52c4c88a84d4d921",
+    "text_sha256": "b0935f75563cdd57baee2b23afccd7eb6e9f105dfebc51bfea5c59463e65671a"
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "note_id": "JFB.8.7"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.8.7",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 8987,
+     "end": 9483,
+     "chars": 496,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB8.7.01",
+     "note_id": "JFB.8.7",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "7. Because the carnal mind is enmity against God—The desire and pursuit of carnal ends is a state of enmity to God, wholly incompatible with true life and peace in the soul.\nfor it is not subject—\"doth not submit itself.\"\nto the law of God, neither indeed can be—In such a state of mind there neither is nor can be the least subjection to the law of God. Many things may be done which the law requires, but nothing either is or can be done because God's law requires it, or purely to please God.",
+     "outline_label": "7.",
+     "marker_span": [
+      8987,
+      8989
+     ],
+     "source_file": "commentary/JFB/ROM.json",
+     "start": 8987,
+     "end": 9482,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 47114 chars; 32 verse markers: [1, 2, 4, 5, 6, 7, 8, 9, 11, 13, 14, 15, 16, 17, 18, '19-22', 20, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 32, 34, 36, 37, 39]; max code point U+2026"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "97b1bf304035af868f153d67820dcf0f4b2f3c062b248d0eaf601f97196b7ae5",
+    "text_sha256": null
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "note_id": "GILL.8.7"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.8.7",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 0,
+     "end": 3236,
+     "chars": 3236,
+     "pieces": 6,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL8.7.01",
+     "note_id": "GILL.8.7",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Because the carnal mind is enmity against God,....",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ROM.json",
+     "start": 0,
+     "end": 50,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "d3ad2b3f096cb75eb17dd38571506c6fa19a9900a25ca99da3f11d19126325b5",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "GIL8.7.02",
+     "note_id": "GILL.8.7",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "These words contain a reason why the issue of carnal mindedness is death; because the carnal mind, the wisdom of the flesh, is not only an enemy, but enmity itself against God: against his being; it reasons against it; it wishes he was not; it forms unworthy notions of him; thinks him such an one as itself; and endeavours to bury him in forgetfulness, and erase out of its mind all memorials of him: it is at enmity against his perfections; either denying his omniscience; or arraigning his justice and faithfulness; or despising his goodness, and abusing his grace and mercy: it finds fault with, and abhors his decrees and purposes; quarrels with his providences; it is implacable against his word and Gospel; especially the particular doctrines of grace, the Father's grace in election, the Son's in redemption, and the Spirit's in regeneration; and has in the utmost contempt the ordinances and people of Christ.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ROM.json",
+     "start": 51,
+     "end": 969,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL8.7.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "d3ad2b3f096cb75eb17dd38571506c6fa19a9900a25ca99da3f11d19126325b5",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "GIL8.7.03",
+     "note_id": "GILL.8.7",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "This enmity is universal, it is in all men in unregeneracy, either direct or indirect, hidden or more open; it is undeserved; it is natural and deeply rooted in the mind, and irreconcilable without the power and grace of God. It shows itself in an estrangedness from God; in holding friendship with the world, in harbouring the professed enemies of God, in living under the government of sin and Satan; in hating what God loves, and in loving what God hates; in omitting what God commands, and committing what he forbids; it manifests itself in their language, and throughout the whole of their conversations.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ROM.json",
+     "start": 970,
+     "end": 1579,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL8.7.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "d3ad2b3f096cb75eb17dd38571506c6fa19a9900a25ca99da3f11d19126325b5",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "GIL8.7.04",
+     "note_id": "GILL.8.7",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "For it is not subject to the law of God; carnal men are subject to the law's sentence of condemnation, but not to its precepts, by obedience to them; there may be an external, and which is a servile obedience to it, but not a free, voluntary, internal one, and still less a perfect one: the carnal mind is so far from an obedient subjection to the law, that it is far off from the law, and the law from that; it hates and despises it, thwarts and contradicts it in every instance, and, as much as in it lies, makes it void; which fully proves the enmity of the carnal mind against God; for hereby his being is tacitly denied, his sovereignty disputed, his image defaced, his government withdrawn from, and these persons are declared, and declare themselves enemies to him:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ROM.json",
+     "start": 1581,
+     "end": 2353,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL8.7.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "d3ad2b3f096cb75eb17dd38571506c6fa19a9900a25ca99da3f11d19126325b5",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "GIL8.7.05",
+     "note_id": "GILL.8.7",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "neither indeed can be; without regenerating grace, without the power and Spirit of God, unless it is written upon the heart by the finger of God; for carnal men are dead in sin, and so without strength to obey the law; and besides, the carnal mind, and the law of God, are directly contrary one to another. Where is man's power and free will? no wonder the carnal mind do not stoop to the Gospel of Christ, when it is not, and cannot be subject to the law of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ROM.json",
+     "start": 2355,
+     "end": 2818,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "d3ad2b3f096cb75eb17dd38571506c6fa19a9900a25ca99da3f11d19126325b5",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "GIL8.7.06",
+     "note_id": "GILL.8.7",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Hence we see the necessity of almighty power, and efficacious grace in conversion. It is Christ's work to subject men to the law, and which is done when he justifies by his righteousness: agreeably to which the Targum on Isaiah 53:11; paraphrases it thus:\n\n\"in his wisdom he shall justify the righteous, that  , \"he may subject many to the law\".''\n\nAnd in Isaiah 53:11, the transgressors he hath subjected to the law.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ROM.json",
+     "start": 2819,
+     "end": 3236,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL8.7.05"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isaiah 53:11",
+      "Isaiah 53:11"
+     ],
+     "flags": [],
+     "source_text_sha256": "d3ad2b3f096cb75eb17dd38571506c6fa19a9900a25ca99da3f11d19126325b5",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      7
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 39 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "483382b026762e9f6694ead45a8bc7fe3a582bb10091781daf703b8e5ea99373",
+    "text_sha256": "a769363cad724a125de9c7c7b842d11a8a28450b72a59543be777cbc17b6aa98"
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "note_id": "WES.8.7"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.8.7",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 2235,
+     "end": 2297,
+     "chars": 62,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES8.7.01",
+     "note_id": "WES.8.7",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "7. Enmity against God - His existence, power, and providence.",
+     "outline_label": "7.",
+     "marker_span": [
+      2235,
+      2237
+     ],
+     "source_file": "commentary/Wesley/ROM.json",
+     "start": 2235,
+     "end": 2296,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      7
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 18371 chars; 36 numbered line starts, 36 chosen as verse markers (36 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "8c68c45b8c23fb0aac21cf9187da872fd9291c1b3491a93d96598c49e7b21602",
+    "text_sha256": null
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "note_id": "BAR.8.7"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.8.7",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 0,
+     "end": 4232,
+     "chars": 4232,
+     "pieces": 11,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR8.7.01",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Verse 7. Because. This is given as a reason for what is said in Ro 8:6. In that verse the apostle had affirmed that to be carnally minded was death, but he had not stated why it was. He now explains it by saying that it is enmity against God, and thus involves a sinner in conflict with him, and exposes to his condemnation.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 0,
+     "end": 324,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 8:6"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.02",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "The carnal mind. This is the same expression as occurs in Ro 8:6, (to fronhma thv sarkov). It does not mean the mind itself, the intellect, or the will; it does not suppose that the mind or soul is physically depraved, or opposed to God; but it means that the minding of the things of the flesh, giving to them supreme attention, is hostility against God; and involves the sinner in a controversy with him, and hence leads to death and woe.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 326,
+     "end": 766,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 8:6"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.03",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "This passage should not he alleged in proof that the soul is physically depraved, but merely that where there is a supreme regard to the flesh there is hostility to God. It does not directly prove the doctrine of universal depravity; but it proves only that where such attention exists to the corrupt desires of the soul, there is hostility to God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 767,
+     "end": 1115,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR8.7.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.04",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "It is indeed implied that that supreme regard to the flesh exists everywhere by nature, but this is not expressly affirmed; for the object of the apostle here is not to teach the doctrine of depravity, but to show that where such depravity in fact exists, it involves the sinner in a fearful controversy with God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 1116,
+     "end": 1429,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR8.7.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.05",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Is enmity. Hostility; hatred. It means, that such a regard to the flesh is in fact hostility to God, because it is opposed to his law, and to his plan for purifying the soul. Comp. Jas 4:4; 1 Jo 2:15. The minding of the things of the flesh also leads to the hatred of God himself, because he is opposed to it, and has expressed his abhorrence of it.\n\nAgainst God. Towards God; or in regard to him. It supposes hostility to him.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 1431,
+     "end": 1858,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Jas 4:4",
+      "1 Jo 2:15"
+     ],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.06",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "For it. The word \"it\" here refers to the minding of the things of the flesh. It does not mean that the soul itself is not subject to his law, but that the minding of those things is hostile to his law. The apostle does not express any opinion about the metaphysical ability of man, or discuss that question at all. The amount of his affirmation is, simply, that the minding of the flesh, the supreme attention to its dictates and desires, is not and cannot be subject to the law of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 1860,
+     "end": 2346,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR8.7.05"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.07",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "They are wholly contradictory and irreconcilable, just as much as the love of falsehood is inconsistent with the laws of truth; as intemperance is inconsistent with the law of temperance; and as adultery is a violation of the seventh commandment. But whether the man himself might not obey the law--whether he has, or has not, ability to do it--is a question which the apostle does not touch, and on which this passage should not be adduced.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 2347,
+     "end": 2788,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR8.7.06"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.08",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "For, whether the law of a particular sin is utterly irreconcilable with an opposite virtue, and whether the sinner is able to abandon that sin and pursue a different path, are very different inquiries.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 2789,
+     "end": 2990,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR8.7.07"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.09",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Is not subject. It is not in subjection to the command of God. The minding of the flesh is opposed to that law, and thus shows that it is hostile to God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 2992,
+     "end": 3145,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.10",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "Neither indeed can be. This is absolute and certain. It is impossible that it should be. There is the utmost inability in regard to it. The things are utterly irreconcilable. But the affirmation does not mean that the heart of the sinner might not be subject to God; or that his soul is so physically depraved that he cannot obey, or that he might not obey the law. On that the apostle here expresses no opinion. That is not the subject of the discussion. is simply that the supreme regard to the flesh, the minding of that is utterly irreconcilable with the law of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 3147,
+     "end": 3717,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    },
+    {
+     "id": "BAR8.7.11",
+     "note_id": "BAR.8.7",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Ro 8:7",
+     "note_span": [
+      7,
+      7
+     ],
+     "subject_span": [
+      7,
+      7
+     ],
+     "anchor_verse": 7,
+     "text": "They are different things and can never be made to harmonize; just as adultery cannot be chastity; falsehood cannot be truth; dishonesty cannot be honesty; hatred cannot be love. This passage, therefore, should not be adduced to prove the doctrine of man's inability to love God, for it does not refer to that; but it proves merely that a supreme regard to the things of the flesh is utterly inconsistent with the law of God-- can never be reconciled with it; and involves the sinner in hostility with his Creator.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/ROM.json",
+     "start": 3718,
+     "end": 4232,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR8.7.10"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a35121b846b032e5fbb0daeeff0b64409d96e7df8134a9677c4f87e6dbd84a27",
+     "covers_verses": [
+      7
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 39 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007A"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "d5a3adef8cad727d0647dbbf873822400bec7826928ecc1800a383205a35eaf7",
+    "text_sha256": null
+   },
+   "coverage": {
+    "7": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 7"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 20 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "7a29892604f1bfff2f5bb21f1f23e492aec630aeb93918e8f6c8fc37be9c1204",
+    "text_sha256": "62e0394363a832bb9f0a2a853792644b9329965f1fde6c13633c180f9ed80fbc"
+   },
+   "coverage": {
+    "7": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 8: 836 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/Romans 8_7.toml": "655a5343a8b9f47905b7486b79f8caf5625378ea2e2c9b970946922a795801fd",
+     "John Chrysostom/Romans 8_7.toml": "a5acccf26c0d58def5b4fb674115f236c6bda9362bcede5abfb100db79a0f358",
+     "Thomas Aquinas/Romans 8_7.toml": "7b5ad6d4eb0247e6260d334c9f59a96b4943d23a7166cd1180c6a0f3cab9073a"
+    }
+   },
+   "coverage": {
+    "7": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "Romans 8_7.toml",
+        "entry": 1,
+        "title": "Exposition of Certain Propositions from the Epistle to the Romans",
+        "chars": 1602,
+        "file_span": [
+         7,
+         7
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "John Chrysostom": [
+       {
+        "father": "John Chrysostom",
+        "file": "Romans 8_7.toml",
+        "entry": 1,
+        "title": "Homily on Romans 13",
+        "chars": 2079,
+        "file_span": [
+         7,
+         7
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "Thomas Aquinas": [
+       {
+        "father": "Thomas Aquinas",
+        "file": "Romans 8_7.toml",
+        "entry": 1,
+        "title": "Commentary on Romans",
+        "chars": 4355,
+        "file_span": [
+         7,
+         7
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 3; entries in range files excluded: 0",
+     "absent_fathers": [
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.Romans8_7.1",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 0,
+     "end": 1602,
+     "chars": 1602,
+     "pieces": 3,
+     "tiling_problems": [],
+     "title": "Exposition of Certain Propositions from the Epistle to the Romans",
+     "file": "Augustine of Hippo/Romans 8_7.toml"
+    },
+    {
+     "note_id": "HCF.chrysostom.Romans8_7.1",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 0,
+     "end": 2079,
+     "chars": 2079,
+     "pieces": 5,
+     "tiling_problems": [],
+     "title": "Homily on Romans 13",
+     "file": "John Chrysostom/Romans 8_7.toml"
+    },
+    {
+     "note_id": "HCF.aquinas.Romans8_7.1",
+     "verse": 7,
+     "note_span": [
+      7,
+      7
+     ],
+     "start": 0,
+     "end": 4355,
+     "chars": 4355,
+     "pieces": 10,
+     "tiling_problems": [],
+     "title": "Commentary on Romans",
+     "file": "Thomas Aquinas/Romans 8_7.toml"
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 49 file-name variants; found ['Romans 8_7.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 49 file-name variants; found ['Romans 8_7.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 49 file-name variants; found ['Romans 8_7.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 49 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "John Chrysostom/Romans 8_7.toml entry 1 \"Homily on Romans 13\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 80510 vs index 80510; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 101764; sections 39; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "0 scripture_header pieces excluded: []"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 47114 chars; 32 verse markers: [1, 2, 4, 5, 6, 7, 8, 9, 11, 13, 14, 15, 16, 17, 18, '19-22', 20, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 32, 34, 36, 37, 39]; max code point U+2026"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 39 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 18371 chars; 36 numbered line starts, 36 chosen as verse markers (36 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 39 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007A"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 20 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 8: 836 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 49 file-name variants; found ['Romans 8_7.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 49 file-name variants; found ['Romans 8_7.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 49 file-name variants; found ['Romans 8_7.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 49 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "John Chrysostom/Romans 8_7.toml entry 1 \"Homily on Romans 13\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "7": "confirmed"
+  },
+  "calvin": {
+   "7": "confirmed"
+  },
+  "jfb": {
+   "7": "confirmed"
+  },
+  "gill": {
+   "7": "confirmed"
+  },
+  "wesley": {
+   "7": "confirmed"
+  },
+  "barnes": {
+   "7": "confirmed"
+  },
+  "tyndale": {
+   "7": "source absence"
+  },
+  "scofield": {
+   "7": "index absence"
+  },
+  "fathers": {
+   "7": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 47,
+  "chars": 20491,
+  "pieces_by_source": {
+   "mhc": 3,
+   "calvin": 7,
+   "jfb": 1,
+   "gill": 6,
+   "wesley": 1,
+   "barnes-nt": 11,
+   "hcf": 18
+  },
+  "chars_by_source": {
+   "mhc": 1286,
+   "calvin": 3189,
+   "jfb": 495,
+   "gill": 3229,
+   "wesley": 61,
+   "barnes-nt": 4217,
+   "hcf": 8014
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 3,
+   "john-calvin": 7,
+   "jamieson-fausset-brown": 1,
+   "john-gill": 6,
+   "wesley": 1,
+   "barnes": 11,
+   "augustine": 3,
+   "chrysostom": 5,
+   "aquinas": 10
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 1286,
+   "john-calvin": 3189,
+   "jamieson-fausset-brown": 495,
+   "john-gill": 3229,
+   "wesley": 61,
+   "barnes": 4217,
+   "augustine": 1599,
+   "chrysostom": 2074,
+   "aquinas": 4341
+  },
+  "per_anchor_verse": {
+   "7": {
+    "pieces": 47,
+    "chars": 20491,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "barnes",
+     "chrysostom",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "7": {
+    "pieces": 47,
+    "chars": 20491,
+    "notes": 9,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "barnes",
+     "chrysostom",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 18,
+   "B": 11,
+   "U": 8,
+   "C": 10
+  },
+  "non_standalone": 22,
+  "boundary_suspect": [],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": []
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "61f5d8bdd5a5d507b0dda14b9c358a46da35bfaa82750518d0787e9b385952c1",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 18
+ }
+}

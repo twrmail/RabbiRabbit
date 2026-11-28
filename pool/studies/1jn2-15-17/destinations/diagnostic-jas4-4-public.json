@@ -1,0 +1,1725 @@
+{
+ "passage": "James 4:4",
+ "book": "JAS",
+ "chapter": 4,
+ "scope": [
+  4,
+  4
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "3d1fc21f855f194a9d6b6edceb767e213c2462d4e552a6fdd275bdf5367b3fd5",
+    "text_sha256": "a0833b265aa123db7fc71c14aec8bfa198c7ea0a0ed0df3efeab27a0c12d4b7d",
+    "index_file_sha256": "8df9594d36bb8e953addccde214f41d8276fcadbd6625429c1bb52e6cd46a173"
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "index": {
+      "at": 7829,
+      "end": 9053,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.4.4"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.4.4",
+     "opens_mid_outline": true,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 7829,
+     "end": 9053,
+     "chars": 1224,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC4.4.01",
+     "note_id": "MHC.4.4",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "II. We have fair warning to avoid all criminal friendships with this world: *You adulterers and adulteresses, know you not that the friendship of the world is enmity with God?* Jam 4:4. Worldly people are here called adulterers and adulteresses, because of their perfidiousness of God, while they give their best affections to the world. Covetousness is elsewhere called idolatry, and it is here called adultery; it is a forsaking of him to whom we are devoted and espoused, to cleave to other things; there is this brand put upon worldly-mindedness—that it is enmity to God.",
+     "outline_label": "II.",
+     "marker_span": [
+      7829,
+      7832
+     ],
+     "source_file": "commentary/MHC/JAS.json",
+     "start": 7829,
+     "end": 8404,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Jam 4:4"
+     ],
+     "flags": [],
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "MHC4.4.02",
+     "note_id": "MHC.4.4",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "A man may have a competent portion of the good things of this life, and yet may keep himself in the love of God; but he who sets his heart upon the world, who places his happiness in it, and will conform himself to it, and do any thing rather than lose its friendship, he is an enemy to God; it is constructive treason and rebellion against God to set the world upon his throne in our hearts. *Whosoever therefore is the friend of the world is the enemy of God.*",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/JAS.json",
+     "start": 8405,
+     "end": 8867,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "MHC4.4.03",
+     "note_id": "MHC.4.4",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "He who will act upon this principle, to keep the smiles of the world, and to have its continual friendship, cannot but show himself, in spirit, and in his actions too, an enemy to God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/JAS.json",
+     "start": 8868,
+     "end": 9052,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC4.4.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      4
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 34071 vs index 34071; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "3c9c76c3e02f79f18072b7a26f0ed78e975bcc4bf4f720ab5d36c433b4eeab09",
+    "text_sha256": "46607c2d4661ae98c346ff0e54e48c557eec2f305e9e11d6520b679c7ce7c910",
+    "index_file_sha256": "eeae1f58688b00d45dbbb8b2d9d05cd9cb9430058846006e057acad50c90c9f4"
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "note_id": "CAL.4.4",
+     "pointer": "Calvin's printed heading covers 4-6",
+     "detail": "Calvin exception: heading group, body taken as this verse"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.4.4",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 4210,
+     "end": 6127,
+     "chars": 1917,
+     "pieces": 5,
+     "tiling_problems": [],
+     "head": "James 4:4-6 4 Ye adulterers an",
+     "foreign_tail_start": null,
+     "heading_group": [
+      4,
+      6
+     ],
+     "pointer": "Calvin's printed heading covers 4-6"
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL4.4.03",
+     "note_id": "CAL.4.4",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JAS",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "4 Ye adulterers . I connect this verse with the foregoing verses: for he calls them adulterers , as I think, metaphorically; for they corrupted themselves with the vanities of this world, and alienated themselves from God; as though he had said, that they had become degenerated, or were become bastards. We know how frequent, in Holy Scripture, is that marriage mentioned which God forms with us. He would have us, then, to be like a chaste virgin, as Paul says, ( 2 Corinthians 11:2 .)",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/JAS.json",
+     "start": 4866,
+     "end": 5353,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2 Corinthians 11:2"
+     ],
+     "flags": [
+      "Calvin printed heading group covers 4-6; body taken as verse 4 (exception to D1, Tom nov22)",
+      "first commentary piece after the printed scripture heading block (header not in pool)"
+     ],
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "CAL4.4.04",
+     "note_id": "CAL.4.4",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JAS",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "This chastity is violated and corrupted by all impure affections towards the world. James, then, does not without reason compare the love of the world to adultery. They, then, who take his words literally, do not sufficiently observe the context: for he goes on still to speak against the lusts of men, which lead away those entangled with the world from God, as it follows, — The friendship of the world . He calls it the friendship of the world when men surrender themselves to the corruptions of the world, and become slaves to them.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/JAS.json",
+     "start": 5354,
+     "end": 5890,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL4.4.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "Calvin printed heading group covers 4-6; body taken as verse 4 (exception to D1, Tom nov22)"
+     ],
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "CAL4.4.05",
+     "note_id": "CAL.4.4",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary JAS",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "For such and so great is the disagreement between the world and God, that as much as any one inclines to the world, so much he alienates himself from God. Hence the Scripture bids us often to renounce the world, if we wish to serve God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/JAS.json",
+     "start": 5891,
+     "end": 6127,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL4.4.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "Calvin printed heading group covers 4-6; body taken as verse 4 (exception to D1, Tom nov22)"
+     ],
+     "covers_verses": [
+      4
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 26020; sections 15; max code point U+201D"
+    },
+    {
+     "kind": "scripture-header",
+     "verse": 4,
+     "msg": "Calvin section CAL.4.4: first 656 chars are the printed scripture heading block (English + Latin); 2 pieces marked scripture_header and kept out of the pool"
+    },
+    {
+     "kind": "calvin-exception",
+     "verse": 4,
+     "msg": "Calvin section 4 indexed span 4-6 is a printed heading group; header block (656 chars) set aside, body (1261 chars) taken as verse 4. Pointer: Calvin's printed heading covers 4-6. Warning only: body may also discuss later verses of the span."
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "2 scripture_header pieces excluded: ['CAL4.4.01', 'CAL4.4.02']"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "cfa6ea77b27f5e00eeac8333e041ac6a5968495476649efde3a49d6becc5c30e",
+    "text_sha256": "7697ac3738f47f52dd8f1320a7e2c598f7ac67bdad53eb52adb9b23c30e852a3"
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "note_id": "JFB.4.4"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.4.4",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 3319,
+     "end": 4126,
+     "chars": 807,
+     "pieces": 2,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB4.4.01",
+     "note_id": "JFB.4.4",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "4. The oldest manuscripts omit \"adulterers and,\" and read simply, \"Ye adulteresses.\" God is the rightful husband; the men of the world are regarded collectively as one adulteress, and individually as adulteresses.\nthe world—in so far as the men of it and their motives and acts are aliens to God, for example, its selfish \"lusts\" (Jas 4:3), and covetous and ambitious \"wars and fightings\" (Jas 4:1).\nenmity—not merely \"inimical\"; a state of enmity, and that enmity itself.",
+     "outline_label": "4.",
+     "marker_span": [
+      3319,
+      3321
+     ],
+     "source_file": "commentary/JFB/JAS.json",
+     "start": 3319,
+     "end": 3791,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Jas 4:3",
+      "Jas 4:1"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "JFB4.4.02",
+     "note_id": "JFB.4.4",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Compare 1Jo 2:15, \"love … the world … the love of the Father.\"\nwhosoever … will be—The Greek is emphatic, \"shall be resolved to be.\" Whether he succeed or not, if his wish be to be the friend of the world, he renders himself, becomes (so the Greek for \"is\") by the very fact, \"the enemy of God.\" Contrast \"Abraham the friend of God.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/JAS.json",
+     "start": 3792,
+     "end": 4125,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:15"
+     ],
+     "flags": [],
+     "covers_verses": [
+      4
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 12496 chars; 17 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]; max code point U+2026"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "5759727dd8c42e5b6ff7d18384fef8c48b5eb52726caf084ba7f87457ff2a7af",
+    "text_sha256": null
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "note_id": "GILL.4.4"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.4.4",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 0,
+     "end": 1556,
+     "chars": 1556,
+     "pieces": 3,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL4.4.01",
+     "note_id": "GILL.4.4",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Ye adulterers and adulteresses,.... Not who were literally such, but in a figurative and metaphorical sense: as he is an adulterer that removes his affections from his own wife, and sets them upon another woman; and she is an adulteress that loves not her husband, but places her love upon another man; so such men and women are adulterers and adulteresses, who, instead of loving God, whom they ought to love with all their hearts and souls, set their affections upon the world, and the things of it: the Vulgate Latin, Syriac, and Ethiopic versions, leave out the word \"adulteresses\": these the apostle addresses in the following manner;",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/JAS.json",
+     "start": 0,
+     "end": 639,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "00794a54f5dc677eec3ae4c43691dcd2ea673b35fddac20e6fcf8771c52e0574",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "GIL4.4.02",
+     "note_id": "GILL.4.4",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "know ye not that the friendship of the world is enmity with God? that an immoderate love for the good things of the world, and a prevailing desire after the evil things of it, and a delight in the company and conversation of the men of the world, and a conformity to, and compliance with, the sinful manners and customs of the world, are so many declarations of war with God, and acts of hostility upon him; and show the enmity of the mind against him, and must be highly displeasing to him, and resented by him:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/JAS.json",
+     "start": 641,
+     "end": 1153,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "00794a54f5dc677eec3ae4c43691dcd2ea673b35fddac20e6fcf8771c52e0574",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "GIL4.4.03",
+     "note_id": "GILL.4.4",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "whosoever therefore will be a friend of the world is the enemy of God; whoever is in league with the one must be an enemy to the other; God and mammon cannot be loved and served by the same persons, at the same time; the one will be loved, and the other hated; the one will be attended to, and the other neglected: this may be known both from reason and from Scripture, particularly from Matthew 6:24.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/JAS.json",
+     "start": 1155,
+     "end": 1556,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Matthew 6:24"
+     ],
+     "flags": [],
+     "source_text_sha256": "00794a54f5dc677eec3ae4c43691dcd2ea673b35fddac20e6fcf8771c52e0574",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      4
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 17 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "cf4f42ce8606fcb43ba796a503b845be74d763637428b8cdb89c1c27d331b74f",
+    "text_sha256": "9d20620ee0804c05c753bc51fc78278aa0851ce0a9593bbc3a4688890d932525"
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "note_id": "WES.4.4"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.4.4",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 643,
+     "end": 1123,
+     "chars": 480,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES4.4.01",
+     "note_id": "WES.4.4",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "4. Ye adulterers and adulteresses - Who have broken your faith with God, your rightful spouse.\nKnow ye not that the friendship or love of the world - The desire of the flesh, the desire of the eye,\nand the pride of life, or courting the favour of worldly men, is enmity against God? Whosoever\ndesireth to be a friend of the world - Whosoever seeks either the happiness or favour of it, does\nthereby constitute himself an enemy of God; and can he expect to obtain anything of him?",
+     "outline_label": "4.",
+     "marker_span": [
+      643,
+      645
+     ],
+     "source_file": "commentary/Wesley/JAS.json",
+     "start": 643,
+     "end": 1122,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      4
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 2892 chars; 14 numbered line starts, 14 chosen as verse markers (13 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 17]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "7b4b1ed4efbf5f70e9150fb579e14feb85f421f766f85941a2ff13e5f58f1880",
+    "text_sha256": null
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "note_id": "BAR.4.4"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.4.4",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 0,
+     "end": 7391,
+     "chars": 7391,
+     "pieces": 16,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR4.4.01",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Verse 4. Ye adulterers and adultresses. These words are frequently used to denote those who are faithless towards God, and are frequently applied to those who forsake God for idols, Ho 3:1; Isa 57:3,7;",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 0,
+     "end": 201,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ho 3:1",
+      "Isa 57:3"
+     ],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.02",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Ezekiel chapters 16 and 23. It is, not necessary to suppose that the apostle meant that those to whom he wrote were literally guilty of the sins here referred to; but he rather refers to those who were unfaithful to their covenant with God by neglecting their duty to him, and yielding themselves to the indulgence of their own lusts and passions. The idea is, \"You have in effect broken your marriage covenant with God by loving the world more than him; and, by the indulgence of your carnal inclinations, you have violated those obligations to self-mortification and self-denial to which you were bound by your religious engagements.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 203,
+     "end": 839,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.03",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "To convince them of the evil of this, the apostle shows them what was the true nature of that friendship of the world which they sought. It may be remarked here, that no terms could have been found which would have shown more decidedly the nature of the sin of forgetting the covenant vows of religion for the pleasures of the world, than those which the apostle uses here. It is a deeper crime to be unfaithful to God than to any created being; and it will yet be seen that even the violation of the marriage contract, great as is the sin, is a slight offence compared with unfaithfulness towards God,'",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 840,
+     "end": 1443,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.04",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Know ye not that the friendship of the world. Compare 1 Jo 2:15. The term world here is to be understood not of the physical world as God made it, for we could not well speak of the \"friendship\" of that, but of the community, or people, called \"the world,\" in contradistinction from the people of God. Compare Joh 12:31; 1 Co 1:20; 1 Co 3:19; Ga 4:3; Col 2:8.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 1445,
+     "end": 1804,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1 Jo 2:15",
+      "Joh 12:31",
+      "1 Co 1:20",
+      "1 Co 3:19",
+      "Ga 4:3",
+      "Col 2:8"
+     ],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.05",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "The \"friendship of the world,\" (filia tou kosmou,) is the love of that world; of the maxims which govern it, the principles which reign there, the ends that are sought, the amusements and gratifications which characterize it as distinguished from the church of God. It consists in setting our hearts on t hose things; in conforming to them; in making them the object of our pursuit with the same spirit with which they are sought by those who make no pretensions to religion. See Barnes on \"Ro 12:2\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 1806,
+     "end": 2306,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 12:2"
+     ],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.06",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Is enmity with God. Is in fact hostility against God, since that world is arrayed against him. It neither obeys his laws, submits to his claims, nor seeks to honour him. To love that world is, therefore, to be arrayed against God; and the spirit which would lead us to this is, in fact, a spirit of hostility to God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 2308,
+     "end": 2624,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.07",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Whosoever therefore will be a friend of the world. \"Whoever\" he may be, whether in the church or out of it. The fact of being a member of the church makes no difference in this respect, for it is as easy to be a friend of the world in the church as out of it. The phrase \"whosoever will\" (boulhyh) implies purpose, intention, design. It supposes that the heart is set on it; or that there is a deliberate purpose to seek the friendship of the world.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 2626,
+     "end": 3075,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.08",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "It refers to that strong desire which often exists, even among professing Christians, to secure the friendship of the world; to copy its fashions and vanities; to enjoy its pleasures; and to share its pastimes and its friendships.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 3076,
+     "end": 3306,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR4.4.07"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.09",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Wherever there is a manifested purpose to find our chosen friends and associates there rather than among Christians; wherever there is a greater desire to enjoy the smiles and approbation of the world than there is to enjoy the approbation of God and the blessings of a good conscience; and wherever there is more conscious pain because we have failed to win the applause of the world, or have offended its rotaries, and have sunk ourselves in its estimation, than there is because we have neglected our duty to our Saviour, and have lost the enjoyment of religion, there is the clearest proof that the heart wills or desires to be the \"friend of the world.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 3307,
+     "end": 3965,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.10",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "Is the enemy of God. This is a most solemn declaration, and one of fearful import in its bearing on many who are members of the church. It settles the point that any one, no matter what his professions, who is characteristically a friend of the world, cannot be a true Christian. In regard to the meaning of this important verse, then, it may be remarked,",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 3967,
+     "end": 4322,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.11",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "(1,) that there is a sense in which the love of this world, or of the physical universe, is not wrong. That kind of love for it as the work of God, which perceives the evidence of his wisdom and goodness and power in the various objects of beauty, usefulness, and grandeur, spread around us, is not evil. The world as such-- the physical structure of the earth, of the mountains, forests, flowers, seas, lakes, and vales--is full of illustrations of the Divine character and it cannot be wrong to contemplate those things with interest, or with warm affection toward their Creator.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 4324,
+     "end": 4905,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.12",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "(2.) When that world, however, becomes our portion; when we study it only as a matter of science, without \"looking through nature up to nature's God.;\" when we seek the wealth which it has to confer, or endeavour to appropriate as our supreme portion its lands, its minerals, its fruits; when we are satisfied with what it yields, and when in the possession or pursuit of these things, our thoughts never rise to God; and when we partake of the spirit which rules in the hearts of those who avowedly seek this world as their portion, though we profess religion, then the love of the world becomes evil, and comes in direct conflict with the spirit of true religion.",
+     "outline_label": "(2.)",
+     "marker_span": [
+      4907,
+      4911
+     ],
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 4907,
+     "end": 5572,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.13",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "(3.) The statement in this verse is, therefore, one of most fearful import for many professors of religion. There are many in the church who, so far as human judgment can go, are characteristically lovers of the world. This is shown\n\n(a) by their conformity to it in all in which the world is distinguished from the church as such;\n\n(b) in their seeking the friendship of the world, or their finding their friends there rather than among Christians;\n\n(c) in preferring the amusements of the world to the scenes where spiritually-minded Christians find their chief happiness;\n\n(d) in pursuing the same pleasures that the people of the world do, with the same expense, the same extravagance, the same luxury;",
+     "outline_label": "(3.)",
+     "marker_span": [
+      5574,
+      5578
+     ],
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 5574,
+     "end": 6280,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.14",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "(e) in making their worldly interests the great object of living, and everything else subordinate to that. This spirit exists in all cases where no worldly interest is sacrificed for religion; where everything that religion peculiarly requires is sacrificed for the world. If this be so, then there are many professing Christians who are the \"enemies of God.\" See Barnes on \"Php 3:18\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 6282,
+     "end": 6667,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Php 3:18"
+     ],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.15",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "They have never known what is true friendship for him, and by their lives they show that they can be ranked only among his foes. It becomes every professing Christian, therefore, to examine himself with the deepest earnestness to determine whether he is characteristically a friend of the world or of God; whether he is living for this life only, or is animated by the high and pure principles of those who are the friends of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 6669,
+     "end": 7099,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR4.4.14"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    },
+    {
+     "id": "BAR4.4.16",
+     "note_id": "BAR.4.4",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Jam 4:4",
+     "note_span": [
+      4,
+      4
+     ],
+     "subject_span": [
+      4,
+      4
+     ],
+     "anchor_verse": 4,
+     "text": "The great Searcher of hearts cannot be deceived, and soon our appropriate place will be assigned us, and our final Judge will determine to which class of the two great divisions of the human family we belong--to those who are the friends of the world, or to those who are the friends of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/JAS.json",
+     "start": 7100,
+     "end": 7391,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3cf606e5ae032ec43f7fe72adf6ac59df65fc796b37ad6be3ec1cbf43f0ba171",
+     "covers_verses": [
+      4
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 17 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007D"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "dbfdb8a6422cecc2a0b0d85c42a555bbb99e2f5e7bcf5b1cf20ff9e4c02c6be3",
+    "text_sha256": null
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "note_id": "TYN.4.4"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "TYN.4.4",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 0,
+     "end": 1010,
+     "chars": 1010,
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 12 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "41acdb520ef9c6b2f1b2b7edbb243bba1bc271edc4c21db28860a72ec0ffa0e2",
+    "text_sha256": "53c447419a7b602dffa1b83043a1e8be2f9dffc0e33663c6365cf500eabe6cc8"
+   },
+   "coverage": {
+    "4": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 4: 265 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/James 4_4.toml": "630093c46fc0c12b89d2e5b69e17469b29e2df12b83432bfdca825ffbfdeefae"
+    }
+   },
+   "coverage": {
+    "4": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "James 4_4.toml",
+        "entry": 1,
+        "title": "Exposition on Psalm 92",
+        "chars": 1042,
+        "file_span": [
+         4,
+         4
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 1; entries in range files excluded: 0",
+     "absent_fathers": [
+      "John Chrysostom",
+      "Thomas Aquinas",
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.James4_4.1",
+     "verse": 4,
+     "note_span": [
+      4,
+      4
+     ],
+     "start": 0,
+     "end": 1042,
+     "chars": 1042,
+     "pieces": 2,
+     "tiling_problems": [],
+     "title": "Exposition on Psalm 92",
+     "file": "Augustine of Hippo/James 4_4.toml"
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 28 file-name variants; found ['James 4_4.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 28 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 28 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 28 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/James 4_4.toml entry 1 \"Exposition on Psalm 92\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 34071 vs index 34071; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 26020; sections 15; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "scripture-header",
+   "verse": 4,
+   "msg": "Calvin section CAL.4.4: first 656 chars are the printed scripture heading block (English + Latin); 2 pieces marked scripture_header and kept out of the pool"
+  },
+  {
+   "source": "calvin",
+   "kind": "calvin-exception",
+   "verse": 4,
+   "msg": "Calvin section 4 indexed span 4-6 is a printed heading group; header block (656 chars) set aside, body (1261 chars) taken as verse 4. Pointer: Calvin's printed heading covers 4-6. Warning only: body may also discuss later verses of the span."
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "2 scripture_header pieces excluded: ['CAL4.4.01', 'CAL4.4.02']"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 12496 chars; 17 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]; max code point U+2026"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 17 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 2892 chars; 14 numbered line starts, 14 chosen as verse markers (13 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 17]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 17 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007D"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 12 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 4: 265 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 28 file-name variants; found ['James 4_4.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 28 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 28 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 28 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/James 4_4.toml entry 1 \"Exposition on Psalm 92\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "4": "confirmed"
+  },
+  "calvin": {
+   "4": "confirmed"
+  },
+  "jfb": {
+   "4": "confirmed"
+  },
+  "gill": {
+   "4": "confirmed"
+  },
+  "wesley": {
+   "4": "confirmed"
+  },
+  "barnes": {
+   "4": "confirmed"
+  },
+  "tyndale": {
+   "4": "confirmed"
+  },
+  "scofield": {
+   "4": "index absence"
+  },
+  "fathers": {
+   "4": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 33,
+  "chars": 14728,
+  "pieces_by_source": {
+   "mhc": 3,
+   "calvin": 3,
+   "jfb": 2,
+   "gill": 3,
+   "wesley": 1,
+   "barnes-nt": 16,
+   "tyndale": 3,
+   "hcf": 2
+  },
+  "chars_by_source": {
+   "mhc": 1221,
+   "calvin": 1259,
+   "jfb": 805,
+   "gill": 1552,
+   "wesley": 479,
+   "barnes-nt": 7365,
+   "tyndale": 1007,
+   "hcf": 1040
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 3,
+   "john-calvin": 3,
+   "jamieson-fausset-brown": 2,
+   "john-gill": 3,
+   "wesley": 1,
+   "barnes": 16,
+   "tyndale": 3,
+   "augustine": 2
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 1221,
+   "john-calvin": 1259,
+   "jamieson-fausset-brown": 805,
+   "john-gill": 1552,
+   "wesley": 479,
+   "barnes": 7365,
+   "tyndale": 1007,
+   "augustine": 1040
+  },
+  "per_anchor_verse": {
+   "4": {
+    "pieces": 33,
+    "chars": 14728,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "4": {
+    "pieces": 33,
+    "chars": 14728,
+    "notes": 8,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 12,
+   "B": 16,
+   "C": 3,
+   "U": 2
+  },
+  "non_standalone": 6,
+  "boundary_suspect": [],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": [
+   "MHC.4.4:opens_mid_outline"
+  ]
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "40ac557ad2653cfe1453080cacb7828f02a419427999d0e86a5353830c1b607d",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 5
+ }
+}

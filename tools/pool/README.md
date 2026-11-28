@@ -120,9 +120,18 @@ two to five sections; T3 every section with verses quotes, and only passages on 
 passage twice; T5 at most 6 sentences / 1,300 characters per quotation, 7,000 in all; T6 at least four teachers, none more than twice,
 at most 12 quotations; T7 no quotation starts on a sentence that leans on the one before; plus the free-profile rails of the full study
 (names only with evidence, no references or numbers not given, no quotation marks in AI text, no claims about teachers in general, AI share
-at most 60%). The critic reads the study with the quotations filled in. The validator shape `themed` files each quoted passage under its
-first verse. ET0 is the hand-written stand-in (no model call). Run: Actions -> Full study run -> layout themed, key ET.
-Tests: `test_themed_study.py` (stand-in passes; 24 studies built to break one rule are each caught).
+at most 60%). The critic reads the study with the quotations filled in. The validator shape `themed` files each quoted passage under the
+first verse it covers in its own section. ET0 is the hand-written stand-in (no model call).
+
+Other passages (Nov 28): `themed_set.py prepare UNIT` makes a study set folder `pool/studies/<slug>/` for an approved unit in
+`library/units.json` (diagnostic report and its public copy, Rabbi Road and Over the Hill pools, `study-set.json`, an empty approvals
+file). `themed_set.py build <slug>|all` builds each passing study (page, record, tamper tests; approvals kept only when nothing changed).
+Sets so far: eph1-15-23, rom13-11-14, 1jn2-15-17, mrk13-32-37, mat25-31-46; John 3:16-18 stays in `jhn3-16-21` (built by
+build_studies_jhn.py). Fathers need `HCF_LOCAL` (the pinned Commentaries-Database clone) to prepare a set.
+Run: Actions -> Full study run -> sets (comma-separated), layout themed, key ET. One model call per set; a set that fails does not stop
+the others, and the run log is always pushed.
+Tests: `test_themed_study.py` (stand-in passes; 24 studies built to break one rule are each caught); `test_themed_sets.py` (every set's
+materials load, only public passages are offered, and a plain stand-in made from the set's own passages passes the rails).
 
 ## Study index (the catalog a serving Worker will read)
 `pool/studies/index.json`, written by `study_index.py build`. For each unit it lists every study:

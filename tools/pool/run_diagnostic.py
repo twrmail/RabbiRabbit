@@ -64,7 +64,7 @@ def run(lib, key, cfg):
         except (FileNotFoundError, IndexError, KeyError) as e:
             hashes, cov, notes, pieces, findings = {}, {v: dict(state='extraction failure', detail=f'{type(e).__name__}: {e}') for v in range(cfg['lo'], cfg['hi'] + 1)}, [], [], [dict(kind='fatal', msg=f'{name}: {type(e).__name__}: {e} (a missing file or malformed index is an extraction failure, not "not applicable")')]
         entry = dict(hashes=hashes, coverage={str(k): v for k, v in cov.items()}, notes=notes, pieces=pieces, findings=findings)
-        if name == 'calvin':
+        if name == 'calvin' and os.path.exists(os.path.join(lib, 'commentary', 'Calvin', f"{cfg['book']}.json")):   # Calvin wrote on no Proverbs, etc.
             alt = calvin_alt(lib, cfg['book'], cfg['ch'], cfg['lo'], cfg['hi'], cfg['abbr'], cov)
             if alt: entry['alternative_readings'] = {str(k): v for k, v in alt.items()}
         res['sources'][name] = entry; allp += pieces

@@ -1,0 +1,4608 @@
+{
+ "passage": "1 John 2:15-17",
+ "book": "1JN",
+ "chapter": 2,
+ "scope": [
+  15,
+  17
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "973afda388c315dcfce20dd540e2eb969ee9607a327505d3b05b10fa9b6ea382",
+    "text_sha256": "d533e50561fd0ff9826891013b1a1e46389adcdd00d468ca8a2fd278aaae857e",
+    "index_file_sha256": "cebc14c375e9b44d158b3559e4872852907fb2d756d14e0af550e21f764b91df"
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "index": {
+      "at": 27652,
+      "end": 28710,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.2.15"
+    },
+    "16": {
+     "state": "confirmed",
+     "index": {
+      "at": 28710,
+      "end": 30901,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.2.16"
+    },
+    "17": {
+     "state": "confirmed",
+     "index": {
+      "at": 30901,
+      "end": 32085,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.2.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.2.15",
+     "opens_mid_outline": true,
+     "continues_in_next_note": true,
+     "pointer": "Henry's outline continues at 1Jo 2:16",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 27652,
+     "end": 28710,
+     "chars": 1058,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 3,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "MHC.2.16",
+     "opens_mid_outline": true,
+     "continues_in_next_note": true,
+     "pointer": "Henry's outline continues at 1Jo 2:17",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 28710,
+     "end": 30901,
+     "chars": 2191,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 5,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "MHC.2.17",
+     "opens_mid_outline": true,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 30901,
+     "end": 32085,
+     "chars": 1184,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC2.15.01",
+     "note_id": "MHC.2.15",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "II. We have the dehortation or dissuasion thus prefaced and introduced, a caution fundamental to vital practical religion: \"*Love not the world, neither the things that are in the world,* 1Jo 2:15. Be crucified to the world, be mortified to the things, to the affairs and enticements, of it.\" The several degrees of Christians should unite in this, in being dead to the world. Were they thus united, they would soon unite upon other accounts: their love should be reserved for God; throw it not away upon the world.",
+     "outline_label": "II.",
+     "marker_span": [
+      27652,
+      27655
+     ],
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 27652,
+     "end": 28167,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:15"
+     ],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "MHC2.15.02",
+     "note_id": "MHC.2.15",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Now here we see the reasons of this dissuasion and caution. They are several, and had need to be so; it is hard to dispute or dissuade disciples themselves from the love of the world. These reasons are taken,",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 28168,
+     "end": 28376,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC2.15.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "MHC2.15.03",
+     "note_id": "MHC.2.15",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "1. From the inconsistency of this love with the love of God: *If any man love the world, the love of the Father is not in him,* 1Jo 2:15. The heart of man is narrow, and cannot contain both loves. The world draws down the heart from God; and so the more the love of the world prevails the more the love of God dwindles and decays.",
+     "outline_label": "1.",
+     "marker_span": [
+      28378,
+      28380
+     ],
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 28378,
+     "end": 28708,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:15"
+     ],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "MHC2.16.01",
+     "note_id": "MHC.2.16",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "2. From the prohibition of worldly love or lust; it is not ordained of God: *It is not of the Father, but is of the world,* 1Jo 2:16. This love or lust is not appointed of God (he calls us from it), but it intrudes itself from the world; the world is a usurper of our affection. Now here we have the due consideration and notion of the world, according to which it is to be crucified and renounced.",
+     "outline_label": "2.",
+     "marker_span": [
+      28710,
+      28712
+     ],
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 28710,
+     "end": 29108,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:16"
+     ],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "MHC2.16.02",
+     "note_id": "MHC.2.16",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "*The world,* physically considered, is good, and is to be admired as the work of God and a glass in which his perfections shine; but it is to be considered in its relation to us now in our corrupted state, and as it works upon our weakness and instigates and inflames our vile affections. There is great affinity and alliance between this world and the flesh, and this world intrudes and encroaches upon the flesh, and thereby makes a party against God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 29109,
+     "end": 29562,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "MHC2.16.03",
+     "note_id": "MHC.2.16",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "The things of the world therefore are distinguished into three classes, according to the three predominant inclinations of depraved nature; as, (1.) There is *the lust of the flesh. The flesh* here, being distinguished from *the eyes* and *the life,* imports the body. The lust of the flesh is, subjectively, the humour and appetite of indulging fleshly pleasures; and, objectively, all those things that excite and inflame the pleasures of the flesh.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 29563,
+     "end": 30014,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "MHC2.16.04",
+     "note_id": "MHC.2.16",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "This lust is usually called *luxury.* (2.) There is *the lust of the eyes.* The eyes are delighted with treasures; riches and rich possessions are craved by an extravagant eye; this is the lust of covetousness. 3. There is *the pride of life.* A vain mind craves all the grandeur, equipage, and pomp of a vain-glorious life; this is ambition, and thirst after honour and applause. This is, in part, the disease of the ear; it must be flattered with admiration and praise.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 30015,
+     "end": 30486,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC2.16.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "MHC2.16.05",
+     "note_id": "MHC.2.16",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "The objects of these appetites must be abandoned and renounced; as they engage and engross the affection and desire, *they are not of the Father, but of the world,* 1Jo 2:16. The Father disallows them, and the world should keep them to itself. The lust or appetite to these things must be mortified and subdued; and so the indulging of it is not appointed by the Father, but is insinuated by the ensnaring world.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 30487,
+     "end": 30899,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:16"
+     ],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "MHC2.17.01",
+     "note_id": "MHC.2.17",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "3. From the vain and vanishing state of earthly things and the enjoyment of them. *And the world passeth away, and the lust thereof,* 1Jo 2:17. The things of the world are fading and dying apace. The lust itself and the pleasure of it wither and decay; desire itself will ere long fail and cease, Ec 12:5. And what has become of all the pomp and pleasure of all those who now lie mouldering in the grave?",
+     "outline_label": "3.",
+     "marker_span": [
+      30901,
+      30903
+     ],
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 30901,
+     "end": 31305,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:17",
+      "Ec 12:5"
+     ],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "MHC2.17.02",
+     "note_id": "MHC.2.17",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "4. From the immortality of the divine lover, the lover of God: *But he that doeth the will of God,* which must be the character of the lover of God, in opposition to this lover of the world, *abideth for ever,* 1Jo 2:17. The object of his love in opposition to *the world* that *passeth away,* abideth for ever; his sacred passion or affection, in opposition to the lust that passeth away, abideth for ever; love shall never fail; and he himself is an heir of immortality and endless life, and shall in time be translated thither.",
+     "outline_label": "4.",
+     "marker_span": [
+      31307,
+      31309
+     ],
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 31307,
+     "end": 31837,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:17"
+     ],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "MHC2.17.03",
+     "note_id": "MHC.2.17",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "From the whole of these verses we should observe the purity and spirituality of the apostolical doctrine. The animal life must be subjected to the divine; the body with its affections should be swayed by religion, or the victorious love of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/1JN.json",
+     "start": 31839,
+     "end": 32083,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 54198 vs index 54198; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "9706d7b420797883310e4890f30c0be819bdecd47ae55add3191d9e9ad5cce44",
+    "text_sha256": "e0776d960c16e5043fa7a8ac723e30df9cd7f75bd5e8019803d1d3726c4389bb",
+    "index_file_sha256": "9105702aa976492e71c5f16887c6a34507145a55a8212ac6329dd681e43c3db2"
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "note_id": "CAL.2.15-17"
+    },
+    "16": {
+     "state": "confirmed",
+     "note_id": "CAL.2.16"
+    },
+    "17": {
+     "state": "confirmed",
+     "note_id": "CAL.2.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.2.15-17",
+     "verse": 15,
+     "note_span": [
+      15,
+      17
+     ],
+     "start": 34256,
+     "end": 36859,
+     "chars": 2603,
+     "pieces": 5,
+     "tiling_problems": [],
+     "head": "1 John 2:15-17 15 . Love not t",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    },
+    {
+     "note_id": "CAL.2.16",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 36860,
+     "end": 39256,
+     "chars": 2396,
+     "pieces": 5,
+     "tiling_problems": [],
+     "head": "16 The lust of the flesh , or,",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    },
+    {
+     "note_id": "CAL.2.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 39257,
+     "end": 40732,
+     "chars": 1475,
+     "pieces": 3,
+     "tiling_problems": [],
+     "head": "17 And the world passeth away ",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL2.15.03",
+     "note_id": "CAL.2.15-17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      17
+     ],
+     "subject_span": [
+      15,
+      17
+     ],
+     "anchor_verse": 15,
+     "text": "15 Love not He had said before that the only rule for living religiously, is to love God; but as, when we are occupied with the vain love of the world, we turn away all our thoughts and affections another way, this vanity must first be torn away from us, in order that the love of God may reign within us. Until our minds are cleansed, the former doctrine may be iterated a hundred times, but with no effect: it would be like pouring water on a ball; you can gather, no, not a drop, because there is no empty place to retain water.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 35012,
+     "end": 35543,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "first commentary piece after the printed scripture heading block (header not in pool)"
+     ],
+     "covers_verses": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "id": "CAL2.15.04",
+     "note_id": "CAL.2.15-17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      17
+     ],
+     "subject_span": [
+      15,
+      17
+     ],
+     "anchor_verse": 15,
+     "text": "By the world understand everything connected with the present life, apart from the kingdom of God and the hope of eternal life. So he includes in it corruptions of every kind, and the abyss of all evils. In the world are pleasures, delights, and all those allurements by which man is captivated, so as to withdraw himself from God. Moreover, the love of the world is thus severely condemned, because we must necessarily forget God and ourselves when we regard nothing so much as the earth; and when a corrupt lust of this kind rules in man, and so holds him entangled that he thinks not of the heavenly life, he is possessed by a beastly stupidity.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 35544,
+     "end": 36192,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "id": "CAL2.15.05",
+     "note_id": "CAL.2.15-17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      17
+     ],
+     "subject_span": [
+      15,
+      17
+     ],
+     "anchor_verse": 15,
+     "text": "If any man love the world He proves by an argument from what is contrary, how necessary it is to cast away the love of the world, if we wish to please God; and this he afterwards confirms by an argument drawn from what is inconsistent; for what belongs to the world is wholly at variance with God. We must bear in mind what I have already said, that a corrupt mode of life is here mentioned, which has nothing in common with the kingdom of God, that is, when men become so degenerated, that they are satisfied with the present life, and think no more of immortal life than mute animals. Whosoever, then, makes himself thus a slave to earthly lusts, cannot be of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 36193,
+     "end": 36859,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "id": "CAL2.16.01",
+     "note_id": "CAL.2.16",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "16 The lust of the flesh , or, namely, the lust of the flesh . The old interpreter renders the verse otherwise, for from one sentence he makes two. Those Greek authors do better, who read these words together, “Whatever is in the world is not of God;” and then the three kinds of lusts they introduce parenthetically.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 36860,
+     "end": 37177,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "CAL2.16.02",
+     "note_id": "CAL.2.16",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "For John, by way of explanation, inserted these three particulars as examples, that he might briefly shew what are the pursuits and thoughts of men who live for the world; but whether it be a full and complete division, it does not signify much; though you will not find a worldly man in whom these lusts do not prevail, at least one of them. It remains for us to see what he understands by each of these. The first clause is commonly explained of all sinful lusts in general; for the flesh means the whole corrupt nature of man.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 37178,
+     "end": 37707,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL2.16.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "CAL2.16.03",
+     "note_id": "CAL.2.16",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "Though I am unwilling to contend, yet I am unwilling to dissemble that I approve of another meaning. Paul, when forbidding, in Romans 13:14 , to make provision for the flesh as to its lusts, seems to me to be the best interpreter of this place. What, then, is the flesh there? even the body and all that belongs to it. What, then, is the lust or desire of the flesh, but when worldly men, seeking to live softly and delicately, are intent only on their own advantages?",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 37708,
+     "end": 38176,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Romans 13:14"
+     ],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "CAL2.16.04",
+     "note_id": "CAL.2.16",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "Well known from Cicero and others, is the threefold division made by Epicurus; for he made this difference between lusts; he made some natural and necessary, some natural and not necessary, and some neither natural nor necessary. But John, well knowing the insubordination ( ἀταξία )of the human heart unhesitantly condemns the lust of the flesh, because it always flows out immoderately, and never observes any due medium.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 38177,
+     "end": 38600,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "CAL2.16.05",
+     "note_id": "CAL.2.16",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "He afterwards comes gradually to grosser vices. The lust of the eyes He includes, as I think, libidinous looks as well as the vanity which delights in pomps and empty splendor. In the last place follows pride or haughtiness ; with which is connected ambition, boasting, contempt of others, blind love of self, headstrong self-confidence. The sum of the whole is, that as soon as the world presents itself, our lusts or desires, when our heart is corrupt, are captivated by it, like unbridled wild beasts; so that various lusts, all which are adverse to God, bear rule in us. The Greek word, βὶος rendered life, ( vita ,) means the way or manner of living.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 38601,
+     "end": 39256,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL2.16.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "CAL2.17.01",
+     "note_id": "CAL.2.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "17 And the world passeth away As there is nothing in the world but what is fading, and as it were for a moment, he hence concludes that they who seek their happiness from it, make a wretched and miserable provision for themselves, especially when God calls us to the ineffable glory of eternal life; as though he had said, “The true happiness which God offers to his children, is eternal; it is then a shameful thing for us to be entangled with the world, which with all its benefits will soon vanish away.”",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 39257,
+     "end": 39764,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "CAL2.17.02",
+     "note_id": "CAL.2.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "I take lust here metonymically, as signifying what is desired or coveted, or what captivates the desires of men. The meaning is, that what is most precious in the world and deemed especially desirable, is nothing but a shadowy phantom. By saying that they who do the will of God shall abide for ever , or perpetually , he means that they who seek God shall be perpetually blessed. Were any one to object and say, that no one doeth what God commands, the obvious answer is, that what is spoken of here is not the perfect keeping of the law, but the obedience of faith, which, however imperfect it may be, is yet approved by God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 39765,
+     "end": 40392,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "CAL2.17.03",
+     "note_id": "CAL.2.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Commentary on the First Epistle of John",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "The will of God is first made known to us in the law; but as no one satisfies the law, no happiness can be hoped from it. But Christ comes to meet the despairing with new aid, who not only regenerates us by his Spirit that we may obey God, but makes also that our endeavor, such as it is, should obtain the praise of perfect righteousness.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/1JN.json",
+     "start": 40393,
+     "end": 40732,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 69725; sections 29; max code point U+201D"
+    },
+    {
+     "kind": "scripture-header",
+     "verse": 15,
+     "msg": "Calvin section CAL.2.15-17: first 756 chars are the printed scripture heading block (English + Latin); 2 pieces marked scripture_header and kept out of the pool"
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "2 scripture_header pieces excluded: ['CAL2.15.01', 'CAL2.15.02']"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "c53371d66c8df32b1c23bd17d969033bc76c12421b8ef054394ee19b1e5773f9",
+    "text_sha256": "0d19340c7bacfd330515facf0faf6854c81b485076845b1435453ed3c6242336"
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "note_id": "JFB.2.15"
+    },
+    "16": {
+     "state": "confirmed",
+     "note_id": "JFB.2.16"
+    },
+    "17": {
+     "state": "confirmed",
+     "note_id": "JFB.2.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.2.15",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 17662,
+     "end": 18743,
+     "chars": 1081,
+     "pieces": 3,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "JFB.2.16",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 18743,
+     "end": 20910,
+     "chars": 2167,
+     "pieces": 5,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "JFB.2.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 20910,
+     "end": 21591,
+     "chars": 681,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB2.15.01",
+     "note_id": "JFB.2.15",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "15. Love not the world—that lieth in the wicked one (1Jo 5:19), whom ye young men have overcome. Having once for all, through faith, overcome the world (1Jo 4:4; 5:4), carry forward the conquest by not loving it. \"The world\" here means \"man, and man's world\" [Alford], in his and its state as fallen from God.",
+     "outline_label": "15.",
+     "marker_span": [
+      17662,
+      17665
+     ],
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 17662,
+     "end": 17971,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 5:19",
+      "1Jo 4:4"
+     ],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "JFB2.15.02",
+     "note_id": "JFB.2.15",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "\"God loved [with the love of compassion] the world,\" and we should feel the same kind of love for the fallen world; but we are not to love the world with congeniality and sympathy in its alienation from God; we cannot have this latter kind of love for the God-estranged world, and yet have also \"the love of the Father in\" us.\nneither—Greek, \"nor yet.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 17972,
+     "end": 18324,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "JFB2.15.03",
+     "note_id": "JFB.2.15",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "A man might deny in general that he loved the world, while keenly following some one of the things in it: its riches, honors, or pleasures; this clause prevents him escaping from conviction.\nany man—therefore the warning, though primarily addressed to the young, applies to all.\nlove of—that is, towards \"the Father.\" The two, God and the (sinful) world, are so opposed, that both cannot be congenially loved at once.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 18325,
+     "end": 18742,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "JFB2.16.01",
+     "note_id": "JFB.2.16",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "16. all that is in the world—can be classed under one or other of the three; the world contains these and no more.\nlust of the flesh—that is, the lust which has its seat and source in our lower animal nature. Satan tried this temptation the first on Christ: Lu 4:3, \"Command this stone that it be made bread.\" Youth is especially liable to fleshly lusts.\nlust of the eyes—the avenue through which outward things of the world, riches, pomp, and beauty, inflame us.",
+     "outline_label": "16.",
+     "marker_span": [
+      18743,
+      18746
+     ],
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 18743,
+     "end": 19206,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Lu 4:3"
+     ],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "JFB2.16.02",
+     "note_id": "JFB.2.16",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "Satan tried this temptation on Christ when he showed Him the kingdoms of the world in a moment. By the lust of the eyes David (2Sa 11:2) and Achan fell (Jos 7:21). Compare David's prayer, Ps 119:37; Job's resolve, Ps 31:1; Mt 5:28. The only good of worldly riches to the possessor is the beholding them with the eyes. Compare Lu 14:18, \"I must go and see it.\"\npride of life—literally, \"arrogant assumption\": vainglorious display.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 19207,
+     "end": 19636,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2Sa 11:2",
+      "Jos 7:21",
+      "Ps 119:37",
+      "Ps 31:1",
+      "Mt 5:28",
+      "Lu 14:18"
+     ],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "JFB2.16.03",
+     "note_id": "JFB.2.16",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "Pride was Satan's sin whereby he fell and forms the link between the two foes of man, the world (answering to \"the lust of the eyes\") and the devil (as \"the lust of the flesh\" is the third foe). Satan tried this temptation on Christ in setting Him on the temple pinnacle that, in spiritual pride and presumption, on the ground of His Father's care, He should cast Himself down. The same three foes appear in the three classes of soil on which the divine seed falls: the wayside hearers, the devil; the thorns, the world; the rocky undersoil, the flesh (Mt 13:18-23; Mr 4:3-8).",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 19637,
+     "end": 20213,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 13:18-23",
+      "Mr 4:3-8"
+     ],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "JFB2.16.04",
+     "note_id": "JFB.2.16",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "The world's awful antitrinity, the \"lust of the flesh, the lust of the eyes, and the pride of life,\" similarly is presented in Satan's temptation of Eve: \"When she saw that the tree was good for food, pleasant to the eyes, and a tree to be desired to make one wise,\" Ge 3:6 (one manifestation of \"the pride of life,\" the desire to know above what God has revealed, Col 2:8, the pride of unsanctified knowledge).\nof—does not spring from \"the Father\" (used in relation to the preceding \"little children,\" 1Jo 2:12, or \"little sons\").",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 20214,
+     "end": 20745,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ge 3:6",
+      "Col 2:8",
+      "1Jo 2:12"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "JFB2.16.05",
+     "note_id": "JFB.2.16",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "He who is born of God alone turns to God; he who is of the world turns to the world; the sources of love to God and love to the world, are irreconcilably distinct.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 20746,
+     "end": 20909,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "JFB2.16.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "JFB2.17.01",
+     "note_id": "JFB.2.17",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "17. the world—with all who are of the world worldly.\npasseth away—Greek, \"is passing away\" even now.\nthe lust thereof—in its threefold manifestation (1Jo 2:16).\nhe that doeth the will of God—not his own fleshly will, or the will of the world, but that of God (1Jo 2:3, 6), especially in respect to love.\nabideth for ever—\"even as God also abideth for ever\" (with whom the godly is one; compare Ps 55:19, \"God, even He that abideth of old): a true comment, which Cyprian and Lucifer have added to the text without support of Greek manuscripts. In contrast to the three passing lusts of the world, the doer of God's will has three abiding goods, \"riches, honor, and life\" (Pr 22:4).",
+     "outline_label": "17.",
+     "marker_span": [
+      20910,
+      20913
+     ],
+     "source_file": "commentary/JFB/1JN.json",
+     "start": 20910,
+     "end": 21590,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1Jo 2:16",
+      "1Jo 2:3",
+      "Ps 55:19",
+      "Pr 22:4"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 34472 chars; 28 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, '9-11', 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]; max code point U+2026"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "1b218ff1fdd2d558da709851cfd5beb89c120783e9cb7bb007eabfc862e42c5c",
+    "text_sha256": null
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "note_id": "GILL.2.15"
+    },
+    "16": {
+     "state": "confirmed",
+     "note_id": "GILL.2.16"
+    },
+    "17": {
+     "state": "confirmed",
+     "note_id": "GILL.2.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.2.15",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 0,
+     "end": 4399,
+     "chars": 4399,
+     "pieces": 7,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    },
+    {
+     "note_id": "GILL.2.16",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 3675,
+     "chars": 3675,
+     "pieces": 7,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    },
+    {
+     "note_id": "GILL.2.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 3127,
+     "chars": 3127,
+     "pieces": 4,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL2.15.01",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Love not the world,.... The habitable earth, the world in which men live; this is not to be loved by saints, as if it was their habitation, where they are always to be, and so loath to remove from it, seeing they are but sojourners, and pilgrims, and strangers here; this is not their rest, nor dwellingplace, their continuing city, or proper country, that is heaven.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 0,
+     "end": 367,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.15.02",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Nor should they love the men of the world, who are as they came into it, are of it, and mind the things of it, and lie in wickedness, and are wicked men; for though these are to be loved, as men, as fellow creatures, and their good, both spiritual and temporal, is to be sought, and good is to be done to them, as much as lies in our power, both with respect to soul and body; yet their company is not to be chosen, and preferred to the saints, but to be shunned and avoided, as disagreeable and dangerous; their evil conversation, and wicked communications, are not to be loved, but abhorred, and their works of darkness are to be reproved; nor are their ways to be imitated, and their customs followed, or their manners to be conformed unto:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 368,
+     "end": 1111,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.15.03",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "neither the things that are in the world; good men that are in the world, though they are not of the world, are to be loved; and the kingdom of Christ, though it is not of the world, yet it is in the world, and is to be regarded and promoted to the uttermost; and there are the natural and civil things of the world, called this world's goods, which may be loved within due bounds, and used in a proper manner, though they are not to be loved inordinately and abused.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 1113,
+     "end": 1580,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.15.04",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "This is the character of worldly men; so the Jews call such,  , \"such that love world\" (g). Near relations and friends in the world, and the blessings of life, may be loved and enjoyed in their way, but not above God and Christ, or so as to take up satisfaction and contentment in them, to make idols of them, and put trust and confidence in them, and prefer them to spiritual and heavenly things, and be so taken with them, as to be unconcerned for, and careless about the other; but the evil things of the world, or at least the evil use of them, and affection for them, are here intended, as appears from the following verse.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 1581,
+     "end": 2209,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL2.15.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.15.05",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Now it is chiefly with respect to the fathers, and young men, that this exhortation is given; and the repetition of what is said to them before is made, to introduce this; which is exceeding suitable to their age and characters. Old men are apt to be covetous, and love the world and worldly things, just when they are going out of it, and about to leave them; and young men are apt to be carried away with lust, vanity, ambition, and pride: and therefore, from each of these, the apostle dissuades, from the following arguments,",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 2210,
+     "end": 2739,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL2.15.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.15.06",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "if any man love the world, the love of the Father is not in him; that is, \"the love of God\", as the Alexandrian copy and the Ethiopic version read; who is the Father of Christ, and of all the elect in him; and who is indeed, by creation, the Father of all men, the Father of spirits, of the souls of men, and of angels, and the Father of mercies and of lights, and by the love of him is meant, either the love with which he loves his people, and which being shed abroad in the heart, attracts the soul to himself, and causes it to love him above the world, and all things in it; and such an one esteems of it, and an interest in it, more than life, and all the enjoyments of it, and is by it loosened to the world, and sets light by it, and can part with all good things in it, and suffer all evil things cheerfully, under the constraints and influence of this love; so that it is a clear case, that when the affections of men are set upon the world, and they are glued to the things of it, their hearts are not warmed with a sense of the love of God, or, that is not sensibly in them, or shed abroad in their hearts: or else by the love of God is meant love to God, which is inconsistent with the love of the world, or with such an inordinate love of mammon, as to serve it; for a man may as soon serve two masters, as serve God and mammon, which he can never do truly, faithfully, and affectionately; and which also is not consistent with friendship with the men of the world, or a conversation and fellowship with them in things that are evil, whether superstition or profaneness; see Matthew 6:24.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 2741,
+     "end": 4342,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Matthew 6:24"
+     ],
+     "flags": [],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.15.07",
+     "note_id": "GILL.2.15",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "(g) Kimchi in Psal. xlix. 9. Ben Melech in ib. ver. 14.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 4344,
+     "end": 4399,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "footnote list only; never shown on its own"
+     ],
+     "source_text_sha256": "1ec3bd8f1f38100e9d65a85c728ee09d7a7f206683dcde2127c10a545c6ee4f9",
+     "piece_kind": "citation_list",
+     "citation_letters": [
+      "g"
+     ],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "GIL2.16.01",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "For all that is in the world,.... This is the sum of the evil things in the world; or these following are the objects of sin in the world, or about which wicked men are conversant; even such as are carnal or grateful to the flesh, visible to the eye, and belong to this vain life, or serve to fill with pride and vanity; or these are the main things, which men that love the world most highly value and esteem:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 0,
+     "end": 410,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.16.02",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "the lust of the flesh; by which is meant, not lust in general, or concupiscence, the corruption of nature, which is the fountain of all sin, or indwelling sin, the flesh, or that corrupt principle which lusts against the Spirit; nor the various lusts of the flesh, fleshly lusts, which war against the soul, and which are many, and are also called worldly lusts; but some particular one, \"a lust of the body\", as the Syriac version reads; either the lust of uncleanness, which includes all unchaste desires, thoughts, words, and actions, fornication, adultery, rape, incest, sodomy, and all unnatural lusts; and which make up a considerable part of the all that is in the world: or else intemperance in eating and drinking, gluttony and drunkenness, excess of wine, surfeitings, rioting, and revellings, and all the sensual pleasures of life, by which the carnal mind, and the lusts of it, are gratified; whereby the soul is destroyed, the body is dishonoured, and a wound, dishonour, and reproach brought on the character, not to be removed; for which reasons the world, and the things of it, are not to be loved: the next follows,",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 412,
+     "end": 1544,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.16.03",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "the lust of the eyes: after unlawful objects, and may design unchaste and lascivious looks, eyes full of adultery, and whereby adultery is committed; see Matthew 5:28; but then this falls in with the other, unless that be confined to intemperance; rather then this may intend a sinful curiosity of seeing vain sights, and shows, with which the eye of man is never satisfied, Ecclesiastes 1:8; and against which the psalmist prays, Psalm 119:37, or rather the sin of covetousness is here designed, the objects of which are visible things, as gold, silver, houses, lands, and possessions, with which riches the eyes of men are never satisfied, and which sin is drawn forth and cherished by the eyes; and indeed a covetous man has little more satisfaction than the beholding his substance with his eyes, and in which he takes much sinful pleasure; see Ecclesiastes 4:8; and what a poor vain empty thing is this! therefore, love not the world, since this is a principal thing in it: as is also",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 1546,
+     "end": 2535,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Matthew 5:28",
+      "Ecclesiastes 1:8",
+      "Psalm 119:37",
+      "Ecclesiastes 4:8"
+     ],
+     "flags": [],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.16.04",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "the pride of life; by which seems to be meant, ambition of honour, of chief places and high titles, as in the Scribes and Pharisees, Matthew 23:6, or of grand living, for the word signifies not so much life as living; living in a sumptuous, gay, luxurious, and pompous manner, in rich diet, costly apparel, having fine seats, palaces, and stately buildings, and numerous attendance; all which is but vanity and vexation of spirit; see Ecclesiastes 2:1.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 2537,
+     "end": 2989,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Matthew 23:6",
+      "Ecclesiastes 2:1"
+     ],
+     "flags": [],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.16.05",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "The Syriac and Arabic versions read, \"the pride of the age\"; and every age has some peculiar things in which the pride of it appears. Now neither of these",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 2990,
+     "end": 3144,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.16.06",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "is of the Father; of God the Father, as the Ethiopic version reads; the things which are desired and lusted after are of God, but not the lust itself; God is not the author of sin, nor is it agreeable to his will:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 3146,
+     "end": 3359,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.16.07",
+     "note_id": "GILL.2.16",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "but is of the world; of the men of it, and agreeable to their carnal minds; and is a reason why things of the world are not to be loved by the saints, who are not of it, but chosen and called out of it; and besides, all these things are mean, base, vile, and contemptible, and unworthy of their love and affection.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 3361,
+     "end": 3675,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9b4fc6def571ddc1542cc1e7e4bfc16cd5e291ff9aff4838f42d0eb611c9a7fc",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "GIL2.17.01",
+     "note_id": "GILL.2.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "And the world passeth away,.... Not the matter and substance, but the fashion, form, and scheme of it, 1 Corinthians 7:31; kingdoms, cities, towns, houses, families, estates, and possessions, are continually changing, and casting into different hands, and different forms; the men of the world, the inhabitants of it, are continually removing; one generation goes, and another comes, new faces are continually appearing; the riches and honours of the world are fading, perishing, and transitory things; everything is upon the flux, nothing is permanent; which is another argument why the world, and the things of it, are not to be loved:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 0,
+     "end": 637,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1 Corinthians 7:31"
+     ],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "a059f5f754342702e696c2ac75d86661c556aa17a21925173f200c0070e04dca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL2.17.02",
+     "note_id": "GILL.2.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "and the lust thereof; also passes away; and objects of lust are fading and fleeting, as beauty, and riches, and honours; these are continually taking away from men, or men are taken away from them, and will not be hereafter; and even the pleasure of lust itself passes away as soon as enjoyed; the pleasures of sin are but for a season, and a very short one; and are indeed but imaginary, and leave a real bitterness and sorrow behind them, and at length bring a man to ruin and destruction:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 639,
+     "end": 1130,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a059f5f754342702e696c2ac75d86661c556aa17a21925173f200c0070e04dca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL2.17.03",
+     "note_id": "GILL.2.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "but he that doeth the will of God; not perfectly as contained in the law, which is the good, and perfect, and acceptable will of God; for no man can do that in such a manner, though a regenerate man desires to do it, even as it is done in heaven, and serves the law of God with his mind, and under the influence of the Spirit of God; and does walk in his statutes, and keeps his judgments from a principle of love, in faith, and without mercenary views and sinister ends, without depending on what he does for life and salvation; and such an one may be said to be a doer of the will of God: though rather here it intends such an one as believes in Christ, as the propitiation for his sins, and as his advocate with the Father, and who, makes Christ his pattern and example, and walks as he walked; and particularly observes the new commandment of love, loves God, and Christ, and his fellow Christians, and not the world, and the things of it: and such a man is happy, for he",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 1132,
+     "end": 2107,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a059f5f754342702e696c2ac75d86661c556aa17a21925173f200c0070e04dca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL2.17.04",
+     "note_id": "GILL.2.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "abideth for ever; in the love of God, which will never depart from him, nor shall he be separated from that; and in the hands and arms of Christ, out of which none can pluck him; and in the family and household of God, where he, as a son, abides for ever, and shall never be cast out; and in a state of justification, and shall never enter into condemnation; and in a state of grace and holiness, from whence he shall never fall totally and finally; and in heaven with Christ to all eternity: the reason of this his abiding is not his doing the will of God, which is only descriptive of him manifestatively, and not the cause of his perpetuity and immovableness; but his eternal election of God, which stands sure, not on the foot of works, but of him that calleth; and the covenant of grace in which he is interested, and which is immovable, sure, firm, and inviolable; and the foundation Jesus Christ, on which he is built; and the principle of grace in him, which always remains, and is connected with eternal life.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/1JN.json",
+     "start": 2109,
+     "end": 3127,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a059f5f754342702e696c2ac75d86661c556aa17a21925173f200c0070e04dca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 29 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "ce784e00947a256ebee605b3eece418021178ae4dd6b8264eb0da3ca3267b686",
+    "text_sha256": "fe49596880d5df4b0be49f90f09223ece71328e67f892ad149b3b757611f714d"
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "note_id": "WES.2.15"
+    },
+    "16": {
+     "state": "confirmed",
+     "note_id": "WES.2.16"
+    },
+    "17": {
+     "state": "confirmed",
+     "note_id": "WES.2.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.2.15",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 5475,
+     "end": 5696,
+     "chars": 221,
+     "pieces": 1,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "WES.2.16",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 5696,
+     "end": 6317,
+     "chars": 621,
+     "pieces": 2,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "WES.2.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 6317,
+     "end": 6558,
+     "chars": 241,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES2.15.01",
+     "note_id": "WES.2.15",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "15. To you all, whether fathers, young men, or little children, I say, Love not the world - Pursue\nyour victory by overcoming the world. If any man love the world - Seek happiness in visible things,\nhe does not love God.",
+     "outline_label": "15.",
+     "marker_span": [
+      5475,
+      5478
+     ],
+     "source_file": "commentary/Wesley/1JN.json",
+     "start": 5475,
+     "end": 5695,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "WES2.16.01",
+     "note_id": "WES.2.16",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "16. The desire of the flesh - Of the pleasure of the outward senses, whether of the taste, smell,\nor touch. The desire of the eye - Of the pleasures of imagination, to which the eye chiefly is\nsubservient; of that internal sense whereby we relish whatever is grand, new, or beautiful. The pride\nof life - All that pomp in clothes, houses, furniture, equipage, manner of living, which generally\nprocure honour from the bulk of mankind, and so gratify pride and vanity.",
+     "outline_label": "16.",
+     "marker_span": [
+      5696,
+      5699
+     ],
+     "source_file": "commentary/Wesley/1JN.json",
+     "start": 5696,
+     "end": 6163,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "WES2.16.02",
+     "note_id": "WES.2.16",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "It therefore directly\nincludes the desire of praise, and, remotely, covetousness. All these desires are not from God, but\nfrom the prince of this world.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Wesley/1JN.json",
+     "start": 6164,
+     "end": 6316,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "WES2.16.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "WES2.17.01",
+     "note_id": "WES.2.17",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "17. The world passeth away, and the desire thereof - That is, all that can gratify those desires\npasseth away with it. But he that doeth the will of God - That loves God, not the world. Abideth - In the enjoyment of what he loves, for ever.",
+     "outline_label": "17.",
+     "marker_span": [
+      6317,
+      6320
+     ],
+     "source_file": "commentary/Wesley/1JN.json",
+     "start": 6317,
+     "end": 6557,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 10138 chars; 28 numbered line starts, 28 chosen as verse markers (24 confirmed by a catchword in the KJV verse): [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "1d44b28249627fa2436f02b2b8cdd667c62fbfd15cb29ef031746b6acf974483",
+    "text_sha256": null
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "note_id": "BAR.2.15"
+    },
+    "16": {
+     "state": "confirmed",
+     "note_id": "BAR.2.16"
+    },
+    "17": {
+     "state": "confirmed",
+     "note_id": "BAR.2.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.2.15",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 0,
+     "end": 3331,
+     "chars": 3331,
+     "pieces": 7,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "BAR.2.16",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 2748,
+     "chars": 2748,
+     "pieces": 7,
+     "tiling_problems": []
+    },
+    {
+     "note_id": "BAR.2.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 731,
+     "chars": 731,
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR2.15.01",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Verse 15. Love not the world. The term world seems to be used in the Scriptures in three senses;\n\n(1,) As denoting the physical universe; the world as it appears to the eye; the world considered as the work of God, as a material creation.\n\n(2.) The world as applied to the people that reside in it--\" the world of mankind.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 0,
+     "end": 323,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.15.02",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "(3.) As the dwellers on the earth are by nature without religion, and act under a set of maxims, aims, and principles that have reference only to this life, the term comes to be used with reference to that community; that is, to the objects which they peculiarly seek, and the principles by which they are actuated, Considered with reference to the first sense of the word, it is not improper to love the world as the work of God, and as illustrating his perfections; for we may suppose that God loves his own works, and it is not wrong that we should find pleasure in their contemplation.",
+     "outline_label": "(3.)",
+     "marker_span": [
+      325,
+      329
+     ],
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 325,
+     "end": 914,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.15.03",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Considered with reference to the second sense of the word, it is not wrong to love the people of the world with a love of benevolence, and to have attachment to our kindred and friends who constitute a part of it, though they are not Christians. It is only with reference to the word as used in the third sense that the command here can be understood to be applicable, or that the love of the world is forbidden; with reference to the objects sought, the maxims that prevail, the principles that reign in that community that lives for this world as contradistinguished from the world to come.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 915,
+     "end": 1507,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.15.04",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "The meaning is, that we are not to fix our affections on worldly objects--on what the world can furnish--as our portion, with the spirit with which they do who live only for this world, regardless of the life to come. We are not to make this world the object of our chief affection; we are not to be influenced by the maxims and feelings which prevail among those who do. Comp. See Barnes \"Ro 12:2, and See Barnes \"Jas 4:4\".\n\nSee also Mt 16:26; Lu 9:25; 1 Co 1:20; 3:19; Ga 4:3; Col 2:8\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 1508,
+     "end": 1996,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ro 12:2",
+      "Jas 4:4",
+      "Mt 16:26",
+      "Lu 9:25",
+      "1 Co 1:20",
+      "Ga 4:3",
+      "Col 2:8"
+     ],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.15.05",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Neither the things that are in the world. Referred to in the next verse as \"the lust of the flesh, the lust of the eyes, and the pride of life.\" This explanation shows what John meant by \"the things that are in the world.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 1998,
+     "end": 2220,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.15.06",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "He does not say that we are in no sense to love anything that is in the material world; that we are to feel no interest in flowers, and streams, and forests, and fountains; that we are to have no admiration for what God has done as the Creator of all things; that we are to cherish no love for any of the inhabitants of the world, our friends and kindred; or that we are to pursue none of the objects of this life in making provision for our families; but that we are not to love the things which are sought merely to pamper the appetite, to please the eye, or to promote pride in living. These are the objects sought by the people of the world; these are not the objects to be sought by the Christian.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 2221,
+     "end": 2923,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR2.15.05"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.15.07",
+     "note_id": "BAR.2.15",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "If any man love the world, etc. If, in this sense, a man loves the world, it shows that he has no true religion; that is, if characteristically he loves the world as his portion, and lives for that; if it is the ruling principle of his life to gain and enjoy that, it shows that his heart has never been renewed, and that he has no part with the children of God. See Barnes \"Jas 4:4\"; See Barnes \"Mt 6:24\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 2925,
+     "end": 3331,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Jas 4:4",
+      "Mt 6:24"
+     ],
+     "flags": [],
+     "source_text_sha256": "3d5e86cc810ace692cfdfd5aa111856623f7a1802d2a86bfd283d8e74e83fdec",
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "BAR2.16.01",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "Verse 16. For all that is in the world. That is, all that really constitutes the world, or that enters into the aims and purposes of those who live for this life. All that that community lives for may be comprised under the following things.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 0,
+     "end": 241,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.16.02",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "The lust of the flesh. The word lust is used here in the general sense of desire, or that which is the object of desire--not in the narrow sense in which it is now commonly used to denote libidinous passion. See Barnes \"Jas 1:14\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 243,
+     "end": 473,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Jas 1:14"
+     ],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.16.03",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "The phrase, \"the lust of the flesh,\" here denotes that which pampers the appetites, or all that is connected with the indulgence of the mere animal propensities. A large part of the world lives for little more than this. This is the lowest form of worldly indulgence; those which are immediately specified being of a higher order, though still merely worldly.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 475,
+     "end": 834,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.16.04",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "And the lust of the eyes. That which is designed merely to gratify the sight. This would include, of course, costly raiment, jewels, gorgeous furniture, splendid palaces, pleasure-grounds, etc. The object is to refer to the gay vanities of this world, the thing on which the eye delights to rest where there is no higher object of life.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 836,
+     "end": 1172,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR2.16.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.16.05",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "It does not, of course, mean that the eye is never to be gratified, or that we can find as much pleasure in an ugly as in a handsome object, or that it is sinful to find pleasure in beholding objects of real beauty--for the world, as formed by its Creator, is full of such things, and he could not but have intended that pleasure should enter the soul through the eye, or that the beauties which he has shed so lavishly over his works should contribute to the happiness of his creatures; but the apostle refers to this when it is the great and leading object of life,--when it is sought without any connexion with religion or reference to the world to come.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 1173,
+     "end": 1830,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR2.16.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.16.06",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "And the pride of life. The word here used means, properly, ostentation or boasting, and then arrogance or pride.--Robinson. It refers to whatever there is that tends to promote pride, or that is an index of pride, such as the ostentatious display of dress, equipage, furniture, etc.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 1832,
+     "end": 2114,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR2.16.05"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.16.07",
+     "note_id": "BAR.2.16",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:16",
+     "note_span": [
+      16,
+      16
+     ],
+     "subject_span": [
+      16,
+      16
+     ],
+     "anchor_verse": 16,
+     "text": "Is not of the Father. Does not proceed from God, or meet with his approbation. It is not of the nature of true religion to seek these things, nor can their pursuit be reconciled with the existence of real piety in the heart. The sincere Christian has nobler ends; and he who has not any higher ends, and whose conduct and feelings can all be accounted for by a desire for these things, cannot be a true Christian.\n\nBut is of the world. Is originated solely by the objects and purposes of this life, where religion and the life to come are excluded.\n\n{*} \"lust\" \"desire\" \"flesh\" 2 Pe 2:10 \"the eyes\" Ps 119:37 \"pride of life\" Ps 83:6",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 2116,
+     "end": 2748,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": false,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2 Pe 2:10",
+      "Ps 119:37",
+      "Ps 83:6"
+     ],
+     "flags": [],
+     "source_text_sha256": "5e8895f46cf9146b49cfd027bdd3f3778f05db6b6472bfaeec1079aa2d8a3fdb",
+     "covers_verses": [
+      16
+     ]
+    },
+    {
+     "id": "BAR2.17.01",
+     "note_id": "BAR.2.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Verse 17. And the world passeth away. Everything properly constituting this world where religion is excluded. The reference here does not seem to be so much to the material world, as to the scenes of show and vanity which make up the world. These things are passing away like the shifting scenes of the stage. See Barnes \"1 Co 7:31\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 0,
+     "end": 333,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "1 Co 7:31"
+     ],
+     "flags": [],
+     "source_text_sha256": "6d8c2314ead8b62d00b8d53a0451d0baa019a5e0aba8930b072258a711cd4971",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR2.17.02",
+     "note_id": "BAR.2.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "And the lust thereof. All that is here so much the object of desire. These things are like a pageant, which only amuses the eve for a moment, and then disappears for ever.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 335,
+     "end": 506,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR2.17.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "6d8c2314ead8b62d00b8d53a0451d0baa019a5e0aba8930b072258a711cd4971",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR2.17.03",
+     "note_id": "BAR.2.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "1Jo 2:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "But he that doeth the will of God abideth for ever. This cannot mean that he will never die; but it means that he has built his happiness on a basis which is secure, and which can never pass away. See Barnes \"Mt 7:24\"; seq.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/1JN.json",
+     "start": 508,
+     "end": 731,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR2.17.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 7:24"
+     ],
+     "flags": [],
+     "source_text_sha256": "6d8c2314ead8b62d00b8d53a0451d0baa019a5e0aba8930b072258a711cd4971",
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 29 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007D"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "61f2e281f704db98abecb78820d32eea7288cacba383c66f347c6756f211a4dd",
+    "text_sha256": null
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "note_id": "TYN.2.15"
+    },
+    "16": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 16"
+    },
+    "17": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "TYN.2.15",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 0,
+     "end": 348,
+     "chars": 348,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 15 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "dca6b54a8e0e2eb9315d5f22f110c6d7b75a861a28c5630febce767b3680b013",
+    "text_sha256": "8e6c319f4853b3b7c51fc8a222b99e12f423816eee36793d57f4e98764dde63c"
+   },
+   "coverage": {
+    "15": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    },
+    "16": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    },
+    "17": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 2: 1139 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/1 John 2_15.toml": "603202bfb3d5a58407d4937a20cb6c4e57e9279e895f523f8363b82f3605a3af",
+     "Augustine of Hippo/1 John 2_16.toml": "66e09de641fba947e334835321d706611de3c2d4e6e5297a3d2e4db5b24d3c65",
+     "Augustine of Hippo/1 John 2_17.toml": "d36ec0f5805fde1f3e7bca5e28209ee7c6daf3cd510267473f7e4f5c1d7c592a",
+     "Augustine of Hippo/1 John 2_15-16.toml": "042157b1cd8b058980a25dcf2935522a119b1568280234017d3015394e717532",
+     "Cyril of Alexandria/1 John 2_15.toml": "63d15a54363a640d163efaf46000bab98e359dcabae367072f7a4ae1b626595d"
+    }
+   },
+   "coverage": {
+    "15": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_15.toml",
+        "entry": 1,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 1105,
+        "file_span": [
+         15,
+         15
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_15.toml",
+        "entry": 2,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 1716,
+        "file_span": [
+         15,
+         15
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_15-16.toml",
+        "entry": 1,
+        "title": "Exposition on Psalm 8",
+        "chars": 1015,
+        "file_span": [
+         15,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "Cyril of Alexandria": [
+       {
+        "father": "Cyril of Alexandria",
+        "file": "1 John 2_15.toml",
+        "entry": 1,
+        "title": "CATENA",
+        "chars": 189,
+        "file_span": [
+         15,
+         15
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 4; entries in range files excluded: 0",
+     "absent_fathers": [
+      "John Chrysostom",
+      "Thomas Aquinas"
+     ]
+    },
+    "16": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 1,
+        "title": "On Patience 17",
+        "chars": 198,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 2,
+        "title": "SERMONS 162.4",
+        "chars": 318,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 3,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 1961,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 4,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 2760,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 5,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 2028,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 6,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 1506,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_16.toml",
+        "entry": 7,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 3645,
+        "file_span": [
+         16,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_15-16.toml",
+        "entry": 1,
+        "title": "Exposition on Psalm 8",
+        "chars": 1015,
+        "file_span": [
+         15,
+         16
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 8; entries in range files excluded: 0",
+     "absent_fathers": [
+      "John Chrysostom",
+      "Thomas Aquinas",
+      "Cyril of Alexandria"
+     ]
+    },
+    "17": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_17.toml",
+        "entry": 1,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 1777,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "1 John 2_17.toml",
+        "entry": 2,
+        "title": "Ten Homilies on 1 John 2",
+        "chars": 1030,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 2; entries in range files excluded: 0",
+     "absent_fathers": [
+      "John Chrysostom",
+      "Thomas Aquinas",
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.1John2_15.1",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 0,
+     "end": 1105,
+     "chars": 1105,
+     "pieces": 2,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_15.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_15.2",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 0,
+     "end": 1716,
+     "chars": 1716,
+     "pieces": 4,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_15.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.1",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 198,
+     "chars": 198,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "On Patience 17",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.2",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 318,
+     "chars": 318,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "SERMONS 162.4",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.3",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 1961,
+     "chars": 1961,
+     "pieces": 4,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.4",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 2760,
+     "chars": 2760,
+     "pieces": 6,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.5",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 2028,
+     "chars": 2028,
+     "pieces": 5,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.6",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 1506,
+     "chars": 1506,
+     "pieces": 3,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_16.7",
+     "verse": 16,
+     "note_span": [
+      16,
+      16
+     ],
+     "start": 0,
+     "end": 3645,
+     "chars": 3645,
+     "pieces": 8,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_16.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_17.1",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 1777,
+     "chars": 1777,
+     "pieces": 4,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_17.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_17.2",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 1030,
+     "chars": 1030,
+     "pieces": 2,
+     "tiling_problems": [],
+     "title": "Ten Homilies on 1 John 2",
+     "file": "Augustine of Hippo/1 John 2_17.toml"
+    },
+    {
+     "note_id": "HCF.augustine.1John2_15-16.1",
+     "verse": 15,
+     "note_span": [
+      15,
+      16
+     ],
+     "start": 0,
+     "end": 1015,
+     "chars": 1015,
+     "pieces": 3,
+     "tiling_problems": [],
+     "title": "Exposition on Psalm 8",
+     "file": "Augustine of Hippo/1 John 2_15-16.toml"
+    },
+    {
+     "note_id": "HCF.cyril.1John2_15.1",
+     "verse": 15,
+     "note_span": [
+      15,
+      15
+     ],
+     "start": 0,
+     "end": 189,
+     "chars": 189,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "CATENA",
+     "file": "Cyril of Alexandria/1 John 2_15.toml"
+    }
+   ],
+   "pieces": [
+    {
+     "id": "AUG2.15.1.01",
+     "note_id": "HCF.augustine.1John2_15.1",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Ten Homilies on 1 John 2",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "But how can we love God, if we love the world? He prepareth us therefore to be inhabited by charity. There are two loves: of the world, and of God: if the love of the world inhabit, there is no way for the love of God to enter in: let the love of the world make way, and the love of God inhabit; let the better have place. Thou lovedst the world: love not the world: when thou hast emptied thine heart of earthly love, thou shalt drink in love Divine: and thenceforth beginneth charity to inhabit thee, from which can nothing of evil proceed.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15.toml [entry 1]",
+     "start": 0,
+     "end": 542,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)",
+      "one-word correction applied from the CCEL text: \"shall\" to \"shalt\" (recorded in pool/fathers-source-checks.json)"
+     ],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FTen%2520Homilies%2520on%2520the%2520First%2520Epistle%2520of%2520John%2FHomily%25202.html",
+     "source_text_sha256": "3397c46dd291e2eebfc4f4d292b34f274ce95fab4c40ca1f7ca049e654a52582",
+     "container_title": "Ten Homilies on 1 John 2",
+     "source_check": {
+      "status": "typo",
+      "against": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+      "homily": "Homily 2 on 1 John"
+     },
+     "corrected": true,
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "AUG2.15.1.02",
+     "note_id": "HCF.augustine.1John2_15.1",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Ten Homilies on 1 John 2",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Hear ye therefore his words, how he goes to work in the manner of one that makes a clearance. He comes upon the hearts of men as a field that he would occupy: but in what state does he find it? If he finds a wood, he roots it up; if he finds the field cleared, he plants it. He would plant a tree there, charity. And what is the wood he would root up? Love of the world. Hear him, the rooter up of the wood! \"Love not the world,\" (for this comes next,) \"neither the things that are in the world; if any man love the world, the love of the Father is not in him.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15.toml [entry 1]",
+     "start": 543,
+     "end": 1104,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FTen%2520Homilies%2520on%2520the%2520First%2520Epistle%2520of%2520John%2FHomily%25202.html",
+     "source_text_sha256": "3397c46dd291e2eebfc4f4d292b34f274ce95fab4c40ca1f7ca049e654a52582",
+     "container_title": "Ten Homilies on 1 John 2",
+     "source_check": {
+      "status": "typo",
+      "against": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+      "homily": "Homily 2 on 1 John"
+     },
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "AUG2.15.2.01",
+     "note_id": "HCF.augustine.1John2_15.2",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Ten Homilies on 1 John 2",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Ye have heard that \"if any man love the world, the love of the Father is not in him.\" Let not any say in his heart that this is false, brethren: God saith it; by the Apostle the Holy Ghost hath spoken; nothing more true: \"If any man love the world, the love of the Father is not in him.\" Wouldest thou have the Father's love, that thou mayest be joint-heir with the Son? Love not the world. Shut out the evil love of the world, that thou mayest be filled with the love of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15.toml [entry 2]",
+     "start": 0,
+     "end": 476,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FTen%2520Homilies%2520on%2520the%2520First%2520Epistle%2520of%2520John%2FHomily%25202.html",
+     "source_text_sha256": "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98",
+     "container_title": "Ten Homilies on 1 John 2",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+      "homily": "Homily 2 on 1 John"
+     },
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "AUG2.15.2.02",
+     "note_id": "HCF.augustine.1John2_15.2",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Ten Homilies on 1 John 2",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Thou art a vessel; but as yet thou art full. Pour out what thou hast, that thou mayest receive what thou hast not. Certainly, our brethren are now born again of water and of the Spirit: we also some years ago were born again of water and of the Spirit. Good is it for us that we love not the world, lest the sacraments remain in us unto damnation, not as means of strengthening unto salvation. That which strengthens unto salvation is, to have the root of charity, to have the \"power of godliness,\" not \"the form\" only.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15.toml [entry 2]",
+     "start": 477,
+     "end": 996,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FTen%2520Homilies%2520on%2520the%2520First%2520Epistle%2520of%2520John%2FHomily%25202.html",
+     "source_text_sha256": "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98",
+     "container_title": "Ten Homilies on 1 John 2",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+      "homily": "Homily 2 on 1 John"
+     },
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "AUG2.15.2.03",
+     "note_id": "HCF.augustine.1John2_15.2",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Ten Homilies on 1 John 2",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "Good is the form, holy the form: but what avails the form, if it hold not the root? The branch that is cut off, is it not cast into the fire? Have the form, but in the root. But in what way are ye rooted so that ye be not rooted up? By holding charity, as saith the Apostle Paul, \"rooted and grounded in charity.\" How shall charity be rooted there, amid the overgrown wilderness of the love of the world? Make clear riddance of the woods.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15.toml [entry 2]",
+     "start": 997,
+     "end": 1435,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FTen%2520Homilies%2520on%2520the%2520First%2520Epistle%2520of%2520John%2FHomily%25202.html",
+     "source_text_sha256": "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98",
+     "container_title": "Ten Homilies on 1 John 2",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+      "homily": "Homily 2 on 1 John"
+     },
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "AUG2.15.2.04",
+     "note_id": "HCF.augustine.1John2_15.2",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Ten Homilies on 1 John 2",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15",
+     "note_span": [
+      15,
+      15
+     ],
+     "subject_span": [
+      15,
+      15
+     ],
+     "anchor_verse": 15,
+     "text": "A mighty seed ye are about to put in: let there not be that in the field which shall choke the seed. These are the uprooting words which he hath said: \"Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15.toml [entry 2]",
+     "start": 1436,
+     "end": 1715,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FTen%2520Homilies%2520on%2520the%2520First%2520Epistle%2520of%2520John%2FHomily%25202.html",
+     "source_text_sha256": "0d6bca8b989fa66e85f85745c437234f8784dd988c1012c0c0d19f20ca3f2e98",
+     "container_title": "Ten Homilies on 1 John 2",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-07. St. Augustin: Gospel of John, First Epistle of John (tr. Gibb & Innes; Browne, rev. Myers)",
+      "homily": "Homily 2 on 1 John"
+     },
+     "covers_verses": [
+      15
+     ]
+    },
+    {
+     "id": "AUG2.15-16.1.01",
+     "note_id": "HCF.augustine.1John2_15-16.1",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Exposition on Psalm 8",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15-16",
+     "note_span": [
+      15,
+      16
+     ],
+     "subject_span": [
+      15,
+      16
+     ],
+     "anchor_verse": 15,
+     "text": "Now these three kinds of vice, namely, the pleasure of the flesh, and pride, and curiosity, include all sins. And they appear to me to be enumerated by the Apostle John, when he says, “Love not the world; for all that is in the world is the lust of the flesh, and the lust of the eyes, and the pride of life.” For through the eyes especially prevails curiosity. To what the rest indeed belong is clear.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15-16.toml [entry 1]",
+     "start": 0,
+     "end": 402,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FON%2520THE%2520PSALMS%2FPsalm%25208.html",
+     "source_text_sha256": "e2db47e239f43eafce0c08ab6397e4d459c220c32bd7b2637ea883ad4594529a",
+     "container_title": "Exposition on Psalm 8",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+      "homily": "Psalm 8"
+     },
+     "covers_verses": [
+      15,
+      16
+     ]
+    },
+    {
+     "id": "AUG2.15-16.1.02",
+     "note_id": "HCF.augustine.1John2_15-16.1",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Exposition on Psalm 8",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15-16",
+     "note_span": [
+      15,
+      16
+     ],
+     "subject_span": [
+      15,
+      16
+     ],
+     "anchor_verse": 15,
+     "text": "And that temptation of the Lord Man was threefold: by food, that is, by the lust of the flesh, where it is suggested, “command these stones that they be made bread:” by vain boasting, where, when stationed on a mountain, all the kingdoms of this earth are shown Him, and promised if He would worship: by curiosity, where, from the pinnacle of the temple, He is advised to cast Himself down, for the sake of trying whether He would be borne up by Angels.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15-16.toml [entry 1]",
+     "start": 403,
+     "end": 856,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "AUG2.15-16.1.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FON%2520THE%2520PSALMS%2FPsalm%25208.html",
+     "source_text_sha256": "e2db47e239f43eafce0c08ab6397e4d459c220c32bd7b2637ea883ad4594529a",
+     "container_title": "Exposition on Psalm 8",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+      "homily": "Psalm 8"
+     },
+     "covers_verses": [
+      15,
+      16
+     ]
+    },
+    {
+     "id": "AUG2.15-16.1.03",
+     "note_id": "HCF.augustine.1John2_15-16.1",
+     "source_id": "hcf:augustine",
+     "container_id": "hcf:augustine",
+     "original_author": "Augustine of Hippo",
+     "teacher_key": "augustine",
+     "compiler": null,
+     "work_title": "Exposition on Psalm 8",
+     "edition": "Historical Christian Faith Commentaries-Database (see provenance)",
+     "reference": "1Jo 2:15-16",
+     "note_span": [
+      15,
+      16
+     ],
+     "subject_span": [
+      15,
+      16
+     ],
+     "anchor_verse": 15,
+     "text": "And accordingly after that the enemy could prevail with Him by none of these temptations, this is said of him, “When the devil had ended all his temptation.”",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "Augustine of Hippo/1 John 2_15-16.toml [entry 1]",
+     "start": 857,
+     "end": 1014,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "AUG2.15-16.1.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_url": "https://historicalchristian.faith/by_father.php?file=Augustine%2520of%2520Hippo%2FON%2520THE%2520PSALMS%2FPsalm%25208.html",
+     "source_text_sha256": "e2db47e239f43eafce0c08ab6397e4d459c220c32bd7b2637ea883ad4594529a",
+     "container_title": "Exposition on Psalm 8",
+     "source_check": {
+      "status": "exact",
+      "against": "NPNF1-08. St. Augustin: Expositions on the Psalms (Oxford Library of the Fathers tr.)",
+      "homily": "Psalm 8"
+     },
+     "covers_verses": [
+      15,
+      16
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 78 file-name variants; found ['1 John 2_15.toml', '1 John 2_16.toml', '1 John 2_17.toml', '1 John 2_15-16.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 78 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 78 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 78 file-name variants; found ['1 John 2_15.toml']"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_16.toml entry 1 \"On Patience 17\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_16.toml entry 3 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_16.toml entry 4 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_16.toml entry 5 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_16.toml entry 6 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_16.toml entry 7 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_17.toml entry 1 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/1 John 2_17.toml entry 2 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "attribution",
+     "msg": "Cyril of Alexandria/1 John 2_15.toml entry 1 \"CATENA\": compilation; original_author=Cyril of Alexandria (from the database directory), compiler=unstated, append_to_author_name=''"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 54198 vs index 54198; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 69725; sections 29; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "scripture-header",
+   "verse": 15,
+   "msg": "Calvin section CAL.2.15-17: first 756 chars are the printed scripture heading block (English + Latin); 2 pieces marked scripture_header and kept out of the pool"
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "2 scripture_header pieces excluded: ['CAL2.15.01', 'CAL2.15.02']"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 34472 chars; 28 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, '9-11', 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]; max code point U+2026"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 29 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 10138 chars; 28 numbered line starts, 28 chosen as verse markers (24 confirmed by a catchword in the KJV verse): [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 29 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007D"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 15 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 2: 1139 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 78 file-name variants; found ['1 John 2_15.toml', '1 John 2_16.toml', '1 John 2_17.toml', '1 John 2_15-16.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 78 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 78 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 78 file-name variants; found ['1 John 2_15.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_16.toml entry 1 \"On Patience 17\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_16.toml entry 3 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_16.toml entry 4 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_16.toml entry 5 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_16.toml entry 6 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_16.toml entry 7 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_17.toml entry 1 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/1 John 2_17.toml entry 2 \"Ten Homilies on 1 John 2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "attribution",
+   "msg": "Cyril of Alexandria/1 John 2_15.toml entry 1 \"CATENA\": compilation; original_author=Cyril of Alexandria (from the database directory), compiler=unstated, append_to_author_name=''"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  },
+  "calvin": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  },
+  "jfb": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  },
+  "gill": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  },
+  "wesley": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  },
+  "barnes": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  },
+  "tyndale": {
+   "15": "confirmed",
+   "16": "source absence",
+   "17": "source absence"
+  },
+  "scofield": {
+   "15": "index absence",
+   "16": "index absence",
+   "17": "index absence"
+  },
+  "fathers": {
+   "15": "confirmed",
+   "16": "confirmed",
+   "17": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 115,
+  "chars": 52638,
+  "pieces_by_source": {
+   "mhc": 11,
+   "calvin": 11,
+   "jfb": 9,
+   "gill": 18,
+   "wesley": 4,
+   "barnes-nt": 17,
+   "tyndale": 1,
+   "hcf": 44
+  },
+  "chars_by_source": {
+   "mhc": 4416,
+   "calvin": 5710,
+   "jfb": 3920,
+   "gill": 11175,
+   "wesley": 1079,
+   "barnes-nt": 6786,
+   "tyndale": 348,
+   "hcf": 19204
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 11,
+   "john-calvin": 11,
+   "jamieson-fausset-brown": 9,
+   "john-gill": 18,
+   "wesley": 4,
+   "barnes": 17,
+   "tyndale": 1,
+   "augustine": 43,
+   "cyril": 1
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 4416,
+   "john-calvin": 5710,
+   "jamieson-fausset-brown": 3920,
+   "john-gill": 11175,
+   "wesley": 1079,
+   "barnes": 6786,
+   "tyndale": 348,
+   "augustine": 19016,
+   "cyril": 188
+  },
+  "per_anchor_verse": {
+   "15": {
+    "pieces": 35,
+    "chars": 16271,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "cyril",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   },
+   "16": {
+    "pieces": 59,
+    "chars": 26147,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   },
+   "17": {
+    "pieces": 21,
+    "chars": 10220,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "15": {
+    "pieces": 35,
+    "chars": 16271,
+    "notes": 11,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "cyril",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   },
+   "16": {
+    "pieces": 65,
+    "chars": 29004,
+    "notes": 15,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   },
+   "17": {
+    "pieces": 24,
+    "chars": 12065,
+    "notes": 9,
+    "teacher_keys": [
+     "augustine",
+     "barnes",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 53,
+   "B": 26,
+   "C": 1,
+   "U": 35
+  },
+  "non_standalone": 33,
+  "boundary_suspect": [],
+  "markup_invalid": [
+   "BAR2.16.07"
+  ],
+  "notes_with_tiling_problems": [],
+  "note_warnings": [
+   "MHC.2.15:opens_mid_outline,continues_in_next_note",
+   "MHC.2.16:opens_mid_outline,continues_in_next_note",
+   "MHC.2.17:opens_mid_outline"
+  ]
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "22d5fe7f4439fcd9093c7af59e4b51dd5f2bf607c1dd27bc41d6beb440c71368",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 36
+ }
+}

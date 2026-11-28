@@ -1,0 +1,1883 @@
+{
+ "passage": "Isaiah 11:2",
+ "book": "ISA",
+ "chapter": 11,
+ "scope": [
+  2,
+  2
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "5cb2883825475bbe16f6039d046a72726e443180232fad38b7084834ce3b7ee5",
+    "text_sha256": "1d64420c3b194ad42d7a92017bd2c6c62fcff7d8e6a1c853a5c858d806619868",
+    "index_file_sha256": "e781622cc1b9ec2ed1269893bbdf13dd1edffa759327fba0578f3037617c49f9"
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "index": {
+      "at": 5629,
+      "end": 8159,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.11.2"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.11.2",
+     "opens_mid_outline": true,
+     "continues_in_next_note": true,
+     "pointer": "Henry's outline continues at Isa 11:3",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 5629,
+     "end": 8159,
+     "chars": 2530,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 5,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC11.2.01",
+     "note_id": "MHC.11.2",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "II. That he should be every way qualified for that great work to which he was designed, that this tender branch should be so watered with the dews of heaven as to become a strong rod for a sceptre to rule, Isa 11:2. 1. In general, *the Spirit of the Lord shall rest upon him.* The Holy Spirit, in all his gifts and graces, shall not only come, but rest and abide upon him; he shall have the Spirit not by measure, but without measure, the fulness of the Godhead dwelling in him, Col 1:19,2:9.",
+     "outline_label": "II.",
+     "marker_span": [
+      5629,
+      5632
+     ],
+     "source_file": "commentary/MHC/ISA.json",
+     "start": 5629,
+     "end": 6121,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isa 11:2",
+      "Col 1:19,2"
+     ],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "MHC11.2.02",
+     "note_id": "MHC.11.2",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "He began his preaching with this (Lu 4:18), *The Spirit of the Lord is upon me.* 2. In particular, the spirit of government, by which he should be every way fitted for that judgment which the Father has committed to him and *given him authority to execute* (Joh 5:22,27), and not only so, but should be made the fountain and treasury of all grace to believers, that from his fulness they might all receive the Spirit of grace, as all the members of the body derive animal spirits from the head.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/ISA.json",
+     "start": 6122,
+     "end": 6616,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC11.2.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Lu 4:18",
+      "Joh 5:22,27"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "MHC11.2.03",
+     "note_id": "MHC.11.2",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "(1.) He shall have *the spirit of wisdom and understanding, of counsel and knowledge;* he shall thoroughly understand the business he is to be employed in. *No man knows the Father but the Son,* Mt 11:27. What he is to make known to the children of men concerning God, and his mind and will, he shall be himself acquainted with and apprised of, Joh 1:18. He shall know how to administer the affairs of his spiritual kingdom in all the branches of it, so as effectually to answer the two great intentions of it, the glory of God and the welfare of the children of men.",
+     "outline_label": "(1.)",
+     "marker_span": [
+      6617,
+      6621
+     ],
+     "source_file": "commentary/MHC/ISA.json",
+     "start": 6617,
+     "end": 7184,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC11.2.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 11:27",
+      "Joh 1:18"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "MHC11.2.04",
+     "note_id": "MHC.11.2",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "The terms of the covenant shall be settled by him, and ordinances instituted, in wisdom: treasures of wisdom shall be hid in him; he shall be our counsellor, and shall be made of God to us wisdom. (2.) *The spirit of courage,* or *might,* or fortitude. The undertaking was very great, abundance of difficulty must be broken through, and therefore it was necessary that he should be so endowed that he *might not fail or be discouraged,* Isa 42:4.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/ISA.json",
+     "start": 7185,
+     "end": 7631,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isa 42:4"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "MHC11.2.05",
+     "note_id": "MHC.11.2",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "He was famed for courage in his teaching the way of God in truth, and not caring for any man, Mt 22:16. (3.) The spirit of religion, or *the fear of the Lord;* not only he shall himself have a reverent affection for his Father, as his servant (Isa 42:1), and he was heard in *that he feared* (Heb 5:7), but he shall have a zeal for religion, and shall design the advancement of it in his whole undertaking. Our faith in Christ was never designed to supersede and jostle out, but to increase and support, our fear of the Lord.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/ISA.json",
+     "start": 7632,
+     "end": 8157,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC11.2.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 22:16",
+      "Isa 42:1",
+      "Heb 5:7"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 27939 vs index 27939; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "13cfd972cd8458a0f10cc8eea663dc9c7ab8c82c682ddd33ebaac0dff18680a5",
+    "text_sha256": "57a94aa175e781af9d6db745e72b2fd092bfbbbf1dc7c41ed84a8bc9827c7cae",
+    "index_file_sha256": "7327d8e4955fc41a4d03654ee55c297ff67187cdf8b3ed8764d7c5c2590d0065"
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "note_id": "CAL.11.2"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.11.2",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 4255,
+     "end": 10287,
+     "chars": 6032,
+     "pieces": 13,
+     "tiling_problems": [],
+     "head": "And the Spirit of the Lord sha",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL11.2.01",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "And the Spirit of the Lord shall rest upon him. He now begins to speak of Christ plainly and without a figure; for it was enough to have represented the consolation under that figure, in order that the full contrast between the burning of the wood and its springing up anew might be made manifest. Two states of the people are described by him; for, after having explained the calamity, he next added the hope of restoration, though the commencement of it was from a slender branch. But now he plainly shows what will be the nature of the redemption, and what will be the condition of Christ and of his kingdom.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 4255,
+     "end": 4866,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.02",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Some think that this should rather be viewed as referring to Hezekiah; but how groundless that opinion is we have already shown; for when he was born, David had still a flourishing reputation, and the rank of royalty belonged to his descendants; and Hezekiah was very far from attaining that greatness which is shortly afterwards described. Now, hence we infer that the spiritual kingdom of Christ was formerly promised to the ancient people, because his whole strength, power, and majesty, is here made to consist in the gifts of the Spirit.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 4868,
+     "end": 5410,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.03",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Although Christ was not deficient in gifts of this kind, yet as he took upon him our flesh, it was necessary that he should be enriched with them, that we might afterwards be made partakers of all blessings of which otherwise we are destitute; for out of his fullness, as John says, we must draw as from a fountain. (John 1:16; John 7:37, 38.)",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 5411,
+     "end": 5754,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "John 1:16",
+      "John 7:37"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.04",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "The Spirit of the Lord We must keep in view what I mentioned a little ago, that this refers to Christ's human nature; because he could not be enriched with the gift and grace of the Father, except so far as he became man. Besides, as he came down to us, so he received the gifts of the Spirit, that he might bestow them upon us. And this is the anointing from which he receives the name of Christ, which he imparts to us; for why are we called Christians, but because he admits us to his fellowship, by distributing to us out of his fullness according to the measure (Ephesians 4:7) of undeserved liberality?",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 5756,
+     "end": 6364,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ephesians 4:7"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.05",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "And undoubtedly this passage does not so much as teach us what Christ is in himself, as what he received from the Father, that he might enrich us with his wealth.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 6365,
+     "end": 6527,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL11.2.04"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.06",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "The spirit of wisdom and understanding. Though it is not necessary to bestow great attention on single words, yet if any person wish to draw a slight distinction between wisdom and understanding, I consider it to be this, that the word wisdom comprehends generally all that relates to the regulation of the life, and that understanding is added for the sake of explaining it; for if we are endowed with this wisdom, we shall have sagacity enough.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 6529,
+     "end": 6975,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.07",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Counsel means that judgment by which we can thread our way through intricate affairs; for understanding would not be sufficient, if there were not also counsel, that we might be able to act with caution in doubtful matters. The word might is well enough known. Knowledge differs little from understanding; except that it relates more to the act of knowing, and thus declares what has taken place. The fear of the Lord means a sincere desire to worship God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 6976,
+     "end": 7432,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.08",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "The Prophet does not here enumerate all the gifts of the Holy Spirit, as some have thought. Out of this passage the Papists have foolishly and ignorantly drawn their sevenfold grace, and some of the ancients fell into a similar blunder. He enumerates only six kinds; but they have added a seventh out of their own head. But as one error commonly follows another, they have chosen to limit the gifts of the Spirit to the number seven, although in other parts of Scripture (John 14:17; 2 Timothy 1:7) he receives numerous and lofty commendations drawn from the variety of the effects which he produces.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 7434,
+     "end": 8034,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "John 14:17",
+      "2 Timothy 1:7"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.09",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Besides, it is very evident that it is through the kindness of Christ (Galatians 5:22, 23) that we are partakers of other blessings than those which are here enumerated, of meekness, chastity, sobriety, truth, and holiness; for these proceed from none else than from Christ. He does not mention, therefore, all the gifts which were bestowed on Christ, for that was unnecessary; but only shows briefly that Christ came not empty-handed, but well supplied with all gifts, that he might enrich us with them.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 8035,
+     "end": 8539,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Galatians 5:22"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.10",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "If these things had not been added, we might have supposed, as the Jews commonly do, that the restoration of this kingdom was carnal, and might have imagined that Christ was poor and destitute of all blessings. Accordingly, the Prophet afterwards shows that the gifts of the Spirit are laid up in him, first, generally, and next, particularly; that we may go to him to obtain whatever we want.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 8541,
+     "end": 8934,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.11",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "He will enlighten us with the light of wisdom and understanding, will impart to us counsel in difficulties, will make us strong and courageous in battles, will bestow on us the true fear of God, that is, godliness, and, in a word, will communicate to us all that is necessary for our life and salvation. All gifts are here included by the Prophet, so that it is excessively foolish to attempt to conceal those which do not belong to the present enumeration.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 8935,
+     "end": 9392,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL11.2.10"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.12",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "He shows that they dwell in Christ, in order that they may be communicated to us. We are also called his fellows, (Psalm 45:7,) because strength proceeds from him as the head to the individual members, and in like manner Christ causes his heavenly anointing to flow over the whole body of his Church. Hence it follows that those who are altogether barren and dry have no interest in Christ, and falsely glory in his name.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 9394,
+     "end": 9815,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL11.2.11"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Psalm 45:7"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "CAL11.2.13",
+     "note_id": "CAL.11.2",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary ISA",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Whenever therefore we feel that we are in want of any of these gifts, let us blame our unbelief; for true faith makes us partakers of all Christ's benefits. We ought therefore to pray to the Lord not to permit the lusts of the flesh to rule in us, that Christ may wholly unite us to himself. It should also be observed, that we ought to ask all blessings from Christ alone; for we are mistaken if we imagine that anything can be obtained from the Father in any other way.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/ISA.json",
+     "start": 9816,
+     "end": 10287,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 54930; sections 15; max code point U+1FE6"
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "0 scripture_header pieces excluded: []"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "9198e128f228ed86199103a8dfe184fbc4fc624c668ed9387071a363a7ab9a93",
+    "text_sha256": "d2b686cbb78f7e75bbe48aa3efc99b8bbc4600782c97cacfafb9b49577dde1a3"
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "note_id": "JFB.11.2"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.11.2",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 1376,
+     "end": 2352,
+     "chars": 976,
+     "pieces": 2,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB11.2.01",
+     "note_id": "JFB.11.2",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "2. Spirit of the Lord—Jehovah. The Spirit by which the prophets spake: for Messiah was to be a Prophet (Isa 61:1; De 18:15, 18). Seven gifts of the Holy Spirit are specified, to imply that the perfection of them was to be in Him. Compare \"the seven Spirits\" (Re 1:4), that is, the Holy Ghost in His perfect fulness: seven being the sacred number. The prophets had only a portion out of the \"fulness\" in the Son of God (Joh 1:16; 3:34; Col 1:19).\nrest—permanently; not merely come upon Him (Nu 11:25, 26).\nwisdom— (1Co 1:30; Eph 1:17; Col 2:3).\nunderstanding—coupled with \"wisdom,\" being its fruit.",
+     "outline_label": "2.",
+     "marker_span": [
+      1376,
+      1378
+     ],
+     "source_file": "commentary/JFB/ISA.json",
+     "start": 1376,
+     "end": 1973,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isa 61:1",
+      "De 18:15",
+      "Re 1:4",
+      "Joh 1:16",
+      "Col 1:19",
+      "Nu 11:25",
+      "1Co 1:30",
+      "Eph 1:17",
+      "Col 2:3"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "JFB11.2.02",
+     "note_id": "JFB.11.2",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Discernment and discrimination (Mt 22:18; Joh 2:25).\ncounsel … might—the faculty of forming counsels, and that of executing them (Isa 28:29). Counsellor (Isa 9:6).\nknowledge—of the deep things of God (Mt 11:27). The knowledge of Him gives us true knowledge (Eph 1:17).\nfear of the Lord—reverential, obedient fear. The first step towards true \"knowledge\" (Job 28:28; Ps 111:10).",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/ISA.json",
+     "start": 1974,
+     "end": 2351,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 22:18",
+      "Joh 2:25",
+      "Isa 28:29",
+      "Isa 9:6",
+      "Mt 11:27",
+      "Eph 1:17",
+      "Job 28:28",
+      "Ps 111:10"
+     ],
+     "flags": [],
+     "covers_verses": [
+      2
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 12043 chars; 16 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]; max code point U+2026"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "716502dbc201a50cff6fe5be4f03be397c51559f6927e8e13babfc6fcc4e7189",
+    "text_sha256": null
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "note_id": "GILL.11.2"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.11.2",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 2664,
+     "chars": 2664,
+     "pieces": 7,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL11.2.01",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "And the Spirit of the Lord shall rest upon him,.... The rod and branch, the King Messiah, so qualifying him for his office, and the discharge of it.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 0,
+     "end": 148,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "GIL11.2.02",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "This shows that Christ's kingdom is of a spiritual nature, and administered in a spiritual manner, for which he was abundantly furnished by the \"Spirit of the Lord\" resting on him; by whom is meant the third Person in the Trinity, so called, not because created by him, for not any created spirit is meant, but because he proceeded from him; he is the one Jehovah with him, a divine Person, truly God, yet distinct both from the Father and the Son; so that here is a clear proof of the trinity of Persons.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 149,
+     "end": 654,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL11.2.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "GIL11.2.03",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "Christ was filled with the Spirit from the womb, and he descended and rested upon him at his baptism; he was anointed with him to be Prophet, Priest, and King, and received his gifts and graces from him without measure, which abide with him, and are designed in the following words:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 655,
+     "end": 937,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "GIL11.2.04",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "the spirit of wisdom and understanding; which appeared in his disputation with the doctors; in his answers to the ensnaring questions of the Scribes and Pharisees; in the whole of his ministry; and in his conduct at his apprehension, trial, condemnation, and death; as also in the wisdom, knowledge, and understanding he imparted to his disciples, and does more or less to all his people:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 939,
+     "end": 1327,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "GIL11.2.05",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "the spirit of counsel and might; of \"counsel\", which fitted him to be the wonderful Counsellor, and qualified him to give suitable and proper advice to the sons of men; and of \"might\" or \"power\", to preach the Gospel with authority; do miracles in the confirmation of it; bear the sins of his people, and the punishment due to them; obtain eternal redemption for them; and engage with all their enemies and conquer them:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 1329,
+     "end": 1749,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "GIL11.2.06",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "the spirit of knowledge, and of the fear of the Lord; and so as man had the \"knowledge\" of God the Father; of his mind and will; of the Scriptures, and things contained therein; of the law and Gospel; all the treasures of wisdom and knowledge were hid in him, which he communicates to his saints; and \"of the fear of the Lord\", and so had a reverence of him, a strict regard to his will, and always did the things which pleased him; see Hebrews 5:7 this verse is also applied to the Messiah, both by ancient and modern Jews (u).",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 1751,
+     "end": 2279,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Hebrews 5:7"
+     ],
+     "flags": [],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      2
+     ]
+    },
+    {
+     "id": "GIL11.2.07",
+     "note_id": "GILL.11.2",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "(u) T. Bab. Sanhedrin, fol. 93. 2. Zohar in Gen. fol. 68. 3. & in Numb. fol. 54. 4. & 92. 1. & in Deut. fol. 123. 3. Bereshit Rabba, sect. 2. fol. 2. 4. sect. 8. fol. 6. 3. Bemidbar Rabba, sect. 13. fol. 209. 3. Midrash Ruth, fol. 34. 4. Pirke Eliezer, c. 3. fol. 3. 2. Raziel, fol. 11. 1. Tzeror Hammor, fol. 156. 1. Baal Hatturim in Numbers 7.12. Yalkut Simeoni, par. 1. fol. 3. 1.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/ISA.json",
+     "start": 2281,
+     "end": 2664,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "footnote list only; never shown on its own"
+     ],
+     "source_text_sha256": "9e7c3ccdea29fbd6458f04ded207a5e3823b64a07ee00f6e187372c78a5165ca",
+     "piece_kind": "citation_list",
+     "citation_letters": [
+      "u"
+     ],
+     "covers_verses": [
+      2
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 16 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "b7a8bb50ea800e37256f771d4cb31494c7436fc16c4a63d40dfa59fca4fe5a10",
+    "text_sha256": "8e1abb91e2d6688aa874a7db989bd3f430d853829048599923c0915ed41be7d5"
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "note_id": "WES.11.2"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.11.2",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 952,
+     "end": 1573,
+     "chars": 621,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES11.2.01",
+     "note_id": "WES.11.2",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the Old Testament",
+     "edition": "Wesley's Explanatory Notes upon the Old Testament (1765, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "Isa 11:2",
+     "note_span": [
+      2,
+      2
+     ],
+     "subject_span": [
+      2,
+      2
+     ],
+     "anchor_verse": 2,
+     "text": "2. Wisdom - It is not needful, exactly to distinguish these two gifts; it is sufficient that they are\nnecessary qualifications for a governor, and a teacher, and it is evident they signify perfect knowledge\nof all things necessary for his own and peoples good, and a sound judgment, to distinguish between\nthings that differ. Counsel - Of prudence, to give good counsel; and of might and courage, to execute\nit. Knowledge - Of the perfect knowledge of the whole will and counsel of God, as also of all secret\nthings, yea of the hearts of men. Fear - A fear of reverence, a care to please him, and lothness to\noffend him.",
+     "outline_label": "2.",
+     "marker_span": [
+      952,
+      954
+     ],
+     "source_file": "commentary/Wesley/ISA.json",
+     "start": 952,
+     "end": 1572,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "Wesley's Old Testament notes abridge Matthew Henry (Wesley's own preface); not an independent voice from Henry"
+     ],
+     "derived_from": [
+      "henry"
+     ],
+     "covers_verses": [
+      2
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 5688 chars; 15 numbered line starts, 15 chosen as verse markers (15 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]; max code point U+0079"
+    },
+    {
+     "kind": "chapter-outline",
+     "msg": "297 characters before the first verse marker (Wesley's chapter outline); not a verse note, not in the pool."
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {},
+   "coverage": {
+    "2": {
+     "state": "source absence",
+     "detail": "barnes-nt has no file for this book"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "absence",
+     "msg": "barnes-nt has no file for this book"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "8c46db9cfbdc3fa5d891f3609856cb9147496c21664762f203900b00703d6a06",
+    "text_sha256": null
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "note_id": "TYN.11.2"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "TYN.11.2",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 579,
+     "chars": 579,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 12 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "88e894ff0a5a5ec0c2378c9c1bb0c4be6076dbf844da7ed0367013178712d4c5",
+    "text_sha256": "96d0279549db28b4709cab558988e799aa7085209b790e50be64f5f020b50222"
+   },
+   "coverage": {
+    "2": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 11: 1475 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/Isaiah 11_2.toml": "9318e021bf38bf4080f7c7788294f513ab78d09d918020d3a7331ce88088cdfb",
+     "Thomas Aquinas/Isaiah 11_2.toml": "42b40eaeee64679f2101986898be0ba34580dff6a55ce0af4e1f1a501085b06e"
+    }
+   },
+   "coverage": {
+    "2": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "Isaiah 11_2.toml",
+        "entry": 1,
+        "title": "LETTER 194",
+        "chars": 919,
+        "file_span": [
+         2,
+         2
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "Isaiah 11_2.toml",
+        "entry": 2,
+        "title": "EXPLANATIONS OF THE PSALMS 120 (119): 1",
+        "chars": 1471,
+        "file_span": [
+         2,
+         2
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "Isaiah 11_2.toml",
+        "entry": 3,
+        "title": "SERMON 229M.2",
+        "chars": 1437,
+        "file_span": [
+         2,
+         2
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "Isaiah 11_2.toml",
+        "entry": 4,
+        "title": "SERMON ON THE MOUNT 1:11",
+        "chars": 733,
+        "file_span": [
+         2,
+         2
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "Isaiah 11_2.toml",
+        "entry": 5,
+        "title": "On Grace and Free Will, Chapter 39",
+        "chars": 1173,
+        "file_span": [
+         2,
+         2
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "Thomas Aquinas": [
+       {
+        "father": "Thomas Aquinas",
+        "file": "Isaiah 11_2.toml",
+        "entry": 1,
+        "title": "Commentary on Isaiah",
+        "chars": 6627,
+        "file_span": [
+         2,
+         2
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 6; entries in range files excluded: 0",
+     "absent_fathers": [
+      "John Chrysostom",
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.Isaiah11_2.1",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 919,
+     "chars": 919,
+     "pieces": 2,
+     "tiling_problems": [],
+     "title": "LETTER 194",
+     "file": "Augustine of Hippo/Isaiah 11_2.toml"
+    },
+    {
+     "note_id": "HCF.augustine.Isaiah11_2.2",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 1471,
+     "chars": 1471,
+     "pieces": 3,
+     "tiling_problems": [],
+     "title": "EXPLANATIONS OF THE PSALMS 120 (119): 1",
+     "file": "Augustine of Hippo/Isaiah 11_2.toml"
+    },
+    {
+     "note_id": "HCF.augustine.Isaiah11_2.3",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 1437,
+     "chars": 1437,
+     "pieces": 3,
+     "tiling_problems": [],
+     "title": "SERMON 229M.2",
+     "file": "Augustine of Hippo/Isaiah 11_2.toml"
+    },
+    {
+     "note_id": "HCF.augustine.Isaiah11_2.4",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 733,
+     "chars": 733,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "SERMON ON THE MOUNT 1:11",
+     "file": "Augustine of Hippo/Isaiah 11_2.toml"
+    },
+    {
+     "note_id": "HCF.augustine.Isaiah11_2.5",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 1173,
+     "chars": 1173,
+     "pieces": 2,
+     "tiling_problems": [],
+     "title": "On Grace and Free Will, Chapter 39",
+     "file": "Augustine of Hippo/Isaiah 11_2.toml"
+    },
+    {
+     "note_id": "HCF.aquinas.Isaiah11_2.1",
+     "verse": 2,
+     "note_span": [
+      2,
+      2
+     ],
+     "start": 0,
+     "end": 6627,
+     "chars": 6627,
+     "pieces": 13,
+     "tiling_problems": [],
+     "title": "Commentary on Isaiah",
+     "file": "Thomas Aquinas/Isaiah 11_2.toml"
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 14 file-name variants; found ['Isaiah 11_2.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 14 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 14 file-name variants; found ['Isaiah 11_2.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 14 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 2 \"EXPLANATIONS OF THE PSALMS 120 (119): 1\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 3 \"SERMON 229M.2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 4 \"SERMON ON THE MOUNT 1:11\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 5 \"On Grace and Free Will, Chapter 39\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 27939 vs index 27939; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 54930; sections 15; max code point U+1FE6"
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "0 scripture_header pieces excluded: []"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 12043 chars; 16 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]; max code point U+2026"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 16 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 5688 chars; 15 numbered line starts, 15 chosen as verse markers (15 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]; max code point U+0079"
+  },
+  {
+   "source": "wesley",
+   "kind": "chapter-outline",
+   "msg": "297 characters before the first verse marker (Wesley's chapter outline); not a verse note, not in the pool."
+  },
+  {
+   "source": "barnes",
+   "kind": "absence",
+   "msg": "barnes-nt has no file for this book"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 12 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 11: 1475 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 14 file-name variants; found ['Isaiah 11_2.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 14 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 14 file-name variants; found ['Isaiah 11_2.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 14 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 2 \"EXPLANATIONS OF THE PSALMS 120 (119): 1\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 3 \"SERMON 229M.2\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 4 \"SERMON ON THE MOUNT 1:11\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/Isaiah 11_2.toml entry 5 \"On Grace and Free Will, Chapter 39\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "2": "confirmed"
+  },
+  "calvin": {
+   "2": "confirmed"
+  },
+  "jfb": {
+   "2": "confirmed"
+  },
+  "gill": {
+   "2": "confirmed"
+  },
+  "wesley": {
+   "2": "confirmed"
+  },
+  "barnes": {
+   "2": "source absence"
+  },
+  "tyndale": {
+   "2": "confirmed"
+  },
+  "scofield": {
+   "2": "index absence"
+  },
+  "fathers": {
+   "2": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 53,
+  "chars": 25694,
+  "pieces_by_source": {
+   "mhc": 5,
+   "calvin": 13,
+   "jfb": 2,
+   "gill": 7,
+   "wesley": 1,
+   "tyndale": 1,
+   "hcf": 24
+  },
+  "chars_by_source": {
+   "mhc": 2524,
+   "calvin": 6014,
+   "jfb": 974,
+   "gill": 2654,
+   "wesley": 620,
+   "tyndale": 579,
+   "hcf": 12329
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 5,
+   "john-calvin": 13,
+   "jamieson-fausset-brown": 2,
+   "john-gill": 7,
+   "wesley": 1,
+   "tyndale": 1,
+   "augustine": 11,
+   "aquinas": 13
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 2524,
+   "john-calvin": 6014,
+   "jamieson-fausset-brown": 974,
+   "john-gill": 2654,
+   "wesley": 620,
+   "tyndale": 579,
+   "augustine": 5722,
+   "aquinas": 6607
+  },
+  "per_anchor_verse": {
+   "2": {
+    "pieces": 53,
+    "chars": 25694,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "2": {
+    "pieces": 53,
+    "chars": 25694,
+    "notes": 12,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 28,
+   "C": 14,
+   "U": 11
+  },
+  "non_standalone": 17,
+  "boundary_suspect": [],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": [
+   "MHC.11.2:opens_mid_outline,continues_in_next_note"
+  ]
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "954dcc2d51e57ebd3d28cd9b87d54a735a7e04103f04bd68cf72777ee984b99f",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 25
+ }
+}

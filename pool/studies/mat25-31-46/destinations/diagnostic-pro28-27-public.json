@@ -1,0 +1,757 @@
+{
+ "passage": "Proverbs 28:27",
+ "book": "PRO",
+ "chapter": 28,
+ "scope": [
+  27,
+  27
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "777c64842eb3abab006d4c15d4026fb7245ce5c564193731c6f6941af5702b53",
+    "text_sha256": "7a301869ce8567d0d04b2690d1d0cc0505ac5f7d1c2cf6042064115bffe6534a",
+    "index_file_sha256": "62852f7d382484954b9b7a3351953741bababaf1d3fab48fcfcdba8d49a02caa"
+   },
+   "coverage": {
+    "27": {
+     "state": "confirmed",
+     "index": {
+      "at": 30417,
+      "end": 32003,
+      "evidence": "quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.28.27"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.28.27",
+     "opens_mid_outline": false,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 27,
+     "note_span": [
+      27,
+      27
+     ],
+     "start": 30417,
+     "end": 32003,
+     "chars": 1586,
+     "relation": "own",
+     "evidence": "quotation",
+     "pieces": 3,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC28.27.01",
+     "note_id": "MHC.28.27",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "Here is, 1. A promise to the charitable: *He that gives to the poor* shall himself be never the poorer for so doing; he *shall not lack.* If he have but little, and so be in danger of lacking, let him give out of his little, and that will prevent it from coming to nothing; as the bounty of the widow of Sarepta to Elijah (for whom she made a little cake first) saved what she had, when it was reduced to a handful of meal.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/PRO.json",
+     "start": 30417,
+     "end": 30840,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      27
+     ]
+    },
+    {
+     "id": "MHC28.27.02",
+     "note_id": "MHC.28.27",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "If he have much, let him give much out of it, and that will prevent its growing less; he and his shall not want what is given in pious charity. What we gave we have. 2. A threatening to the uncharitable: *He that hides his eyes,* that he may not see the miseries of the poor nor read their petitions, lest his eye should affect his heart and extort some relief from him, he *shall have many a curse,* both from God and man, and neither causeless, and therefore they shall come. Woeful is the condition of that man who has the word of God and the prayers of the poor against him.\n\n²⁸ When the wicked rise, men hide themselves: but when they perish, the righteous increase.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/PRO.json",
+     "start": 30841,
+     "end": 31512,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      27
+     ]
+    },
+    {
+     "id": "MHC28.27.03",
+     "note_id": "MHC.28.27",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "This is to the same purport with what we had, Pr 28:12. 1. When bad men are preferred, that which is good is clouded and run down. When power is put into the hands of *the wicked, men hide themselves;* wise men retire into privacy, and decline public business, not caring to be employed under them; rich men get out of the way, for fear of being squeezed for what they have; and, which is worst of all, good men abscond, despairing to do good and fearing to be persecuted and ill-treated.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/PRO.json",
+     "start": 31514,
+     "end": 32002,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC28.27.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Pr 28:12"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      27
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 32505 vs index 32505; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {},
+   "coverage": {
+    "27": {
+     "state": "source absence",
+     "detail": "calvin has no file for this book"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "absence",
+     "msg": "calvin has no file for this book"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "2d85940a0195fbde87775e85826b8bf8d202cd1e7309513a47d1171e0ae5a291",
+    "text_sha256": "1954c651f7d8194665d3d6357fd5eb1d9f4a10baab55afa18fb9a3f5da47d1ea"
+   },
+   "coverage": {
+    "27": {
+     "state": "confirmed",
+     "note_id": "JFB.28.27"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.28.27",
+     "verse": 27,
+     "note_span": [
+      27,
+      27
+     ],
+     "start": 3148,
+     "end": 3242,
+     "chars": 94,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB28.27.01",
+     "note_id": "JFB.28.27",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "27. (Compare Pr 11:24-26).\nhideth his eyes—as the face (Ps 27:9; 69:17), denotes inattention.",
+     "outline_label": "27.",
+     "marker_span": [
+      3148,
+      3151
+     ],
+     "source_file": "commentary/JFB/PRO.json",
+     "start": 3148,
+     "end": 3241,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Pr 11:24-26",
+      "Ps 27:9"
+     ],
+     "flags": [],
+     "covers_verses": [
+      27
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 3357 chars; 28 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]; max code point U+2026"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "b9c1661ba4f8d1ddebae8d8bc1f15dfb45e42504d64f81698f098395cc76dca3",
+    "text_sha256": null
+   },
+   "coverage": {
+    "27": {
+     "state": "confirmed",
+     "note_id": "GILL.28.27"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.28.27",
+     "verse": 27,
+     "note_span": [
+      27,
+      27
+     ],
+     "start": 0,
+     "end": 1207,
+     "chars": 1207,
+     "pieces": 3,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL28.27.01",
+     "note_id": "GILL.28.27",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "He that giveth unto the poor shall not lack,.... That gives alms unto them, relieves them in their distress, supplies them with money, food, or clothes, and does it cheerfully, largely, and liberally, as the case requires; such an one shall not want any good thing; he shall not be the poorer for what he gives; he shall not miss it, nor his substance be diminished; he shall not come to poverty and want, yea, he shall be enriched, and his substance increased, for more is intended than is expressed. Jarchi interprets this of a wise man not restraining doctrine from a disciple, but giving it to him liberally;",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/PRO.json",
+     "start": 0,
+     "end": 612,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "2aaa9cd98fe3b2423cd728e1e0cc46cd1cb91334d72b85e8e4dbe350bc386712",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      27
+     ]
+    },
+    {
+     "id": "GIL28.27.02",
+     "note_id": "GILL.28.27",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "but he that hideth his eyes; that is, from the poor, as the Targum and Syriac version add; that does not care to see his person, to behold his miseries, or know his case, lest his heart should be moved with compassion, and should draw out anything from him; see Isaiah 58:7. Such an one",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/PRO.json",
+     "start": 614,
+     "end": 900,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isaiah 58:7"
+     ],
+     "flags": [],
+     "source_text_sha256": "2aaa9cd98fe3b2423cd728e1e0cc46cd1cb91334d72b85e8e4dbe350bc386712",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      27
+     ]
+    },
+    {
+     "id": "GIL28.27.03",
+     "note_id": "GILL.28.27",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Pr 28:27",
+     "note_span": [
+      27,
+      27
+     ],
+     "subject_span": [
+      27,
+      27
+     ],
+     "anchor_verse": 27,
+     "text": "shall have many a curse; not only from the poor he hardens himself against, but from other persons, who observe his miserable and covetous disposition; and from the Lord himself, who abhors such persons, and curses their very blessings now, and will bid them depart from him as accursed persons hereafter.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/PRO.json",
+     "start": 902,
+     "end": 1207,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "2aaa9cd98fe3b2423cd728e1e0cc46cd1cb91334d72b85e8e4dbe350bc386712",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      27
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 28 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "887b28e7bf5671a3a636d754f1e77401776769a40e3991cbb8d1127c90b55b6c",
+    "text_sha256": "f9b5d0bbba8230c2739f21f9785f175d03bfbaadd6c4e851e518757d7ac4cc49"
+   },
+   "coverage": {
+    "27": {
+     "state": "source absence",
+     "detail": "no Wesley marker for verse 27"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 1725 chars; 18 numbered line starts, 18 chosen as verse markers (18 confirmed by a catchword in the KJV verse): [2, 3, 4, 5, 6, 10, 12, 14, 16, 17, 18, 20, 21, 22, 24, 25, 26, 28]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {},
+   "coverage": {
+    "27": {
+     "state": "source absence",
+     "detail": "barnes-nt has no file for this book"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "absence",
+     "msg": "barnes-nt has no file for this book"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "cd8c19effb3295ed395ce8407b0c1db6305f746e94feffb2639df7d1b0e5a378",
+    "text_sha256": null
+   },
+   "coverage": {
+    "27": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 27"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 20 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "7c4aefe7d6d2db515ef4f738812d4177f837e1d8cf444b32b914618ab180f53b",
+    "text_sha256": "35b1218741ac9f655db5439aed8149ff2963d133cd8f8d2a70bf0228eddd6d53"
+   },
+   "coverage": {
+    "27": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 28: 58 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/Proverbs 28_27.toml": "d09de150fa22fcea49fed97eedc5ace44c19113b6b8035b21371fbd241d5bf18"
+    }
+   },
+   "coverage": {
+    "27": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "Proverbs 28_27.toml",
+        "entry": 1,
+        "title": "SERMON 198:3",
+        "chars": 235,
+        "file_span": [
+         27,
+         27
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 1; entries in range files excluded: 0",
+     "absent_fathers": [
+      "John Chrysostom",
+      "Thomas Aquinas",
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.Proverbs28_27.1",
+     "verse": 27,
+     "note_span": [
+      27,
+      27
+     ],
+     "start": 0,
+     "end": 235,
+     "chars": 235,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "SERMON 198:3",
+     "file": "Augustine of Hippo/Proverbs 28_27.toml"
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 23 file-name variants; found ['Proverbs 28_27.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 23 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 23 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 23 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/Proverbs 28_27.toml entry 1 \"SERMON 198:3\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 32505 vs index 32505; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "absence",
+   "msg": "calvin has no file for this book"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 3357 chars; 28 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]; max code point U+2026"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 28 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 1725 chars; 18 numbered line starts, 18 chosen as verse markers (18 confirmed by a catchword in the KJV verse): [2, 3, 4, 5, 6, 10, 12, 14, 16, 17, 18, 20, 21, 22, 24, 25, 26, 28]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "absence",
+   "msg": "barnes-nt has no file for this book"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 20 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 28: 58 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 23 file-name variants; found ['Proverbs 28_27.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 23 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 23 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 23 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/Proverbs 28_27.toml entry 1 \"SERMON 198:3\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "27": "confirmed"
+  },
+  "calvin": {
+   "27": "source absence"
+  },
+  "jfb": {
+   "27": "confirmed"
+  },
+  "gill": {
+   "27": "confirmed"
+  },
+  "wesley": {
+   "27": "source absence"
+  },
+  "barnes": {
+   "27": "source absence"
+  },
+  "tyndale": {
+   "27": "source absence"
+  },
+  "scofield": {
+   "27": "index absence"
+  },
+  "fathers": {
+   "27": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 8,
+  "chars": 3112,
+  "pieces_by_source": {
+   "mhc": 3,
+   "jfb": 1,
+   "gill": 3,
+   "hcf": 1
+  },
+  "chars_by_source": {
+   "mhc": 1582,
+   "jfb": 93,
+   "gill": 1203,
+   "hcf": 234
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 3,
+   "jamieson-fausset-brown": 1,
+   "john-gill": 3,
+   "augustine": 1
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 1582,
+   "jamieson-fausset-brown": 93,
+   "john-gill": 1203,
+   "augustine": 234
+  },
+  "per_anchor_verse": {
+   "27": {
+    "pieces": 8,
+    "chars": 3112,
+    "teacher_keys": [
+     "augustine",
+     "jamieson-fausset-brown",
+     "john-gill",
+     "matthew-henry"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "27": {
+    "pieces": 8,
+    "chars": 3112,
+    "notes": 4,
+    "teacher_keys": [
+     "augustine",
+     "jamieson-fausset-brown",
+     "john-gill",
+     "matthew-henry"
+    ]
+   }
+  },
+  "rights": {
+   "A": 7,
+   "U": 1
+  },
+  "non_standalone": 3,
+  "boundary_suspect": [],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": []
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "9f133653ef7864cd78dec37f040607be25931c29caaee84beee65570bc46be86",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 1
+ }
+}

@@ -33,6 +33,8 @@ jobs:
         run: python3 -B tools/pool/test_full_study.py
       - name: Themed study rails
         run: python3 -B tools/pool/test_themed_study.py
+      - name: Themed study sets ready (each set's own stand-in passes the rails; no model call)
+        run: python3 -B tools/pool/test_themed_sets.py
       - name: Study Worker v1 (offline; serves only approved, hash-checked pages)
         run: node tools/study-worker/test-worker.mjs
       - name: John studies rebuild equals the committed pages and records
