@@ -43,8 +43,9 @@ LABELS_THEMED = dict(LABELS_FULL, sources_heading='Sources consulted', ellipsis=
     scripture_ref='{place}:{verse}')
 CREDITS_THEMED = 'RabbiRabbit weaves these sources together. Check every quotation against your own Bible and commentaries before teaching.'
 
-def themed_content(st, P, WV, ids):
-    d = st['themed']; Fs = d['study']; M = TS.materials(); C = {c['id']: c for c in M['passages']}
+def themed_content(st, P, WV, ids, M=None):
+    """Page content for a themed study of any study set (M = themed_study.materials(slug); default John 3)."""
+    d = st['themed']; Fs = d['study']; M = M or TS.materials(); C = {c['id']: c for c in M['passages']}
     q = [c for c in M['road']['candidates'] if c['id'] in Fs['rabbi_road']['quote']]; q.sort(key=lambda c: Fs['rabbi_road']['quote'].index(c['id']))
     secs = []
     for s in Fs['sections']:
@@ -67,7 +68,7 @@ def themed_content(st, P, WV, ids):
                           quotes=[dict(id=c['id'], teacher=c['teacher'], work=c['work'], text=c['text']) for c in q]),
                 hill=dict(ref=M['hill']['ref'], votes=str(M['hill']['votes']), scripture=M['hill']['scripture'], text=Fs['over_the_hill']['text'], evidence=Fs['over_the_hill']['evidence']),
                 sources=src),
-                study=dict(key=st['key'], title=Fs['title'], shape='themed', place='John 3'),
+                study=dict(key=st['key'], title=Fs['title'], shape='themed', place=M['scope']['place']),
                 scripture={str(v): WV[str(v)] for v in range(st['scope'][0], st['scope'][1] + 1)}, verse_questions={}, summaries={}, headings={},
                 labels=LABELS_THEMED, note=NOTE_FULL, credits=CREDITS_THEMED,
                 stats_line=f"{len(ids)} quotations from {len({P[i]['teacher_key'] for i in ids})} teachers; validator and themed-study checks passed.")

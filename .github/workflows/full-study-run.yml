@@ -1,12 +1,17 @@
 name: Full study run (one real model call)
-# Run by hand: Actions -> Full study run -> Run workflow. Makes one model call (up to the attempts given, stopping at the cost cap) to
-# write a Rabbit study of John 3:16-18. layout 'themed' (default): sections by idea, the AI choosing whole sentences to quote from every
+# Run by hand: Actions -> Full study run -> Run workflow. Makes one model call per study set (up to the attempts given, stopping at
+# the cost cap for each set) to write a Rabbit study of each set's passage. 'sets' lists the folders under pool/studies, comma-separated
+# (jhn3-16-21 is John 3:16-18; the others are made by tools/pool/themed_set.py). A set that fails does not stop the others. layout 'themed' (default): sections by idea, the AI choosing whole sentences to quote from every
 # public passage (tools/pool/themed_study.py; keys ET, ET2, ...). layout 'verse': verse by verse from Study E's passages
 # (tools/pool/full_study.py; keys EF, EF2, ...). If every check passes, the study is added PENDING; nothing is approved or served. Either way the run log (each attempt, its problems, its cost) is
 # pushed to a new branch, full-study-<run>. Open a pull request from that branch to review it.
 on:
   workflow_dispatch:
     inputs:
+      sets:
+        description: 'Study sets, comma-separated (folders in pool/studies). Themed layout only, except jhn3-16-21'
+        required: false
+        default: 'eph1-15-23,rom13-11-14,1jn2-15-17,mrk13-32-37,mat25-31-46'
       model:
         description: 'Model'
         required: false
@@ -16,7 +21,7 @@ on:
         required: false
         default: '3'
       max_cost:
-        description: 'Stop after about this many dollars'
+        description: 'Stop after about this many dollars (for each set)'
         required: false
         default: '1'
       layout:
@@ -40,9 +45,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - name: Write the study (model call) and check it
+      - name: Write the studies (model calls) and check them
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IN_SETS: ${{ inputs.sets }}
           IN_MODEL: ${{ inputs.model }}
           IN_ATTEMPTS: ${{ inputs.attempts }}
           IN_MAX: ${{ inputs.max_cost }}
@@ -50,26 +56,43 @@ jobs:
           IN_PROFILE: ${{ inputs.profile }}
           IN_LAYOUT: ${{ inputs.layout }}
         run: |
-          if [ "${IN_LAYOUT:-themed}" = "verse" ]; then
-            CMD=(python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-EF3}" --profile "${IN_PROFILE:-free}")
-          else
-            CMD=(python3 -B tools/pool/themed_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-ET}")
-          fi
-          if "${CMD[@]}"; then
-            echo "PASSED=1" >> "$GITHUB_ENV"
-          else
-            echo "The study did not pass the checks; the run log shows why." >> "$GITHUB_STEP_SUMMARY"
-          fi
-      - name: Build the study page, record and index (only if it passed)
-        if: env.PASSED == '1'
+          PASSED=""
+          for S in $(echo "${IN_SETS:-jhn3-16-21}" | tr ',' ' '); do
+            if [ ! -f "pool/studies/$S/study-set.json" ]; then echo "- $S: no such study set" >> "$GITHUB_STEP_SUMMARY"; continue; fi
+            echo "::group::$S"
+            if [ "${IN_LAYOUT:-themed}" = "verse" ]; then
+              if [ "$S" != "jhn3-16-21" ]; then echo "- $S: the verse layout is John 3 only" >> "$GITHUB_STEP_SUMMARY"; echo "::endgroup::"; continue; fi
+              CMD=(python3 -B tools/pool/full_study.py run --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-EF3}" --profile "${IN_PROFILE:-free}")
+            else
+              CMD=(python3 -B tools/pool/themed_study.py run --set "$S" --model "${IN_MODEL:-claude-sonnet-5-5}" --attempts "${IN_ATTEMPTS:-3}" --max-cost "${IN_MAX:-1}" --key "${IN_KEY:-ET}")
+            fi
+            if "${CMD[@]}"; then PASSED="$PASSED $S"; echo "- $S: passed" >> "$GITHUB_STEP_SUMMARY"
+            else echo "- $S: did not pass the checks; its run log shows why" >> "$GITHUB_STEP_SUMMARY"; fi
+            echo "::endgroup::"
+          done
+          echo "PASSED=$PASSED" >> "$GITHUB_ENV"
+      - name: Build the study pages, records and index (only for sets that passed)
+        if: env.PASSED != ''
         env:
           IN_KEY: ${{ inputs.key }}
         run: |
-          python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21
+          for S in $PASSED; do
+            if [ "$S" = "jhn3-16-21" ]; then
+              python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json pool/studies/jhn3-16-21 &&
+              python3 -B tools/pool/test_frame_v2.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json
+            else
+              python3 -B tools/pool/themed_set.py build "$S"
+            fi
+            if [ -n "$(ls pool/studies/$S/study-*-${IN_KEY:-ET}.html 2>/dev/null)" ]; then
+              echo "- $S: study ${IN_KEY:-ET} built (PENDING); the critic's notes are in its review-*-${IN_KEY:-ET}.html" >> "$GITHUB_STEP_SUMMARY"
+            else echo "- $S: passed the rails but did NOT build; see this step's log" >> "$GITHUB_STEP_SUMMARY"; fi
+          done
+          set -e
           python3 -B tools/pool/study_index.py build
-          python3 -B tools/pool/test_frame_v2.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json
-          echo "Passed. Study ${IN_KEY:-ET} is built (PENDING): pool/studies/jhn3-16-21/study-jhn3-${IN_KEY:-ET}.html, with the critic's notes in review-jhn3-${IN_KEY:-ET}.html" >> "$GITHUB_STEP_SUMMARY"
-      - name: Push a branch for review
+          python3 -B tools/pool/study_index.py check
+          node tools/study-worker/test-worker.mjs
+      - name: Push a branch for review (always, so every run log is kept)
+        if: always()
         run: |
           git config user.name "full-study-bot"
           git config user.email "full-study-bot@users.noreply.github.com"
@@ -77,6 +100,6 @@ jobs:
           git checkout -b "$B"
           git add pool/studies
           if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
-          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.layout }}, ${{ inputs.key }}, ${{ inputs.model }})"
+          git commit -m "Full study run ${{ github.run_id }} (${{ inputs.layout }}, ${{ inputs.key }}, ${{ inputs.sets }}, ${{ inputs.model }})"
           git push origin "$B"
           echo "Branch $B is ready. Open a pull request from it." >> "$GITHUB_STEP_SUMMARY"

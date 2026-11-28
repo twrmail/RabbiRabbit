@@ -33,12 +33,16 @@ jobs:
         run: python3 -B tools/pool/test_full_study.py
       - name: Themed study rails
         run: python3 -B tools/pool/test_themed_study.py
+      - name: Themed study sets ready (each set's own stand-in passes the rails; no model call)
+        run: python3 -B tools/pool/test_themed_sets.py
       - name: Study Worker v1 (offline; serves only approved, hash-checked pages)
         run: node tools/study-worker/test-worker.mjs
       - name: John studies rebuild equals the committed pages and records
         run: |
+          # rebuild into a copy of the folder, so recorded approvals are there to be kept (an unchanged study stays approved)
+          rm -rf /tmp/jhn-rebuild && cp -r pool/studies/jhn3-16-21 /tmp/jhn-rebuild
           python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json /tmp/jhn-rebuild
-          for f in /tmp/jhn-rebuild/*; do cmp "$f" "pool/studies/jhn3-16-21/$(basename "$f")"; done
+          for f in /tmp/jhn-rebuild/*; do [ -f "$f" ] || continue; cmp "$f" "pool/studies/jhn3-16-21/$(basename "$f")"; done
       - name: Study index equals a fresh build; every approved study is servable
         run: python3 -B tools/pool/study_index.py check
       - name: Whole-Bible sweep equals the baseline (31,103 verses, seven adapters)

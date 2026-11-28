@@ -16,15 +16,15 @@ no references or numbers not given; no claims about what teachers hold in genera
 the critic call and by Rabbit's review.
 
 usage:
-  themed_study.py run [--model M] [--attempts 3] [--max-cost 1] [--key ET]   one real model call (ANTHROPIC_API_KEY; Tom's go-ahead)
-  themed_study.py check FILE                                                  check a saved study_themed_v1 JSON
-  themed_study.py prompt                                                      print the prompt (no call)"""
+  themed_study.py run [--set jhn3-16-21] [--model M] [--attempts 3] [--max-cost 1] [--key ET]   real model calls (ANTHROPIC_API_KEY; Tom's go-ahead)
+  themed_study.py check FILE [--set S]                                                       check a saved study_themed_v1 JSON
+  themed_study.py prompt [--set S]                                                           print the prompt (no call)
+A study set is pool/studies/<slug>/ (study-set.json: unit, report, optional scope). Prepare and build new sets with themed_set.py."""
 import json, os, re, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import full_study as FS, run_validator as RV, validator as V, weave as W, studies_jhn as S
+import full_study as FS, run_validator as RV, validator as V, weave as W, studies_jhn as S, destinations as D, books as B
 
 SCHEMA = 'study_themed_v1'
-SCOPE = S.THEMED_SCOPE
 LIMITS = dict(title=80, opening=900, heading=80, text=900, road=1200, prompt=250, hill=700)
 MIN_TEACHERS, MAX_PER_TEACHER, MAX_QUOTES = 4, 2, 12
 QUOTE_SENTENCES, QUOTE_CHARS, QUOTED_TOTAL, AI_SHARE = 6, 1300, 7000, 60
@@ -42,12 +42,36 @@ def candidates(pool, lo, hi):
                         covers=[c for c in V.covers(p) if lo <= c <= hi], text=p['text'], sentences=[p['text'][a:b] for a, b in sp], spans=sp))
     return out
 
-def materials(report=None):
-    report = report or os.path.join(FS.SDIR, 'diagnostic-jhn3-16-21-public.json')
-    _, pool, _, _ = RV.load(report); lo, hi = SCOPE; J3 = FS.wv('JHN', 3); D = FS.materials(profile='free')
-    return dict(scope=dict(place='John 3', lo=lo, hi=hi, ref=f'John 3:{lo}-{hi}'),
-                verses=[dict(verse=v, token=f'JHN.3.{v}', scripture=J3[str(v)]) for v in range(lo, hi + 1)],
-                passages=candidates(pool, lo, hi), road=D['road'], hill=D['hill'], source=D['source'])
+STUDIES_DIR = os.path.join(FS.REPO, 'pool', 'studies')
+
+def units():
+    u = json.load(open(os.path.join(FS.REPO, 'pool', 'units.json'))); us = u['units'] if isinstance(u, dict) and 'units' in u else u
+    return {x['id']: x for x in us}
+
+def destination_material(sd, d, part):
+    """Scripture and (for the Road) the Henry and Gill standalone passages on a destination verse, from its committed public pool."""
+    f = os.path.join(sd, 'destinations', f'diagnostic-{FS.slug(d)}-public.json')
+    if not os.path.exists(f): raise SystemExit(f'{part} destination {B.ref(d["book"], d["chapter"], d["verse"])} has no committed pool ({f}); run themed_set.py prepare')
+    _, dp, _, _ = RV.load(f)
+    cands = [dict(id=p['id'], teacher_key=p['teacher_key'], teacher=S.TEACH.get(p['teacher_key'], p['teacher_key']), work=p.get('work_title'),
+                  rights=p['rights'], text=p['text']) for p in dp if part == 'road' and p['teacher_key'] in FS.ROAD_TEACHERS and p['standalone']
+             and p['rights'] in 'AB' and not FS.DANGLING.search(p['text'])]
+    return dict(ref=B.ref(d['book'], d['chapter'], d['verse']), token=FS.tok(d), votes=d['votes'],
+                scripture=FS.wv(d['book'], d['chapter'])[str(d['verse'])], candidates=cands)
+
+def materials(slug='jhn3-16-21'):
+    """Everything the model is given and the page prints, for one study set (pool/studies/<slug>/): its unit, its scope (study-set.json
+    'scope', else the whole unit), the public teacher pool, and the two destinations chosen by code."""
+    sd = os.path.join(STUDIES_DIR, slug); meta = json.load(open(os.path.join(sd, 'study-set.json'))); un = units()[meta['unit']]
+    book, ch = un['book'], un['chapter']; lo, hi = meta.get('scope') or [un['start'], un['end']]
+    _, pool, _, _ = RV.load(os.path.join(sd, meta['report'])); CH = FS.wv(book, ch)
+    dst = D.choose(book, ch, lo, hi, un['start'], un['end'])
+    if not dst or not dst.get('hill'): raise SystemExit(f'{slug}: no Rabbi Road / Over the Hill destination in the cross references')
+    return dict(slug=slug, dir=sd, unit=un, book=book, chapter=ch,
+                scope=dict(place=f'{B.name(book)} {ch}', lo=lo, hi=hi, ref=B.ref(book, ch, lo, hi)),
+                verses=[dict(verse=v, token=f'{book}.{ch}.{v}', scripture=CH[str(v)]) for v in range(lo, hi + 1)],
+                passages=candidates(pool, lo, hi), road=destination_material(sd, dst['road'], 'road'), hill=destination_material(sd, dst['hill'], 'hill'),
+                source=dst['source'])
 
 def excerpt(c, a, b):
     """The exact text of sentences a..b of a passage, and whether text is left out before or after."""
@@ -130,7 +154,7 @@ def check(F, M, teacher_names=S.TEACH):
     texts[M['road']['token']] = M['road']['scripture']; texts[M['hill']['token']] = M['hill']['scripture']
     keys = {i: c['teacher_key'] for i, c in C.items()}; keys.update({i: c['teacher_key'] for i, c in cands.items()})
     lo, hi = M['scope']['lo'], M['scope']['hi']
-    scope_refs = [M['scope']['ref']] + [f'John 3:{v}' for v in range(lo, hi + 1)]
+    scope_refs = [M['scope']['ref']] + [f"{M['scope']['place']}:{v}" for v in range(lo, hi + 1)]; TOK = {v['verse']: v['token'] for v in M['verses']}
     ai = 0; quoted = 0; per_teacher = {}; seen = set()
     def txt(where, s, e, allowed, refs, limit, title=False):
         nonlocal ai
@@ -152,7 +176,7 @@ def check(F, M, teacher_names=S.TEACH):
         vs = [v for v in (s.get('verses') or []) if isinstance(v, int)]; flow = s.get('flow') if isinstance(s.get('flow'), list) else []
         if not flow: R.append(('F1', f'section {n}: no flow')); continue
         sec_ids = [it.get('quote') for it in flow if isinstance(it, dict) and it.get('quote') in C]
-        txt(f'section {n} heading', s.get('heading'), [f'JHN.3.{v}' for v in vs] + sec_ids, allscope, scope_refs, LIMITS['heading'], title=True)
+        txt(f'section {n} heading', s.get('heading'), [TOK[v] for v in vs if v in TOK] + sec_ids, allscope, scope_refs, LIMITS['heading'], title=True)
         if vs and not sec_ids: R.append(('T3', f'section {n}: no quotation'))
         prev = None
         for j, it in enumerate(flow, 1):
@@ -196,12 +220,13 @@ def check(F, M, teacher_names=S.TEACH):
     return R, dict(ai_chars=ai, teacher_chars=teacher, ai_share=share, teachers=len(per_teacher), quotations=len(seen))
 
 # ----------------------------------------------------------------------------------------------------------------- one model call
-def run(model, attempts, max_cost, key='ET'):
+def run(model, attempts, max_cost, key='ET', slug='jhn3-16-21'):
     if not re.fullmatch(r'ET\d*', key): raise SystemExit(f'a themed study key is ET, ET2, ET3, ... (got {key!r})')
-    M = materials(); user = user_message(M)
+    M = materials(slug); user = user_message(M); FULL = os.path.join(M['dir'], 'full')
+    if os.path.exists(os.path.join(FULL, f'{key}.json')): raise SystemExit(f'{slug} already has {key}; choose another key (ET2, ET3, ...)')
     log = dict(schema='themed_study_run_v1', model=model, started=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
-               destinations=dict(road=M['road']['ref'], hill=M['hill']['ref']), key=key, attempts=[], spent=0.0, result='failed')
-    msg = user; os.makedirs(FS.FULL, exist_ok=True)
+               destinations=dict(road=M['road']['ref'], hill=M['hill']['ref']), key=key, set=slug, attempts=[], spent=0.0, result='failed')
+    msg = user; os.makedirs(FULL, exist_ok=True)
     for n in range(attempts):
         if log['spent'] >= max_cost: log['stopped'] = f'cost cap ${max_cost}'; break
         try: text, cost, usage = FS.ask(model, SYSTEM, msg, max_tokens=8000)
@@ -219,17 +244,18 @@ def run(model, attempts, max_cost, key='ET'):
                 log['critic'] = dict(cost=round(ccost, 4), usage=cu, notes=out['critic']['notes'])
                 print(f'critic: {len(out["critic"]["notes"])} notes, ${ccost:.4f}', *[f"  [{x.get('severity')}] {x.get('where')}: {x.get('issue')}" for x in out['critic']['notes']], sep='\n')
             except FS.ApiError as e: out['critic'] = dict(model=model, notes=[], ok=False, raw=str(e)); log['critic'] = dict(error=str(e))
-            json.dump(out, open(os.path.join(FS.FULL, f'{key}.json'), 'w'), indent=1, ensure_ascii=False); log['result'] = 'passed'; break
+            json.dump(out, open(os.path.join(FULL, f'{key}.json'), 'w'), indent=1, ensure_ascii=False); log['result'] = 'passed'; break
         msg = (user + '\n\nYour previous reply broke these rules. Write the whole study again, fixing them:\n' +
                '\n'.join(f'- {r}: {m}' for r, m in probs[:40]) + '\n\nPrevious reply:\n' + text)
     log['spent'] = round(log['spent'], 4)
-    json.dump(log, open(os.path.join(FS.FULL, f"run-{log['started'].replace(':', '')}.json"), 'w'), indent=1, ensure_ascii=False)
+    json.dump(log, open(os.path.join(FULL, f"run-{key}-{log['started'].replace(':', '')}.json"), 'w'), indent=1, ensure_ascii=False)
     print('result', log['result'], f"spent about ${log['spent']}")
     return log['result'] == 'passed'
 
 if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k, d: a[a.index(k) + 1] if k in a else d
-    if not a or a[0] == 'prompt': print(SYSTEM, '\n\n', user_message(materials()))
+    st = opt('--set', 'jhn3-16-21')
+    if not a or a[0] == 'prompt': print(SYSTEM, '\n\n', user_message(materials(st)))
     elif a[0] == 'check':
-        d = json.load(open(a[1])); p, s = check(d['study'], materials()); print(s); [print(' ', r, m) for r, m in p]; sys.exit(1 if p else 0)
-    elif a[0] == 'run': sys.exit(0 if run(opt('--model', 'claude-sonnet-5-5'), int(opt('--attempts', 3)), float(opt('--max-cost', 1)), opt('--key', 'ET')) else 1)
+        d = json.load(open(a[1])); p, s = check(d['study'], materials(st)); print(s); [print(' ', r, m) for r, m in p]; sys.exit(1 if p else 0)
+    elif a[0] == 'run': sys.exit(0 if run(opt('--model', 'claude-sonnet-5-5'), int(opt('--attempts', 3)), float(opt('--max-cost', 1)), opt('--key', 'ET'), st) else 1)

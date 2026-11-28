@@ -9,9 +9,9 @@ globalThis.fetch = async (u) => {
   const f = path.join(REPO, p); return fs.existsSync(f) ? new Response(fs.readFileSync(f)) : new Response('nf', {status: 404});
 };
 const ix = JSON.parse(fs.readFileSync(path.join(REPO, 'pool/studies/index.json')));
-const uid = Object.keys(ix.units)[0], st = ix.units[uid].studies, last = st[st.length - 1];
+const uid = Object.keys(ix.units).find(u => ix.units[u].studies.length), st = ix.units[uid].studies, last = st[st.length - 1];
 // start from an index with nothing approved (the real one may have approvals)
-const ix0 = structuredClone(ix); for (const s of ix0.units[uid].studies) Object.assign(s, {status: 'pending', approver: null, approved_at: null});
+const ix0 = structuredClone(ix); for (const s of Object.values(ix0.units).flatMap(u => u.studies)) Object.assign(s, {status: 'pending', approver: null, approved_at: null});
 overrides['pool/studies/index.json'] = JSON.stringify(ix0);
 const get = async (p, env = {}) => { const r = await W.fetch(new Request('https://x.dev' + p), env); return [r.status, await r.text()]; };
 let fails = 0, s_, b_; const ok = (c, m) => { if (!c) { fails++; console.log('FAIL', m); } };

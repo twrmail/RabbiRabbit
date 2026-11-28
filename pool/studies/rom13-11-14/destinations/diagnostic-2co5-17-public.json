@@ -1,0 +1,2129 @@
+{
+ "passage": "2 Corinthians 5:17",
+ "book": "2CO",
+ "chapter": 5,
+ "scope": [
+  17,
+  17
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "9bbfa3d228f01e80dc8a3d55effa64f2ad2fb1d1f593d6865b9b8d6374447ddc",
+    "text_sha256": "19e3dcb498a9d583843e7a32d4d759b576afd8d0af211fc8753641637b31639b",
+    "index_file_sha256": "960ea1f859f8d365f42d66bcee3894699fac783160bc0d8f317ad592152761f6"
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "index": {
+      "at": 17190,
+      "end": 18074,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.5.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.5.17",
+     "opens_mid_outline": true,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 17190,
+     "end": 18074,
+     "chars": 884,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 2,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC5.17.01",
+     "note_id": "MHC.5.17",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "2. A thorough change of the heart: *For if any man be in Christ,* if any man be a Christian indeed, and will approve himself such, *he is,* or he must be, *a new creature,* 2Co 5:17. Some read it, *Let him be a new creature.* This ought to be the care of all who profess the Christian faith, that they be new creatures; not only that they have a new name, and wear a new livery, but that they have a new heart and new nature.",
+     "outline_label": "2.",
+     "marker_span": [
+      17190,
+      17192
+     ],
+     "source_file": "commentary/MHC/2CO.json",
+     "start": 17190,
+     "end": 17615,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2Co 5:17"
+     ],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "MHC5.17.02",
+     "note_id": "MHC.5.17",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "And so great is the change the grace of God makes in the soul, that, as it follows, *old things are passed away*—old thoughts, old principles, and old practices, are passed away; and *all these things must become new.* Note, Regenerating grace creates a new world in the soul; all things are new. The renewed man acts from new principles, by new rules, with new ends, and in new company.\n\nII. Reconciliation, which is here spoken of under a double notion:—",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/2CO.json",
+     "start": 17616,
+     "end": 18072,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC5.17.01"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 21739 vs index 21739; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "d79c1e8fc4747986366a5dac37203451f1355f59ded56d88481b1e1281ec420c",
+    "text_sha256": "a759fa095c36ebe5e1a8238599f1dd658b5e9f08b4baf7b92ab9133a7dfc25c7",
+    "index_file_sha256": "eed8499d403a39d0cb71eaffdcd9a9de78b859e324dc11bdf55a532cccbcfb81"
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "note_id": "CAL.5.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.5.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 32567,
+     "end": 34897,
+     "chars": 2330,
+     "pieces": 5,
+     "tiling_problems": [],
+     "head": "17. Therefore if any man is in",
+     "foreign_tail_start": null,
+     "heading_group": null,
+     "pointer": null
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL5.17.01",
+     "note_id": "CAL.5.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary 2CO",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "17. Therefore if any man is in Christ. As there is something wanting in this expression, it must be supplied in this way — “ If any one is desirous to hold some place in Christ, that is, in the kingdom of Christ, or in the Church let him be a new creature ” By this expression he condemns every kind of excellence that is wont to be in much esteem among men, if renovation of heart is wanting. “Learning , it is true, and eloquence, and other endowments, are valuable, and worthy to be honored; but, where the fear of the Lord and an upright conscience are wanting, all the honor of them goes for nothing.",
+     "outline_label": "17.",
+     "marker_span": [
+      32567,
+      32570
+     ],
+     "source_file": "commentary/Calvin/2CO.json",
+     "start": 32567,
+     "end": 33172,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "CAL5.17.02",
+     "note_id": "CAL.5.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary 2CO",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Let no one, therefore, glory in any distinction, inasmuch as the chief praise of Christians is self-renunciation.” Nor is this said merely for the purpose of repressing the vanity of the false apostles, but also with the view of correcting the ambitious judgments of the Corinthians, in which outward disguises were of more value than real sincerity — though this is a fault that is common to almost all ages. For where shall we find the man that does not attach much more importance to show, than to true holiness?",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/2CO.json",
+     "start": 33173,
+     "end": 33688,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "CAL5.17.03",
+     "note_id": "CAL.5.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary 2CO",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Let us, therefore, keep in view this admonition — that all that are not renewed by the Spirit of God, should be looked upon as nothing in the Church, by whatever ornaments they may in other respects be distinguished. Old things are passed away. When the Prophets speak of the kingdom of Christ, they foretell that there will be new heavens and a new earth, ( Isaiah 65:17 ,) meaning thereby, that all things will be changed for the better, until the happiness of the pious is completed.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/2CO.json",
+     "start": 33689,
+     "end": 34175,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isaiah 65:17"
+     ],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "CAL5.17.04",
+     "note_id": "CAL.5.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary 2CO",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "As, however, Christ’s kingdom is spiritual, this change must take place chiefly in the Spirit, and hence it is with propriety that he begins with this. There is, therefore, an elegant and appropriate allusion, when Paul makes use of a commendation of this kind, for the purpose of setting forth the value of regeneration. Now by old things he means, the things that are not formed anew by the Spirit of God. Hence this term is placed in contrast with renewing grace.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/2CO.json",
+     "start": 34176,
+     "end": 34642,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "CAL5.17.05",
+     "note_id": "CAL.5.17",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary 2CO",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "The expression passed away, he uses in the sense of fading away, as things that are of short duration are wont to fall off, when they have passed their proper season. Hence it is only the new man, that flourishes and is vigorous in the kingdom of Christ.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/2CO.json",
+     "start": 34643,
+     "end": 34897,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 52935; sections 19; max code point U+201D"
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "0 scripture_header pieces excluded: []"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "37c849ee799b6b75319c9383b4cb66370285fc21f50be2d7204190f7bb1426bf",
+    "text_sha256": "0f278c7ce89aeacc3737ab612a48ea7eea2d543df130c5b9171e1af6bb10d681"
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "note_id": "JFB.5.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "JFB.5.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 16370,
+     "end": 17300,
+     "chars": 930,
+     "pieces": 2,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "JFB5.17.01",
+     "note_id": "JFB.5.17",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "17. Therefore—connected with the words in 2Co 5:16, \"We know Christ no more after the flesh.\" As Christ has entered on His new heavenly life by His resurrection and ascension, so all who are \"in Christ\" (that is, united to Him by faith as the branch is In the vine) are new creatures (Ro 6:9-11). \"New\" in the Greek implies a new nature quite different from anything previously existing, not merely recent, which is expressed by a different Greek word (Ga 6:15).\ncreature—literally, \"creation,\" and so the creature resulting from the creation (compare Joh 3:3, 5; Eph 2:10; 4:23; Col 3:10, 11).",
+     "outline_label": "17.",
+     "marker_span": [
+      16370,
+      16373
+     ],
+     "source_file": "commentary/JFB/2CO.json",
+     "start": 16370,
+     "end": 16964,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2Co 5:16",
+      "Ro 6:9-11",
+      "Ga 6:15",
+      "Joh 3:3",
+      "Eph 2:10",
+      "Col 3:10"
+     ],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)",
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "JFB5.17.02",
+     "note_id": "JFB.5.17",
+     "source_id": "jfb",
+     "container_id": "jfb",
+     "original_author": "Jamieson, Fausset & Brown",
+     "teacher_key": "jamieson-fausset-brown",
+     "compiler": null,
+     "work_title": "Commentary Critical and Explanatory on the Whole Bible",
+     "edition": "Jamieson, Fausset & Brown, Commentary Critical and Explanatory on the Whole Bible (1871, public domain); text rebuilt fr",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "As we are \"in Christ,\" so \"God was in Christ\" (2Co 5:19): hence He is Mediator between God and us.\nold things—selfish, carnal views (compare 2Co 5:16) of ourselves, of other men, and of Christ.\npassed away—spontaneously, like the snow of early spring [Bengel] before the advancing sun.\nbehold—implying an allusion to Isa 43:19; 65:17.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/JFB/2CO.json",
+     "start": 16965,
+     "end": 17299,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2Co 5:19",
+      "2Co 5:16",
+      "Isa 43:19"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 24137 chars; 21 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; max code point U+2026"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "4b2f934a8840110efc98225c7d54e930bf78ba25fbd76edf2105448de67c1bf7",
+    "text_sha256": null
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "note_id": "GILL.5.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.5.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 5614,
+     "chars": 5614,
+     "pieces": 6,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL5.17.01",
+     "note_id": "GILL.5.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Therefore if any man be in Christ,....",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/2CO.json",
+     "start": 0,
+     "end": 38,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "a144e9f071ff69ea4edcd248dc2085bb38d06e5192f0c236f091b422d34180bf",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL5.17.02",
+     "note_id": "GILL.5.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "There's a secret being in Christ from everlasting; so all that are loved by him, espoused unto him, chosen and preserved in him, to whom he was a covenant head, surety, and representative, are in him, united to him, and one with him; not in such sense as the Father is in him, and the human nature is in him, but as husband and wife, and head and members are one: and there is an open being in Christ at conversion, when a man believes in Christ, and gives up himself to him; faith does not put a man into Christ, but makes him appear to be in him: and such an one \"is a new creature\"; or, as some read it, \"let him be a new creature\": who understand being in Christ to be by profession, and the sense this, whoever is in the kingdom or church of Christ, who professes himself to be a Christian, ought to be a new creature: the Arabic version reads it, \"he that is in the faith of Christ is a new creature\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/2CO.json",
+     "start": 39,
+     "end": 946,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a144e9f071ff69ea4edcd248dc2085bb38d06e5192f0c236f091b422d34180bf",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL5.17.03",
+     "note_id": "GILL.5.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "All such who are secretly in Christ from everlasting, though as yet some of them may not be new creatures, yet they shall be sooner or later; and those who are openly in him, or are converted persons, are actually so; they are a new \"creation\", as the words may be rendered: , \"a new creation\", is a phrase often used by the Jewish (h) doctors, and is applied by the apostle to converted persons; and designs not an outward reformation of life and manners, but an inward principle of grace, which is a creature, a creation work, and so not man's, but God's; and in which man is purely passive, as he was in his first creation; and this is a new creature, or a new man, in opposition to, and distinction from the old man, the corruption of nature; and because it is something anew implanted in the soul, which never was there before; it is not a working upon, and an improvement of the old principles of nature, but an implantation of new principles of grace and holiness; here is a new heart, and a new spirit, and in them new light and life, new affections and desires, new delights and joys; here are new eyes to see with, new ears to hear with, new feet to walk, and new hands to work and act with:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/2CO.json",
+     "start": 947,
+     "end": 2148,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a144e9f071ff69ea4edcd248dc2085bb38d06e5192f0c236f091b422d34180bf",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL5.17.04",
+     "note_id": "GILL.5.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "old things are passed away: the old course of living, the old way of serving God, whether among Jews or Gentiles; the old legal righteousness, old companions and acquaintance are dropped; and all external things, as riches, honours, learning, knowledge, former sentiments of religion, are relinquished:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/2CO.json",
+     "start": 2150,
+     "end": 2452,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "a144e9f071ff69ea4edcd248dc2085bb38d06e5192f0c236f091b422d34180bf",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL5.17.05",
+     "note_id": "GILL.5.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "behold, all things are become new; there is a new course of life, both of faith and holiness; a new way of serving God through Christ by the Spirit, and from principles of grace; a new, another, and better righteousness is received and embraced; new companions are sought after, and delighted in; new riches, honours, glory, a new Jerusalem, yea, new heavens, and a new earth, are expected by new creatures: or the sense of the whole may be this, if any man is entered into the kingdom of God, into the Gospel dispensation, into a Gospel church state, which seems to be the sense of the phrase \"in Christ\", in Galatians 3:28 he is become a new creature, or is got into a new creation, as it were into a new world, whether he be a Jew or a Gentile; for with respect to the former state of either, \"old things are passed away\"; if a Jew, the whole Mosaic economy is abolished; the former covenant is waxen old, and vanished away; the old ordinances of circumcision and the passover are no more; the daily sacrifice is ceased, and all the other sacrifices are at an end, Christ, the great sacrifice, being offered up; the priesthood of Aaron is antiquated, there is a change of it, and of the whole law; the observance of holy, days, new moons and sabbaths, is over; the whole ceremonial law is at end; all the shadows of it are fled and gone, the things they were shadows of being come by Christ, the sum and substance of them; and there is no more a serving God in the oldness of the letter, but in the newness of the Spirit: and if a Gentile, all the former idols he worshipped he turns from, and his language is, \"what have I to do any more with idols? or what agreement hath the temple of God with idols?\" all former sacrifices, superstitious rites and ceremonies, with which he worshipped them, are relinquished by him; with all other Heathenish customs, rules, and methods of conduct he had been used to: \"behold, all things are become new\"; to the one, and to the other; the Gospel dispensation is a new state of things; a new form of church state is erected, not national, as among the Jews, but congregational, consisting of persons gathered out of the world, and anew embodied together; new ordinances are appointed, which were never in use before, as baptism and the Lord's supper; a new and living way is opened by the blood of Christ into the holiest of all, not by the means of slain beasts, as among the Jews, nor by petty deities as with the Gentiles; a new commandment of love is enjoined all the followers of the Lamb; and another name is given them, a new name, which the mouth of the Lord their God has named, not of Jews nor Gentiles, but of Christians; and new songs are put into their mouths, even praise to God: in short, the Gospel church state seems to be, as it were, a new creation, and perhaps is meant by the new heavens and new earth, Isaiah 65:15 as well as those who are the proper members of it, are new creatures in the sense before given.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/2CO.json",
+     "start": 2454,
+     "end": 5426,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Galatians 3:28",
+      "Isaiah 65:15"
+     ],
+     "flags": [],
+     "source_text_sha256": "a144e9f071ff69ea4edcd248dc2085bb38d06e5192f0c236f091b422d34180bf",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "GIL5.17.06",
+     "note_id": "GILL.5.17",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(h) T. Hieros. Roshhashana, fol. 59. 3. Vajikra Rabba, fol. 170. 4. Bemidbar Rabba, fol, 202. 3. Cosri, fol. 62. 2. & R. Levi ben Gersom in Exod, fol. 108. 1. Tzeror Hammor, fol. 121. 2.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/2CO.json",
+     "start": 5428,
+     "end": 5614,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "footnote list only; never shown on its own"
+     ],
+     "source_text_sha256": "a144e9f071ff69ea4edcd248dc2085bb38d06e5192f0c236f091b422d34180bf",
+     "piece_kind": "citation_list",
+     "citation_letters": [
+      "h"
+     ],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 21 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "7c1cf54c46be7fe8ec2aee71e84c3057bbea85dacd26541a302e7ed7f50f5f26",
+    "text_sha256": "567b477d25bf9d522c69e58f253756a710d3ede2d16f3794797891de50b5dac0"
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "note_id": "WES.5.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.5.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 4965,
+     "end": 5659,
+     "chars": 694,
+     "pieces": 2,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES5.17.01",
+     "note_id": "WES.5.17",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "17. Therefore if any one be in Christ - A true believer in him. There is a new creation - Only\nthe power that makes a world can make a Christian. And when he is so created, the old things are\npassed away - Of their own accord, even as snow in spring. Behold - The present, visible, undeniable\nchange! All things are become new - He has new life, new senses, new faculties, new affections,\nnew appetites, new ideas and conceptions.",
+     "outline_label": "17.",
+     "marker_span": [
+      4965,
+      4968
+     ],
+     "source_file": "commentary/Wesley/2CO.json",
+     "start": 4965,
+     "end": 5395,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "WES5.17.02",
+     "note_id": "WES.5.17",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "His whole tenor of action and conversation is new, and\nhe lives, as it were, in a new world. God, men, the whole creation, heaven, earth, and all therein,\nappear in a new light, and stand related to him in a new manner, since he was created anew in Christ\nJesus.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Wesley/2CO.json",
+     "start": 5396,
+     "end": 5658,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 7237 chars; 21 numbered line starts, 21 chosen as verse markers (15 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "b8a1d62883c13f642854824fdca29662cd5874c098989e71ce980091a25984de",
+    "text_sha256": null
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "note_id": "BAR.5.17"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.5.17",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 7779,
+     "chars": 7779,
+     "pieces": 17,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR5.17.01",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Verse 17. Therefore if any man be in Christ. The phrase, to \"be in Christ,\" evidently means to be united to Christ by faith; or to be in him as the branch is in the vine--that is, so united to the vine, or so in it, as to derive all its nourishment and support from it, and to be sustained entirely by it. Joh 15:2, \"Every branch in me;\" Joh 15:4, \"Abide in me, and I in you. As the branch cannot bear fruit of itself, except it abide in the vine; no more can ye, except ye abide in me.\" See also Joh 15:5-7.\n\nSee Barnes \"Joh 15:2\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 0,
+     "end": 532,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Joh 15:2",
+      "Joh 15:4",
+      "Joh 15:5-7",
+      "Joh 15:2"
+     ],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.02",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "To be \"in Christ\" denotes a more tender and close union; and implies that all our support is from him. All our strength is derived from him; and denotes further that we shall partake of his fulness, and share in his felicity and glory, as the branch partakes of the strength and rigour of the parent vine. The word \"therefore\" (wste) here implies, that the reason why Paul infers that any one is a new creature who is in Christ is that which is stated in the previous verse; to wit, the change of views in regard to the Redeemer to which he there refers, and which was so great as to constitute a change like a new creation.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 534,
+     "end": 1158,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.03",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "The affirmation here is universal, \"if any man be in Christ;\" that is, all who become true Christians-- undergo such a change in their views and feelings as to make it proper to say of them that they are new creatures. No matter what they have been before, whether moral or immoral; whether infidels or speculative believers; whether amiable, or debased, sensual, and polluted, yet if they become Christians they all experience such a change as to make it proper to say they are a new creation.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 1159,
+     "end": 1653,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.04",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "He is a new creature. Marg., \"Let him be.\" This is one of the instances in which the margin has given a less correct translation than is in the text. The idea evidently is, not that he ought to be a new creature, but that he is in fact; not that he ought to live as becomes a new creature--which is true enough--but that he will in fact live in that way, and manifest the characteristics of the new creation. The phrase \"a new creature\" (kainh ktisiv) occurs also in Ga 6:15. The word rendered \"creature\" (ktisiv) means, properly, in the New Testament, creation. It denotes\n\n(1.) the act of creating, Ro 1:20;\n\n(2.) a created thing, a creature, Ro 1:25; and refers\n\n(a.) to the universe, or creation in general, Mr 10:6; 13:19; 2 Pe 3:4;",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 1655,
+     "end": 2392,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR5.17.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Ga 6:15",
+      "Ro 1:20",
+      "Ro 1:25",
+      "Mr 10:6",
+      "2 Pe 3:4"
+     ],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.05",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(b.) to man, mankind, Mr 16:15; Col 1:23. Here it means a new creation in a moral sense; and the phrase \"new creature\" is equivalent to the expression in Eph 4:24: \"The new man, which after God is created in righteousness and true holiness.\" It means, evidently, that there is a change produced in the renewed heart of man that is equivalent to the act of creation, and that bears a strong resemblance to it--a change, so to speak, as if the man was made over again, and had become new.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 2394,
+     "end": 2880,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mr 16:15",
+      "Col 1:23",
+      "Eph 4:24"
+     ],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.06",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "The mode or manner in which it is done is not described; nor should the words be pressed, to the quick, as if the process were the same in both cases--for the words are here evidently figurative. But the phrase implies evidently the following things:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 2881,
+     "end": 3131,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.07",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(1.) That there is an exertion of Divine power in the conversion of the sinner as really as in the act of creating the world out of nothing, and that this is as indispensable in the one case as in the other.",
+     "outline_label": "(1.)",
+     "marker_span": [
+      3133,
+      3137
+     ],
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 3133,
+     "end": 3340,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR5.17.06"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.08",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(2.) That a change is produced so great as to make it proper to say that he is a new man. He has new views, new motives, new principles, new objects and plans of life. He seeks new purposes, and he lives for new ends. If a drunkard becomes reformed, there is no impropriety in saying that he is a new man. If a man who was licentious becomes pure, there is no impropriety in saying that he is not the same man that he was before.",
+     "outline_label": "(2.)",
+     "marker_span": [
+      3342,
+      3346
+     ],
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 3342,
+     "end": 3771,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR5.17.07"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.09",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Such expressions are common in all languages, and they are as proper as they are common. There is such a change as to make the language proper. And so in the conversion of a sinner. There is a change so deep, so clear, so entire, and so abiding, that it is proper to say, here is a new creation of God--a work of the Divine power as decided and as glorious as when God created all things out of nothing. There is no other moral change that takes place on earth so deep, and radical, and thorough, as the change at conversion. And there is no other where there is so much propriety in ascribing it to the mighty power of God.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 3772,
+     "end": 4396,
+     "rights": "B",
+     "standalone": false,
+     "predecessor_ids": [
+      "BAR5.17.08"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.10",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Old things are passed away. The old views in regard to the Messiah, and in regard to men in general, 2 Co 5:16. But Paul also gives this a general form of expression, and says that old things in general have passed away--referring to everything. It was true of all who were converted that old things had passed away. And it may include the following things:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 4398,
+     "end": 4755,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "2 Co 5:16"
+     ],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.11",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(1.) In regard to the Jews--that their former prejudices against Christianity, their natural pride, and spirit of seducing others, their attachment to their rites and ceremonies, and dependence on them for salvation, had all passed away. They now renounced that dependence, relied on the merits of the Saviour, and embraced all as brethren who were of the family of Christ.",
+     "outline_label": "(1.)",
+     "marker_span": [
+      4757,
+      4761
+     ],
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 4757,
+     "end": 5130,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.12",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(2.) In regard to the Gentiles--their attachment to idols, their love of sin, and degradation, their dependence on their own works, had passed away, and they had renounced all these things, and had come to mingle their hopes with those of the converted Jews, and with all who were the friends of the Redeemer.",
+     "outline_label": "(2.)",
+     "marker_span": [
+      5132,
+      5136
+     ],
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 5132,
+     "end": 5441,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.13",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "(3.) In regard to all, it is also true that old things pass away. Their former prejudices, opinions, habits, attachments pass away. Their supreme love of self passes away. Their love of sin passes away. Their love of the world passes away. Their supreme attachment to their earthly friends rather than God passes away. Their love of sin--their sensuality, pride, vanity, levity, ambition--passes away. There is a deep and radical change on all these subjects--a change which commences at the new birth; which is carried on by progressive sanctification; and which is consummated at death and in heaven.",
+     "outline_label": "(3.)",
+     "marker_span": [
+      5443,
+      5447
+     ],
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 5443,
+     "end": 6045,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.14",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "Behold, all things are become new. That is, all things in view of the mind. The purposes of life, the feelings of the heart, the principles of action, all become new. The understanding is consecrated to new objects, the body is employed in new service, the heart forms new attachments. Nothing can be more strikingly descriptive of the facts in conversion than this; nothing more entirely accords with the feelings of the new-born soul.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 6047,
+     "end": 6483,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.15",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "All is new. There are new views of God and of Jesus Christ; new views of this world and of the world to come; new views of truth and of duty; and everything is seen in a new aspect and with new feelings. Nothing is more common in young converts than such feelings, and nothing is more common than for them to say that all things are new. The Bible seems to be a new book; and though they may have often read it before, yet there is a beauty about it which they never saw before, and which they wonder they have not before perceived.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 6484,
+     "end": 7016,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.16",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "The whole face of nature seems to them to be changed, and they seem to be in a new world. The hills, and vales, and streams; the sun, the stars, the groves, the forests, seem to be new. A new beauty is spread over them all; and they now see them to be the work of God, and his glory is spread over them all, and they can now say---\n\n\"My Father made them all.\"",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 7017,
+     "end": 7376,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    },
+    {
+     "id": "BAR5.17.17",
+     "note_id": "BAR.5.17",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "2Co 5:17",
+     "note_span": [
+      17,
+      17
+     ],
+     "subject_span": [
+      17,
+      17
+     ],
+     "anchor_verse": 17,
+     "text": "The heavens and the earth are filled with new wonders, and all things seem now to speak forth the praise of God. Even the very countenances of friends seem to be new; and there are new feelings towards all men; a new kind of love to kindred and friends; a love before unfelt for enemies; and a new love for all mankind.\n\nTHE SECOND EPISTLE OF PAUL THE APOSTLE TO THE CORINTHIANS - Chapter 5 - Verse 18",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/2CO.json",
+     "start": 7378,
+     "end": 7779,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "469e0a0c362853ed525f6da4c2966ee45297aeb726a2272cea4e440e205afc76",
+     "covers_verses": [
+      17
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 21 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007D"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "d04bb55a3ad7c2ab4a8387c874fde87c1b69fa13bd6bdc78a7361c3003c56937",
+    "text_sha256": null
+   },
+   "coverage": {
+    "17": {
+     "state": "source absence",
+     "detail": "no tyndale note for verse 17"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 12 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "4b5f88bedc0b4623aff2a600ad2893da20241cb1b8fce9de48c4b2cdfcf3c66f",
+    "text_sha256": "32a379de19e406abf5fbd8fda50d4e60db13a2a619d4ebda7354f1e8617ccd0f"
+   },
+   "coverage": {
+    "17": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 5: 928 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/2 Corinthians 5_17.toml": "3a39440696f754a85a471692a6d533cfc7f0eeba8725cba24573429ae83f5e24",
+     "John Chrysostom/2 Corinthians 5_17.toml": "ad396025c5e261ee74caf87c83fd3ecd8bb8bf68702b565b0662088123d1f93a",
+     "Thomas Aquinas/2 Corinthians 5_17.toml": "0adec1653a396be484f95848b5f52e86db539f43bf2b4f58dde29ca47944cf49"
+    }
+   },
+   "coverage": {
+    "17": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "2 Corinthians 5_17.toml",
+        "entry": 1,
+        "title": "Enchiridion 9.31",
+        "chars": 296,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "Augustine of Hippo",
+        "file": "2 Corinthians 5_17.toml",
+        "entry": 2,
+        "title": "Exposition on Psalm 104",
+        "chars": 1666,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "John Chrysostom": [
+       {
+        "father": "John Chrysostom",
+        "file": "2 Corinthians 5_17.toml",
+        "entry": 1,
+        "title": "BAPTISMAL INSTRUCTIONS 4.12",
+        "chars": 1170,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "John Chrysostom",
+        "file": "2 Corinthians 5_17.toml",
+        "entry": 2,
+        "title": "BAPTISMAL INSTRUCTIONS 4.16",
+        "chars": 524,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       },
+       {
+        "father": "John Chrysostom",
+        "file": "2 Corinthians 5_17.toml",
+        "entry": 3,
+        "title": "Homily 11 on 2 Corinthians",
+        "chars": 1081,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "Thomas Aquinas": [
+       {
+        "father": "Thomas Aquinas",
+        "file": "2 Corinthians 5_17.toml",
+        "entry": 1,
+        "title": "Commentary on 2 Corinthians",
+        "chars": 2365,
+        "file_span": [
+         17,
+         17
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 6; entries in range files excluded: 0",
+     "absent_fathers": [
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.2Corinthians5_17.1",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 296,
+     "chars": 296,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "Enchiridion 9.31",
+     "file": "Augustine of Hippo/2 Corinthians 5_17.toml"
+    },
+    {
+     "note_id": "HCF.augustine.2Corinthians5_17.2",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 1666,
+     "chars": 1666,
+     "pieces": 4,
+     "tiling_problems": [],
+     "title": "Exposition on Psalm 104",
+     "file": "Augustine of Hippo/2 Corinthians 5_17.toml"
+    },
+    {
+     "note_id": "HCF.chrysostom.2Corinthians5_17.1",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 1170,
+     "chars": 1170,
+     "pieces": 2,
+     "tiling_problems": [],
+     "title": "BAPTISMAL INSTRUCTIONS 4.12",
+     "file": "John Chrysostom/2 Corinthians 5_17.toml"
+    },
+    {
+     "note_id": "HCF.chrysostom.2Corinthians5_17.2",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 524,
+     "chars": 524,
+     "pieces": 1,
+     "tiling_problems": [],
+     "title": "BAPTISMAL INSTRUCTIONS 4.16",
+     "file": "John Chrysostom/2 Corinthians 5_17.toml"
+    },
+    {
+     "note_id": "HCF.chrysostom.2Corinthians5_17.3",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 1081,
+     "chars": 1081,
+     "pieces": 3,
+     "tiling_problems": [],
+     "title": "Homily 11 on 2 Corinthians",
+     "file": "John Chrysostom/2 Corinthians 5_17.toml"
+    },
+    {
+     "note_id": "HCF.aquinas.2Corinthians5_17.1",
+     "verse": 17,
+     "note_span": [
+      17,
+      17
+     ],
+     "start": 0,
+     "end": 2365,
+     "chars": 2365,
+     "pieces": 6,
+     "tiling_problems": [],
+     "title": "Commentary on 2 Corinthians",
+     "file": "Thomas Aquinas/2 Corinthians 5_17.toml"
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 35 file-name variants; found ['2 Corinthians 5_17.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 35 file-name variants; found ['2 Corinthians 5_17.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 35 file-name variants; found ['2 Corinthians 5_17.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 35 file-name variants; found []"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/2 Corinthians 5_17.toml entry 1 \"Enchiridion 9.31\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/2 Corinthians 5_17.toml entry 2 \"Exposition on Psalm 104\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "John Chrysostom/2 Corinthians 5_17.toml entry 1 \"BAPTISMAL INSTRUCTIONS 4.12\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "John Chrysostom/2 Corinthians 5_17.toml entry 2 \"BAPTISMAL INSTRUCTIONS 4.16\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "John Chrysostom/2 Corinthians 5_17.toml entry 3 \"Homily 11 on 2 Corinthians\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 21739 vs index 21739; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 52935; sections 19; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "0 scripture_header pieces excluded: []"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 24137 chars; 21 verse markers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; max code point U+2026"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 21 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 7237 chars; 21 numbered line starts, 21 chosen as verse markers (15 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 21 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+007D"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 12 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 5: 928 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 35 file-name variants; found ['2 Corinthians 5_17.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 35 file-name variants; found ['2 Corinthians 5_17.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 35 file-name variants; found ['2 Corinthians 5_17.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 35 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/2 Corinthians 5_17.toml entry 1 \"Enchiridion 9.31\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/2 Corinthians 5_17.toml entry 2 \"Exposition on Psalm 104\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "John Chrysostom/2 Corinthians 5_17.toml entry 1 \"BAPTISMAL INSTRUCTIONS 4.12\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "John Chrysostom/2 Corinthians 5_17.toml entry 2 \"BAPTISMAL INSTRUCTIONS 4.16\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "John Chrysostom/2 Corinthians 5_17.toml entry 3 \"Homily 11 on 2 Corinthians\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "17": "confirmed"
+  },
+  "calvin": {
+   "17": "confirmed"
+  },
+  "jfb": {
+   "17": "confirmed"
+  },
+  "gill": {
+   "17": "confirmed"
+  },
+  "wesley": {
+   "17": "confirmed"
+  },
+  "barnes": {
+   "17": "confirmed"
+  },
+  "tyndale": {
+   "17": "source absence"
+  },
+  "scofield": {
+   "17": "index absence"
+  },
+  "fathers": {
+   "17": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 51,
+  "chars": 25268,
+  "pieces_by_source": {
+   "mhc": 2,
+   "calvin": 5,
+   "jfb": 2,
+   "gill": 6,
+   "wesley": 2,
+   "barnes-nt": 17,
+   "hcf": 17
+  },
+  "chars_by_source": {
+   "mhc": 881,
+   "calvin": 2326,
+   "jfb": 928,
+   "gill": 5606,
+   "wesley": 692,
+   "barnes-nt": 7752,
+   "hcf": 7083
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 2,
+   "john-calvin": 5,
+   "jamieson-fausset-brown": 2,
+   "john-gill": 6,
+   "wesley": 2,
+   "barnes": 17,
+   "augustine": 5,
+   "chrysostom": 6,
+   "aquinas": 6
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 881,
+   "john-calvin": 2326,
+   "jamieson-fausset-brown": 928,
+   "john-gill": 5606,
+   "wesley": 692,
+   "barnes": 7752,
+   "augustine": 1957,
+   "chrysostom": 2768,
+   "aquinas": 2358
+  },
+  "per_anchor_verse": {
+   "17": {
+    "pieces": 51,
+    "chars": 25268,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "barnes",
+     "chrysostom",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "17": {
+    "pieces": 51,
+    "chars": 25268,
+    "notes": 12,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "barnes",
+     "chrysostom",
+     "jamieson-fausset-brown",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 17,
+   "B": 17,
+   "U": 11,
+   "C": 6
+  },
+  "non_standalone": 16,
+  "boundary_suspect": [],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": [
+   "MHC.5.17:opens_mid_outline"
+  ]
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "cd87f00ddde7a56641149d863dd631d9fc9344158328214350787645a2e6cba0",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 17
+ }
+}

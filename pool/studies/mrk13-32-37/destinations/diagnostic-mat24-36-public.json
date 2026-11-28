@@ -1,0 +1,2172 @@
+{
+ "passage": "Matthew 24:36",
+ "book": "MAT",
+ "chapter": 24,
+ "scope": [
+  36,
+  36
+ ],
+ "sources": {
+  "henry": {
+   "hashes": {
+    "file_sha256": "34a1d9b5c58862a0a96451464a31468827a332eed9690c7ba0e16a5de55d7b96",
+    "text_sha256": "fef100fe8d44b55aa9928dee50dfe7ac11120f3a1535c775ffb636b74022cd01",
+    "index_file_sha256": "53db482ebd175ae1a3dfba15f976409e69a7b4cb85ca6f3889e4f2f8b0dbb0b6"
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "index": {
+      "at": 93163,
+      "end": 96202,
+      "evidence": "citation+quotation",
+      "relation": "own"
+     },
+     "note_id": "MHC.24.36"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "MHC.24.36",
+     "opens_mid_outline": false,
+     "continues_in_next_note": false,
+     "pointer": null,
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 93163,
+     "end": 96202,
+     "chars": 3039,
+     "relation": "own",
+     "evidence": "citation+quotation",
+     "pieces": 8,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "MHC24.36.01",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "As to this, it is well observed by the learned Grotius, that there is a manifest distinction made between the *tauta* (Mt 24:34), and the *ekeine* (Mt 24:36), *these things,* and *that day and hour;* which will help to clear this prophecy.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 93163,
+     "end": 93402,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 24:34",
+      "Mt 24:36"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.02",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "(1.) As to *these things,* the wars, seductions, and persecutions, here foretold, and especially the ruin of the Jewish nation; \"*This generation shall not pass away, till all these things be fulfilled* (Mt 24:34); there are those now alive, that shall see Jerusalem destroyed, and the Jewish church brought to an end.\" Because it might seem strange, he backs it with a solemn asseveration; \"*Verily, I say unto you.* You may take my word for it, these things are at the door.\"",
+     "outline_label": "(1.)",
+     "marker_span": [
+      93404,
+      93408
+     ],
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 93404,
+     "end": 93881,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [
+      "Mt 24:34"
+     ],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.03",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "Christ often speaks of the nearness of that desolation, the more to affect people, and quicken them to prepare for it. Note, There may be greater trials and troubles yet before us, in our own day, than we are aware of. They that are old, know not what sons of Anak may be reserved for their last encounters.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 93882,
+     "end": 94189,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.04",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "(2.) But as to *that day and hour* which will put a period to time, *that knoweth no man,* Mt 24:36. Therefore take heed of confounding these two, as *they* did, who, from the words of Christ and the apostles; letters, inferred that *the day of Christ was at hand,* 2Th 2:2. No, it was not; *this generation,* and many another, *shall pass,* before *that day and hour* come. Note, [1.] There is a certain day and hour fixed for the judgment to come; it is called *the day of the Lord,* because so unalterably fixed. None of God's judgments are adjourned *sine die—without the appointment of a certain day.* [2.] That day and hour are a great secret.",
+     "outline_label": "(2.)",
+     "marker_span": [
+      94191,
+      94195
+     ],
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 94191,
+     "end": 94840,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC24.36.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 24:36",
+      "2Th 2:2"
+     ],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.05",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "Prudens futuri temporis exitum Caliginosa nocte premit Deus. But Heaven has wisely hid from human sight The dark decrees of future fate, And sown their seeds in depth of nights. Horace.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 94842,
+     "end": 95027,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.06",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "*No man knows it;* not the wisest by their sagacity, not the best by any divine discovery. We all know that there shall be such a day; but none knows when it shall be, no, not the angels; though their capacities for knowledge are great, and their opportunities of knowing this advantageous (they dwell at the fountain-head of light), and though they are to be employed in the solemnity of that day, yet they are not told when it shall be: none *knows but my Father only.*",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 95029,
+     "end": 95500,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.07",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "This is one of those *secret things* which *belong to the Lord our God.* The uncertainty of the time of Christ's coming, is, to those who are watchful, *a savour of life unto life,* and makes them more watchful; but to those who are careless, it is *a savour of death unto death,* and makes them more careless.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 95501,
+     "end": 95811,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "MHC24.36.06"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "MHC24.36.08",
+     "note_id": "MHC.24.36",
+     "source_id": "mhc",
+     "container_id": "mhc",
+     "original_author": "Matthew Henry",
+     "teacher_key": "matthew-henry",
+     "compiler": null,
+     "work_title": "Matthew Henry's Commentary on the Whole Bible",
+     "edition": "lyteword/mhenry-complete (CC0); printed edition not identified",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "II. To this end we must expect these events, that we may prepare for them; and here we have a caution against security and sensuality, which will make it a dismal day indeed to us, Mt 24:37-41. In these verses we have such an idea given us of the judgment day, as may serve to startle and awaken us, that we may not sleep as others do.\n\nIt will be a surprising day, and a separating day.",
+     "outline_label": "II.",
+     "marker_span": [
+      95813,
+      95816
+     ],
+     "source_file": "commentary/MHC/MAT.json",
+     "start": 95813,
+     "end": 96200,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [
+      "Mt 24:37-41"
+     ],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "status": "verified",
+     "msg": "text_sha256 matches index: True; length 127563 vs index 127563; max code point U+2079 (inside BMP)"
+    }
+   ]
+  },
+  "calvin": {
+   "hashes": {
+    "file_sha256": "d777364099ae445e61ed759a5127cdfbdb20e077d9a406acfdf6ecbbd01aaa10",
+    "text_sha256": "6116e5a3ad07c849833d7c05ec0625a9b518d204d2981e63a84d4c4d4671ff80",
+    "index_file_sha256": "4a68584c24b7998a1b22214c8bc1546869466f88c76057d53dd13fe2bc3ef9c0"
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "note_id": "CAL.24.36"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "CAL.24.36",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 73790,
+     "end": 80580,
+     "chars": 6790,
+     "pieces": 15,
+     "tiling_problems": [],
+     "head": "36. But of that day and hour. ",
+     "foreign_tail_start": 78106,
+     "heading_group": null,
+     "pointer": null
+    }
+   ],
+   "pieces": [
+    {
+     "id": "CAL24.36.01",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "36. But of that day and hour. By this sentence, Christ intended to hold the minds of believers in suspense that they might not, by a false imagination, fix any time for the final redemption. We know how fickle our minds are, and how much we are tickled by a vain curiosity to know more than is proper. Christ likewise perceived that the disciples were pushing forward with excessive haste to enjoy a triumph. He therefore wishes the day of his coming to be the object of such expectation and desire, that none shall dare to inquire when it will happen.",
+     "outline_label": "36.",
+     "marker_span": [
+      73790,
+      73793
+     ],
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 73790,
+     "end": 74342,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.02",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "In short, he wishes his disciples so to walk in the light of faith, that while they are uncertain as to the time, they may patiently wait for the revelation of him. We ought therefore to be on our guard, lest our anxiety about the time be carried farther than the Lord allows; for the chief part of our wisdom lies in confining ourselves soberly within the limits of God’s word.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 74343,
+     "end": 74721,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.03",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "That men may not feel uneasy at not knowing that day, Christ represents angels as their associates in this matter; for it would be a proof of excessive pride and wicked covetousness, to desire that we who creep on the earth should know more than is permitted to the angels in heaven. Mark adds, nor the Son himself. And surely that man must be singularly mad, who would hesitate to submit to the ignorance which even the Son of God himself did not hesitate to endure on our account.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 74722,
+     "end": 75204,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.02"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.04",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "But many persons, thinking that this was unworthy of Christ, have endeavored to mitigate the harshness of this opinion by a contrivance of their own; and perhaps they were driven to employ a subterfuge by the malice of the Arians, who attempted to prove from it that Christ is not the true and only God. So then, according to those men, Christ did not know the last day, because he did not choose to reveal it to men. But since it is manifest that the same kind of ignorance is ascribed to Christ as is ascribed to the angels, we must endeavor to find some other meaning which is more suitable.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 75205,
+     "end": 75799,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.05",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "Before stating it, however, I shall briefly dispose of the objections of those who think that it is an insult offered to the Son of God, if it be said that any kind of ignorance can properly apply to him. As to the first objection, that nothing is unknown to God, the answer is easy.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 75800,
+     "end": 76083,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.06",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "For we know that in Christ the two natures were united into one person in such a manner that each retained its own properties; and more especially the Divine nature was in a state of repose, and did not at all exert itself, whenever it was necessary that the human nature should act separately, according to what was peculiar to itself, in discharging the office of Mediator.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 76084,
+     "end": 76459,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.05"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.07",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "There would be no impropriety, therefor in saying that Christ, who knew all things, (John 21:17) was ignorant of something in respect of his perception as a man; for otherwise he could not have been liable to grief and anxiety, and could not have been like us, (Hebrews 2:17.) Again, the objection urged by some—that ignorance cannot apply to Christ, because it is the punishment of sin — is beyond measure ridiculous.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 76460,
+     "end": 76878,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "John 21:17",
+      "Hebrews 2:17"
+     ],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.08",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "For, first, it is prodigious folly to assert that the ignorance which is ascribed to angels proceeds from sin; but they discover themselves to be equally foolish on another ground, by not perceiving that Christ clothed himself with our flesh, for the purpose of enduring the punishment due to our sins. And if Christ, as man, did not know the last day, that does not any more derogate from his Divine nature than to have been mortal.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 76879,
+     "end": 77312,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.07"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.09",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "I have no doubt that he refers to the office appointed to him by the Father as in a former instance, when he said that it did not belong to him to place this or that person at his right or left hand, (Matthew 20:23; Mark 5:40.) For (as I explained under that passage ) he did not absolutely say that this was not in his power, but the meaning was, that he had not been sent by the Father with this commission, so long as he lived among mortals.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 77313,
+     "end": 77757,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Matthew 20:23",
+      "Mark 5:40"
+     ],
+     "flags": [],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.10",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "So now I understand that, so far as he had come down to us to be Mediator, until he had fully discharged his office that information was not given to him which he received after his resurrection; for then he expressly declared that power over all things had been given to him, (Matthew 28:18.) MATTHEW 24:37-42; MARK 13:33; LUKE 17:26-37; 21:34-36 Matthew 24:37-42 Mark 13:33 Luke 17:26-37 37. But as the days of Noah were, so shall also the coming of the Son of man be.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 77758,
+     "end": 78228,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.09"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [
+      "Matthew 28:18",
+      "Matthew 24:37-42",
+      "Mark 13:33",
+      "Luke 17:26-37"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)",
+      "contains printed scripture heading block of another passage (starts at offset 78106)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.11",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "38. For as in the days that came before the deluge, they were eating and drinking, marrying and giving in marriage, till the day when Noah entered into the ark, 39. And knew not until the deluge came, and took them all away: so shall also the coming of the Son of man be. 40. Two men shall then be in the field; one is taken, and the other is left. 41. Two women shall be grinding at the mill; one is taken, and the other is left.",
+     "outline_label": "38.",
+     "marker_span": [
+      78229,
+      78232
+     ],
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 78229,
+     "end": 78659,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.10"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [],
+     "flags": [
+      "contains printed scripture heading block of another passage (starts at offset 78106)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.12",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "42. Watch therefore, for you know not at what hour your Lord will come. 33. Take heed, watch and pray; for you know not when the time is. 26. And as it happened in the days of Noah, so shall it be also in the days of the Son of man. 27. They ate, they drank, they married wives, and were given in marriage, till that day when Noah entered into the ark; and the deluge came, and destroyed them all. 28. In like manner also, as it happened in the days of Lot, they ate, they drank, they bought, they sold, they planted, they built; 29.",
+     "outline_label": "42.",
+     "marker_span": [
+      78660,
+      78663
+     ],
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 78660,
+     "end": 79193,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [],
+     "flags": [
+      "contains printed scripture heading block of another passage (starts at offset 78106)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.13",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "But on the day that Lot went out of Sodom, it rained fire and brimstone from heaven, and destroyed them all. 30. In all these respects shall the day be when the Son of man shall be revealed. 31. In that day, let not him who shall be on the housetop, and his furniture in the house, go down to take them away; and in like manner, let not him who shall be in the field return to what he hath left behind. 32. Remember Lot’s wife.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 79194,
+     "end": 79621,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.12"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [],
+     "flags": [
+      "contains printed scripture heading block of another passage (starts at offset 78106)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.14",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "33. Whosoever shall seek to save his soul, shall lose it; and whosoever shall lose it, will beget it to life. 34. I tell you, in that night two men shall be in one bed; one shall be taken, and the other shall be left. 35. Two women shall be grinding together; one shall be taken, and the other shall be left. 36. Two men shall be in the field; one shall be taken, and the other shall be left. 37. Then they answering say to him, Where, Lord?",
+     "outline_label": "33.",
+     "marker_span": [
+      79622,
+      79625
+     ],
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 79622,
+     "end": 80063,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [],
+     "flags": [
+      "contains printed scripture heading block of another passage (starts at offset 78106)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "CAL24.36.15",
+     "note_id": "CAL.24.36",
+     "source_id": "calvin",
+     "container_id": "calvin",
+     "original_author": "John Calvin",
+     "teacher_key": "john-calvin",
+     "compiler": null,
+     "work_title": "Calvin commentary MAT",
+     "edition": "Calvin's Commentaries (Calvin Translation Society English translation, public domain); text from the HelloAO john-calvin",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "And he said to them, Wherever the carcass is, there will the eagles also be gathered together. Luke 21:34-36 34. And take heed to yourselves, lest at any time your hearts be overcharged with surfeiting and drunkenness, and the cares of this life, and that day come upon you suddenly. 35. For as a snare shall it come on all who dwell on the face of the whole earth. 36. Watch therefore, praying at all times that you may be permitted to escape all those things which shall happen, and to stand before the Son of man.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Calvin/MAT.json",
+     "start": 80064,
+     "end": 80580,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "CAL24.36.14"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": true,
+     "contains_cross_refs": [
+      "Luke 21:34-36"
+     ],
+     "flags": [
+      "contains printed scripture heading block of another passage (starts at offset 78106)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Calvin text_sha256 matches index: True; length 102747; sections 36; max code point U+201D"
+    },
+    {
+     "kind": "foreign-tail",
+     "verse": 36,
+     "msg": "Calvin section 36 (73790-80580) contains a printed scripture heading block of another passage at offset 78106 (2474 of 6790 chars: 'Matthew 24:37-42 Mark 13:33 Luke 17:26-37 37. But as the day'...). 6 of 15 pieces overlap it and are flagged boundary_suspect."
+    },
+    {
+     "kind": "excluded-pieces",
+     "msg": "0 scripture_header pieces excluded: []"
+    }
+   ]
+  },
+  "jfb": {
+   "hashes": {
+    "file_sha256": "abfd8c949af02bba90bbbd1edbae502fd99bd27f59ecc178f4d1077996cbe043",
+    "text_sha256": "95f7c4185c4f265b30c9ba0aeab0dadb7cb4af8fab686af979082903853b6df3"
+   },
+   "coverage": {
+    "36": {
+     "state": "source absence",
+     "detail": "no JFB marker for verse 36; 0 text citations of 24:36 (may be treated inside a neighbouring note)"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "JFB chapter 204 chars; 0 verse markers: []; max code point U+0079"
+    }
+   ]
+  },
+  "gill": {
+   "hashes": {
+    "file_sha256": "bcfd0e638988957b1f9d68ace44412ddbe6c94f102ca9594fb1bb60cb6bc96f4",
+    "text_sha256": null
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "note_id": "GILL.24.36"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "GILL.24.36",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 0,
+     "end": 4473,
+     "chars": 4473,
+     "pieces": 12,
+     "tiling_problems": [],
+     "quote_pieces": 0
+    }
+   ],
+   "pieces": [
+    {
+     "id": "GIL24.36.01",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "But of that day and hour knoweth no man,....",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 0,
+     "end": 44,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.02",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "Which is to be understood, not of the second coming of Christ, the end of the world, and the last judgment; but of the coming of the son of man, to take vengeance on the Jews, and of their destruction; for the words manifestly regard the date of the several things going before, which only can be applied to that catastrophe, and dreadful desolation: now, though the destruction itself was spoken of by Moses and the prophets, was foretold by Christ, and the believing Jews had some discerning of its near approach; see Hebrews 10:25 yet the exact and precise time was not known: it might have been: calculated to a year by Daniel's weeks, but not to the day and hour; and therefore our Lord does not say of the year, but of the day and hour no man knows; though the one week, or seven years, being separated from the rest, throws that account into some perplexity; and which perhaps is on purpose done, to conceal the precise time of Jerusalem's destruction: nor need it be wondered at, notwithstanding all the hints given, that the fatal day should not be exactly known beforehand; when those who have lived since, and were eyewitnesses of it, are not agreed on what day of the month it was; for, as Dr. Lightfoot (i) observes, Josephus (k) says,",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 45,
+     "end": 1293,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Hebrews 10:25"
+     ],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.03",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "\"that the temple perished the \"tenth\" day of \"Lous\", a day fatal to the temple, as having been on that day consumed in flames, by the king of Babylon.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 1295,
+     "end": 1445,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.04",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "And yet Rabbi Jochanan ben Zaccai, who was also at the destruction of it, as well as Josephus, with all the Jewish writers, say it was on the \"ninth of Ab\"; for of this day they (l) say, five things happened upon it:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 1447,
+     "end": 1663,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL24.36.03"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.05",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "\"On the \"ninth of Ab\" it was decreed concerning our fathers, that they should not enter into the land (of Canaan), the first and second temple were destroyed, Bither was taken, and the city ploughed up.\n\nThough the words of R. Jochanan, cited by the doctor, refer to the first, and not to the second temple, and should have been rendered thus:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 1665,
+     "end": 2008,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.06",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "\"If I had been in the generation (which fixed the fast for the destruction of the first temple), I would not have fixed it but on the tenth (of Ab); for, adds he, the greatest part of the temple was burnt on that day; but the Rabbins rather regarded the beginning of the punishment (m).",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 2010,
+     "end": 2296,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.07",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "And so the fasting of Rabbi, and R. Joshua ben Levi, on the \"ninth\" and \"tenth\" days, were on account of the first temple; for they were under the same difficulty about the one, as the other:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 2298,
+     "end": 2489,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [
+      "GIL24.36.06"
+     ],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.08",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "no, not the angels of heaven; who dwell there, always behold the face of God, stand in his presence ready to do his will, and are made acquainted with many of his designs, and are employed in the executing of them, and yet know not the time of God's vengeance on the Jews; to this agrees the sense that is given of the day of vengeance in Isaiah 63:4 it is asked (n),",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 2491,
+     "end": 2858,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Isaiah 63:4"
+     ],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.09",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "\"what is the meaning of these words, \"the day of vengeance is in my heart?\" Says R. Jochanan, to my heart I have revealed it, to the members I have not revealed it: says R. Simeon ben Lakish, to my heart I have revealed it,   , \"to the ministering angels I have not revealed it\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 2860,
+     "end": 3139,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.10",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "The Ethiopic version adds here, \"nor the son\", and so the Cambridge copy of Beza's; which seems to be transcribed from Mark 13:32 where that phrase stands; and must be understood of Christ as the son of man, and not as the Son of God; for as such, he lay in the bosom of the Father, and knew all his purposes and designs; for these were purposed in him: he knew from the beginning who would betray him, and who would believe in him; he knew what would befall the rejecters of him, and when that would come to pass; as he must know also the day of the last judgment, since it is appointed by God, and he is ordained to execute it: but the sense is, that as he, as man and mediator, came not to destroy, but to save; so it was not any part of his work, as such, to know, nor had he it in commission to make known the time of Jerusalem's ruin:",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 3141,
+     "end": 3981,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mark 13:32"
+     ],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.11",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "but my Father only; to the exclusion of all creatures, angels and men; but not to the exclusion of Christ as God, who, as such, is omniscient; nor of the Holy Spirit, who is acquainted with the deep things of God, the secrets of his heart, and this among others,",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 3983,
+     "end": 4245,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "commentary",
+     "covers_verses": [
+      36
+     ]
+    },
+    {
+     "id": "GIL24.36.12",
+     "note_id": "GILL.24.36",
+     "source_id": "gill",
+     "container_id": "gill",
+     "original_author": "John Gill",
+     "teacher_key": "john-gill",
+     "compiler": null,
+     "work_title": "An Exposition of the Old and New Testament",
+     "edition": "bible.helloao.org (Free Use Bible API), Public Domain Mark 1.0; John Gill, An Exposition of the Old and New Testament (1",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "(i) In Mark 13.32. (k) De Bello Jud. l. 6. c. 26. (l) Misu. Taanith, c. 4. sect. 7. T. Hieros. Taanioth, fol. 68. 3. & Maimon. Hilch. Taanioth, c. 5. sect. 2.((m) T. Bab, Taanith, fol. 29. 1.((n) T. Bab. Sanhedrin, fol. 99. 1.",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Gill/MAT.json",
+     "start": 4247,
+     "end": 4473,
+     "rights": "A",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "footnote list only; never shown on its own"
+     ],
+     "source_text_sha256": "3a180b866efed61ed5189fa9b8ed88283c28c113913c8bc7b599b9905ea0267b",
+     "piece_kind": "citation_list",
+     "citation_letters": [
+      "i",
+      "k",
+      "l",
+      "m",
+      "n"
+     ],
+     "covers_verses": [
+      36
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Gill: 51 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+    }
+   ]
+  },
+  "wesley": {
+   "hashes": {
+    "file_sha256": "d22f2a8562d515ad9882cc28c3db07912c3b793f598721f38bbfc2733877b0f9",
+    "text_sha256": "d8e13ab612216f6cfcefe3d2242ed0d827e3ad465f499742de27ae6f38902622"
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "note_id": "WES.24.36"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "WES.24.36",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 7769,
+     "end": 7933,
+     "chars": 164,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "WES24.36.01",
+     "note_id": "WES.24.36",
+     "source_id": "wesley",
+     "container_id": "wesley",
+     "original_author": "John Wesley",
+     "teacher_key": "wesley",
+     "compiler": null,
+     "work_title": "Explanatory Notes upon the New Testament",
+     "edition": "Wesley's Explanatory Notes upon the New Testament (1755, public domain); text built in the WesleyWalk project from uploa",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "36. But of that day - The day of judgment; Knoweth no man - Not while our Lord was on earth.\nYet it might be afterward revealed to St. John consistently with this.",
+     "outline_label": "36.",
+     "marker_span": [
+      7769,
+      7772
+     ],
+     "source_file": "commentary/Wesley/MAT.json",
+     "start": 7769,
+     "end": 7932,
+     "rights": "A",
+     "standalone": false,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [],
+     "flags": [
+      "non-standalone but first piece of note (back-reference to text outside the note)"
+     ],
+     "covers_verses": [
+      36
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Wesley chapter 9289 chars; 40 numbered line starts, 34 chosen as verse markers (31 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 31, 32, 34, 36, 37, 40, 41, 42, 45, 48, 51]; max code point U+0079"
+    }
+   ]
+  },
+  "barnes": {
+   "hashes": {
+    "file_sha256": "88d779a96c442d9a9a5f0eea845225a04af067e03c4be4ea98abf62897982b55",
+    "text_sha256": null
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "note_id": "BAR.24.36"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "BAR.24.36",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 0,
+     "end": 462,
+     "chars": 462,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [
+    {
+     "id": "BAR24.36.01",
+     "note_id": "BAR.24.36",
+     "source_id": "barnes-nt",
+     "container_id": "barnes-nt",
+     "original_author": "Albert Barnes",
+     "teacher_key": "barnes",
+     "compiler": null,
+     "work_title": "Notes on the New Testament",
+     "edition": "Barnes' Notes on the New Testament (Albert Barnes, public domain, via CCEL)",
+     "reference": "Mt 24:36",
+     "note_span": [
+      36,
+      36
+     ],
+     "subject_span": [
+      36,
+      36
+     ],
+     "anchor_verse": 36,
+     "text": "Verse 36. But of that day and hour. Of the precise time of the fulfillment. The general signs of its coming have been given; as the budding of the fig-tree is a certain indication that summer is near. But the precise time is not indicated by these things. One part of their inquiry was, Mt 24:3 when those things should be. He now replies to them, by saying that the precise time would not be foretold.\n\nKnoweth no man, no, not the angels. See Barnes \"Mr 13:32\".",
+     "outline_label": null,
+     "marker_span": null,
+     "source_file": "commentary/Barnes-NT/MAT.json",
+     "start": 0,
+     "end": 462,
+     "rights": "B",
+     "standalone": true,
+     "predecessor_ids": [],
+     "markup_valid": true,
+     "boundary_suspect": false,
+     "contains_cross_refs": [
+      "Mt 24:3",
+      "Mr 13:32"
+     ],
+     "flags": [
+      "cites same-chapter verses outside the request (ordinary cross-reference)"
+     ],
+     "source_text_sha256": "a6a187a8f129b7324ddaf30add7e3ea670cb7b9ef433f7ee11e4e316f3457d76",
+     "covers_verses": [
+      36
+     ]
+    }
+   ],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "barnes-nt: 50 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+00A7"
+    }
+   ]
+  },
+  "tyndale": {
+   "hashes": {
+    "file_sha256": "b2a6fd8854efa3ff96d8621b15e7b2068e6d3643d35b8c2be59fe46a4043617d",
+    "text_sha256": null
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "note_id": "TYN.24.36"
+    }
+   },
+   "notes": [
+    {
+     "note_id": "TYN.24.36",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 0,
+     "end": 298,
+     "chars": 298,
+     "pieces": 1,
+     "tiling_problems": []
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "tyndale: 30 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+    }
+   ]
+  },
+  "scofield": {
+   "hashes": {
+    "file_sha256": "bdd16f00eb5c61707fbd8079b06ed69279e52f4dce9bb55ad48d05170625875d",
+    "text_sha256": "51499d3459c231966ea5f9f6b433545e73771a35d9a4a889045513663710c645"
+   },
+   "coverage": {
+    "36": {
+     "state": "index absence",
+     "detail": "Scofield in our copy has no verse index and no note boundaries; pieces would need guessing, so none are built"
+    }
+   },
+   "notes": [],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "convention",
+     "msg": "Scofield chapter 24: 1583 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+    }
+   ]
+  },
+  "fathers": {
+   "hashes": {
+    "files_sha256": {
+     "Augustine of Hippo/Matthew 24_36.toml": "e48408985ba4079751190400b2f91651ae13711e6d2591ddb785aaaa20e65e4c",
+     "John Chrysostom/Matthew 24_36.toml": "176ba0ea057186232f8a71347b41de7b406db834471fe6bdaa2b42815fee5247",
+     "Thomas Aquinas/Matthew 24_36.toml": "b38dd37ac39be125247d9837e7a442912e1e39f34156261522f0cf784a5d0719"
+    }
+   },
+   "coverage": {
+    "36": {
+     "state": "confirmed",
+     "by_father": {
+      "Augustine of Hippo": [
+       {
+        "father": "Augustine of Hippo",
+        "file": "Matthew 24_36.toml",
+        "entry": 1,
+        "title": "Catena Aurea by Aquinas",
+        "chars": 1226,
+        "file_span": [
+         36,
+         36
+        ],
+        "inside": true,
+        "compiler": "Aquinas",
+        "append_to_author_name": " (as quoted by Aquinas, AD 1274)"
+       }
+      ],
+      "John Chrysostom": [
+       {
+        "father": "John Chrysostom",
+        "file": "Matthew 24_36.toml",
+        "entry": 1,
+        "title": "Homily on the Gospel of Matthew 77",
+        "chars": 3095,
+        "file_span": [
+         36,
+         36
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ],
+      "Thomas Aquinas": [
+       {
+        "father": "Thomas Aquinas",
+        "file": "Matthew 24_36.toml",
+        "entry": 1,
+        "title": "Commentary on Matthew",
+        "chars": 2873,
+        "file_span": [
+         36,
+         36
+        ],
+        "inside": true,
+        "compiler": null,
+        "append_to_author_name": null
+       }
+      ]
+     },
+     "detail": "entries inside request: 3; entries in range files excluded: 0",
+     "absent_fathers": [
+      "Cyril of Alexandria"
+     ]
+    }
+   },
+   "notes": [
+    {
+     "note_id": "HCF.augustine.Matthew24_36.1",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 0,
+     "end": 1226,
+     "chars": 1226,
+     "pieces": 4,
+     "tiling_problems": [],
+     "title": "Catena Aurea by Aquinas",
+     "file": "Augustine of Hippo/Matthew 24_36.toml"
+    },
+    {
+     "note_id": "HCF.chrysostom.Matthew24_36.1",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 0,
+     "end": 3095,
+     "chars": 3095,
+     "pieces": 7,
+     "tiling_problems": [],
+     "title": "Homily on the Gospel of Matthew 77",
+     "file": "John Chrysostom/Matthew 24_36.toml"
+    },
+    {
+     "note_id": "HCF.aquinas.Matthew24_36.1",
+     "verse": 36,
+     "note_span": [
+      36,
+      36
+     ],
+     "start": 0,
+     "end": 2873,
+     "chars": 2873,
+     "pieces": 6,
+     "tiling_problems": [],
+     "title": "Commentary on Matthew",
+     "file": "Thomas Aquinas/Matthew 24_36.toml"
+    }
+   ],
+   "pieces": [],
+   "findings": [
+    {
+     "kind": "fathers-files",
+     "father": "Augustine of Hippo",
+     "msg": "probed 49 file-name variants; found ['Matthew 24_36.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "John Chrysostom",
+     "msg": "probed 49 file-name variants; found ['Matthew 24_36.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Thomas Aquinas",
+     "msg": "probed 49 file-name variants; found ['Matthew 24_36.toml']"
+    },
+    {
+     "kind": "fathers-files",
+     "father": "Cyril of Alexandria",
+     "msg": "probed 49 file-name variants; found []"
+    },
+    {
+     "kind": "attribution",
+     "msg": "Augustine of Hippo/Matthew 24_36.toml entry 1 \"Catena Aurea by Aquinas\": compilation; original_author=Augustine of Hippo (from the database directory), compiler=Aquinas, append_to_author_name=' (as quoted by Aquinas, AD 1274)'"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "Augustine of Hippo/Matthew 24_36.toml entry 1 \"Catena Aurea by Aquinas\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    },
+    {
+     "kind": "fathers-withheld",
+     "msg": "John Chrysostom/Matthew 24_36.toml entry 1 \"Homily on the Gospel of Matthew 77\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "source": "henry",
+   "kind": "convention",
+   "status": "verified",
+   "msg": "text_sha256 matches index: True; length 127563 vs index 127563; max code point U+2079 (inside BMP)"
+  },
+  {
+   "source": "calvin",
+   "kind": "convention",
+   "msg": "Calvin text_sha256 matches index: True; length 102747; sections 36; max code point U+201D"
+  },
+  {
+   "source": "calvin",
+   "kind": "foreign-tail",
+   "verse": 36,
+   "msg": "Calvin section 36 (73790-80580) contains a printed scripture heading block of another passage at offset 78106 (2474 of 6790 chars: 'Matthew 24:37-42 Mark 13:33 Luke 17:26-37 37. But as the day'...). 6 of 15 pieces overlap it and are flagged boundary_suspect."
+  },
+  {
+   "source": "calvin",
+   "kind": "excluded-pieces",
+   "msg": "0 scripture_header pieces excluded: []"
+  },
+  {
+   "source": "jfb",
+   "kind": "convention",
+   "msg": "JFB chapter 204 chars; 0 verse markers: []; max code point U+0079"
+  },
+  {
+   "source": "gill",
+   "kind": "convention",
+   "msg": "Gill: 51 verse entries in chapter; offsets are into each verse string; max code point U+007A"
+  },
+  {
+   "source": "wesley",
+   "kind": "convention",
+   "msg": "Wesley chapter 9289 chars; 40 numbered line starts, 34 chosen as verse markers (31 confirmed by a catchword in the KJV verse): [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 31, 32, 34, 36, 37, 40, 41, 42, 45, 48, 51]; max code point U+0079"
+  },
+  {
+   "source": "barnes",
+   "kind": "convention",
+   "msg": "barnes-nt: 50 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+00A7"
+  },
+  {
+   "source": "tyndale",
+   "kind": "convention",
+   "msg": "tyndale: 30 verse notes in chapter, 0 with spans; offsets are into each note string; max code point U+2022"
+  },
+  {
+   "source": "scofield",
+   "kind": "convention",
+   "msg": "Scofield chapter 24: 1583 characters in one string, no verse anchors and no note separators; 0 scripture references to this chapter (these are cross-references, not anchors). No pieces built."
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Augustine of Hippo",
+   "msg": "probed 49 file-name variants; found ['Matthew 24_36.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "John Chrysostom",
+   "msg": "probed 49 file-name variants; found ['Matthew 24_36.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Thomas Aquinas",
+   "msg": "probed 49 file-name variants; found ['Matthew 24_36.toml']"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-files",
+   "father": "Cyril of Alexandria",
+   "msg": "probed 49 file-name variants; found []"
+  },
+  {
+   "source": "fathers",
+   "kind": "attribution",
+   "msg": "Augustine of Hippo/Matthew 24_36.toml entry 1 \"Catena Aurea by Aquinas\": compilation; original_author=Augustine of Hippo (from the database directory), compiler=Aquinas, append_to_author_name=' (as quoted by Aquinas, AD 1274)'"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "Augustine of Hippo/Matthew 24_36.toml entry 1 \"Catena Aurea by Aquinas\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  },
+  {
+   "source": "fathers",
+   "kind": "fathers-withheld",
+   "msg": "John Chrysostom/Matthew 24_36.toml entry 1 \"Homily on the Gospel of Matthew 77\": withheld (fail closed): no source-check record matches this excerpt (missing, or the upstream text changed): not verified against a full text"
+  }
+ ],
+ "matrix": {
+  "henry": {
+   "36": "confirmed"
+  },
+  "calvin": {
+   "36": "confirmed"
+  },
+  "jfb": {
+   "36": "source absence"
+  },
+  "gill": {
+   "36": "confirmed"
+  },
+  "wesley": {
+   "36": "confirmed"
+  },
+  "barnes": {
+   "36": "confirmed"
+  },
+  "tyndale": {
+   "36": "confirmed"
+  },
+  "scofield": {
+   "36": "index absence"
+  },
+  "fathers": {
+   "36": "confirmed"
+  }
+ },
+ "summary": {
+  "pieces": 55,
+  "chars": 22346,
+  "pieces_by_source": {
+   "mhc": 8,
+   "calvin": 15,
+   "gill": 12,
+   "wesley": 1,
+   "barnes-nt": 1,
+   "tyndale": 1,
+   "hcf": 17
+  },
+  "chars_by_source": {
+   "mhc": 3025,
+   "calvin": 6776,
+   "gill": 4452,
+   "wesley": 163,
+   "barnes-nt": 462,
+   "tyndale": 298,
+   "hcf": 7170
+  },
+  "pieces_by_teacher_key": {
+   "matthew-henry": 8,
+   "john-calvin": 15,
+   "john-gill": 12,
+   "wesley": 1,
+   "barnes": 1,
+   "tyndale": 1,
+   "augustine": 4,
+   "chrysostom": 7,
+   "aquinas": 6
+  },
+  "chars_by_teacher_key": {
+   "matthew-henry": 3025,
+   "john-calvin": 6776,
+   "john-gill": 4452,
+   "wesley": 163,
+   "barnes": 462,
+   "tyndale": 298,
+   "augustine": 1219,
+   "chrysostom": 3084,
+   "aquinas": 2867
+  },
+  "per_anchor_verse": {
+   "36": {
+    "pieces": 55,
+    "chars": 22346,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "barnes",
+     "chrysostom",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   }
+  },
+  "per_covered_verse": {
+   "36": {
+    "pieces": 55,
+    "chars": 22346,
+    "notes": 9,
+    "teacher_keys": [
+     "aquinas",
+     "augustine",
+     "barnes",
+     "chrysostom",
+     "john-calvin",
+     "john-gill",
+     "matthew-henry",
+     "tyndale",
+     "wesley"
+    ]
+   }
+  },
+  "rights": {
+   "A": 36,
+   "B": 1,
+   "C": 7,
+   "U": 11
+  },
+  "non_standalone": 23,
+  "boundary_suspect": [
+   "MHC24.36.02",
+   "MHC24.36.08",
+   "CAL24.36.10",
+   "CAL24.36.11",
+   "CAL24.36.12",
+   "CAL24.36.13",
+   "CAL24.36.14",
+   "CAL24.36.15"
+  ],
+  "markup_invalid": [],
+  "notes_with_tiling_problems": [],
+  "note_warnings": []
+ },
+ "source_problems": [],
+ "source_fingerprint_sha256": "101d49659f6f9c44500275e3d09718873c6d5ac62b1b64e7ec031420cb68c765",
+ "parallels": {},
+ "public_copy": {
+  "note": "Pieces in rights tiers C and U removed; everything else unchanged.",
+  "pieces_removed": 18
+ }
+}
