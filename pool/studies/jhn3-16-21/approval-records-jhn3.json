@@ -114,9 +114,9 @@
   "note": "John 3:16-18 study EF2, The Love That Came to Save"
  },
  "ET": {
-  "approver": null,
-  "timestamp": null,
-  "status": "pending",
+  "approver": "Tom Robinson",
+  "timestamp": "2026-11-28T12:47:00Z",
+  "status": "approved",
   "fingerprints": {
    "source": "9ad9ac27181f5ccc957b5bb50ac3fed019d3fc17368e9838a40874cc6734e423",
    "pieces": "28386df2658d9cf865526319f13e2358c286eae67e74a80550873b3536973b4b",
