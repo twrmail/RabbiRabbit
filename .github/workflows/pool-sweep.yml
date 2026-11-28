@@ -37,6 +37,8 @@ jobs:
         run: node tools/study-worker/test-worker.mjs
       - name: John studies rebuild equals the committed pages and records
         run: |
+          # rebuild into a copy of the folder, so recorded approvals are there to be kept (an unchanged study stays approved)
+          rm -rf /tmp/jhn-rebuild && cp -r pool/studies/jhn3-16-21 /tmp/jhn-rebuild
           python3 -B tools/pool/build_studies_jhn.py pool/studies/jhn3-16-21/diagnostic-jhn3-16-21-public.json /tmp/jhn-rebuild
           for f in /tmp/jhn-rebuild/*; do cmp "$f" "pool/studies/jhn3-16-21/$(basename "$f")"; done
       - name: Study index equals a fresh build; every approved study is servable
