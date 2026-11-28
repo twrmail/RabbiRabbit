@@ -225,9 +225,9 @@
       16,
       18
      ],
-     "status": "pending",
-     "approver": null,
-     "approved_at": null,
+     "status": "approved",
+     "approver": "Tom Robinson",
+     "approved_at": "2026-11-28T12:47:00Z",
      "frame_version": "frame_v2",
      "renderer": "study_themed_v1",
      "fingerprints": {
@@ -357,8 +357,8 @@
      }
     }
    ],
-   "approved": 0,
-   "pending": 10
+   "approved": 1,
+   "pending": 9
   }
  }
 }

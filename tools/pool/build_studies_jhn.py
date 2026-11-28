@@ -165,6 +165,7 @@ def main(report, out):
     rep, pool, cov, req0 = RV.load(report); os.makedirs(out, exist_ok=True); P = {p['id']: p for p in pool}
     web = json.load(open(os.path.join(REPO, 'library', 'bible', 'WEB', 'JHN.json'))); WV = [c for c in web['chapters'] if c['chapter'] == 3][0]['verses']
     results, records, bodies, bad = {}, {}, [], 0
+    rp = f'{out}/approval-records-jhn3.json'; prior = json.load(open(rp)) if os.path.exists(rp) else {}; dropped = []
     for st in live():
         plan, req = plan_and_request(st, req0)
         gaps = V.make_gaps(pool, req, cov, 'public'); v = V.validate(plan, pool, req, gaps, 'public', req.get('budget', V.DEFAULT_BUDGET))
@@ -198,6 +199,12 @@ def main(report, out):
             pc = page_content(st, P, WV, v['stats'])
             rec, fr = F.make_record(plan, pool, gaps, req, rep, 'public', f"John 3:{req['lo']}-{req['hi']} study {st['key']}, {st['title']}", page=pc)
             _, tests = RF.tamper_tests(plan, pool, gaps, req, rep, pc)
+            old = prior.get(st['key'])
+            if old and old.get('status') == 'approved':
+                if old.get('fingerprints') == rec['fingerprints'] and old.get('frame_version') == rec['frame_version'] and old.get('build') == rec['build']:
+                    rec = old                       # unchanged byte for byte: Rabbit's approval stands
+                else:
+                    dropped.append(st['key']); print(f"!! APPROVAL DROPPED for {st['key']}: the study changed since {old.get('approver')} approved it; it is pending again")
             records[st['key']] = rec; r.update(frame_version=rec['frame_version'], tamper_tests=f"{sum(1 for c in tests if c['pass_'])}/{len(tests)}")
             json.dump(pc, open(f"{out}/page-jhn3-study-{st['key']}.json", 'w'), indent=1, ensure_ascii=False)
             open(f"{out}/study-jhn3-{st['key']}.html", 'w').write(SR.page(fr)); bodies.append((st, SR.body(fr)))
@@ -210,6 +217,7 @@ def main(report, out):
         print(st['key'], st.get('shape', 'full'), st['title'], 'validator', v['ok'], v['rejections'][:2] if not v['ok'] else '', v['stats'].get('picked'), v['stats'].get('chars'), '| AI', r.get('ai_share'), '| checks', sb or 'ok', '| frame', r['frame_version'], '| tamper', r['tamper_tests'])
     json.dump(results, open(f'{out}/studies-summary.json', 'w'), indent=1, default=str)
     json.dump(records, open(f'{out}/approval-records-jhn3.json', 'w'), indent=1)
+    if dropped: print('approvals dropped (re-review needed):', ', '.join(dropped))
     nav = ' '.join(f'<a href="#s{st["key"]}">{st["key"]}. {html.escape(st["title"])}</a>' for st, _ in bodies)
     open(f'{out}/studies-jhn3-16-21.html', 'w').write(
         f'<!doctype html><meta charset=utf-8><title>John 3:16-21: review bundle</title><style>{SR.NCSS}nav a{{font:15px system-ui;margin-right:1rem}}</style>'
